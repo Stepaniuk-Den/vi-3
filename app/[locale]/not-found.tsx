@@ -12,16 +12,25 @@
 
 // export default NotFound;
 
+// ----------------------------------------------------------------
+
 "use client";
 
 import Error from "next/error";
 
 export default function NotFound() {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body>
         <Error statusCode={404} />
       </body>
     </html>
   );
 }
+
+// ----------------------------------------------------------------
+
+// Note that `app/[locale]/[...rest]/page.tsx`
+// is necessary for this page to render.
+
+// export { default } from "@/components/NotFoundPage";
