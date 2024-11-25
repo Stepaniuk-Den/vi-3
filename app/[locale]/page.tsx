@@ -3,11 +3,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageLayout from "../components/PageLayout";
 
 type Props = {
-  params: { locale: string };
+  // params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export default async function IndexPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
+  // const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
 
   // Enable static rendering
   setRequestLocale(locale);
