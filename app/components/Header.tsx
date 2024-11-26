@@ -1,27 +1,38 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Logo from "@/public/window.svg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
+
+import Logo from "@/public/window.svg";
 import Navigation from "./Navigation";
 // import { Link, usePathname } from "@/navigation";
 
-// import { useMediaQuery } from "react-responsive";
 // import { useAfterLoad } from "@/helpers/useAfterLoad";
 
 // import dynamic from "next/dynamic";
 
 // const BurgerMenu = dynamic(() => import("../BurgerMenu"), { ssr: false });
 // const HeaderLinks = dynamic(() => import("../HeaderLinks"), { ssr: false });
+// interface IProps {
+//   home: string;
+//   contact: string;
+//   windows: string;
+//   doors: string;
+//   sliding_doors: string;
+//   roller_shutter: string;
+//   manufactured: string;
+// }
 
-const Header: React.FC<{ t: string }> = () => {
+// const Header: React.FC<{ t: IProps }> = () => {
+const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
   const [opacityTop, setOpacityTop] = useState(1);
   const [heightTop, setHeightTop] = useState(120);
 
-  // const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
   // const isPageLoaded = useAfterLoad();
   const pathname = usePathname();
   const is404 = pathname === "/404";
@@ -45,8 +56,7 @@ const Header: React.FC<{ t: string }> = () => {
     return null;
   }
 
-  // if (isTabletOrMobile) {
-  if (window.innerWidth <= 1024) {
+  if (isTabletOrMobile) {
     return (
       <>
         {/* {isPageLoaded && ( */}
@@ -59,7 +69,6 @@ const Header: React.FC<{ t: string }> = () => {
 
   return (
     <>
-      {/* {isPageLoaded && ( */}
       <header
         style={{
           height: `${heightHeader}px`,
@@ -86,15 +95,13 @@ const Header: React.FC<{ t: string }> = () => {
                 height={100}
               />
             </Link>
-            {/* <HeaderLinks t={t.topList} /> */}
           </div>
           <div className="flex justify-between w-full h-18 bg-white rounded-md shadow-lg">
-            <Navigation translations={t.navlink} />
+            <Navigation />
             {/* <SocialList className="header" ariaLabel={ariaLabel} /> */}
           </div>
         </div>
       </header>
-      {/* )} */}
     </>
   );
 };

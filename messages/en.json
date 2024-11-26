@@ -17,5 +17,14 @@
   "Error": {
     "description": "<p>На жаль, ми зіткнулися з помилкою.</p><p>Ви можете спробувати <retry>оновити сторінку</retry> яку ви відвідували.</p>",
     "title": "Щось пішло не так!"
+  },
+  "Navigation": {
+    "home": "home",
+    "contact": "contact",
+    "windows": "windows",
+    "doors": "doors",
+    "sliding_doors": "sliding doors",
+    "roller_shutter": "roller shutter",
+    "manufactured": "manufactured"
   }
 }
