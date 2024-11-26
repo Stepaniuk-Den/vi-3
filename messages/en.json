@@ -6,7 +6,7 @@
   "Manifest": {
     "name": "Приклад"
   },
-  "HomePage": {
+  "IndexPage": {
     "title": "ПРИВІТ",
     "description": "Це новий сайт 🤓"
   },

@@ -14,17 +14,11 @@ export default async function IndexPage({ params }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations("HomePage");
+  const t = await getTranslations("IndexPage");
 
   return (
     <PageLayout title={t("title")}>
-      <p className="max-w-[590px]">
-        {t.rich("description", {
-          code: (chunks) => (
-            <code className="font-mono text-white">{chunks}</code>
-          ),
-        })}
-      </p>
+      <p className="max-w-[590px] text-xl">{t("description")}</p>
     </PageLayout>
   );
 }

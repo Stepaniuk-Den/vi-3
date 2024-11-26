@@ -14,23 +14,23 @@
 
 // ----------------------------------------------------------------
 
-"use client";
+// "use client";
 
-import Error from "next/error";
+// import Error from "next/error";
 
-export default function NotFound() {
-  return (
-    <html lang="uk">
-      <body>
-        <Error statusCode={404} />
-      </body>
-    </html>
-  );
-}
+// export default function NotFound() {
+//   return (
+//     <html lang="uk">
+//       <body>
+//         <Error statusCode={404} />
+//       </body>
+//     </html>
+//   );
+// }
 
 // ----------------------------------------------------------------
 
 // Note that `app/[locale]/[...rest]/page.tsx`
 // is necessary for this page to render.
 
-// export { default } from "@/components/NotFoundPage";
+export { default } from "../components/NotFoundPage";
