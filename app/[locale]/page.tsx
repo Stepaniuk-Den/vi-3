@@ -40,22 +40,50 @@
 //   );
 // }
 
-import { getTranslations, setRequestLocale } from "next-intl/server";
+// ========================================================
+
+// import { getTranslations, setRequestLocale } from "next-intl/server";
+// import PageLayout from "../components/PageLayout";
+// import WindowsSection from "../components/WindowsSection";
+
+// type Props = {
+//   params: { locale: string };
+// };
+
+// export default async function IndexPage({ params }: Props) {
+//   const { locale } = await Promise.resolve(params);
+
+//   // Enable static rendering
+//   setRequestLocale(locale);
+
+//   const t = await getTranslations("IndexPage");
+//   const tWindows = await getTranslations("Windows");
+
+//   return (
+//     <PageLayout title={t("title")}>
+//       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
+//       <WindowsSection t={tWindows} />
+//     </PageLayout>
+//   );
+// }
+
+// ==============================================================================
+
+import { setRequestLocale } from "next-intl/server";
 import PageLayout from "../components/PageLayout";
 import WindowsSection from "../components/WindowsSection";
+import { useTranslations } from "next-intl";
 
 type Props = {
   params: { locale: string };
 };
 
-export default async function IndexPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
-
+export default function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations("IndexPage");
-  const tWindows = await getTranslations("Windows");
+  const t = useTranslations("IndexPage");
+  const tWindows = useTranslations("Windows");
 
   return (
     <PageLayout title={t("title")}>

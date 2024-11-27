@@ -6,7 +6,8 @@ import BaseLayout from "../components/BaseLayout";
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ locale: string }>;
+  //!!!!!!!!! params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
 export function generateStaticParams() {
@@ -23,9 +24,15 @@ export function generateStaticParams() {
 //   };
 // }
 
-export default async function LocaleLayout({ children, params }: Props) {
+//!!!!!!!!! export default async function LocaleLayout({ children, params }: Props) {
+//   // const { locale } = await Promise.resolve(params);
+//!!!!!!!!!   const { locale } = await params;
+export default async function LocaleLayout({
+  children,
+  params: { locale },
+}: Props) {
   // const { locale } = await Promise.resolve(params);
-  const { locale } = await params;
+  // const { locale } = await params;
 
   // if (!routing.locales.includes(locale as Locale)) {
   //   return NotFound();
