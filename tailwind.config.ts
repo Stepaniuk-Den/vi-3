@@ -36,13 +36,6 @@ export default {
         l: ["60px", { lineHeight: "1.2" }],
       },
       colors: {
-        // slate: {
-        //   850: "hsl(222deg 47% 16%)",
-        // },
-        main: {
-          mainBG: "rgb(255, 255, 255)",
-          mainColor: "rgb(30, 30, 30)",
-        },
         customMarsala: {
           DEFAULT: "rgb(88, 29, 34)",
           accent: "rgb(109, 58, 62)",
