@@ -13,6 +13,7 @@ const WindowsSection: React.FC<Props> = ({ t }) => {
   //   const typesList = t("types") as Record<string, IItemCard>;
 
   const typesList = Object.values(t.raw("typesList")) as IItemCard[];
+  // console.log("🚀 ~ typesList:", typesList);
 
   return (
     <section>

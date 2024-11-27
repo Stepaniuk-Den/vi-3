@@ -25,6 +25,7 @@ const ItemCard: React.FC<IItemCard> = ({
           src={src || ""}
           alt={alt || ""}
           fill
+          priority
           // placeholder="blur"
         />
       </div>
