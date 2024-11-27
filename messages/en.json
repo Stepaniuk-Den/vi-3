@@ -17,5 +17,29 @@
   "Error": {
     "description": "<p>На жаль, ми зіткнулися з помилкою.</p><p>Ви можете спробувати <retry>оновити сторінку</retry> яку ви відвідували.</p>",
     "title": "Щось пішло не так!"
+  },
+  "Buttons": {
+    "see": "See all"
+  },
+  "Windows": {
+    "title": "Windows in Ukraine",
+    "typesList": {
+      "1": {
+        "id": "1",
+        "windowsSlug": "pcv-windows",
+        "title": "PVC windows",
+        "description": "Our offer includes energy-efficient PVC windows which meet the highest standards on the European market. We manufacture PVC windows based on high-performance profiles from Schüco and Kömmerling.",
+        "src": "/images/windows/pcv-windows.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "2": {
+        "id": "2",
+        "windowsSlug": "aluminium-windows",
+        "title": "Aluminium windows",
+        "description": "We are a Polish manufacturer of aluminium windows. Made with solid and heat-insulating profiles from Aliplast and Aluron, our aluminium windows represent the highest quality in their category.",
+        "src": "/images/windows/aluminium-windows.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      }
+    }
   }
 }

@@ -30,20 +30,32 @@ button {
   } */
 
   .mainTitleCl {
-    @apply mb-5 font-roboto font-medium text-sm sm:text-base lg:text-8xl leading-tight text-white;
+    @apply xl:text-5xl font-semibold font-poppins leading-tight;
   }
+
+  .titleCl {
+    @apply xl:text-3xl font-semibold font-poppins leading-tight;
+  }
+
+    .subTitleCl {
+    @apply xl:text-2xl font-semibold font-poppins leading-relaxed;
+  }
+
+  .LinkToPageCl {
+    @apply flex items-center justify-center px-3 py-2 text-white bg-red-950 transition-all hover:bg-red-900 hover:-translate-y-1 hover:scale-110 rounded-md;
+  }
+
+
+  /* ===================================================== */
+  /* From the previous project */
+
   .mainDescriptionCl {
     @apply mb-5 font-roboto text-sm sm:text-base lg:text-5xl leading-7 text-white;
-  }
-  .titleCl {
-    @apply mb-5 font-semibold text-5xl leading-tight text-stone-950;
-  }
-  .subTitleCl {
-    @apply mb-6 font-semibold text-3xl leading-relaxed text-customTeal;
   }
   .descriptionCl {
     @apply mb-5 xl:text-[18px] tracking-wide text-stone-800 leading-10;
   }
+   /* ===================================================== */
 }
 
 @layer utilities {

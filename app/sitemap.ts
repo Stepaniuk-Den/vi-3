@@ -5,7 +5,7 @@ import { Locale, routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [getEntry("/")];
-  // getEntry("/pathnames");
+  // getEntry("/windows");
 }
 
 // type Href = Parameters<typeof getPathname>[0]["href"];
