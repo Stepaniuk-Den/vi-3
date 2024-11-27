@@ -35,21 +35,11 @@ export default {
         s: ["14px", { lineHeight: "1" }],
         l: ["60px", { lineHeight: "1.2" }],
       },
-      // colors: {
-      //   background: "var(--background)",
-      //   foreground: "var(--foreground)",
-      // },
       colors: {
-        slate: {
-          850: "hsl(222deg 47% 16%)",
-        },
-        main: {
-          sectionBG: "rgb(7, 29, 39)",
-          mainBG: "rgb(8, 30, 41)",
-        },
-        customTeal: {
-          DEFAULT: "rgb(27, 130, 141)",
-          accent: "rgb(38, 152, 165)",
+        customMarsala: {
+          DEFAULT: "rgb(88, 29, 34)",
+          accent: "rgb(109, 58, 62)",
+          accentLight: "rgb(130, 86, 90)",
         },
       },
     },

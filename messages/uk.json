@@ -18,6 +18,86 @@
     "description": "<p>На жаль, ми зіткнулися з помилкою.</p><p>Ви можете спробувати <retry>оновити сторінку</retry> яку ви відвідували.</p>",
     "title": "Щось пішло не так!"
   },
+  "Navigation": {
+    "home": {
+      "title": "головна",
+      "href": "/"
+    },
+    "contact": {
+      "title": "контакти",
+      "href": "/contact"
+    },
+    "windows": {
+      "title": "вікна",
+      "href": "/windows",
+      "links": {
+        "1": {
+          "title": "металопластикові вікна",
+          "slug": "windows-pvc"
+        },
+        "2": {
+          "title": "алюмінієві вікна",
+          "slug": "windows-aluminium"
+        }
+      }
+    },
+    "doors": {
+      "title": "двері",
+      "href": "/doors",
+      "links": {
+        "1": {
+          "title": "металопластикові двері",
+          "slug": "doors-pvc"
+        },
+        "2": {
+          "title": "алюмінієві двері",
+          "slug": "doors-aluminium"
+        }
+      }
+    },
+    "sliding-doors": {
+      "title": "розсувні двері",
+      "href": "/sliding-doors",
+      "links": {
+        "1": {
+          "title": "металопластикові розсувні двері",
+          "slug": "sliding-doors-pvc"
+        },
+        "2": {
+          "title": "алюмінієві розсувні двері",
+          "slug": "sliding-doors-aluminium"
+        }
+      }
+    },
+    "roller-blinds": {
+      "title": "ролети",
+      "href": "/roller-blinds",
+      "links": {
+        "1": {
+          "title": "ролети",
+          "slug": "roller-blinds"
+        },
+        "2": {
+          "title": "ролети",
+          "slug": "roller-blinds"
+        }
+      }
+    },
+    "manufactured": {
+      "title": "виробництво",
+      "href": "/manufactured",
+      "links": {
+        "1": {
+          "title": "про нас",
+          "slug": "manufactured-about-us"
+        },
+        "2": {
+          "title": "завантаження",
+          "slug": "manufactured-download"
+        }
+      }
+    }
+  },
   "Buttons": {
     "see": "Переглянути все"
   },
