@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
@@ -16,17 +16,7 @@ import Navigation from "./Navigation";
 
 // const BurgerMenu = dynamic(() => import("../BurgerMenu"), { ssr: false });
 // const HeaderLinks = dynamic(() => import("../HeaderLinks"), { ssr: false });
-// interface IProps {
-//   home: string;
-//   contact: string;
-//   windows: string;
-//   doors: string;
-//   sliding_doors: string;
-//   roller_shutter: string;
-//   manufactured: string;
-// }
 
-// const Header: React.FC<{ t: IProps }> = () => {
 const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
   const [opacityTop, setOpacityTop] = useState(1);
@@ -73,30 +63,22 @@ const Header = () => {
         style={{
           height: `${heightHeader}px`,
         }}
-        className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 flex flex-col justify-center bg-transparent"
+        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 lg:flex flex-col justify-center"
       >
-        <div className="container mx-auto">
-          <div
-            style={{
-              opacity: opacityTop,
-              height: `${heightTop}px`,
-            }}
-            className="flex items-center justify-between w-full h-30"
-          >
-            <Link
-              href="/"
-              className="flex items-center justify-center w-34 h-20"
-            >
-              <Image
-                priority
-                src={Logo}
-                alt="Envent Logo"
-                width={173}
-                height={100}
-              />
-            </Link>
-          </div>
-          <div className="flex justify-between w-full h-18 bg-white rounded-md shadow-lg">
+        <div
+          style={{
+            opacity: opacityTop,
+            height: `${heightTop}px`,
+          }}
+          className="flex items-center justify-between w-full h-30"
+        >
+          <Link href="/" className="flex items-center justify-center w-34 h-20">
+            <Logo className=" w-28 h-16" />
+            {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
+          </Link>
+        </div>
+        <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
+          <div className="container mx-auto">
             <Navigation />
             {/* <SocialList className="header" ariaLabel={ariaLabel} /> */}
           </div>

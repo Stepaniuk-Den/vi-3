@@ -19,12 +19,83 @@
     "title": "Щось пішло не так!"
   },
   "Navigation": {
-    "home": "home",
-    "contact": "contact",
-    "windows": "windows",
-    "doors": "doors",
-    "sliding_doors": "sliding doors",
-    "roller_shutter": "roller shutter",
-    "manufactured": "manufactured"
+    "home": {
+      "title": "home",
+      "href": "/"
+    },
+    "contact": {
+      "title": "contact",
+      "href": "/contact"
+    },
+    "windows": {
+      "title": "windows",
+      "href": "/windows",
+      "links": {
+        "1": {
+          "title": "windows pvc",
+          "slug": "windows-pvc"
+        },
+        "2": {
+          "title": "windows aluminium",
+          "slug": "windows-aluminium"
+        }
+      }
+    },
+    "doors": {
+      "title": "doors",
+      "href": "/doors",
+      "links": {
+        "1": {
+          "title": "doors pvc",
+          "slug": "doors-pvc"
+        },
+        "2": {
+          "title": "doors aluminium",
+          "slug": "doors-aluminium"
+        }
+      }
+    },
+    "sliding-doors": {
+      "title": "sliding doors",
+      "href": "/sliding-doors",
+      "links": {
+        "1": {
+          "title": "sliding doors pvc",
+          "slug": "sliding-doors-pvc"
+        },
+        "2": {
+          "title": "sliding doors aluminium",
+          "slug": "sliding-doors-aluminium"
+        }
+      }
+    },
+    "roller-blinds": {
+      "title": "roller blinds",
+      "href": "/roller-blinds",
+      "links": {
+        "1": {
+          "title": "roller blinds",
+          "slug": "roller-blinds"
+        },
+        "2": {
+          "title": "roller blinds",
+          "slug": "roller-blinds"
+        }
+      }
+    },
+    "manufactured": {
+      "title": "manufactured",
+      "href": "/manufactured",
+      "links": {
+        "1": {
+          "title": "about us",
+          "slug": "manufactured-about-us"
+        },
+        "2": {
+          "title": "download",
+          "slug": "manufactured-download"
+        }
+      }
+    }
   }
 }
