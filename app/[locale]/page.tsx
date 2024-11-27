@@ -73,6 +73,7 @@ import { setRequestLocale } from "next-intl/server";
 import PageLayout from "../components/PageLayout";
 import WindowsSection from "../components/WindowsSection";
 import { useTranslations } from "next-intl";
+import Hero from "../components/Hero";
 
 type Props = {
   params: { locale: string };
@@ -88,6 +89,7 @@ export default function IndexPage({ params: { locale } }: Props) {
   return (
     <PageLayout title={t("title")}>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
+      <Hero/>
       <WindowsSection t={tWindows} />
     </PageLayout>
   );

@@ -121,5 +121,29 @@
         "alt": "Large private house with panoramic black windows"
       }
     }
+  },
+  "Hero": {
+    "slides": [
+      {
+        "title": "Windows for the home",
+        "description": "Your home deserves better. Windows that fill your home with light"
+      },
+      {
+        "title": "Safety and durability",
+        "description": "Your home is under reliable protection. Windows you can trust."
+      },
+      {
+        "title": "Individual design",
+        "description": "Every window is art. Design that emphasizes style"
+      },
+      {
+        "title": "Energy saving",
+        "description": "Warm in winter, cool in summer. Savings start with windows."
+      },
+      {
+        "title": "Panoramic windows",
+        "description": "Expanding your world. Windows that open horizons."
+      }
+    ]
   }
 }
