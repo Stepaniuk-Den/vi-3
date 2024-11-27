@@ -50,7 +50,7 @@ const Header = () => {
     return (
       <>
         {/* {isPageLoaded && ( */}
-        <p>BURGER</p>
+        {/* <p>BURGER</p> */}
         {/* // <BurgerMenu navlink={t.navlink} t={t2} ariaLabel={ariaLabel} /> */}
         {/* )} */}
       </>
