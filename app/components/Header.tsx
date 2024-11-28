@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Logo from "@/public/window.svg";
 import Navigation from "./Navigation";
+import LocaleSwitcher from "./LocaleSwitcher";
 // import { Link, usePathname } from "@/navigation";
 
 // import dynamic from "next/dynamic";
@@ -66,6 +67,7 @@ const Header = () => {
             <Logo className=" w-28 h-16" />
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
+          <LocaleSwitcher />
         </div>
         <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
           <div className="container mx-auto">
