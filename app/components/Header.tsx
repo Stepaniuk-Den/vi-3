@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 import Logo from "@/public/window.svg";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 // import { Link, usePathname } from "@/navigation";
 
 // import { useAfterLoad } from "@/helpers/useAfterLoad";
