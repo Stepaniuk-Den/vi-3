@@ -10,7 +10,12 @@ interface Slide {
 }
 const ImageCarousel: React.FC = () => {
   const t = useTranslations("Hero");
-  const slides: Slide[] = t.raw("slides") as Slide[];
+//   const slides: Slide[] = t.raw("slides") as Slide[];
+// const slides:Slide[] = t.raw('Hero.slides');
+const slidesList = t.raw("slides");
+const slides: Slide[] = Object.values(slidesList);
+// console.log(slides);
+// const slidesArray = Object.values(slides);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);

@@ -79,7 +79,7 @@ const Header = () => {
         </div>
         <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
           <div className="container mx-auto">
-            <Navigation />
+            {/* <Navigation /> */}
             {/* <SocialList className="header" ariaLabel={ariaLabel} /> */}
           </div>
         </div>
