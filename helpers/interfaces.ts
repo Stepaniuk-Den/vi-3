@@ -14,4 +14,5 @@ export interface IItemCard {
   description?: string;
   src?: string | StaticImageData;
   alt?: string;
+  className?: string;
 }

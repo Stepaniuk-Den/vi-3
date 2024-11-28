@@ -6,10 +6,7 @@
   "Manifest": {
     "name": "Приклад"
   },
-  "IndexPage": {
-    "title": "ПРИВІТ",
-    "description": "Це новий сайт 🤓"
-  },
+  "IndexPage": {},
   "NotFoundPage": {
     "title": "Сторінка не знайдена",
     "description": "Будь ласка, ще раз перевірте адресний рядок браузера або скористайтеся навігацією, щоб перейти на відому сторінку."
@@ -103,22 +100,74 @@
   },
   "Windows": {
     "title": "Windows in Ukraine",
-    "typesList": {
+    "windowsTypesList": {
       "1": {
         "id": "1",
-        "windowsSlug": "pcv-windows",
+        "windowsSlug": "windows-pcv",
         "title": "PVC windows",
         "description": "Our offer includes energy-efficient PVC windows which meet the highest standards on the European market. We manufacture PVC windows based on high-performance profiles from Schüco and Kömmerling.",
-        "src": "/images/windows/pcv-windows.jpeg",
+        "src": "/images/windows/windows-pcv.jpeg",
         "alt": "Private house with large white windows"
       },
       "2": {
         "id": "2",
-        "windowsSlug": "aluminium-windows",
+        "windowsSlug": "windows-aluminium",
         "title": "Aluminium windows",
         "description": "We are a Polish manufacturer of aluminium windows. Made with solid and heat-insulating profiles from Aliplast and Aluron, our aluminium windows represent the highest quality in their category.",
-        "src": "/images/windows/aluminium-windows.jpeg",
+        "src": "/images/windows/windows-aluminium.jpeg",
         "alt": "Large private house with panoramic black windows"
+      }
+    }
+  },
+  "Doors": {
+    "title": "FRONT AND TERRACE DOORS – directly from a Polish manufacturer",
+    "description": "All doors produced by TUR-PLAST feature solid construction, great thermal performance, and innovative solutions. We make PVC front and terrace doors based on solid profiles: Schüco CT70, Schüco LivIng82, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron.",
+    "doorsTypesList": {
+      "1": {
+        "id": "1",
+        "doorsSlug": "doors-terrace",
+        "title": "Hs/psk terrace doors",
+        "description": "Low-threshold sliding terrace doors directly from the manufacturer are a perfect solution for modern and spacious interiors. They have a lot of glazing, making them able to optimally light up the room. The excellent thermal insulation and the new fittings technology make TUR-PLAST’s products bring you comfort and joy of use. Our offer includes two system solutions: HS and PSK.",
+        "src": "/images/doors/doors-terrace.jpeg",
+        "alt": "Large panoramic glass doors in the house"
+      },
+      "2": {
+        "id": "2",
+        "doorsSlug": "doors-front",
+        "title": "Pvc/aluminium front doors",
+        "description": "The manufacture of doors with PVC or aluminium profiles occupies a separate section at TUR-PLAST. Our Salesmen will help you select the door panel colour, shape and look as well as the type of fittings and glazing.",
+        "src": "/images/doors/doors-front.jpeg",
+        "alt": "Black entrance door with silver hardware"
+      }
+    }
+  },
+  "RollerShutters": {
+    "title": "External blinds",
+    "description": "External blinds: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
+    "rollerShuttersTypesList": {
+      "1": {
+        "id": "1",
+        "doorsSlug": "roller-shutters-top-mounted",
+        "title": "Top-mounted roller shutters",
+        "description": "We offer you a new versatile system of top-mounted roller shutters for installation on both sides, used in newly-built and renovated houses. Our EXTE roller shutter system provides excellent thermal insulation, complying with the regulations applicable on the European market.",
+        "src": "/images/rollerShutters/top-mounted.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "doorsSlug": "roller-shutters-adaptive",
+        "title": "Adaptive roller shutters",
+        "description": "Concealed adaptive roller shutters with two modes of installation and OVAL surface-mounted adaptive roller shutters are some of our well proven products. Characterstic features of these systems include the aluminium guidebars, shutter curtain, and shutter box with a revision located outside the building.",
+        "src": "/images/rollerShutters/adaptive.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "doorsSlug": "roller-shutters-sun-protection",
+        "title": "Sun protection covers",
+        "description": "We recommend the solid and aesthetic screen-type roller shutter systems for protecting rooms with a lot of glazing from excessive insolation. In an extended position, the screens can also be a perfect barrier against insects and various types of pollution.",
+        "src": "/images/rollerShutters/sun-protection.jpeg",
+        "alt": ""
       }
     }
   },
@@ -128,22 +177,22 @@
         "title": "Windows for the home",
         "description": "Your home deserves better. Windows that fill your home with light"
       },
-      "2":{
+      "2": {
         "title": "Safety and durability",
         "description": "Your home is under reliable protection. Windows you can trust."
       },
-      "3":{
+      "3": {
         "title": "Individual design",
         "description": "Every window is art. Design that emphasizes style"
       },
-      "4":{
+      "4": {
         "title": "Energy saving",
         "description": "Warm in winter, cool in summer. Savings start with windows."
       },
-      "5":{
+      "5": {
         "title": "Panoramic windows",
         "description": "Expanding your world. Windows that open horizons."
       }
+    }
   }
-}
 }

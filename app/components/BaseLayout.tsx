@@ -21,7 +21,7 @@ export default async function BaseLayout({ children, locale }: Props) {
         className={clsx(
           poppins.variable,
           open_sans.variable,
-          "h-full xl:text-base text-s font-open_sans text-neutral-950"
+          "h-full xl:text-base text-s leading-5 font - open_sans text - neutral - 950"
         )}
       >
         <NextIntlClientProvider messages={messages}>
