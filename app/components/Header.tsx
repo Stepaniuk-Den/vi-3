@@ -7,14 +7,11 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 import Logo from "@/public/window.svg";
-// import Navigation from "./Navigation";
+import Navigation from "./Navigation";
 // import { Link, usePathname } from "@/navigation";
-
-// import { useAfterLoad } from "@/helpers/useAfterLoad";
 
 // import dynamic from "next/dynamic";
 
-// const BurgerMenu = dynamic(() => import("../BurgerMenu"), { ssr: false });
 // const HeaderLinks = dynamic(() => import("../HeaderLinks"), { ssr: false });
 
 const Header = () => {
@@ -23,7 +20,7 @@ const Header = () => {
   const [heightTop, setHeightTop] = useState(120);
 
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
-  // const isPageLoaded = useAfterLoad();
+
   const pathname = usePathname();
   const is404 = pathname === "/404";
 
@@ -47,14 +44,7 @@ const Header = () => {
   }
 
   if (isTabletOrMobile) {
-    return (
-      <>
-        {/* {isPageLoaded && ( */}
-        {/* <p>BURGER</p> */}
-        {/* // <BurgerMenu navlink={t.navlink} t={t2} ariaLabel={ariaLabel} /> */}
-        {/* )} */}
-      </>
-    );
+    return <>{/* <p>BURGER</p> */}</>;
   }
 
   return (
@@ -79,8 +69,7 @@ const Header = () => {
         </div>
         <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
           <div className="container mx-auto">
-            {/* <Navigation /> */}
-            {/* <SocialList className="header" ariaLabel={ariaLabel} /> */}
+            <Navigation />
           </div>
         </div>
       </header>
