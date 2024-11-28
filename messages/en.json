@@ -123,27 +123,27 @@
     }
   },
   "Hero": {
-    "slides": [
-      {
+    "slides": {
+      "1": {
         "title": "Windows for the home",
         "description": "Your home deserves better. Windows that fill your home with light"
       },
-      {
+      "2":{
         "title": "Safety and durability",
         "description": "Your home is under reliable protection. Windows you can trust."
       },
-      {
+      "3":{
         "title": "Individual design",
         "description": "Every window is art. Design that emphasizes style"
       },
-      {
+      "4":{
         "title": "Energy saving",
         "description": "Warm in winter, cool in summer. Savings start with windows."
       },
-      {
+      "5":{
         "title": "Panoramic windows",
         "description": "Expanding your world. Windows that open horizons."
       }
-    ]
   }
+}
 }
