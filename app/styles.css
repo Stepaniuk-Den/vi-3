@@ -16,6 +16,11 @@ button {
   scrollbar-width: none; /* Firefox */
 }
 
+.carousel-container {
+  height: calc(100vh - 170px);
+  margin-top: 170px;
+}
+
 @layer base {
   /* body {
     margin: 0;

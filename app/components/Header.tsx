@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 import Logo from "@/public/window.svg";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 // import { Link, usePathname } from "@/navigation";
 
 // import { useAfterLoad } from "@/helpers/useAfterLoad";
@@ -50,7 +50,7 @@ const Header = () => {
     return (
       <>
         {/* {isPageLoaded && ( */}
-        <p>BURGER</p>
+        {/* <p>BURGER</p> */}
         {/* // <BurgerMenu navlink={t.navlink} t={t2} ariaLabel={ariaLabel} /> */}
         {/* )} */}
       </>
@@ -79,7 +79,7 @@ const Header = () => {
         </div>
         <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
           <div className="container mx-auto">
-            <Navigation />
+            {/* <Navigation /> */}
             {/* <SocialList className="header" ariaLabel={ariaLabel} /> */}
           </div>
         </div>
