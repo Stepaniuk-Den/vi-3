@@ -1,6 +1,7 @@
 import { IItemCard } from "@/helpers/interfaces";
 import Image from "next/image";
 import LinkToPage from "./Buttons/LinkToPage";
+import clsx from "clsx";
 
 // type Props = {
 //   t: IItemCard;
@@ -11,14 +12,18 @@ const ItemCard: React.FC<IItemCard> = ({
   description,
   src,
   alt,
+  className,
   //   ...rest
 }) => {
   return (
-    <div className="flex flex-col gap-3 max-w-xl w-full">
-      <h2 className="font-poppins text-2xl font-semibold leading-7 uppercase">
-        {title}
-      </h2>
-      <div className="relative max-w-xl w-full h-80  mb-5 border border-gray-300 rounded-md overflow-hidden">
+    <div className={clsx("flex flex-col max-w-xl w-full py-3", className)}>
+      <h3 className="subTitleCl p-2">{title}</h3>
+      <div
+        className={clsx(
+          "relative max-w-xl w-full h-80 mb-6 border border-gray-300 rounded-md overflow-hidden",
+          className
+        )}
+      >
         <Image
           //   className={clsx("imageFadeCl", isFading ? "imageHiddenCl" : "")}
           sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
@@ -30,7 +35,7 @@ const ItemCard: React.FC<IItemCard> = ({
         />
       </div>
 
-      <div className="flex flex-col justify-between h-[170px]">
+      <div className="flex flex-col justify-between h-52">
         <p className="">{description}</p>
         <LinkToPage href="#" className="self-end">
           Переглянути все

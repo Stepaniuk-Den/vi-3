@@ -12,16 +12,17 @@ const WindowsSection: React.FC<Props> = ({ t }) => {
   //   setRequestLocale(locale);
   //   const typesList = t("types") as Record<string, IItemCard>;
 
-  const typesList = Object.values(t.raw("typesList")) as IItemCard[];
-  // console.log("🚀 ~ typesList:", typesList);
+  const windowsTypesList = Object.values(
+    t.raw("windowsTypesList")
+  ) as IItemCard[];
 
   return (
-    <section>
+    <section className="sectionCl">
       <div className="xl:container ">
         <h2 className="sr-only">{t("title")}</h2>
         <ul className="flex justify-between">
-          {typesList.map((typeItem) => (
-            <li key={typeItem.id} className="">
+          {windowsTypesList.map((typeItem) => (
+            <li key={typeItem.id}>
               <ItemCard
                 title={typeItem.title}
                 description={typeItem.description}
