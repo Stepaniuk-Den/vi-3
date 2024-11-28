@@ -7,9 +7,10 @@ import { Locale, usePathname, useRouter } from "@/i18n/routing";
 
 import { useClickOutside } from "@/helpers/useClickOutside";
 
-const SideBarLangSwitcher: React.FC<{ ariaLabel?: string }> = ({
-  ariaLabel,
-}) => {
+// const SideBarLangSwitcher: React.FC<{ ariaLabel?: string }> = ({
+//   ariaLabel,
+// }) => {
+const SideBarLangSwitcher = () => {
   const languages = [
     {
       lang: "en",
