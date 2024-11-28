@@ -3,6 +3,10 @@
     "title": "VI-3",
     "description": "Windows PVC in Ukraine"
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, uk { UK} en { EN} other {Unknown}}"
+  },
   "Manifest": {
     "name": "Приклад"
   },
