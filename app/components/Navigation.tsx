@@ -60,9 +60,10 @@ const Navigation = () => {
             <Link
               href={item.href}
               className={clsx(
-                "flex items-center justify-center w-full h-full py-3 px-5 rounded-md text-white  border border-transparent transition-all hover:border-white",
+                "flex items-center justify-center w-full h-full py-3 px-5 rounded-md border border-transparent transition-all hover:border-white",
                 {
-                  "text-inherit bg-white": isActive,
+                  "text-customMarsala bg-white": isActive,
+                  "text-white": !isActive,
                 }
               )}
             >
