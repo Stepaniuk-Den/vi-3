@@ -73,6 +73,8 @@ import { setRequestLocale } from "next-intl/server";
 import PageLayout from "../components/PageLayout";
 import WindowsSection from "../components/WindowsSection";
 import { useTranslations } from "next-intl";
+import DoorsSection from "../components/DoorsSection";
+import RollerShuttersSection from "../components/RollerShuttersSection";
 import Hero from "../components/Hero";
 
 type Props = {
@@ -83,14 +85,18 @@ export default function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations("IndexPage");
+  // const t = useTranslations("IndexPage");
   const tWindows = useTranslations("Windows");
+  const tDoors = useTranslations("Doors");
+  const tRollerShutters = useTranslations("RollerShutters");
 
   return (
-    <PageLayout title={t("title")}>
+    <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
-      <Hero/>
+      <Hero />
       <WindowsSection t={tWindows} />
+      <DoorsSection t={tDoors} />
+      <RollerShuttersSection t={tRollerShutters} />
     </PageLayout>
   );
 }
