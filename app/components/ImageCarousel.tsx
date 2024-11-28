@@ -8,54 +8,52 @@ interface Slide {
   title: string;
   description: string;
 }
+
 const ImageCarousel: React.FC = () => {
   const t = useTranslations("Hero");
-//   const slides: Slide[] = t.raw("slides") as Slide[];
-// const slides:Slide[] = t.raw('Hero.slides');
-const slidesList = t.raw("slides");
-const slides: Slide[] = Object.values(slidesList);
-// console.log(slides);
-// const slidesArray = Object.values(slides);
+  const slidesList = t.raw("slides");
+  const slides: Slide[] = Object.values(slidesList);
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [visibleSlide, setVisibleSlide] = useState<number | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
+  
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setVisibleSlide(currentSlide); 
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, [currentSlide]);
+
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [currentSlide]);
 
   const nextSlide = () => {
     setIsTransitioning(true);
-    if (currentSlide === images.length - 1) {
+
+    if (currentSlide === slides.length - 1) {
       setTimeout(() => {
         setIsTransitioning(false);
         setCurrentSlide(0);
+        setVisibleSlide(null); 
       }, 300);
     } else {
       setCurrentSlide((prev) => prev + 1);
     }
   };
 
-  const prevSlide = () => {
-    setIsTransitioning(true);
-    if (currentSlide === 0) {
-      // Якщо це перший слайд
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentSlide(images.length - 1);
-      }, 300);
-    } else {
-      setCurrentSlide((prev) => prev - 1);
-    }
-  };
-
   const goToSlide = (index: number) => {
-    setCurrentSlide(index);
     setIsTransitioning(true);
+    setCurrentSlide(index);
+    setVisibleSlide(null);
   };
 
   return (
@@ -78,16 +76,20 @@ const slides: Slide[] = Object.values(slidesList);
                 className="pointer-events-none object-cover"
                 sizes="100vw"
               />
-              <div className="absolute top-20 left-0 bg-black/50 text-white p-8 rounded">
+              <div
+                className={`absolute top-20 left-0 bg-black/50 text-white p-8 rounded transition-opacity duration-500 ${
+                  visibleSlide === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h1 className="mainTitleCl mb-4">{slide.title}</h1>
-                <p className="text-sm">{slide.description}</p>
+                <p className="text-lg font-open_sans">{slide.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="absolute bottom-4  left-1/2 flex -translate-x-1/2 gap-[10px]">
+      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-[10px]">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -98,16 +100,17 @@ const slides: Slide[] = Object.values(slidesList);
           />
         ))}
       </div>
-
       <button
-        onClick={prevSlide}
-        className="absolute top-2/3 left-4 transform -translate-y-1/2  text-white p-2 rounded hover:bg-black/70"
+        onClick={() =>
+          setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
+        }
+        className="absolute top-2/3 left-4 transform -translate-y-1/2 text-white p-2 rounded hover:bg-black/70"
       >
         ❮
       </button>
       <button
-        onClick={nextSlide}
-        className="absolute top-2/3 right-4 transform -translate-y-1/2  text-white p-2 rounded hover:bg-black/70"
+        onClick={() => nextSlide()}
+        className="absolute top-2/3 right-4 transform -translate-y-1/2 text-white p-2 rounded hover:bg-black/70"
       >
         ❯
       </button>
@@ -116,3 +119,6 @@ const slides: Slide[] = Object.values(slidesList);
 };
 
 export default ImageCarousel;
+
+
+
