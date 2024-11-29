@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-button {
-  padding: 0;
-  font: inherit;
-  border: none;
-  cursor: pointer;
-}
-
 .scroll-containerCl::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
@@ -22,18 +15,9 @@ button {
 }
 
 @layer base {
-  /* body {
-    margin: 0;
-    font-size: 14px;
-    color: rgb(41 37 36);
-  } */
 }
 
 @layer components {
-  /* .section {
-    @apply flex items-center justify-center;
-  } */
-
   .sectionCl {
     @apply xl:py-11 py-9;
   }
@@ -54,33 +38,13 @@ button {
     @apply flex items-center justify-center px-3 py-2 text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
   }
 
-  /* ===================================================== */
-  /* From the previous project */
-
-  .mainDescriptionCl {
-    @apply mb-5 font-roboto text-sm sm:text-base lg:text-5xl leading-7 text-white;
+  .langBtnCl {
+    @apply transition-all duration-300 px-4 py-2 w-20 h-14 flex items-center justify-between border border-customMarsala rounded-md hover:bg-customMarsala-accent hover:text-white;
   }
-  .descriptionCl {
-    @apply mb-5 xl:text-[18px] tracking-wide text-stone-800 leading-10;
-  }
-  /* ===================================================== */
 }
 
 @layer utilities {
 }
-
-/* .hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
 
 /* .overlay {
   position: fixed;

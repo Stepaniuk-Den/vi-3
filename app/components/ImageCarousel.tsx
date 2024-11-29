@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { images } from "@/data/slidesHero";
+import clsx from "clsx";
 
 interface Slide {
   title: string;
@@ -18,16 +19,14 @@ const ImageCarousel: React.FC = () => {
   const [visibleSlide, setVisibleSlide] = useState<number | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
-  
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setVisibleSlide(currentSlide); 
+      setVisibleSlide(currentSlide);
     }, 2000);
 
     return () => clearTimeout(timeout);
   }, [currentSlide]);
 
- 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -43,7 +42,7 @@ const ImageCarousel: React.FC = () => {
       setTimeout(() => {
         setIsTransitioning(false);
         setCurrentSlide(0);
-        setVisibleSlide(null); 
+        setVisibleSlide(null);
       }, 300);
     } else {
       setCurrentSlide((prev) => prev + 1);
@@ -76,10 +75,18 @@ const ImageCarousel: React.FC = () => {
                 className="pointer-events-none object-cover"
                 sizes="100vw"
               />
+
               <div
-                className={`absolute top-20 left-0 bg-black/50 text-white p-8 rounded transition-opacity duration-500 ${
-                  visibleSlide === index ? "opacity-100" : "opacity-0"
-                }`}
+                className={clsx(
+                  "absolute top-20 left-0 bg-black/50 text-white p-8 rounded-md transition-opacity duration-500 ",
+                  {
+                    "opacity-100": visibleSlide === index,
+                    "opacity-0": visibleSlide !== index,
+                  }
+                )}
+                // className={`absolute top-20 left-0 bg-black/50 text-white p-8 rounded-md transition-opacity duration-500 ${
+                //   visibleSlide === index ? "opacity-100" : "opacity-0"
+                // }`}
               >
                 <h1 className="mainTitleCl mb-4">{slide.title}</h1>
                 <p className="text-lg font-open_sans">{slide.description}</p>
@@ -119,6 +126,3 @@ const ImageCarousel: React.FC = () => {
 };
 
 export default ImageCarousel;
-
-
-
