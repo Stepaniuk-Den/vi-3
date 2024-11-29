@@ -16,17 +16,16 @@ const RollerShuttersSection: React.FC<Props> = ({ t }) => {
     <section className="sectionCl">
       <div className="xl:container ">
         <h2 className="titleCl">{t("title")}</h2>
-        <p className="mb-6">{t("description")}</p>
-        <ul className="flex justify-between gap-5">
+        <p className="mb-8">{t("description")}</p>
+        <ul className="flex justify-between gap-4">
           {doorsTypesList.map((typeItem) => (
-            <li key={typeItem.id}>
-              <ItemCard
-                title={typeItem.title}
-                description={typeItem.description}
-                src={typeItem.src}
-                alt={typeItem.alt}
-              />
-            </li>
+            <ItemCard
+              key={typeItem.id}
+              title={typeItem.title}
+              description={typeItem.description}
+              src={typeItem.src}
+              alt={typeItem.alt}
+            />
           ))}
         </ul>
       </div>

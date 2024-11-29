@@ -16,16 +16,18 @@ const ItemCard: React.FC<IItemCard> = ({
   //   ...rest
 }) => {
   return (
-    <div className={clsx("flex flex-col max-w-xl w-full py-3", className)}>
-      <h3 className="subTitleCl p-2">{title}</h3>
+    <li className={clsx("flex flex-col w-full py-3", className)}>
+      {/* max-w-xl */}
+      <div className="flex-grow">
+        <h3 className="subTitleCl mb-2">{title}</h3>
+        {/* min-h-[64px] */}
+      </div>
       <div
         className={clsx(
-          "relative max-w-xl w-full h-80 mb-6 border border-gray-300 rounded-md overflow-hidden",
-          className
+          "relative w-full h-[360px] mb-6 border border-gray-300 rounded-md overflow-hidden"
         )}
       >
         <Image
-          //   className={clsx("imageFadeCl", isFading ? "imageHiddenCl" : "")}
           sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
           src={src || ""}
           alt={alt || ""}
@@ -34,14 +36,13 @@ const ItemCard: React.FC<IItemCard> = ({
           // placeholder="blur"
         />
       </div>
-
       <div className="flex flex-col justify-between h-52">
         <p className="">{description}</p>
         <LinkToPage href="#" className="self-end">
           Переглянути все
         </LinkToPage>
       </div>
-    </div>
+    </li>
   );
 };
 

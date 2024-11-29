@@ -35,7 +35,7 @@
   }
 
   .LinkToPageCl {
-    @apply flex items-center justify-center px-3 py-2 text-white bg-red-950 rounded-md transition-all hover:bg-red-900 hover:scale-110;
+    @apply flex items-center justify-center px-3 py-2 text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
   }
 
   .langBtnCl {

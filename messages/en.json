@@ -175,6 +175,20 @@
       }
     }
   },
+  "GuideElement": {
+    "subtitle": "WINDOWS – DOORS – ROLLER SHUTTERS",
+    "title": "GUIDE",
+    "description": "Are you unsure as to what windows, doors, or roller shutters to choose for your house or apartment? Are you looking for the latest solutions in window and door joinery? Do you need to learn some professional window-related terms? – please feel free to visit our website: GUIDE TO WINDOWS-DOORS-ROLLER SHUTTERS.",
+    "src": "/images/guide/guide.jpeg",
+    "alt": ""
+  },
+  "ProjectsElement": {
+    "subtitle": "OUR PROJECTS – WINDOWS – DOORS",
+    "title": "measurement – price valuation – manufacture – installation – servicing",
+    "description": "Please feel free to view the examples of projects executed by the company TUR-PLAST, a manufacturer of energy-efficient PVC and aluminium windows and doors based in Poland.",
+    "src": "/images/projects/projects-element.jpeg",
+    "alt": ""
+  },
   "Hero": {
     "slides": {
       "1": {
