@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import LinkToPage from "./Buttons/LinkToPage";
 import { IGuideProjectElement } from "@/helpers/interfaces";
+import Line from "./Line";
 
 const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   subtitle,
@@ -10,6 +11,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   src,
   alt,
   className,
+  sectionId,
   //   ...rest
 }) => {
   return (
@@ -32,8 +34,18 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
         />
       </div>
       <div className="flex flex-col justify-center items-center max-w-80 w-full">
-        <h2 className="subTitleCl mb-8 text-center">{subtitle}</h2>
-        <h3 className="titleCl mb-8">{title}</h3>
+        <h2 className="subTitleCl text-center">{subtitle}</h2>
+        {/* mb-8 */}
+        <Line
+          className="marsala-center"
+          color={sectionId === "guide" ? "blue" : "marsala"}
+        />
+        <h3 className="titleCl">{title}</h3>
+        {/* mb-8 */}
+        <Line
+          className="marsala-center"
+          color={sectionId === "guide" ? "blue" : "marsala"}
+        />
         <p className="mb-20 text-center xl:leading-7">{description}</p>
         <LinkToPage href="#" className="self-center">
           Переглянути все

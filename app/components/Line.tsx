@@ -1,17 +1,23 @@
 interface ILineProps {
   className: "marsala-left" | "marsala-center";
+  color: "marsala" | "blue";
 }
 
-const Line: React.FC<ILineProps> = ({ className }) => {
+const Line: React.FC<ILineProps> = ({ className, color }) => {
+  const colorVariants = {
+    marsala: "bg-customMarsala-accentLight",
+    blue: "bg-customElement",
+  };
+
   return (
     <span
-      className={`flex w-[100px] h-[4px] my-[20px] bg-customMarsala-accentLight rounded-md ${
+      className={`flex w-[100px] h-[4px] my-[20px] rounded-md ${
         className === "marsala-left"
           ? "mr-auto md:ml-auto"
           : className === "marsala-center"
           ? "mx-auto"
           : ""
-      }`}
+      } ${colorVariants[color]} `}
     ></span>
   );
 };
