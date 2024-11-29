@@ -20,16 +20,15 @@ const WindowsSection: React.FC<Props> = ({ t }) => {
     <section className="sectionCl">
       <div className="xl:container ">
         <h2 className="sr-only">{t("title")}</h2>
-        <ul className="flex justify-between">
+        <ul className="flex justify-between gap-20">
           {windowsTypesList.map((typeItem) => (
-            <li key={typeItem.id}>
-              <ItemCard
-                title={typeItem.title}
-                description={typeItem.description}
-                src={typeItem.src}
-                alt={typeItem.alt}
-              />
-            </li>
+            <ItemCard
+              key={typeItem.id}
+              title={typeItem.title}
+              description={typeItem.description}
+              src={typeItem.src}
+              alt={typeItem.alt}
+            />
           ))}
         </ul>
       </div>
