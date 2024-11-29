@@ -45,6 +45,10 @@ export default {
           DEFAULT: "rgb(44,89,130)",
         },
       },
+      boxShadow: {
+        customShadow:
+          "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
+      },
     },
   },
   plugins: [],
