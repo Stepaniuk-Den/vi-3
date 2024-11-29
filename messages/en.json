@@ -3,6 +3,10 @@
     "title": "VI-3",
     "description": "Windows PVC in Ukraine"
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, uk { UK} en { EN} other {Unknown}}"
+  },
   "Manifest": {
     "name": "Приклад"
   },
@@ -208,5 +212,18 @@
         "description": "Expanding your world. Windows that open horizons."
       }
     }
+  },
+  "ManufacturerInfo":{
+    "title": "Windows and Doors – Straight from the VI-3",
+    "description":"VI-3, a trusted manufacturer, delivers CERTIFIED WINDOWS that meet the highest, independently verified standards.",
+    "subdescr":"Our range includes:",
+    "list": {
+      "1": {
+        "description": "uPVC and aluminum windows and doors"
+    },
+    "2": {
+        "description": "A variety of external blinds"
+    }
   }
+}
 }

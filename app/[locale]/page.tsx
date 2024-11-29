@@ -78,6 +78,7 @@ import RollerShuttersSection from "../components/RollerShuttersSection";
 import Hero from "../components/Hero";
 import GuideSection from "../components/GuideSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ManufacturerInfo from "../components/ManufacturerInfo";
 
 type Props = {
   params: { locale: string };
@@ -98,6 +99,7 @@ export default function IndexPage({ params: { locale } }: Props) {
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
       <Hero />
+      <ManufacturerInfo />
       <WindowsSection t={tWindows} />
       <DoorsSection t={tDoors} />
       <RollerShuttersSection t={tRollerShutters} />

@@ -39,7 +39,7 @@ button {
   }
 
   .mainTitleCl {
-    @apply xl:text-5xl font-semibold font-poppins leading-tight;
+    @apply xl:text-5xl font-semibold font-poppins leading-tight tracking-wider;
   }
 
   .titleCl {
