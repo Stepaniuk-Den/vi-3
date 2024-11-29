@@ -16,3 +16,12 @@ export interface IItemCard {
   alt?: string;
   className?: string;
 }
+
+export interface IGuideProjectElement {
+  subtitle: string;
+  title: string;
+  description: string;
+  src: string;
+  alt: string;
+  className?: string;
+}

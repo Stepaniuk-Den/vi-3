@@ -41,8 +41,16 @@ export default {
           accent: "rgb(109, 58, 62)",
           accentLight: "rgb(130, 86, 90)",
         },
+        customElement: {
+          DEFAULT: "rgb(44,89,130)",
+        },
       },
     },
   },
   plugins: [],
 } satisfies Config;
+
+// 44, 15, 145
+// 0, 0, 79
+// 44,89,130
+// 22,119,178

@@ -76,6 +76,8 @@ import { useTranslations } from "next-intl";
 import DoorsSection from "../components/DoorsSection";
 import RollerShuttersSection from "../components/RollerShuttersSection";
 import Hero from "../components/Hero";
+import GuideSection from "../components/GuideSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 type Props = {
   params: { locale: string };
@@ -89,6 +91,8 @@ export default function IndexPage({ params: { locale } }: Props) {
   const tWindows = useTranslations("Windows");
   const tDoors = useTranslations("Doors");
   const tRollerShutters = useTranslations("RollerShutters");
+  const tGuideElement = useTranslations("GuideElement");
+  const tProjectsElement = useTranslations("ProjectsElement");
 
   return (
     <PageLayout>
@@ -97,6 +101,8 @@ export default function IndexPage({ params: { locale } }: Props) {
       <WindowsSection t={tWindows} />
       <DoorsSection t={tDoors} />
       <RollerShuttersSection t={tRollerShutters} />
+      <ProjectsSection t={tProjectsElement} />
+      <GuideSection t={tGuideElement} />
     </PageLayout>
   );
 }
