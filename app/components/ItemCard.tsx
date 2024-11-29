@@ -14,6 +14,7 @@ const ItemCard: React.FC<IItemCard> = ({
   src,
   alt,
   className,
+  btnOffset,
   //   ...rest
 }) => {
   return (
@@ -45,7 +46,7 @@ const ItemCard: React.FC<IItemCard> = ({
         </div>
         <div className="flex flex-col justify-between h-52 px-3 pb-3">
           <p className="">{description}</p>
-          <LinkToPage href="#" className="self-end">
+          <LinkToPage href="#" className="self-end" btnOffset={btnOffset}>
             Переглянути все
           </LinkToPage>
         </div>
