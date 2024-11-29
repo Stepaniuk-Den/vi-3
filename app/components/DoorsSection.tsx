@@ -1,6 +1,5 @@
 import { IItemCard } from "@/helpers/interfaces";
 import ItemCard from "./ItemCard";
-import Line from "./Line";
 
 type Props = {
   t: {
