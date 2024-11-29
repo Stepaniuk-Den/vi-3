@@ -79,6 +79,7 @@ import Hero from "../components/Hero";
 import GuideSection from "../components/GuideSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ManufacturerInfo from "../components/ManufacturerInfo";
+import WindowFeatures from "../components/WindowFeatures";
 
 type Props = {
   params: { locale: string };
@@ -94,6 +95,8 @@ export default function IndexPage({ params: { locale } }: Props) {
   const tRollerShutters = useTranslations("RollerShutters");
   const tGuideElement = useTranslations("GuideElement");
   const tProjectsElement = useTranslations("ProjectsElement");
+  const WindowFeaturesList = useTranslations("WindowFeatures");
+
 
   return (
     <PageLayout>
@@ -104,6 +107,7 @@ export default function IndexPage({ params: { locale } }: Props) {
       <DoorsSection t={tDoors} />
       <RollerShuttersSection t={tRollerShutters} />
       <ProjectsSection t={tProjectsElement} />
+      <WindowFeatures t={WindowFeaturesList}/>
       <GuideSection t={tGuideElement} />
     </PageLayout>
   );

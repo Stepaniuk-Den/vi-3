@@ -11,7 +11,7 @@ const ManufacturerInfo = () => {
   const list: IInfoList[] = Object.values(tList);
 
   return (
-    <section className="xl:container pt-[100px]">
+    <section className="xl:container pt-24">
       <h2 className="titleCl">{t("title")}</h2>
       <Line className="marsala-center" color="marsala" />
       <div className="flex flex-col gap-[14px] justify-center items-center font-open_sans">

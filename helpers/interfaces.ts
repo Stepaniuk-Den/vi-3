@@ -26,3 +26,10 @@ export interface IGuideProjectElement {
   className?: string;
   sectionId?: string;
 }
+
+export interface IWindowSvgItems {
+  windows: {
+    svg: React.ElementType;
+    name: string;
+  }[];
+}
