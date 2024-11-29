@@ -13,7 +13,8 @@ const DoorsSection: React.FC<Props> = ({ t }) => {
   return (
     <section className="sectionCl">
       <div className="xl:container ">
-        <h2 className="titleCl">{t("title")}</h2>
+        <h2 className="titleCl mb-4">{t("title")}</h2>
+        {/* <Line className="marsala-center" /> */}
         <p className="mb-8">{t("description")}</p>
         <ul className="flex justify-between gap-20">
           {doorsTypesList.map((typeItem) => (

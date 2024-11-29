@@ -24,4 +24,5 @@ export interface IGuideProjectElement {
   src: string;
   alt: string;
   className?: string;
+  sectionId?: string;
 }

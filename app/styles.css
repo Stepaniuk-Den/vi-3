@@ -23,15 +23,15 @@
   }
 
   .mainTitleCl {
-    @apply xl:text-5xl font-semibold font-poppins leading-tight tracking-wider;
+    @apply xl:text-5xl font-semibold font-poppins xl:leading-tight tracking-wider;
   }
 
   .titleCl {
-    @apply xl:text-3xl font-semibold font-poppins leading-relaxed text-center mb-4;
+    @apply xl:text-2xl font-bold font-poppins text-center;
   }
 
   .subTitleCl {
-    @apply xl:text-2xl font-semibold font-poppins leading-relaxed uppercase;
+    @apply xl:text-xl font-semibold font-poppins uppercase;
   }
 
   .LinkToPageCl {

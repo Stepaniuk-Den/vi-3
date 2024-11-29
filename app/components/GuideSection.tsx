@@ -15,6 +15,7 @@ const GuideSection: React.FC<Props> = ({ t }) => {
           src={t("src")}
           alt={t("alt")}
           className={"bg-customMarsala-accentLight"}
+          sectionId="guide"
         />
       </div>
     </section>
