@@ -1,4 +1,3 @@
-import { IGuideProjectElement } from "@/helpers/interfaces";
 import GuideProjectsElement from "./GuideProjectsElement";
 
 type Props = {
