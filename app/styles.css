@@ -27,11 +27,11 @@
   }
 
   .titleCl {
-    @apply xl:text-2xl font-bold font-poppins text-center;
+    @apply xl:text-2xl lg:text-xl font-bold font-poppins text-center;
   }
 
   .subTitleCl {
-    @apply xl:text-xl font-semibold font-poppins uppercase;
+    @apply xl:text-xl lg:text-lg font-semibold font-poppins uppercase;
   }
 
   .LinkToPageCl {

@@ -16,6 +16,7 @@ export interface IItemCard {
   src?: string | StaticImageData;
   alt?: string;
   className?: string;
+  tBtn?: string;
   btnOffset?: string;
 }
 
@@ -27,4 +28,5 @@ export interface IGuideProjectElement {
   alt: string;
   className?: string;
   sectionId?: string;
+  tBtn?: string;
 }

@@ -88,23 +88,23 @@ export default function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  // const t = useTranslations("IndexPage");
   const tWindows = useTranslations("Windows");
   const tDoors = useTranslations("Doors");
   const tRollerShutters = useTranslations("RollerShutters");
   const tGuideElement = useTranslations("GuideElement");
   const tProjectsElement = useTranslations("ProjectsElement");
+  const tButtons = useTranslations("Buttons");
 
   return (
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
       <Hero />
       <ManufacturerInfo />
-      <WindowsSection t={tWindows} />
-      <DoorsSection t={tDoors} />
-      <RollerShuttersSection t={tRollerShutters} />
-      <ProjectsSection t={tProjectsElement} />
-      <GuideSection t={tGuideElement} />
+      <WindowsSection t={tWindows} tBtn={tButtons} />
+      <DoorsSection t={tDoors} tBtn={tButtons} />
+      <RollerShuttersSection t={tRollerShutters} tBtn={tButtons} />
+      <ProjectsSection t={tProjectsElement} tBtn={tButtons} />
+      <GuideSection t={tGuideElement} tBtn={tButtons} />
     </PageLayout>
   );
 }

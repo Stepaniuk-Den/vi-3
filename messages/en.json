@@ -10,7 +10,6 @@
   "Manifest": {
     "name": "Приклад"
   },
-  "IndexPage": {},
   "NotFoundPage": {
     "title": "Сторінка не знайдена",
     "description": "Будь ласка, ще раз перевірте адресний рядок браузера або скористайтеся навігацією, щоб перейти на відому сторінку."
@@ -18,6 +17,9 @@
   "Error": {
     "description": "<p>На жаль, ми зіткнулися з помилкою.</p><p>Ви можете спробувати <retry>оновити сторінку</retry> яку ви відвідували.</p>",
     "title": "Щось пішло не так!"
+  },
+  "Buttons": {
+    "see": "See all"
   },
   "Navigation": {
     "home": {
@@ -99,8 +101,42 @@
       }
     }
   },
-  "Buttons": {
-    "see": "See all"
+  "Hero": {
+    "slides": {
+      "1": {
+        "title": "Windows for the home",
+        "description": "Your home deserves better. Windows that fill your home with light"
+      },
+      "2": {
+        "title": "Safety and durability",
+        "description": "Your home is under reliable protection. Windows you can trust."
+      },
+      "3": {
+        "title": "Individual design",
+        "description": "Every window is art. Design that emphasizes style"
+      },
+      "4": {
+        "title": "Energy saving",
+        "description": "Warm in winter, cool in summer. Savings start with windows."
+      },
+      "5": {
+        "title": "Panoramic windows",
+        "description": "Expanding your world. Windows that open horizons."
+      }
+    }
+  },
+  "ManufacturerInfo": {
+    "title": "Windows and Doors – Straight from the VI-3",
+    "description": "VI-3, a trusted manufacturer, delivers CERTIFIED WINDOWS that meet the highest, independently verified standards.",
+    "subdescr": "Our range includes:",
+    "list": {
+      "1": {
+        "description": "uPVC and aluminum windows and doors"
+      },
+      "2": {
+        "description": "A variety of external blinds"
+      }
+    }
   },
   "Windows": {
     "title": "Windows in Ukraine",
@@ -188,42 +224,5 @@
     "description": "Please feel free to view the examples of projects executed by the company TUR-PLAST, a manufacturer of energy-efficient PVC and aluminium windows and doors based in Poland.",
     "src": "/images/projects/projects-element.jpeg",
     "alt": ""
-  },
-  "Hero": {
-    "slides": {
-      "1": {
-        "title": "Windows for the home",
-        "description": "Your home deserves better. Windows that fill your home with light"
-      },
-      "2": {
-        "title": "Safety and durability",
-        "description": "Your home is under reliable protection. Windows you can trust."
-      },
-      "3": {
-        "title": "Individual design",
-        "description": "Every window is art. Design that emphasizes style"
-      },
-      "4": {
-        "title": "Energy saving",
-        "description": "Warm in winter, cool in summer. Savings start with windows."
-      },
-      "5": {
-        "title": "Panoramic windows",
-        "description": "Expanding your world. Windows that open horizons."
-      }
-    }
-  },
-  "ManufacturerInfo":{
-    "title": "Windows and Doors – Straight from the VI-3",
-    "description":"VI-3, a trusted manufacturer, delivers CERTIFIED WINDOWS that meet the highest, independently verified standards.",
-    "subdescr":"Our range includes:",
-    "list": {
-      "1": {
-        "description": "uPVC and aluminum windows and doors"
-    },
-    "2": {
-        "description": "A variety of external blinds"
-    }
   }
-}
 }
