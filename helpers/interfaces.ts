@@ -30,3 +30,10 @@ export interface IGuideProjectElement {
   sectionId?: string;
   tBtn?: string;
 }
+
+export interface IWindowSvgItems {
+  windows: {
+    svg: React.ElementType;
+    name: string;
+  }[];
+}
