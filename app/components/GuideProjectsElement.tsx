@@ -12,6 +12,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   alt,
   className,
   sectionId,
+  tBtn,
   //   ...rest
 }) => {
   return (
@@ -48,7 +49,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
         />
         <p className="mb-20 text-center xl:leading-7">{description}</p>
         <LinkToPage href="#" className="self-center">
-          Переглянути все
+          {tBtn}
         </LinkToPage>
       </div>
     </div>

@@ -6,9 +6,10 @@ type Props = {
     (key: string): string;
     raw: (key: string) => Record<string, IItemCard>;
   };
+  tBtn: (key: string) => string;
   // t: (key: string) => string | Record<string, IItemCard>;
 };
-const WindowsSection: React.FC<Props> = ({ t }) => {
+const WindowsSection: React.FC<Props> = ({ t, tBtn }) => {
   //   setRequestLocale(locale);
   //   const typesList = t("types") as Record<string, IItemCard>;
 
@@ -18,9 +19,9 @@ const WindowsSection: React.FC<Props> = ({ t }) => {
 
   return (
     <section className="sectionCl">
-      <div className="xl:container ">
+      <div className="container">
         <h2 className="sr-only">{t("title")}</h2>
-        <ul className="flex justify-between gap-20">
+        <ul className="flex flex-col lg:flex-row justify-between gap-20">
           {windowsTypesList.map((typeItem) => (
             <ItemCard
               key={typeItem.id}
@@ -28,6 +29,7 @@ const WindowsSection: React.FC<Props> = ({ t }) => {
               description={typeItem.description}
               src={typeItem.src}
               alt={typeItem.alt}
+              tBtn={tBtn("see")}
             />
           ))}
         </ul>

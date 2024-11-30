@@ -6,6 +6,7 @@ import Line from "./Line";
 
 // type Props = {
 //   t: IItemCard;
+//   // tBtn: (key: string) => string;
 // };
 
 const ItemCard: React.FC<IItemCard> = ({
@@ -14,6 +15,8 @@ const ItemCard: React.FC<IItemCard> = ({
   src,
   alt,
   className,
+  btnOffset,
+  tBtn,
   //   ...rest
 }) => {
   return (
@@ -43,10 +46,10 @@ const ItemCard: React.FC<IItemCard> = ({
             // placeholder="blur"
           />
         </div>
-        <div className="flex flex-col justify-between h-52 px-3 pb-3">
+        <div className="flex flex-col justify-between lg:h-52 h-36 px-3 pb-3">
           <p className="">{description}</p>
-          <LinkToPage href="#" className="self-end">
-            Переглянути все
+          <LinkToPage href="#" className="self-end" btnOffset={btnOffset}>
+            {tBtn}
           </LinkToPage>
         </div>
       </div>

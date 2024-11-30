@@ -2,12 +2,13 @@ import GuideProjectsElement from "./GuideProjectsElement";
 
 type Props = {
   t: (key: string) => string;
+  tBtn: (key: string) => string;
 };
 
-const GuideSection: React.FC<Props> = ({ t }) => {
+const GuideSection: React.FC<Props> = ({ t, tBtn }) => {
   return (
     <section className="sectionCl">
-      <div className="xl:container ">
+      <div className="xl:container lg:container sm:container">
         <GuideProjectsElement
           subtitle={t("subtitle")}
           title={t("title")}
@@ -16,6 +17,7 @@ const GuideSection: React.FC<Props> = ({ t }) => {
           alt={t("alt")}
           className={"bg-customMarsala-accentLight"}
           sectionId="guide"
+          tBtn={tBtn("see")}
         />
       </div>
     </section>
