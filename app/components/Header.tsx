@@ -61,17 +61,17 @@ const Header = () => {
             opacity: opacityTop,
             height: `${heightTop}px`,
           }}
-          className="flex items-center justify-between w-full h-30"
+          className="container flex items-center justify-between w-full h-30"
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
-          <LocaleSwitcher />
         </div>
-        <div className="flex justify-between w-full h-18 bg-customMarsala shadow-lg">
-          <div className="container mx-auto">
+        <div className="flex w-full h-18 bg-customMarsala shadow-lg">
+          <div className="relative container mx-auto flex items-center justify-between">
             <Navigation />
+            <LocaleSwitcher />
           </div>
         </div>
       </header>

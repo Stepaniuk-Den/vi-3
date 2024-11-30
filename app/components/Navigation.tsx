@@ -41,7 +41,7 @@ const Navigation = () => {
   };
 
   return (
-    <ul className="flex flex-col items-center justify-start h-full gap-x-1 py-3 px-4 uppercase lg:flex-row">
+    <ul className="flex flex-col items-center justify-start h-full gap-x-1 py-3 uppercase lg:flex-row">
       {keys.map((key, index) => {
         const isActive = pathname === key;
         const item = t.raw(key) as INavigationItem;
