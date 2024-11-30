@@ -6,17 +6,18 @@ type Props = {
     (key: string): string;
     raw: (key: string) => Record<string, IItemCard>;
   };
+  tBtn: (key: string) => string;
 };
-const DoorsSection: React.FC<Props> = ({ t }) => {
+const DoorsSection: React.FC<Props> = ({ t, tBtn }) => {
   const doorsTypesList = Object.values(t.raw("doorsTypesList")) as IItemCard[];
 
   return (
     <section className="sectionCl">
-      <div className="xl:container ">
+      <div className="container">
         <h2 className="titleCl mb-4">{t("title")}</h2>
         {/* <Line className="marsala-center" /> */}
         <p className="mb-8">{t("description")}</p>
-        <ul className="flex justify-between gap-20">
+        <ul className="flex flex-col lg:flex-row justify-between gap-20">
           {doorsTypesList.map((typeItem) => (
             <ItemCard
               key={typeItem.id}
@@ -25,6 +26,7 @@ const DoorsSection: React.FC<Props> = ({ t }) => {
               src={typeItem.src}
               alt={typeItem.alt}
               className={typeItem.id === "1" ? "max-w-3xl" : "max-w-[400px]"}
+              tBtn={tBtn("see")}
             />
           ))}
         </ul>

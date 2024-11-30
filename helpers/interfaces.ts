@@ -5,6 +5,7 @@ export interface ILinkToPage {
   href: string;
   className?: string;
   children: ReactNode;
+  btnOffset?: string;
 }
 
 export interface IItemCard {
@@ -15,6 +16,8 @@ export interface IItemCard {
   src?: string | StaticImageData;
   alt?: string;
   className?: string;
+  tBtn?: string;
+  btnOffset?: string;
 }
 
 export interface IGuideProjectElement {
@@ -25,4 +28,12 @@ export interface IGuideProjectElement {
   alt: string;
   className?: string;
   sectionId?: string;
+  tBtn?: string;
+}
+
+export interface IWindowSvgItems {
+  windows: {
+    svg: React.ElementType;
+    name: string;
+  }[];
 }

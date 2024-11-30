@@ -11,6 +11,9 @@ export default {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
+      // md: "768px",
+      // // => @media (min-width: 768px) { ... }
+
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
@@ -44,6 +47,10 @@ export default {
         customElement: {
           DEFAULT: "rgb(44,89,130)",
         },
+      },
+      boxShadow: {
+        customShadow:
+          "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
       },
     },
   },
