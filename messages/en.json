@@ -224,38 +224,38 @@
     "description": "Please feel free to view the examples of projects executed by the company TUR-PLAST, a manufacturer of energy-efficient PVC and aluminium windows and doors based in Poland.",
     "src": "/images/projects/projects-element.jpeg",
     "alt": ""
+  },
+  "WindowFeatures": {
+    "title": "Properties of Energy-efficient <br></br> Windows",
+    "list": {
+      "1": {
+        "id": "a93x72",
+        "title": "Air permeability",
+        "svgName": "AirPermeability",
+        "ariaLabel": "",
+        "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
+      },
+      "2": {
+        "id": "p4k86z",
+        "title": "Water Resistance",
+        "svgName": "WaterResistance",
+        "ariaLabel": "",
+        "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
+      },
+      "3": {
+        "id": "w8j5n3",
+        "title": "Wind load resistance",
+        "svgName": "WindLoadResistance",
+        "ariaLabel": "",
+        "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
+      },
+      "4": {
+        "id": "m9q27v",
+        "title": "Coefficient of heat transfer Uw",
+        "svgName": "CoefficientOfHeatTransfer",
+        "ariaLabel": "",
+        "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
+      }
+    }
   }
-},
-"WindowFeatures":{
-  "title":"Properties of Energy-efficient <br></br> Windows",
-  "list":{
-    "1":{
-    "id":"a93x72",
-    "title":"Air permeability",
-    "svgName": "AirPermeability",
-    "ariaLabel":"",
-    "description":"We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
-  },
-  "2":{
-    "id":"p4k86z",
-    "title":"Water Resistance",
-    "svgName": "WaterResistance",
-    "ariaLabel":"",
-    "description":"We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
-  },
-  "3":{
-    "id":"w8j5n3",
-    "title":"Wind load resistance",
-    "svgName": "WindLoadResistance",
-    "ariaLabel":"",
-    "description":"We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
-  },
-  "4":{
-    "id":"m9q27v",
-    "title":"Coefficient of heat transfer Uw",
-    "svgName": "CoefficientOfHeatTransfer",
-    "ariaLabel":"",
-    "description":"We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
-  }
-}
 }
