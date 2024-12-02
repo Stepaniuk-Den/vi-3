@@ -26,15 +26,18 @@ const LocaleSwitcher = () => {
       icon: <FlagUA />,
     },
   ];
+
+  // if need open after click
   const [isBtnLangVisible, setBtnLangVisible] = useState(false);
+  const ref = useClickOutside(() => setBtnLangVisible(false));
+
   const [hoveredMenu, setHoveredMenu] = useState<boolean>(false);
-  // const [mouseY, setMouseY] = useState<number | null>(null);
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
   const params = useParams();
-  const ref = useClickOutside(() => setBtnLangVisible(false));
+  // const ref = useClickOutside(() => setHoveredMenu(false));
   const otherLanguagesRef = useRef<HTMLDivElement | null>(null);
 
   const handleMouseEnter = () => {
@@ -62,12 +65,14 @@ const LocaleSwitcher = () => {
       );
     });
   }
+
   const renderIcon = (icon: React.ReactNode) => {
     return React.cloneElement(icon as React.ReactElement, {
       width: 24,
       height: 18,
     });
   };
+
   const currentLanguage = languages.find((lang) => lang.lang === locale);
   const otherLanguages = languages.filter((lang) => lang.lang !== locale);
 
@@ -94,9 +99,10 @@ const LocaleSwitcher = () => {
               key={lang.lang}
               className={clsx("langBtnCl", {
                 "opacity-100 translate-x-0 text-customMarsala bg-white shadow-md":
+                  // hoveredMenu,
                   isBtnLangVisible || hoveredMenu,
-                // "opacity-0 translate-x-14": !isBtnLangVisible,
                 "opacity-0": !hoveredMenu,
+                // "opacity-0 translate-y-14": !isBtnLangVisible,
               })}
               type="button"
               onClick={() => onSelectChange(lang.lang)}
