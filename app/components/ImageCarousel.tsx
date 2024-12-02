@@ -78,18 +78,20 @@ const ImageCarousel: React.FC = () => {
 
               <div
                 className={clsx(
-                  "absolute top-20 left-0 bg-black/50 text-white p-8 rounded-md transition-opacity duration-500 ",
+                  "absolute top-20 left-0 bg-black/50 text-white pt-8 pr-8 pb-8 rounded-r-md transition-opacity duration-500 ",
                   {
                     "opacity-100": visibleSlide === index,
                     "opacity-0": visibleSlide !== index,
                   }
                 )}
-                // className={`absolute top-20 left-0 bg-black/50 text-white p-8 rounded-md transition-opacity duration-500 ${
-                //   visibleSlide === index ? "opacity-100" : "opacity-0"
-                // }`}
               >
+                <div
+      className="  text-white relative xl:pl-[calc((100vw-1280px)/2+20px)]"
+      // style={{ paddingLeft: `max(calc((100vw - 1280px) / 2 + 20px), 20px)` }}
+    >
                 <h1 className="mainTitleCl mb-4">{slide.title}</h1>
                 <p className="text-lg font-open_sans">{slide.description}</p>
+                </div>
               </div>
             </div>
           ))}

@@ -1,4 +1,4 @@
-import { poppins, open_sans } from "../fonts";
+import {  open_sans, roboto } from "../fonts";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
@@ -19,8 +19,8 @@ export default async function BaseLayout({ children, locale }: Props) {
     <html className="h-full" lang={locale}>
       <body
         className={clsx(
-          poppins.variable,
           open_sans.variable,
+          roboto.variable,
           "h-full xl:text-base text-s leading-5 font-open_sans text-neutral-950"
         )}
       >
