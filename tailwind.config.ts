@@ -31,7 +31,7 @@ export default {
         },
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)", "serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
         open_sans: ["var(--font-open_sans)", "sans-serif"],
       },
       fontSize: {
