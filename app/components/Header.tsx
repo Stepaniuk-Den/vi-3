@@ -9,7 +9,6 @@ import { useMediaQuery } from "react-responsive";
 import Logo from "@/public/window.svg";
 import Navigation from "./Navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
-// import { Link, usePathname } from "@/navigation";
 
 // import dynamic from "next/dynamic";
 

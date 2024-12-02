@@ -22,19 +22,19 @@ const ItemCard: React.FC<IItemCard> = ({
   return (
     <li className={clsx("flex flex-col w-full pt-3", className)}>
       {/* max-w-xl */}
-      <div className="flex-grow">
-        <h3 className="subTitleCl xl:leading-none">{title}</h3>
-        <Line className="marsala-left" color="marsala" />
-        {/* min-h-[64px] */}
-      </div>
-      {/* <div className="border border-customMarsala-accentLight rounded-md overflow-hidden"> */}
-      <div className="shadow-lg rounded-md">
+      <div className="shadow-lg rounded-md p-3">
+        <div className="flex-grow">
+          <h3 className="subTitleCl xl:leading-none">{title}</h3>
+          <Line className="marsala-left" color="marsala" />
+          {/* min-h-[64px] */}
+        </div>
+        {/* <div className="border border-customMarsala-accentLight rounded-md overflow-hidden"> */}
         <div
           // className={clsx(
           //   "relative w-full h-[360px] mb-6 border-b border-customMarsala-accentLight overflow-hidden"
           // )}
           className={clsx(
-            "relative w-full h-[360px] mb-6 border border-gray-300 rounded-md rounded-b-none overflow-hidden"
+            "relative w-full h-[360px] mb-6 border border-gray-300 rounded-md overflow-hidden"
           )}
         >
           <Image
@@ -46,7 +46,7 @@ const ItemCard: React.FC<IItemCard> = ({
             // placeholder="blur"
           />
         </div>
-        <div className="flex flex-col justify-between lg:h-52 h-36 px-3 pb-3">
+        <div className="flex flex-col justify-between lg:h-52 h-36">
           <p className="">{description}</p>
           <LinkToPage href="#" className="self-end" btnOffset={btnOffset}>
             {tBtn}
