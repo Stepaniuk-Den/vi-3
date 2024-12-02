@@ -1,9 +1,7 @@
-"use client"
-
-import Carousel from "./ImageCarousel";
+import ImageCarousel from "./ImageCarousel";
 
 export default function Hero() {
   return (
-      <Carousel/>
+      <ImageCarousel/>
   )
 }
