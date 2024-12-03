@@ -3,7 +3,6 @@ import Image from "next/image";
 import LinkToPage from "./Buttons/LinkToPage";
 import clsx from "clsx";
 import Line from "./Line";
-import { useRouter } from "next/router";
 
 // type Props = {
 //   t: IItemCard;
@@ -52,7 +51,6 @@ const ItemCard: React.FC<IItemCard> = ({
       )}
 
       {/* ======== IMAGE ======== */}
-
       {/* <div className="border border-customMarsala-accentLight rounded-md overflow-hidden"> */}
       <div
         // className={clsx(
@@ -76,7 +74,6 @@ const ItemCard: React.FC<IItemCard> = ({
       </div>
 
       {/* ======== DESCRIPTION ======== */}
-
       {/* <div className="flex flex-col justify-between lg:h-52 h-36"> */}
       <div
         className={clsx(
