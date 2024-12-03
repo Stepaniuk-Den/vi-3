@@ -20,7 +20,12 @@ export interface IItemCard {
   btnOffset?: string;
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
-  background?: string;
+  background?: "marsala" | "blue" | "";
+  //   background?: string;
+}
+
+export interface IDesc {
+  desc: string;
 }
 
 export interface IGuideProjectElement {

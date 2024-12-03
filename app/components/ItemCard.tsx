@@ -31,19 +31,27 @@ const ItemCard: React.FC<IItemCard> = ({
       className={clsx(
         "flex w-full shadow-lg rounded-md p-3",
         className,
-        layout === "horizontal" ? "flex-row items-center" : "flex-col",
-        reverse && layout === "horizontal" ? "flex-row-reverse" : ""
+        layout === "horizontal" ? "flex-row gap-8" : "flex-col",
+        reverse && layout === "horizontal" ? "flex-row-reverse" : "",
+        {
+          "bg-customMarsala-accentLight": background === "marsala",
+          "bg-customElement": background === "blue",
+        }
       )}
+      // style={{ backgroundColor: background }}
     >
       {/* max-w-xl */}
       {/* <div className="shadow-lg rounded-md p-3"> */}
       {layout !== "horizontal" && (
-        <div className="flex-grow">
+        <div>
+          {/* className="flex-grow" */}
           <h3 className="subTitleCl xl:leading-none">{title}</h3>
           <Line className="marsala-left" color="marsala" />
           {/* min-h-[64px] */}
         </div>
       )}
+
+      {/* ======== IMAGE ======== */}
 
       {/* <div className="border border-customMarsala-accentLight rounded-md overflow-hidden"> */}
       <div
@@ -51,8 +59,10 @@ const ItemCard: React.FC<IItemCard> = ({
         //   "relative w-full h-[360px] mb-6 border-b border-customMarsala-accentLight overflow-hidden"
         // )}
         className={clsx(
-          "relative w-full h-[360px] border border-gray-300 rounded-md overflow-hidden",
-          layout === "horizontal" ? "lg:w-1/2 h-80 lg:h-full" : "mb-6"
+          // "relative w-full h-[360px] border border-gray-300 rounded-md overflow-hidden",
+          "relative h-[360px] border border-gray-300 rounded-md overflow-hidden",
+          layout === "horizontal" ? "mb-0 w-1/2" : "mb-6 w-full"
+          //w-1/2 h-80 lg:h-full
         )}
       >
         <Image
@@ -64,19 +74,33 @@ const ItemCard: React.FC<IItemCard> = ({
           // placeholder="blur"
         />
       </div>
-      <div className="flex flex-col justify-between lg:h-52 h-36">
-        {layout === "horizontal" && (
-          <div className="flex-grow">
-            <h3 className="subTitleCl xl:leading-none">{title}</h3>
-            <Line className="marsala-left" color="marsala" />
-            {/* min-h-[64px] */}
-          </div>
+
+      {/* ======== DESCRIPTION ======== */}
+
+      {/* <div className="flex flex-col justify-between lg:h-52 h-36"> */}
+      <div
+        className={clsx(
+          "flex flex-col justify-between",
+          layout === "horizontal" ? "w-1/2" : "w-full lg:h-52 h-36"
         )}
-        <p className="">{description}</p>
+      >
+        <div>
+          {layout === "horizontal" && (
+            <div>
+              {/* className="flex-grow" */}
+              <h3 className="subTitleCl xl:leading-none">{title}</h3>
+              <Line className="marsala-left" color="marsala" />
+              {/* min-h-[64px] */}
+            </div>
+          )}
+          <p className="">{description}</p>
+        </div>
+
         <LinkToPage href="#" className="self-end" btnOffset={btnOffset}>
           {tBtn}
         </LinkToPage>
       </div>
+
       {/* </div> */}
       {/* </div> */}
     </li>

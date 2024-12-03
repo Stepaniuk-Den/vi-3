@@ -141,24 +141,6 @@
 
   "Windows": {
     "title": "Windows in Ukraine",
-
-    "pageTitle": "WINDOWS from Poland",
-    "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "pageDesc1": "Choice of the right window is a serious decision which involves investing some money. When choosing windows, customers should make sure if the product goes well with the design of their flat or house, if its operation is convenient, if it helps to save energy, and finally if it guarantees maximum security.",
-    "pageDesc2": "A window is a combination of profiles, complex window panes, fittings, seals and other additional accessories. Each of the elements has a great influence on such window qualities as aesthetics, comfort, security and energy efficiency. This is why, when buying windows, it is important to pay attention to their individual elements.",
-    "pageDesc3": {
-      "1": "Window profiles determine the durability and tightness of the entire window structure.",
-      "2": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security.",
-      "3": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation.",
-      "4": "Additional accessories enhance aesthetic aspects and convenience of use."
-    },
-
-    "elementsTitle": "WINDOWS ELEMENTS",
-    "elementsDesc": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
-
-    "windowsillsTitle": "WINDOWSILLS",
-    "windowsillsDesc": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
-
     "windowsTypesList": {
       "1": {
         "id": "1",
@@ -173,110 +155,6 @@
         "windowsSlug": "windows-aluminium",
         "title": "Aluminium windows",
         "description": "We are a Polish manufacturer of aluminium windows. Made with solid and heat-insulating profiles from Aliplast and Aluron, our aluminium windows represent the highest quality in their category.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      }
-    },
-
-    "windowsProfilesList": {
-      "1": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "2": {
-        "id": "2",
-        "windowsSlug": "windows-pcv-kömmerling-profiles",
-        "title": "PVC WINDOWS – Kömmerling Profiles",
-        "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 76 MD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays. Please feel free to take a closer look at our offer.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "3": {
-        "id": "3",
-        "windowsSlug": "windows-aluminium-aliplast-profiles",
-        "title": "ALUMINIUM WINDOWS – Aliplast profile",
-        "description": "ALUMINIUM WINDOWS from Poland, based on the WINDOW PROFILES by ALIPLAST, available in the Imperial, Superial and Star systems, are characterised by extreme rigidness, high-quality coating, excellent thermal insulation, and modern, varied designs. ALUMINIUM WINDOWS and DOORS by Tur-Plast from Poland were created thanks to many years of experience and the use of modern technology.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "4": {
-        "id": "4",
-        "windowsSlug": "windows-aluminium-aluron-profiles",
-        "title": "ALUMINIUM WINDOWS – Aluron Profiles",
-        "description": "Windows made in Poland based on aluminium profiles from ALURON fulfil the rigorous energy-efficiency requirements, provide safety as well as comfort and functionality of use. As a manufacturer of windows based in Poland, we offer a range of non-standard and unusual solutions. Please feel free to contact us.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      }
-    },
-
-    "windowsElementsList": {
-      "1": {
-        "id": "1",
-        "windowsSlug": "windows-glazing-units",
-        "title": "Glazing units for windows",
-        "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "2": {
-        "id": "2",
-        "windowsSlug": "windows-fittings-and-seals",
-        "title": "Window fittings and seals",
-        "description": "While being a very inconspicuous element of a window structure, seals are in fact responsible for extremely important properties, such as thermal insulation; water tightness; room ventilation; sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "3": {
-        "id": "3",
-        "windowsSlug": "windows-mullions",
-        "title": "Window mullions",
-        "description": "To emphasise the character of the windows, elevation, or even the whole building, we offer PVC windows and aluminium windows with mullions. This applies especially to older or stylized buildings. Mullions may be structural, inter-pane or Viennese.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "4": {
-        "id": "4",
-        "windowsSlug": "windows-colour-palette",
-        "title": "Colour palette for window profiles",
-        "description": "Please see the palette of sample colours in which we manufacture windows. The advantages of our veneered windows include: the possibility of choosing between veneering on one or both sides; elegant and harmonious appearance; extreme resistance to changing weather conditions; no need for additional special maintenance, and ease of care.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "5": {
-        "id": "5",
-        "windowsSlug": "windows-accessories-additions",
-        "title": "Window accessories / additions",
-        "description": "Please feel free to view our offer of all kinds of accessories and additions for PVC and aluminium windows.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      }
-    },
-    "windowSillsList": {
-      "1": {
-        "id": "1",
-        "windowsSlug": "windows-windowsills-internal",
-        "title": "Internal windowsills",
-        "description": "Möller LIGNODUR internal windowsills are impact-resistant and scratch-resistant interior finishing elements for both older and modern buildings. What sets them apart from competing products is the guaranteed thickness of walls and reinforcements embossed in the form of a strong core made of a wood flour and PVC composite.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "2": {
-        "id": "2",
-        "windowsSlug": "windows-windowsills-external",
-        "title": "External windowsills",
-        "description": "We offer steel and aluminium external windowsills. Please feel free to take a closer look at our offer.",
-        "src": "/images/windows/windows-aluminium.jpeg",
-        "alt": "Large private house with panoramic black windows"
-      },
-      "3": {
-        "id": "3",
-        "windowsSlug": "windows-glazing-units",
-        "title": "Thermally insulated window moulding",
-        "description": "We recommend taking a moment to see our offer of thermally insulated window moulding as well as external, internal and double-sided XPS profiles. With layered installation of energy-efficient windows, it is also worthwhile to make sure you have a thermally insulated windowsill.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": "Large private house with panoramic black windows"
       }
@@ -382,6 +260,135 @@
         "svgName": "CoefficientOfHeatTransfer",
         "ariaLabel": "",
         "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
+      }
+    }
+  },
+
+  "WindowsPage": {
+    "pageTitle": "WINDOWS from Poland",
+    "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
+    "pageDesc1": "Choice of the right window is a serious decision which involves investing some money. When choosing windows, customers should make sure if the product goes well with the design of their flat or house, if its operation is convenient, if it helps to save energy, and finally if it guarantees maximum security.",
+    "pageDesc2": "A window is a combination of profiles, complex window panes, fittings, seals and other additional accessories. Each of the elements has a great influence on such window qualities as aesthetics, comfort, security and energy efficiency. This is why, when buying windows, it is important to pay attention to their individual elements.",
+    "pageDesc3": {
+      "pageDesc3": {
+        "1": {
+          "desc": "Window profiles determine the durability and tightness of the entire window structure."
+        },
+        "2": {
+          "desc": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security."
+        },
+        "3": {
+          "desc": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation."
+        },
+        "4": {
+          "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
+        }
+      }
+    },
+    "elementsTitle": "WINDOWS ELEMENTS",
+    "elementsDesc": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
+    "windowsillsTitle": "WINDOWSILLS",
+    "windowsillsDesc": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
+    "windowsProfilesList": {
+      "1": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "2": {
+        "id": "2",
+        "windowsSlug": "windows-pcv-kömmerling-profiles",
+        "title": "PVC WINDOWS – Kömmerling Profiles",
+        "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 76 MD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays. Please feel free to take a closer look at our offer.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "3": {
+        "id": "3",
+        "windowsSlug": "windows-aluminium-aliplast-profiles",
+        "title": "ALUMINIUM WINDOWS – Aliplast profile",
+        "description": "ALUMINIUM WINDOWS from Poland, based on the WINDOW PROFILES by ALIPLAST, available in the Imperial, Superial and Star systems, are characterised by extreme rigidness, high-quality coating, excellent thermal insulation, and modern, varied designs. ALUMINIUM WINDOWS and DOORS by Tur-Plast from Poland were created thanks to many years of experience and the use of modern technology.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "4": {
+        "id": "4",
+        "windowsSlug": "windows-aluminium-aluron-profiles",
+        "title": "ALUMINIUM WINDOWS – Aluron Profiles",
+        "description": "Windows made in Poland based on aluminium profiles from ALURON fulfil the rigorous energy-efficiency requirements, provide safety as well as comfort and functionality of use. As a manufacturer of windows based in Poland, we offer a range of non-standard and unusual solutions. Please feel free to contact us.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      }
+    },
+    "windowsElementsList": {
+      "1": {
+        "id": "1",
+        "windowsSlug": "windows-glazing-units",
+        "title": "Glazing units for windows",
+        "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "2": {
+        "id": "2",
+        "windowsSlug": "windows-fittings-and-seals",
+        "title": "Window fittings and seals",
+        "description": "While being a very inconspicuous element of a window structure, seals are in fact responsible for extremely important properties, such as thermal insulation; water tightness; room ventilation; sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "3": {
+        "id": "3",
+        "windowsSlug": "windows-mullions",
+        "title": "Window mullions",
+        "description": "To emphasise the character of the windows, elevation, or even the whole building, we offer PVC windows and aluminium windows with mullions. This applies especially to older or stylized buildings. Mullions may be structural, inter-pane or Viennese.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "4": {
+        "id": "4",
+        "windowsSlug": "windows-colour-palette",
+        "title": "Colour palette for window profiles",
+        "description": "Please see the palette of sample colours in which we manufacture windows. The advantages of our veneered windows include: the possibility of choosing between veneering on one or both sides; elegant and harmonious appearance; extreme resistance to changing weather conditions; no need for additional special maintenance, and ease of care.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "5": {
+        "id": "5",
+        "windowsSlug": "windows-accessories-additions",
+        "title": "Window accessories / additions",
+        "description": "Please feel free to view our offer of all kinds of accessories and additions for PVC and aluminium windows.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      }
+    },
+    "windowSillsList": {
+      "1": {
+        "id": "1",
+        "windowsSlug": "windows-windowsills-internal",
+        "title": "Internal windowsills",
+        "description": "Möller LIGNODUR internal windowsills are impact-resistant and scratch-resistant interior finishing elements for both older and modern buildings. What sets them apart from competing products is the guaranteed thickness of walls and reinforcements embossed in the form of a strong core made of a wood flour and PVC composite.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "2": {
+        "id": "2",
+        "windowsSlug": "windows-windowsills-external",
+        "title": "External windowsills",
+        "description": "We offer steel and aluminium external windowsills. Please feel free to take a closer look at our offer.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
+      },
+      "3": {
+        "id": "3",
+        "windowsSlug": "windows-glazing-units",
+        "title": "Thermally insulated window moulding",
+        "description": "We recommend taking a moment to see our offer of thermally insulated window moulding as well as external, internal and double-sided XPS profiles. With layered installation of energy-efficient windows, it is also worthwhile to make sure you have a thermally insulated windowsill.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": "Large private house with panoramic black windows"
       }
     }
   }
