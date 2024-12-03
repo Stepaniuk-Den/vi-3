@@ -80,6 +80,7 @@ import GuideSection from "../components/GuideSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ManufacturerInfo from "../components/ManufacturerInfo";
 import WindowFeatures from "../components/WindowFeatures";
+import MessageBanner from "../components/MessageBanner";
 
 type Props = {
   params: { locale: string };
@@ -96,12 +97,15 @@ export default function IndexPage({ params: { locale } }: Props) {
   const tProjectsElement = useTranslations("ProjectsElement");
   const tButtons = useTranslations("Buttons");
   const WindowFeaturesList = useTranslations("WindowFeatures");
+  const MessageBannerT = useTranslations("MessageBanner");
+
 
   return (
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
       <Hero />
       <ManufacturerInfo />
+      <MessageBanner t={MessageBannerT}/>
       <WindowsSection t={tWindows} tBtn={tButtons} />
       <DoorsSection t={tDoors} tBtn={tButtons} />
       <RollerShuttersSection t={tRollerShutters} tBtn={tButtons} />
