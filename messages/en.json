@@ -258,4 +258,10 @@
       }
     }
   }
+  ,
+  "MessageBanner":{
+    "title":"SEND US A MESSAGE",
+    "subtitle":"– we will get back to you / prepare an offer for you",
+    "btn":"Contact"
+  }
 }
