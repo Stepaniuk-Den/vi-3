@@ -139,6 +139,12 @@
     }
   },
 
+  "MessageBanner": {
+    "title": "SEND US A MESSAGE",
+    "subtitle": "– we will get back to you / prepare an offer for you",
+    "btn": "Contact"
+  },
+
   "Windows": {
     "title": "Windows in Ukraine",
     "windowsTypesList": {
@@ -391,11 +397,5 @@
         "alt": ""
       }
     }
-  }
-  ,
-  "MessageBanner":{
-    "title":"SEND US A MESSAGE",
-    "subtitle":"– we will get back to you / prepare an offer for you",
-    "btn":"Contact"
   }
 }
