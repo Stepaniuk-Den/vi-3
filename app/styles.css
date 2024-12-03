@@ -15,6 +15,9 @@
 }
 
 @layer base {
+  ol ::marker {
+    color: rgb(88, 29, 34);
+  }
 }
 
 @layer components {
