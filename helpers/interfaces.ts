@@ -10,7 +10,7 @@ export interface ILinkToPage {
 
 export interface IItemCard {
   id?: string;
-  windowsSlug?: string;
+  slug?: string;
   title: string;
   description?: string;
   src?: string | StaticImageData;

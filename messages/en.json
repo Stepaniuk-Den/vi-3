@@ -330,6 +330,8 @@
       }
     },
     "windowsElementsList": {
+      "title":"WINDOWS ELEMENTS",
+      "description":"Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-glazing-units",
@@ -372,6 +374,8 @@
       }
     },
     "windowsillsList": {
+      "title":"WINDOWSILLS",
+      "description":"In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-windowsills-internal",
@@ -393,6 +397,63 @@
         "windowsSlug": "windows-glazing-units",
         "title": "Thermally insulated window moulding",
         "description": "We recommend taking a moment to see our offer of thermally insulated window moulding as well as external, internal and double-sided XPS profiles. With layered installation of energy-efficient windows, it is also worthwhile to make sure you have a thermally insulated windowsill.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "DoorsPage":{
+    "pageTitle": "EXTERIOR DOORS from Poland",
+    "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
+    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorFeaturesTitle":"DOOR FEATURES",
+    "doorsDescr":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+    "doorsList":{
+      "1": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "1",
+        "windowsSlug": "windows-pcv-schüco-profiles",
+        "title": "PVC WINDOWS – Schüco Profiles",
+        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       }
