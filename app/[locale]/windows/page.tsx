@@ -2,8 +2,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
 import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
-import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
-import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
+// import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
+// import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 
 type Props = {
   params: { locale: string };
@@ -33,9 +33,11 @@ const WindowsPage: React.FC<Props> = async ({ params: { locale } }) => {
           </ol>
         </div>
       </section>
-      <ProfilesSection t={t} tBtn={tButtons} />
-      <ElementsSection t={t} tBtn={tButtons} />
-      <WindowsillsSection t={t} tBtn={tButtons} />
+      <ProfilesSection t={t} tBtn={tButtons} source="windowsProfilesList" wrapper={false} />
+      <ProfilesSection t={t} tBtn={tButtons} source="windowsElementsList" wrapper={true} />
+      <ProfilesSection t={t} tBtn={tButtons} source="windowsillsList" wrapper={true} />
+      {/* <ElementsSection t={t} tBtn={tButtons} />
+      <WindowsillsSection t={t} tBtn={tButtons} /> */}
     </>
   );
 };
