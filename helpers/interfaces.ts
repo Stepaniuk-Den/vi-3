@@ -21,6 +21,7 @@ export interface IItemCard {
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
+  path?:string;
  }
 
 export interface IDesc {
