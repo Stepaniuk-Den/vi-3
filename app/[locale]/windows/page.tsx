@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
-import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
+import CardsSection from "@/app/components/CardsSection";
+
 // import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
 // import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 
@@ -33,9 +34,9 @@ const WindowsPage: React.FC<Props> = async ({ params: { locale } }) => {
           </ol>
         </div>
       </section>
-      <ProfilesSection t={t} tBtn={tButtons} source="windowsProfilesList" wrapper={false} />
-      <ProfilesSection t={t} tBtn={tButtons} source="windowsElementsList" wrapper={true} />
-      <ProfilesSection t={t} tBtn={tButtons} source="windowsillsList" wrapper={true} />
+      <CardsSection t={t} tBtn={tButtons} source="windowsProfilesList" wrapper={false} path="windows" />
+      <CardsSection t={t} tBtn={tButtons} source="windowsElementsList" wrapper={true} path="windows" />
+      <CardsSection t={t} tBtn={tButtons} source="windowsillsList" wrapper={true} path="windows" />
       {/* <ElementsSection t={t} tBtn={tButtons} />
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
     </>

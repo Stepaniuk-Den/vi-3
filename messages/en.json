@@ -411,47 +411,47 @@
     "doorsList":{
       "1": {
         "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "slug": "exterior-doors-pvc-schuco",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       },
       "2": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "id": "2",
+        "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       },
       "3": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "id": "3",
+        "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       },
       "4": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "id": "4",
+        "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       },
       "5": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "id": "5",
+        "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       },
       "6": {
-        "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "id": "6",
+        "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",

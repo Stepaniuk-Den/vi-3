@@ -1,6 +1,6 @@
 import { IItemCard } from "@/helpers/interfaces";
-import ItemCard from "../ItemCard";
-import Line from "../Line";
+import ItemCard from "./ItemCard";
+import Line from "./Line";
 
 type Props = {
   t: {
@@ -15,9 +15,10 @@ type Props = {
   tBtn: (key: string) => string;
   source:string;
   wrapper:boolean;
+  path:string;
 };
 
-const ProfilesSection: React.FC<Props> = ({ t, tBtn, source,wrapper }) => {
+const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path }) => {
   // const profilesList = Object.values(
   //   t.raw(source)
   // ) as IItemCard[];
@@ -49,6 +50,8 @@ const ProfilesSection: React.FC<Props> = ({ t, tBtn, source,wrapper }) => {
               layout="horizontal"
               reverse={idx % 2 !== 0}
               background={idx % 2 === 0 ? "blue" : ""}
+              slug={profileItem.slug}
+              path={path}
             />
           ))}
         </ul>
@@ -57,4 +60,4 @@ const ProfilesSection: React.FC<Props> = ({ t, tBtn, source,wrapper }) => {
   );
 };
 
-export default ProfilesSection;
+export default CardsSection;
