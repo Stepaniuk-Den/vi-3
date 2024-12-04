@@ -9,6 +9,8 @@ import { useMediaQuery } from "react-responsive";
 import Logo from "@/public/window.svg";
 import Navigation from "./Navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import SocialLinks from "./SocialLinks";
+import FeedbackLinks from "./FeedbackLinks";
 
 // import dynamic from "next/dynamic";
 
@@ -66,6 +68,8 @@ const Header = () => {
             <Logo className=" w-28 h-16" />
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
+          <FeedbackLinks />
+          <SocialLinks />
         </div>
         <div className="flex w-full h-18 bg-customMarsala shadow-lg">
           <div className="relative container mx-auto flex items-center justify-between">

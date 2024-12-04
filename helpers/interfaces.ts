@@ -37,3 +37,11 @@ export interface IWindowSvgItems {
     name: string;
   }[];
 }
+
+export interface ILinkProps {
+  id: number;
+  svg: React.ReactNode;
+  title: string;
+  href: string;
+  area_label: string;
+}
