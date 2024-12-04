@@ -15,9 +15,16 @@ export interface IItemCard {
   description?: string;
   src?: string | StaticImageData;
   alt?: string;
-  className?: string;
   tBtn?: string;
+  className?: string;
   btnOffset?: string;
+  layout?: "horizontal" | "vertical";
+  reverse?: boolean;
+  background?: "marsala" | "blue" | "";
+ }
+
+export interface IDesc {
+  desc: string;
 }
 
 export interface IGuideProjectElement {
