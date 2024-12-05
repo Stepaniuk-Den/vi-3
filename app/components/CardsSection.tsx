@@ -16,9 +16,10 @@ type Props = {
   source:string;
   wrapper:boolean;
   path:string;
+  background:"marsala" | "blue";
 };
 
-const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path }) => {
+const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path,background }) => {
   // const profilesList = Object.values(
   //   t.raw(source)
   // ) as IItemCard[];
@@ -49,7 +50,7 @@ const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path }) => {
               tBtn={tBtn("see")}
               layout="horizontal"
               reverse={idx % 2 !== 0}
-              background={idx % 2 === 0 ? "blue" : ""}
+              background={idx % 2 === 0 ? `${background}` : ""}
               slug={profileItem.slug}
               path={path}
             />

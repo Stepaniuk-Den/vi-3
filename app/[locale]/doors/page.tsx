@@ -1,6 +1,7 @@
 import CardsSection from "@/app/components/CardsSection";
+import DoorsPageDescription from "@/app/components/DoorsPage/DoorsPageDescription";
+import MessageBanner from "@/app/components/MessageBanner";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-
 
 
 type Props = {
@@ -16,8 +17,9 @@ const DoorsPage: React.FC<Props> = async ({ params: { locale } }) => {
   return (
     <>
       <section className="sectionCl pt-60">
-       <h1>This is DoorPage</h1>
-       <CardsSection t={t} tBtn={tButtons} source="doorsList" wrapper={false} path="doors"/>
+       <DoorsPageDescription t={t} />
+       <MessageBanner t={t} />
+       <CardsSection t={t} tBtn={tButtons} source="doorsList" wrapper={false} path="doors" background="blue" />
       </section>
       
     </>

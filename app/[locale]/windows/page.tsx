@@ -34,9 +34,9 @@ const WindowsPage: React.FC<Props> = async ({ params: { locale } }) => {
           </ol>
         </div>
       </section>
-      <CardsSection t={t} tBtn={tButtons} source="windowsProfilesList" wrapper={false} path="windows" />
-      <CardsSection t={t} tBtn={tButtons} source="windowsElementsList" wrapper={true} path="windows" />
-      <CardsSection t={t} tBtn={tButtons} source="windowsillsList" wrapper={true} path="windows" />
+      <CardsSection t={t} tBtn={tButtons} source="windowsProfilesList" wrapper={false} path="windows" background="blue" />
+      <CardsSection t={t} tBtn={tButtons} source="windowsElementsList" wrapper={true} path="windows" background="marsala" />
+      <CardsSection t={t} tBtn={tButtons} source="windowsillsList" wrapper={true} path="windows" background="blue" />
       {/* <ElementsSection t={t} tBtn={tButtons} />
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
     </>
