@@ -28,9 +28,9 @@ const ItemCard: React.FC<IItemCard> = ({
   return (
     <li
       className={clsx(
-        "flex w-full shadow-lg rounded-md p-3",
+        "flex w-full shadow-lg rounded-md",
         className,
-        layout === "horizontal" ? "flex-row gap-8" : "flex-col",
+        layout === "horizontal" ? "flex-row gap-8 p-7" : "flex-col p-3",
         reverse && layout === "horizontal" ? "flex-row-reverse" : "",
         {
           "bg-customMarsala-accentLight": background === "marsala",
@@ -83,7 +83,7 @@ const ItemCard: React.FC<IItemCard> = ({
       >
         <div>
           {layout === "horizontal" && (
-            <div>
+            <div className="pt-12">
               {/* className="flex-grow" */}
               <h3 className="subTitleCl xl:leading-none">{title}</h3>
               <Line className="marsala-left" color="marsala" />

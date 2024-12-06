@@ -1,20 +1,21 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
 import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
 import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
 import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
+import { useTranslations } from "next-intl";
 
 type Props = {
   params: { locale: string };
 };
 
-const WindowsPage: React.FC<Props> = async ({ params: { locale } }) => {
+const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
-  const t = await getTranslations("WindowsPage");
+  const t = useTranslations("WindowsPage");
+  const tButtons = useTranslations("Buttons");
   const pageDescList = Object.values(t.raw("pageDesc3")) as [IDesc];
-  const tButtons = await getTranslations("Buttons");
 
   return (
     <>
