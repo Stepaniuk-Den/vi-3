@@ -77,6 +77,7 @@ const Navigation = () => {
                       key={subIndex}
                       className="px-4 py-2 w-full rounded-md hover:bg-customMarsala-accent hover:text-white"
                     >
+                      {/* <Link href={subItem.slug}>{subItem.title}</Link> */}
                       <Link href={`${item.href}/${subItem.slug}`}>
                         {subItem.title}
                       </Link>

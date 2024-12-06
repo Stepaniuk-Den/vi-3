@@ -1,10 +1,14 @@
 import { setRequestLocale } from "next-intl/server";
 import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
-import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
-import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
-import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
+// import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
+// import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
+// import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 import { useTranslations } from "next-intl";
+import CardsSection from "@/app/components/CardsSection";
+
+// import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
+// import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 
 type Props = {
   params: { locale: string };
@@ -34,9 +38,32 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
           </ol>
         </div>
       </section>
-      <ProfilesSection t={t} tBtn={tButtons} />
-      <ElementsSection t={t} tBtn={tButtons} />
-      <WindowsillsSection t={t} tBtn={tButtons} />
+      <CardsSection
+        t={t}
+        tBtn={tButtons}
+        source="windowsProfilesList"
+        wrapper={false}
+        path="windows"
+        background="blue"
+      />
+      <CardsSection
+        t={t}
+        tBtn={tButtons}
+        source="windowsElementsList"
+        wrapper={true}
+        path="windows"
+        background="marsala"
+      />
+      <CardsSection
+        t={t}
+        tBtn={tButtons}
+        source="windowsillsList"
+        wrapper={true}
+        path="windows"
+        background="blue"
+      />
+      {/* <ElementsSection t={t} tBtn={tButtons} />
+      <WindowsillsSection t={t} tBtn={tButtons} /> */}
     </>
   );
 };

@@ -9,6 +9,7 @@ import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { useClickOutside } from "@/helpers/useClickOutside";
 import FlagUA from "@/public/icons/FlagUa4x3.svg";
 import FlagGB from "@/public/icons/FlagGb4x3.svg";
+import { renderIcon } from "@/helpers/renderIcon";
 
 // const SideBarLangSwitcher: React.FC<{ ariaLabel?: string }> = ({
 //   ariaLabel,
@@ -27,7 +28,6 @@ const LocaleSwitcher = () => {
     },
   ];
 
-  // if need open after click
   const [isBtnLangVisible, setBtnLangVisible] = useState(false);
   const ref = useClickOutside(() => setBtnLangVisible(false));
 
@@ -37,7 +37,7 @@ const LocaleSwitcher = () => {
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
   const params = useParams();
-  // const ref = useClickOutside(() => setHoveredMenu(false));
+
   const otherLanguagesRef = useRef<HTMLDivElement | null>(null);
 
   const handleMouseEnter = () => {
@@ -66,13 +66,6 @@ const LocaleSwitcher = () => {
     });
   }
 
-  const renderIcon = (icon: React.ReactNode) => {
-    return React.cloneElement(icon as React.ReactElement, {
-      width: 24,
-      height: 18,
-    });
-  };
-
   const currentLanguage = languages.find((lang) => lang.lang === locale);
   const otherLanguages = languages.filter((lang) => lang.lang !== locale);
 
@@ -89,7 +82,7 @@ const LocaleSwitcher = () => {
         type="button"
         aria-label="switch language"
       >
-        {currentLanguage?.icon && renderIcon(currentLanguage.icon)}
+        {currentLanguage?.icon && renderIcon(currentLanguage.icon, 24, 18)}
         {languages.find((lang) => lang.lang === locale)?.label}
       </button>
       {hoveredMenu && (
@@ -99,7 +92,6 @@ const LocaleSwitcher = () => {
               key={lang.lang}
               className={clsx("langBtnCl", {
                 "opacity-100 translate-x-0 text-customMarsala bg-white shadow-md":
-                  // hoveredMenu,
                   isBtnLangVisible || hoveredMenu,
                 "opacity-0": !hoveredMenu,
                 // "opacity-0 translate-y-14": !isBtnLangVisible,
@@ -109,7 +101,7 @@ const LocaleSwitcher = () => {
               aria-label="switch language"
               disabled={isPending}
             >
-              {renderIcon(lang.icon)}
+              {renderIcon(lang.icon, 24, 18)}
               {lang.label}
             </button>
           ))}

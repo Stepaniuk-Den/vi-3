@@ -10,7 +10,7 @@ export interface ILinkToPage {
 
 export interface IItemCard {
   id?: string;
-  windowsSlug?: string;
+  slug?: string;
   title: string;
   description?: string;
   src?: string | StaticImageData;
@@ -21,6 +21,7 @@ export interface IItemCard {
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
+  path?:string;
  }
 
 export interface IDesc {
@@ -43,4 +44,12 @@ export interface IWindowSvgItems {
     svg: React.ElementType;
     name: string;
   }[];
+}
+
+export interface ILinkProps {
+  id: number;
+  svg: React.ReactNode;
+  title: string;
+  href: string;
+  area_label: string;
 }

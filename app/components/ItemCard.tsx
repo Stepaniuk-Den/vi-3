@@ -20,10 +20,14 @@ const ItemCard: React.FC<IItemCard> = ({
   layout = "vertical",
   reverse = false,
   background = "",
+  slug,
+  path,
   //   ...rest
 }) => {
   // const router = useRouter();
   // const isHomePage = router.pathname === "/";
+
+  const link = slug ? `/${path}/${slug}` : "#";
 
   return (
     <li
@@ -93,7 +97,7 @@ const ItemCard: React.FC<IItemCard> = ({
           <p className="">{description}</p>
         </div>
 
-        <LinkToPage href="#" className="self-end" btnOffset={btnOffset}>
+        <LinkToPage href={link} className="self-end" btnOffset={btnOffset}>
           {tBtn}
         </LinkToPage>
       </div>
