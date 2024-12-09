@@ -63,12 +63,28 @@
       "href": "/sliding-doors",
       "links": {
         "1": {
-          "title": "металопластикові розсувні двері",
-          "slug": "sliding-doors-pvc"
+          "slug": "sliding-doors-pvc-hs-type-schuco",
+          "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Schüco"
         },
         "2": {
-          "title": "алюмінієві розсувні двері",
-          "slug": "sliding-doors-aluminium"
+          "slug": "sliding-doors-pvc-hs-type-kommerling",
+          "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Kömmerling"
+        },
+        "3": {
+          "slug": "sliding-doors-pvc-psk-type-schuco",
+          "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Schüco"
+        },
+        "4": {
+          "slug": "sliding-doors-pvc-psk-type-kommerling",
+          "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Kömmerling"
+        },
+        "5": {
+          "slug": "aluminium-sliding-doors-pvc-hs-type-aliplast",
+          "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aliplast"
+        },
+        "6": {
+          "slug": "aluminium-sliding-doors-pvc-hs-type-aluron",
+          "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aluron"
         }
       }
     },
@@ -392,13 +408,13 @@
       }
     }
   },
-  "DoorsPage":{
+  "DoorsPage": {
     "pageTitle": "EXTERIOR DOORS from Poland",
     "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
-    "doorFeaturesTitle":"DOOR FEATURES",
-    "doorsDescr":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
-    "doorsList":{
+    "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorFeaturesTitle": "DOOR FEATURES",
+    "doorsDescr": "The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+    "doorsList": {
       "1": {
         "id": "1",
         "slug": "exterior-doors-pvc-schuco",
@@ -445,6 +461,60 @@
         "title": "АЛЮМІНІЄВІ ВІКНА – Профілі Aluron",
         "description": "Вікна польського виробництва на основі алюмінієвих профілів ALURON відповідають суворим вимогам енергоефективності, забезпечують безпеку, а також комфорт і функціональність використання. Як польський виробник вікон, ми пропонуємо ряд нестандартних і незвичайних рішень. Будь ласка, не соромтеся звертатися до нас.",
         "src": "/images/doors/doors-terrace.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "SlidingDoorsPage": {
+    "title": "РОЗСУВНІ ТЕРАСНІ ДВЕРІ з Польщі",
+    "description": "Розсувні терасні двері є ідеальним рішенням для сучасних і великих інтер’єрів. Вони мають багато скління, що дозволяє оптимально освітлювати приміщення. Вони відзначаються чудовою теплоізоляцією (без теплових мостів), і завдяки сучасним технологіям фурнітури ми можемо насолоджуватися справжнім комфортом та радістю від використання великих розсувних дверей. Рішення, запропоновані Tur-Plast, є альтернативою стандартним двостулковим балконам. У нашій пропозиції є міцні та ексклюзивні підйомно-розсувні терасні двері з ПВХ та алюмінію.",
+    "slidingDoorsList": {
+      "1": {
+        "id": "1",
+        "slug": "sliding-doors-pvc-hs-type-schuco",
+        "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Schüco",
+        "description": "Рекомендуємо підйомно-розсувні двері Schüco ThermoSlide і EasySlide. Навіть дуже великі стулки можна легко переміщати. Плоский і потрійно утеплений поріг підвищує комфорт використання та усуває ризик виникнення «холодної зони» на підлозі.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "slug": "sliding-doors-pvc-hs-type-kommerling",
+        "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Kömmerling",
+        "description": "Ексклюзивні підйомно-розсувні двері PremiDoor 76, рекомендовані в нашій пропозиції, забезпечують винятковий комфорт проживання. Стулка дверей рухається плавно та безшумно по напрямних. Високоякісні ущільнення гарантують оптимальну вітро- та водонепроникність, а також захист від зовнішнього шуму. У цій системі ми отримуємо найвищі параметри теплоізоляції.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "slug": "sliding-doors-pvc-psk-type-schuco",
+        "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Schüco",
+        "description": "У нашій пропозиції представлені популярні сьогодні розсувні двері PSK (Parallel-Schiebe-Kipp-Tür – паралельно-розсувно-відкидні двері). Такі конструкції виготовляються із використанням стандартних віконних профілів. Після повороту ручки зі закритого положення стулка висувається в приміщення, перпендикулярно до площини вікна, а потім переміщується вбік. Двері також мають функцію відкидання стулки.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "slug": "sliding-doors-pvc-psk-type-kommerling",
+        "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Kömmerling",
+        "description": "Ми виготовляємо розсувні терасні двері типу PSK, які є привабливою альтернативою типовим балконним дверям. Ця система дозволяє заощадити простір, необхідний для відкривання традиційних балконних або терасних дверей. Двері PSK на основі ПВХ профілів Kömmerling мають можливість нахилу стулки, окрім її розсування.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "slug": "aluminium-sliding-doors-pvc-hs-type-aliplast",
+        "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aliplast",
+        "description": "Сучасна конструкція; використання підйомно-розсувної фурнітури в інноваційній алюмінієвій системі UltraGlide з низьким порогом є чудовим рішенням для підвищення доступності будівель для людей з обмеженими можливостями. Можливе використання кольорів з палітри RAL, структурних кольорів, кольорів під дерево, анодування, двокольорового фарбування.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "slug": "aluminium-sliding-doors-pvc-hs-type-aluron",
+        "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aluron",
+        "description": "Алюмінієві підйомно-розсувні двері на основі системи AS 178HS є поєднанням інноваційних рішень із сучасним дизайном, створюючи нове покоління всескляних підйомно-розсувних дверей. У цій системі можна побудувати великі рухомі терасні скління з низьким і теплим порогом. Її конструкційні механізми забезпечують безпечне та комфортне розсування важких стулок вручну або автоматично.",
+        "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       }
     }
