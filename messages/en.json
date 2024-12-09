@@ -63,12 +63,28 @@
       "href": "/sliding-doors",
       "links": {
         "1": {
-          "title": "sliding doors pvc",
-          "slug": "sliding-doors-pvc"
+          "slug": "sliding-doors-pvc-hs-type-schuco",
+          "title": "PVC Sliding Terrace Doors - HS Type - Schüco Profiles"
         },
         "2": {
-          "title": "sliding doors aluminium",
-          "slug": "sliding-doors-aluminium"
+          "slug": "sliding-doors-pvc-hs-type-kommerling",
+          "title": "PVC Sliding Terrace Doors - HS Type - Kömmerling Profiles"
+        },
+        "3": {
+          "slug": "sliding-doors-pvc-psk-type-schuco",
+          "title": "PVC Sliding Terrace Doors - PSK Type - Schüco Profiles"
+        },
+        "4": {
+          "slug": "sliding-doors-pvc-psk-type-kommerling",
+          "title": "PVC Sliding Terrace Doors - PSK Type - Kömmerling Profiles"
+        },
+        "5": {
+          "slug": "aluminium-sliding-doors-pvc-hs-type-aliplast",
+          "title": "ALUMINIUM Sliding Terrace Doors - HS Type - Aliplast Profiles"
+        },
+        "6": {
+          "slug": "aluminium-sliding-doors-pvc-hs-type-aluron",
+          "title": "ALUMINIUM Sliding Terrace Doors - HS Type - Aluron Profiles"
         }
       }
     },
@@ -276,19 +292,18 @@
     "pageDesc1": "Choice of the right window is a serious decision which involves investing some money. When choosing windows, customers should make sure if the product goes well with the design of their flat or house, if its operation is convenient, if it helps to save energy, and finally if it guarantees maximum security.",
     "pageDesc2": "A window is a combination of profiles, complex window panes, fittings, seals and other additional accessories. Each of the elements has a great influence on such window qualities as aesthetics, comfort, security and energy efficiency. This is why, when buying windows, it is important to pay attention to their individual elements.",
     "pageDesc3": {
-        "1": {
-          "desc": "Window profiles determine the durability and tightness of the entire window structure."
-        },
-        "2": {
-          "desc": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security."
-        },
-        "3": {
-          "desc": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation."
-        },
-        "4": {
-          "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
-        }
-      
+      "1": {
+        "desc": "Window profiles determine the durability and tightness of the entire window structure."
+      },
+      "2": {
+        "desc": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security."
+      },
+      "3": {
+        "desc": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation."
+      },
+      "4": {
+        "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
+      }
     },
     "elementsTitle": "WINDOWS ELEMENTS",
     "elementsDesc": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
@@ -329,8 +344,8 @@
       }
     },
     "windowsElementsList": {
-      "title":"WINDOWS ELEMENTS",
-      "description":"Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
+      "title": "WINDOWS ELEMENTS",
+      "description": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-glazing-units",
@@ -373,8 +388,8 @@
       }
     },
     "windowsillsList": {
-      "title":"WINDOWSILLS",
-      "description":"In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
+      "title": "WINDOWSILLS",
+      "description": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-windowsills-internal",
@@ -401,13 +416,13 @@
       }
     }
   },
-  "DoorsPage":{
+  "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
-    "doorFeaturesTitle":"DOOR FEATURES",
-    "doorsDescr":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
-    "doorsList":{
+    "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorFeaturesTitle": "DOOR FEATURES",
+    "doorsDescr": "The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+    "doorsList": {
       "1": {
         "id": "1",
         "slug": "exterior-doors-pvc-schuco",
@@ -453,6 +468,60 @@
         "slug": "windows-pcv-schüco-profiles",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "SlidingDoorsPage": {
+    "title": "SLIDING TERRACE DOORS from Poland",
+    "description": "Sliding terrace doors are an ideal solution for modern and large interiors. They have a lot of glazing, making them able to optimally light up the room. They have very good thermal insulation (no thermal bridges), and thanks to the modern fittings technology, we can experience real comfort and joy from using large sliding doors. The solutions proposed by Tur-Plast are an alternative to standard double-leaf balconies. Our offer includes solid and exclusive lift-and-slide terrace doors made of PVC and aluminium.",
+    "slidingDoorsList": {
+      "1": {
+        "id": "1",
+        "slug": "sliding-doors-pvc-hs-type-schuco",
+        "title": "PVC Sliding Terrace Doors - HS Type - Schüco Profiles",
+        "description": "We recommend Schüco ThermoSlide and EasySlide lift-and-slide doors. Even very large wings can be moved easily. The flat and triple-insulated threshold increases the comfort of use and eliminates the risk of a „cold area” at the floor.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "slug": "sliding-doors-pvc-hs-type-kommerling",
+        "title": "PVC Sliding Terrace Doors - HS Type - Kömmerling Profiles",
+        "description": "The exclusive PremiDoor 76 lift-and-slide doors recommended in our offer provide exceptional living comfort. The door leaf moves smoothly and noiselessly along the guides. The excellent-quality seals ensure optimal wind- and water-tightness and protects against external noise. In this system, we obtain the highest parameters of thermal insulation.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "slug": "sliding-doors-pvc-psk-type-schuco",
+        "title": "PVC Sliding Terrace Doors - PSK Type - Schüco Profiles",
+        "description": "Our offer includes the currently popular PSK sliding doors (Parallel-Schiebe-Kipp-Tür – parallel-slide-and-tilt doors). These types of structures are built using standard window profiles. After turning the handle from the closed position, the leaf extends into the room, perpendicular to the window plane, and then slides to the side. The door also has a leaf tilt function.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "slug": "sliding-doors-pvc-psk-type-kommerling",
+        "title": "PVC Sliding Terrace Doors - PSK Type - Kömmerling Profiles",
+        "description": "We produce PSK-type sliding terrace doors which are an attractive alternative to typical balcony doors. This system allows you to save space that is needed when opening traditional balcony or terrace doors. The PSK doors based on Kömmerling PVC profiles have the option of tilting the leaf in addition to sliding.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "slug": "aluminium-sliding-doors-pvc-hs-type-aliplast",
+        "title": "ALUMINIUM Sliding Terrace Doors - HS Type - Aliplast Profiles",
+        "description": "A modern structure; the use of lift-and-slide fittings in the innovative UltraGlide aluminium system with a low threshold is an excellent solution improving the accessibility of buildings for disabled people. It is possible to use colours from the RAL colour palette, structural colours, wood-like colours, anode, bicolour.",
+        "src": "/images/windows/windows-aluminium.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "slug": "aluminium-sliding-doors-pvc-hs-type-aluron",
+        "title": "ALUMINIUM Sliding Terrace Doors - HS Type - Aluron Profiles",
+        "description": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
       }
