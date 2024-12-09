@@ -6,7 +6,11 @@ type Props = {
 };
 
 export default function PageLayout({ children }: Props) {
-  return <div className="flex grow flex-col">{children}</div>;
+  return (
+    <div className="container flex grow flex-col py-80 text-center">
+      {children}
+    </div>
+  );
 }
 
 //  <div className="flex grow flex-col bg-slate-900 py-36">

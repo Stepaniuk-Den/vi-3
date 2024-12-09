@@ -276,24 +276,19 @@
     "pageDesc1": "Choice of the right window is a serious decision which involves investing some money. When choosing windows, customers should make sure if the product goes well with the design of their flat or house, if its operation is convenient, if it helps to save energy, and finally if it guarantees maximum security.",
     "pageDesc2": "A window is a combination of profiles, complex window panes, fittings, seals and other additional accessories. Each of the elements has a great influence on such window qualities as aesthetics, comfort, security and energy efficiency. This is why, when buying windows, it is important to pay attention to their individual elements.",
     "pageDesc3": {
-        "1": {
-          "desc": "Window profiles determine the durability and tightness of the entire window structure."
-        },
-        "2": {
-          "desc": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security."
-        },
-        "3": {
-          "desc": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation."
-        },
-        "4": {
-          "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
-        }
-      
+      "1": {
+        "desc": "Window profiles determine the durability and tightness of the entire window structure."
+      },
+      "2": {
+        "desc": "Window panes constitute about 65-85% of the whole window surface and hence, they influence significantly such window qualities as energy efficiency and security."
+      },
+      "3": {
+        "desc": "Fittings and seals contribute to acoustic and thermal insulation and guarantee security and convenient operation."
+      },
+      "4": {
+        "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
+      }
     },
-    "elementsTitle": "WINDOWS ELEMENTS",
-    "elementsDesc": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
-    "windowsillsTitle": "WINDOWSILLS",
-    "windowsillsDesc": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
     "windowsProfilesList": {
       "1": {
         "id": "1",
@@ -329,8 +324,8 @@
       }
     },
     "windowsElementsList": {
-      "title":"WINDOWS ELEMENTS",
-      "description":"Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
+      "title": "WINDOWS ELEMENTS",
+      "description": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-glazing-units",
@@ -373,8 +368,8 @@
       }
     },
     "windowsillsList": {
-      "title":"WINDOWSILLS",
-      "description":"In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
+      "title": "WINDOWSILLS",
+      "description": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-windowsills-internal",
@@ -401,13 +396,14 @@
       }
     }
   },
-  "DoorsPage":{
+
+  "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
-    "doorFeaturesTitle":"DOOR FEATURES",
-    "doorsDescr":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
-    "doorsList":{
+    "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorFeaturesTitle": "DOOR FEATURES",
+    "doorsDescr": "The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+    "doorsList": {
       "1": {
         "id": "1",
         "slug": "exterior-doors-pvc-schuco",

@@ -285,10 +285,6 @@
         "desc": "Додаткові аксесуари покращують естетичність і зручність використання."
       }
     },
-    "elementsTitle": "ЕЛЕМЕНТИ ВІКОН",
-    "elementsDesc": "У віконному будівництві важливі профільні системи. Однак існує ряд компонентів віконної столярки, які значною мірою впливають на енергоефективність, безпеку та комфорт при щоденному використанні наших вікон. Тип склопакета, фурнітури та ущільнювачів багато в чому визначають якість вікон. Візуальний аспект віконної столярки, у свою чергу, сильно залежить від вибору стійок, кольорів або додаткових віконних аксесуарів.",
-    "windowsillsTitle": "ПІДВІКОННЯ",
-    "windowsillsDesc": "У комплексній пропозиції ТУР-ПЛАСТ ви знайдете масивні та теплоізольовані внутрішні та зовнішні підвіконня.",
     "windowsProfilesList": {
       "1": {
         "id": "1",
@@ -324,6 +320,8 @@
       }
     },
     "windowsElementsList": {
+      "title": "ЕЛЕМЕНТИ ВІКОН",
+      "description": "У віконному будівництві важливі профільні системи. Однак існує ряд компонентів віконної столярки, які значною мірою впливають на енергоефективність, безпеку та комфорт при щоденному використанні наших вікон. Тип склопакета, фурнітури та ущільнювачів багато в чому визначають якість вікон. Візуальний аспект віконної столярки, у свою чергу, сильно залежить від вибору стійок, кольорів або додаткових віконних аксесуарів.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-glazing-units",
@@ -366,6 +364,8 @@
       }
     },
     "windowsillsList": {
+      "title": "ПІДВІКОННЯ",
+      "description": "У комплексній пропозиції ТУР-ПЛАСТ ви знайдете масивні та теплоізольовані внутрішні та зовнішні підвіконня.",
       "1": {
         "id": "1",
         "windowsSlug": "windows-windowsills-internal",
@@ -392,13 +392,13 @@
       }
     }
   },
-  "DoorsPage":{
+  "DoorsPage": {
     "pageTitle": "EXTERIOR DOORS from Poland",
     "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
-    "doorFeaturesTitle":"DOOR FEATURES",
-    "doorsDescr":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
-    "doorsList":{
+    "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorFeaturesTitle": "DOOR FEATURES",
+    "doorsDescr": "The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+    "doorsList": {
       "1": {
         "id": "1",
         "slug": "exterior-doors-pvc-schuco",

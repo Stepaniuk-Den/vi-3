@@ -2,6 +2,7 @@
 
 // import { useTranslations } from "next-intl";
 import { useEffect } from "react";
+import PageLayout from "../components/PageLayout";
 // import PageLayout from "@/components/PageLayout";
 
 type Props = {
@@ -20,9 +21,9 @@ Props) {
   }, [error]);
 
   return (
-    <div>
+    <PageLayout>
       <p>Error</p>
-    </div>
+    </PageLayout>
     // <PageLayout title={t("title")}>
     //   <div>
     //     {t.rich("description", {
