@@ -34,7 +34,7 @@ const Header = () => {
       setOpacityTop(Math.max(0, 1 - scrollY / 30));
       setHeightTop(Math.max(0, 120 - scrollY));
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
