@@ -36,7 +36,7 @@
       "links": {
         "1": {
           "title": "металопластикові вікна",
-          "slug": "windows-pvc"
+          "slug": "windows-pvc-schuco"
         },
         "2": {
           "title": "алюмінієві вікна",
@@ -392,6 +392,7 @@
       }
     }
   },
+
   "DoorsPage": {
     "pageTitle": "EXTERIOR DOORS from Poland",
     "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
