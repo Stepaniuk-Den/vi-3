@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 interface INavigationItem {
   title: string;
@@ -22,22 +22,19 @@ const Navigation = () => {
   const messages = useMessages();
   const selectedLayoutSegment = useSelectedLayoutSegment();
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const [mouseY, setMouseY] = useState<number | null>(null);
   const keys = Object.keys(messages.Navigation);
   const pathname = selectedLayoutSegment ? `${selectedLayoutSegment}` : "home";
+
+  const otherLinkRef = useRef<HTMLLIElement | null>(null);
 
   const handleMouseEnter = (key: string) => {
     setHoveredMenu(key);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredMenu(null);
-  };
-  const handleMouseMove = (e: React.MouseEvent<HTMLLIElement>, key: string) => {
-    if (mouseY !== null && e.clientY > mouseY) {
-      setHoveredMenu(key);
+  const handleMouseLeave = (e: React.MouseEvent<HTMLLIElement>) => {
+    if (otherLinkRef.current && e.target !== otherLinkRef.current) {
+      setHoveredMenu(null);
     }
-    setMouseY(e.clientY);
   };
 
   return (
@@ -49,13 +46,13 @@ const Navigation = () => {
 
         return (
           <li
+            ref={otherLinkRef}
             key={index}
             className={clsx(
               "group/item relative flex items-center justify-center min-w-max h-full font-medium  cursor-pointer transition-all"
             )}
             onMouseEnter={() => handleMouseEnter(key)}
-            onMouseLeave={handleMouseLeave}
-            onMouseMove={(e) => handleMouseMove(e, key)}
+            onMouseLeave={(e) => handleMouseLeave(e)}
           >
             <Link
               href={item.href}
@@ -70,19 +67,20 @@ const Navigation = () => {
               {item.title}
             </Link>
             {subKeys.length > 0 && hoveredMenu === key && (
-              <div className="absolute top-full pt-3 left-0 flex flex-col items-start">
+              <div className="absolute top-full pt-3 left-0 flex flex-col w-max items-start">
                 <ul className=" p-2 flex flex-col items-start bg-white rounded-md shadow-md">
-                  {subKeys.map((subItem, subIndex) => (
-                    <li
-                      key={subIndex}
-                      className="px-4 py-2 w-full rounded-md hover:bg-customMarsala-accent hover:text-white"
-                    >
-                      {/* <Link href={subItem.slug}>{subItem.title}</Link> */}
-                      <Link href={`${item.href}/${subItem.slug}`}>
-                  {subItem.title}
-                </Link>
-                    </li>
-                  ))}
+                  {subKeys.map((subItem, subIndex) => {
+                    return (
+                      <li
+                        key={subIndex}
+                        className="px-4 py-2 rounded-md hover:bg-customMarsala-accent hover:text-white"
+                      >
+                        <Link href={`${item.href}/${subItem.slug}`}>
+                          {subItem.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
