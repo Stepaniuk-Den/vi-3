@@ -7,8 +7,8 @@ interface IMessageBannerProps {
 
   const MessageBanner: React.FC<IMessageBannerProps> = ({ t }) => {
     return (
-      <section className='container sectionCl '>
-        <div className="bg-customMarsala-accentLight text-white flex flex-col gap-9 justify-between items-center px-5 pt-16 pb-8">
+      <section className='container sectionCl'>
+        <div className="bg-customMarsala-accentLight text-white flex flex-col gap-6 justify-between items-center px-5 pt-16 pb-6 rounded-md">
             <div className='flex gap-2 items-center '>
           <h2 className='subTitleCl'>{t('title')}</h2>
           <p>{t('subtitle')}</p>

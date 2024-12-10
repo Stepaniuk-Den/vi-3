@@ -53,3 +53,9 @@ export interface ILinkProps {
   href: string;
   area_label: string;
 }
+
+export interface IImage {
+  id: string;
+  src: string;
+  alt: string;
+}
