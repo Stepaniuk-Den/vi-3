@@ -1,5 +1,4 @@
 import { IParameterItem } from "@/helpers/interfaces";
-import Line from "./Line";
 
 type Props = {
   param: IParameterItem;
