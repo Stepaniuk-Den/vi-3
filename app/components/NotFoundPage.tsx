@@ -13,11 +13,13 @@ const NotFoundPage = () => {
     // </div>
 
     <PageLayout>
-      <h1 className="titleCl">{t("title")}</h1>
-      <Line className="marsala-center" color="marsala"></Line>
-      <p className="subTitleCl max-w-[460px] mx-auto normal-case">
-        {t("description")}
-      </p>
+      <div className="container py-80 text-center">
+        <h1 className="titleCl">{t("title")}</h1>
+        <Line className="marsala-center" color="marsala"></Line>
+        <p className="subTitleCl max-w-[460px] mx-auto normal-case">
+          {t("description")}
+        </p>
+      </div>
     </PageLayout>
   );
 };
