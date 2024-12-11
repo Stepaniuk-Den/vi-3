@@ -36,7 +36,7 @@
       "links": {
         "1": {
           "title": "windows pvc",
-          "slug": "windows-pvc"
+          "slug": "windows-pvc-schuco"
         },
         "2": {
           "title": "windows aluminium",
@@ -305,10 +305,6 @@
         "desc": "Additional accessories enhance aesthetic aspects and convenience of use."
       }
     },
-    "elementsTitle": "WINDOWS ELEMENTS",
-    "elementsDesc": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
-    "windowsillsTitle": "WINDOWSILLS",
-    "windowsillsDesc": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
     "windowsProfilesList": {
       "1": {
         "id": "1",
@@ -416,6 +412,279 @@
       }
     }
   },
+
+  "WindowsPVCSchucoPage": {
+    "pageTitle": "PVC WINDOWS – Schüco Profiles",
+    "pageSubtitle": "/ Excellent energy efficiency thanks to innovative technology /",
+    "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+    "SectionsList": {
+      "ProfilesImg": {
+        "title": "In our offer you will find the following types of Schüco profiles:",
+        "1": {
+          "id": "1",
+          "title": "Schüco Classic LivIng 82 AD",
+          "src": "/images/windows/schuco-profiles/classicAD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Schüco Classic LivIng 82 MD",
+          "src": "/images/windows/schuco-profiles/classicMD.jpeg",
+          "alt": ""
+        }
+      },
+      "ProfilesScheme": {
+        "title": "Schüco Windows – profile LivIng 82 MD and AD Classic",
+        "description": "Schüco Living 82 MD and AS is a new generation of window and door systems for modern construction. The use of the innovative TWIN system allows the frame with double (AS series) or triple (MD series) sealing to be easily fitted to the window sash. In addition, this new twin system uses the world’s first EPDM heat seal. Schüco, thanks to cooperation with Semperit, has exclusive rights to this type of sealing technology. It is due to the use of flexible and heat-sealable material that the tightness in windows and doors has increased significantly, especially in problematic corner areas.",
+        "1": {
+          "id": "1",
+          "title": "Schüco – profile LivIng 82 MD",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Schüco – profile LivIng 82 AS",
+          "src": "/images/windows/schuco-profiles/schemeAS.jpeg",
+          "alt": ""
+        }
+      },
+      "ProfilesCross-sections": {
+        "title": "Window cross-sections in which different GLAZING BEADS were used, depending on the thickness of the glazing units used.",
+        "1": {
+          "id": "1",
+          "title": "LivIng profile with a 48 mm glazing unit 4-18-4-18-4",
+          "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "LivIng profile with a 36 mm glazing unit 4-12-4-12-4",
+          "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "LivIng profile with a 24 mm glazing unit 4-16-4",
+          "src": "/images/windows/schuco-profiles/cross-section24.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 82 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 82 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 24 mm to 52 mm"
+              },
+              "4": {
+                "desc": "Front width min. – 120 mm"
+              },
+              "5": {
+                "desc": "Sash weight max. – 250 kg"
+              },
+              "6": {
+                "desc": "Sash height min.-max. – 400mm – 2600mm"
+              },
+              "7": {
+                "desc": "Sash width min.-max. – 400mm – 1500mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,96 – 1,0 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 9A"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)** – C5/B5"
+              },
+              "7": {
+                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+              },
+              "8": {
+                "desc": "Resistance to repeated opening and closing to DIN EN 12400 (class) – 2"
+              },
+              "9": {
+                "desc": "Operational forces to DIN EN 13115 (class) – 1"
+              },
+              "10": {
+                "desc": "Load capacity of safety devices – requirement met"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              },
+              "2": {
+                "desc": "** Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "The PVC Schuco LivIng 82 MD and AS system is made in 7-chamber technology with excellent insulation properties."
+              },
+              "2": {
+                "desc": "The value of the Uf heat transfer coefficient is: up to 1 W/(m2K) for the AS series and up to 0.96 W/(m2K) for the MD series."
+              },
+              "3": {
+                "desc": "With two (AS series) or three (MD series) sealing surfaces, the LivIng system provides optimal protection against wind, rain and noise."
+              },
+              "4": {
+                "desc": "When using a frame with a central seal (MD series), the system meets the requirements of the German Institute of Window Technology ift Rosenheim in the field of passive construction."
+              },
+              "5": {
+                "desc": "It is possible to include double glazing, unit thickness: 24 mm to 52 mm."
+              },
+              "6": {
+                "desc": "The increased installation depth ensures greater safety and better protection against burglary."
+              },
+              "7": {
+                "desc": "Optimal light access is guaranteed thanks to the narrow visible profile width of 120 mm as standard."
+              },
+              "8": {
+                "desc": "The first weldable EPDM seal integrated with the Schüco LivIng system significantly increases the sealing effect in the corners of the windows."
+              },
+              "9": {
+                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+              },
+              "10": {
+                "desc": "We use silver grey seals in the white profiles of the Schüco LivIng system and black seals in the foil profiles."
+              },
+              "11": {
+                "desc": "All profiles (frame and sash) are reinforced around the entire perimeter with corrosion-resistant 2mm-thick steel sections, which significantly affects the stability, safety and durability of the window."
+              },
+              "12": {
+                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+              },
+              "13": {
+                "desc": "We use high-class MACO MULTI-MATIC fittings."
+              },
+              "14": {
+                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+              },
+              "15": {
+                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+              }
+            }
+          }
+        }
+      },
+      "ProfilesSchemeAluminium": {
+        "title": "Schüco Windows – with aluminium overlays – TOP ALU",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/aluminium.jpeg",
+          "alt": "",
+          "description": "Our standard offer of window joinery manufactured in Poland has been supplemented with PVC windows with aluminium overlays. We produce them based on a Schüco window constructed in the CT70 or LivIng 82 MD / AS system in the CLASSIC style. The elegant aluminium overlays allow optimal adjustment of windows to the facade. The rich RAL colour palette will satisfy even the most demanding tastes, and the possible colour variation between the frame and the sash broadens this range of possibilities even further. Overlays work especially in modern buildings, commercial and service premises, or office buildings. The use of aluminium overlays makes the PVC windows unique."
+        }
+      },
+      "ProfilesSchemeNordic": {
+        "title": "Schüco Windows – profile Alu Inside NORDIC",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/nordic.jpeg",
+          "alt": "",
+          "description": "The Scandinavian Windows system, with outward-opening windows, has been designed especially for the Scandinavian and North German markets. A characteristic feature of this system are windows that open outwards and have the highest stability and excellent thermal insulation parameters. This system allows the implementation of windows with glazing bars characteristic for the region, stylish glazing beads and special fittings (ASSA ABLOY) with various opening methods, such as turn fittings, Top-Hung or Top-Swing fittings. The Schüco Alu Inside Nordic window system is certified by the Danish Technological Institute."
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 120 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 82 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 18 mm to 52 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,87 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 46 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E 1200"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)** – C3"
+              },
+              "7": {
+                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              },
+              "2": {
+                "desc": "** Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "It has three sealing planes and technologically patented joints between aluminium and plastic."
+              },
+              "2": {
+                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+              },
+              "3": {
+                "desc": "7-chamber system (sash) and 11-chamber system (window frame)"
+              },
+              "4": {
+                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+              },
+              "5": {
+                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+              },
+              "6": {
+                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",

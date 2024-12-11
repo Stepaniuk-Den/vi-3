@@ -8,24 +8,23 @@ export interface ILinkToPage {
   btnOffset?: string;
 }
 
-export interface IItemCard {
-  id?: string;
-  slug?: string;
+export interface ILinkProps {
+  id: number;
+  svg: React.ReactNode;
   title: string;
-  description?: string;
-  src?: string | StaticImageData;
-  alt?: string;
-  tBtn?: string;
-  className?: string;
-  btnOffset?: string;
-  layout?: "horizontal" | "vertical";
-  reverse?: boolean;
-  background?: "marsala" | "blue" | "";
-  path?:string;
- }
+  href: string;
+  area_label: string;
+}
+
+export interface IWindowSvgItems {
+  windows: {
+    svg: React.ElementType;
+    name: string;
+  }[];
+}
 
 export interface IDesc {
-  desc: string;
+  desc?: string;
 }
 
 export interface IGuideProjectElement {
@@ -39,19 +38,61 @@ export interface IGuideProjectElement {
   tBtn?: string;
 }
 
-export interface IWindowSvgItems {
-  windows: {
-    svg: React.ElementType;
-    name: string;
-  }[];
+export interface IItemCard {
+  id?: string;
+  slug?: string;
+  title: string;
+  description?: string;
+  src?: string | StaticImageData;
+  alt?: string;
+  tBtn?: string;
+  className?: string;
+  btnOffset?: string;
+  layout?: "horizontal" | "vertical";
+  reverse?: boolean;
+  background?: "marsala" | "blue" | "";
+  path?: string;
 }
 
-export interface ILinkProps {
-  id: number;
-  svg: React.ReactNode;
+export interface INestedCard {
+  id?: string;
+  title?: string;
+  description?: string;
+  src?: string | StaticImageData;
+  alt?: string;
+  className?: string;
+  size?: "small" | "large" | "";
+}
+
+export interface IParameterItem {
   title: string;
-  href: string;
-  area_label: string;
+  list: {
+    [key: string]: IDesc;
+  };
+  notes?: {
+    [key: string]: IDesc;
+  };
+}
+
+export interface IParametersList {
+  [key: string]: IParameterItem;
+}
+
+export interface INestedCardsSectionItem {
+  title?: string;
+  description?: string;
+  [key: string]: any;
+  // string | INestedCard | IParametersList | undefined
+  parametersList?: IParametersList;
+}
+
+export interface INestedCardsSectionsList {
+  [key: string]: {
+    title?: string;
+    description?: string;
+    [key: string]: string | INestedCard | IParametersList | undefined;
+    parametersList?: IParametersList;
+  };
 }
 
 export interface IImage {

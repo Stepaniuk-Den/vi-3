@@ -1,8 +1,9 @@
 import { setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
-// import NotFound from "./not-found";
-import { routing } from "@/i18n/routing";
+import { Locale, routing } from "@/i18n/routing";
 import BaseLayout from "../components/BaseLayout";
+// import NotFoundPage from "../components/NotFoundPage";
+import { notFound } from "next/navigation";
 
 type Props = {
   children: ReactNode;
@@ -34,9 +35,10 @@ export default async function LocaleLayout({
   // const { locale } = await Promise.resolve(params);
   // const { locale } = await params;
 
-  // if (!routing.locales.includes(locale as Locale)) {
-  //   return NotFound();
-  // }
+  if (!routing.locales.includes(locale as Locale)) {
+    // return NotFoundPage();
+    return notFound();
+  }
   setRequestLocale(locale);
 
   // Providing all messages to the client
