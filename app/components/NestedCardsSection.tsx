@@ -42,7 +42,7 @@ const NestedCardsSection: React.FC<Props> = ({ tSectionItem, sectionIdx }) => {
               description={nestedCard.description}
               src={nestedCard.src}
               alt={nestedCard.alt}
-              size={sectionIdx === 0 ? "small" : ""}
+              size={sectionIdx === 0 ? "small" : "large"}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
             />

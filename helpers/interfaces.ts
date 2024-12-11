@@ -61,7 +61,7 @@ export interface INestedCard {
   src?: string | StaticImageData;
   alt?: string;
   className?: string;
-  size?: "small" | "large" | "";
+  size?: "small" | "large";
 }
 
 export interface IParameterItem {

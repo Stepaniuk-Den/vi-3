@@ -15,7 +15,7 @@ const NestedCard: React.FC<INestedCard> = ({
   return (
     <li
       className={clsx(
-        "flex flex-col w-full p-3",
+        "flex flex-col p-3",
         className,
         // {
         //   "bg-customMarsala-accentLight": background === "marsala",
