@@ -1,6 +1,6 @@
 import CardsSection from "@/app/components/CardsSection";
-import DoorsPageDescription from "@/app/components/DoorsPage/DoorsPageDescription";
 import MessageBanner from "@/app/components/MessageBanner";
+import PageTopDescription from "@/app/components/PageTopDescription";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -18,7 +18,7 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
   return (
     <>
       <section className="sectionCl pt-60">
-        <DoorsPageDescription t={t} />
+        <PageTopDescription t={t} />
         <MessageBanner t={tMessage} />
         <CardsSection
           t={t}

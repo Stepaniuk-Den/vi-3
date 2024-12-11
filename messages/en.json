@@ -688,56 +688,155 @@
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
-    "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
-    "doorFeaturesTitle": "DOOR FEATURES",
-    "doorsDescr": "The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
-    "doorsList": {
+    "description":"All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
+    "doorsList":{
       "1": {
-        "id": "1",
+        "id": "m9q25v",
         "slug": "exterior-doors-pvc-schuco",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "title": "PVC Doors – Schüco Profiles",
+        "description": "The doors are made of high-impact, deformation-resistant PVC from the renowned company Schüco. Good thermal insulation is ensured by multi-chamber profiles, while steel reinforcements of a large size and optimal thickness contribute to the stiffness and stability of the product.",
+        "src": "/images/doors/exterior-door.webp",
         "alt": ""
       },
       "2": {
-        "id": "2",
-        "slug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "id": "x7w5pl",
+        "slug": "exterior-doors-pvc-kommerling",
+        "title": "PVC Doors – Kömmerling Profiles",
+        "description": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at our set of ready-made door fillings with the highest properties.",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
       },
       "3": {
-        "id": "3",
-        "slug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "id": "z5k18n",
+        "slug": "exterior-doors-aluminium-aliplast",
+        "title": "ALUMINIUM Doors – Aliplast Profiles",
+        "description": "We produce aluminium doors based on Aliplast profiles. These systems are characterised by excellent stiffness, high-quality coatings and modern design. Thanks to the use of special thermal inserts, we obtain very high thermal insulation parameters.",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
         "alt": ""
       },
       "4": {
-        "id": "4",
-        "slug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "id": "t5j6yc",
+        "slug": "exterior-doors-aluminium-aluron",
+        "title": "ALUMINIUM Doors – Aluron Profiles",
+        "description": "The aluminium systems of the thriving Polish company Aluron are modern constructions intended for the production of very well thermally insulated doors. The use of the innovative ANTI-BI-METAL technology prevents the door leaves from deforming when heated by sunlight, as well as at very low temperatures.",
+        "src": "/images/doors/exterior-doors-aluminium-aluron.jpg",
         "alt": ""
       },
       "5": {
-        "id": "5",
-        "slug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "id": "r2p89q",
+        "slug": "balcony-terrace-doors",
+        "title": "Balcony/Terrace Doors",
+        "description": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. Our terrace doors feature a low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door.",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       },
       "6": {
-        "id": "6",
-        "slug": "windows-pcv-schüco-profiles",
-        "title": "PVC WINDOWS – Schüco Profiles",
-        "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
-        "src": "/images/windows/windows-aluminium.jpeg",
+        "id": "f893lk",
+        "slug": "folding-doors",
+        "title": "Folding Doors",
+        "description": "The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space.",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      }
+    },
+    "doorsFeatures":{
+      "title":"DOOR FEATURES",
+      "description":"The wide range of exclusive door fillings as well as panels from companies such as Paneldoor and Veyna, the extensive selection of door accessories, and the fulfilment of the highest standards ensure that Polish doors purchased from Tur-Plast will serve you for many years.",
+      "1": {
+        "id": "m5q25v",
+        "slug": "door-fillings-panels-for-doors",
+        "title": "Door Fillings – Panels for PVC and Aluminium Doors",
+        "description": "Door fillings may be: inset or overlay; made of laminated boards or aluminium; decorated with various frames, glass elements, inlays, cuttings or appliqués; in any chosen colour and structure. The door fillings in our offer are characterised by high resistance to mechanical damage, difficult weather conditions, and noise. With the wide selection of designs, colours and variety of glazing, even the most demanding customers are able to choose a filling they are fully satisfied with.",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x5w5pl",
+        "slug": "accessories-and-additions-for-doors",
+        "title": "Accessories / Additions for PVC and Aluminium Doors",
+        "description": "As a producer and seller of doors, we know that all kinds of accessories are often very important. Our market systematically provides us with sets of newer and more practical solutions. There is a whole variety of handles, pulls, letterboxes, peepholes, and panes, all different in terms of technical parameters and style. Some accessories can be selected for classic buildings, and others for modern ones. Please feel free to view our systematically expanded offer of door accessories.",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      }
+  }
+},
+  "PVCDoorsSchuco": {
+    "title": "EXTERIOR DOORS from PVC – Schüco profiles",
+    "description":{
+     "p1":"The doors are made of high-impact, deformation-resistant PVC from the renowned company Schüco. Good thermal insulation is ensured by multi-chamber profiles, while steel reinforcements of a large size and optimal thickness contribute to the stiffness and stability of the product.",
+     "p2":"The structure of the profiles gives us the possibility of installing multi-point locks and reinforced locking elements. This type of solution ensures we obtain safe doors with a long service life. Our exterior doors made of PVC have a low aluminium threshold with a thermal break.",
+     "p3":"The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam, which ensures very good thermal insulation of the door. Door panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays. In addition to the models of door fillings presented in our galleries, we are happy to make doors according to your individual project."
+    },
+    "imgList":{
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+"SchucoProfile82":{
+  "bannerTitle": "Schüco DOOR – profil LivIng 82",
+  "title":"Schüco LivIng are innovative systems for modern plastic doors.",
+  "list":{
+   "l1":"The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm.",
+   "l2":"The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of ​​the element, while obtaining an elegant appearance as there is no seal hardening.",
+   "l3":"The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized.",
+   "l4":"Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection.",
+   "l5":"We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles.",
+   "l6":"The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
+  }
+},
+
+"CardsSchuco82":{
+"list": {
+      "1": {
+        "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening outwards",
+        "img": "/images/doors/opening_outwards.jpg"
+      },
+      "2": {
+        "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening inwards",
+        "img": "/images/doors/opening_inwards.jpg"
+      }
+    }
+},
+
+  "PVCDoorsAlu": {
+    "title": "Двері PVC Schuco",
+    "description":{
+     "p1":"The doors are made of high-impact, deformation-resistant PVC from the renowned company Schüco. Good thermal insulation is ensured by multi-chamber profiles, while steel reinforcements of a large size and optimal thickness contribute to the stiffness and stability of the product.",
+     "p2":"The structure of the profiles gives us the possibility of installing multi-point locks and reinforced locking elements. This type of solution ensures we obtain safe doors with a long service life. Our exterior doors made of PVC have a low aluminium threshold with a thermal break.",
+     "p3":"The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam, which ensures very good thermal insulation of the door. Door panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays. In addition to the models of door fillings presented in our galleries, we are happy to make doors according to your individual project."
+    },
+    "imgList":{
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
       }
     }
@@ -795,5 +894,5 @@
         "alt": ""
       }
     }
-  }
+}
 }

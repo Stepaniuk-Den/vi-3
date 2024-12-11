@@ -94,3 +94,9 @@ export interface INestedCardsSectionsList {
     parametersList?: IParametersList;
   };
 }
+
+export interface IImage {
+  id: string;
+  src: string;
+  alt: string;
+}
