@@ -54,7 +54,7 @@ const ImgCarouselPage = ({ imgList }: { imgList: IImage[] }) => {
            <Arrow className="fill-customMarsala"/>
         </button>
       </div>
-      <div className="flex justify-between">
+      <div className="flex gap-1">
         {imgList.map((image, index) => (
           <button
             key={index}

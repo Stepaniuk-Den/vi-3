@@ -13,18 +13,20 @@ type Props = {
 const DoorsPvcSchuco: React.FC<Props> =({ params: { locale } })=>{
   setRequestLocale(locale);
 
-  const descriptionT = useTranslations("PVCDoorsSchuco");
-  const bannerT = useTranslations("SchucoProfile82");
-  const cardsT = useTranslations("CardsSchuco82");
+  // const descriptionT = useTranslations("PVCDoorsSchuco");
+  const t = useTranslations("PVCDoorsSchucoPage");
+  // const bannerT = useTranslations("SchucoProfile82");
+  // const cardsT = useTranslations("CardsSchuco82");
 
 
 
 
   return (
       <section className="sectionCl pt-60">
-       <SinglePageDescription t={descriptionT}/>
-       <SectionBannerAndList t={bannerT}/>
-       <SectionCardsAndBanner t={cardsT}/>
+       <SinglePageDescription t={t}/>
+       {/* <SectionBannerAndList t={bannerT}/> */}
+       <SectionBannerAndList t={t.raw("SchucoProfile82Section")} />
+       <SectionCardsAndBanner t={t.raw("CardsSchuco82Section")}/>
       </section>
   );
 };
