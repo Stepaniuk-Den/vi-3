@@ -35,7 +35,7 @@ const NestedCardsSection: React.FC<Props> = ({ tSectionItem, sectionIdx }) => {
         <Line className="marsala-left" color="marsala" />
 
         <ul className="flex justify-center gap-6">
-          {nestedCardsList.map((nestedCard, idx) => (
+          {nestedCardsList.map((nestedCard) => (
             <NestedCard
               key={nestedCard.id}
               title={nestedCard.title}
