@@ -2,6 +2,7 @@ import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
 import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
 import Line from "./Line";
+import TitleBanner from "./TitleBanner";
 
 type Props = {
   // tSectionItem: {
@@ -15,10 +16,19 @@ type Props = {
   // };
 
   tSectionItem: INestedCardsSectionItem;
-  sectionIdx: number;
+  // sectionIdx: number;
+  size?: "small" | "large";
+  titleBanner?: boolean;
+  titleBannerCard?: boolean;
 };
 
-const NestedCardsSection: React.FC<Props> = ({ tSectionItem, sectionIdx }) => {
+const NestedCardsSection: React.FC<Props> = ({
+  tSectionItem,
+  // sectionIdx,
+  size,
+  titleBanner,
+  titleBannerCard,
+}) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
   const nestedCardsList = Object.values(tSectionItem).filter(
@@ -27,12 +37,21 @@ const NestedCardsSection: React.FC<Props> = ({ tSectionItem, sectionIdx }) => {
   // console.log("🚀 ~ nestedCardsList:", nestedCardsList);
   // console.log(tSectionItem.parametersList);
 
+  // const size = sectionIdx === 0 ? "small" : "large";
+
   return (
     <section className="sectionCl">
       <div className="container">
-        {/* {usualTitle ? : } */}
-        <h3 className="titleCl text-start">{tSectionItem.title}</h3>
-        <Line className="marsala-left" color="marsala" />
+        {titleBanner ? (
+          <TitleBanner>
+            <h3 className="titleCl">{tSectionItem.title}</h3>
+          </TitleBanner>
+        ) : (
+          <>
+            <h3 className="titleCl text-start">{tSectionItem.title}</h3>
+            <Line className="marsala-left" color="marsala" />
+          </>
+        )}
 
         <ul className="flex justify-center gap-6">
           {nestedCardsList.map((nestedCard) => (
@@ -42,7 +61,8 @@ const NestedCardsSection: React.FC<Props> = ({ tSectionItem, sectionIdx }) => {
               description={nestedCard.description}
               src={nestedCard.src}
               alt={nestedCard.alt}
-              size={sectionIdx === 0 ? "small" : "large"}
+              size={size}
+              titleBannerCard={titleBannerCard}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
             />

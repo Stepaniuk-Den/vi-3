@@ -62,6 +62,7 @@ export interface INestedCard {
   alt?: string;
   className?: string;
   size?: "small" | "large";
+  titleBannerCard?: boolean;
 }
 
 export interface IParameterItem {
@@ -84,6 +85,9 @@ export interface INestedCardsSectionItem {
   [key: string]: any;
   // string | INestedCard | IParametersList | undefined
   parametersList?: IParametersList;
+//   size?: "small" | "large";
+//   titleBanner?: boolean;
+//   titleBannerCard?: boolean;
 }
 
 export interface INestedCardsSectionsList {
