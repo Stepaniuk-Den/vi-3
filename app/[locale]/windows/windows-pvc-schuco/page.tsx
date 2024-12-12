@@ -32,7 +32,10 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
         <NestedCardsSection
           key={idx}
           tSectionItem={tSectionItem as INestedCardsSectionItem}
-          sectionIdx={idx}
+          titleBanner={idx === 1 || idx === 3 || idx === 4}
+          titleBannerCard={idx === 0}
+          size={idx === 0 ? "small" : "large"}
+          // sectionIdx={idx}
         />
       ))}
     </>
