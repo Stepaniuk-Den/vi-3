@@ -32,9 +32,9 @@ const ItemCard: React.FC<IItemCard> = ({
   return (
     <li
       className={clsx(
-        "flex w-full shadow-lg rounded-md p-3",
+        "flex w-full shadow-lg rounded-md",
         className,
-        layout === "horizontal" ? "flex-row gap-8" : "flex-col",
+        layout === "horizontal" ? "flex-row gap-8 p-7" : "flex-col p-3",
         reverse && layout === "horizontal" ? "flex-row-reverse" : "",
         {
           "bg-customMarsala-accentLight": background === "marsala",
@@ -43,28 +43,19 @@ const ItemCard: React.FC<IItemCard> = ({
       )}
       // style={{ backgroundColor: background }}
     >
-      {/* max-w-xl */}
-      {/* <div className="shadow-lg rounded-md p-3"> */}
       {layout !== "horizontal" && (
         <div>
           {/* className="flex-grow" */}
           <h3 className="subTitleCl xl:leading-none">{title}</h3>
           <Line className="marsala-left" color="marsala" />
-          {/* min-h-[64px] */}
         </div>
       )}
 
       {/* ======== IMAGE ======== */}
-      {/* <div className="border border-customMarsala-accentLight rounded-md overflow-hidden"> */}
       <div
-        // className={clsx(
-        //   "relative w-full h-[360px] mb-6 border-b border-customMarsala-accentLight overflow-hidden"
-        // )}
         className={clsx(
-          // "relative w-full h-[360px] border border-gray-300 rounded-md overflow-hidden",
           "relative h-[360px] border border-gray-300 rounded-md overflow-hidden",
           layout === "horizontal" ? "mb-0 w-1/2" : "mb-6 w-full"
-          //w-1/2 h-80 lg:h-full
         )}
       >
         <Image
@@ -78,7 +69,6 @@ const ItemCard: React.FC<IItemCard> = ({
       </div>
 
       {/* ======== DESCRIPTION ======== */}
-      {/* <div className="flex flex-col justify-between lg:h-52 h-36"> */}
       <div
         className={clsx(
           "flex flex-col justify-between",
@@ -87,23 +77,18 @@ const ItemCard: React.FC<IItemCard> = ({
       >
         <div>
           {layout === "horizontal" && (
-            <div>
-              {/* className="flex-grow" */}
+            <div className="pt-12">
               <h3 className="subTitleCl xl:leading-none">{title}</h3>
               <Line className="marsala-left" color="marsala" />
-              {/* min-h-[64px] */}
             </div>
           )}
-          <p className="">{description}</p>
+          <p>{description}</p>
         </div>
 
         <LinkToPage href={link} className="self-end" btnOffset={btnOffset}>
           {tBtn}
         </LinkToPage>
       </div>
-
-      {/* </div> */}
-      {/* </div> */}
     </li>
   );
 };
