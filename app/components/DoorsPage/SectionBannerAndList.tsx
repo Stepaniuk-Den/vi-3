@@ -1,5 +1,5 @@
-import React from 'react';
-import TitleBanner from '../TitleBanner';
+import React from "react";
+// import TitleBanner from "../TitleBanner";
 
 interface ISectionBannerAndListProps {
   t: {
@@ -15,7 +15,7 @@ const SectionBannerAndList: React.FC<ISectionBannerAndListProps> = ({ t }) => {
   return (
     <section>
       <div className="container">
-        <TitleBanner title={t.bannerTitle} size="large" />
+        {/* <TitleBanner title={t.bannerTitle} size="large" /> */}
         <div>
           <h2 className="font-bold mb-4">{t.title}</h2>
           <ul className="list-disc list-inside">

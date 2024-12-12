@@ -1,5 +1,5 @@
 import React from 'react';
-import TitleBanner from '../TitleBanner';
+// import TitleBanner from '../TitleBanner';
 import Image from 'next/image';
 
 interface ICard {
@@ -23,7 +23,7 @@ const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({ t }) => 
       <ul className="grid grid-cols-2 gap-7">
           {cardsList.map((el, idx) => (
             <li key={idx} className="mb-4">
-              <TitleBanner title={el.bannerTitle} size="medium" />
+              {/* <TitleBanner title={el.bannerTitle} size="medium" /> */}
               <div className='relative w-3/4 h-[480px] mb-4 mx-auto'>
               <Image src={el.img} alt={el.bannerTitle} width={300} height={300}  className="w-full h-full object-cover rounded-md" />
               </div>
