@@ -31,7 +31,7 @@ const LocaleSwitcher = () => {
   const [isBtnLangVisible, setBtnLangVisible] = useState(false);
   const ref = useClickOutside(() => setBtnLangVisible(false));
 
-  const [hoveredMenu, setHoveredMenu] = useState<boolean>(false);
+  const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
@@ -40,13 +40,13 @@ const LocaleSwitcher = () => {
 
   const otherLanguagesRef = useRef<HTMLDivElement | null>(null);
 
-  const handleMouseEnter = () => {
-    setHoveredMenu(true);
+  const handleMouseEnter = (key: string) => {
+    setHoveredMenu(key);
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     if (otherLanguagesRef.current && e.target !== otherLanguagesRef.current) {
-      setHoveredMenu(false);
+      setHoveredMenu(null);
     }
   };
 
@@ -73,7 +73,7 @@ const LocaleSwitcher = () => {
     <div
       className="absolute right-4 top-2 flex flex-col"
       ref={otherLanguagesRef}
-      onMouseEnter={() => handleMouseEnter()}
+      onMouseEnter={() => handleMouseEnter("langBtn")}
       onMouseLeave={handleMouseLeave}
     >
       <button
