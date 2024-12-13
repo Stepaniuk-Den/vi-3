@@ -1,35 +1,61 @@
-import React from 'react';
-// import TitleBanner from '../TitleBanner';
-import Image from 'next/image';
+import React from "react";
+import NestedCard from "../NestedCard";
+import Line from "../Line";
+import { IParameterItem } from "@/helpers/interfaces";
+import NestedParameterDescList from "../NestedParameterDescList";
 
 interface ICard {
-  bannerTitle: string;
+  bannerTitle?: string;
   img: string;
+  description?: string;
 }
 
 interface ISectionCardsAndBannerProps {
   t: {
     list?: ICard[];
+    title: string;
+    parametersList?: Record<string, IParameterItem>;
   };
+  isShowtitle: boolean;
+  isShowNested: boolean;
 }
 
-const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({ t }) => {
-  // const cards = t.raw("list");
+const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
+  t,
+  isShowtitle,
+  isShowNested,
+}) => {
   const cardsList = t.list ? Object.values(t.list) : [];
+  const parameters = t.parametersList ? Object.values(t.parametersList) : [];
 
   return (
     <section className="sectionCl">
       <div className="container">
-      <ul className="grid grid-cols-2 gap-7">
+        {isShowtitle && (
+          <>
+            <h2 className="titleCl text-center">{t.title}</h2>
+            <Line className="marsala-center" color="marsala" />
+          </>
+        )}
+        <ul className="grid grid-cols-2 gap-7">
           {cardsList.map((el, idx) => (
-            <li key={idx} className="mb-4">
-              {/* <TitleBanner title={el.bannerTitle} size="medium" /> */}
-              <div className='relative w-3/4 h-[480px] mb-4 mx-auto'>
-              <Image src={el.img} alt={el.bannerTitle} width={300} height={300}  className="w-full h-full object-cover rounded-md" />
-              </div>
-            </li>
+            <NestedCard
+              key={idx}
+              src={el.img}
+              alt={el.bannerTitle}
+              title={el.bannerTitle}
+              description={el.description}
+              isRow={false}
+            />
           ))}
         </ul>
+        {isShowNested && parameters.length > 0 && (
+          <>
+            {parameters.map((param, idx) => (
+              <NestedParameterDescList key={idx} param={param} />
+            ))}
+          </>
+        )}
       </div>
     </section>
   );
