@@ -794,6 +794,19 @@
         "alt": ""
       }
     },
+    "SchucoProfilesSection":{
+      "title":"OUR OFFER INCLUDES TWO TYPES OF DOOR PROFILES BY Schüco: Corona CT 70 and LivIng 82:",
+      "list": {
+        "1": {
+          "bannerTitle": "Schüco door sill cross-section – Corona CT 70 ",
+          "img": "/images/doors/corona_CT_70.jpg"
+        },
+        "2": {
+          "bannerTitle": "Schüco door sill cross-section – LivIng 82",
+          "img": "/images/doors/livIng_82.jpg"
+        }
+      }
+    },
     "SchucoProfile82Section": {
       "bannerTitle": "Schüco DOOR – profil LivIng 82",
       "title": "Schüco LivIng are innovative systems for modern plastic doors.",
@@ -815,8 +828,63 @@
         "2": {
           "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening inwards",
           "img": "/images/doors/opening_inwards.jpg"
+        },
+        "3": {
+          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "description":"Cross-section through the LivIng 82 door opening outwards"
+        },
+        "4": {
+          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "description":"Cross-section through the LivIng 82 door opening inwards"
+        }
+      },
+      "parametersList": {
+        "1": {
+          "title": "TECHNICAL INFORMATION:",
+          "description":"Schüco LivIng are innovative systems for modern plastic doors.",
+          "list": {
+            "1": {
+              "desc": "System mounting depth – 82 mm"
+            },
+            "2": {
+              "desc": "Front width min. – 88 mm"
+            },
+            "3": {
+              "desc": "Uf value (frame) – 1.1 W/(m²·K)"
+            },
+            "4": {
+              "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
+            },
+            "5": {
+              "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
+            },
+            "6": {
+              "desc": "Air permeability – class 2"
+            },
+            "7": {
+              "desc": "Water tightness – class 5A"
+            },
+            "8": {
+              "desc": "Anti-burglary resistance – up to Rc2"
+            },
+            "9": {
+              "desc": "Wind load resistance – klass C2/B2"
+            },
+            "10": {            
+              "desc": "Height max. – 2350 mm"
+            },
+            "11": {
+              "desc": "Width max. – 1100 mm"
+            },
+            "12": {
+              "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
+            }
+          }
         }
       }
+    },
+    "PanelTypes": {
+      "title": "PANEL STRIPS – types:"
     }
   },
 

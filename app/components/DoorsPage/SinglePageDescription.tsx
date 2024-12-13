@@ -35,8 +35,7 @@ const SinglePageDescription: React.FC<ISinglePageDescriptionProps> = ({
               </p>
             ))}
           </div>
-        </div>
-      </div>
+        </div></div>
     </section>
   );
 };
