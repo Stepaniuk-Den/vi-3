@@ -3,14 +3,14 @@ import Line from "../Line";
 import ImgCarouselPage from "../ImgCarouselPage";
 import { IImage } from "@/helpers/interfaces";
 
-interface ISinglePageDescriptionProps {
+interface ISectionCarouselAndDescrProps {
   t: {
     (key: string): string;
     raw: (key: string) => Record<string, string> | IImage[];
   };
 }
 
-const SinglePageDescription: React.FC<ISinglePageDescriptionProps> = ({
+const SectionCarouselAndDescr: React.FC<ISectionCarouselAndDescrProps> = ({
   t,
 }) => {
   const images = t.raw("imgList");
@@ -40,4 +40,4 @@ const SinglePageDescription: React.FC<ISinglePageDescriptionProps> = ({
   );
 };
 
-export default SinglePageDescription;
+export default SectionCarouselAndDescr;
