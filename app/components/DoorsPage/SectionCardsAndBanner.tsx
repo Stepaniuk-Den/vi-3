@@ -3,6 +3,8 @@ import NestedCard from "../NestedCard";
 import Line from "../Line";
 import { IParameterItem } from "@/helpers/interfaces";
 import NestedParameterDescList from "../NestedParameterDescList";
+import TitleBanner from "../TitleBanner";
+import Image from "next/image";
 
 interface ICard {
   bannerTitle?: string;
@@ -14,30 +16,61 @@ interface ISectionCardsAndBannerProps {
   t: {
     list?: ICard[];
     title: string;
+    description?: string;
     parametersList?: Record<string, IParameterItem>;
+    imgThreeList?:ICard[];
   };
-  isShowtitle: boolean;
-  isShowNested: boolean;
+  isShowtitle?: boolean;
+  isShowNested?: boolean;
+  isShowDescr?: boolean;
+  isShowTitleBanner?: boolean;
+  columns?: number;
+  isImgThreeList?:boolean;
 }
 
 const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
   t,
-  isShowtitle,
-  isShowNested,
+  isShowtitle = true,
+  isShowNested = false,
+  isShowDescr = false,
+  isShowTitleBanner = false,
+  isImgThreeList = false,
+  columns = 2,
 }) => {
   const cardsList = t.list ? Object.values(t.list) : [];
   const parameters = t.parametersList ? Object.values(t.parametersList) : [];
+  const imgThreeList = t.imgThreeList ? Object.values(t.imgThreeList) : [];
 
   return (
     <section className="sectionCl">
       <div className="container">
-        {isShowtitle && (
-          <>
+        {isShowtitle &&
+          (isShowTitleBanner ? (
+             <TitleBanner>
+              <h3 className="subTitleCl">
+                {t.title}
+              </h3>
+            </TitleBanner>
+          ) : (
+            <>
             <h2 className="titleCl text-center">{t.title}</h2>
-            <Line className="marsala-center" color="marsala" />
-          </>
-        )}
-        <ul className="grid grid-cols-2 gap-7">
+            <Line className="marsala-center" color="marsala" /></>
+          ))}
+        {isShowDescr && <p className="mb-5">{t.description}</p>}
+        {/* <ul className="grid grid-cols-2 gap-7"> */}
+        <ul className={`grid ${`grid-cols-${columns}`} gap-7`}>
+          {isImgThreeList && imgThreeList.length > 0 && imgThreeList.map((el, idx) => (
+            <li key={idx} className="relative w-[260px] h-[260px] border border-gray-300 rounded-md overflow-hidden mx-auto">
+            <Image
+            className="object-cover"
+                        sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                        src={el.img || ""}
+                        alt={el.img || ""}
+                        fill
+                        priority
+                      />
+          </li>
+          ))}
           {cardsList.map((el, idx) => (
             <NestedCard
               key={idx}
