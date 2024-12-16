@@ -44,7 +44,6 @@ const SlidingDoorsHsSch: React.FC<Props> = ({ params: { locale } }) => {
                   title={card.title}
                   src={card.src}
                   alt={card.alt}
-                  titleBannerCard={true}
                   size={"w-1/2"}
                 />
               );

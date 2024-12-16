@@ -1326,9 +1326,11 @@
       }
     },
     "bannerTitle": "PVC Sliding Terrace Doors – HS Schüco LivIngSlide",
-    "desc4": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
-    "desc5": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
-    "desc6": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise.",
+    "desc4": {
+      "p1": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
+      "p2": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
+      "p3": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise."
+    },
     "imgList2": {
       "1": {
         "id": "1",

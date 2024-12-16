@@ -74,9 +74,12 @@ const Navigation = () => {
                     return (
                       <li
                         key={subIndex}
-                        className="px-4 py-2 rounded-md hover:bg-customMarsala-accent hover:text-white"
+                        className="w-full rounded-md hover:bg-customMarsala-accent hover:text-white"
                       >
-                        <Link href={`/${locale}${item.href}/${subItem.slug}`}>
+                        <Link
+                          className="flex px-4 py-2"
+                          href={`/${locale}${item.href}/${subItem.slug}`}
+                        >
                           {subItem.title}
                         </Link>
                       </li>
