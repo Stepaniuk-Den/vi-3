@@ -74,7 +74,7 @@ const Navigation = () => {
                     return (
                       <li
                         key={subIndex}
-                        className="w-full rounded-md hover:bg-customMarsala-accent hover:text-white"
+                        className="w-full  rounded-md hover:bg-customMarsala-accent hover:text-white"
                       >
                         <Link
                           className="flex px-4 py-2"
