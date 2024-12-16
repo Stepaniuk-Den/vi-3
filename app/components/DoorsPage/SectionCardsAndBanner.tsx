@@ -5,6 +5,7 @@ import { IParameterItem } from "@/helpers/interfaces";
 import NestedParameterDescList from "../NestedParameterDescList";
 import TitleBanner from "../TitleBanner";
 import Image from "next/image";
+import clsx from "clsx";
 
 interface ICard {
   bannerTitle?: string;
@@ -26,6 +27,7 @@ interface ISectionCardsAndBannerProps {
   isShowTitleBanner?: boolean;
   columns?: number;
   isImgThreeList?:boolean;
+  isNestedCard?:boolean;
 }
 
 const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
@@ -35,6 +37,7 @@ const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
   isShowDescr = false,
   isShowTitleBanner = false,
   isImgThreeList = false,
+  isNestedCard = true,
   columns = 2,
 }) => {
   const cardsList = t.list ? Object.values(t.list) : [];
@@ -47,9 +50,9 @@ const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
         {isShowtitle &&
           (isShowTitleBanner ? (
              <TitleBanner>
-              <h3 className="subTitleCl">
+              <h2 className="titleCl">
                 {t.title}
-              </h3>
+              </h2>
             </TitleBanner>
           ) : (
             <>
@@ -57,8 +60,10 @@ const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
             <Line className="marsala-center" color="marsala" /></>
           ))}
         {isShowDescr && <p className="mb-5">{t.description}</p>}
-        {/* <ul className="grid grid-cols-2 gap-7"> */}
-        <ul className={`grid ${`grid-cols-${columns}`} gap-7`}>
+        <ul className={clsx("grid gap-7",         {
+          "grid-cols-2": columns === 2,
+          "grid-cols-3": columns === 3,
+        })}>
           {isImgThreeList && imgThreeList.length > 0 && imgThreeList.map((el, idx) => (
             <li key={idx} className="relative w-[260px] h-[260px] border border-gray-300 rounded-md overflow-hidden mx-auto">
             <Image
@@ -71,7 +76,7 @@ const SectionCardsAndBanner: React.FC<ISectionCardsAndBannerProps> = ({
                       />
           </li>
           ))}
-          {cardsList.map((el, idx) => (
+          {isNestedCard && cardsList.map((el, idx) => (
             <NestedCard
               key={idx}
               src={el.img}
