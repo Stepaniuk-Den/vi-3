@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
@@ -14,7 +13,10 @@ import FeedbackLinks from "./FeedbackLinks";
 
 // import dynamic from "next/dynamic";
 
-// const HeaderLinks = dynamic(() => import("../HeaderLinks"), { ssr: false });
+// const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"));
+// const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"), {
+//   ssr: false,
+// });
 
 const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);

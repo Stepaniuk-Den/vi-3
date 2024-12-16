@@ -1387,5 +1387,63 @@
         "alt": ""
       }
     }
+  },
+  "SlidingDoorsHsSchPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Schüco Profiles",
+    "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",
+    "imgList": {
+      "1": {
+        "id": 1,
+        "src": "/images/slidingDoors/hsSch/hs-sch-1.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "2": {
+        "id": 2,
+        "src": "/images/slidingDoors/hsSch/hs-sch-2.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "3": {
+        "id": 3,
+        "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
+        "alt": "schema sliding doors"
+      }
+    },
+    "desc2": "SIX OPENING OPTIONS with one or two sliding leaves. This allows to fine-tune the woodwork to your individual requirements in terms of thermal insulation, dimensions and comfort of use.",
+    "desc3": "TWO SYSTEMS of lift-and-slide doors: Schüco EasySlide and Schüco LivIngSlide. TUR-PLAST is a Polish producer of individual solutions for HS-type sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Schüco systems can be easily combined with energy-saving and passive Schüco windows.",
+    "SchSlide": {
+      "1": {
+        "id": "1",
+        "title": "Schüco EasySlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "Schüco LivIngSlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpeg",
+        "alt": ""
+      }
+    },
+    "bannerTitle": "PVC Sliding Terrace Doors – HS Schüco LivIngSlide",
+    "desc4": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
+    "desc5": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
+    "desc6": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise.",
+    "imgList2": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpeg",
+        "alt": ""
+      }
+    }
   }
 }
