@@ -1,6 +1,5 @@
 import SectionCardsAndBanner from "@/app/components/DoorsPage/SectionCardsAndBanner";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
-
 import { renderNestedParameterLists } from "@/helpers/renderNestedParameterLists";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
