@@ -3,8 +3,8 @@
 import clsx from "clsx";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname} from "next/navigation";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useRef, useState } from "react";
 
 interface INavigationItem {
   title: string;
@@ -20,19 +20,22 @@ interface ILinkProps {
 const Navigation = () => {
   const t = useTranslations("Navigation");
   const messages = useMessages();
-  const pathname = usePathname(); // Отримання поточного шляху
-  const locale = useLocale(); // Отримання поточної мови
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-
+  const pathname = usePathname();
+  const locale = useLocale();
   const keys = Object.keys(messages.Navigation);
-  const selectedLayoutSegment = pathname ? `${pathname.split('/')[1]}` : "home";
+  const selectedLayoutSegment = pathname ? `${pathname.split("/")[1]}` : "home";
+
+  const otherLinkRef = useRef<HTMLLIElement | null>(null);
 
   const handleMouseEnter = (key: string) => {
     setHoveredMenu(key);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredMenu(null);
+  const handleMouseLeave = (e: React.MouseEvent<HTMLLIElement>) => {
+    if (otherLinkRef.current && e.target !== otherLinkRef.current) {
+      setHoveredMenu(null);
+    }
   };
 
   return (
@@ -44,10 +47,13 @@ const Navigation = () => {
 
         return (
           <li
+            ref={otherLinkRef}
             key={index}
-            className="group/item relative flex items-center justify-center min-w-max h-full font-medium cursor-pointer transition-all"
+            className={clsx(
+              "group/item relative flex items-center justify-center min-w-max h-full font-medium  cursor-pointer transition-all"
+            )}
             onMouseEnter={() => handleMouseEnter(key)}
-            onMouseLeave={handleMouseLeave}
+            onMouseLeave={(e) => handleMouseLeave(e)}
           >
             <Link
               href={`/${locale}${item.href}`}
@@ -63,7 +69,7 @@ const Navigation = () => {
             </Link>
             {subKeys.length > 0 && hoveredMenu === key && (
               <div className="absolute top-full pt-3 left-0 flex flex-col w-max items-start">
-                <ul className="p-2 flex flex-col items-start bg-white rounded-md shadow-md">
+                <ul className=" p-2 flex flex-col items-start bg-white rounded-md shadow-md">
                   {subKeys.map((subItem, subIndex) => {
                     return (
                       <li
