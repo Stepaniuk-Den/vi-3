@@ -1,9 +1,9 @@
 "use client";
 
 import clsx from "clsx";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 
 interface INavigationItem {
@@ -20,10 +20,11 @@ interface ILinkProps {
 const Navigation = () => {
   const t = useTranslations("Navigation");
   const messages = useMessages();
-  const selectedLayoutSegment = useSelectedLayoutSegment();
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
+  const pathname = usePathname();
+  const locale = useLocale();
   const keys = Object.keys(messages.Navigation);
-  const pathname = selectedLayoutSegment ? `${selectedLayoutSegment}` : "home";
+  const selectedLayoutSegment = pathname ? `${pathname.split("/")[1]}` : "home";
 
   const otherLinkRef = useRef<HTMLLIElement | null>(null);
 
@@ -40,7 +41,7 @@ const Navigation = () => {
   return (
     <ul className="flex flex-col items-center justify-start h-full gap-x-1 py-3 uppercase lg:flex-row">
       {keys.map((key, index) => {
-        const isActive = pathname === key;
+        const isActive = selectedLayoutSegment === key;
         const item = t.raw(key) as INavigationItem;
         const subKeys = item.links ? Object.values(item.links) : [];
 
@@ -55,7 +56,7 @@ const Navigation = () => {
             onMouseLeave={(e) => handleMouseLeave(e)}
           >
             <Link
-              href={item.href}
+              href={`/${locale}${item.href}`}
               className={clsx(
                 "flex items-center justify-center w-full h-full py-3 px-5 rounded-md border border-transparent transition-all hover:border-white",
                 {
@@ -75,7 +76,7 @@ const Navigation = () => {
                         key={subIndex}
                         className="px-4 py-2 rounded-md hover:bg-customMarsala-accent hover:text-white"
                       >
-                        <Link href={`${item.href}/${subItem.slug}`}>
+                        <Link href={`/${locale}${item.href}/${subItem.slug}`}>
                           {subItem.title}
                         </Link>
                       </li>
