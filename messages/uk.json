@@ -732,31 +732,131 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "ZAD93T",
+        "src": "/images/doors/doors_kommerling_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "SJ12TQ",
+        "src": "/images/doors/doors_kommerling_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "MCJYFQ",
+        "src": "/images/doors/doors_kommerling_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "51300N",
+        "src": "/images/doors/doors_kommerling_4.jpeg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "L3XO8I",
+        "src": "/images/doors/doors_kommerling_5.jpg",
         "alt": ""
       }
+    },
+    "FeaturesKommerling76Section": {
+      "title": "Характерні особливості дверної системи KÖMMERLING 76 AD:",
+      "img": "/images/doors/corona_CT_70.jpg",
+      "parametersList": {
+        "1": {
+          "list": {
+            "1": {
+              "desc": "Високий захист від злому – до класу протизламності RC2 (Wk2);"
+            },
+            "2": {
+              "desc": "Оптимальний розподіл сталевої арматури та кутових з’єднань;"
+            },
+            "3": {
+              "desc": "Виняткова структурна стійкість;"
+            },
+            "4": {
+              "desc": "Можливість вбудовування спеціальних стекол та інноваційного наповнення дверей до 48 мм;"
+            },
+            "5": {
+              "desc": "Висока герметичність – подвійна герметизація порога;"
+            },
+            "6": {
+              "desc": "Ідеальний захист від мінливих погодних умов"
+            },
+            "7": {
+              "desc": "Відмінна теплоізоляція;"
+            },
+            "8": {
+              "desc": "Необмежені можливості дизайну завдяки широкій палітрі кольорів і різної структури поверхні."
+            }
+          }
+        }
+      }
+    },
+    "OutwardDoors76Section":{
+      "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ НАЗОВНІ – розріз порога Kömmerling 76 AD",
+      "list":{
+        "1": {
+          "bannerTitle": "Менший одностулковий лист",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description":"/ дверне полотно 76205 відчиняється ззовні /"
+        },
+        "2": {
+          "bannerTitle": "Більший одностулковий лист",
+          "img": "/images/doors/livIng_82.jpg",
+           "description":"/ дверне полотно 76207 відчиняється всередину /"
+        }
+      }
+    },
+    "InwardDoors76Section":{
+      "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ ВСЕРЕДИНУ – розріз порога Kömmerling 76 AD",
+      "list":{
+        "1": {
+          "bannerTitle": "Менший одностулковий лист",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description":"/ дверне полотно 76204 відчиняється ззовні /"
+        },
+        "2": {
+          "bannerTitle": "Більший одностулковий лист",
+          "img": "/images/doors/livIng_82.jpg",
+           "description":"/ дверне полотно 76206 відчиняється всередину /"
+        }
+      }
+    },
+    "DoorSillFeatures":{
+      "title":"Особливості порогів Kömmerling 76 AD",
+      "list":{
+        "1": {
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description":"/ Ущільнювачі G060 для алюмінієвої крапельної планки A065/"
+        },
+        "2": {
+          "img": "/images/doors/livIng_82.jpg",
+           "description":"/ Алюмінієва планка A061/"
+        },
+        "3":{
+           "img": "/images/doors/livIng_82.jpg",
+           "description":"/ Поріг алюмінієвий A076 /"
+        },
+        "4":{
+           "img": "/images/doors/livIng_82.jpg",
+           "description":"/ Алюмінієва накладка A075/"
+        }
+      }
+    },
+    "DoorSealsEPDM":{
+     "title": "Ущільнювачі дверей Kömmerling 76 AD з EPDM",
+     "imgThreeList": {
+      "1": {
+        "img": "/images/doors/seals_EPDM_1.webp"
+      },
+      "2": {
+        "img": "/images/doors/seals_EPDM_1.webp"
+      },
+      "3": {
+        "img": "/images/doors/seals_EPDM_1.webp"
+      }
+    } 
     }
+
   },
   "ALUDoorsAliplastPage": {
     "title": "ЗОВНІШНІ ДВЕРІ з алюмінієвих профілів Aliplast",

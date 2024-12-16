@@ -1011,31 +1011,130 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "ZAD93T",
+        "src": "/images/doors/doors_kommerling_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "SJ12TQ",
+       "src": "/images/doors/doors_kommerling_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "MCJYFQ",
+        "src": "/images/doors/doors_kommerling_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "51300N",
+        "src": "/images/doors/doors_kommerling_4.jpeg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "L3XO8I",
+        "src": "/images/doors/doors_kommerling_5.jpg",
         "alt": ""
       }
-    }
+    },
+    "FeaturesKommerling76Section":{
+      "title": "Characteristic Features of KÖMMERLING 76 AD Door System:",
+      "img":"/images/doors/corona_CT_70.jpg",
+      "parametersList":{
+        "1":{
+         "list":{
+          "1":{
+            "desc":"High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
+          },
+          "2":{
+            "desc":"Optimal distribution of steel reinforcement and angle connectors;"
+          },
+          "3":{
+            "desc":"Exceptional structural stability;"
+          },
+          "4":{
+            "desc":"Option of embedding special panes and innovative door fillings up to 48 mm;"
+          },
+          "5":{
+            "desc":"High tightness – double sealing of the sill;"
+          },
+          "6":{
+            "desc":"Perfect protection against variable weather conditions;"
+          },
+          "7":{
+            "desc":"Excellent thermal insulation;"
+          },
+          "8":{
+            "desc":"Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+          }
+         }
+        }
+      }
+    },
+    "OutwardDoors76Section":{
+      "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
+      "list":{
+        "1": {
+          "bannerTitle": "Narrower leaf",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description":"/ door leaf 76205 opening outwards /"
+        },
+        "2": {
+          "bannerTitle": "Wider leaf",
+          "img": "/images/doors/livIng_82.jpg",
+           "description":"/ door leaf 76207 opening inwards /"
+        }
+      }
+    },
+    "InwardDoors76Section":{
+      "title": "INWARD-OPENING DOOR – door sill cross-section Kömmerling 76 AD",
+      "list":{
+        "1": {
+          "bannerTitle": "Narrower leaf",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description":"/ door leaf 76204 opening outwards /"
+        },
+        "2": {
+          "bannerTitle": "Wider leaf",
+          "img": "/images/doors/livIng_82.jpg",
+           "description":"/ door leaf 76206 opening inwards /"
+        }
+      }
+    },
+    "DoorSillFeatures":{
+      "title":"Kömmerling 76 AD door sill features",
+      "list":{
+        "1": {
+          "img": "/images/doors/door_sill_features_1.png",
+          "description":"/ G060 seals for A065 aluminium drip bar/"
+        },
+        "2": {
+          "img": "/images/doors/door_sill_features_2.png",
+           "description":"/ A061 aluminium drip bar/"
+        },
+        "3":{
+           "img": "/images/doors/door_sill_features_3.jpg",
+           "description":"/ A076 aluminium threshold /"
+        },
+        "4":{
+           "img": "/images/doors/door_sill_features_4.jpg",
+           "description":"/ A075 aluminium overlay/"
+        }
+      }
+    },
+    "DoorSealsEPDM":{
+      "title": "Kömmerling 76 AD door seals made of EPDM",
+      "imgThreeList": {
+       "1": {
+         "img": "/images/doors/seals_EPDM_1.webp"
+       },
+       "2": {
+         "img": "/images/doors/seals_EPDM_1.webp"
+       },
+       "3": {
+         "img": "/images/doors/seals_EPDM_1.webp"
+       }
+     } 
+     }
   },
   "ALUDoorsAliplastPage": {
     "title": "EXTERIOR DOORS from Aluminium – Aliplast profiles",
