@@ -11,6 +11,7 @@ const NestedCard: React.FC<INestedCard> = ({
   className,
   size,
   titleBannerCard,
+  isRow = true,
   // background,
   // layout,
 }) => {
@@ -42,12 +43,18 @@ const NestedCard: React.FC<INestedCard> = ({
           </div>
         ))}
 
-      <div
+      {/* <div
         className={clsx(
           "flex w-full",
           description ? "flex-row gap-8" : "flex-col"
         )}
-      >
+      > */}
+      <div
+      className={clsx(
+        "flex w-full",
+        description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"
+      )}
+    >
         {/* ======== IMAGE ======== */}
         <div className="relative h-[460px] border border-gray-300 rounded-md overflow-hidden w-full">
           <Image

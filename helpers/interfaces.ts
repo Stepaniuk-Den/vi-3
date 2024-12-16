@@ -63,10 +63,12 @@ export interface INestedCard {
   className?: string;
   size?: "small" | "large" | "w-1/2";
   titleBannerCard?: boolean;
+  isRow?: boolean;
 }
 
 export interface IParameterItem {
   title: string;
+  description?:string;
   list: {
     [key: string]: IDesc;
   };

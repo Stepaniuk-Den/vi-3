@@ -1,3 +1,5 @@
+import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
+import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 
@@ -6,13 +8,15 @@ type Props = {
   params: { locale: string };
 };
 
-const DoorsPvcKommerling: React.FC<Props> = async ({ params: { locale } }) => {
+const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
+
+    const t = useTranslations("PVCDoorsKommerlingPage");
 
   return (
     <>
       <section className="sectionCl pt-60">
-       <h1>This is pvc-doors-kommerling page</h1>
+      <SectionCarouselAndDescr t={t} />
       </section>
       
     </>
