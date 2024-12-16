@@ -24,6 +24,7 @@ const NestedCard: React.FC<INestedCard> = ({
         //   "bg-customElement": background === "blue",
         // },
         {
+          "w-1/2": size === "w-1/2",
           "w-1/4": size === "small",
           "w-full": size === "large",
         }
