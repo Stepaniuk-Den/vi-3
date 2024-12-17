@@ -15,7 +15,7 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
   const t = useTranslations("SlidingDoorsHsKomPage");
-  const tImgList = t.raw("imgList") as IImgList;
+  // const tImgList = t.raw("imgList") as IImgList;
   const tCardsList = t.raw("komPremiCross") as IImgList;
   // const imgList = Object.values(tImgList);
   // const cardsList = Object.values(tCardsList);
