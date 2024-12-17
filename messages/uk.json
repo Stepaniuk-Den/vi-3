@@ -49,12 +49,36 @@
       "href": "/doors",
       "links": {
         "1": {
-          "title": "металопластикові двері",
+          "title": "зовнішні двері з ПВХ-профілів Schüco",
           "slug": "exterior-doors-pvc-schuco"
         },
         "2": {
-          "title": "алюмінієві двері",
+          "title": "зовнішні двері з ПВХ-профілів Kömmerling",
+          "slug": "exterior-doors-pvc-kommerling"
+        },
+        "3": {
+          "title": "алюмінієві двері-Aliplast",
+          "slug": "exterior-doors-aluminium-aliplast"
+        },
+        "4": {
+          "title": "алюмінієві двері-Aluron",
           "slug": "exterior-doors-aluminium-aluron"
+        },
+        "5": {
+          "title": "Балконні/терасні двері",
+          "slug": "balcony-terrace-doors"
+        },
+        "6": {
+          "title": "розсувні двері",
+          "slug": "folding-doors"
+        },
+        "7": {
+          "title": "НАПОВНЕННЯ ДВЕРЕЙ – панелі",
+          "slug": "door-fillings-panels-for-doors"
+        },
+        "8": {
+          "title": "аксесуари",
+          "slug": "accessories-and-additions-for-doors"
         }
       }
     },
@@ -516,16 +540,45 @@
         "alt": ""
       }
     },
-    "SchucoProfile82Section": {
-      "bannerTitle": "ДВЕРІ Schüco – профіль LivIng 82",
-      "title": "Schüco LivIng – це інноваційні системи для сучасних пластикових дверей.",
+    "SchucoProfilesSection": {
+      "title": "НАША ПРОПОЗИЦІЯ ВКЛЮЧАЄ ДВА ТИПИ ДВЕРНИХ ПРОФІЛІВ ВІД Schüco: Corona CT 70 i LivIng 82:",
       "list": {
-        "l1": "6/7-камерна дверна система Schüco LivIng забезпечує чудові теплоізоляційні параметри при монтажній глибині 82 мм",
-        "l2": "Перший ущільнювач з EPDM, який можна зварювати, інтегрований у дверну систему Schüco LivIng. Завдяки використанню гнучкого матеріалу, який можна зварювати, досягається кращий ефект ущільнення в складній кутовій зоні елемента, одночасно отримуючи елегантний зовнішній вигляд, як немає зміцнення пломби.",
-        "l3": "Система Schüco LivIng відповідає індивідуальним вимогам інвесторів як у приватних будинках, так і у великих будівлях, як нових, так і модернізованих.",
-        "l4": "Глянцеві металеві відтінки Schüco AutomotiveFinish, а також серії полівінілхлоридних плівок Schüco UnlimitedFinish і Schüco TopAlu доступні для вибору кольору.",
-        "l5": "Ми використовуємо сучасні сріблясто-сірі ущільнювачі в білих профілях системи Schüco LivIng і чорні ущільнювачі в фольгованих профілях.",
-        "l6": "Пластикова дверна система Schüco LivIng може бути оснащена накладними заповненнями або дверними заповненнями для покриття полотна. Це дає велику свободу в розташуванні окремих вхідних дверей"
+        "1": {
+          "bannerTitle": "Двері Schüco – Corona CT 70",
+          "img": "/images/doors/corona_CT_70.jpg"
+        },
+        "2": {
+          "bannerTitle": "Двері Schüco – LivIng 82",
+          "img": "/images/doors/livIng_82.jpg"
+        }
+      }
+    },
+    "SchucoProfile82Section": {
+      "parametersList": {
+        "1": {
+          "title": "ДВЕРІ Schüco – профіль LivIng 82",
+          "description": "Schüco LivIng – це інноваційні системи для сучасних пластикових дверей.",
+          "list": {
+            "1": {
+              "desc": "6/7-камерна дверна система Schüco LivIng забезпечує чудові теплоізоляційні параметри при монтажній глибині 82 мм"
+            },
+            "2": {
+              "desc": "Перший ущільнювач з EPDM, який можна зварювати, інтегрований у дверну систему Schüco LivIng. Завдяки використанню гнучкого матеріалу, який можна зварювати, досягається кращий ефект ущільнення в складній кутовій зоні елемента, одночасно отримуючи елегантний зовнішній вигляд, як немає зміцнення пломби"
+            },
+            "3": {
+              "desc": "Система Schüco LivIng відповідає індивідуальним вимогам інвесторів як у приватних будинках, так і у великих будівлях, як нових, так і модернізованих"
+            },
+            "4": {
+              "desc": "Глянцеві металеві відтінки Schüco AutomotiveFinish, а також серії полівінілхлоридних плівок Schüco UnlimitedFinish і Schüco TopAlu доступні для вибору кольору"
+            },
+            "5": {
+              "desc": "Ми використовуємо сучасні сріблясто-сірі ущільнювачі в білих профілях системи Schüco LivIng і чорні ущільнювачі в фольгованих профілях"
+            },
+            "6": {
+              "desc": "Пластикова дверна система Schüco LivIng може бути оснащена накладними заповненнями або дверними заповненнями для покриття полотна. Це дає велику свободу в розташуванні окремих вхідних дверей"
+            }
+          }
+        }
       }
     },
     "CardsSchuco82Section": {
@@ -537,17 +590,277 @@
         "2": {
           "bannerTitle": "LivIng 82 ВХІДНІ ДВЕРІ – відкриваються всередину",
           "img": "/images/doors/opening_inwards.jpg"
+        },
+        "3": {
+          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "description": "Поперечний розріз дверей LivIng 82 відкривається назовні"
+        },
+        "4": {
+          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "description": "Розріз дверей LivIng 82 відкривається всередину"
+        }
+      },
+      "parametersList": {
+        "1": {
+          "title": "ТЕХНІЧНА ІНФОРМАЦІЯ:",
+          "list": {
+            "1": {
+              "desc": "Монтажна глибина системи – 82 мм"
+            },
+            "2": {
+              "desc": "Ширина фронту мін. – 88 мм"
+            },
+            "3": {
+              "desc": "Значення Uf (рамка) – 1,1 Вт/(м²·K)"
+            },
+            "4": {
+              "desc": "Товщина скла / панелі мін. – макс. – 24 мм – 52 мм"
+            },
+            "5": {
+              "desc": "Оздоблення поверхні – Декоративні плівки / TopAlu / AutomotiveFinish"
+            },
+            "6": {
+              "desc": "Повітропроникність – 2 клас"
+            },
+            "7": {
+              "desc": "Водонепроникність – клас 5А"
+            },
+            "8": {
+              "desc": "Зламостійкість – до Rc2"
+            },
+            "9": {
+              "desc": "Стійкість до вітрового навантаження – клас C2/B2"
+            },
+            "10": {
+              "desc": "Висота макс. – 2350 мм"
+            },
+            "11": {
+              "desc": "Ширина макс. – 1100 мм"
+            },
+            "12": {
+              "desc": "Поріжки – автоматичне ущільнення дверей, низький дверний поріг без зіткнень із армованого скловолокном пластику або алюмінію, відповідно до DIN 18025."
+            }
+          }
+        }
+      }
+    },
+    "PanelTypes": {
+      "title": "ПАНЕЛЬНІ СТРУКТУРИ – види:",
+      "description": "Поперечні перерізи дверей, у яких використовуються різні панелі, залежно від товщини наповнення дверей.",
+      "list": {
+        "1": {
+          "img": "/images/doors/panel_48.webp",
+          "description": "Дверний профіль LivIng з панеллю 48 мм"
+        },
+        "2": {
+          "img": "/images/doors/panel_36.webp",
+          "description": "Дверний профіль LivIng з панеллю 36 мм"
+        }
+      }
+    },
+    "DoorFillingsTypes": {
+      "parametersList": {
+        "1": {
+          "title": "НАПОВНЕННЯ ДВЕРЕЙ – види:",
+          "description": "Наповнення дверей може бути:",
+          "list": {
+            "1": {
+              "desc": "врізка або накладка"
+            },
+            "2": {
+              "desc": "з ламінованих плит або алюмінію"
+            },
+            "3": {
+              "desc": "прикрашені різними рамками, скляними елементами, інкрустацією, витинанками або аплікаціями;"
+            },
+            "4": {
+              "desc": "будь-якого кольору на ваш вибір."
+            }
+          }
+        }
+      },
+      "list": {
+        "1": {
+          "bannerTitle": "ДВЕРІ – ВСТАВКИ ВСЕРЕДИНІ",
+          "img": "/images/doors/inset_filling.jpg"
+        },
+        "2": {
+          "bannerTitle": "ДВЕРІ – ВСТАВКИ ЗЗОВНІ",
+          "img": "/images/doors/outset_filling.jpg"
+        },
+        "3": {
+          "img": "/images/doors/door_inset_filling.jpg"
+        },
+        "4": {
+          "img": "/images/doors/door_outset_filling.jpg"
+        }
+      }
+    },
+    "EntranceDoorSystem": {
+      "title": "СИСТЕМИ ВІДЧИНЕННЯ ВХІДНИХ ДВЕРЕЙ:",
+      "list": {
+        "1": {
+          "img": "/images/doors/door_system_1.webp",
+          "description": "Дверний дзвінок із камерою та вічком"
+        },
+        "2": {
+          "img": "/images/doors/door_system_2.webp",
+          "description": "Відкриття дверей шляхом введення коду на цифровій клавіатурі"
+        },
+        "3": {
+          "img": "/images/doors/door_system_3.webp",
+          "description": "Система відкривання дверей із сканером відбитків пальців"
+        }
+      },
+      "imgThreeList": {
+        "1": {
+          "img": "/images/doors/entrance_system_1.webp"
+        },
+        "2": {
+          "img": "/images/doors/entrance_system_2.webp"
+        },
+        "3": {
+          "img": "/images/doors/entrance_system_3.webp"
         }
       }
     }
   },
-
-  "PVCDoorsAluPage": {
-    "title": "Двері PVC Schuco",
+  "PVCDoorsKommerlingPage": {
+    "title": "ЗОВНІШНІ ДВЕРІ з ПВХ-профілів Kömmerling",
     "description": {
-      "p1": "The doors are made of high-impact, deformation-resistant PVC from the renowned company Schüco. Good thermal insulation is ensured by multi-chamber profiles, while steel reinforcements of a large size and optimal thickness contribute to the stiffness and stability of the product.",
-      "p2": "The structure of the profiles gives us the possibility of installing multi-point locks and reinforced locking elements. This type of solution ensures we obtain safe doors with a long service life. Our exterior doors made of PVC have a low aluminium threshold with a thermal break.",
-      "p3": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam, which ensures very good thermal insulation of the door. Door panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays. In addition to the models of door fillings presented in our galleries, we are happy to make doors according to your individual project."
+      "p1": "Вибір правильних дверей значною мірою впливає на візуальний ефект будь-якого будинку, надаючи йому специфічний характер. Завдяки інноваційній дверній системі KÖMMERLING 76 AD ми можемо розробити будь-яку дверну конструкцію, яка відповідає індивідуальним потребам кожного клієнта. Будь ласка, ознайомтеся з набором готових дверних наповнювачів з найвищими властивостями, які пропонує польський виробник дверей TUR-PLAST."
+    },
+    "imgList": {
+      "1": {
+        "id": "ZAD93T",
+        "src": "/images/doors/doors_kommerling_1.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "SJ12TQ",
+        "src": "/images/doors/doors_kommerling_2.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "MCJYFQ",
+        "src": "/images/doors/doors_kommerling_3.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "51300N",
+        "src": "/images/doors/doors_kommerling_4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "L3XO8I",
+        "src": "/images/doors/doors_kommerling_5.jpg",
+        "alt": ""
+      }
+    },
+    "FeaturesKommerling76Section": {
+      "title": "Характерні особливості дверної системи KÖMMERLING 76 AD:",
+      "img": "/images/doors/corona_CT_70.jpg",
+      "parametersList": {
+        "1": {
+          "list": {
+            "1": {
+              "desc": "Високий захист від злому – до класу протизламності RC2 (Wk2);"
+            },
+            "2": {
+              "desc": "Оптимальний розподіл сталевої арматури та кутових з’єднань;"
+            },
+            "3": {
+              "desc": "Виняткова структурна стійкість;"
+            },
+            "4": {
+              "desc": "Можливість вбудовування спеціальних стекол та інноваційного наповнення дверей до 48 мм;"
+            },
+            "5": {
+              "desc": "Висока герметичність – подвійна герметизація порога;"
+            },
+            "6": {
+              "desc": "Ідеальний захист від мінливих погодних умов"
+            },
+            "7": {
+              "desc": "Відмінна теплоізоляція;"
+            },
+            "8": {
+              "desc": "Необмежені можливості дизайну завдяки широкій палітрі кольорів і різної структури поверхні."
+            }
+          }
+        }
+      }
+    },
+    "OutwardDoors76Section": {
+      "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ НАЗОВНІ – розріз порога Kömmerling 76 AD",
+      "list": {
+        "1": {
+          "bannerTitle": "Менший одностулковий лист",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description": "/ дверне полотно 76205 відчиняється ззовні /"
+        },
+        "2": {
+          "bannerTitle": "Більший одностулковий лист",
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ дверне полотно 76207 відчиняється всередину /"
+        }
+      }
+    },
+    "InwardDoors76Section": {
+      "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ ВСЕРЕДИНУ – розріз порога Kömmerling 76 AD",
+      "list": {
+        "1": {
+          "bannerTitle": "Менший одностулковий лист",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description": "/ дверне полотно 76204 відчиняється ззовні /"
+        },
+        "2": {
+          "bannerTitle": "Більший одностулковий лист",
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ дверне полотно 76206 відчиняється всередину /"
+        }
+      }
+    },
+    "DoorSillFeatures": {
+      "title": "Особливості порогів Kömmerling 76 AD",
+      "list": {
+        "1": {
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description": "/ Ущільнювачі G060 для алюмінієвої крапельної планки A065/"
+        },
+        "2": {
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ Алюмінієва планка A061/"
+        },
+        "3": {
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ Поріг алюмінієвий A076 /"
+        },
+        "4": {
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ Алюмінієва накладка A075/"
+        }
+      }
+    },
+    "DoorSealsEPDM": {
+      "title": "Ущільнювачі дверей Kömmerling 76 AD з EPDM",
+      "imgThreeList": {
+        "1": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "2": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "3": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        }
+      }
+    }
+  },
+  "ALUDoorsAliplastPage": {
+    "title": "ЗОВНІШНІ ДВЕРІ з алюмінієвих профілів Aliplast",
+    "description": {
+      "p1": "У нашій пропозиції алюмінієвих дверей з Польщі представлені вироби з високоякісних алюмінієвих профілів Aliplast. Ми рекомендуємо трикамерні системи, в яких застосовано сучасні рішення для підвищення теплоізоляційних властивостей за допомогою спеціальних термовставок, розміщених між терморозривами та навколо стекол."
     },
     "imgList": {
       "1": {
@@ -558,6 +871,186 @@
       "2": {
         "id": "x7w5pl",
         "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "ALUDoorsAluronPage": {
+    "title": "ЗОВНІШНІ ДВЕРІ з алюмінієвих профілів Aluron",
+    "description": {
+      "p1": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at the set of ready-made door fillings with the highest properties offered by the Polish-based door manufacturer TUR-PLAST."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "BalconyTerraceDoorsPage": {
+    "title": "ЗОВНІШНІ БАЛКОННІ / ТЕРАСНІ ДВЕРІ",
+    "description": {
+      "p1": "Двері встановлюються на стійку віконну раму стандартної ширини або більшої ширини і призначені для багатоквартирних квартир і виходів на балкони в будинках, куди не можна або не потрібно входити ззовні. Модифікацією даного рішення є використання низького алюмінієвого порога, який не є перешкодою для дітей, інвалідних візків тощо.Ручка монтується тільки зсередини. Деякі практичні доповнення до цих балконних дверей включають міні-тягу із засувкою та гальмом у ручці. Перший дозволяє закрити двері зовні, а інший – зафіксувати їх у певному положенні відкриття.Проміжним рішенням між балконними і терасними (вхідними) дверима є балконні двері на широкій стулці з ручкою з боків і замком."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "FoldingDoorsPage": {
+    "title": "ЗОВНІШНІ Розсувні ДВЕРІ",
+    "description": {
+      "p1": "Польська компанія TUR-PLAST виробляє АЛЮМІНІЄВІ СКЛАДНІ ДВЕРІ на основі трикамерної теплоізольованої системи PANORAMA фірми ALIPLAST. Цей продукт робить пропозицію більш привабливою, оскільки дає архітекторам та індивідуальним клієнтам більший вибір у дизайні інтер’єру будинків та комерційних приміщень."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "DoorPanelsPage": {
+    "title": "ОСОБЛИВОСТІ ДВЕРЕЙ – Дверне наповнення – Панелі для ПВХ та алюмінієвих дверей",
+    "description": {
+      "p1": "Наповнення дверного полотна складається з двох сендвіч-панелей із пластику, розділених пінополіуретаном. Така комбінація забезпечує дуже хорошу теплоізоляцію дверей. Панно можна збагатити різними видами скла та декоративними рамками. Поверхневий шар ПВХ панелей покривають високоякісними акриловими плівками або лаками, стійкими до погодних умов і УФ-променів."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "AccessoriesPage": {
+    "title": "ОСОБЛИВОСТІ ДВЕРЕЙ – Фурнітура та доповнення для ПВХ та алюмінієвих дверей.",
+    "description": {
+      "p1": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at the set of ready-made door fillings with the highest properties offered by the Polish-based door manufacturer TUR-PLAST."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       }
     }
@@ -613,6 +1106,214 @@
         "description": "Алюмінієві підйомно-розсувні двері на основі системи AS 178HS є поєднанням інноваційних рішень із сучасним дизайном, створюючи нове покоління всескляних підйомно-розсувних дверей. У цій системі можна побудувати великі рухомі терасні скління з низьким і теплим порогом. Її конструкційні механізми забезпечують безпечне та комфортне розсування важких стулок вручну або автоматично.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
+      }
+    }
+  },
+
+  "SlidingDoorsHsSchPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Schüco Profiles",
+    "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsSch/hs-sch-1.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsSch/hs-sch-2.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
+        "alt": "schema sliding doors"
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsSch/hs-sch-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsSch/hs-sch-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsSch/hs-sch-11.jpeg",
+        "alt": ""
+      }
+    },
+    "desc2": "SIX OPENING OPTIONS with one or two sliding leaves. This allows to fine-tune the woodwork to your individual requirements in terms of thermal insulation, dimensions and comfort of use.",
+    "desc3": "TWO SYSTEMS of lift-and-slide doors: Schüco EasySlide and Schüco LivIngSlide. TUR-PLAST is a Polish producer of individual solutions for HS-type sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Schüco systems can be easily combined with energy-saving and passive Schüco windows.",
+    "schSlide": {
+      "1": {
+        "id": "1",
+        "title": "Schüco EasySlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "Schüco LivIngSlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide2.jpeg",
+        "alt": ""
+      }
+    },
+    "bannerTitle": "PVC Sliding Terrace Doors – HS Schüco LivIngSlide",
+    "desc4": {
+      "p1": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
+      "p2": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
+      "p3": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise."
+    },
+    "bannerTitle2": "PVC Sliding Terrace Doors – HS Schüco EasySlide",
+    "params": {
+      "title": "SYSTEM PROPERTIES – EasySlide",
+      "list": {
+        "1": {
+          "desc": "Thermally insulated aluminium threshold with a foamed PA break"
+        },
+        "2": {
+          "desc": "Sealing along the entire perimeter in three planes"
+        },
+        "3": {
+          "desc": "Frame width 167 mm"
+        },
+        "4": {
+          "desc": "Maximum threshold height 46mm"
+        },
+        "5": {
+          "desc": "Possibility of using base and widening profiles"
+        },
+        "6": {
+          "desc": "Air infiltration: Class 4 according to EN 12207 ( ≤0,11m3/hmdaPa2/3)"
+        },
+        "7": {
+          "desc": "Rainwater penetration resistance: Class 8A according to EN 12208 (∆p=450 Pa)"
+        },
+        "8": {
+          "desc": "Acoustic insulation Rw,p=34-43 dB"
+        },
+        "9": {
+          "desc": "Maximum height – 2300mm"
+        },
+        "10": {
+          "desc": "Maximum width – 6500mm"
+        }
+      }
+    }
+  },
+  "SlidingDoorsHsKomPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Kömmerling Profiles",
+    "description": "PREMIDOOR 76 is an innovative system of slide-and-tilt doors with an installation depth of 76 mm. It allows for freedom in the arrangement of terraces, balconies and winter gardens. The large area of ​​glazing optically enlarges the room and provides optimal lighting of the interior. With our solutions, your house will open up to the greenery outside, and the door will perfectly fit into the atmosphere of the interior. Thanks to the modern barrier-free threshold, which is included as standard, you can enjoy maximum comfort and optimal thermal insulation.",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsKom/hs-kom-1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsKom/hs-kom-2.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsKom/hs-kom-3.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsKom/hs-kom-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsKom/hs-kom-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsKom/hs-kom-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsKom/hs-kom-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsKom/hs-kom-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsKom/hs-kom-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsKom/hs-kom-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsKom/hs-kom-11.jpeg",
+        "alt": ""
+      }
+    },
+    "komPremi": {
+      "1": {
+        "id": "1",
+        "title": "System PremiDoor 76 – general information",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpeg",
+        "alt": "",
+        "description": "We offer an innovative system of HS-type lift-and-slide doors with a low threshold. We are a manufacturer of terrace doors in the Kömmerling PremiDoor 76 system. This type of door is an excellent solution in new construction as well as in buildings undergoing renovation."
+      }
+    },
+    "komPremiCross": {
+      "title": "System cross-sections PremiDoor 76 Kömmerling",
+      "description": "TWO VERSIONS TO CHOOSE FROM – PremiDoor 76 and PremiDoor 76 lux. Do you expect the best insulation and protection against noise and burglary? If so, the PremiDoor system is created just for you. We offer doors in the classic PremiDoor 76 system or in the PremiDoor 76 lux version which features an extremely narrow leaf profile.The unique structure and the slender profile of the leaf as well as the larger glass surface provide more warmth in the room thanks to the high solar radiation heat recovery.",
+      "1": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi2.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76"
+      },
+      "2": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76 lux"
       }
     }
   }

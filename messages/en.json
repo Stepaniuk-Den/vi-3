@@ -49,12 +49,36 @@
       "href": "/doors",
       "links": {
         "1": {
-          "title": "doors pvc",
+          "title": "PVC Doors – Schüco",
           "slug": "exterior-doors-pvc-schuco"
         },
         "2": {
-          "title": "doors aluminium",
+          "title": "PVC Doors – Kömmerling",
+          "slug": "exterior-doors-pvc-kommerling"
+        },
+        "3": {
+          "title": "ALU-Doors-Aliplast",
+          "slug": "exterior-doors-aluminium-aliplast"
+        },
+        "4": {
+          "title": "ALU-Doors-Aluron",
           "slug": "exterior-doors-aluminium-aluron"
+        },
+        "5": {
+          "title": "Balcony/Terrace Doors",
+          "slug": "balcony-terrace-doors"
+        },
+        "6": {
+          "title": "FOLDING DOORS",
+          "slug": "folding-doors"
+        },
+        "7": {
+          "title": "door fillings-panel",
+          "slug": "door-fillings-panels-for-doors"
+        },
+        "8": {
+          "title": "accessories",
+          "slug": "accessories-and-additions-for-doors"
         }
       }
     },
@@ -999,16 +1023,45 @@
         "alt": ""
       }
     },
-    "SchucoProfile82Section": {
-      "bannerTitle": "Schüco DOOR – profil LivIng 82",
-      "title": "Schüco LivIng are innovative systems for modern plastic doors.",
+    "SchucoProfilesSection": {
+      "title": "OUR OFFER INCLUDES TWO TYPES OF DOOR PROFILES BY Schüco: Corona CT 70 and LivIng 82:",
       "list": {
-        "l1": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm.",
-        "l2": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of ​​the element, while obtaining an elegant appearance as there is no seal hardening.",
-        "l3": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized.",
-        "l4": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection.",
-        "l5": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles.",
-        "l6": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
+        "1": {
+          "bannerTitle": "Schüco door sill cross-section – Corona CT 70 ",
+          "img": "/images/doors/corona_CT_70.jpg"
+        },
+        "2": {
+          "bannerTitle": "Schüco door sill cross-section – LivIng 82",
+          "img": "/images/doors/livIng_82.jpg"
+        }
+      }
+    },
+    "SchucoProfile82Section": {
+      "parametersList": {
+        "1": {
+          "title": "Schüco DOOR – profil LivIng 82",
+          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
+          "list": {
+            "1": {
+              "desc": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm."
+            },
+            "2": {
+              "desc": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of the element, while obtaining an elegant appearance as there is no seal hardening."
+            },
+            "3": {
+              "desc": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized."
+            },
+            "4": {
+              "desc": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection."
+            },
+            "5": {
+              "desc": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles."
+            },
+            "6": {
+              "desc": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
+            }
+          }
+        }
       }
     },
     "CardsSchuco82Section": {
@@ -1020,17 +1073,278 @@
         "2": {
           "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening inwards",
           "img": "/images/doors/opening_inwards.jpg"
+        },
+        "3": {
+          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "description": "Cross-section through the LivIng 82 door opening outwards"
+        },
+        "4": {
+          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "description": "Cross-section through the LivIng 82 door opening inwards"
+        }
+      },
+      "parametersList": {
+        "1": {
+          "title": "TECHNICAL INFORMATION:",
+          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
+          "list": {
+            "1": {
+              "desc": "System mounting depth – 82 mm"
+            },
+            "2": {
+              "desc": "Front width min. – 88 mm"
+            },
+            "3": {
+              "desc": "Uf value (frame) – 1.1 W/(m²·K)"
+            },
+            "4": {
+              "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
+            },
+            "5": {
+              "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
+            },
+            "6": {
+              "desc": "Air permeability – class 2"
+            },
+            "7": {
+              "desc": "Water tightness – class 5A"
+            },
+            "8": {
+              "desc": "Anti-burglary resistance – up to Rc2"
+            },
+            "9": {
+              "desc": "Wind load resistance – klass C2/B2"
+            },
+            "10": {
+              "desc": "Height max. – 2350 mm"
+            },
+            "11": {
+              "desc": "Width max. – 1100 mm"
+            },
+            "12": {
+              "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
+            }
+          }
+        }
+      }
+    },
+    "PanelTypes": {
+      "title": "PANEL STRIPS – types:",
+      "description": "See door cross-sections in which different panel strips were used, depending on the thickness of the door filling used.",
+      "list": {
+        "1": {
+          "img": "/images/doors/panel_48.webp",
+          "description": "LivIng door profile with a 48 mm panel"
+        },
+        "2": {
+          "img": "/images/doors/panel_36.webp",
+          "description": "LivIng door profile with a 36 mm panel"
+        }
+      }
+    },
+    "DoorFillingsTypes": {
+      "parametersList": {
+        "1": {
+          "title": "DOOR FILLINGS – types:",
+          "description": "Door filling may be:",
+          "list": {
+            "1": {
+              "desc": "inset or overlay"
+            },
+            "2": {
+              "desc": "made of laminated boards or aluminium"
+            },
+            "3": {
+              "desc": "decorated with various frames, glass elements, inlays, cuttings or appliqués"
+            },
+            "4": {
+              "desc": "of any colour of your choice"
+            }
+          }
+        }
+      },
+      "list": {
+        "1": {
+          "bannerTitle": "DOORS – INSET FILLING",
+          "img": "/images/doors/inset_filling.jpg"
+        },
+        "2": {
+          "bannerTitle": "DOORS – OVERLAY FILLING",
+          "img": "/images/doors/outset_filling.jpg"
+        },
+        "3": {
+          "img": "/images/doors/door_inset_filling.jpg"
+        },
+        "4": {
+          "img": "/images/doors/door_outset_filling.jpg"
+        }
+      }
+    },
+    "EntranceDoorSystem": {
+      "title": "ENTRANCE DOOR OPENING SYSTEMS:",
+      "list": {
+        "1": {
+          "img": "/images/doors/door_system_1.webp",
+          "description": "Doorbell with camera and peephole"
+        },
+        "2": {
+          "img": "/images/doors/door_system_2.webp",
+          "description": "Door opening by entering code on numeric keyboard"
+        },
+        "3": {
+          "img": "/images/doors/door_system_3.webp",
+          "description": "Door opening system with fingerprint reader"
+        }
+      },
+      "imgThreeList": {
+        "1": {
+          "img": "/images/doors/entrance_system_1.webp"
+        },
+        "2": {
+          "img": "/images/doors/entrance_system_2.webp"
+        },
+        "3": {
+          "img": "/images/doors/entrance_system_3.webp"
         }
       }
     }
   },
-
-  "PVCDoorsAluPage": {
-    "title": "Двері PVC Schuco",
+  "PVCDoorsKommerlingPage": {
+    "title": "EXTERIOR DOORS from PVC – Kömmerling profiles",
     "description": {
-      "p1": "The doors are made of high-impact, deformation-resistant PVC from the renowned company Schüco. Good thermal insulation is ensured by multi-chamber profiles, while steel reinforcements of a large size and optimal thickness contribute to the stiffness and stability of the product.",
-      "p2": "The structure of the profiles gives us the possibility of installing multi-point locks and reinforced locking elements. This type of solution ensures we obtain safe doors with a long service life. Our exterior doors made of PVC have a low aluminium threshold with a thermal break.",
-      "p3": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam, which ensures very good thermal insulation of the door. Door panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays. In addition to the models of door fillings presented in our galleries, we are happy to make doors according to your individual project."
+      "p1": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at the set of ready-made door fillings with the highest properties offered by the Polish-based door manufacturer TUR-PLAST."
+    },
+    "imgList": {
+      "1": {
+        "id": "ZAD93T",
+        "src": "/images/doors/doors_kommerling_1.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "SJ12TQ",
+        "src": "/images/doors/doors_kommerling_2.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "MCJYFQ",
+        "src": "/images/doors/doors_kommerling_3.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "51300N",
+        "src": "/images/doors/doors_kommerling_4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "L3XO8I",
+        "src": "/images/doors/doors_kommerling_5.jpg",
+        "alt": ""
+      }
+    },
+    "FeaturesKommerling76Section": {
+      "title": "Characteristic Features of KÖMMERLING 76 AD Door System:",
+      "img": "/images/doors/corona_CT_70.jpg",
+      "parametersList": {
+        "1": {
+          "list": {
+            "1": {
+              "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
+            },
+            "2": {
+              "desc": "Optimal distribution of steel reinforcement and angle connectors;"
+            },
+            "3": {
+              "desc": "Exceptional structural stability;"
+            },
+            "4": {
+              "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
+            },
+            "5": {
+              "desc": "High tightness – double sealing of the sill;"
+            },
+            "6": {
+              "desc": "Perfect protection against variable weather conditions;"
+            },
+            "7": {
+              "desc": "Excellent thermal insulation;"
+            },
+            "8": {
+              "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+            }
+          }
+        }
+      }
+    },
+    "OutwardDoors76Section": {
+      "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
+      "list": {
+        "1": {
+          "bannerTitle": "Narrower leaf",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description": "/ door leaf 76205 opening outwards /"
+        },
+        "2": {
+          "bannerTitle": "Wider leaf",
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ door leaf 76207 opening inwards /"
+        }
+      }
+    },
+    "InwardDoors76Section": {
+      "title": "INWARD-OPENING DOOR – door sill cross-section Kömmerling 76 AD",
+      "list": {
+        "1": {
+          "bannerTitle": "Narrower leaf",
+          "img": "/images/doors/corona_CT_70.jpg",
+          "description": "/ door leaf 76204 opening outwards /"
+        },
+        "2": {
+          "bannerTitle": "Wider leaf",
+          "img": "/images/doors/livIng_82.jpg",
+          "description": "/ door leaf 76206 opening inwards /"
+        }
+      }
+    },
+    "DoorSillFeatures": {
+      "title": "Kömmerling 76 AD door sill features",
+      "list": {
+        "1": {
+          "img": "/images/doors/door_sill_features_1.png",
+          "description": "/ G060 seals for A065 aluminium drip bar/"
+        },
+        "2": {
+          "img": "/images/doors/door_sill_features_2.png",
+          "description": "/ A061 aluminium drip bar/"
+        },
+        "3": {
+          "img": "/images/doors/door_sill_features_3.jpg",
+          "description": "/ A076 aluminium threshold /"
+        },
+        "4": {
+          "img": "/images/doors/door_sill_features_4.jpg",
+          "description": "/ A075 aluminium overlay/"
+        }
+      }
+    },
+    "DoorSealsEPDM": {
+      "title": "Kömmerling 76 AD door seals made of EPDM",
+      "imgThreeList": {
+        "1": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "2": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "3": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        }
+      }
+    }
+  },
+  "ALUDoorsAliplastPage": {
+    "title": "EXTERIOR DOORS from Aluminium – Aliplast profiles",
+    "description": {
+      "p1": "Our offer of aluminium doors from Poland includes products made of high-quality Aliplast aluminium profiles. We recommend three-chamber systems in which modern solutions have been applied to increase thermal insulation properties by means of special thermal inserts placed in-between the thermal breaks and around the panes."
     },
     "imgList": {
       "1": {
@@ -1041,6 +1355,186 @@
       "2": {
         "id": "x7w5pl",
         "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "ALUDoorsAluronPage": {
+    "title": "EXTERIOR DOORS from Aluminium – Aluron profiles",
+    "description": {
+      "p1": "Doors made in Poland by Tur-Plast based on the Aluron AS 75 door system are designed for energy-efficient and passive construction. With the innovative ANTI-BI-METAL technology system used, door leaves are specially protected against deformation when heated by sunlight, as well as at very low temperatures."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "BalconyTerraceDoorsPage": {
+    "title": "EXTERIOR BALCONY / TERRACE DOORS",
+    "description": {
+      "p1": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. A modification of this solution is the use of a low aluminium threshold, which does not constitute a barrier for children, wheelchairs, etc.The handle is only mounted from the inside. Some practical additions to these balcony doors include a mini-pull with a latch and a brake in the handle. The first allows you to close the door from the outside, and the other – to lock it in a specific opening position.An intermediate solution between a balcony door and a terrace (entrance) door is a balcony door on a wide leaf with a handle on each side and a lock."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "FoldingDoorsPage": {
+    "title": "EXTERIOR FOLDING DOORS",
+    "description": {
+      "p1": "The Polish-based company TUR-PLAST produces ALUMINIUM FOLDING DOORS based on the three-chamber, thermally insulated PANORAMA system by ALIPLAST. This product makes the offer more attractive as it gives architects and individual clients a greater choice in the interior design of houses and business premises."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "DoorPanelsPage": {
+    "title": "DOOR FEATURES – Door Fillings – Panels for PVC and Aluminium Doors",
+    "description": {
+      "p1": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam. This combination ensures very good thermal insulation of the door. The panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "alt": ""
+      }
+    }
+  },
+  "AccessoriesPage": {
+    "title": "DOOR FEATURES – Accessories and Additions for PVC and Aluminium Doors.",
+    "description": {
+      "p1": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at the set of ready-made door fillings with the highest properties offered by the Polish-based door manufacturer TUR-PLAST."
+    },
+    "imgList": {
+      "1": {
+        "id": "m9q25v",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7w5pl",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "x7w5pl",
+        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "alt": ""
+      },
+      "4": {
+        "id": "x7w5pl",
+        "src": "/images/doors/folding-doors.jpg",
+        "alt": ""
+      },
+      "5": {
+        "id": "x7w5pl",
+        "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       }
     }
@@ -1096,6 +1590,213 @@
         "description": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically.",
         "src": "/images/windows/windows-aluminium.jpeg",
         "alt": ""
+      }
+    }
+  },
+  "SlidingDoorsHsSchPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Schüco Profiles",
+    "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsSch/hs-sch-1.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsSch/hs-sch-2.jpeg",
+        "alt": "Large panoramic glass sliding doors in the house"
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
+        "alt": "schema sliding doors"
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsSch/hs-sch-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsSch/hs-sch-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsSch/hs-sch-11.jpeg",
+        "alt": ""
+      }
+    },
+    "desc2": "SIX OPENING OPTIONS with one or two sliding leaves. This allows to fine-tune the woodwork to your individual requirements in terms of thermal insulation, dimensions and comfort of use.",
+    "desc3": "TWO SYSTEMS of lift-and-slide doors: Schüco EasySlide and Schüco LivIngSlide. TUR-PLAST is a Polish producer of individual solutions for HS-type sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Schüco systems can be easily combined with energy-saving and passive Schüco windows.",
+    "schSlide": {
+      "1": {
+        "id": "1",
+        "title": "Schüco EasySlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "Schüco LivIngSlide",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide2.jpeg",
+        "alt": ""
+      }
+    },
+    "bannerTitle": "PVC Sliding Terrace Doors – HS Schüco LivIngSlide",
+    "desc4": {
+      "p1": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
+      "p2": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
+      "p3": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise."
+    },
+    "bannerTitle2": "PVC Sliding Terrace Doors – HS Schüco EasySlide",
+    "params": {
+      "title": "SYSTEM PROPERTIES – EasySlide",
+      "list": {
+        "1": {
+          "desc": "Thermally insulated aluminium threshold with a foamed PA break"
+        },
+        "2": {
+          "desc": "Sealing along the entire perimeter in three planes"
+        },
+        "3": {
+          "desc": "Frame width 167 mm"
+        },
+        "4": {
+          "desc": "Maximum threshold height 46mm"
+        },
+        "5": {
+          "desc": "Possibility of using base and widening profiles"
+        },
+        "6": {
+          "desc": "Air infiltration: Class 4 according to EN 12207 ( ≤0,11m3/hmdaPa2/3)"
+        },
+        "7": {
+          "desc": "Rainwater penetration resistance: Class 8A according to EN 12208 (∆p=450 Pa)"
+        },
+        "8": {
+          "desc": "Acoustic insulation Rw,p=34-43 dB"
+        },
+        "9": {
+          "desc": "Maximum height – 2300mm"
+        },
+        "10": {
+          "desc": "Maximum width – 6500mm"
+        }
+      }
+    }
+  },
+  "SlidingDoorsHsKomPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Kömmerling Profiles",
+    "description": "PREMIDOOR 76 is an innovative system of slide-and-tilt doors with an installation depth of 76 mm. It allows for freedom in the arrangement of terraces, balconies and winter gardens. The large area of ​​glazing optically enlarges the room and provides optimal lighting of the interior. With our solutions, your house will open up to the greenery outside, and the door will perfectly fit into the atmosphere of the interior. Thanks to the modern barrier-free threshold, which is included as standard, you can enjoy maximum comfort and optimal thermal insulation.",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsKom/hs-kom-1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsKom/hs-kom-2.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsKom/hs-kom-3.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsKom/hs-kom-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsKom/hs-kom-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsKom/hs-kom-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsKom/hs-kom-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsKom/hs-kom-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsKom/hs-kom-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsKom/hs-kom-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsKom/hs-kom-11.jpeg",
+        "alt": ""
+      }
+    },
+    "komPremi": {
+      "1": {
+        "id": "1",
+        "title": "System PremiDoor 76 – general information",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpeg",
+        "alt": "",
+        "description": "We offer an innovative system of HS-type lift-and-slide doors with a low threshold. We are a manufacturer of terrace doors in the Kömmerling PremiDoor 76 system. This type of door is an excellent solution in new construction as well as in buildings undergoing renovation."
+      }
+    },
+    "komPremiCross": {
+      "title": "System cross-sections PremiDoor 76 Kömmerling",
+      "description": "TWO VERSIONS TO CHOOSE FROM – PremiDoor 76 and PremiDoor 76 lux. Do you expect the best insulation and protection against noise and burglary? If so, the PremiDoor system is created just for you. We offer doors in the classic PremiDoor 76 system or in the PremiDoor 76 lux version which features an extremely narrow leaf profile.The unique structure and the slender profile of the leaf as well as the larger glass surface provide more warmth in the room thanks to the high solar radiation heat recovery.",
+      "1": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi2.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76"
+      },
+      "2": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76 lux"
       }
     }
   }

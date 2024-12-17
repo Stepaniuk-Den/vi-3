@@ -62,12 +62,14 @@ export interface INestedCard {
   src: string | StaticImageData;
   alt: string;
   className?: string;
-  size?: "small" | "large";
+  size?: "small" | "large" | "w-1/2";
   titleBannerCard?: boolean;
+  isRow?: boolean;
 }
 
 export interface IParameterItem {
   title: string;
+  description?:string;
   list: {
     [key: string]: IDesc;
   };
@@ -116,4 +118,5 @@ export interface IImage {
   id: string;
   src: string;
   alt: string;
+  title?: string;
 }

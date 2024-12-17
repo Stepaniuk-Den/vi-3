@@ -11,19 +11,21 @@ const NestedCard: React.FC<INestedCard> = ({
   className,
   size,
   // titleBannerCard,
+  isRow = true,
   // background,
   // layout,
 }) => {
   return (
     <li
       className={clsx(
-        "flex flex-col p-3",
+        "flex flex-col",
         className,
         // {
         //   "bg-customMarsala-accentLight": background === "marsala",
         //   "bg-customElement": background === "blue",
         // },
         {
+          "w-1/2": size === "w-1/2",
           "w-1/4": size === "small",
           "w-full": size === "large",
         }
@@ -42,10 +44,20 @@ const NestedCard: React.FC<INestedCard> = ({
         // )
       )}
 
-      <div
+      {/* <div
         className={clsx(
           "flex w-full",
           description ? "flex-row gap-8" : "flex-col"
+        )}
+      > */}
+      <div
+        className={clsx(
+          "flex w-full",
+          {
+            "flex-row gap-8": isRow,
+            "flex-col": description && !isRow,
+          }
+          // description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"
         )}
       >
         {/* ======== IMAGE ======== */}

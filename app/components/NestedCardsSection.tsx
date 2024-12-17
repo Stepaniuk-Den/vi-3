@@ -15,10 +15,12 @@ type Props = {
   // };
 
   tSectionItem: INestedCardsSectionItem;
-  sectionIdx?: number;
-  size?: "small" | "large";
+  // sectionIdx: number;
+  size?: "small" | "large" | "w-1/2";
   titleBanner?: boolean;
   // titleBannerCard?: boolean;
+  isRow?: boolean;
+  descReverse?: boolean;
 };
 
 const NestedCardsSection: React.FC<Props> = ({
@@ -27,6 +29,8 @@ const NestedCardsSection: React.FC<Props> = ({
   titleBanner,
   // sectionIdx,
   // titleBannerCard,
+  isRow,
+  descReverse = false,
 }) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
@@ -42,16 +46,19 @@ const NestedCardsSection: React.FC<Props> = ({
     <section className="sectionCl">
       <div className="container">
         {titleBanner && (
-        <TitleBanner>
-          <h3 className="titleCl">{tSectionItem.title}</h3>
-        </TitleBanner>
-        // ) : (
-        //       <>
-        //         <h3 className="titleCl text-start">{tSectionItem.title}</h3>
-        //         <Line className="marsala-left" color="marsala" />
-        //       </>
+          <TitleBanner>
+            <h3 className="titleCl">{tSectionItem.title}</h3>
+          </TitleBanner>
+          // ) : (
+          //       <>
+          //         <h3 className="titleCl text-start">{tSectionItem.title}</h3>
+          //         <Line className="marsala-left" color="marsala" />
+          //       </>
         )}
 
+        {tSectionItem.description && descReverse && (
+          <p className="mt-5">{tSectionItem.description}</p>
+        )}
         <ul className="flex justify-center gap-6">
           {nestedCardsList.map((nestedCard) => (
             <NestedCard
@@ -61,6 +68,7 @@ const NestedCardsSection: React.FC<Props> = ({
               src={nestedCard.src}
               alt={nestedCard.alt}
               size={size}
+              isRow={isRow}
               // titleBannerCard={titleBannerCard}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
@@ -68,7 +76,7 @@ const NestedCardsSection: React.FC<Props> = ({
           ))}
         </ul>
 
-        {tSectionItem.description && (
+        {tSectionItem.description && !descReverse && (
           <p className="mt-5">{tSectionItem.description}</p>
         )}
 
