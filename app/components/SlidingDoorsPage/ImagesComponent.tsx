@@ -5,27 +5,50 @@ import React from "react";
 
 interface IList {
   list: IImage[];
-  width: {
-    1: string;
-    2?: string;
-    3?: string;
-  };
-  height?: string;
+  className?: string;
+  width?:
+    | {
+        1?: string;
+        2?: string;
+        3?: string;
+      }
+    | string;
+  height?:
+    | {
+        1?: string;
+        2?: string;
+        3?: string;
+      }
+    | string;
 }
+
+const getImageDimensionValue = (
+  dimension: string | { [key: number]: string | undefined } | undefined,
+  idx: number,
+  defaultValue: string
+): string => {
+  if (typeof dimension === "object" && dimension !== null) {
+    return dimension[idx + 1] || defaultValue;
+  }
+  return dimension || defaultValue;
+};
+
 const ImagesComponent: React.FC<IList> = ({
   list,
   width,
-  height = "h-[20rem]",
+  height,
+  className,
 }) => {
   return (
-    <div className="flex gap-10">
+    <div className={clsx(`flex gap-10  ${className}`)}>
       {list.map((img, idx) => {
-        const currentWidth = Object.values(width)[idx];
+        const currentWidth = getImageDimensionValue(width, idx, "w-1/3");
+        const currentHeight = getImageDimensionValue(height, idx, "h-[30rem]");
         return (
           <div
             key={img.id}
             className={clsx(
-              `relative ${currentWidth} ${height} lg:h-[30rem] border border-gray-300 rounded-md overflow-hidden`,
+              `relative ${currentWidth} ${currentHeight} border border-gray-300 rounded-md overflow-hidden`,
               {}
             )}
           >
