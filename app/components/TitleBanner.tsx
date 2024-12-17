@@ -15,7 +15,7 @@ const TitleBanner: React.FC<ITitleBannerProps> = ({
   // const titleSize = size === "medium" ? "subTitleCl" : "titleCl";
 
   return (
-    <div className="flex flex-col uppercase tracking-widest items-center p-8 mb-8 rounded-md text-customMarsala">
+    <div className="flex flex-col uppercase tracking-widest items-center p-8 rounded-md text-customMarsala">
       {/* <h2 className={`${titleSize}`}>
         {title}
       </h2> */}

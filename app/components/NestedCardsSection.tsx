@@ -1,7 +1,6 @@
 import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
 import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
-import Line from "./Line";
 import TitleBanner from "./TitleBanner";
 
 type Props = {
@@ -19,17 +18,17 @@ type Props = {
   // sectionIdx: number;
   size?: "small" | "large" | "w-1/2";
   titleBanner?: boolean;
-  titleBannerCard?: boolean;
+  // titleBannerCard?: boolean;
   isRow?: boolean;
   descReverse?: boolean;
 };
 
 const NestedCardsSection: React.FC<Props> = ({
   tSectionItem,
-  // sectionIdx,
   size,
   titleBanner,
-  titleBannerCard,
+  // sectionIdx,
+  // titleBannerCard,
   isRow,
   descReverse = false,
 }) => {
@@ -46,15 +45,15 @@ const NestedCardsSection: React.FC<Props> = ({
   return (
     <section className="sectionCl">
       <div className="container">
-        {titleBanner ? (
+        {titleBanner && (
           <TitleBanner>
             <h3 className="titleCl">{tSectionItem.title}</h3>
           </TitleBanner>
-        ) : (
-          <>
-            <h3 className="titleCl text-start">{tSectionItem.title}</h3>
-            <Line className="marsala-left" color="marsala" />
-          </>
+          // ) : (
+          //       <>
+          //         <h3 className="titleCl text-start">{tSectionItem.title}</h3>
+          //         <Line className="marsala-left" color="marsala" />
+          //       </>
         )}
 
         {tSectionItem.description && descReverse && (
@@ -66,11 +65,11 @@ const NestedCardsSection: React.FC<Props> = ({
               key={nestedCard.id}
               title={nestedCard.title}
               description={nestedCard.description}
-              src={nestedCard.src}
-              alt={nestedCard.alt}
+              src={nestedCard.src || ""}
+              alt={nestedCard.alt || ""}
               size={size}
-              titleBannerCard={titleBannerCard}
               isRow={isRow}
+              // titleBannerCard={titleBannerCard}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
             />

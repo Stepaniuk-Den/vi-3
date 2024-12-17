@@ -37,8 +37,8 @@ const ItemCard: React.FC<IItemCard> = ({
         layout === "horizontal" ? "flex-row gap-8 p-7" : "flex-col p-3",
         reverse && layout === "horizontal" ? "flex-row-reverse" : "",
         {
-          "bg-customMarsala-accentLight": background === "marsala",
-          "bg-customElement": background === "blue",
+          "bg-customMarsala-accentLight text-white": background === "marsala",
+          "bg-customElement text-white": background === "blue",
         }
       )}
       // style={{ backgroundColor: background }}
@@ -79,7 +79,10 @@ const ItemCard: React.FC<IItemCard> = ({
           {layout === "horizontal" && (
             <div className="pt-12">
               <h3 className="subTitleCl xl:leading-none">{title}</h3>
-              <Line className="marsala-left" color="marsala" />
+              <Line
+                className="marsala-left"
+                color={background === "marsala" ? "blue" : "marsala"}
+              />
             </div>
           )}
           <p>{description}</p>

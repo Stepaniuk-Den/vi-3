@@ -35,12 +35,12 @@
       "href": "/windows",
       "links": {
         "1": {
-          "title": "металопластикові вікна",
+          "title": "металопластикові вікна - schuco",
           "slug": "windows-pvc-schuco"
         },
         "2": {
-          "title": "алюмінієві вікна",
-          "slug": "windows-aluminium"
+          "title": "металопластикові вікна - kommerling",
+          "slug": "windows-pvc-kommerling"
         }
       }
     },
@@ -432,6 +432,484 @@
       }
     }
   },
+
+  "WindowsPVCSchucoPage": {
+    "pageTitle": "PVC WINDOWS – Schüco Profiles",
+    "pageSubtitle": "/ Excellent energy efficiency thanks to innovative technology /",
+    "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+    "SectionsList": {
+      "ProfilesImg": {
+        "title": "In our offer you will find the following types of Schüco profiles:",
+        "1": {
+          "id": "1",
+          "title": "Schüco Classic LivIng 82 AD",
+          "src": "/images/windows/schuco-profiles/classicAD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Schüco Classic LivIng 82 MD",
+          "src": "/images/windows/schuco-profiles/classicMD.jpeg",
+          "alt": ""
+        }
+      },
+      "ProfilesScheme": {
+        "title": "Schüco Windows – profile LivIng 82 MD and AD Classic",
+        "description": "Schüco Living 82 MD and AS is a new generation of window and door systems for modern construction. The use of the innovative TWIN system allows the frame with double (AS series) or triple (MD series) sealing to be easily fitted to the window sash. In addition, this new twin system uses the world’s first EPDM heat seal. Schüco, thanks to cooperation with Semperit, has exclusive rights to this type of sealing technology. It is due to the use of flexible and heat-sealable material that the tightness in windows and doors has increased significantly, especially in problematic corner areas.",
+        "1": {
+          "id": "1",
+          "title": "Schüco – profile LivIng 82 MD",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Schüco – profile LivIng 82 AS",
+          "src": "/images/windows/schuco-profiles/schemeAS.jpeg",
+          "alt": ""
+        }
+      },
+      "ProfilesCrossSections": {
+        "title": "Window cross-sections in which different GLAZING BEADS were used, depending on the thickness of the glazing units used.",
+        "1": {
+          "id": "1",
+          "title": "LivIng profile with a 48 mm glazing unit 4-18-4-18-4",
+          "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "LivIng profile with a 36 mm glazing unit 4-12-4-12-4",
+          "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "LivIng profile with a 24 mm glazing unit 4-16-4",
+          "src": "/images/windows/schuco-profiles/cross-section24.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 82 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 82 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 24 mm to 52 mm"
+              },
+              "4": {
+                "desc": "Front width min. – 120 mm"
+              },
+              "5": {
+                "desc": "Sash weight max. – 250 kg"
+              },
+              "6": {
+                "desc": "Sash height min.-max. – 400mm – 2600mm"
+              },
+              "7": {
+                "desc": "Sash width min.-max. – 400mm – 1500mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,96 – 1,0 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 9A"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)** – C5/B5"
+              },
+              "7": {
+                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+              },
+              "8": {
+                "desc": "Resistance to repeated opening and closing to DIN EN 12400 (class) – 2"
+              },
+              "9": {
+                "desc": "Operational forces to DIN EN 13115 (class) – 1"
+              },
+              "10": {
+                "desc": "Load capacity of safety devices – requirement met"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              },
+              "2": {
+                "desc": "** Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "The PVC Schuco LivIng 82 MD and AS system is made in 7-chamber technology with excellent insulation properties."
+              },
+              "2": {
+                "desc": "The value of the Uf heat transfer coefficient is: up to 1 W/(m2K) for the AS series and up to 0.96 W/(m2K) for the MD series."
+              },
+              "3": {
+                "desc": "With two (AS series) or three (MD series) sealing surfaces, the LivIng system provides optimal protection against wind, rain and noise."
+              },
+              "4": {
+                "desc": "When using a frame with a central seal (MD series), the system meets the requirements of the German Institute of Window Technology ift Rosenheim in the field of passive construction."
+              },
+              "5": {
+                "desc": "It is possible to include double glazing, unit thickness: 24 mm to 52 mm."
+              },
+              "6": {
+                "desc": "The increased installation depth ensures greater safety and better protection against burglary."
+              },
+              "7": {
+                "desc": "Optimal light access is guaranteed thanks to the narrow visible profile width of 120 mm as standard."
+              },
+              "8": {
+                "desc": "The first weldable EPDM seal integrated with the Schüco LivIng system significantly increases the sealing effect in the corners of the windows."
+              },
+              "9": {
+                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+              },
+              "10": {
+                "desc": "We use silver grey seals in the white profiles of the Schüco LivIng system and black seals in the foil profiles."
+              },
+              "11": {
+                "desc": "All profiles (frame and sash) are reinforced around the entire perimeter with corrosion-resistant 2mm-thick steel sections, which significantly affects the stability, safety and durability of the window."
+              },
+              "12": {
+                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+              },
+              "13": {
+                "desc": "We use high-class MACO MULTI-MATIC fittings."
+              },
+              "14": {
+                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+              },
+              "15": {
+                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+              }
+            }
+          }
+        }
+      },
+      "ProfilesSchemeAluminium": {
+        "title": "Schüco Windows – with aluminium overlays – TOP ALU",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/aluminium.jpeg",
+          "alt": "",
+          "description": "Our standard offer of window joinery manufactured in Poland has been supplemented with PVC windows with aluminium overlays. We produce them based on a Schüco window constructed in the CT70 or LivIng 82 MD / AS system in the CLASSIC style. The elegant aluminium overlays allow optimal adjustment of windows to the facade. The rich RAL colour palette will satisfy even the most demanding tastes, and the possible colour variation between the frame and the sash broadens this range of possibilities even further. Overlays work especially in modern buildings, commercial and service premises, or office buildings. The use of aluminium overlays makes the PVC windows unique."
+        }
+      },
+      "ProfilesSchemeNordic": {
+        "title": "Schüco Windows – profile Alu Inside NORDIC",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/nordic.jpeg",
+          "alt": "",
+          "description": "The Scandinavian Windows system, with outward-opening windows, has been designed especially for the Scandinavian and North German markets. A characteristic feature of this system are windows that open outwards and have the highest stability and excellent thermal insulation parameters. This system allows the implementation of windows with glazing bars characteristic for the region, stylish glazing beads and special fittings (ASSA ABLOY) with various opening methods, such as turn fittings, Top-Hung or Top-Swing fittings. The Schüco Alu Inside Nordic window system is certified by the Danish Technological Institute."
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 120 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 82 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 18 mm to 52 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,87 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 46 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E 1200"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)** – C3"
+              },
+              "7": {
+                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              },
+              "2": {
+                "desc": "** Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "It has three sealing planes and technologically patented joints between aluminium and plastic."
+              },
+              "2": {
+                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+              },
+              "3": {
+                "desc": "7-chamber system (sash) and 11-chamber system (window frame)"
+              },
+              "4": {
+                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+              },
+              "5": {
+                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+              },
+              "6": {
+                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "WindowsPVCKommerlingPage": {
+    "pageTitle": "PVC WINDOWS – Kömmerling Profiles",
+    "pageSubtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
+    "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
+    "SectionsList": {
+      "ProfilesCrossSections": {
+        "title": "Cross-sections of windows made of Kömmerling profiles.",
+        "imgList": {
+          "1": {
+            "id": "1",
+            "title": "Kömmerling 76AD",
+            "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
+            "alt": ""
+          },
+          "2": {
+            "id": "2",
+            "title": "Kömmerling 88MD",
+            "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+            "alt": ""
+          },
+          "3": {
+            "id": "3",
+            "title": "Kömmerling AluClip",
+            "src": "/images/windows/schuco-profiles/cross-section24.jpeg",
+            "alt": ""
+          }
+        },
+        "descriptionProfilesCrosSections": {
+          "1": {
+            "title": "EXCLUSIVE WINDOWS FOR HIGH EXPECTATIONS – structure of window profiles",
+            "desc": "New generation of profiles – KÖMMERLING 76 – moves the horizon. KÖMMERLING 76 system is the result of the wealth of experience, many years of research and development, latest structures and computer simulations, numerous trials and tests. KÖMMERLING 76 is the best window system in its class! Window profiles of KÖMMERLING company feature innovative structure of chambers, which designed under latest technical solutions, perfectly influence better thermal and acoustic insulation and optimal stability of structure altogether with high carrying capacity especially for the application of heavy window panes. Manufacturers of window profiles KÖMMERLING 76 pay special attention to ecological issues. The best functionality and exceptional thermal insulation at optimal use of materials. KÖMMERLING has long believed in the “greenline” idea, i.e. to produce PVC windows harmful lead may be replaced by ecological lime/zinc."
+          },
+          "2": {
+            "title": "PVC WINDOW PROFILES MANUFACTURER – KÖMMERLING company",
+            "desc": "Manufacturer of KÖMMERLING window systems is appreciated for high quality of the products and continuous implementation of innovative technologies.KÖMMERLING company was started in 1897 by Karl Kömmerling. Before PVC window profiles were produced the company had offered glues and synthetic resin. In 1957 the company started to produce PVC shutter rollers, and in 1967 it began to mould PVC window profiles of the highest quality.Long-term experience made KÖMMERLING company the market leader."
+          }
+        }
+      },
+      "ProfilesScheme1": {
+        "title": "Kömmerling Windows – Profile 76AD",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": "",
+          "description": "The 5-chamber KÖMMERLING 76 AD window profile in our offer has very good thermal insulation parameters: the value of the thermal transmittance coefficient Uf in the standard variant is up to 1.1 W/m2K, while Uw for the reference window is up to 0.76 W/m2K."
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 76 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 76 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 16 mm to 48 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1,1 – 1,3 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 9A"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C5/B5"
+              },
+              "7": {
+                "desc": "Load capacity of safety devices – requirement met"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "The system has an installation depth of 76 mm and features rebate sealing with the highest thermal insulation."
+              },
+              "2": {
+                "desc": "It is possible to use triple glazing units or special glazing up to 48mm thick."
+              },
+              "3": {
+                "desc": "This 5-chamber window system has thermal insulation parameters of Uw = 0.76W/(m2K) for the reference window."
+              },
+              "4": {
+                "desc": "It is possible to use special anti-burglary fittings."
+              },
+              "5": {
+                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+              }
+            }
+          }
+        }
+      },
+      "ProfilesScheme2": {
+        "title": "Kömmerling Windows – Profile 88MD",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/aluminium.jpeg",
+          "alt": "",
+          "description": "This 7-chamber window system features a central seal. The stable construction of window sashes and high-quality window fittings allow to place a triple glazing unit with a maximum glazing range of up to 56 mm. Our windows in the Kömmerling 88 system meet all the necessary standards, which makes it possible to apply them to passive houses. The thermal insulation coefficient for the reference window with dimensions of 1230x1480mm is Uw = 0.72 W/(m2K)."
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 88 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 88 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 24 mm to 56 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,93 – 0,98 W/(m2K)"
+              },
+              "2": {
+                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+              },
+              "3": {
+                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+              },
+              "4": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "5": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E 2100"
+              },
+              "6": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C5/B5"
+              },
+              "7": {
+                "desc": "Load capacity of safety devices – requirement met"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile and glazing"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "list": {
+              "1": {
+                "desc": "The system has an installation depth of 88 mm and features an additional central seal with the highest thermal insulation."
+              },
+              "2": {
+                "desc": "It is possible to use triple glazing units or special glazing up to 56mm thick."
+              },
+              "3": {
+                "desc": "This 7-chamber window system has thermal insulation parameters of Uw = 0.72W/(m2K) for the reference window."
+              },
+              "4": {
+                "desc": "It is possible to use special anti-burglary fittings."
+              },
+              "5": {
+                "desc": "Welded PCE seals or EPDM seals in light grey or black."
+              },
+              "6": {
+                "desc": "The windows meet the requirements for passive houses in accordance with the ift-Richtlinie directive WA-15/2."
+              }
+            }
+          }
+        }
+      },
+      "ProfilesScheme3": {
+        "title": "Kömmerling Windows AluClip – with aluminium overlays",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/nordic.jpeg",
+          "alt": "",
+          "description": "The specially designed aluminium overlays for PVC window and door profiles are an innovative solution with excellent technical parameters, representing a beneficial alternative to aluminium windows. Aluminium is characterised by elegance, the best resistance to changing weather conditions, high stability, ease of care, and unlimited colour range – thanks to the techniques of refining the external surface, i.e. anodizing or powder coating. In turn, PVC plastic guarantees optimal thermal and sound insulation as well as high functionality. KÖMMERLING 76 offers a unique combination of the advantages of aluminium and PVC plastic in the form of innovative Alu Clip, Alu Clip Pro and AddOn systems. Our solutions mean that the design possibilities are unlimited, and the windows meet the highest energy-efficiency requirements!"
+        }
+      }
+    }
+  },
+
   "DoorsPage": {
     "title": "Вхідні двері з Польщі",
     "description": "AУсі двері польської фірми VI-3 мають міцну конструкцію, чудові теплові характеристики та інноваційні рішення. Виготовляємо зовнішні ПВХ двері на основі масивних профілів: Schüco CT70, Schüco LivIng, Kömmerling 76AD. Наші алюмінієві двері виготовляються з профілів бельгійської компанії Aliplast, а також польських алюмінієвих систем Aluron. У нашій пропозиції представлені терасові та балконні двері на віконному або дверному профілі; незвичайні двері практично будь-якої форми, а також розсувні двері – чудове рішення для ресторанів, кафе та сучасних віталень.",
@@ -1109,6 +1587,7 @@
       }
     }
   },
+
   "SlidingDoorsHsSchPage": {
     "title": "PVC SLIDING TERRACE DOORS - HS Type - Schüco Profiles",
     "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",

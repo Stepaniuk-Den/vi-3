@@ -24,6 +24,7 @@ export interface IWindowSvgItems {
 }
 
 export interface IDesc {
+  title?: string;
   desc?: string;
 }
 
@@ -43,8 +44,8 @@ export interface IItemCard {
   slug?: string;
   title: string;
   description?: string;
-  src?: string | StaticImageData;
-  alt?: string;
+  src: string | StaticImageData;
+  alt: string;
   tBtn?: string;
   className?: string;
   btnOffset?: string;
@@ -58,8 +59,8 @@ export interface INestedCard {
   id?: string;
   title?: string;
   description?: string;
-  src?: string | StaticImageData;
-  alt?: string;
+  src: string | StaticImageData;
+  alt: string;
   className?: string;
   size?: "small" | "large" | "w-1/2";
   titleBannerCard?: boolean;
@@ -68,7 +69,7 @@ export interface INestedCard {
 
 export interface IParameterItem {
   title: string;
-  description?:string;
+  description?: string;
   list: {
     [key: string]: IDesc;
   };
@@ -84,8 +85,7 @@ export interface IParametersList {
 export interface INestedCardsSectionItem {
   title?: string;
   description?: string;
-  [key: string]: any;
-  // string | INestedCard | IParametersList | undefined
+  [key: string]: string | INestedCard | IParametersList | undefined;
   parametersList?: IParametersList;
   //   size?: "small" | "large";
   //   titleBanner?: boolean;
@@ -93,11 +93,23 @@ export interface INestedCardsSectionItem {
 }
 
 export interface INestedCardsSectionsList {
-  [key: string]: {
-    title?: string;
-    description?: string;
-    [key: string]: string | INestedCard | IParametersList | undefined;
-    parametersList?: IParametersList;
+  [key: string]: INestedCardsSectionItem;
+  //     { title?: string;
+  //     description?: string;
+  //     [key: string]: string | INestedCard | IParametersList | undefined;
+  //     parametersList?: IParametersList;
+  //   };
+}
+
+export interface IProfilesCrossSections {
+  t: {
+    title: string;
+    imgList: {
+      [key: string]: string | INestedCard;
+    };
+    descriptionProfilesCrosSections: {
+      [key: string]: string | IDesc;
+    };
   };
 }
 
