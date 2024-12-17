@@ -1,7 +1,6 @@
 import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
 import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
-import Line from "./Line";
 import TitleBanner from "./TitleBanner";
 
 type Props = {
@@ -16,18 +15,18 @@ type Props = {
   // };
 
   tSectionItem: INestedCardsSectionItem;
-  // sectionIdx: number;
+  sectionIdx?: number;
   size?: "small" | "large";
   titleBanner?: boolean;
-  titleBannerCard?: boolean;
+  // titleBannerCard?: boolean;
 };
 
 const NestedCardsSection: React.FC<Props> = ({
   tSectionItem,
-  // sectionIdx,
   size,
   titleBanner,
-  titleBannerCard,
+  // sectionIdx,
+  // titleBannerCard,
 }) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
@@ -42,15 +41,15 @@ const NestedCardsSection: React.FC<Props> = ({
   return (
     <section className="sectionCl">
       <div className="container">
-        {titleBanner ? (
-          <TitleBanner>
-            <h3 className="titleCl">{tSectionItem.title}</h3>
-          </TitleBanner>
-        ) : (
-          <>
-            <h3 className="titleCl text-start">{tSectionItem.title}</h3>
-            <Line className="marsala-left" color="marsala" />
-          </>
+        {titleBanner && (
+        <TitleBanner>
+          <h3 className="titleCl">{tSectionItem.title}</h3>
+        </TitleBanner>
+        // ) : (
+        //       <>
+        //         <h3 className="titleCl text-start">{tSectionItem.title}</h3>
+        //         <Line className="marsala-left" color="marsala" />
+        //       </>
         )}
 
         <ul className="flex justify-center gap-6">
@@ -62,7 +61,7 @@ const NestedCardsSection: React.FC<Props> = ({
               src={nestedCard.src}
               alt={nestedCard.alt}
               size={size}
-              titleBannerCard={titleBannerCard}
+              // titleBannerCard={titleBannerCard}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
             />

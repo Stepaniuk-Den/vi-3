@@ -1,7 +1,7 @@
 import { INestedCard } from "@/helpers/interfaces";
 import clsx from "clsx";
 import Image from "next/image";
-import TitleBanner from "./TitleBanner";
+// import TitleBanner from "./TitleBanner";
 
 const NestedCard: React.FC<INestedCard> = ({
   title,
@@ -10,7 +10,7 @@ const NestedCard: React.FC<INestedCard> = ({
   alt,
   className,
   size,
-  titleBannerCard,
+  // titleBannerCard,
   // background,
   // layout,
 }) => {
@@ -30,16 +30,17 @@ const NestedCard: React.FC<INestedCard> = ({
       )}
     >
       {/* ======== TITLE ======== */}
-      {title &&
-        (titleBannerCard ? (
-          <TitleBanner>
-            <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
-          </TitleBanner>
-        ) : (
-          <div className="mb-3">
-            <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
-          </div>
-        ))}
+      {title && (
+        //   (titleBannerCard ? (
+        //     <TitleBanner>
+        //       <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
+        //     </TitleBanner>
+        // ) :
+        <div className="mb-3">
+          <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
+        </div>
+        // )
+      )}
 
       <div
         className={clsx(
