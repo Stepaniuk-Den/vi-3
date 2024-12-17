@@ -5,7 +5,6 @@ import {
   IDesc,
   INestedCard,
   INestedCardsSectionItem,
-  IProfilesCrossSections,
 } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -20,12 +19,9 @@ type ISectionsList = {
       [key: string]: string | IDesc;
     };
   };
-  [key: string]: any;
+} & {
+  [key: string]: INestedCardsSectionItem;
 };
-
-// type ISectionsList = {
-//   [key: string]: IProfilesCrossSections | INestedCardsSectionItem;
-// }
 
 type Props = {
   params: { locale: string };
@@ -60,9 +56,9 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           key={key}
           tSectionItem={tSectionsList[key]}
           titleBanner={true}
+          size={"large"}
           // titleBannerCard={idx === 0}
           // size={idx === 0 ? "small" : "large"}
-          size={"large"}
           // sectionIdx={idx}
         />
       ))}

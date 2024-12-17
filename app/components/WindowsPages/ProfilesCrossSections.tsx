@@ -5,7 +5,6 @@ import {
 } from "@/helpers/interfaces";
 import NestedCard from "../NestedCard";
 import clsx from "clsx";
-import TitleBanner from "../TitleBanner";
 
 const ProfilesCrossSections: React.FC<IProfilesCrossSections> = ({ t }) => {
   //   console.log("🚀 ~ t:", t);
@@ -25,8 +24,8 @@ const ProfilesCrossSections: React.FC<IProfilesCrossSections> = ({ t }) => {
               key={nestedCard.id}
               title={nestedCard.title}
               description={nestedCard.description}
-              src={nestedCard.src}
-              alt={nestedCard.alt}
+              src={nestedCard.src || ""}
+              alt={nestedCard.alt || ""}
               size={"small"}
               className={clsx(idx === 0 && "mr-auto")}
               // titleBannerCard={titleBannerCard}

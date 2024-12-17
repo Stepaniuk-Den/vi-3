@@ -69,7 +69,7 @@ export interface INestedCard {
 
 export interface IParameterItem {
   title: string;
-  description?:string;
+  description?: string;
   list: {
     [key: string]: IDesc;
   };
@@ -85,8 +85,7 @@ export interface IParametersList {
 export interface INestedCardsSectionItem {
   title?: string;
   description?: string;
-  [key: string]: any;
-  // string | INestedCard | IParametersList | undefined
+  [key: string]: string | INestedCard | IParametersList | undefined;
   parametersList?: IParametersList;
   //   size?: "small" | "large";
   //   titleBanner?: boolean;
@@ -94,12 +93,12 @@ export interface INestedCardsSectionItem {
 }
 
 export interface INestedCardsSectionsList {
-  [key: string]: {
-    title?: string;
-    description?: string;
-    [key: string]: string | INestedCard | IParametersList | undefined;
-    parametersList?: IParametersList;
-  };
+  [key: string]: INestedCardsSectionItem;
+  //     { title?: string;
+  //     description?: string;
+  //     [key: string]: string | INestedCard | IParametersList | undefined;
+  //     parametersList?: IParametersList;
+  //   };
 }
 
 export interface IProfilesCrossSections {
