@@ -17,9 +17,11 @@ type Props = {
 
   tSectionItem: INestedCardsSectionItem;
   // sectionIdx: number;
-  size?: "small" | "large";
+  size?: "small" | "large" | "w-1/2";
   titleBanner?: boolean;
   titleBannerCard?: boolean;
+  isRow?: boolean;
+  descReverse?: boolean;
 };
 
 const NestedCardsSection: React.FC<Props> = ({
@@ -28,6 +30,8 @@ const NestedCardsSection: React.FC<Props> = ({
   size,
   titleBanner,
   titleBannerCard,
+  isRow,
+  descReverse = false,
 }) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
@@ -53,6 +57,9 @@ const NestedCardsSection: React.FC<Props> = ({
           </>
         )}
 
+        {tSectionItem.description && descReverse && (
+          <p className="mt-5">{tSectionItem.description}</p>
+        )}
         <ul className="flex justify-center gap-6">
           {nestedCardsList.map((nestedCard) => (
             <NestedCard
@@ -63,13 +70,14 @@ const NestedCardsSection: React.FC<Props> = ({
               alt={nestedCard.alt}
               size={size}
               titleBannerCard={titleBannerCard}
+              isRow={isRow}
               // layout="horizontal"
               // background={idx % 2 === 0 ? `${background}` : ""}
             />
           ))}
         </ul>
 
-        {tSectionItem.description && (
+        {tSectionItem.description && !descReverse && (
           <p className="mt-5">{tSectionItem.description}</p>
         )}
 

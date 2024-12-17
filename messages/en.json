@@ -1017,7 +1017,7 @@
       },
       "2": {
         "id": "SJ12TQ",
-       "src": "/images/doors/doors_kommerling_2.jpg",
+        "src": "/images/doors/doors_kommerling_2.jpg",
         "alt": ""
       },
       "3": {
@@ -1036,105 +1036,105 @@
         "alt": ""
       }
     },
-    "FeaturesKommerling76Section":{
+    "FeaturesKommerling76Section": {
       "title": "Characteristic Features of KÖMMERLING 76 AD Door System:",
-      "img":"/images/doors/corona_CT_70.jpg",
-      "parametersList":{
-        "1":{
-         "list":{
-          "1":{
-            "desc":"High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
-          },
-          "2":{
-            "desc":"Optimal distribution of steel reinforcement and angle connectors;"
-          },
-          "3":{
-            "desc":"Exceptional structural stability;"
-          },
-          "4":{
-            "desc":"Option of embedding special panes and innovative door fillings up to 48 mm;"
-          },
-          "5":{
-            "desc":"High tightness – double sealing of the sill;"
-          },
-          "6":{
-            "desc":"Perfect protection against variable weather conditions;"
-          },
-          "7":{
-            "desc":"Excellent thermal insulation;"
-          },
-          "8":{
-            "desc":"Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+      "img": "/images/doors/corona_CT_70.jpg",
+      "parametersList": {
+        "1": {
+          "list": {
+            "1": {
+              "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
+            },
+            "2": {
+              "desc": "Optimal distribution of steel reinforcement and angle connectors;"
+            },
+            "3": {
+              "desc": "Exceptional structural stability;"
+            },
+            "4": {
+              "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
+            },
+            "5": {
+              "desc": "High tightness – double sealing of the sill;"
+            },
+            "6": {
+              "desc": "Perfect protection against variable weather conditions;"
+            },
+            "7": {
+              "desc": "Excellent thermal insulation;"
+            },
+            "8": {
+              "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+            }
           }
-         }
         }
       }
     },
-    "OutwardDoors76Section":{
+    "OutwardDoors76Section": {
       "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
-      "list":{
+      "list": {
         "1": {
           "bannerTitle": "Narrower leaf",
           "img": "/images/doors/corona_CT_70.jpg",
-          "description":"/ door leaf 76205 opening outwards /"
+          "description": "/ door leaf 76205 opening outwards /"
         },
         "2": {
           "bannerTitle": "Wider leaf",
           "img": "/images/doors/livIng_82.jpg",
-           "description":"/ door leaf 76207 opening inwards /"
+          "description": "/ door leaf 76207 opening inwards /"
         }
       }
     },
-    "InwardDoors76Section":{
+    "InwardDoors76Section": {
       "title": "INWARD-OPENING DOOR – door sill cross-section Kömmerling 76 AD",
-      "list":{
+      "list": {
         "1": {
           "bannerTitle": "Narrower leaf",
           "img": "/images/doors/corona_CT_70.jpg",
-          "description":"/ door leaf 76204 opening outwards /"
+          "description": "/ door leaf 76204 opening outwards /"
         },
         "2": {
           "bannerTitle": "Wider leaf",
           "img": "/images/doors/livIng_82.jpg",
-           "description":"/ door leaf 76206 opening inwards /"
+          "description": "/ door leaf 76206 opening inwards /"
         }
       }
     },
-    "DoorSillFeatures":{
-      "title":"Kömmerling 76 AD door sill features",
-      "list":{
+    "DoorSillFeatures": {
+      "title": "Kömmerling 76 AD door sill features",
+      "list": {
         "1": {
           "img": "/images/doors/door_sill_features_1.png",
-          "description":"/ G060 seals for A065 aluminium drip bar/"
+          "description": "/ G060 seals for A065 aluminium drip bar/"
         },
         "2": {
           "img": "/images/doors/door_sill_features_2.png",
-           "description":"/ A061 aluminium drip bar/"
+          "description": "/ A061 aluminium drip bar/"
         },
-        "3":{
-           "img": "/images/doors/door_sill_features_3.jpg",
-           "description":"/ A076 aluminium threshold /"
+        "3": {
+          "img": "/images/doors/door_sill_features_3.jpg",
+          "description": "/ A076 aluminium threshold /"
         },
-        "4":{
-           "img": "/images/doors/door_sill_features_4.jpg",
-           "description":"/ A075 aluminium overlay/"
+        "4": {
+          "img": "/images/doors/door_sill_features_4.jpg",
+          "description": "/ A075 aluminium overlay/"
         }
       }
     },
-    "DoorSealsEPDM":{
+    "DoorSealsEPDM": {
       "title": "Kömmerling 76 AD door seals made of EPDM",
       "imgThreeList": {
-       "1": {
-         "img": "/images/doors/seals_EPDM_1.webp"
-       },
-       "2": {
-         "img": "/images/doors/seals_EPDM_1.webp"
-       },
-       "3": {
-         "img": "/images/doors/seals_EPDM_1.webp"
-       }
-     } 
-     }
+        "1": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "2": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        },
+        "3": {
+          "img": "/images/doors/seals_EPDM_1.webp"
+        }
+      }
+    }
   },
   "ALUDoorsAliplastPage": {
     "title": "EXTERIOR DOORS from Aluminium – Aliplast profiles",
@@ -1393,34 +1393,74 @@
     "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",
     "imgList": {
       "1": {
-        "id": 1,
+        "id": "1",
         "src": "/images/slidingDoors/hsSch/hs-sch-1.jpeg",
         "alt": "Large panoramic glass sliding doors in the house"
       },
       "2": {
-        "id": 2,
+        "id": "2",
         "src": "/images/slidingDoors/hsSch/hs-sch-2.jpeg",
         "alt": "Large panoramic glass sliding doors in the house"
       },
       "3": {
-        "id": 3,
+        "id": "3",
         "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
         "alt": "schema sliding doors"
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsSch/hs-sch-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsSch/hs-sch-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsSch/hs-sch-11.jpeg",
+        "alt": ""
       }
     },
     "desc2": "SIX OPENING OPTIONS with one or two sliding leaves. This allows to fine-tune the woodwork to your individual requirements in terms of thermal insulation, dimensions and comfort of use.",
     "desc3": "TWO SYSTEMS of lift-and-slide doors: Schüco EasySlide and Schüco LivIngSlide. TUR-PLAST is a Polish producer of individual solutions for HS-type sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Schüco systems can be easily combined with energy-saving and passive Schüco windows.",
-    "SchSlide": {
+    "schSlide": {
       "1": {
         "id": "1",
         "title": "Schüco EasySlide",
-        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpeg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
         "title": "Schüco LivIngSlide",
-        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpeg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide2.jpeg",
         "alt": ""
       }
     },
@@ -1430,21 +1470,128 @@
       "p2": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
       "p3": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise."
     },
-    "imgList2": {
+    "bannerTitle2": "PVC Sliding Terrace Doors – HS Schüco EasySlide",
+    "params": {
+      "title": "SYSTEM PROPERTIES – EasySlide",
+      "list": {
+        "1": {
+          "desc": "Thermally insulated aluminium threshold with a foamed PA break"
+        },
+        "2": {
+          "desc": "Sealing along the entire perimeter in three planes"
+        },
+        "3": {
+          "desc": "Frame width 167 mm"
+        },
+        "4": {
+          "desc": "Maximum threshold height 46mm"
+        },
+        "5": {
+          "desc": "Possibility of using base and widening profiles"
+        },
+        "6": {
+          "desc": "Air infiltration: Class 4 according to EN 12207 ( ≤0,11m3/hmdaPa2/3)"
+        },
+        "7": {
+          "desc": "Rainwater penetration resistance: Class 8A according to EN 12208 (∆p=450 Pa)"
+        },
+        "8": {
+          "desc": "Acoustic insulation Rw,p=34-43 dB"
+        },
+        "9": {
+          "desc": "Maximum height – 2300mm"
+        },
+        "10": {
+          "desc": "Maximum width – 6500mm"
+        }
+      }
+    }
+  },
+  "SlidingDoorsHsKomPage": {
+    "title": "PVC SLIDING TERRACE DOORS - HS Type - Kömmerling Profiles",
+    "description": "PREMIDOOR 76 is an innovative system of slide-and-tilt doors with an installation depth of 76 mm. It allows for freedom in the arrangement of terraces, balconies and winter gardens. The large area of ​​glazing optically enlarges the room and provides optimal lighting of the interior. With our solutions, your house will open up to the greenery outside, and the door will perfectly fit into the atmosphere of the interior. Thanks to the modern barrier-free threshold, which is included as standard, you can enjoy maximum comfort and optimal thermal insulation.",
+    "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpeg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpeg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-2.jpeg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpeg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-3.jpeg",
         "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/hsKom/hs-kom-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/hsKom/hs-kom-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/hsKom/hs-kom-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/hsKom/hs-kom-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/hsKom/hs-kom-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/hsKom/hs-kom-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/hsKom/hs-kom-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/hsKom/hs-kom-11.jpeg",
+        "alt": ""
+      }
+    },
+    "komPremi": {
+      "1": {
+        "id": "1",
+        "title": "System PremiDoor 76 – general information",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpeg",
+        "alt": "",
+        "description": "We offer an innovative system of HS-type lift-and-slide doors with a low threshold. We are a manufacturer of terrace doors in the Kömmerling PremiDoor 76 system. This type of door is an excellent solution in new construction as well as in buildings undergoing renovation."
+      }
+    },
+    "komPremiCross": {
+      "title": "System cross-sections PremiDoor 76 Kömmerling",
+      "description": "TWO VERSIONS TO CHOOSE FROM – PremiDoor 76 and PremiDoor 76 lux. Do you expect the best insulation and protection against noise and burglary? If so, the PremiDoor system is created just for you. We offer doors in the classic PremiDoor 76 system or in the PremiDoor 76 lux version which features an extremely narrow leaf profile.The unique structure and the slender profile of the leaf as well as the larger glass surface provide more warmth in the room thanks to the high solar radiation heat recovery.",
+      "1": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi2.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76"
+      },
+      "2": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpeg",
+        "alt": "",
+        "description": "PremiDoor 76 lux"
       }
     }
   }

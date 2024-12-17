@@ -18,7 +18,7 @@ const NestedCard: React.FC<INestedCard> = ({
   return (
     <li
       className={clsx(
-        "flex flex-col p-3",
+        "flex flex-col",
         className,
         // {
         //   "bg-customMarsala-accentLight": background === "marsala",
@@ -50,11 +50,15 @@ const NestedCard: React.FC<INestedCard> = ({
         )}
       > */}
       <div
-      className={clsx(
-        "flex w-full",
-        description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"
-      )}
-    >
+        className={clsx(
+          "flex w-full",
+          {
+            "flex-row gap-8": isRow,
+            "flex-col": description && !isRow,
+          }
+          // description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"
+        )}
+      >
         {/* ======== IMAGE ======== */}
         <div className="relative h-[460px] border border-gray-300 rounded-md overflow-hidden w-full">
           <Image
