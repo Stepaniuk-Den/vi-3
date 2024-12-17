@@ -3,7 +3,6 @@ import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
 import Line from "./Line";
 import TitleBanner from "./TitleBanner";
-import clsx from "clsx";
 
 type Props = {
   // tSectionItem: {
