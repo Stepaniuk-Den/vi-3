@@ -1,5 +1,7 @@
+import ItemCard from "@/app/components/ItemCard";
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
+import OfferSection from "@/app/components/WindowsPages/OfferSection";
 import ProfilesCrossSections from "@/app/components/WindowsPages/ProfilesCrossSections";
 import {
   IDesc,
@@ -49,6 +51,7 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
         </div>
       </section>
 
+      <OfferSection t={} />
       <ProfilesCrossSections t={tSectionsList.ProfilesCrossSections} />
 
       {profileSchemeKeys.map((key) => (

@@ -30,7 +30,7 @@ const ItemCard: React.FC<IItemCard> = ({
   const link = slug ? `/${path}/${slug}` : "#";
 
   return (
-    <li
+    <div
       className={clsx(
         "flex w-full shadow-lg rounded-md",
         className,
@@ -92,7 +92,7 @@ const ItemCard: React.FC<IItemCard> = ({
           {tBtn}
         </LinkToPage>
       </div>
-    </li>
+    </div>
   );
 };
 

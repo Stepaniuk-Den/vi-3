@@ -19,15 +19,16 @@ const DoorsSection: React.FC<Props> = ({ t, tBtn }) => {
         <p className="mb-8">{t("description")}</p>
         <ul className="flex flex-col lg:flex-row justify-between gap-20">
           {doorsTypesList.map((typeItem) => (
-            <ItemCard
-              key={typeItem.id}
-              title={typeItem.title}
-              description={typeItem.description}
-              src={typeItem.src}
-              alt={typeItem.alt}
-              className={typeItem.id === "1" ? "max-w-3xl" : "max-w-[400px]"}
-              tBtn={tBtn("see")}
-            />
+            <li key={typeItem.id}>
+              <ItemCard
+                title={typeItem.title}
+                description={typeItem.description}
+                src={typeItem.src}
+                alt={typeItem.alt}
+                className={typeItem.id === "1" ? "max-w-3xl" : "max-w-[400px]"}
+                tBtn={tBtn("see")}
+              />
+            </li>
           ))}
         </ul>
       </div>

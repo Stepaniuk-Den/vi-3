@@ -21,15 +21,16 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
         <p className="mb-8">{t("description")}</p>
         <ul className="flex flex-col lg:flex-row justify-between gap-4">
           {doorsTypesList.map((typeItem, idx) => (
-            <ItemCard
-              key={typeItem.id}
-              title={typeItem.title}
-              description={typeItem.description}
-              src={typeItem.src}
-              alt={typeItem.alt}
-              btnOffset={idx === 0 ? "-mt-3" : ""}
-              tBtn={tBtn("see")}
-            />
+            <li key={typeItem.id}>
+              <ItemCard
+                title={typeItem.title}
+                description={typeItem.description}
+                src={typeItem.src}
+                alt={typeItem.alt}
+                btnOffset={idx === 0 ? "-mt-3" : ""}
+                tBtn={tBtn("see")}
+              />
+            </li>
           ))}
         </ul>
       </div>

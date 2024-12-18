@@ -13,13 +13,20 @@ type Props = {
     };
   };
   tBtn: (key: string) => string;
-  source:string;
-  wrapper:boolean;
-  path:string;
-  background:"marsala" | "blue";
+  source: string;
+  wrapper: boolean;
+  path: string;
+  background: "marsala" | "blue";
 };
 
-const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path,background }) => {
+const CardsSection: React.FC<Props> = ({
+  t,
+  tBtn,
+  source,
+  wrapper,
+  path,
+  background,
+}) => {
   // const profilesList = Object.values(
   //   t.raw(source)
   // ) as IItemCard[];
@@ -35,25 +42,27 @@ const CardsSection: React.FC<Props> = ({ t, tBtn, source,wrapper,path,background
       <div className="container">
         {wrapper && (
           <>
-          <h2 className="titleCl mb-4">{sectionTitle}</h2>
-          <Line className="marsala-center" color="marsala" />
-          <p className="mb-8">{sectionDesc}</p></>
+            <h2 className="titleCl mb-4">{sectionTitle}</h2>
+            <Line className="marsala-center" color="marsala" />
+            <p className="mb-8">{sectionDesc}</p>
+          </>
         )}
         <ul className="flex flex-col justify-between gap-6">
           {profilesList.map((profileItem, idx) => (
-            <ItemCard
-              key={profileItem.id}
-              title={profileItem.title}
-              description={profileItem.description}
-              src={profileItem.src}
-              alt={profileItem.alt}
-              tBtn={tBtn("see")}
-              layout="horizontal"
-              reverse={idx % 2 !== 0}
-              background={idx % 2 === 0 ? `${background}` : ""}
-              slug={profileItem.slug}
-              path={path}
-            />
+            <li key={profileItem.id}>
+              <ItemCard
+                title={profileItem.title}
+                description={profileItem.description}
+                src={profileItem.src}
+                alt={profileItem.alt}
+                tBtn={tBtn("see")}
+                layout="horizontal"
+                reverse={idx % 2 !== 0}
+                background={idx % 2 === 0 ? `${background}` : ""}
+                slug={profileItem.slug}
+                path={path}
+              />
+            </li>
           ))}
         </ul>
       </div>
