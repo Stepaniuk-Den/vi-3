@@ -1779,6 +1779,29 @@
         "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpeg",
         "alt": "",
         "description": "We offer an innovative system of HS-type lift-and-slide doors with a low threshold. We are a manufacturer of terrace doors in the Kömmerling PremiDoor 76 system. This type of door is an excellent solution in new construction as well as in buildings undergoing renovation."
+      },
+      "parametersList": {
+        "title": "Advantages of the PremiDoor 76 system",
+        "list": {
+          "1": {
+            "desc": "Optimum installation depth – 179mm"
+          },
+          "2": {
+            "desc": "High thermal insulation – up to 1.3 W/m2K"
+          },
+          "3": {
+            "desc": "Comfort and ease of use"
+          },
+          "4": {
+            "desc": "Lead-free technology"
+          },
+          "5": {
+            "desc": "Anti-burglary protection up to Rc2"
+          },
+          "6": {
+            "desc": "Barrier-free threshold as standard"
+          }
+        }
       }
     },
     "komPremiCross": {
@@ -1792,7 +1815,7 @@
         "description": "PremiDoor 76"
       },
       "2": {
-        "id": "1",
+        "id": "2",
         "title": "",
         "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpeg",
         "alt": "",

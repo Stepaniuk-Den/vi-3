@@ -9,7 +9,7 @@ const SlidingDoorsAlumAli: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <h1>This is aluminium-sliding-doors-aliplast page</h1>
       </section>
     </>
