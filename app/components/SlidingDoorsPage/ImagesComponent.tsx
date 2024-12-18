@@ -40,7 +40,7 @@ const ImagesComponent: React.FC<IList> = ({
   className,
 }) => {
   return (
-    <div className={clsx(`flex gap-10  ${className}`)}>
+    <div className={clsx(`flex gap-10  ${className} container`)}>
       {list.map((img, idx) => {
         const currentWidth = getImageDimensionValue(width, idx, "w-1/3");
         const currentHeight = getImageDimensionValue(height, idx, "h-[30rem]");

@@ -25,9 +25,9 @@ const SlidingDoorsHsSch: React.FC<Props> = ({ params: { locale } }) => {
   const cardsList = Object.values(tCardsList);
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl">{t("title")}</h1>
+          <h1 className="titleCl pt-8">{t("title")}</h1>
           <Line className="marsala-center" color="marsala" />
           <p className="mb-4">{t("description")}</p>
           <ImagesComponent

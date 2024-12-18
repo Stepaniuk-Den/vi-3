@@ -55,7 +55,7 @@ const NestedCard: React.FC<INestedCard> = ({
           "flex w-full",
           {
             "flex-row gap-8": isRow,
-            "flex-col": description && !isRow,
+            "flex-col gap-2": description && !isRow,
           }
           // description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"
         )}
