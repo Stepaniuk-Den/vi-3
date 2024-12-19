@@ -1,6 +1,6 @@
 import React from "react";
 
-const AluminiumPage = () => {
+const WindowsAluAliplastPage = () => {
   return (
     <div>
       <p>ALUMINIUM</p>
@@ -8,4 +8,4 @@ const AluminiumPage = () => {
   );
 };
 
-export default AluminiumPage;
+export default WindowsAluAliplastPage;

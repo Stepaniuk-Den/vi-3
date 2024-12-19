@@ -41,6 +41,10 @@
         "2": {
           "title": "pvc windows - kommerling",
           "slug": "windows-pvc-kommerling"
+        },
+        "3": {
+          "title": "alu windows - aliplast",
+          "slug": "windows-aluminium-aliplast"
         }
       }
     },
@@ -715,8 +719,8 @@
     "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
     "SectionsList": {
       "OfferSection": {
-        "titile": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
-        "card": {
+        "title": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
+        "cardItem": {
           "windowsSlug": "windows-kömmerling",
           "title": "ECONOMICAL SOLUTION",
           "description": "NEW PRODUCT – WINDOWS Kömmerling 70 AD",
@@ -919,6 +923,169 @@
           "src": "/images/windows/schuco-profiles/nordic.jpeg",
           "alt": "",
           "description": "The specially designed aluminium overlays for PVC window and door profiles are an innovative solution with excellent technical parameters, representing a beneficial alternative to aluminium windows. Aluminium is characterised by elegance, the best resistance to changing weather conditions, high stability, ease of care, and unlimited colour range – thanks to the techniques of refining the external surface, i.e. anodizing or powder coating. In turn, PVC plastic guarantees optimal thermal and sound insulation as well as high functionality. KÖMMERLING 76 offers a unique combination of the advantages of aluminium and PVC plastic in the form of innovative Alu Clip, Alu Clip Pro and AddOn systems. Our solutions mean that the design possibilities are unlimited, and the windows meet the highest energy-efficiency requirements!"
+        }
+      }
+    }
+  },
+
+  "WindowsAluAliplastPage": {
+    "title": "ALUMINIUM WINDOWS – Aliplast profile",
+    "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
+    "SectionsList": {
+      "OfferAluSection": {
+        "title": "Please feel free to learn about our offer of aluminium profiles:",
+        "1": {
+          "id": "1",
+          "title": "Genesis GN 75",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Econoline EL",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "description": "Aliplast owns two of the country’s most technologically advanced vertical paint shops and two horizontal paint lines. Therefore, in our offer you will find profiles varnished with all types of powder coating in the entire range of RAL colours, as well as varnished with special effects such as fine or thick structure with a metallic effect."
+      },
+      "GenesisSection": {
+        "title": "GENESIS 75 /GN75/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 84 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – FIX 1-56 mm / OT 9-65 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C4"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E1500"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – GENESIS",
+            "list": {
+              "1": {
+                "desc": "This 3-chamber window system is designed for the construction of windows with increased thermal insulation. The thermal parameters of Genesis 75 meet the requirements that will be applicable as of 2021 (Uw from 0.90)."
+              },
+              "2": {
+                "desc": "The basis of the Genesis 75 system are the 75-mm-deep frame sections."
+              },
+              "3": {
+                "desc": "Genesis 75 is a system intended for designing window constructions for public buildings as well as single or multi-family houses."
+              },
+              "4": {
+                "desc": "The large range of sections/profiles offered as part of the Genesis 75 system enables the design of modern windows, doors and display windows with high functionality."
+              },
+              "5": {
+                "desc": "Genesis 75 uses modern insulation materials, which are currently new on the market. An additional thermal seal was designed besides the classic central seal. With this solution, a very high window tightness (air infiltration, watertightness) as well as an innovative appearance and aesthetics were obtained."
+              },
+              "6": {
+                "desc": "Within this system it will be possible to choose different profile finishes, giving the window structure an individual character."
+              },
+              "7": {
+                "desc": "The Genesis 75 window system sets a new standard for window insulation, while maintaining the highest ergonomics of use and modern profile aesthetics."
+              },
+              "8": {
+                "desc": "It is possible to mount the Flyscreen system (an insect screen system)."
+              },
+              "9": {
+                "desc": "A wide range of colours – RAL palette (Qualicoat 1518), structural colours, Aliplast Wood Colour Effect wood-like colours (Qualideco PL-0001), anode, bicolour."
+              }
+            }
+          }
+        }
+      },
+      "EconolineSection": {
+        "title": "ECONOLINE /EL/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 51 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 60 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – to 37 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – ECONOLINE",
+            "list": {
+              "1": {
+                "desc": "A system designed for constructing doors and windows without thermal insulation. It allows for designing light, durable and functional structures."
+              },
+              "2": {
+                "desc": "The system is compatible with other Aliplast systems: common glazing beads, seals, corners and fittings."
+              },
+              "3": {
+                "desc": "The system is designed for constructing internal and external architectural components that do not require thermal insulation: windows, doors and sections of partition walls intended for general use in public and industrial buildings (in office rooms)."
+              },
+              "4": {
+                "desc": "It is possible to incorporate Econoline doors into partition walls made of Econoline segments or into other walls of any design."
+              },
+              "5": {
+                "desc": "Glazing beads available in rectangular and rounded variants."
+              },
+              "6": {
+                "desc": "The system design allows the use of rebate hinges, easier to install and more cost-effective."
+              },
+              "7": {
+                "desc": "It is possible to design panel doors (Econoline panel doors) on the basis of the Econoline system."
+              },
+              "8": {
+                "desc": "Smoke-tight doors can be built on the basis of this system – Econoline doors with the smoke-tight function meet the criteria of smoke-tightness classes Sa, Sm in accordance with PN-EN 13501-2+A1:2010)."
+              },
+              "9": {
+                "desc": "It is possible to construct sliding and swinging doors, connecting walls at any angle, and strengthening already made and even mounted elements."
+              },
+              "10": {
+                "desc": "The possibility of bending profiles."
+              },
+              "11": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect, anode, bicolour."
+              }
+            }
+          }
         }
       }
     }

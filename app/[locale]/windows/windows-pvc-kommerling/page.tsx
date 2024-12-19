@@ -5,24 +5,35 @@ import OfferSection from "@/app/components/WindowsPages/OfferSection";
 import ProfilesCrossSections from "@/app/components/WindowsPages/ProfilesCrossSections";
 import {
   IDesc,
+  IItemCard,
   INestedCard,
   INestedCardsSectionItem,
+  IProfilesCrossSections,
 } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 type ISectionsList = {
-  ProfilesCrossSections: {
-    title: string;
-    imgList: {
-      [key: string]: string | INestedCard;
-    };
-    descriptionProfilesCrosSections: {
-      [key: string]: string | IDesc;
-    };
-  };
+  [key: string]: IProfilesCrossSections;
+  // {
+  //   title: string;
+  //   imgList: {
+  //     [key: string]: string | INestedCard;
+  //   };
+  //   descriptionProfilesCrosSections: {
+  //     [key: string]: string | IDesc;
+  //   };
+  // };
 } & {
   [key: string]: INestedCardsSectionItem;
+} & {
+  [key: string]: {
+    title: string;
+    // imgList: {
+    //   [key: string]: string | INestedCard;
+    // };
+    [key: string]: string | IItemCard;
+  };
 };
 
 type Props = {
@@ -31,7 +42,7 @@ type Props = {
 
 const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
-
+  const tButtons = useTranslations("Buttons");
   const t = useTranslations("WindowsPVCKommerlingPage");
 
   const tSectionsList = t.raw("SectionsList") as ISectionsList;
@@ -51,7 +62,7 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
         </div>
       </section>
 
-      <OfferSection t={} />
+      <OfferSection t={tSectionsList.OfferSection} tBtn={tButtons} />
       <ProfilesCrossSections t={tSectionsList.ProfilesCrossSections} />
 
       {profileSchemeKeys.map((key) => (

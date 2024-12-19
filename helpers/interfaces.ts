@@ -52,6 +52,7 @@ export interface IItemCard {
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
+  alignment?: "center" | "left";
   path?: string;
 }
 
@@ -102,15 +103,15 @@ export interface INestedCardsSectionsList {
 }
 
 export interface IProfilesCrossSections {
-  t: {
-    title: string;
-    imgList: {
-      [key: string]: string | INestedCard;
-    };
-    descriptionProfilesCrosSections: {
-      [key: string]: string | IDesc;
-    };
+  //   [key: string]: {
+  title: string;
+  imgList: {
+    (key: string): string | INestedCard;
   };
+  descriptionProfilesCrosSections: {
+    (key: string): string | IDesc;
+  };
+  //   };
 }
 
 export interface IImage {

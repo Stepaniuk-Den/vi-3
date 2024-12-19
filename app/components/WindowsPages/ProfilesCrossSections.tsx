@@ -6,7 +6,11 @@ import {
 import NestedCard from "../NestedCard";
 import clsx from "clsx";
 
-const ProfilesCrossSections: React.FC<IProfilesCrossSections> = ({ t }) => {
+type Props = {
+  t: IProfilesCrossSections;
+};
+
+const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
   //   console.log("🚀 ~ t:", t);
   const nestedCardsList = Object.values(t.imgList) as INestedCard[];
   //   console.log("🚀 ~ nestedCardsList:", nestedCardsList);
@@ -15,7 +19,7 @@ const ProfilesCrossSections: React.FC<IProfilesCrossSections> = ({ t }) => {
   ) as IDesc[];
 
   return (
-    <section className="sectionCl pt-60">
+    <section className="sectionCl">
       <div className="container">
         <h3 className="sr-only">{t.title}</h3>
         <ul className="flex justify-center gap-1">
