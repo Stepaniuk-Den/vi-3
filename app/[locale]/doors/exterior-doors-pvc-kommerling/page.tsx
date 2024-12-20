@@ -15,14 +15,9 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("PVCDoorsKommerlingPage");
 
   return (
-    <>
       <section className="pageCl">
         <SectionCarouselAndDescr t={t} />
-        <section className="sectionCl"> 
-        <div className="container flex flex-col">
         <SectionImgAndList t={t.raw("FeaturesKommerling76Section")} />
-        </div>
-        </section>
         <NestedCardsSection
           tSectionItem={t.raw("OutwardDoors76Section")}
           titleBanner
@@ -44,7 +39,6 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         />
          <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false}/>
       </section>
-    </>
   );
 };
 
