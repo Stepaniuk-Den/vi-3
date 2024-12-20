@@ -1749,12 +1749,14 @@
       "7": {
         "id": "7",
         "src": "/images/slidingDoors/hsKom/hs-kom-7.jpeg",
-        "alt": ""
+        "alt": "",
+        "description": "One lift-and-slide leaf and one fixed glazing"
       },
       "8": {
         "id": "8",
         "src": "/images/slidingDoors/hsKom/hs-kom-8.jpeg",
-        "alt": ""
+        "alt": "",
+        "description": "Two lift-and-slide leaves in the version with a movable post and two fixed glazings"
       },
       "9": {
         "id": "9",
@@ -1820,7 +1822,13 @@
         "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpeg",
         "alt": "",
         "description": "PremiDoor 76 lux"
-      }
+      },
+      "description2": "Threshold cross-section PremiDoor 76"
+    },
+    "bannerTitle": "Offered opening options in the PremiDoor 76 and PremiDoor 76 lux systems:",
+    "installation": {
+      "title": "INSTALLATION INSTRUCTIONS for PremiDoor 76 and PremiDoor 76 lux",
+      "description": "THE BASE FOR HS Kömmerling PremiDoor 76 should be prepared in accordance with the instructions provided. If the base for the HS-type door is not properly prepared by the Customer, TUR-PLAST will not perform the installation. Therefore, the Customer should pay special attention to the quality of the concrete screed for the HS door. A water- and frost-resistant concrete mortar (B25 concrete) should be used. The surface should be perfectly stable, smooth and level."
     }
   }
 }

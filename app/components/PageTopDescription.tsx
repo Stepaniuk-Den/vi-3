@@ -7,11 +7,11 @@ interface IPageTopDescriptionProps {
 
 const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({ t }) => {
   return (
-    <section className="sectionCl">
+    <section className="pageCl">
       <div className="container">
-        <h1 className="titleCl">{t('title')}</h1>
+        <h1 className="titleCl pt-16">{t("title")}</h1>
         <Line className="marsala-center" color="marsala" />
-        <p className="mb-4">{t('description')}</p>
+        <p className="mb-4">{t("description")}</p>
       </div>
     </section>
   );
