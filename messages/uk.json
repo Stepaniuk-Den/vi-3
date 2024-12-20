@@ -1587,25 +1587,24 @@
       }
     }
   },
-
   "SlidingDoorsHsSchPage": {
-    "title": "PVC SLIDING TERRACE DOORS - HS Type - Schüco Profiles",
-    "description": "PERFECT CONNECTION BETWEEN INTERIOR AND SURROUNDINGS… Schüco EasySlide and Schüco LivIngSlide lift-and-slide doors fill the interior with natural light and provide a beautiful view. The solutions offered by the Polish-based manufacturer TUR-PLAST enable the best use of usable space for work and rest. Energy-saving HS sliding doors are the key to new open spaces where the winter garden smoothly flows into the living space, and the balcony or terrace constitutes a collision-free extension of the usable space. Just move the glazed plane to the side, and the border between the indoor and outdoor space will disappear.",
+    "title": "ПВХ РОЗСУВНІ ТЕРАСНІ ДВЕРІ - Тип HS - Профілі Schüo",
+    "description": "ІДЕАЛЬНИЙ ЗВ'ЯЗОК МІЖ ІНТЕР'ЄРОМ ТА НАВКОЛИШНІМ СЕРЕДОВИЩЕМ... Підіймально-розсувні двері Schüo EasySlide та Schüo LivIngSlide наповнюють приміщення природним світлом та забезпечують чудовий краєвид. Рішення, запропоновані польським виробником TUR-PLAST, дозволяють максимально використовувати корисний простір для роботи та відпочинку. Енергозберігаючі розсувні двері HS - це ключ до нових відкритих просторів, де зимовий сад плавно переходить у житловий простір, а балкон або тераса стають безбар'єрним продовженням корисної площі. Просто перемістіть скляну площину вбік, і межа між внутрішнім та зовнішнім простором зникне.",
     "imgList": {
       "1": {
         "id": "1",
         "src": "/images/slidingDoors/hsSch/hs-sch-1.jpeg",
-        "alt": "Large panoramic glass sliding doors in the house"
+        "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "2": {
         "id": "2",
         "src": "/images/slidingDoors/hsSch/hs-sch-2.jpeg",
-        "alt": "Large panoramic glass sliding doors in the house"
+        "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "3": {
         "id": "3",
         "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
-        "alt": "schema sliding doors"
+        "alt": "схема розсувних дверей"
       },
       "4": {
         "id": "4",
@@ -1648,68 +1647,68 @@
         "alt": ""
       }
     },
-    "desc2": "SIX OPENING OPTIONS with one or two sliding leaves. This allows to fine-tune the woodwork to your individual requirements in terms of thermal insulation, dimensions and comfort of use.",
-    "desc3": "TWO SYSTEMS of lift-and-slide doors: Schüco EasySlide and Schüco LivIngSlide. TUR-PLAST is a Polish producer of individual solutions for HS-type sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Schüco systems can be easily combined with energy-saving and passive Schüco windows.",
+    "desc2": "ШІСТЬ ОПЦІЙ ВІДКРИТТЯ з одним або двома розсувними полотнами. Це дозволяє адаптувати конструкцію до індивідуальних вимог щодо теплоізоляції, розмірів та зручності використання.",
+    "desc3": "ДВА ТИПИ підіймально-розсувних дверей: Schüo EasySlide та Schüo LivIngSlide. TUR-PLAST - це польський виробник індивідуальних рішень для розсувних дверей типу HS з низьким порогом. Ми пропонуємо комфорт у багатьох варіантах. Завдяки системній та естетичній сумісності та гнучкості розсувні двері в системах Schüo можна легко поєднувати з енергозберігаючими та пасивними вікнами Schüo.",
     "schSlide": {
       "1": {
         "id": "1",
-        "title": "Schüco EasySlide",
+        "title": "Schüo EasySlide",
         "src": "/images/slidingDoors/hsSch/hs-sch-slide1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "title": "Schüco LivIngSlide",
+        "title": "Schüo LivIngSlide",
         "src": "/images/slidingDoors/hsSch/hs-sch-slide2.jpeg",
         "alt": ""
       }
     },
-    "bannerTitle": "PVC Sliding Terrace Doors – HS Schüco LivIngSlide",
+    "bannerTitle": "ПВХ Розсувні Терасні Двері – HS Schüo LivIngSlide",
     "desc4": {
-      "p1": "THE NEWEST Schüco LivIngSlide lift-and-slide door system is precisely designed to meet all the restrictive criteria set for highly energy-efficient houses. Directly from the manufacturer – TUR-PLAST, these terrace doors achieve excellent thermal insulation results. With the use of glass pane with Ug = 0.6 W(m2K), the doors can achieve an excellent heat transfer coefficient, even up to Uw = 0.8 W(m2K).",
-      "p2": "The leaves with a depth of 82 mm, multi-chamber profiles, a thermally insulated threshold and innovative, weldable EPDM seals provide the best protection against cold and against water vapour condensation, even in the sensitive corner area.",
-      "p3": "The LivIng Slide doors are an investment that provides long-term benefits in the form of energy saving and perceptible comfort of use regardless of the season, even in strong winds with rain, as well as outside noise."
+      "p1": "НОВА СИСТЕМА підіймально-розсувних дверей Schüo LivIngSlide розроблена відповідно до всіх строгих критеріїв, встановлених для енергоефективних будинків. Виробник TUR-PLAST пропонує терасні двері з відмінними теплоізоляційними характеристиками. Використання склопакету з Ug = 0,6 W(m2K) дозволяє досягти коефіцієнта теплопередачі дверей до Uw = 0,8 W(m2K).",
+      "p2": "Полотна глибиною 82 мм, багатокамерні профілі, термоізольований поріг та інноваційні, зварювані ущільнювачі EPDM забезпечують найкращий захист від холоду та конденсації водяної пари навіть у чутливих зонах.",
+      "p3": "Двері LivIng Slide - це інвестиція, яка забезпечує довгострокові переваги у вигляді енергозбереження та відчутного комфорту використання незалежно від сезону, навіть за сильного вітру з дощем, а також від зовнішнього шуму."
     },
-    "bannerTitle2": "PVC Sliding Terrace Doors – HS Schüco EasySlide",
+    "bannerTitle2": "ПВХ Розсувні Терасні Двері – HS Schüo EasySlide",
     "params": {
-      "title": "SYSTEM PROPERTIES – EasySlide",
+      "title": "ХАРАКТЕРИСТИКИ СИСТЕМИ – EasySlide",
       "list": {
         "1": {
-          "desc": "Thermally insulated aluminium threshold with a foamed PA break"
+          "desc": "Термоізольований алюмінієвий поріг із пінополіамідною вставкою"
         },
         "2": {
-          "desc": "Sealing along the entire perimeter in three planes"
+          "desc": "Ущільнення по всьому периметру у трьох площинах"
         },
         "3": {
-          "desc": "Frame width 167 mm"
+          "desc": "Ширина рами 167 мм"
         },
         "4": {
-          "desc": "Maximum threshold height 46mm"
+          "desc": "Максимальна висота порогу 46 мм"
         },
         "5": {
-          "desc": "Possibility of using base and widening profiles"
+          "desc": "Можливість використання базових і розширювальних профілів"
         },
         "6": {
-          "desc": "Air infiltration: Class 4 according to EN 12207 ( ≤0,11m3/hmdaPa2/3)"
+          "desc": "Інфільтрація повітря: Клас 4 відповідно до EN 12207 (≤0,11m3/hmdaPa2/3)"
         },
         "7": {
-          "desc": "Rainwater penetration resistance: Class 8A according to EN 12208 (∆p=450 Pa)"
+          "desc": "Стійкість до проникнення дощової води: Клас 8A відповідно до EN 12208 (∆p=450 Па)"
         },
         "8": {
-          "desc": "Acoustic insulation Rw,p=34-43 dB"
+          "desc": "Акустична ізоляція Rw,p=34-43 дБ"
         },
         "9": {
-          "desc": "Maximum height – 2300mm"
+          "desc": "Максимальна висота – 2300 мм"
         },
         "10": {
-          "desc": "Maximum width – 6500mm"
+          "desc": "Максимальна ширина – 6500 мм"
         }
       }
     }
   },
   "SlidingDoorsHsKomPage": {
-    "title": "PVC SLIDING TERRACE DOORS - HS Type - Kömmerling Profiles",
-    "description": "PREMIDOOR 76 is an innovative system of slide-and-tilt doors with an installation depth of 76 mm. It allows for freedom in the arrangement of terraces, balconies and winter gardens. The large area of ​​glazing optically enlarges the room and provides optimal lighting of the interior. With our solutions, your house will open up to the greenery outside, and the door will perfectly fit into the atmosphere of the interior. Thanks to the modern barrier-free threshold, which is included as standard, you can enjoy maximum comfort and optimal thermal insulation.",
+    "title": "ПВХ РОЗСУВНІ ТЕРАСНІ ДВЕРІ - Тип HS - Профілі Kömmerling",
+    "description": "PREMIDOOR 76 – це інноваційна система розсувних і відкидних дверей з монтажною глибиною 76 мм. Вона забезпечує свободу в облаштуванні терас, балконів і зимових садів. Велика площа скління візуально збільшує приміщення та забезпечує оптимальне освітлення інтер’єру. Завдяки нашим рішенням ваш будинок відкриється до зелені зовні, а двері ідеально впишуться в атмосферу інтер’єру. Завдяки сучасному безбар’єрному порогу, який входить у стандартну комплектацію, ви зможете насолоджуватися максимальним комфортом та оптимальною теплоізоляцією.",
     "imgList": {
       "1": {
         "id": "1",
@@ -1770,15 +1769,38 @@
     "komPremi": {
       "1": {
         "id": "1",
-        "title": "System PremiDoor 76 – general information",
+        "title": "Система PremiDoor 76 – загальна інформація",
         "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpeg",
         "alt": "",
-        "description": "We offer an innovative system of HS-type lift-and-slide doors with a low threshold. We are a manufacturer of terrace doors in the Kömmerling PremiDoor 76 system. This type of door is an excellent solution in new construction as well as in buildings undergoing renovation."
+        "description": "Ми пропонуємо інноваційну систему розсувних дверей типу HS з низьким порогом. Ми є виробником терасних дверей у системі Kömmerling PremiDoor 76. Цей тип дверей є чудовим рішенням як для нового будівництва, так і для будівель, що проходять реконструкцію."
+      },
+      "parametersList": {
+        "title": "Переваги системи PremiDoor 76",
+        "list": {
+          "1": {
+            "desc": "Оптимальна монтажна глибина – 179 мм"
+          },
+          "2": {
+            "desc": "Висока теплоізоляція – до 1.3 Вт/м2К"
+          },
+          "3": {
+            "desc": "Комфорт і легкість у використанні"
+          },
+          "4": {
+            "desc": "Технологія без свинцю"
+          },
+          "5": {
+            "desc": "Протизламний захист до Rc2"
+          },
+          "6": {
+            "desc": "Безбар’єрний поріг як стандарт"
+          }
+        }
       }
     },
     "komPremiCross": {
-      "title": "System cross-sections PremiDoor 76 Kömmerling",
-      "description": "TWO VERSIONS TO CHOOSE FROM – PremiDoor 76 and PremiDoor 76 lux. Do you expect the best insulation and protection against noise and burglary? If so, the PremiDoor system is created just for you. We offer doors in the classic PremiDoor 76 system or in the PremiDoor 76 lux version which features an extremely narrow leaf profile.The unique structure and the slender profile of the leaf as well as the larger glass surface provide more warmth in the room thanks to the high solar radiation heat recovery.",
+      "title": "Перерізи системи PremiDoor 76 Kömmerling",
+      "description": "ДВА ВАРІАНТИ НА ВИБІР – PremiDoor 76 та PremiDoor 76 lux. Ви очікуєте найкращої ізоляції та захисту від шуму й злому? Якщо так, то система PremiDoor створена саме для вас. Ми пропонуємо двері в класичній системі PremiDoor 76 або у версії PremiDoor 76 lux, яка має надзвичайно вузький профіль стулки. Унікальна конструкція та витончений профіль стулки, а також більша площа скла забезпечують більше тепла в приміщенні завдяки високому коефіцієнту відновлення тепла сонячного випромінювання.",
       "1": {
         "id": "1",
         "title": "",

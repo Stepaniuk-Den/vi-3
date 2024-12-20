@@ -9,7 +9,7 @@ const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <h1>This is sliding-doors-psk-schuco page</h1>
       </section>
     </>

@@ -2,6 +2,7 @@ import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
 import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
 import TitleBanner from "./TitleBanner";
+import clsx from "clsx";
 
 type Props = {
   // tSectionItem: {
@@ -21,6 +22,7 @@ type Props = {
   // titleBannerCard?: boolean;
   isRow?: boolean;
   descReverse?: boolean;
+  isGrid?: boolean;
 };
 
 const NestedCardsSection: React.FC<Props> = ({
@@ -31,6 +33,7 @@ const NestedCardsSection: React.FC<Props> = ({
   // titleBannerCard,
   isRow,
   descReverse = false,
+  isGrid = false,
 }) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
@@ -57,9 +60,14 @@ const NestedCardsSection: React.FC<Props> = ({
         )}
 
         {tSectionItem.description && descReverse && (
-          <p className="mt-5">{tSectionItem.description}</p>
+          <p className="mb-5">{tSectionItem.description}</p>
         )}
-        <ul className="flex justify-center gap-6">
+        <ul
+          className={clsx("gap-6", {
+            "grid grid-cols-2": isGrid,
+            "flex justify-center ": !isGrid,
+          })}
+        >
           {nestedCardsList.map((nestedCard) => (
             <NestedCard
               key={nestedCard.id}
