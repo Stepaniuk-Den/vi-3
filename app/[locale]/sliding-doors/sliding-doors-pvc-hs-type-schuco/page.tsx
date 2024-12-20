@@ -1,13 +1,11 @@
-import NestedParameterDescList from "@/app/components/NestedParameterDescList";
+import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+
+import { IImage } from "@/helpers/interfaces";
 import PageTopDescription from "@/app/components/PageTopDescription";
-import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
 import SchShEaseSlideSection from "@/app/components/SlidingDoorsPage/SchShEaseSlideSection";
 import SchShLivingSlideSection from "@/app/components/SlidingDoorsPage/SchShLivingSlideSection";
 import SchShTopSection from "@/app/components/SlidingDoorsPage/SchShTopSection";
-import TitleBanner from "@/app/components/TitleBanner";
-import { IImage } from "@/helpers/interfaces";
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: { locale: string };
@@ -21,10 +19,8 @@ const SlidingDoorsHsSch: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
   const t = useTranslations("SlidingDoorsHsSchPage");
-  const tImgList = t.raw("imgList") as IImgList;
-  const tCardsList = t.raw("schSlide") as IImgList;
-  const imgList = Object.values(tImgList);
-  const cardsList = Object.values(tCardsList);
+  const imgList = Object.values(t.raw("imgList") as IImgList);
+  const cardsList = Object.values(t.raw("schSlide") as IImgList);
   const descList = Object.values(t.raw("desc4")) as {};
   const paramList = t.raw("params");
   return (
