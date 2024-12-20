@@ -1,6 +1,7 @@
-import SectionCardsAndBanner from "@/app/components/DoorsPage/SectionCardsAndBanner";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
-import { renderNestedParameterLists } from "@/helpers/renderNestedParameterLists";
+import SectionImagesAndCards from "@/app/components/DoorsPage/SectionImagesAndCards";
+import SectionListAndCards from "@/app/components/DoorsPage/SectionListAndCards";
+import NestedCardsSection from "@/app/components/NestedCardsSection";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -12,51 +13,29 @@ const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
   const t = useTranslations("PVCDoorsSchucoPage");
-  // const parametersList = t.raw(
-  //   "SchucoProfile82Section.parametersList"
-  // ) as Record<string, IParameterItem>;
 
   return (
-    <section className="sectionCl pt-60">
+    <section className="pageCl">
       <SectionCarouselAndDescr t={t} />
-      <SectionCardsAndBanner t={t.raw("SchucoProfilesSection")} />
-      <div className="container">
-        {/* {Object.entries(parametersList).map(([key, param]) => (
-          <NestedParameterDescList
-            key={key}
-            param={param}
-            titleBanner={true}
-            description={true}
-          />
-        ))} */}
-        {renderNestedParameterLists(t, "SchucoProfile82Section", true, true)}
-      </div>
-      {/* <SectionBannerAndList t={t.raw("SchucoProfile82Section")} /> */}
-      <SectionCardsAndBanner
-        t={t.raw("CardsSchuco82Section")}
-        isShowtitle={false}
-        isShowNested={true}
+      <NestedCardsSection
+        tSectionItem={t.raw("SchucoProfilesSection")}
+        titleBanner
+        size="large"
+        isRow={false}
       />
-      <SectionCardsAndBanner
-        t={t.raw("PanelTypes")}
-        isShowNested={true}
-        isShowDescr={true}
-        isShowTitleBanner={true}
+      <SectionListAndCards
+        t={t.raw("SchucoProfile82Section")}
+        isShowSecondList
       />
-      <div className="container">
-        {renderNestedParameterLists(t, "DoorFillingsTypes", true, true)}
-      </div>
-      <SectionCardsAndBanner
-        t={t.raw("DoorFillingsTypes")}
-        isShowtitle={false}
+      <NestedCardsSection
+        tSectionItem={t.raw("PanelTypes")}
+        size="w-1/2"
+        titleBanner
+        isRow={false}
+        descReverse
       />
-            <SectionCardsAndBanner
-        t={t.raw("EntranceDoorSystem")}
-        isShowTitleBanner={true}
-        // isShowtitle={false}
-        isImgThreeList={true}
-        columns={3}
-      />
+      <SectionListAndCards t={t.raw("DoorFillingsTypes")} />
+      <SectionImagesAndCards t={t.raw("EntranceDoorSystem")}/>
     </section>
   );
 };

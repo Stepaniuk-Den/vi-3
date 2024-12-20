@@ -916,7 +916,6 @@
 
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
-    "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
     "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
     "doorsList": {
       "1": {
@@ -1008,122 +1007,125 @@
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
+        "id": "a3f9kt",
         "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
+        "id": "q1z8mx",
         "src": "/images/doors/folding-doors.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
+        "id": "v5c2nl",
         "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       }
     },
     "SchucoProfilesSection": {
       "title": "OUR OFFER INCLUDES TWO TYPES OF DOOR PROFILES BY Schüco: Corona CT 70 and LivIng 82:",
-      "list": {
-        "1": {
-          "bannerTitle": "Schüco door sill cross-section – Corona CT 70 ",
-          "img": "/images/doors/corona_CT_70.jpg"
-        },
-        "2": {
-          "bannerTitle": "Schüco door sill cross-section – LivIng 82",
-          "img": "/images/doors/livIng_82.jpg"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Schüco door sill cross-section – Corona CT 70 ",
+        "src": "/images/doors/schuco/corona_CT_70.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "b8z7xt",
+        "title": "Schüco door sill cross-section – LivIng 82",
+        "src": "/images/doors/schuco/livIng_82.jpg",
+        "alt": ""
       }
     },
     "SchucoProfile82Section": {
       "parametersList": {
-        "1": {
-          "title": "Schüco DOOR – profil LivIng 82",
-          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
-          "list": {
-            "1": {
-              "desc": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm."
-            },
-            "2": {
-              "desc": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of the element, while obtaining an elegant appearance as there is no seal hardening."
-            },
-            "3": {
-              "desc": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized."
-            },
-            "4": {
-              "desc": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection."
-            },
-            "5": {
-              "desc": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles."
-            },
-            "6": {
-              "desc": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
-            }
+        "title": "Schüco DOOR – profil LivIng 82",
+        "description": "Schüco LivIng are innovative systems for modern plastic doors.",
+        "list": {
+          "1": {
+            "desc": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm."
+          },
+          "2": {
+            "desc": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of the element, while obtaining an elegant appearance as there is no seal hardening."
+          },
+          "3": {
+            "desc": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized."
+          },
+          "4": {
+            "desc": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection."
+          },
+          "5": {
+            "desc": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles."
+          },
+          "6": {
+            "desc": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
           }
         }
-      }
-    },
-    "CardsSchuco82Section": {
-      "list": {
+      },
+      "imgList": {
         "1": {
-          "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening outwards",
-          "img": "/images/doors/opening_outwards.jpg"
+          "id": "n9x3lw",
+          "title": "LivIng 82 ENTRANCE DOORS – opening outwards",
+          "src": "/images/doors/schuco/opening_outwards.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening inwards",
-          "img": "/images/doors/opening_inwards.jpg"
+          "id": "k5v8zt",
+          "title": "LivIng 82 ENTRANCE DOORS – opening inwards",
+          "src": "/images/doors/schuco/opening_inwards.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "id": "q2m7ry",
+          "src": "/images/doors/schuco/opening_outwards_scheme.jpg",
+          "alt": "",
           "description": "Cross-section through the LivIng 82 door opening outwards"
         },
         "4": {
-          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "id": "p4t6bx",
+          "src": "/images/doors/schuco/opening_inwards_scheme.jpg",
+          "alt": "",
           "description": "Cross-section through the LivIng 82 door opening inwards"
         }
       },
-      "parametersList": {
-        "1": {
-          "title": "TECHNICAL INFORMATION:",
-          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
-          "list": {
-            "1": {
-              "desc": "System mounting depth – 82 mm"
-            },
-            "2": {
-              "desc": "Front width min. – 88 mm"
-            },
-            "3": {
-              "desc": "Uf value (frame) – 1.1 W/(m²·K)"
-            },
-            "4": {
-              "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
-            },
-            "5": {
-              "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
-            },
-            "6": {
-              "desc": "Air permeability – class 2"
-            },
-            "7": {
-              "desc": "Water tightness – class 5A"
-            },
-            "8": {
-              "desc": "Anti-burglary resistance – up to Rc2"
-            },
-            "9": {
-              "desc": "Wind load resistance – klass C2/B2"
-            },
-            "10": {
-              "desc": "Height max. – 2350 mm"
-            },
-            "11": {
-              "desc": "Width max. – 1100 mm"
-            },
-            "12": {
-              "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
-            }
+      "parametersList2": {
+        "title": "TECHNICAL INFORMATION:",
+        "list": {
+          "1": {
+            "desc": "System mounting depth – 82 mm"
+          },
+          "2": {
+            "desc": "Front width min. – 88 mm"
+          },
+          "3": {
+            "desc": "Uf value (frame) – 1.1 W/(m²·K)"
+          },
+          "4": {
+            "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
+          },
+          "5": {
+            "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
+          },
+          "6": {
+            "desc": "Air permeability – class 2"
+          },
+          "7": {
+            "desc": "Water tightness – class 5A"
+          },
+          "8": {
+            "desc": "Anti-burglary resistance – up to Rc2"
+          },
+          "9": {
+            "desc": "Wind load resistance – klass C2/B2"
+          },
+          "10": {
+            "desc": "Height max. – 2350 mm"
+          },
+          "11": {
+            "desc": "Width max. – 1100 mm"
+          },
+          "12": {
+            "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
           }
         }
       }
@@ -1131,80 +1133,99 @@
     "PanelTypes": {
       "title": "PANEL STRIPS – types:",
       "description": "See door cross-sections in which different panel strips were used, depending on the thickness of the door filling used.",
-      "list": {
-        "1": {
-          "img": "/images/doors/panel_48.webp",
-          "description": "LivIng door profile with a 48 mm panel"
-        },
-        "2": {
-          "img": "/images/doors/panel_36.webp",
-          "description": "LivIng door profile with a 36 mm panel"
-        }
+      "1": {
+        "id": "j8f3kp",
+        "src": "/images/doors/schuco/panel_48.webp",
+        "alt": "",
+        "description": "LivIng door profile with a 48 mm panel"
+      },
+      "2": {
+        "id": "v6r2lm",
+        "title": "",
+        "src": "/images/doors/schuco/panel_36.webp",
+        "alt": "",
+        "description": "LivIng door profile with a 36 mm panel"
       }
     },
     "DoorFillingsTypes": {
       "parametersList": {
-        "1": {
-          "title": "DOOR FILLINGS – types:",
-          "description": "Door filling may be:",
-          "list": {
-            "1": {
-              "desc": "inset or overlay"
-            },
-            "2": {
-              "desc": "made of laminated boards or aluminium"
-            },
-            "3": {
-              "desc": "decorated with various frames, glass elements, inlays, cuttings or appliqués"
-            },
-            "4": {
-              "desc": "of any colour of your choice"
-            }
+        "title": "DOOR FILLINGS – types:",
+        "description": "Door filling may be:",
+        "list": {
+          "1": {
+            "desc": "inset or overlay"
+          },
+          "2": {
+            "desc": "made of laminated boards or aluminium"
+          },
+          "3": {
+            "desc": "decorated with various frames, glass elements, inlays, cuttings or appliqués"
+          },
+          "4": {
+            "desc": "of any colour of your choice"
           }
         }
       },
-      "list": {
+      "imgList": {
         "1": {
-          "bannerTitle": "DOORS – INSET FILLING",
-          "img": "/images/doors/inset_filling.jpg"
+          "id": "n3t9xw",
+          "title": "DOORS – INSET FILLING",
+          "src": "/images/doors/schuco/inset_filling.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "DOORS – OVERLAY FILLING",
-          "img": "/images/doors/outset_filling.jpg"
+          "id": "q5z8lm",
+          "title": "DOORS – OVERLAY FILLING",
+          "src": "/images/doors/schuco/outset_filling.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/door_inset_filling.jpg"
+          "id": "p4r7vj",
+          "src": "/images/doors/schuco/door_inset_filling.jpg",
+          "alt": ""
         },
         "4": {
-          "img": "/images/doors/door_outset_filling.jpg"
+          "id": "k2y6df",
+          "src": "/images/doors/schuco/door_outset_filling.jpg",
+          "alt": ""
         }
       }
     },
     "EntranceDoorSystem": {
       "title": "ENTRANCE DOOR OPENING SYSTEMS:",
-      "list": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/door_system_1.webp",
-          "description": "Doorbell with camera and peephole"
+          "id": "a9k4tp",
+          "src": "/images/doors/schuco/entrance_system_1.webp",
+          "alt": ""
         },
         "2": {
-          "img": "/images/doors/door_system_2.webp",
+          "id": "b7x2qn",
+          "src": "/images/doors/schuco/entrance_system_2.webp",
+          "alt": ""
+        },
+        "3": {
+          "id": "m5v8zc",
+          "src": "/images/doors/schuco/entrance_system_3.webp",
+          "alt": ""
+        },
+        "4": {
+          "id": "r3j6ly",
+          "src": "/images/doors/schuco/door_system_1.webp",
+          "description": "Doorbell with camera and peephole",
+          "alt": ""
+        },
+        "5": {
+          "id": "f8w1pk",
+          "src": "/images/doors/schuco/door_system_2.webp",
+          "alt": "",
           "description": "Door opening by entering code on numeric keyboard"
         },
-        "3": {
-          "img": "/images/doors/door_system_3.webp",
+        "6": {
+          "id": "z2y7vn",
+          "src": "/images/doors/schuco/door_system_3.webp",
+          "alt": "",
           "description": "Door opening system with fingerprint reader"
-        }
-      },
-      "imgThreeList": {
-        "1": {
-          "img": "/images/doors/entrance_system_1.webp"
-        },
-        "2": {
-          "img": "/images/doors/entrance_system_2.webp"
-        },
-        "3": {
-          "img": "/images/doors/entrance_system_3.webp"
         }
       }
     }
@@ -1243,33 +1264,37 @@
     },
     "FeaturesKommerling76Section": {
       "title": "Characteristic Features of KÖMMERLING 76 AD Door System:",
-      "img": "/images/doors/corona_CT_70.jpg",
-      "parametersList": {
+      "cards": {
         "1": {
-          "list": {
-            "1": {
-              "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
-            },
-            "2": {
-              "desc": "Optimal distribution of steel reinforcement and angle connectors;"
-            },
-            "3": {
-              "desc": "Exceptional structural stability;"
-            },
-            "4": {
-              "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
-            },
-            "5": {
-              "desc": "High tightness – double sealing of the sill;"
-            },
-            "6": {
-              "desc": "Perfect protection against variable weather conditions;"
-            },
-            "7": {
-              "desc": "Excellent thermal insulation;"
-            },
-            "8": {
-              "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+          "id": "m1y2kw",
+          "src": "/images/doors/kommerling/kommerling_76.webp",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
+              },
+              "2": {
+                "desc": "Optimal distribution of steel reinforcement and angle connectors;"
+              },
+              "3": {
+                "desc": "Exceptional structural stability;"
+              },
+              "4": {
+                "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
+              },
+              "5": {
+                "desc": "High tightness – double sealing of the sill;"
+              },
+              "6": {
+                "desc": "Perfect protection against variable weather conditions;"
+              },
+              "7": {
+                "desc": "Excellent thermal insulation;"
+              },
+              "8": {
+                "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+              }
             }
           }
         }
@@ -1277,66 +1302,82 @@
     },
     "OutwardDoors76Section": {
       "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Narrower leaf",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ door leaf 76205 opening outwards /"
-        },
-        "2": {
-          "bannerTitle": "Wider leaf",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ door leaf 76207 opening inwards /"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Narrower leaf",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76205 opening outwards"
+      },
+      "2": {
+        "id": "p9k2jm",
+        "title": "Wider leaf",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76207 opening inwards"
       }
     },
     "InwardDoors76Section": {
       "title": "INWARD-OPENING DOOR – door sill cross-section Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Narrower leaf",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ door leaf 76204 opening outwards /"
-        },
-        "2": {
-          "bannerTitle": "Wider leaf",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ door leaf 76206 opening inwards /"
-        }
+      "1": {
+        "id": "v3x8lz",
+        "title": "Narrower leaf",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76204 opening outwards"
+      },
+      "2": {
+        "id": "q4n7pt",
+        "title": "Wider leaf",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76206 opening inwards"
       }
     },
     "DoorSillFeatures": {
       "title": "Kömmerling 76 AD door sill features",
-      "list": {
-        "1": {
-          "img": "/images/doors/door_sill_features_1.png",
-          "description": "/ G060 seals for A065 aluminium drip bar/"
-        },
-        "2": {
-          "img": "/images/doors/door_sill_features_2.png",
-          "description": "/ A061 aluminium drip bar/"
-        },
-        "3": {
-          "img": "/images/doors/door_sill_features_3.jpg",
-          "description": "/ A076 aluminium threshold /"
-        },
-        "4": {
-          "img": "/images/doors/door_sill_features_4.jpg",
-          "description": "/ A075 aluminium overlay/"
-        }
+      "1": {
+        "id": "m9y2kw",
+        "src": "/images/doors/kommerling/door_sill_features_1.png",
+        "alt": "",
+        "description": "G060 seals for A065 aluminium drip bar"
+      },
+      "2": {
+        "id": "b8f4qp",
+        "src": "/images/doors/kommerling/door_sill_features_2.png",
+        "alt": "",
+        "description": "A061 aluminium drip bar"
+      },
+      "3": {
+        "id": "z6t7nc",
+        "src": "/images/doors/kommerling/door_sill_features_3.jpg",
+        "alt": "",
+        "description": "A076 aluminium threshold"
+      },
+      "4": {
+        "id": "r5v3jx",
+        "src": "/images/doors/kommerling/door_sill_features_4.jpg",
+        "alt": "",
+        "description": "A075 aluminium overlay"
       }
     },
     "DoorSealsEPDM": {
       "title": "Kömmerling 76 AD door seals made of EPDM",
-      "imgThreeList": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "c2u9sr",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "2": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "h4m5pz",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "w8o1yv",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         }
       }
     }
@@ -1348,29 +1389,200 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "t7n3xv",
+        "src": "/images/doors/alum_Aliplast/aliplast_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "q6g8wj",
+        "src": "/images/doors/alum_Aliplast/aliplast_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "p4e9zk",
+        "src": "/images/doors/alum_Aliplast/aliplast_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "r2a1hf",
+        "src": "/images/doors/alum_Aliplast/aliplast_4.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "u5d3lv",
+        "src": "/images/doors/alum_Aliplast/aliplast_5.jpg",
         "alt": ""
+      }
+    },
+    "AluminiumProfilesSection": {
+      "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
+      "1": {
+        "id": "y9m7tr",
+        "title": "SUPERIAL SP 800i+",
+        "src": "/images/doors/alum_Aliplast/superial_SP_800.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "k6j8fu",
+        "title": "IMPERIAL IP 800",
+        "src": "/images/doors/alum_Aliplast/imperial_IP 800.jpg",
+        "alt": ""
+      }
+    },
+    "Superial800Card": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_1.webp",
+          "alt": "",
+          "parametersList": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 75 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 14 mm to 69 mm"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.1 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – 2400Pa"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g2j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES :",
+            "list": {
+              "1": {
+                "desc": "a three-chamber door system with thermal insulation, intended for the construction of doors with high insulation parameters;"
+              },
+              "2": {
+                "desc": "compatible with the Superial system – thanks to adaptive profiles, it is possible to integrate an SP800 series structure into Superial windows"
+              },
+              "3": {
+                "desc": "very good anti-burglary properties (the lock is located far from the outside)"
+              },
+              "4": {
+                "desc": "it is possible to use a thermally insulated threshold, removable after installing the door into the opening"
+              },
+              "5": {
+                "desc": "it is possible to bend profiles (for exact specification of profiles and details regarding the technical parameters of profile bending, please visit www.aliplast.pl)"
+              },
+              "6": {
+                "desc": "the SP800 system is available in two versions: SP800i / SP800 i+"
+              },
+              "7": {
+                "desc": "increased insulation parameters were obtained through the use of special thermal inserts placed in-between the thermal breaks and around the pane;"
+              },
+              "8": {
+                "desc": "improving the cross-section insulation by 0.2-0.5 W/m2K."
+              },
+              "9": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect wood-like colours, anode, bicolour"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Imperial800Card": {
+      "title": "IMPERIAL /IP 800/",
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "src": "/images/doors/alum_Aliplast/imperial_IP_800_1.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 65 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 74 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 4 mm to 51 mm"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.6 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – 2400Pa"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g2j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES :",
+            "list": {
+              "1": {
+                "desc": "a three-chamber door system with thermal insulation, intended for the construction of doors with high insulation parameters;"
+              },
+              "2": {
+                "desc": "compatible with the Imperial system – thanks to adaptive profiles, it is possible to integrate an IP800 series structure into Imperial windows;"
+              },
+              "3": {
+                "desc": "very good anti-burglary properties (the lock is located far from the outside);"
+              },
+              "4": {
+                "desc": "it is possible to use a thermally insulated threshold, removable after installing the door into the opening;"
+              },
+              "5": {
+                "desc": "the system features a solution that prevents fingers from getting caught (anti-finger);"
+              },
+              "6": {
+                "desc": "it is possible to bend profiles (for exact specification of profiles and details regarding the technical parameters of profile bending;"
+              },
+              "7": {
+                "desc": "the system is available in two versions: IP800i, Ip800i+;"
+              },
+              "8": {
+                "desc": "increased insulation parameters were obtained through the use of special thermal inserts placed in-between the thermal breaks and around the pane, improving the cross-section insulation by 0.2-0.5 W/m2K;"
+              },
+              "9": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect wood-like colours, anode, bicolour;"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -1381,29 +1593,210 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "g4y9kq",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_1.jpg",
         "alt": ""
       },
       "2": {
         "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_2.jpg",
         "alt": ""
       },
       "3": {
         "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_3.jpg",
         "alt": ""
       },
       "4": {
         "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_4.jpg",
         "alt": ""
       },
       "5": {
         "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_5.jpg",
         "alt": ""
+      }
+    },
+    "DoorProfilesSection": {
+      "title": "DOOR PROFILE OFFER:",
+      "1": {
+        "id": "u7o3cn",
+        "title": "ALURON AS 75",
+        "src": "/images/doors/alum_Aluron/aluron_75.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "q1b4jr",
+        "title": "ALURON AS 75P",
+        "src": "/images/doors/alum_Aluron/aluron_75P.jpg",
+        "alt": ""
+      }
+    },
+    "DoorSystemAS75": {
+      "title": "DOOR SYSTEM – ALURON AS 75",
+      "description": "Our doors based on the Aluron AS 75 door system are designed for energy-efficient and passive construction. With the innovative ANTI-BI-METAL technology system used, door leaves are specially protected against deformation when heated by sunlight, as well as at very low temperatures.",
+      "items": {
+        "1": {
+          "id": "g9j5fj",
+          "title": "Cross-sections and dimensions of AS 75 door profiles",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_1.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles opening inwards"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_2.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles opening outwards"
+            },
+            "3": {
+              "id": "p5e9zk",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_3.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            }
+          }
+        },
+        "2": {
+          "id": "g0j5fj",
+          "title": "Doors in the AS 75 system – threshold solution options",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_1.jpg",
+              "alt": "",
+              "description": "AS 75 plastic threshold"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_2.jpg",
+              "alt": "",
+              "description": "AS 75 collapsing threshold"
+            },
+            "3": {
+              "id": "t7n5xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_3.jpg",
+              "alt": "",
+              "description": "AS 75 aluminium threshold"
+            },
+            "4": {
+              "id": "q6g9wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_4.jpg",
+              "alt": "",
+              "description": "AS 75 aluminium threshold with adjustable sealing"
+            }
+          }
+        },
+        "3": {
+          "id": "g0j5fj",
+          "description":"The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
+          "title": "Heat transfer coefficient Ud – depending on the type of insulation – G1/G2/G3",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_UD_1.png",
+              "alt": ""         
+            }         
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Features and parameters of the AS 75 door system",
+        "list": {
+          "1": {
+            "desc": "Door profile depth – 75 mm"
+          },
+          "2": {
+            "desc": "Glazing range – up to 57 mm"
+          },
+          "3": {
+            "desc": "Door thermal insulation Ud (4 options) – from 0.93 W/m2K"
+          },
+          "4": {
+            "desc": "Available types of hinges – surface / roller, hidden"
+          },
+          "5": {
+            "desc": "Air permeability according – 4 class"
+          },
+          "6": {
+            "desc": "Wind load resistance – C2 class"
+          },
+          "7": {
+            "desc": "Watertightness – E1200;"
+          }
+        }
+      }
+    },
+    "DoorSystemAS75P": {
+      "title": "DOOR SYSTEM – ALURON AS 75P",
+      "description": "PANEL DOOR SYSTEM. The aluminium structure of AS 75P panel doors is made of 3-chamber profiles with very good insulation and technical parameters. The innovative AS 75P system allows for the production of thermally insulated doors with a panel glued on the entire surface of the leaf. This type of solution looks great in modern construction. Additional advantages of our aluminium panel doors include solid workmanship, durability, and a wide variety of designs of door fillings (panels).",
+      "items": {
+        "1": {
+          "id": "g2j5fj",
+          "title": "Cross-sections and dimensions of AS 75P door profiles",
+          "imgList": {
+            "1": {
+              "id": "h3k9bv",
+              "src": "/images/doors/alum_Aluron/AS_75P_1.jpg",
+              "alt": "",
+              "description": "Cross-section of double-sided overlay door – AS 75P – inward opening"
+            },
+            "2": {
+              "id": "x5m7qp",
+              "src": "/images/doors/alum_Aluron/AS_75P_2.jpg",
+              "alt": "",
+              "description": "Cross-section of double-sided overlay door – AS 75P – outward opening"
+            },
+            "3": {
+              "id": "d1z8rw",
+              "src": "/images/doors/alum_Aluron/AS_75P_3.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            },
+            "4": {
+              "id": "f7t4ln",
+              "src": "/images/doors/alum_Aluron/AS_75P_4.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            },
+            "5": {
+              "id": "k2j6yd",
+              "src": "/images/doors/alum_Aluron/AS_75P_5.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Features and parameters of the AS 75P door system",
+        "list": {
+          "1": {
+            "desc": "Door profile depth – 75 mm"
+          },
+          "2": {
+            "desc": "Glazing range – up to 57 mm"
+          },
+          "3": {
+            "desc": "Door thermal insulation Ud – from 0.82 W/m2K"
+          },
+          "4": {
+            "desc": "Available types of hinges – surface / roller, hidden"
+          },
+          "5": {
+            "desc": "Air permeability according – 4 class"
+          },
+          "6": {
+            "desc": "Wind load resistance – C3/B3 class"
+          },
+          "7": {
+            "desc": "Watertightness – E900"
+          }
+        }
       }
     }
   },
