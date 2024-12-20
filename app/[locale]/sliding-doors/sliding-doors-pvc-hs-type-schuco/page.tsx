@@ -15,13 +15,17 @@ interface IImgList {
   [key: string]: IImage;
 }
 
+interface Desc4 {
+  [key: string]: string;
+}
+
 const SlidingDoorsHsSch: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
   const t = useTranslations("SlidingDoorsHsSchPage");
   const imgList = Object.values(t.raw("imgList") as IImgList);
   const cardsList = Object.values(t.raw("schSlide") as IImgList);
-  const descList = Object.values(t.raw("desc4")) as {};
+  const descList = t.raw("desc4") as Desc4;
   const paramList = t.raw("params");
   return (
     <>
