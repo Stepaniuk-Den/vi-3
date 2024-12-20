@@ -912,7 +912,7 @@
 
   "DoorsPage": {
     "title": "Вхідні двері з Польщі",
-    "description": "AУсі двері польської фірми VI-3 мають міцну конструкцію, чудові теплові характеристики та інноваційні рішення. Виготовляємо зовнішні ПВХ двері на основі масивних профілів: Schüco CT70, Schüco LivIng, Kömmerling 76AD. Наші алюмінієві двері виготовляються з профілів бельгійської компанії Aliplast, а також польських алюмінієвих систем Aluron. У нашій пропозиції представлені терасові та балконні двері на віконному або дверному профілі; незвичайні двері практично будь-якої форми, а також розсувні двері – чудове рішення для ресторанів, кафе та сучасних віталень.",
+    "description": "Усі двері польської фірми VI-3 мають міцну конструкцію, чудові теплові характеристики та інноваційні рішення. Виготовляємо зовнішні ПВХ двері на основі масивних профілів: Schüco CT70, Schüco LivIng, Kömmerling 76AD. Наші алюмінієві двері виготовляються з профілів бельгійської компанії Aliplast, а також польських алюмінієвих систем Aluron. У нашій пропозиції представлені терасові та балконні двері на віконному або дверному профілі; незвичайні двері практично будь-якої форми, а також розсувні двері – чудове рішення для ресторанів, кафе та сучасних віталень.",
     "doorsList": {
       "1": {
         "id": "m9q25v",
@@ -1003,121 +1003,125 @@
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
+        "id": "a3f9kt",
         "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
+        "id": "q1z8mx",
         "src": "/images/doors/folding-doors.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
+        "id": "v5c2nl",
         "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       }
     },
     "SchucoProfilesSection": {
       "title": "НАША ПРОПОЗИЦІЯ ВКЛЮЧАЄ ДВА ТИПИ ДВЕРНИХ ПРОФІЛІВ ВІД Schüco: Corona CT 70 i LivIng 82:",
-      "list": {
-        "1": {
-          "bannerTitle": "Двері Schüco – Corona CT 70",
-          "img": "/images/doors/corona_CT_70.jpg"
-        },
-        "2": {
-          "bannerTitle": "Двері Schüco – LivIng 82",
-          "img": "/images/doors/livIng_82.jpg"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Двері Schüco – Corona CT 70",
+        "src": "/images/doors/schuco/corona_CT_70.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "b8z7xt",
+        "title": "Двері Schüco – LivIng 82",
+        "src": "/images/doors/schuco/livIng_82.jpg",
+        "alt": ""
       }
     },
     "SchucoProfile82Section": {
       "parametersList": {
-        "1": {
-          "title": "ДВЕРІ Schüco – профіль LivIng 82",
-          "description": "Schüco LivIng – це інноваційні системи для сучасних пластикових дверей.",
-          "list": {
-            "1": {
-              "desc": "6/7-камерна дверна система Schüco LivIng забезпечує чудові теплоізоляційні параметри при монтажній глибині 82 мм"
-            },
-            "2": {
-              "desc": "Перший ущільнювач з EPDM, який можна зварювати, інтегрований у дверну систему Schüco LivIng. Завдяки використанню гнучкого матеріалу, який можна зварювати, досягається кращий ефект ущільнення в складній кутовій зоні елемента, одночасно отримуючи елегантний зовнішній вигляд, як немає зміцнення пломби"
-            },
-            "3": {
-              "desc": "Система Schüco LivIng відповідає індивідуальним вимогам інвесторів як у приватних будинках, так і у великих будівлях, як нових, так і модернізованих"
-            },
-            "4": {
-              "desc": "Глянцеві металеві відтінки Schüco AutomotiveFinish, а також серії полівінілхлоридних плівок Schüco UnlimitedFinish і Schüco TopAlu доступні для вибору кольору"
-            },
-            "5": {
-              "desc": "Ми використовуємо сучасні сріблясто-сірі ущільнювачі в білих профілях системи Schüco LivIng і чорні ущільнювачі в фольгованих профілях"
-            },
-            "6": {
-              "desc": "Пластикова дверна система Schüco LivIng може бути оснащена накладними заповненнями або дверними заповненнями для покриття полотна. Це дає велику свободу в розташуванні окремих вхідних дверей"
-            }
+        "title": "ДВЕРІ Schüco – профіль LivIng 82",
+        "description": "Schüco LivIng – це інноваційні системи для сучасних пластикових дверей.",
+        "list": {
+          "1": {
+            "desc": "6/7-камерна дверна система Schüco LivIng забезпечує чудові теплоізоляційні параметри при монтажній глибині 82 мм"
+          },
+          "2": {
+            "desc": "Перший ущільнювач з EPDM, який можна зварювати, інтегрований у дверну систему Schüco LivIng. Завдяки використанню гнучкого матеріалу, який можна зварювати, досягається кращий ефект ущільнення в складній кутовій зоні елемента, одночасно отримуючи елегантний зовнішній вигляд, як немає зміцнення пломби"
+          },
+          "3": {
+            "desc": "Система Schüco LivIng відповідає індивідуальним вимогам інвесторів як у приватних будинках, так і у великих будівлях, як нових, так і модернізованих"
+          },
+          "4": {
+            "desc": "Глянцеві металеві відтінки Schüco AutomotiveFinish, а також серії полівінілхлоридних плівок Schüco UnlimitedFinish і Schüco TopAlu доступні для вибору кольору"
+          },
+          "5": {
+            "desc": "Ми використовуємо сучасні сріблясто-сірі ущільнювачі в білих профілях системи Schüco LivIng і чорні ущільнювачі в фольгованих профілях"
+          },
+          "6": {
+            "desc": "Пластикова дверна система Schüco LivIng може бути оснащена накладними заповненнями або дверними заповненнями для покриття полотна. Це дає велику свободу в розташуванні окремих вхідних дверей"
           }
         }
-      }
-    },
-    "CardsSchuco82Section": {
-      "list": {
+      },
+      "imgList": {
         "1": {
-          "bannerTitle": "LivIng 82 ВХІДНІ ДВЕРІ – відкриваються назовні",
-          "img": "/images/doors/opening_outwards.jpg"
+          "id": "n9x3lw",
+          "title": "LivIng 82 ВХІДНІ ДВЕРІ – відкриваються назовні",
+          "src": "/images/doors/schuco/opening_outwards.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "LivIng 82 ВХІДНІ ДВЕРІ – відкриваються всередину",
-          "img": "/images/doors/opening_inwards.jpg"
+          "id": "k5v8zt",
+          "title": "LivIng 82 ВХІДНІ ДВЕРІ – відкриваються всередину",
+          "src": "/images/doors/schuco/opening_inwards.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "id": "q2m7ry",
+          "src": "/images/doors/schuco/opening_outwards_scheme.jpg",
+          "alt": "",
           "description": "Поперечний розріз дверей LivIng 82 відкривається назовні"
         },
         "4": {
-          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "id": "p4t6bx",
+          "src": "/images/doors/schuco/opening_inwards_scheme.jpg",
+          "alt": "",
           "description": "Розріз дверей LivIng 82 відкривається всередину"
         }
       },
-      "parametersList": {
-        "1": {
-          "title": "ТЕХНІЧНА ІНФОРМАЦІЯ:",
-          "list": {
-            "1": {
-              "desc": "Монтажна глибина системи – 82 мм"
-            },
-            "2": {
-              "desc": "Ширина фронту мін. – 88 мм"
-            },
-            "3": {
-              "desc": "Значення Uf (рамка) – 1,1 Вт/(м²·K)"
-            },
-            "4": {
-              "desc": "Товщина скла / панелі мін. – макс. – 24 мм – 52 мм"
-            },
-            "5": {
-              "desc": "Оздоблення поверхні – Декоративні плівки / TopAlu / AutomotiveFinish"
-            },
-            "6": {
-              "desc": "Повітропроникність – 2 клас"
-            },
-            "7": {
-              "desc": "Водонепроникність – клас 5А"
-            },
-            "8": {
-              "desc": "Зламостійкість – до Rc2"
-            },
-            "9": {
-              "desc": "Стійкість до вітрового навантаження – клас C2/B2"
-            },
-            "10": {
-              "desc": "Висота макс. – 2350 мм"
-            },
-            "11": {
-              "desc": "Ширина макс. – 1100 мм"
-            },
-            "12": {
-              "desc": "Поріжки – автоматичне ущільнення дверей, низький дверний поріг без зіткнень із армованого скловолокном пластику або алюмінію, відповідно до DIN 18025."
-            }
+      "parametersList2": {
+        "title": "ТЕХНІЧНА ІНФОРМАЦІЯ:",
+        "list": {
+          "1": {
+            "desc": "Монтажна глибина системи – 82 мм"
+          },
+          "2": {
+            "desc": "Ширина фронту мін. – 88 мм"
+          },
+          "3": {
+            "desc": "Значення Uf (рамка) – 1,1 Вт/(м²·K)"
+          },
+          "4": {
+            "desc": "Товщина скла / панелі мін. – макс. – 24 мм – 52 мм"
+          },
+          "5": {
+            "desc": "Оздоблення поверхні – Декоративні плівки / TopAlu / AutomotiveFinish"
+          },
+          "6": {
+            "desc": "Повітропроникність – 2 клас"
+          },
+          "7": {
+            "desc": "Водонепроникність – клас 5А"
+          },
+          "8": {
+            "desc": "Зламостійкість – до Rc2"
+          },
+          "9": {
+            "desc": "Стійкість до вітрового навантаження – клас C2/B2"
+          },
+          "10": {
+            "desc": "Висота макс. – 2350 мм"
+          },
+          "11": {
+            "desc": "Ширина макс. – 1100 мм"
+          },
+          "12": {
+            "desc": "Поріжки – автоматичне ущільнення дверей, низький дверний поріг без зіткнень із армованого скловолокном пластику або алюмінію, відповідно до DIN 18025."
           }
         }
       }
@@ -1125,80 +1129,99 @@
     "PanelTypes": {
       "title": "ПАНЕЛЬНІ СТРУКТУРИ – види:",
       "description": "Поперечні перерізи дверей, у яких використовуються різні панелі, залежно від товщини наповнення дверей.",
-      "list": {
-        "1": {
-          "img": "/images/doors/panel_48.webp",
-          "description": "Дверний профіль LivIng з панеллю 48 мм"
-        },
-        "2": {
-          "img": "/images/doors/panel_36.webp",
-          "description": "Дверний профіль LivIng з панеллю 36 мм"
-        }
+      "1": {
+        "id": "j8f3kp",
+        "src": "/images/doors/schuco/panel_48.webp",
+        "alt": "",
+        "description": "Дверний профіль LivIng з панеллю 48 мм"
+      },
+      "2": {
+        "id": "v6r2lm",
+        "title": "",
+        "src": "/images/doors/schuco/panel_36.webp",
+        "alt": "",
+        "description": "Дверний профіль LivIng з панеллю 36 мм"
       }
     },
     "DoorFillingsTypes": {
       "parametersList": {
-        "1": {
-          "title": "НАПОВНЕННЯ ДВЕРЕЙ – види:",
-          "description": "Наповнення дверей може бути:",
-          "list": {
-            "1": {
-              "desc": "врізка або накладка"
-            },
-            "2": {
-              "desc": "з ламінованих плит або алюмінію"
-            },
-            "3": {
-              "desc": "прикрашені різними рамками, скляними елементами, інкрустацією, витинанками або аплікаціями;"
-            },
-            "4": {
-              "desc": "будь-якого кольору на ваш вибір."
-            }
+        "title": "НАПОВНЕННЯ ДВЕРЕЙ – види:",
+        "description": "Наповнення дверей може бути:",
+        "list": {
+          "1": {
+            "desc": "врізка або накладка"
+          },
+          "2": {
+            "desc": "з ламінованих плит або алюмінію"
+          },
+          "3": {
+            "desc": "прикрашені різними рамками, скляними елементами, інкрустацією, витинанками або аплікаціями;"
+          },
+          "4": {
+            "desc": "будь-якого кольору на ваш вибір."
           }
         }
       },
-      "list": {
+      "imgList": {
         "1": {
-          "bannerTitle": "ДВЕРІ – ВСТАВКИ ВСЕРЕДИНІ",
-          "img": "/images/doors/inset_filling.jpg"
+          "id": "n3t9xw",
+          "title": "ДВЕРІ – ВСТАВКИ ВСЕРЕДИНІ",
+          "src": "/images/doors/schuco/inset_filling.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "ДВЕРІ – ВСТАВКИ ЗЗОВНІ",
-          "img": "/images/doors/outset_filling.jpg"
+          "id": "q5z8lm",
+          "title": "ДВЕРІ – ВСТАВКИ ЗЗОВНІ",
+          "src": "/images/doors/schuco/outset_filling.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/door_inset_filling.jpg"
+          "id": "p4r7vj",
+          "src": "/images/doors/schuco/door_inset_filling.jpg",
+          "alt": ""
         },
         "4": {
-          "img": "/images/doors/door_outset_filling.jpg"
+          "id": "k2y6df",
+          "src": "/images/doors/schuco/door_outset_filling.jpg",
+          "alt": ""
         }
       }
     },
     "EntranceDoorSystem": {
       "title": "СИСТЕМИ ВІДЧИНЕННЯ ВХІДНИХ ДВЕРЕЙ:",
-      "list": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/door_system_1.webp",
+          "id": "a9k4tp",
+          "src": "/images/doors/schuco/entrance_system_1.webp",
+          "alt": ""
+        },
+        "2": {
+          "id": "b7x2qn",
+          "src": "/images/doors/schuco/entrance_system_2.webp",
+          "alt": ""
+        },
+        "3": {
+          "id": "m5v8zc",
+          "src": "/images/doors/schuco/entrance_system_3.webp",
+          "alt": ""
+        },
+        "4": {
+          "id": "r3j6ly",
+          "src": "/images/doors/schuco/door_system_1.webp",
+          "alt": "",
           "description": "Дверний дзвінок із камерою та вічком"
         },
-        "2": {
-          "img": "/images/doors/door_system_2.webp",
+        "5": {
+          "id": "f8w1pk",
+          "src": "/images/doors/schuco/door_system_2.webp",
+          "alt": "",
           "description": "Відкриття дверей шляхом введення коду на цифровій клавіатурі"
         },
-        "3": {
-          "img": "/images/doors/door_system_3.webp",
+        "6": {
+          "id": "z2y7vn",
+          "src": "/images/doors/schuco/door_system_3.webp",
+          "alt": "",
           "description": "Система відкривання дверей із сканером відбитків пальців"
-        }
-      },
-      "imgThreeList": {
-        "1": {
-          "img": "/images/doors/entrance_system_1.webp"
-        },
-        "2": {
-          "img": "/images/doors/entrance_system_2.webp"
-        },
-        "3": {
-          "img": "/images/doors/entrance_system_3.webp"
         }
       }
     }
@@ -1237,33 +1260,37 @@
     },
     "FeaturesKommerling76Section": {
       "title": "Характерні особливості дверної системи KÖMMERLING 76 AD:",
-      "img": "/images/doors/corona_CT_70.jpg",
-      "parametersList": {
+      "cards": {
         "1": {
-          "list": {
-            "1": {
-              "desc": "Високий захист від злому – до класу протизламності RC2 (Wk2);"
-            },
-            "2": {
-              "desc": "Оптимальний розподіл сталевої арматури та кутових з’єднань;"
-            },
-            "3": {
-              "desc": "Виняткова структурна стійкість;"
-            },
-            "4": {
-              "desc": "Можливість вбудовування спеціальних стекол та інноваційного наповнення дверей до 48 мм;"
-            },
-            "5": {
-              "desc": "Висока герметичність – подвійна герметизація порога;"
-            },
-            "6": {
-              "desc": "Ідеальний захист від мінливих погодних умов"
-            },
-            "7": {
-              "desc": "Відмінна теплоізоляція;"
-            },
-            "8": {
-              "desc": "Необмежені можливості дизайну завдяки широкій палітрі кольорів і різної структури поверхні."
+          "id": "m1y2kw",
+          "src": "/images/doors/kommerling/kommerling_76.webp",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "Високий захист від злому – до класу протизламності RC2 (Wk2);"
+              },
+              "2": {
+                "desc": "Оптимальний розподіл сталевої арматури та кутових з’єднань;"
+              },
+              "3": {
+                "desc": "Виняткова структурна стійкість;"
+              },
+              "4": {
+                "desc": "Можливість вбудовування спеціальних стекол та інноваційного наповнення дверей до 48 мм;"
+              },
+              "5": {
+                "desc": "Висока герметичність – подвійна герметизація порога;"
+              },
+              "6": {
+                "desc": "Ідеальний захист від мінливих погодних умов"
+              },
+              "7": {
+                "desc": "Відмінна теплоізоляція;"
+              },
+              "8": {
+                "desc": "Необмежені можливості дизайну завдяки широкій палітрі кольорів і різної структури поверхні."
+              }
             }
           }
         }
@@ -1271,66 +1298,82 @@
     },
     "OutwardDoors76Section": {
       "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ НАЗОВНІ – розріз порога Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Менший одностулковий лист",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ дверне полотно 76205 відчиняється ззовні /"
-        },
-        "2": {
-          "bannerTitle": "Більший одностулковий лист",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ дверне полотно 76207 відчиняється всередину /"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Менший одностулковий лист",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "дверне полотно 76205 відчиняється ззовні"
+      },
+      "2": {
+        "id": "p9k2jm",
+        "title": "Більший одностулковий лист",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "дверне полотно 76207 відчиняється всередину"
       }
     },
     "InwardDoors76Section": {
       "title": "ДВЕРІ, ЩО ВІДКРИВАЮТЬСЯ ВСЕРЕДИНУ – розріз порога Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Менший одностулковий лист",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ дверне полотно 76204 відчиняється ззовні /"
-        },
-        "2": {
-          "bannerTitle": "Більший одностулковий лист",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ дверне полотно 76206 відчиняється всередину /"
-        }
+      "1": {
+        "id": "v3x8lz",
+        "title": "Менший одностулковий лист",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "дверне полотно 76204 відчиняється ззовні"
+      },
+      "2": {
+        "id": "q4n7pt",
+        "title": "Більший одностулковий лист",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "дверне полотно 76206 відчиняється всередину"
       }
     },
     "DoorSillFeatures": {
       "title": "Особливості порогів Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ Ущільнювачі G060 для алюмінієвої крапельної планки A065/"
-        },
-        "2": {
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ Алюмінієва планка A061/"
-        },
-        "3": {
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ Поріг алюмінієвий A076 /"
-        },
-        "4": {
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ Алюмінієва накладка A075/"
-        }
+      "1": {
+        "id": "m9y2kw",
+        "src": "/images/doors/kommerling/door_sill_features_1.png",
+        "alt": "",
+        "description": "/ Ущільнювачі G060 для алюмінієвої крапельної планки A065"
+      },
+      "2": {
+        "id": "b8f4qp",
+        "src": "/images/doors/kommerling/door_sill_features_2.png",
+        "alt": "",
+        "description": "Алюмінієва планка A061"
+      },
+      "3": {
+        "id": "z6t7nc",
+        "src": "/images/doors/kommerling/door_sill_features_3.jpg",
+        "alt": "",
+        "description": "Поріг алюмінієвий A076"
+      },
+      "4": {
+        "id": "r5v3jx",
+        "src": "/images/doors/kommerling/door_sill_features_4.jpg",
+        "alt": "",
+        "description": "Алюмінієва накладка A075"
       }
     },
     "DoorSealsEPDM": {
       "title": "Ущільнювачі дверей Kömmerling 76 AD з EPDM",
-      "imgThreeList": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "c2u9sr",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "2": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "h4m5pz",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "w8o1yv",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         }
       }
     }
@@ -1342,62 +1385,415 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "t7n3xv",
+        "src": "/images/doors/alum_Aliplast/aliplast_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "q6g8wj",
+        "src": "/images/doors/alum_Aliplast/aliplast_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "p4e9zk",
+        "src": "/images/doors/alum_Aliplast/aliplast_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "r2a1hf",
+        "src": "/images/doors/alum_Aliplast/aliplast_4.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "u5d3lv",
+        "src": "/images/doors/alum_Aliplast/aliplast_5.jpg",
         "alt": ""
+      }
+    },
+    "AluminiumProfilesSection": {
+      "title": "ДВЕРІ З ВІДКРИВАННЯМ НАЗОВНІ – перетин порога Kömmerling 76 AD",
+      "1": {
+        "id": "y9m7tr",
+        "title": "SUPERIAL SP 800i+",
+        "src": "/images/doors/alum_Aliplast/superial_SP_800.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "k6j8fu",
+        "title": "IMPERIAL IP 800",
+        "src": "/images/doors/alum_Aliplast/imperial_IP 800.jpg",
+        "alt": ""
+      }
+    },
+    "Superial800Card": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_1.webp",
+          "alt": "",
+          "parametersList": {
+            "title": "РОЗМІРИ:",
+            "list": {
+              "1": {
+                "desc": "Глибина монтажу рами – 75 мм"
+              },
+              "2": {
+                "desc": "Глибина монтажу стулки – 75 мм"
+              },
+              "3": {
+                "desc": "Можлива глибина скління – від 14 мм до 69 мм"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
+            "list": {
+              "1": {
+                "desc": "Теплова ізоляція відповідно до DIN EN 12412-2 – Uf = 1.1 Вт/(м2К)"
+              },
+              "2": {
+                "desc": "Повітропроникність відповідно до DIN EN 12207 (клас) – 4"
+              },
+              "3": {
+                "desc": "Стійкість до вітрового навантаження за DIN EN 12210 (клас)* – 2400Па"
+              },
+              "4": {
+                "desc": "Водонепроникність відповідно до DIN EN 12208 (клас) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g2j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ:",
+            "list": {
+              "1": {
+                "desc": "трикамерна дверна система з теплоізоляцією, призначена для створення дверей з високими ізоляційними параметрами;"
+              },
+              "2": {
+                "desc": "сумісна з системою Superial – завдяки адаптивним профілям можлива інтеграція конструкції серії SP800 у вікна Superial"
+              },
+              "3": {
+                "desc": "дуже хороші протизламні властивості (замок розташований далеко від зовнішнього боку)"
+              },
+              "4": {
+                "desc": "можливість використання термоізольованого порога, який знімається після монтажу дверей у отвір"
+              },
+              "5": {
+                "desc": "можливість гнути профілі (для точної специфікації профілів і деталей щодо технічних параметрів згинання профілів відвідайте www.aliplast.pl)"
+              },
+              "6": {
+                "desc": "система SP800 доступна у двох версіях: SP800i / SP800 i+"
+              },
+              "7": {
+                "desc": "підвищені ізоляційні параметри були досягнуті завдяки використанню спеціальних теплоізоляційних вставок, розташованих між тепловими мостами та навколо скла;"
+              },
+              "8": {
+                "desc": "покращення теплоізоляції перерізу на 0.2-0.5 Вт/м2К."
+              },
+              "9": {
+                "desc": "широка палітра кольорів – палітра RAL, структурні кольори, кольори Aliplast Wood Colour Effect, кольори, схожі на дерево, анодовані, двоколірні"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Imperial800Card": {
+      "title": "IMPERIAL /IP 800/",
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "src": "/images/doors/alum_Aliplast/imperial_IP_800_1.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "РОЗМІРИ:",
+            "list": {
+              "1": {
+                "desc": "Глибина монтажу рами – 65 мм"
+              },
+              "2": {
+                "desc": "Глибина монтажу стулки – 74 мм"
+              },
+              "3": {
+                "desc": "Можлива глибина скління – від 4 мм до 51 мм"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
+            "list": {
+              "1": {
+                "desc": "Теплова ізоляція відповідно до DIN EN 12412-2 – Uf = 1.6 Вт/(м2К)"
+              },
+              "2": {
+                "desc": "Повітропроникність відповідно до DIN EN 12207 (клас) – 4"
+              },
+              "3": {
+                "desc": "Стійкість до вітрового навантаження за DIN EN 12210 (клас)* – 2400Па"
+              },
+              "4": {
+                "desc": "Водонепроникність відповідно до DIN EN 12208 (клас) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g2j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ:",
+            "list": {
+              "1": {
+                "desc": "трикамерна дверна система з теплоізоляцією, призначена для створення дверей з високими ізоляційними параметрами;"
+              },
+              "2": {
+                "desc": "сумісна з системою Imperial – завдяки адаптивним профілям можлива інтеграція конструкції серії IP800 у вікна Imperial;"
+              },
+              "3": {
+                "desc": "дуже хороші протизламні властивості (замок розташований далеко від зовнішнього боку);"
+              },
+              "4": {
+                "desc": "можливість використання термоізольованого порога, який знімається після монтажу дверей у отвір;"
+              },
+              "5": {
+                "desc": "система має рішення, яке запобігає затягуванню пальців (антипалець);"
+              },
+              "6": {
+                "desc": "можливість гнути профілі (для точної специфікації профілів і деталей щодо технічних параметрів згинання профілів);"
+              },
+              "7": {
+                "desc": "система доступна в двох версіях: IP800i, IP800i+;"
+              },
+              "8": {
+                "desc": "підвищені ізоляційні параметри були досягнуті завдяки використанню спеціальних теплоізоляційних вставок, розташованих між тепловими мостами та навколо скла, що покращує теплоізоляцію перерізу на 0.2-0.5 Вт/м2К;"
+              },
+              "9": {
+                "desc": "широка палітра кольорів – палітра RAL, структурні кольори, кольори Aliplast Wood Colour Effect, кольори, схожі на дерево, анодовані, двоколірні;"
+              }
+            }
+          }
+        }
       }
     }
   },
+
   "ALUDoorsAluronPage": {
     "title": "ЗОВНІШНІ ДВЕРІ з алюмінієвих профілів Aluron",
     "description": {
-      "p1": "Choosing the right door significantly affects the visual effect of any house, giving it a specific character. With the innovative KÖMMERLING 76 AD door system, we are able to design any door structure that meets the individual needs of each client. Please feel free to take a closer look at the set of ready-made door fillings with the highest properties offered by the Polish-based door manufacturer TUR-PLAST."
+      "p1": "Вибір правильних дверей значною мірою впливає на візуальний ефект будь-якого будинку, надаючи йому специфічний характер. Завдяки інноваційній дверній системі KÖMMERLING 76 AD ми можемо розробити будь-яку дверну конструкцію, яка відповідає індивідуальним потребам кожного клієнта. Будь ласка, ознайомтеся з набором готових дверних наповнювачів з найвищими властивостями, які пропонує виробник дверей VI-3."
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "g4y9kq",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_1.jpg",
         "alt": ""
       },
       "2": {
         "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_2.jpg",
         "alt": ""
       },
       "3": {
         "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_3.jpg",
         "alt": ""
       },
       "4": {
         "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_4.jpg",
         "alt": ""
       },
       "5": {
         "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_5.jpg",
         "alt": ""
+      }
+    },
+    "DoorProfilesSection": {
+      "title": "ПРОПОЗИЦІЯ ДВЕРНИХ ПРОФІЛІВ:",
+      "1": {
+        "id": "u7o3cn",
+        "title": "ALURON AS 75",
+        "src": "/images/doors/alum_Aluron/aluron_75.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "q1b4jr",
+        "title": "ALURON AS 75P",
+        "src": "/images/doors/alum_Aluron/aluron_75P.jpg",
+        "alt": ""
+      }
+    },
+    "DoorSystemAS75": {
+      "title": "ДВЕРНА СИСТЕМА – ALURON AS 75",
+      "description": "Наші двері на базі дверної системи Aluron AS 75 розроблені для енергоефективного та пасивного будівництва. Завдяки інноваційній системі ANTI-BI-METAL дверні полотна спеціально захищені від деформації при нагріванні сонцем, а також при дуже низьких температурах.",
+      "items": {
+        "1": {
+          "id": "g9j5fj",
+          "title": "Перетини та розміри профілів дверей AS 75",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_1.jpg",
+              "alt": "",
+              "description": "Перетини профілів дверей AS 75 з відкриванням всередину"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_2.jpg",
+              "alt": "",
+              "description": "Перетини профілів дверей AS 75 з відкриванням назовні"
+            },
+            "3": {
+              "id": "p5e9zk",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_3.jpg",
+              "alt": "",
+              "description": "Перетини профілів дверей AS 75 – полотно – рама"
+            }
+          }
+        },
+        "2": {
+          "id": "g0j5fj",
+          "title": "Двері в системі AS 75 – варіанти рішень порогів",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_1.jpg",
+              "alt": "",
+              "description": "Пластиковий поріг AS 75"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_2.jpg",
+              "alt": "",
+              "description": "Складний поріг AS 75"
+            },
+            "3": {
+              "id": "t7n5xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_3.jpg",
+              "alt": "",
+              "description": "Алюмінієвий поріг AS 75"
+            },
+            "4": {
+              "id": "q6g9wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_4.jpg",
+              "alt": "",
+              "description": "Алюмінієвий поріг AS 75 із регульованим ущільненням"
+            }
+          }
+        },
+        "3": {
+          "id": "g0j5fj",
+          "description": "Таблиця нижче показує залежність коефіцієнта теплопередачі Ud для дверей розміром 1,23 м x 2,18 м від типу використаної ізоляції (G1/G2/G3)",
+          "title": "Коефіцієнт теплопередачі Ud – залежно від типу ізоляції – G1/G2/G3",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_UD_1.png",
+              "alt": ""
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Характеристики та параметри дверної системи AS 75",
+        "list": {
+          "1": {
+            "desc": "Глибина профілю дверей – 75 мм"
+          },
+          "2": {
+            "desc": "Діапазон засклення – до 57 мм"
+          },
+          "3": {
+            "desc": "Теплова ізоляція дверей Ud (4 варіанти) – від 0,93 Вт/м2К"
+          },
+          "4": {
+            "desc": "Доступні типи завіс – накладні / роликові, приховані"
+          },
+          "5": {
+            "desc": "Повітропроникність – клас 4"
+          },
+          "6": {
+            "desc": "Стійкість до вітрових навантажень – клас C2"
+          },
+          "7": {
+            "desc": "Водонепроникність – E1200;"
+          }
+        }
+      }
+    },
+    "DoorSystemAS75P": {
+      "title": "ДВЕРНА СИСТЕМА – ALURON AS 75P",
+      "description": "СИСТЕМА ДВЕРНИХ ПАНЕЛЕЙ. Алюмінієва конструкція дверей AS 75P виготовлена з 3-камерних профілів з дуже хорошими ізоляційними та технічними характеристиками. Інноваційна система AS 75P дозволяє виготовляти термоізольовані двері з панеллю, приклеєною по всій поверхні стулки. Цей тип рішення чудово виглядає в сучасному будівництві. Додаткові переваги наших алюмінієвих дверей із панелями включають міцність, довговічність і широкий вибір дизайнів дверних наповнень (панелей).",
+      "items": {
+        "1": {
+          "id": "g2j5fj",
+          "title": "Перерізи та розміри профілів дверей AS 75P",
+          "imgList": {
+            "1": {
+              "id": "h3k9bv",
+              "src": "/images/doors/alum_Aluron/AS_75P_1.jpg",
+              "alt": "",
+              "description": "Переріз дверей із подвійним накладним покриттям – AS 75P – відкривання всередину"
+            },
+            "2": {
+              "id": "x5m7qp",
+              "src": "/images/doors/alum_Aluron/AS_75P_2.jpg",
+              "alt": "",
+              "description": "Переріз дверей із подвійним накладним покриттям – AS 75P – відкривання назовні"
+            },
+            "3": {
+              "id": "d1z8rw",
+              "src": "/images/doors/alum_Aluron/AS_75P_3.jpg",
+              "alt": "",
+              "description": "Перерізи профілів дверей AS 75 – стулка – рама"
+            },
+            "4": {
+              "id": "f7t4ln",
+              "src": "/images/doors/alum_Aluron/AS_75P_4.jpg",
+              "alt": "",
+              "description": "Перерізи профілів дверей AS 75 – стулка – рама"
+            },
+            "5": {
+              "id": "k2j6yd",
+              "src": "/images/doors/alum_Aluron/AS_75P_5.jpg",
+              "alt": "",
+              "description": "Перерізи профілів дверей AS 75 – стулка – рама"
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Характеристики та параметри дверної системи AS 75P",
+        "list": {
+          "1": {
+            "desc": "Глибина профілю дверей – 75 мм"
+          },
+          "2": {
+            "desc": "Діапазон засклення – до 57 мм"
+          },
+          "3": {
+            "desc": "Теплоізоляція дверей Ud – від 0.82 Вт/м2К"
+          },
+          "4": {
+            "desc": "Доступні типи петель – накладні / роликові, приховані"
+          },
+          "5": {
+            "desc": "Повітропроникність – 4 клас"
+          },
+          "6": {
+            "desc": "Стійкість до вітрового навантаження – клас C3/B3"
+          },
+          "7": {
+            "desc": "Водонепроникність – E900"
+          }
+        }
       }
     }
   },
