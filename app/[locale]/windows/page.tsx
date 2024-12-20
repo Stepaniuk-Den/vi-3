@@ -25,8 +25,8 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="sectionCl pt-60">
         <div className="container">
-          <h1 className="titleCl">{t("pageTitle")}</h1>
-          <h2 className="subTitleCl mt-5 text-center">{t("pageSubtitle")}</h2>
+          <h1 className="titleCl">{t("title")}</h1>
+          <h2 className="titleCl mt-5 text-center">{t("subtitle")}</h2>
           <Line className="marsala-center" color="marsala" />
           <p className="mb-4">{t("pageDesc1")}</p>
           <p className="mb-4">{t("pageDesc2")}</p>
