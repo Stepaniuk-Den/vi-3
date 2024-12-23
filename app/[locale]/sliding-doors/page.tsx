@@ -17,18 +17,16 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="pageCl">
-        <PageTopDescription t={t} />
-        <MessageBanner t={tMessage} />
-        <CardsSection
-          t={t}
-          tBtn={tButtons}
-          source="slidingDoorsList"
-          wrapper={false}
-          path="sliding-doors"
-          background="blue"
-        />
-      </section>
+      <PageTopDescription t={t} />
+      <MessageBanner t={tMessage} />
+      <CardsSection
+        t={t}
+        tBtn={tButtons}
+        source="slidingDoorsList"
+        wrapper={false}
+        path="sliding-doors"
+        background="blue"
+      />
     </>
   );
 };

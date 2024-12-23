@@ -22,10 +22,10 @@
 
 @layer components {
   .pageCl {
-    @apply xl:py-48 py-9;
+    @apply xl:pt-48 pt-9;
   }
   .sectionCl {
-    @apply xl:pt-11 pt-9;
+    @apply xl:pt-16 pt-9;
   }
 
   .mainTitleCl {

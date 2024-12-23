@@ -70,7 +70,7 @@ export interface INestedCard {
 }
 
 export interface IParameterItem {
-  title: string;
+  title?: string;
   description?: string;
   list: {
     [key: string]: IDesc;
@@ -122,3 +122,16 @@ export interface IImage {
   title?: string;
   description?: string;
 }
+
+export interface IImgList {
+  [key: string]: IImage;
+}
+
+export interface ICard {
+  id: string;
+  src: string;
+  alt?: string;
+  parametersList: IParameterItem;
+  parametersList2?: IParameterItem;
+}
+

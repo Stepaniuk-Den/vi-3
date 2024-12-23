@@ -19,15 +19,12 @@ const DoorsPage: React.FC<Props> = ({ params: { locale } }) => {
 
 
   return (
-    <>
-      <section className="sectionCl pt-60">
+      <>
        <PageTopDescription t={t} />
        <MessageBanner t={MessageBannerT} />
        <CardsSection t={t} tBtn={tButtons} source="doorsList" wrapper={false} path="doors" background="blue" />
        <CardsSection t={t} tBtn={tButtons} source="doorsFeatures" wrapper={true} path="doors" background="marsala" />
-      </section>
-      
-    </>
+      </>
   );
 };
 
