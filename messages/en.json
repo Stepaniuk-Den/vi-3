@@ -45,6 +45,10 @@
         "3": {
           "title": "alu windows - aliplast",
           "slug": "windows-aluminium-aliplast"
+        },
+        "4": {
+          "title": "glass windows",
+          "slug": "windows-glass"
         }
       }
     },
@@ -1086,6 +1090,113 @@
               }
             }
           }
+        }
+      }
+    }
+  },
+
+  "WindowsGlassPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+    "CarouselSection": {
+      "title": "Structure of complex window panes:",
+      "description": {
+        "p1": "KNOW THE DESIGN OF YOUR WINDOW PACKAGE",
+        "p2": "The TUR-PLAST company uses glazing packs of the prestigious SAINT-GOBAIN company. The glazing packs include one-, two- or three-chamber sets. The thermoflat panes in a pack can be 4mm, 6mm or 8mm thick, divided with a steel distance frame or the so called warm frame (SGG SWISSPACER). The space between panes in a pack, in order to obtain lower heat transmission coefficient, is filled with gas – argon or krypton."
+      },
+      "imgList": {
+        "1": {
+          "id": "m9q25v",
+          "src": "/images/windows/glass-page/carousel1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel3.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "SectionsList": {
+      "PanesParametersSection": {
+        "title": "Complex window panes parameters:",
+        "1": {
+          "id": "1",
+          "title": "Ug – Heat transmission",
+          "description": "The Ug coefficient informs us about the amount of heat which will be lost in certain conditions. The lower the coefficient, the less heat will be through a glass pane.",
+          "src": "/images/windows/glass-page/panesParameter1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "g – Energy permeability",
+          "description": "A glass pane constitutes a barrier for the solar power. That is why, it is important to use such glass panes which let in maximum amount of the power. The higher the rate the more additional energy we have to heat the interior of a building.",
+          "src": "/images/windows/glass-page/panesParameter2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Lt – Light permeability",
+          "description": "Thanks to high Lt rate more light is let in and hence, less electric energy is needed to light a building.",
+          "src": "/images/windows/glass-page/panesParameter3.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Rw – Acoustic insulation",
+          "description": "Acoustic insulation of a given glazing pack is expressed with the Rw coefficient. It is measured in specialist acoustic laboratories. The acoustic insulation coefficient Rw of glass panes may reach the level of 28-53 dB.",
+          "src": "/images/windows/glass-page/panesParameter4.jpeg",
+          "alt": ""
+        }
+      },
+      "PanesTypesSection": {
+        "title": "Types of complex window panes:",
+        "1": {
+          "id": "1",
+          "title": "Energy-saving panes",
+          "description": "The panes are covered with low-emission coatings of noble metal oxides which role is to permit maximum amount of light and solar power (g, Lt) and at the same time, effectively prevent heat loss from room (Ug). Energy efficiency of complex glass panes depends on several factors, such as: quality of the heat insulation coating, number of glass panes in a pack, the gas filling the space between panes and the SWISSPACER warm distance frame. Thanks to the glazing packs of this type, it is possible to reduce heat energy consumption which results in lower energy bills.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Secure panes",
+          "description": "We offer two solutions: Panes with the STADIP laminated glass – in the case of breaking the pane, the foil keeps glass pieces together to reduce the risk of injuries. Panes with the SECURIT hardened glass – they are characterised by five times higher resistance to strikes e.g. by a ball or a person. In the case of breaking, the panes break into small blunt-edged pieces which do not cause serious body injuries. The described glazing pack, reducing the risk of injuries in the case of breaking the pane, is used e.g. in the places where children usually play or where people practise sport.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Anti-burglary panes",
+          "description": "The pane consists of two or more sheets of glass with a few layers of the PVB foil (polyvinyl butyral) in between, which is highly resistant to tearing. In the case of breaking, the product reduces the risk of falling into the interior of a building. As a default, the security pane is thicker than the other pane in a pack which, together with the applied PVB foil, improves its noise-absorbing properties. Whats is more, the product perfectly filters most of the UV rays and hence, it can be used in the places exposed to fading under the influence of the sun’s rays (shop windows, exhibitions, galleries).",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Noise-absorbing panes",
+          "description": "A noise-absorbing glass pane provides both high thermal and acoustic insulation. Outer side of the noise-absorbing glass pane pack is covered with laminated glass made of two sheets and one or more layers of the acoustic foil in between. The foil suppresses noise, and at the same time, if the pane breaks, it keeps the pieces together. The noise-absorbing glass panes are recommended particularly for the people who live in noisy surroundings. The SGG CLIMALPLUS SILENCE glass panes suppress the noise within the scope of 29 to 52 dB.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "5": {
+          "id": "5",
+          "title": "Ornamental panes",
+          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others:in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "6": {
+          "id": "6",
+          "title": "Self-cleaning panes",
+          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
         }
       }
     }

@@ -10,8 +10,9 @@ const NestedCard: React.FC<INestedCard> = ({
   alt,
   className,
   size,
-  // titleBannerCard,
   isRow = true,
+  imageFit,
+  // titleBannerCard,
   // background,
   // layout,
 }) => {
@@ -33,15 +34,9 @@ const NestedCard: React.FC<INestedCard> = ({
     >
       {/* ======== TITLE ======== */}
       {title && (
-        //   (titleBannerCard ? (
-        //     <TitleBanner>
-        //       <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
-        //     </TitleBanner>
-        // ) :
         <div className="mb-3">
           <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
         </div>
-        // )
       )}
 
       {/* <div
@@ -68,6 +63,11 @@ const NestedCard: React.FC<INestedCard> = ({
             alt={alt || ""}
             fill
             priority
+            className={clsx({
+              "object-cover": imageFit === "cover",
+              "object-contain": imageFit === "contain",
+            })}
+            // style={imageFit ? { objectFit: imageFit } : undefined}
             // placeholder="blur"
           />
         </div>

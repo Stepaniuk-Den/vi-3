@@ -30,11 +30,12 @@ const NestedParameterDescList: React.FC<Props> = ({
           <li key={key}>{item.desc}</li>
         ))}
       </ol> */}
-            <ul className="flex flex-col gap-1 rounded-md pl-6">
+      <ul className="flex flex-col gap-1 rounded-md pl-6">
         {Object.entries(param.list).map(([key, item]) => (
           <li key={key} className="flex">
             <div className="flex-shrink-0 w-2 h-2 bg-customMarsala rounded-[3px] mr-4 mt-[6px]"></div>
-            <span >{item.desc}</span></li>
+            <p>{item.desc}</p>
+          </li>
         ))}
       </ul>
 

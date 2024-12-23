@@ -61,6 +61,7 @@ const CardsSection: React.FC<Props> = ({
                 background={idx % 2 === 0 ? `${background}` : ""}
                 slug={profileItem.slug}
                 path={path}
+                alignment="end"
               />
             </li>
           ))}

@@ -27,6 +27,7 @@ const DoorsSection: React.FC<Props> = ({ t, tBtn }) => {
                 alt={typeItem.alt}
                 className={typeItem.id === "1" ? "max-w-3xl" : "max-w-[400px]"}
                 tBtn={tBtn("see")}
+                alignment="end"
               />
             </li>
           ))}

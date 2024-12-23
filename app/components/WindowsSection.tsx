@@ -30,6 +30,7 @@ const WindowsSection: React.FC<Props> = ({ t, tBtn }) => {
                 src={typeItem.src}
                 alt={typeItem.alt}
                 tBtn={tBtn("see")}
+                alignment="end"
               />
             </li>
           ))}

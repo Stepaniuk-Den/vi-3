@@ -41,6 +41,14 @@
         "2": {
           "title": "металопластикові вікна - kommerling",
           "slug": "windows-pvc-kommerling"
+        },
+        "3": {
+          "title": "alu windows - aliplast",
+          "slug": "windows-aluminium-aliplast"
+        },
+        "4": {
+          "title": "glass windows",
+          "slug": "windows-glass"
         }
       }
     },

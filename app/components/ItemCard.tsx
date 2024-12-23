@@ -74,7 +74,7 @@ const ItemCard: React.FC<IItemCard> = ({
         className={clsx(
           "flex flex-col justify-between",
           className,
-          layout === "horizontal" ? "w-1/2" : "w-full lg:h-52 h-36"
+          layout === "horizontal" ? "w-1/2" : "w-full h-36 lg:h-52"
         )}
       >
         <div>
@@ -95,7 +95,11 @@ const ItemCard: React.FC<IItemCard> = ({
 
         <LinkToPage
           href={link}
-          className={clsx(alignment === "center" ? "self-center" : "self-end")}
+          className={clsx({
+            "self-end": alignment === "end",
+            "self-center": alignment === "center",
+            "self-start": alignment === "start",
+          })}
           btnOffset={btnOffset}
         >
           {tBtn}

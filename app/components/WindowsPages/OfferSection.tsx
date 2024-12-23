@@ -41,10 +41,10 @@ const OfferSection: React.FC<Props> = ({ t, tBtn }) => {
           alt={cardItem.alt}
           tBtn={tBtn("see")}
           layout="horizontal"
-          //   background={"marsala"}
+          background={"marsala"}
           slug={cardItem.slug}
           className="text-center"
-          alignment="center"
+          //   alignment="center"
           //   path={path}
         />
       </div>

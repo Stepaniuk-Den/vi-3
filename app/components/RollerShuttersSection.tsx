@@ -29,6 +29,7 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
                 alt={typeItem.alt}
                 btnOffset={idx === 0 ? "-mt-3" : ""}
                 tBtn={tBtn("see")}
+                alignment="end"
               />
             </li>
           ))}

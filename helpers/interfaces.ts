@@ -52,7 +52,7 @@ export interface IItemCard {
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
-  alignment?: "center" | "left";
+  alignment?: "end" | "center" | "start";
   path?: string;
 }
 
@@ -66,6 +66,7 @@ export interface INestedCard {
   size?: "small" | "large" | "w-1/2";
   titleBannerCard?: boolean;
   isRow?: boolean;
+  imageFit?: "cover" | "contain";
 }
 
 export interface IParameterItem {
