@@ -1187,7 +1187,7 @@
         "5": {
           "id": "5",
           "title": "Ornamental panes",
-          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others:in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
@@ -1981,14 +1981,14 @@
         },
         "3": {
           "id": "g0j5fj",
-          "description":"The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
+          "description": "The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
           "title": "Heat transfer coefficient Ud – depending on the type of insulation – G1/G2/G3",
           "imgList": {
             "1": {
               "id": "t7n3xv",
               "src": "/images/doors/alum_Aluron/AS_75_UD_1.png",
-              "alt": ""         
-            }         
+              "alt": ""
+            }
           }
         }
       },
@@ -2092,10 +2092,10 @@
     "title": "EXTERIOR BALCONY / TERRACE DOORS",
     "description": {
       "p1": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. A modification of this solution is the use of a low aluminium threshold, which does not constitute a barrier for children, wheelchairs, etc.The handle is only mounted from the inside. Some practical additions to these balcony doors include a mini-pull with a latch and a brake in the handle. The first allows you to close the door from the outside, and the other – to lock it in a specific opening position.An intermediate solution between a balcony door and a terrace (entrance) door is a balcony door on a wide leaf with a handle on each side and a lock.",
-      "p2":"The glazing units for balcony and terrace doors are designed to achieve the highest possible strength. For this purpose, the following are most often used:– toughened glass – SECURIT, which is five times stronger than ordinary glass and, if broken, breaks into many small pieces with unsharp edges.",
-      "p3":"– or glued glass – STANDIP, with one or more layers of PVB foil, which, in case of breakage, keeps the glass fragments in place.",
-      "p4":"With the use of this type of glazing units, the resistance of balcony and terrace doors to various external forces is significantly increased.",
-      "p5":"Terrace doors are a type of doors similar to entrance doors (low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door)."
+      "p2": "The glazing units for balcony and terrace doors are designed to achieve the highest possible strength. For this purpose, the following are most often used:– toughened glass – SECURIT, which is five times stronger than ordinary glass and, if broken, breaks into many small pieces with unsharp edges.",
+      "p3": "– or glued glass – STANDIP, with one or more layers of PVB foil, which, in case of breakage, keeps the glass fragments in place.",
+      "p4": "With the use of this type of glazing units, the resistance of balcony and terrace doors to various external forces is significantly increased.",
+      "p5": "Terrace doors are a type of doors similar to entrance doors (low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door)."
     },
     "imgList": {
       "1": {
@@ -2105,7 +2105,7 @@
       },
       "2": {
         "id": "34t06x",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_2.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_2.jpg",
         "alt": ""
       },
       "3": {
@@ -2115,20 +2115,20 @@
       },
       "4": {
         "id": "f1b1ec",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_4.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_4.jpg",
         "alt": ""
       },
       "5": {
         "id": "8a6ed5",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_5.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_5.jpg",
         "alt": ""
       }
     },
-    "BalconyNarrowKömmerling":{
+    "BalconyNarrowKömmerling": {
       "title": "BALCONY DOORS ON NARROW WINDOW SASH",
       "description": "The use of narrow window profiles allows the production of balcony doors that open only inwards.",
-      "description2":"We offer two versions of the solution regarding the threshold of the presented balcony door.",
-      "subTitle":"DOOR SYSTEM Kömmerling",
+      "description2": "We offer two versions of the solution regarding the threshold of the presented balcony door.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
       "parametersList": {
         "list": {
           "1": {
@@ -2181,143 +2181,143 @@
         }
       }
     },
-   "BalconyNarrowSchuco":{
-    "title": "DOOR SYSTEM Schüco",
-    "subTitle":"Schüco CT 70",
-    "subTitle2":"Schüco LivIng 82",
-    "imgList": {
-      "1": {
-        "id": "f5a2e9",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
-        "alt": "",
-        "description": "76AD – FRAME ALONG THE PERIMETER"
-      },
-      "2": {
-        "id": "c7d4b1",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
-        "alt": "",
-        "description": "76MD – FRAME ALONG THE PERIMETER"
-      },
-      "3": {
-        "id": "9e8f63",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
-        "alt": "",
-        "description": "88MD – FRAME ALONG THE PERIMETER"
-      },
-      "4": {
-        "id": "a1c4d7",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
-        "alt": "",
-        "description": "76AD – LOW THRESHOLD"
-      }
-    }
-   },
-   "BalconyWideKömmerling":{
-    "title": "BALCONY DOORS ON WIDE WINDOW SASH",
-    "description": "By using wide profiles for the window frame, we are able to produce balcony doors that open both inwards and outwards.",
-    "description2":"There are two versions of the solution regarding the threshold of balcony door made on a wide window profile.",
-    "subTitle":"DOOR SYSTEM Kömmerling",
-    "parametersList": {
-      "list": {
+    "BalconyNarrowSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "subTitle": "Schüco CT 70",
+      "subTitle2": "Schüco LivIng 82",
+      "imgList": {
         "1": {
-          "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          "id": "f5a2e9",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
         },
         "2": {
-          "desc": "The second option is a version with a low aluminium threshold."
+          "id": "c7d4b1",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "9e8f63",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "a1c4d7",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD"
         }
       }
     },
-    "imgList": {
-      "1": {
-        "id": "e9f1b2",
-        "title": "Kömmerling 76 AD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
-        "alt": "",
-        "description": "76AD – FRAME ALONG THE PERIMETER"
+    "BalconyWideKömmerling": {
+      "title": "BALCONY DOORS ON WIDE WINDOW SASH",
+      "description": "By using wide profiles for the window frame, we are able to produce balcony doors that open both inwards and outwards.",
+      "description2": "There are two versions of the solution regarding the threshold of balcony door made on a wide window profile.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          },
+          "2": {
+            "desc": "The second option is a version with a low aluminium threshold."
+          }
+        }
       },
-      "2": {
-        "id": "47c6a3",
-        "title": "Kömmerling 76 MD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
-        "alt": "",
-        "description": "76MD – FRAME ALONG THE PERIMETER"
-      },
-      "3": {
-        "id": "1d8e5f",
-        "title": "Kömmerling 88 MD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
-        "alt": "",
-        "description": "88MD – FRAME ALONG THE PERIMETER"
-      },
-      "4": {
-        "id": "b3f920",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
-        "alt": "",
-        "description": "76AD – LOW THRESHOLD – opening outwards"
-      },
-      "5": {
-        "id": "62a7cd",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
-        "alt": "",
-        "description": "76MD – LOW THRESHOLD – opening outwards"
-      },
-      "6": {
-        "id": "d4e813",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
-        "alt": "",
-        "description": "88MD – LOW THRESHOLD – opening outwards"
+      "imgList": {
+        "1": {
+          "id": "e9f1b2",
+          "title": "Kömmerling 76 AD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
+        },
+        "2": {
+          "id": "47c6a3",
+          "title": "Kömmerling 76 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "1d8e5f",
+          "title": "Kömmerling 88 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "b3f920",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD – opening outwards"
+        },
+        "5": {
+          "id": "62a7cd",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
+          "alt": "",
+          "description": "76MD – LOW THRESHOLD – opening outwards"
+        },
+        "6": {
+          "id": "d4e813",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
+          "alt": "",
+          "description": "88MD – LOW THRESHOLD – opening outwards"
+        }
+      }
+    },
+    "BalconyWideSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "imgList": {
+        "1": {
+          "id": "b3e7f2",
+          "title": "Schüco CT 70",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_1.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening outwards"
+        },
+        "2": {
+          "id": "f2c4a5",
+          "title": "Schüco LivIng 82",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_1.jpg",
+          "alt": "",
+          "description": "LivIng 82 – LOW THRESHOLD – opening outwards"
+        },
+        "3": {
+          "id": "d6a9c8",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_2.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening inwards"
+        },
+        "4": {
+          "id": "e9d1b7",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_2.jpg",
+          "alt": "",
+          "description": "LivIng 82 –LOW THRESHOLD – opening inwards"
+        },
+        "5": {
+          "id": "a7f5c3",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_3.jpg",
+          "alt": "",
+          "description": "CT 70 – FRAME ALONG THE PERIMETER"
+        },
+        "6": {
+          "id": "c4e8d9",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_3.jpg",
+          "alt": "",
+          "description": "LivIng 82 – FRAME ALONG THE PERIMETER"
+        }
       }
     }
-  },
-  "BalconyWideSchuco":{
-    "title": "DOOR SYSTEM Schüco",
-    "imgList": {
-      "1": {
-        "id": "b3e7f2",
-        "title":"Schüco CT 70",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_1.jpg",
-        "alt": "",
-        "description": "CT 70 – LOW THRESHOLD – opening outwards"
-      },
-      "2": {
-        "id": "f2c4a5",
-        "title":"Schüco LivIng 82",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_1.jpg",
-        "alt": "",
-        "description": "LivIng 82 – LOW THRESHOLD – opening outwards"
-      },
-      "3": {
-        "id": "d6a9c8",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_2.jpg",
-        "alt": "",
-        "description": "CT 70 – LOW THRESHOLD – opening inwards"
-      },
-      "4": {
-        "id": "e9d1b7",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_2.jpg",
-        "alt": "",
-        "description": "LivIng 82 –LOW THRESHOLD – opening inwards"
-      },
-      "5": {
-        "id": "a7f5c3",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_3.jpg",
-        "alt": "",
-        "description": "CT 70 – FRAME ALONG THE PERIMETER"
-      },
-      "6": {
-        "id": "c4e8d9",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_3.jpg",
-        "alt": "",
-        "description": "LivIng 82 – FRAME ALONG THE PERIMETER"
-      }
-    }
-   }
   },
   "FoldingDoorsPage": {
     "title": "EXTERIOR FOLDING DOORS",
     "description": {
       "p1": "The Polish-based company TUR-PLAST produces ALUMINIUM FOLDING DOORS based on the three-chamber, thermally insulated PANORAMA system by ALIPLAST. This product makes the offer more attractive as it gives architects and individual clients a greater choice in the interior design of houses and business premises.",
-      "p2":"The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space."
+      "p2": "The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space."
     },
     "imgList": {
       "1": {
@@ -2332,7 +2332,7 @@
       },
       "3": {
         "id": "d5g6f4",
-       "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
+        "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
         "alt": ""
       },
       "4": {
@@ -2346,106 +2346,106 @@
         "alt": ""
       }
     },
-   "PanoramaAliplast":{
-    "title": "system PANORAMA – ALIPLAST",
-    "subTitle": "System cross-sections",
-    "imgList": {
-      "1": {
-        "id": "a1f2d3",
-        "src": "/images/doors/folding_doors/panorama_aliplast_1.jpg",
-        "alt": "",
-        "description": "cross-section through the threshold on the frame (inward-opening option)"
+    "PanoramaAliplast": {
+      "title": "system PANORAMA – ALIPLAST",
+      "subTitle": "System cross-sections",
+      "imgList": {
+        "1": {
+          "id": "a1f2d3",
+          "src": "/images/doors/folding_doors/panorama_aliplast_1.jpg",
+          "alt": "",
+          "description": "cross-section through the threshold on the frame (inward-opening option)"
+        },
+        "2": {
+          "id": "b4c5e6",
+          "src": "/images/doors/folding_doors/panorama_aliplast_2.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type A"
+        },
+        "3": {
+          "id": "d7e8f9",
+          "src": "/images/doors/folding_doors/panorama_aliplast_3.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type B"
+        }
       },
-      "2": {
-        "id": "b4c5e6",
-        "src": "/images/doors/folding_doors/panorama_aliplast_2.jpg",
-        "alt": "",
-         "description": "cross-leaf section – type A"
-      },
-      "3": {
-        "id": "d7e8f9",
-       "src": "/images/doors/folding_doors/panorama_aliplast_3.jpg",
-        "alt": "",
-        "description": "cross-leaf section – type B"
-      }
-    },
-    "parametersList": {
-      "1": {
-        "title": "DIMENSIONS:",
-        "list": {
-          "1": {
-            "desc": "Frame installation depth – 74,5 mm"
-          },
-          "2": {
-            "desc": "Sash installation depth – 74,5 mm"
-          },
-          "3": {
-            "desc": "Possible glazing depths – from 16 mm to 50 mm"
+      "parametersList": {
+        "1": {
+          "title": "DIMENSIONS:",
+          "list": {
+            "1": {
+              "desc": "Frame installation depth – 74,5 mm"
+            },
+            "2": {
+              "desc": "Sash installation depth – 74,5 mm"
+            },
+            "3": {
+              "desc": "Possible glazing depths – from 16 mm to 50 mm"
+            }
           }
-        }
-      },
-      "2": {
-        "title": "TESTS AND STANDARDS:",
-        "list": {
-          "1": {
-            "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.68 W/(m2K)"
-          },
-          "2": {
-            "desc": "Air permeability according to DIN EN 12207 (class) – 2"
-          },
-          "3": {
-            "desc": "Wind load resistance to DIN EN 12210 (class)* – C1 (400Pa)"
-          },
-          "4": {
-            "desc": "Watertightness to DIN EN 12208 (class) – E1050 (1050 Pa)"
-          }      
-        }
-      },
-      "3": {
-        "title": "SPECIFICATION / SYSTEM PROPERTIES",
-        "list": {
-          "1": {
-            "desc": "A three-chamber thermally insulated door system designed for the construction of folding doors;"
-          },
-          "2": {
-            "desc": "Two possible types of the threshold system: a system with a flat threshold and brush sealing or a tight threshold based on a complete frame along the perimeter of the entire terrace window;"
-          },
-          "3": {
-            "desc": "Depending on the requirements and application, the Panorama system offers inward-opening or outward-opening structures in a very large configuration of leaves (2+1, 3+2, 3+3);"
-          },
-          "4": {
-            "desc": "New integrated fittings: a hinge with a bottom carriage, a hinge with a pull, and low handles improve the functionality of the structure, while reducing the size of the complex folding door structure;"
-          },
-          "5": {
-            "desc": "The minimised visual width of the profile used in the system makes the folding door seem light;"
-          },
-          "6": {
-            "desc": "The Panorama system is available in a version with increased thermal insulation – thanks to the use of additional thermal inserts on the perimeter and between the breaks of the door leaf as well as the frames; available options: Panorama, Panorama i+;"
-          },
-          "7": {
-            "desc": "The folding door system allows for the creation of a nice-looking and functional structure, comfortable for users, but also provides the possibility of very effective use of the space in the building;"
-          },
-          "8": {
-            "desc": "The wide range of available solutions and potential applications enables the design of structures for balconies, terraces or winter gardens as well as public utility buildings and commercial facilities;"
-          },
-          "9": {
-            "desc": "possibility of varnishing according to the RAL palette (Qualicoat 1518), in the wood structure – Aliplast Wood Colour Effect (Qualideco PL-0001), anodised finish (Qualanod 1808), also bi-colour."
+        },
+        "2": {
+          "title": "TESTS AND STANDARDS:",
+          "list": {
+            "1": {
+              "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.68 W/(m2K)"
+            },
+            "2": {
+              "desc": "Air permeability according to DIN EN 12207 (class) – 2"
+            },
+            "3": {
+              "desc": "Wind load resistance to DIN EN 12210 (class)* – C1 (400Pa)"
+            },
+            "4": {
+              "desc": "Watertightness to DIN EN 12208 (class) – E1050 (1050 Pa)"
+            }
+          }
+        },
+        "3": {
+          "title": "SPECIFICATION / SYSTEM PROPERTIES",
+          "list": {
+            "1": {
+              "desc": "A three-chamber thermally insulated door system designed for the construction of folding doors;"
+            },
+            "2": {
+              "desc": "Two possible types of the threshold system: a system with a flat threshold and brush sealing or a tight threshold based on a complete frame along the perimeter of the entire terrace window;"
+            },
+            "3": {
+              "desc": "Depending on the requirements and application, the Panorama system offers inward-opening or outward-opening structures in a very large configuration of leaves (2+1, 3+2, 3+3);"
+            },
+            "4": {
+              "desc": "New integrated fittings: a hinge with a bottom carriage, a hinge with a pull, and low handles improve the functionality of the structure, while reducing the size of the complex folding door structure;"
+            },
+            "5": {
+              "desc": "The minimised visual width of the profile used in the system makes the folding door seem light;"
+            },
+            "6": {
+              "desc": "The Panorama system is available in a version with increased thermal insulation – thanks to the use of additional thermal inserts on the perimeter and between the breaks of the door leaf as well as the frames; available options: Panorama, Panorama i+;"
+            },
+            "7": {
+              "desc": "The folding door system allows for the creation of a nice-looking and functional structure, comfortable for users, but also provides the possibility of very effective use of the space in the building;"
+            },
+            "8": {
+              "desc": "The wide range of available solutions and potential applications enables the design of structures for balconies, terraces or winter gardens as well as public utility buildings and commercial facilities;"
+            },
+            "9": {
+              "desc": "possibility of varnishing according to the RAL palette (Qualicoat 1518), in the wood structure – Aliplast Wood Colour Effect (Qualideco PL-0001), anodised finish (Qualanod 1808), also bi-colour."
+            }
           }
         }
       }
     }
-   }
   },
   "DoorPanelsPage": {
     "title": "DOOR FEATURES – Door Fillings – Panels for PVC and Aluminium Doors",
     "description": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam. This combination ensures very good thermal insulation of the door. The panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays.",
-    "subTitle":"Choose the perfect color for your door: two diverse color palettes",
+    "subTitle": "Choose the perfect color for your door: two diverse color palettes",
     "cards": {
       "1": {
         "id": "m4q25v",
         "slug": "panels-doors-paneldoor",
         "title": "PVC Doors – Schüco Profiles",
-        "description":"Choose from the classic Schüco palette, which offers a wide range of colors for any style and design. Thanks to the Qualicoat 1518 certification, your door will retain its rich color and shine for many years.",
+        "description": "Choose from the classic Schüco palette, which offers a wide range of colors for any style and design. Thanks to the Qualicoat 1518 certification, your door will retain its rich color and shine for many years.",
         "src": "/images/doors/exterior-door.webp",
         "alt": ""
       },
@@ -2453,7 +2453,7 @@
         "id": "x0w5pl",
         "slug": "panels-doors-frohmasco",
         "title": "PVC Doors – Kömmerling Profiles",
-        "description":"Choose naturalness with the Kömmerling Wood Color Effect palette, which gives your door a refined look of wood texture. This option, certified by Qualideco PL-0001, perfectly matches the aesthetics of natural wood with the strength of aluminum.",
+        "description": "Choose naturalness with the Kömmerling Wood Color Effect palette, which gives your door a refined look of wood texture. This option, certified by Qualideco PL-0001, perfectly matches the aesthetics of natural wood with the strength of aluminum.",
         "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
       }

@@ -26,24 +26,23 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <div className="pageCl">
-        <PageTopDescription t={t} />
-        <MessageBanner t={MessageBannerT} />
-        <SectionCarouselAndDescr t={carouselSectionInfo} />
-        {tSectionsList.map((tSectionItem, idx) => (
-          <NestedCardsSection
-            key={idx}
-            tSectionItem={tSectionItem as INestedCardsSectionItem}
-            titleBanner={true}
-            size="large"
-            isGrid={true}
-            isRow={false}
-            // titleBannerCard={idx === 0}
-            // size={idx === 0 ? "small" : "large"}
-            // sectionIdx={idx}
-          />
-        ))}
-      </div>
+      <PageTopDescription t={t} />
+      <MessageBanner t={MessageBannerT} />
+      <SectionCarouselAndDescr t={carouselSectionInfo} />
+      {tSectionsList.map((tSectionItem, idx) => (
+        <NestedCardsSection
+          key={idx}
+          tSectionItem={tSectionItem as INestedCardsSectionItem}
+          titleBanner={true}
+          size="w-full"
+          positioning={idx === 0 ? "grid2" : "grid3"}
+          isRow={false}
+          imageFit="contain"
+          // titleBannerCard={idx === 0}
+          // size={idx === 0 ? "w-1/4" : "w-full"}
+          // sectionIdx={idx}
+        />
+      ))}
     </>
   );
 };

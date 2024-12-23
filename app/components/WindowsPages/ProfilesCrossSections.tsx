@@ -30,7 +30,7 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
               description={nestedCard.description}
               src={nestedCard.src || ""}
               alt={nestedCard.alt || ""}
-              size={"small"}
+              size={"w-1/4"}
               className={clsx(idx === 0 && "mr-auto")}
               // titleBannerCard={titleBannerCard}
               // layout="horizontal"

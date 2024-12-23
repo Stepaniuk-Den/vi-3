@@ -918,6 +918,276 @@
     }
   },
 
+  "WindowsAluAliplastPage": {
+    "title": "ALUMINIUM WINDOWS – Aliplast profile",
+    "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
+    "SectionsList": {
+      "OfferAluSection": {
+        "title": "Please feel free to learn about our offer of aluminium profiles:",
+        "1": {
+          "id": "1",
+          "title": "Genesis GN 75",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Econoline EL",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "description": "Aliplast owns two of the country’s most technologically advanced vertical paint shops and two horizontal paint lines. Therefore, in our offer you will find profiles varnished with all types of powder coating in the entire range of RAL colours, as well as varnished with special effects such as fine or thick structure with a metallic effect."
+      },
+      "GenesisSection": {
+        "title": "GENESIS 75 /GN75/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 84 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – FIX 1-56 mm / OT 9-65 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C4"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E1500"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – GENESIS",
+            "list": {
+              "1": {
+                "desc": "This 3-chamber window system is designed for the construction of windows with increased thermal insulation. The thermal parameters of Genesis 75 meet the requirements that will be applicable as of 2021 (Uw from 0.90)."
+              },
+              "2": {
+                "desc": "The basis of the Genesis 75 system are the 75-mm-deep frame sections."
+              },
+              "3": {
+                "desc": "Genesis 75 is a system intended for designing window constructions for public buildings as well as single or multi-family houses."
+              },
+              "4": {
+                "desc": "The large range of sections/profiles offered as part of the Genesis 75 system enables the design of modern windows, doors and display windows with high functionality."
+              },
+              "5": {
+                "desc": "Genesis 75 uses modern insulation materials, which are currently new on the market. An additional thermal seal was designed besides the classic central seal. With this solution, a very high window tightness (air infiltration, watertightness) as well as an innovative appearance and aesthetics were obtained."
+              },
+              "6": {
+                "desc": "Within this system it will be possible to choose different profile finishes, giving the window structure an individual character."
+              },
+              "7": {
+                "desc": "The Genesis 75 window system sets a new standard for window insulation, while maintaining the highest ergonomics of use and modern profile aesthetics."
+              },
+              "8": {
+                "desc": "It is possible to mount the Flyscreen system (an insect screen system)."
+              },
+              "9": {
+                "desc": "A wide range of colours – RAL palette (Qualicoat 1518), structural colours, Aliplast Wood Colour Effect wood-like colours (Qualideco PL-0001), anode, bicolour."
+              }
+            }
+          }
+        }
+      },
+      "EconolineSection": {
+        "title": "ECONOLINE /EL/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 51 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 60 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – to 37 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – ECONOLINE",
+            "list": {
+              "1": {
+                "desc": "A system designed for constructing doors and windows without thermal insulation. It allows for designing light, durable and functional structures."
+              },
+              "2": {
+                "desc": "The system is compatible with other Aliplast systems: common glazing beads, seals, corners and fittings."
+              },
+              "3": {
+                "desc": "The system is designed for constructing internal and external architectural components that do not require thermal insulation: windows, doors and sections of partition walls intended for general use in public and industrial buildings (in office rooms)."
+              },
+              "4": {
+                "desc": "It is possible to incorporate Econoline doors into partition walls made of Econoline segments or into other walls of any design."
+              },
+              "5": {
+                "desc": "Glazing beads available in rectangular and rounded variants."
+              },
+              "6": {
+                "desc": "The system design allows the use of rebate hinges, easier to install and more cost-effective."
+              },
+              "7": {
+                "desc": "It is possible to design panel doors (Econoline panel doors) on the basis of the Econoline system."
+              },
+              "8": {
+                "desc": "Smoke-tight doors can be built on the basis of this system – Econoline doors with the smoke-tight function meet the criteria of smoke-tightness classes Sa, Sm in accordance with PN-EN 13501-2+A1:2010)."
+              },
+              "9": {
+                "desc": "It is possible to construct sliding and swinging doors, connecting walls at any angle, and strengthening already made and even mounted elements."
+              },
+              "10": {
+                "desc": "The possibility of bending profiles."
+              },
+              "11": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect, anode, bicolour."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "WindowsGlassPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+    "CarouselSection": {
+      "title": "Structure of complex window panes:",
+      "description": {
+        "p1": "KNOW THE DESIGN OF YOUR WINDOW PACKAGE",
+        "p2": "The TUR-PLAST company uses glazing packs of the prestigious SAINT-GOBAIN company. The glazing packs include one-, two- or three-chamber sets. The thermoflat panes in a pack can be 4mm, 6mm or 8mm thick, divided with a steel distance frame or the so called warm frame (SGG SWISSPACER). The space between panes in a pack, in order to obtain lower heat transmission coefficient, is filled with gas – argon or krypton."
+      },
+      "imgList": {
+        "1": {
+          "id": "m9q25v",
+          "src": "/images/windows/glass-page/carousel1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel3.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "SectionsList": {
+      "PanesParametersSection": {
+        "title": "Complex window panes parameters:",
+        "1": {
+          "id": "1",
+          "title": "Ug – Heat transmission",
+          "description": "The Ug coefficient informs us about the amount of heat which will be lost in certain conditions. The lower the coefficient, the less heat will be through a glass pane.",
+          "src": "/images/windows/glass-page/panesParameter1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "g – Energy permeability",
+          "description": "A glass pane constitutes a barrier for the solar power. That is why, it is important to use such glass panes which let in maximum amount of the power. The higher the rate the more additional energy we have to heat the interior of a building.",
+          "src": "/images/windows/glass-page/panesParameter2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Lt – Light permeability",
+          "description": "Thanks to high Lt rate more light is let in and hence, less electric energy is needed to light a building.",
+          "src": "/images/windows/glass-page/panesParameter3.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Rw – Acoustic insulation",
+          "description": "Acoustic insulation of a given glazing pack is expressed with the Rw coefficient. It is measured in specialist acoustic laboratories. The acoustic insulation coefficient Rw of glass panes may reach the level of 28-53 dB.",
+          "src": "/images/windows/glass-page/panesParameter4.jpeg",
+          "alt": ""
+        }
+      },
+      "PanesTypesSection": {
+        "title": "Types of complex window panes:",
+        "1": {
+          "id": "1",
+          "title": "Energy-saving panes",
+          "description": "The panes are covered with low-emission coatings of noble metal oxides which role is to permit maximum amount of light and solar power (g, Lt) and at the same time, effectively prevent heat loss from room (Ug). Energy efficiency of complex glass panes depends on several factors, such as: quality of the heat insulation coating, number of glass panes in a pack, the gas filling the space between panes and the SWISSPACER warm distance frame. Thanks to the glazing packs of this type, it is possible to reduce heat energy consumption which results in lower energy bills.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Secure panes",
+          "description": "We offer two solutions: Panes with the STADIP laminated glass – in the case of breaking the pane, the foil keeps glass pieces together to reduce the risk of injuries. Panes with the SECURIT hardened glass – they are characterised by five times higher resistance to strikes e.g. by a ball or a person. In the case of breaking, the panes break into small blunt-edged pieces which do not cause serious body injuries. The described glazing pack, reducing the risk of injuries in the case of breaking the pane, is used e.g. in the places where children usually play or where people practise sport.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Anti-burglary panes",
+          "description": "The pane consists of two or more sheets of glass with a few layers of the PVB foil (polyvinyl butyral) in between, which is highly resistant to tearing. In the case of breaking, the product reduces the risk of falling into the interior of a building. As a default, the security pane is thicker than the other pane in a pack which, together with the applied PVB foil, improves its noise-absorbing properties. Whats is more, the product perfectly filters most of the UV rays and hence, it can be used in the places exposed to fading under the influence of the sun’s rays (shop windows, exhibitions, galleries).",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Noise-absorbing panes",
+          "description": "A noise-absorbing glass pane provides both high thermal and acoustic insulation. Outer side of the noise-absorbing glass pane pack is covered with laminated glass made of two sheets and one or more layers of the acoustic foil in between. The foil suppresses noise, and at the same time, if the pane breaks, it keeps the pieces together. The noise-absorbing glass panes are recommended particularly for the people who live in noisy surroundings. The SGG CLIMALPLUS SILENCE glass panes suppress the noise within the scope of 29 to 52 dB.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "5": {
+          "id": "5",
+          "title": "Ornamental panes",
+          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "6": {
+          "id": "6",
+          "title": "Self-cleaning panes",
+          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        }
+      }
+    }
+  },
+
   "DoorsPage": {
     "title": "Вхідні двері з Польщі",
     "description": "Усі двері польської фірми VI-3 мають міцну конструкцію, чудові теплові характеристики та інноваційні рішення. Виготовляємо зовнішні ПВХ двері на основі масивних профілів: Schüco CT70, Schüco LivIng, Kömmerling 76AD. Наші алюмінієві двері виготовляються з профілів бельгійської компанії Aliplast, а також польських алюмінієвих систем Aluron. У нашій пропозиції представлені терасові та балконні двері на віконному або дверному профілі; незвичайні двері практично будь-якої форми, а також розсувні двері – чудове рішення для ресторанів, кафе та сучасних віталень.",
@@ -2032,10 +2302,10 @@
   },
   "FoldingDoorsPage": {
     "title": "ЗОВНІШНІ Розсувні ДВЕРІ",
-"description": {
-  "p1": "Компанія TUR-PLAST, що базується в Польщі, виробляє АЛЮМІНІЄВІ СКЛАДНІ ДВЕРІ на основі трьохкамерної термозахищеної системи PANORAMA від ALIPLAST. Цей продукт робить пропозицію більш привабливою, оскільки надає архітекторам та індивідуальним клієнтам більший вибір для внутрішнього дизайну будинків та комерційних приміщень.",
-  "p2": "Використання складних дверей у приміщеннях з великими заскленими площами є дуже зручним, оскільки вони відкриваються вбік, не створюючи перешкод для проходу у вигляді стійок або нерухомих стулок. Особливо у будинках, оточених великими садами, з цією скляною та алюмінієвою висувною стіною ми можемо забезпечити максимальний контакт з красивим зеленим оточенням. Складні двері часто використовуються в готелях, магазинах та приватних будинках, де є потреба у створенні більш корисного простору."
-},
+    "description": {
+      "p1": "Компанія TUR-PLAST, що базується в Польщі, виробляє АЛЮМІНІЄВІ СКЛАДНІ ДВЕРІ на основі трьохкамерної термозахищеної системи PANORAMA від ALIPLAST. Цей продукт робить пропозицію більш привабливою, оскільки надає архітекторам та індивідуальним клієнтам більший вибір для внутрішнього дизайну будинків та комерційних приміщень.",
+      "p2": "Використання складних дверей у приміщеннях з великими заскленими площами є дуже зручним, оскільки вони відкриваються вбік, не створюючи перешкод для проходу у вигляді стійок або нерухомих стулок. Особливо у будинках, оточених великими садами, з цією скляною та алюмінієвою висувною стіною ми можемо забезпечити максимальний контакт з красивим зеленим оточенням. Складні двері часто використовуються в готелях, магазинах та приватних будинках, де є потреба у створенні більш корисного простору."
+    },
     "imgList": {
       "1": {
         "id": "b1f7d2",
@@ -2049,7 +2319,7 @@
       },
       "3": {
         "id": "d5g6f4",
-       "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
+        "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
         "alt": ""
       },
       "4": {
@@ -2153,29 +2423,29 @@
       }
     }
   },
- "DoorPanelsPage": {
-  "title": "ХАРАКТЕРИСТИКИ ДВЕРЕЙ – Дверні Наповнення – Панелі для ПВХ та Алюмінієвих Дверей",
-  "description": "Наповнення дверного полотна складається з двох сендвіч-панелей, виготовлених із пластику, розділених шаром поліуретанової піни. Це поєднання забезпечує дуже хорошу теплоізоляцію дверей. Панелі можуть бути доповнені різними видами скла та декоративними рамками. Поверхневий шар ПВХ-панелей покритий високоякісними акриловими плівками або лаком, стійким до погодних умов і УФ-променів.",
-  "subTitle": "Обирайте ідеальний колір для ваших дверей: дві різноманітні кольорові палітри",
-  "cards": {
-    "1": {
-      "id": "m4q25v",
-      "slug": "panels-doors-paneldoor",
-      "title": "ПВХ Двері – Профілі Schüco",
-      "description": "Оберіть із класичної палітри Schüco, яка пропонує широкий вибір кольорів для будь-якого стилю та дизайну. Завдяки сертифікації Qualicoat 1518 ваші двері збережуть насичений колір і блиск на довгі роки.",
-      "src": "/images/doors/exterior-door.webp",
-      "alt": ""
-    },
-    "2": {
-      "id": "x0w5pl",
-      "slug": "panels-doors-frohmasco",
-      "title": "ПВХ Двері – Профілі Kömmerling",
-      "description": "Оберіть природність із палітрою Kömmerling Wood Color Effect, яка надає вашим дверям витончений вигляд дерев'яної текстури. Цей варіант, сертифікований Qualideco PL-0001, ідеально поєднує естетику натурального дерева з міцністю алюмінію.",
-      "src": "/images/doors/front-door-with-sidelites.jpg",
-      "alt": ""
+  "DoorPanelsPage": {
+    "title": "ХАРАКТЕРИСТИКИ ДВЕРЕЙ – Дверні Наповнення – Панелі для ПВХ та Алюмінієвих Дверей",
+    "description": "Наповнення дверного полотна складається з двох сендвіч-панелей, виготовлених із пластику, розділених шаром поліуретанової піни. Це поєднання забезпечує дуже хорошу теплоізоляцію дверей. Панелі можуть бути доповнені різними видами скла та декоративними рамками. Поверхневий шар ПВХ-панелей покритий високоякісними акриловими плівками або лаком, стійким до погодних умов і УФ-променів.",
+    "subTitle": "Обирайте ідеальний колір для ваших дверей: дві різноманітні кольорові палітри",
+    "cards": {
+      "1": {
+        "id": "m4q25v",
+        "slug": "panels-doors-paneldoor",
+        "title": "ПВХ Двері – Профілі Schüco",
+        "description": "Оберіть із класичної палітри Schüco, яка пропонує широкий вибір кольорів для будь-якого стилю та дизайну. Завдяки сертифікації Qualicoat 1518 ваші двері збережуть насичений колір і блиск на довгі роки.",
+        "src": "/images/doors/exterior-door.webp",
+        "alt": ""
+      },
+      "2": {
+        "id": "x0w5pl",
+        "slug": "panels-doors-frohmasco",
+        "title": "ПВХ Двері – Профілі Kömmerling",
+        "description": "Оберіть природність із палітрою Kömmerling Wood Color Effect, яка надає вашим дверям витончений вигляд дерев'яної текстури. Цей варіант, сертифікований Qualideco PL-0001, ідеально поєднує естетику натурального дерева з міцністю алюмінію.",
+        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "alt": ""
+      }
     }
-  }
-},
+  },
   "AccessoriesPage": {
     "title": "ОСОБЛИВОСТІ ДВЕРЕЙ – Фурнітура та доповнення для ПВХ та алюмінієвих дверей.",
     "description": {

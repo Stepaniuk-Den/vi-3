@@ -63,7 +63,7 @@ export interface INestedCard {
   src: string | StaticImageData;
   alt: string;
   className?: string;
-  size?: "small" | "large" | "w-1/2";
+  size?: "w-1/2" | "w-1/4" | "w-full";
   titleBannerCard?: boolean;
   isRow?: boolean;
   imageFit?: "cover" | "contain";
@@ -89,7 +89,7 @@ export interface INestedCardsSectionItem {
   description?: string;
   [key: string]: string | INestedCard | IParametersList | undefined;
   parametersList?: IParametersList;
-  //   size?: "small" | "large";
+  //   size?: "w-1/4" | "w-full";
   //   titleBanner?: boolean;
   //   titleBannerCard?: boolean;
 }
@@ -134,4 +134,3 @@ export interface ICard {
   parametersList: IParameterItem;
   parametersList2?: IParameterItem;
 }
-

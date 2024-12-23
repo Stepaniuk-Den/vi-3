@@ -38,9 +38,9 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl">{t("title")}</h1>
+          <h1 className="titleCl pt-16">{t("title")}</h1>
           <h2 className="subTitleCl mt-5 text-center">{t("subtitle")}</h2>
           <Line className="marsala-center" color="marsala" />
           <p className="mb-4">{t("description")}</p>
@@ -55,9 +55,9 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           key={key}
           tSectionItem={tSectionsList[key]}
           titleBanner={true}
-          size={"large"}
+          size={"w-full"}
           // titleBannerCard={idx === 0}
-          // size={idx === 0 ? "small" : "large"}
+          // size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}
         />
       ))}

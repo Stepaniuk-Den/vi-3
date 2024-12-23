@@ -17,25 +17,27 @@ type Props = {
 
   tSectionItem: INestedCardsSectionItem;
   // sectionIdx: number;
-  size?: "small" | "large" | "w-1/2";
-  titleBanner?: boolean;
   // titleBannerCard?: boolean;
+  // isGrid?: boolean;
+  titleBanner?: boolean;
+  size?: "w-1/2" | "w-1/4" | "w-full";
+  positioning?: "flex" | "grid2" | "grid3";
+  imageFit?: "cover" | "contain";
   isRow?: boolean;
   descReverse?: boolean;
-  isGrid?: boolean;
-  imageFit?: "cover" | "contain";
 };
 
 const NestedCardsSection: React.FC<Props> = ({
+  // sectionIdx,
+  // titleBannerCard,
+  // isGrid = false,
   tSectionItem,
   size,
   titleBanner,
-  // sectionIdx,
-  // titleBannerCard,
+  positioning = "flex",
+  imageFit,
   isRow,
   descReverse = false,
-  isGrid = false,
-  imageFit,
 }) => {
   // console.log("🚀 ~ tSectionItem:", tSectionItem);
 
@@ -45,7 +47,7 @@ const NestedCardsSection: React.FC<Props> = ({
   // console.log("🚀 ~ nestedCardsList:", nestedCardsList);
   // console.log(tSectionItem.parametersList);
 
-  // const size = sectionIdx === 0 ? "small" : "large";
+  // const size = sectionIdx === 0 ? "w-1/4" : "w-full";
 
   return (
     <section className="sectionCl">
@@ -66,8 +68,9 @@ const NestedCardsSection: React.FC<Props> = ({
         )}
         <ul
           className={clsx("gap-6", {
-            "grid grid-cols-2": isGrid,
-            "flex justify-center ": !isGrid,
+            "flex justify-center ": positioning === "flex",
+            "grid grid-cols-2": positioning === "grid2",
+            "grid grid-cols-3": positioning === "grid3",
           })}
         >
           {nestedCardsList.map((nestedCard) => (

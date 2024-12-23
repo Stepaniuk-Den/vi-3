@@ -27,8 +27,8 @@ const NestedCard: React.FC<INestedCard> = ({
         // },
         {
           "w-1/2": size === "w-1/2",
-          "w-1/4": size === "small",
-          "w-full": size === "large",
+          "w-1/4": size === "w-1/4",
+          "w-full": size === "w-full",
         }
       )}
     >

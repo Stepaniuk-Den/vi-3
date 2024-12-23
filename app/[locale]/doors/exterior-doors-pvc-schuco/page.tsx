@@ -20,7 +20,7 @@ const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
       <NestedCardsSection
         tSectionItem={t.raw("SchucoProfilesSection")}
         titleBanner
-        size="large"
+        size="w-full"
         isRow={false}
       />
       <SectionListAndCards
@@ -35,7 +35,7 @@ const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
         descReverse
       />
       <SectionListAndCards t={t.raw("DoorFillingsTypes")} />
-      <SectionImagesAndCards t={t.raw("EntranceDoorSystem")}/>
+      <SectionImagesAndCards t={t.raw("EntranceDoorSystem")} />
     </section>
   );
 };

@@ -56,7 +56,7 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
                 title={card.title}
                 src={card.src}
                 alt={card.alt}
-                size="large"
+                size="w-full"
                 description={card.description}
                 isRow={false}
               />
