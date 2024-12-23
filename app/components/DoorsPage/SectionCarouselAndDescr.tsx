@@ -28,9 +28,9 @@ const SectionCarouselAndDescr: React.FC<ISectionCarouselAndDescrProps> = ({
           <div className="flex-grow flex-[2]">
             <ImgCarouselPage imgList={imgList} />
           </div>
-          <div className="flex-grow flex-[1] pt-8">
+          <div className="flex flex-col flex-grow flex-[1] pt-8 gap-2">
             {descriptionList.map((text, idx) => (
-              <p key={idx} className="mb-4">
+              <p key={idx}>
                 {text}
               </p>
             ))}

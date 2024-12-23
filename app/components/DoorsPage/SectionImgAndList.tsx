@@ -20,6 +20,8 @@ const SectionImgAndList: React.FC<ISectionImgAndListProps> = ({
     if (!parametersList) return null;
 
     const { title, list } = parametersList;
+
+    
     const formattedList = Object.fromEntries(
       Object.entries(list).map(([key, value]) => [
         key,

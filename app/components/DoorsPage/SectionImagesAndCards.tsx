@@ -8,7 +8,6 @@ interface ISectionImagesAndCards {
   t: {
     title: string;
     imgList?: IImgList;
-    raw: (key: string) => string;
   };
   isCards?: boolean;
 }
