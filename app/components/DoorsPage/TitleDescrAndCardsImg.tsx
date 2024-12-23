@@ -15,6 +15,7 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
   columns = 3,
 }) => {
   const imgList = t.imgList ? Object.values(t.imgList) : [];
+
   return (
     <div className="mt-10">
       <h3 className="subTitleCl font-bold">{t.title}</h3>
