@@ -112,17 +112,25 @@
         }
       }
     },
-    "roller-blinds": {
-      "title": "roller blinds",
-      "href": "/roller-blinds",
+    "roller-shutters": {
+      "title": "roller shutters",
+      "href": "/roller-shutters-sun-protection-covers",
       "links": {
         "1": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "adaptive external roller shutters",
+          "slug": "adaptive-external-roller-shutters"
         },
         "2": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "top mounted external roller shutters ",
+          "slug": "top-mounted-external-roller-shutters"
+        },
+        "3": {
+          "title": "screen covers",
+          "slug": "screen-covers"
+        },
+        "4": {
+          "title": "accessories",
+          "slug": "accessories-additions-roller-shutters-sun-protection-covers"
         }
       }
     },
@@ -1511,7 +1519,7 @@
       "title": "IMPERIAL /IP 800/",
       "cards": {
         "1": {
-          "id": "g9j7fj",
+          "id": "g5j7hj",
           "src": "/images/doors/alum_Aliplast/imperial_IP_800_1.jpg",
           "alt": "",
           "parametersList": {
@@ -1547,7 +1555,7 @@
           }
         },
         "2": {
-          "id": "g2j7fj",
+          "id": "n9j1fj",
           "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
           "alt": "",
           "parametersList": {
@@ -1693,14 +1701,14 @@
         },
         "3": {
           "id": "g0j5fj",
-          "description":"The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
+          "description": "The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
           "title": "Heat transfer coefficient Ud – depending on the type of insulation – G1/G2/G3",
           "imgList": {
             "1": {
               "id": "t7n3xv",
               "src": "/images/doors/alum_Aluron/AS_75_UD_1.png",
-              "alt": ""         
-            }         
+              "alt": ""
+            }
           }
         }
       },
@@ -1804,10 +1812,10 @@
     "title": "EXTERIOR BALCONY / TERRACE DOORS",
     "description": {
       "p1": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. A modification of this solution is the use of a low aluminium threshold, which does not constitute a barrier for children, wheelchairs, etc.The handle is only mounted from the inside. Some practical additions to these balcony doors include a mini-pull with a latch and a brake in the handle. The first allows you to close the door from the outside, and the other – to lock it in a specific opening position.An intermediate solution between a balcony door and a terrace (entrance) door is a balcony door on a wide leaf with a handle on each side and a lock.",
-      "p2":"The glazing units for balcony and terrace doors are designed to achieve the highest possible strength. For this purpose, the following are most often used:– toughened glass – SECURIT, which is five times stronger than ordinary glass and, if broken, breaks into many small pieces with unsharp edges.",
-      "p3":"– or glued glass – STANDIP, with one or more layers of PVB foil, which, in case of breakage, keeps the glass fragments in place.",
-      "p4":"With the use of this type of glazing units, the resistance of balcony and terrace doors to various external forces is significantly increased.",
-      "p5":"Terrace doors are a type of doors similar to entrance doors (low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door)."
+      "p2": "The glazing units for balcony and terrace doors are designed to achieve the highest possible strength. For this purpose, the following are most often used:– toughened glass – SECURIT, which is five times stronger than ordinary glass and, if broken, breaks into many small pieces with unsharp edges.",
+      "p3": "– or glued glass – STANDIP, with one or more layers of PVB foil, which, in case of breakage, keeps the glass fragments in place.",
+      "p4": "With the use of this type of glazing units, the resistance of balcony and terrace doors to various external forces is significantly increased.",
+      "p5": "Terrace doors are a type of doors similar to entrance doors (low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door)."
     },
     "imgList": {
       "1": {
@@ -1817,7 +1825,7 @@
       },
       "2": {
         "id": "34t06x",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_2.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_2.jpg",
         "alt": ""
       },
       "3": {
@@ -1827,20 +1835,20 @@
       },
       "4": {
         "id": "f1b1ec",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_4.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_4.jpg",
         "alt": ""
       },
       "5": {
         "id": "8a6ed5",
-       "src": "/images/doors/balcony_Terrace/balcony_carousel_5.jpg",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_5.jpg",
         "alt": ""
       }
     },
-    "BalconyNarrowKömmerling":{
+    "BalconyNarrowKömmerling": {
       "title": "BALCONY DOORS ON NARROW WINDOW SASH",
       "description": "The use of narrow window profiles allows the production of balcony doors that open only inwards.",
-      "description2":"We offer two versions of the solution regarding the threshold of the presented balcony door.",
-      "subTitle":"DOOR SYSTEM Kömmerling",
+      "description2": "We offer two versions of the solution regarding the threshold of the presented balcony door.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
       "parametersList": {
         "list": {
           "1": {
@@ -1893,143 +1901,143 @@
         }
       }
     },
-   "BalconyNarrowSchuco":{
-    "title": "DOOR SYSTEM Schüco",
-    "subTitle":"Schüco CT 70",
-    "subTitle2":"Schüco LivIng 82",
-    "imgList": {
-      "1": {
-        "id": "f5a2e9",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
-        "alt": "",
-        "description": "76AD – FRAME ALONG THE PERIMETER"
-      },
-      "2": {
-        "id": "c7d4b1",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
-        "alt": "",
-        "description": "76MD – FRAME ALONG THE PERIMETER"
-      },
-      "3": {
-        "id": "9e8f63",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
-        "alt": "",
-        "description": "88MD – FRAME ALONG THE PERIMETER"
-      },
-      "4": {
-        "id": "a1c4d7",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
-        "alt": "",
-        "description": "76AD – LOW THRESHOLD"
-      }
-    }
-   },
-   "BalconyWideKömmerling":{
-    "title": "BALCONY DOORS ON WIDE WINDOW SASH",
-    "description": "By using wide profiles for the window frame, we are able to produce balcony doors that open both inwards and outwards.",
-    "description2":"There are two versions of the solution regarding the threshold of balcony door made on a wide window profile.",
-    "subTitle":"DOOR SYSTEM Kömmerling",
-    "parametersList": {
-      "list": {
+    "BalconyNarrowSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "subTitle": "Schüco CT 70",
+      "subTitle2": "Schüco LivIng 82",
+      "imgList": {
         "1": {
-          "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          "id": "f5a2e9",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
         },
         "2": {
-          "desc": "The second option is a version with a low aluminium threshold."
+          "id": "c7d4b1",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "9e8f63",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "a1c4d7",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD"
         }
       }
     },
-    "imgList": {
-      "1": {
-        "id": "e9f1b2",
-        "title": "Kömmerling 76 AD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
-        "alt": "",
-        "description": "76AD – FRAME ALONG THE PERIMETER"
+    "BalconyWideKömmerling": {
+      "title": "BALCONY DOORS ON WIDE WINDOW SASH",
+      "description": "By using wide profiles for the window frame, we are able to produce balcony doors that open both inwards and outwards.",
+      "description2": "There are two versions of the solution regarding the threshold of balcony door made on a wide window profile.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          },
+          "2": {
+            "desc": "The second option is a version with a low aluminium threshold."
+          }
+        }
       },
-      "2": {
-        "id": "47c6a3",
-        "title": "Kömmerling 76 MD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
-        "alt": "",
-        "description": "76MD – FRAME ALONG THE PERIMETER"
-      },
-      "3": {
-        "id": "1d8e5f",
-        "title": "Kömmerling 88 MD",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
-        "alt": "",
-        "description": "88MD – FRAME ALONG THE PERIMETER"
-      },
-      "4": {
-        "id": "b3f920",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
-        "alt": "",
-        "description": "76AD – LOW THRESHOLD – opening outwards"
-      },
-      "5": {
-        "id": "62a7cd",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
-        "alt": "",
-        "description": "76MD – LOW THRESHOLD – opening outwards"
-      },
-      "6": {
-        "id": "d4e813",
-        "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
-        "alt": "",
-        "description": "88MD – LOW THRESHOLD – opening outwards"
+      "imgList": {
+        "1": {
+          "id": "e9f1b2",
+          "title": "Kömmerling 76 AD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
+        },
+        "2": {
+          "id": "47c6a3",
+          "title": "Kömmerling 76 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "1d8e5f",
+          "title": "Kömmerling 88 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "b3f920",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD – opening outwards"
+        },
+        "5": {
+          "id": "62a7cd",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
+          "alt": "",
+          "description": "76MD – LOW THRESHOLD – opening outwards"
+        },
+        "6": {
+          "id": "d4e813",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
+          "alt": "",
+          "description": "88MD – LOW THRESHOLD – opening outwards"
+        }
+      }
+    },
+    "BalconyWideSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "imgList": {
+        "1": {
+          "id": "b3e7f2",
+          "title": "Schüco CT 70",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_1.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening outwards"
+        },
+        "2": {
+          "id": "f2c4a5",
+          "title": "Schüco LivIng 82",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_1.jpg",
+          "alt": "",
+          "description": "LivIng 82 – LOW THRESHOLD – opening outwards"
+        },
+        "3": {
+          "id": "d6a9c8",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_2.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening inwards"
+        },
+        "4": {
+          "id": "e9d1b7",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_2.jpg",
+          "alt": "",
+          "description": "LivIng 82 –LOW THRESHOLD – opening inwards"
+        },
+        "5": {
+          "id": "a7f5c3",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_3.jpg",
+          "alt": "",
+          "description": "CT 70 – FRAME ALONG THE PERIMETER"
+        },
+        "6": {
+          "id": "c4e8d9",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_3.jpg",
+          "alt": "",
+          "description": "LivIng 82 – FRAME ALONG THE PERIMETER"
+        }
       }
     }
-  },
-  "BalconyWideSchuco":{
-    "title": "DOOR SYSTEM Schüco",
-    "imgList": {
-      "1": {
-        "id": "b3e7f2",
-        "title":"Schüco CT 70",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_1.jpg",
-        "alt": "",
-        "description": "CT 70 – LOW THRESHOLD – opening outwards"
-      },
-      "2": {
-        "id": "f2c4a5",
-        "title":"Schüco LivIng 82",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_1.jpg",
-        "alt": "",
-        "description": "LivIng 82 – LOW THRESHOLD – opening outwards"
-      },
-      "3": {
-        "id": "d6a9c8",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_2.jpg",
-        "alt": "",
-        "description": "CT 70 – LOW THRESHOLD – opening inwards"
-      },
-      "4": {
-        "id": "e9d1b7",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_2.jpg",
-        "alt": "",
-        "description": "LivIng 82 –LOW THRESHOLD – opening inwards"
-      },
-      "5": {
-        "id": "a7f5c3",
-        "src": "/images/doors/balcony_Terrace/Schuco_CT_70_3.jpg",
-        "alt": "",
-        "description": "CT 70 – FRAME ALONG THE PERIMETER"
-      },
-      "6": {
-        "id": "c4e8d9",
-        "src": "/images/doors/balcony_Terrace/Schuco_Living_82_3.jpg",
-        "alt": "",
-        "description": "LivIng 82 – FRAME ALONG THE PERIMETER"
-      }
-    }
-   }
   },
   "FoldingDoorsPage": {
     "title": "EXTERIOR FOLDING DOORS",
     "description": {
       "p1": "The Polish-based company TUR-PLAST produces ALUMINIUM FOLDING DOORS based on the three-chamber, thermally insulated PANORAMA system by ALIPLAST. This product makes the offer more attractive as it gives architects and individual clients a greater choice in the interior design of houses and business premises.",
-      "p2":"The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space."
+      "p2": "The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space."
     },
     "imgList": {
       "1": {
@@ -2044,7 +2052,7 @@
       },
       "3": {
         "id": "d5g6f4",
-       "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
+        "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
         "alt": ""
       },
       "4": {
@@ -2058,106 +2066,106 @@
         "alt": ""
       }
     },
-   "PanoramaAliplast":{
-    "title": "system PANORAMA – ALIPLAST",
-    "subTitle": "System cross-sections",
-    "imgList": {
-      "1": {
-        "id": "a1f2d3",
-        "src": "/images/doors/folding_doors/panorama_aliplast_1.jpg",
-        "alt": "",
-        "description": "cross-section through the threshold on the frame (inward-opening option)"
+    "PanoramaAliplast": {
+      "title": "system PANORAMA – ALIPLAST",
+      "subTitle": "System cross-sections",
+      "imgList": {
+        "1": {
+          "id": "a1f2d3",
+          "src": "/images/doors/folding_doors/panorama_aliplast_1.jpg",
+          "alt": "",
+          "description": "cross-section through the threshold on the frame (inward-opening option)"
+        },
+        "2": {
+          "id": "b4c5e6",
+          "src": "/images/doors/folding_doors/panorama_aliplast_2.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type A"
+        },
+        "3": {
+          "id": "d7e8f9",
+          "src": "/images/doors/folding_doors/panorama_aliplast_3.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type B"
+        }
       },
-      "2": {
-        "id": "b4c5e6",
-        "src": "/images/doors/folding_doors/panorama_aliplast_2.jpg",
-        "alt": "",
-         "description": "cross-leaf section – type A"
-      },
-      "3": {
-        "id": "d7e8f9",
-       "src": "/images/doors/folding_doors/panorama_aliplast_3.jpg",
-        "alt": "",
-        "description": "cross-leaf section – type B"
-      }
-    },
-    "parametersList": {
-      "1": {
-        "title": "DIMENSIONS:",
-        "list": {
-          "1": {
-            "desc": "Frame installation depth – 74,5 mm"
-          },
-          "2": {
-            "desc": "Sash installation depth – 74,5 mm"
-          },
-          "3": {
-            "desc": "Possible glazing depths – from 16 mm to 50 mm"
+      "parametersList": {
+        "1": {
+          "title": "DIMENSIONS:",
+          "list": {
+            "1": {
+              "desc": "Frame installation depth – 74,5 mm"
+            },
+            "2": {
+              "desc": "Sash installation depth – 74,5 mm"
+            },
+            "3": {
+              "desc": "Possible glazing depths – from 16 mm to 50 mm"
+            }
           }
-        }
-      },
-      "2": {
-        "title": "TESTS AND STANDARDS:",
-        "list": {
-          "1": {
-            "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.68 W/(m2K)"
-          },
-          "2": {
-            "desc": "Air permeability according to DIN EN 12207 (class) – 2"
-          },
-          "3": {
-            "desc": "Wind load resistance to DIN EN 12210 (class)* – C1 (400Pa)"
-          },
-          "4": {
-            "desc": "Watertightness to DIN EN 12208 (class) – E1050 (1050 Pa)"
-          }      
-        }
-      },
-      "3": {
-        "title": "SPECIFICATION / SYSTEM PROPERTIES",
-        "list": {
-          "1": {
-            "desc": "A three-chamber thermally insulated door system designed for the construction of folding doors;"
-          },
-          "2": {
-            "desc": "Two possible types of the threshold system: a system with a flat threshold and brush sealing or a tight threshold based on a complete frame along the perimeter of the entire terrace window;"
-          },
-          "3": {
-            "desc": "Depending on the requirements and application, the Panorama system offers inward-opening or outward-opening structures in a very large configuration of leaves (2+1, 3+2, 3+3);"
-          },
-          "4": {
-            "desc": "New integrated fittings: a hinge with a bottom carriage, a hinge with a pull, and low handles improve the functionality of the structure, while reducing the size of the complex folding door structure;"
-          },
-          "5": {
-            "desc": "The minimised visual width of the profile used in the system makes the folding door seem light;"
-          },
-          "6": {
-            "desc": "The Panorama system is available in a version with increased thermal insulation – thanks to the use of additional thermal inserts on the perimeter and between the breaks of the door leaf as well as the frames; available options: Panorama, Panorama i+;"
-          },
-          "7": {
-            "desc": "The folding door system allows for the creation of a nice-looking and functional structure, comfortable for users, but also provides the possibility of very effective use of the space in the building;"
-          },
-          "8": {
-            "desc": "The wide range of available solutions and potential applications enables the design of structures for balconies, terraces or winter gardens as well as public utility buildings and commercial facilities;"
-          },
-          "9": {
-            "desc": "possibility of varnishing according to the RAL palette (Qualicoat 1518), in the wood structure – Aliplast Wood Colour Effect (Qualideco PL-0001), anodised finish (Qualanod 1808), also bi-colour."
+        },
+        "2": {
+          "title": "TESTS AND STANDARDS:",
+          "list": {
+            "1": {
+              "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.68 W/(m2K)"
+            },
+            "2": {
+              "desc": "Air permeability according to DIN EN 12207 (class) – 2"
+            },
+            "3": {
+              "desc": "Wind load resistance to DIN EN 12210 (class)* – C1 (400Pa)"
+            },
+            "4": {
+              "desc": "Watertightness to DIN EN 12208 (class) – E1050 (1050 Pa)"
+            }
+          }
+        },
+        "3": {
+          "title": "SPECIFICATION / SYSTEM PROPERTIES",
+          "list": {
+            "1": {
+              "desc": "A three-chamber thermally insulated door system designed for the construction of folding doors;"
+            },
+            "2": {
+              "desc": "Two possible types of the threshold system: a system with a flat threshold and brush sealing or a tight threshold based on a complete frame along the perimeter of the entire terrace window;"
+            },
+            "3": {
+              "desc": "Depending on the requirements and application, the Panorama system offers inward-opening or outward-opening structures in a very large configuration of leaves (2+1, 3+2, 3+3);"
+            },
+            "4": {
+              "desc": "New integrated fittings: a hinge with a bottom carriage, a hinge with a pull, and low handles improve the functionality of the structure, while reducing the size of the complex folding door structure;"
+            },
+            "5": {
+              "desc": "The minimised visual width of the profile used in the system makes the folding door seem light;"
+            },
+            "6": {
+              "desc": "The Panorama system is available in a version with increased thermal insulation – thanks to the use of additional thermal inserts on the perimeter and between the breaks of the door leaf as well as the frames; available options: Panorama, Panorama i+;"
+            },
+            "7": {
+              "desc": "The folding door system allows for the creation of a nice-looking and functional structure, comfortable for users, but also provides the possibility of very effective use of the space in the building;"
+            },
+            "8": {
+              "desc": "The wide range of available solutions and potential applications enables the design of structures for balconies, terraces or winter gardens as well as public utility buildings and commercial facilities;"
+            },
+            "9": {
+              "desc": "possibility of varnishing according to the RAL palette (Qualicoat 1518), in the wood structure – Aliplast Wood Colour Effect (Qualideco PL-0001), anodised finish (Qualanod 1808), also bi-colour."
+            }
           }
         }
       }
     }
-   }
   },
   "DoorPanelsPage": {
     "title": "DOOR FEATURES – Door Fillings – Panels for PVC and Aluminium Doors",
     "description": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam. This combination ensures very good thermal insulation of the door. The panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays.",
-    "subTitle":"Choose the perfect color for your door: two diverse color palettes",
+    "subTitle": "Choose the perfect color for your door: two diverse color palettes",
     "cards": {
       "1": {
         "id": "m4q25v",
         "slug": "panels-doors-paneldoor",
         "title": "PVC Doors – Schüco Profiles",
-        "description":"Choose from the classic Schüco palette, which offers a wide range of colors for any style and design. Thanks to the Qualicoat 1518 certification, your door will retain its rich color and shine for many years.",
+        "description": "Choose from the classic Schüco palette, which offers a wide range of colors for any style and design. Thanks to the Qualicoat 1518 certification, your door will retain its rich color and shine for many years.",
         "src": "/images/doors/exterior-door.webp",
         "alt": ""
       },
@@ -2165,9 +2173,219 @@
         "id": "x0w5pl",
         "slug": "panels-doors-frohmasco",
         "title": "PVC Doors – Kömmerling Profiles",
-        "description":"Choose naturalness with the Kömmerling Wood Color Effect palette, which gives your door a refined look of wood texture. This option, certified by Qualideco PL-0001, perfectly matches the aesthetics of natural wood with the strength of aluminum.",
+        "description": "Choose naturalness with the Kömmerling Wood Color Effect palette, which gives your door a refined look of wood texture. This option, certified by Qualideco PL-0001, perfectly matches the aesthetics of natural wood with the strength of aluminum.",
         "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
+      }
+    }
+  },
+  "DoorFillingFrohMaskoPage":{
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description":"We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "FrohmaskoCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title":"SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title":"SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title":"SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title":"SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title":"SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title":"SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "DoorFillingPanelDoorPage":{
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description":"We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "PanelDoorCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title":"SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title":"SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title":"SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title":"SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title":"SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title":"SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -2201,6 +2419,415 @@
         "id": "x7w5pl",
         "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
+      }
+    }
+  },
+  "RollerBlindsPage": {
+    "title": "Roller Shutters / Sun Protection Covers",
+    "description": "External roller shutters: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our external roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
+    "rollersList": {
+      "1": {
+        "id": "m9q29q",
+        "slug": "adaptive-external-roller-shutters",
+        "title": "Adaptive External Roller Shutters",
+        "description": "Adaptive roller shutters are installed primarily in buildings where windows have already been installed. However, many of our clients use this type of roller shutters in newly-built houses or in buildings where windows are being replaced.",
+        "src": "/images/roller_shutters/adaptive_rs.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7b0pl",
+        "slug": "top-mounted-external-roller-shutters",
+        "title": "Top-mounted External Roller Shutters",
+        "description": "EXTE is our new versatile system of top-mounted roller shutters for installation on both sides, used in newly-built and renovated houses.",
+        "src": "/images/roller_shutters/top_mounted_rs.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "o9k14n",
+        "slug": "screen-covers",
+        "title": "Screen (Reflexol) Covers",
+        "description": "The screen-type roller shutter systems offered by Tur-Plast are perfect for protecting rooms with a lot of glazing from excessive insolation. In an extended position, the reflexol-type screens can also be a perfect barrier against insects and various types of pollution.",
+        "src": "/images/roller_shutters/screen_covers.webp",
+        "alt": ""
+      },
+      "4": {
+        "id": "d236vc",
+        "slug": "accessories-additions-roller-shutters-sun-protection-covers",
+        "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+        "description": "When choosing roller shutters or sun protection covers, it is best to see the whole range of possible additional solutions that can significantly facilitate the operation and use of the products.",
+        "src": "/images/roller_shutters/accessories.webp",
+        "alt": ""
+      }
+    }
+  },
+  "AdaptiveExternalPage": {
+    "title": "Adaptive External Roller Shutters – concealed and surface-mounted/roller shutters box made of aluminium/",
+    "description": "Adaptive roller shutters are mounted in buildings with pre-mounted windows. But many our clients decide to mount these shutters for newly-erected houses or buildings where exchange of the windows is executed. We offer CONCEALED ADAPTIVE ROLLER SHUTTERS with two options of assembly and SURFACE-MOUNTED ADAPTIVE ROLLER SHUTTERS of an OVAL type. Characteristic feature of these systems are aluminium guides, housing and roller shutter box with a drain channel located outside the building.",
+    "AdaptiveExternalCards": {
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "title": " Surface-mounted adaptive roller shutters of an oval type",
+          "src": "/images/roller_shutters/adaptive_rs/RS_oval_type.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "INSTALLATION IN THE INSULATION LAYER",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 190 mm x 185 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "very easy assembly;"
+              },
+              "2": {
+                "desc": "no negative effect on the energy balance of the building;"
+              },
+              "3": {
+                "desc": "possible to mount in the already existing buildings;"
+              },
+              "4": {
+                "desc": "rigid structure – the entire unit is made of aluminium (the slats, guiding channels and a rigid cassette of pressed aluminium);"
+              },
+              "5": {
+                "desc": "has a positive effect on the optics of the facade; the height of the cassette is 180 mm."
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g5j7sj",
+          "title": "CONCEALED ADAPTIVE ROLLER SHUTTERS INTEGRO",
+          "src": "/images/roller_shutters/adaptive_rs/RS_Integro.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "MOUNTED TO THE FACE OF ELEVATION + STYROFOAM",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 180 mm x 180 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "possible to mount also in the already existing buildings, after appropriate adjustments are made in the lintel area, or less frequently in front of the window;"
+              },
+              "2": {
+                "desc": "the entire unit is made of aluminium (the slats, guide rails and a rigid cassette of pressed aluminium);"
+              },
+              "3": {
+                "desc": "provides optimal solutions for designers and developers;"
+              },
+              "4": {
+                "desc": "INTEGRO system elements do not interfere with the window, door, or lintel structure (stiffness), thus they do not have any negative effect on the energy balance of the building;"
+              },
+              "5": {
+                "desc": "the INTEGRO system allows a single roller blind type which is wound up outwardly (left-handed rotation);"
+              },
+              "6": {
+                "desc": "an inspection flap is placed at the bottom (with external access);"
+              },
+              "7": {
+                "desc": "cassette height – 180 mm; very easy assembly;"
+              }
+            }
+          }
+        }
+      }
+    },
+    "GuideChannels": {
+      "title": "GUIDE CHANNELS in single and double execution",
+      "1": {
+        "id": "j5f3mp",
+        "title": "Chamber straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/chamber_straight.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "v0r2bm",
+        "title": "Straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/straight_guide.jpg",
+        "alt": ""
+      }
+    },
+    "Housing": {
+      "title": "HOUSING – Lamele Aluprof PA 39",
+      "description": "PA 39 profile is one of the most popular aluminium profiles. It is so popular that the shutters made of this profile has been used in European houses for years now. Its main features are small width and tapering shape. It rolls up perfectly and fits to even small boxes. Thanks to the foam filling the profile inside, it is well insulated in terms of temperatures and noise. Small weight allows for manual drive, spring drive or electric operation. PA 39 is offered as a perforated version or plain in wide range of colours similar to RAL palette. The profiles are durable in terms of colour and resistance to wear-off. The profile is also resistant to the impact of atmospheric conditions.<br></br>Aluminium profiles belong to products which are ecologically clean. The foam inside is free of freon compounds and the paints do not contain cadmium."
+    }
+  },
+  "TopMountedPage":{
+    "title": "Top-mounted External Roller Shutters",
+    "description": "EXTE  is a new, universal roller blind system enabling either side mounting in newly built and renovated buildings. The most characteristic features of the system include:",
+    "parametersList": {
+      "list": {
+        "1": {
+          "desc": "changing position of the inspection flap;"
+        },
+        "2": {
+          "desc": "at the bottom or at the back of the cassette, or as an alternative, outside of the building. Regardless of the flap position, the cassette capacity does not change;"
+        },
+        "3": {
+          "desc": "completely new assembly of drives and bearing of the roller blind;"
+        },
+        "4": {
+          "desc": "universal side guide rail, very easy mounting;"
+        },
+        "5": {
+          "desc": "division and adjustable rolling; window mosquito nets and unique solutions for door mosquito nets."
+        }
+      }
+    },
+    "RSBoxSection": {
+      "title": "A ROLLER SHUTTER BOX – types",
+      "description": "We offer two types of roller shutter boxes:",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "EXPERT XT – roller shutter box 185mm x 220 mm, for the window of the height to 2300 mm (height measured together with the box)."
+          },
+          "2": {
+            "desc": "ELITE XT – roller shutter box 240mm x 220 mm, for the window of the height to 2800 mm (height measured together with the box). The system allows an additional mosquito net to be integrated within."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "c903lz",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "fg57qt",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_2.jpg",
+          "alt": ""
+        }
+      }
+    },
+    "GuideRailsTypes": {
+      "title": "GUIDE RAILS FOR ROLLER SHUTTER ELEMENTS ON WINDOWS AND DOORS",
+      "1": {
+        "id": "78h5kp",
+        "title": "GUIDE CHANNELS in single execution",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_1.jpg",
+        "alt": "",
+        "description": "Roller shutter guides made of PVC are a complement roller shutter boxes."
+      },
+      "2": {
+        "id": "6vr2om",
+        "title": "GUIDE CHANNELS in double execution",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_1.jpg",
+        "alt": "",
+        "description": "In the place where the blinds are divided standard is mounted the guide to the desired size thanks to a special profile widening."
+      },
+      "3": {
+        "id": "26l2dm",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      },
+      "4": {
+        "id": "p7m2lc",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      }
+    },
+    "TechnicalSolutionsne": {
+      "title": "TECHNICAL SOLUTIONSNE",
+      "1": {
+        "id": "95b7lz",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_1.jpg",
+        "alt": "",
+        "description": "Simple adjustment of insulating filing"
+      },
+      "2": {
+        "id": "l3t0pt",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_2.jpg",
+        "alt": "",
+        "description": "Special steel reinforcement for windows of the width above 1500 mm. Patented unique product of secure and gap-free joining."
+      },
+      "3": {
+        "id": "m45n9g",
+       "src": "/images/roller_shutters/top_mounted_rs/technical_solition_3.jpg",
+        "alt": "",
+        "description": "EFFECTIVE THERMAL INSULATION – additional energy saving. The legal requirements regarding thermal insulation properties of cassettes in Germany are very strict. As the system is manufactured in this country, it is subject to the national regulations set in the Energy Saving Regulations (EnEV). According to the document, in new buildings, a blind cassette is considered to be a part of an external wall. In such a case, it is required to prove the accordance with the examples included in Appendix 2 of the DIN4108 standard. That is why, architects can do calculations taking into account a reduced heat transmission coefficient of a thermal bridge. The EXTE roller blind system provides excellent thermal insulation, according to applicable regulations."
+      }
+    }
+  },
+  "ScreenPage":{
+    "title": "Roller Shutters / Sun Protection Covers",
+    "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
+    "alt":"",
+    "descrList":{
+      "1":{
+        "desc":"EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
+      },
+      "2":{
+        "desc":"Screens can be operated with a switch, remote control, but also mobile device."
+      },
+      "3":{
+        "desc":"The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
+      }
+    },
+    "ScreensList":{
+     "title": "Roller Shutters / Sun Protection Covers",
+     "description":"Screens represent a combination of functionality and convenience of use. Retrofitting the covers with weather automation and overload electric drives guarantees their years-long and trouble-free operation, while ensuring the comfort of daily use.",
+     "imgList": {
+      "1": {
+        "id": "v8g9xw",
+        "src": "/images/roller_shutters/screen_covers/screen_list_1.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "35h8lm",
+       "src": "/images/roller_shutters/screen_covers/screen_list_2.jpg",
+        "alt": ""
+      }
+    },
+    "parametersList": {
+      "title":"TECHNICAL DATA:",
+      "list": {
+        "1": {
+          "desc": "Dimensions – Possibility to cover the surface up to a width of 5m or up to an area of 15m2;"
+        },
+        "2": {
+          "desc": "Operation – Via remote control, switch or mobile device;"
+        },
+        "3": {
+          "desc": "Available boxes – We offer boxes with dimensions of 95 mm, 105 mm, 125 mm;"
+        },
+        "4": {
+          "desc": "Colour palette – Any colour from the RAL palette;"
+        },
+        "5": {
+          "desc": "Fabric structure – Regular (Soltis) and diagonal (Serge, Nova);"
+        }
+      }
+    }
+    }
+  },
+  "AccessoriesRSPage":{
+    "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+    "description": "Accessories and additions for roller shutters and sun protection covers enhance both their functionality and aesthetic appeal. These supplementary components include items such as remote controls, manual cranks, and automated motors for seamless operation, as well as sensors that detect sunlight or wind to adjust covers automatically. Such features provide improved convenience, energy efficiency, and durability, making these systems adaptable to modern lifestyles and varying weather conditions.In addition to operational accessories, decorative elements like custom color options, frames, or specialized coatings can complement the design of any building. Accessories designed for sun protection covers may include adjustable brackets, side channels, or advanced fabrics with UV filtering, ensuring optimal light control and thermal insulation. Together, these additions elevate the usability and performance of roller shutters and sun protection solutions, catering to both residential and commercial needs.",
+    "ExternalRS": {
+      "title": "OPERATION OF EXTERNAL ROLLER SHUTTERS – options of use",
+      "1": {
+        "id": "v5b8lz",
+        "title": "Manual operation",
+        "src": "/images/roller_shutters/adaptive_rs/manual.webp",
+        "alt": "",
+        "description": "Manual operation of roller shutter allows for winding up and down with the use of a retractor (pulling the tape or a rope) or a retractor with a crank handle. For external roller shutters each such option requires effort and time if it is used several times a day."
+      },
+      "2": {
+        "id": "l3g7pt",
+        "title": "Electric operation",
+        "src": "/images/roller_shutters/adaptive_rs/electric.jpg",
+        "alt": "",
+        "description": "Electric operation. A drive – a very good quality of engine with mechanical limit switches – Motus Monos produced by NICE company. It has a noiseless gearshift and brakes."
+      },
+      "3": {
+        "id": "d1n7pg",
+        "title": "Radio-operation",
+       "src": "/images/roller_shutters/adaptive_rs/radio_operation.webp",
+        "alt": "",
+        "description": "Radio-operation is powered by an advanced RolTop-868 engine with a built-in radio center, offering intelligent detection to stop and reverse motion upon encountering obstacles. The system features adjustable final positions, silent braking, and two-way communication with routing capabilities to ensure seamless remote control operation."
+      }
+    },
+    "RemoteControls": {
+      "title": "Available remote controls",
+      "cards": {
+        "1": {
+          "id": "v7j7fj",
+          "title": "SoloTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_1.jpg",
+          "alt": "",
+          "descrList":{
+            "1":{
+              "desc":"1-channel REMOTE CONTROL with a wall handle, safe frequency of 868 Mhz."
+            },
+            "2":{
+              "desc":"Operating in a two-direction radio system."
+            },
+            "3":{
+              "desc":"Signals confirming the reception of a command by a receiver."
+            },
+            "4":{
+              "desc":"Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "2": {
+          "id": "j4v1sj",
+          "title": "MonoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_2.jpg",
+          "alt": "",
+          "descrList":{
+            "1":{
+              "desc":"1-channel REMOTE CONTROL with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2":{
+              "desc":"Operating in a two-direction radio system."
+            },
+            "3":{
+              "desc":"Signals confirming the reception of a command by a receiver."
+            },
+            "4":{
+              "desc":"Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "3": {
+          "id": "m1x4aj",
+          "title": "VarioTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_3.jpg",
+          "alt": "",
+          "descrList":{
+            "1":{
+              "desc":"5-channel REMOTE CONTROL with the function of central channel and with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2":{
+              "desc":"Operating in a two-direction radio system."
+            },
+            "3":{
+              "desc":"Available simple programming and the use of two intermediate positions."
+            },
+            "4":{
+              "desc":"Manual/automatic switch included."
+            }
+          }
+        },
+        "4": {
+          "id": "25c7sk",
+          "title": "TempoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_4.jpg",
+          "alt": "",
+          "descrList":{
+            "1":{
+              "desc":"10-channel REMOTE CONTROL with the possibility to make 2 groups + function of central channel."
+            },
+            "2":{
+              "desc":"Clock function (opening and closing at certain times), holiday function (simulates the presence of house-holders)."
+            },
+            "3":{
+              "desc":"Availability of programming."
+            },
+            "4":{
+              "desc":"Manual/automatic switch included for each channel of a remote control."
+            }
+          }
+        }
       }
     }
   },

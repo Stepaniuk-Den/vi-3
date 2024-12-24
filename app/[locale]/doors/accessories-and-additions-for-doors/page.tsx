@@ -15,7 +15,7 @@ const DoorsAccessories: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
       <SectionCarouselAndDescr t={t} />
       </section>
       

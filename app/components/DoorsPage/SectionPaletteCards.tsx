@@ -31,6 +31,8 @@ const SectionPaletteCards: React.FC<ISectionPaletteCardsProps> = ({
               description={card.description}
               src={card.src}
               alt={card.alt}
+              path="doors/door-fillings-panels-for-doors"
+              slug={card.slug}
               tBtn={tBtn("see")}
             />
           ))}
