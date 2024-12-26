@@ -44,7 +44,7 @@ const ItemCard: React.FC<IItemCard> = ({
       )}
       // style={{ backgroundColor: background }}
     >
-      {layout !== "horizontal" && (
+      {layout !== "horizontal" && title && (
         <div>
           {/* className="flex-grow" */}
           <h3 className="subTitleCl xl:leading-none">{title}</h3>

@@ -2,10 +2,7 @@ import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselA
 import MessageBanner from "@/app/components/MessageBanner";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
-import {
-  INestedCardsSectionItem,
-  INestedCardsSectionsList,
-} from "@/helpers/interfaces";
+import { INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -34,8 +31,8 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
           key={idx}
           tSectionItem={tSectionItem as INestedCardsSectionItem}
           titleBanner={true}
-          size="w-full"
-          positioning={idx === 0 ? "grid2" : "grid3"}
+          size={idx === 0 ? "w-full" : "max-w-[396px]"}
+          positioning={idx === 0 ? "grid" : "flexWrap"}
           isRow={false}
           imageFit="contain"
           // titleBannerCard={idx === 0}

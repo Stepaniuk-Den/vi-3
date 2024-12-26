@@ -3,6 +3,7 @@ import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
 import TitleBanner from "./TitleBanner";
 import clsx from "clsx";
+// import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 
 type Props = {
   // tSectionItem: {
@@ -18,10 +19,14 @@ type Props = {
   tSectionItem: INestedCardsSectionItem;
   // sectionIdx: number;
   // titleBannerCard?: boolean;
-  // isGrid?: boolean;
   titleBanner?: boolean;
-  size?: "w-1/2" | "w-1/4" | "w-full";
-  positioning?: "flex" | "grid2" | "grid3";
+  width?: string;
+  height?: string;
+  size?: string;
+  // size?: "w-1/2" | "w-1/4" | "w-full";
+  // isGrid?: boolean;
+  // positioning?: "flex" | "grid2" | "grid3";
+  positioning?: "flexWrap" | "grid";
   imageFit?: "cover" | "contain";
   isRow?: boolean;
   descReverse?: boolean;
@@ -30,22 +35,20 @@ type Props = {
 const NestedCardsSection: React.FC<Props> = ({
   // sectionIdx,
   // titleBannerCard,
-  // isGrid = false,
   tSectionItem,
+  // width,
+  // height,
   size,
   titleBanner,
-  positioning = "flex",
+  // isGrid = false,
+  positioning,
   imageFit,
   isRow,
   descReverse = false,
 }) => {
-  // console.log("🚀 ~ tSectionItem:", tSectionItem);
-
   const nestedCardsList = Object.values(tSectionItem).filter(
     (item) => typeof item === "object" && "id" in item
   ) as INestedCard[];
-  // console.log("🚀 ~ nestedCardsList:", nestedCardsList);
-  // console.log(tSectionItem.parametersList);
 
   // const size = sectionIdx === 0 ? "w-1/4" : "w-full";
 
@@ -66,28 +69,38 @@ const NestedCardsSection: React.FC<Props> = ({
         {tSectionItem.description && descReverse && (
           <p className="mb-5">{tSectionItem.description}</p>
         )}
+
         <ul
-          className={clsx("gap-6", {
-            "flex justify-center ": positioning === "flex",
-            "grid grid-cols-2": positioning === "grid2",
-            "grid grid-cols-3": positioning === "grid3",
+          className={clsx("flex justify-center gap-6", {
+            "flex-wrap": positioning === "flexWrap",
+            "grid grid-cols-2": positioning === "grid",
+            // "flex justify-center": positioning === "flex",
+            // "grid grid-cols-3": positioning === "grid3",
           })}
         >
-          {nestedCardsList.map((nestedCard) => (
-            <NestedCard
-              key={nestedCard.id}
-              title={nestedCard.title}
-              description={nestedCard.description}
-              src={nestedCard.src || ""}
-              alt={nestedCard.alt || ""}
-              size={size}
-              isRow={isRow}
-              imageFit={imageFit}
-              // titleBannerCard={titleBannerCard}
-              // layout="horizontal"
-              // background={idx % 2 === 0 ? `${background}` : ""}
-            />
-          ))}
+          {nestedCardsList.map((nestedCard) => {
+            // const currentWidth = getImageDimensionValue(width, idx, "w-full");
+            // const currentHeight = getImageDimensionValue(
+            //   height,
+            //   idx,
+            //   "h-[460px]"
+            // );
+            return (
+              <NestedCard
+                key={nestedCard.id}
+                title={nestedCard.title}
+                description={nestedCard.description}
+                src={nestedCard.src || ""}
+                alt={nestedCard.alt || ""}
+                size={size}
+                isRow={isRow}
+                imageFit={imageFit}
+                // titleBannerCard={titleBannerCard}
+                // layout="horizontal"
+                // background={idx % 2 === 0 ? `${background}` : ""}
+              />
+            );
+          })}
         </ul>
 
         {tSectionItem.description && !descReverse && (

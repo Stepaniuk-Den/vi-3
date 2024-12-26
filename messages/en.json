@@ -47,8 +47,20 @@
           "slug": "windows-aluminium-aliplast"
         },
         "4": {
-          "title": "glass windows",
+          "title": "glass",
           "slug": "windows-glass"
+        },
+        "5": {
+          "title": "fittings and seals",
+          "slug": "windows-fittings-and-seals"
+        },
+        "6": {
+          "title": "mullions",
+          "slug": "window-mullions"
+        },
+        "7": {
+          "title": "colours",
+          "slug": "windows-colours"
         }
       }
     },
@@ -1190,14 +1202,224 @@
           "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
+        }
+      }
+    }
+  },
+
+  "WindowsFittingsSealsPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "GasketsFittingsSection": {
+      "title": "Gaskets and Fittings",
+      "gaskets": {
+        "subTitle": "top-class window seals – made of EPDM",
+        "card": {
+          "title": "WINDOWS GASKETS",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
         },
-        "6": {
-          "id": "6",
-          "title": "Self-cleaning panes",
-          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+        "parametersList": {
+          "1": {
+            "description": "Quality depends on details – the saying is perfectly right if we talk about window joinery. Even though profiles and glass units offer excellent performance but the applied seals are of poor quality or are improperly fixed – the WINDOWS are worthless. Seals seem to be minor window elements, but in fact they determine very important parameters including:",
+            "list": {
+              "1": {
+                "desc": "thermal insulation;"
+              },
+              "2": {
+                "desc": "water-tightness;"
+              },
+              "3": {
+                "desc": "ventilation;"
+              },
+              "4": {
+                "desc": "acoustic insulation."
+              }
+            }
+          },
+          "2": {
+            "description": "Our seals are highly resistant to weather conditions, and they are also ductile, and hence resistant to deformation. These are the qualities of the material used for manufacturing the seals – synthetic rubber, commonly known as EPDM. This is why, our EPDM seals can be described as:",
+            "list": {
+              "1": {
+                "desc": "resistant to ageing;"
+              },
+              "2": {
+                "desc": "resistant to changing weather conditions;"
+              },
+              "3": {
+                "desc": "performing well in the temperature between -40 and +110 C degrees;"
+              },
+              "4": {
+                "desc": "resistant to humidity, steam or UV radiation;"
+              },
+              "5": {
+                "desc": "highly elastic;"
+              },
+              "6": {
+                "desc": "resistant to cracks and deformation;"
+              }
+            }
+          }
+        }
+      },
+      "fittings": {
+        "subTitle": "MACO MULTI-MATIC – a new generation of fittings",
+        "card": {
+          "title": "WINDOWS FITTINGS",
+          "description": "Fittings in a window structure are responsible for proper opening and closing of a window sash. Window fittings allow to set different sash positions: side-hung, tilt, turn-tilt, slide-tilt, slide-fold. When buying windows, one needs to take into account if a given solution offers significantly better performance in terms of security, functioning and comfort. TUR-PLAST uses window fittings produced by the reputable MACO company. The products offer security and reliability for many years.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         }
+      }
+    },
+    "FittingsFeaturesSection": {
+      "title": "Characteristic features of the MACO MULTI-MAC fittings include:",
+      "1": {
+        "id": "1",
+        "title": "SAFEGUARD AGAINST FAULTY CONTROL",
+        "description": "The MACO company is one of the first manufacturers who equipped standard fittings with the mechanism blocking window operation in the case of faulty handle position. It is integrated with the sash lifter which has been improved even further. The mechanism prevents the so called „sash slip” from the top hinge, which frequently causes client complaints.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "ADDITIONAL TILT SETTING FOR „SLOT VENTILATION”",
+        "description": "The function allows to leave small slot between the window frame and sash which guarantees continuous, controlled inflow of fresh air. The micro-ventilation function is entirely integrated with the stay; when switching to the tilt setting at 45 o, the sash stands out approximately 10-13 mm; The ventilation setting is not affected by draught or wind.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "ADJUSTABLE i.S SECURITY CAMS – intelligent security",
+        "description": "The security cams are equipped with their own pressure control and hence: seal windows tightly reduce costs; distinguish our windows from the products offered by the competition. When you choose TUR-PLAST windows, you receive fittings with security cams resistant to break-ins, mounted all around the window frame.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "title": "DUMMY SASH GEAR PROTECTING AGAINTS BREAK-INS",
+        "description": "A perfect solution for comfortable and secure windows. Comfortable to operate. Only two hardware components.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "title": "UNIFROM SIILVER-LOOK COATING AND CONNECTING EDGE COVER PROVIDING PROTECTION AGAINST CORROSION",
+        "description": "MACO is the first manufacturer who, since 2000, has been applying silver passivation treatments with electro-zinc coating, free of Chromium (VI), and wax coating without using silicate. The changes improved the protective qualities of the fitting surface and eliminated the use of Chromium (VI). Steel fitting elements are coated with zinc, chromium or wax.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "title": "DOOR SNAPPER FOR BALCONY DOORS",
+        "description": "The snapper keeps the sash in the frame without the need to use the window handle. It turns off automatically if the sash is in the tilt position. Adjustable height.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "title": "PERFECT IN ALL DETAIL: INNER CENTRAL COMPRESSION LOCK",
+        "description": "The contact pressure can easily be adjusted with i.S. cams and hence, they: seal the window tightly, save heating costs, ensure satisfied customers distinguish our windows from the products offered by the competition.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "title": "3D HINGE REGULATED IN THREE DIRECTIONS",
+        "description": "The set of bottom hinges can be regulated in three directions (height adjustment, side adjustment and compression setting). The stays allow to lower and lift sashes and to adjust contact pressure.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "title": "SECURE TILT POSITION",
+        "description": "Basic security at window’s most critical point. No special striker plate needed. Protection against levering up, also in the tilt position.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "title": "i.S. STRIKER PLATES",
+        "description": "A special composition of high-quality materials and specialist casting procedures ensure complete stability. The fittings are screwed into the frame reinforcement.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "title": "FITTING PARTS WHICH ARE RESISTANT TO BREAK-INS CAN BE EASILY FIXED",
+        "description": "Should increased window security be desired at a later date, it is very easy to change the standard striker plates for the i.S. security striker plates thanks to identical screw positions.The standard fittings have two security points. The fittings of class Wk1 have four security striker plates. The fittings of class Wk 2, however, have between 8 and 10 i.S. security striker plates.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    },
+    "FittingComponentsSection": {
+      "title": "Fitting components:",
+      "card": {
+        "id": "1",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+
+  "WindowMullionsPage": {
+    "title": "Window mullions",
+    "card": {
+      "description": "In order to highlight the character of a window, an elevation, or even the particular features of the whole building, we offer muntin windows. These are highly recommended for stylized houses and buildings of the past whose casements used to be split into smaller units because of construction factors and limitations. Consequently, we have included windows with muntins in our offer too. Larger glass surfaces are naturally a better choice to complete modern interiors; nevertheless custom-made muntins can be successfully used with present day architecture.Wide, structural or glass bond muntins should be applied with care since they reduce the amount of light that is let in, affect thermal insulation, and create some difficulties in cleaning panes.",
+      "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+      "alt": ""
+    },
+    "MuntinTypesSection": {
+      "title": "We can distinguish the following muntin types:",
+      "1": {
+        "id": "1",
+        "title": "STRUCTURAL MUNTINS",
+        "description": "Structural muntins which constitute a part of the window frame and divide the glass pane into smaller, adjacent panes. Their finishing is identical to that of the window frames. Our windows consist of standard transoms and vertical dividers 91 mm wide (the cross pattern is very popular – it splits the window pane into 4 pane units in 1,2 or 4 casements). If the glass should be broken, only one small pane has to be replaced as opposed to single glass pane windows where the entire pane needs to be removed and replaced.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "BETWEEN THE PANES MUNTINS",
+        "description": "Between the panes muntins are made of aluminium or PVC and placed in spaces between the insulating glass panes. Their colour can match that of the window frames, but they can also be produced in gold or silver options. They are usually supplied in widths of 8, 18, 26 or 45 mm. This type are considered the most convenient type whilst it comes to washing the windows.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "VIENNA MUNTINS",
+        "description": "Vienna muntins are glued onto the glazing surface. In our windows these are made of PVC with sealed finished edges. The use of a spacing frame inside the glazing unit, imitates the pattern typical for structural muntins. They are available in two widths: 25 and 37 mm. The Venice muntins, which are more popular for wooden windows, provide a similar solution to the Vienna ones. In this case, however, the muntins are glued onto the glazing pane, but neither seal nor distance frame are used.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "WindowsColoursPage": {
+    "title": "Colour palette for window profiles",
+    "description": "When choosing windows and doors, one of the things to think about is the choice of colours. Below we present our colour offers for window and door profiles for both PVC Schüco and Kömmerling as well as aluminium Aliplast and Aluron.",
+    "coloursList": {
+      "1": {
+        "id": "1",
+        "description": "Colour palette for window profiles – Schüco",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "2": {
+        "id": "2",
+        "description": "Colour palette for window profiles – Kömmerling",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "3": {
+        "id": "3",
+        "description": "Colour palette for window profiles – Aluron",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "4": {
+        "id": "4",
+        "description": "Colour palette for window profiles – Aliplast",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
       }
     }
   },
@@ -2492,6 +2714,7 @@
       }
     }
   },
+
   "SlidingDoorsPage": {
     "title": "SLIDING TERRACE DOORS from Poland",
     "description": "Sliding terrace doors are an ideal solution for modern and large interiors. They have a lot of glazing, making them able to optimally light up the room. They have very good thermal insulation (no thermal bridges), and thanks to the modern fittings technology, we can experience real comfort and joy from using large sliding doors. The solutions proposed by Tur-Plast are an alternative to standard double-leaf balconies. Our offer includes solid and exclusive lift-and-slide terrace doors made of PVC and aluminium.",

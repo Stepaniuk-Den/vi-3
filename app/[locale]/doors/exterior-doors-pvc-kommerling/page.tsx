@@ -35,8 +35,7 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
-        // isGrid
-        positioning="grid2"
+        positioning="grid"
       />
       <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false} />
     </section>

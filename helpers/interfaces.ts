@@ -42,7 +42,7 @@ export interface IGuideProjectElement {
 export interface IItemCard {
   id?: string;
   slug?: string;
-  title: string;
+  title?: string;
   description?: string;
   src: string | StaticImageData;
   alt: string;
@@ -63,7 +63,9 @@ export interface INestedCard {
   src: string | StaticImageData;
   alt: string;
   className?: string;
-  size?: "w-1/2" | "w-1/4" | "w-full";
+  // sizesize?: string;
+  size?: string;
+  //   size?: "w-1/2" | "w-1/4" | "w-full";
   titleBannerCard?: boolean;
   isRow?: boolean;
   imageFit?: "cover" | "contain";
@@ -87,7 +89,7 @@ export interface IParametersList {
 export interface INestedCardsSectionItem {
   title?: string;
   description?: string;
-  [key: string]: string | INestedCard | IParametersList | undefined;
+  [key: string]: INestedCard | IParametersList | string | undefined;
   parametersList?: IParametersList;
   //   size?: "w-1/4" | "w-full";
   //   titleBanner?: boolean;

@@ -32,6 +32,7 @@ const SectionPaletteCards: React.FC<ISectionPaletteCardsProps> = ({
               src={card.src}
               alt={card.alt}
               tBtn={tBtn("see")}
+              alignment="end"
             />
           ))}
         </ul>

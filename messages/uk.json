@@ -49,6 +49,10 @@
         "4": {
           "title": "glass windows",
           "slug": "windows-glass"
+        },
+        "5": {
+          "title": "fittings and seals",
+          "slug": "windows-fittings-and-seals"
         }
       }
     },

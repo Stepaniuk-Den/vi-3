@@ -38,7 +38,8 @@ const WindowsAluAliplastPage: React.FC<Props> = ({ params: { locale } }) => {
           tSectionItem={tSectionItem as INestedCardsSectionItem}
           titleBanner={true}
           // titleBannerCard={idx === 0}
-          size={idx === 0 ? "w-1/4" : "w-full"}
+          imageFit="contain"
+          size={idx === 0 ? "w-1/4" : "w-1/2"}
           // sectionIdx={idx}
         />
       ))}
