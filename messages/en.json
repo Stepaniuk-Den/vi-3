@@ -464,7 +464,6 @@
       }
     }
   },
-
   "WindowsPVCSchucoPage": {
     "title": "PVC WINDOWS – Schüco Profiles",
     "subtitle": "/ Excellent energy efficiency thanks to innovative technology /",
@@ -736,7 +735,6 @@
       }
     }
   },
-
   "WindowsPVCKommerlingPage": {
     "title": "PVC WINDOWS – Kömmerling Profiles",
     "subtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
@@ -951,7 +949,6 @@
       }
     }
   },
-
   "WindowsAluAliplastPage": {
     "title": "ALUMINIUM WINDOWS – Aliplast profile",
     "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
@@ -1114,7 +1111,6 @@
       }
     }
   },
-
   "WindowsGlassPage": {
     "title": "Glazing units for windows from PCV and Aluminium",
     "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
@@ -1210,11 +1206,17 @@
           "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
+        },
+        "6": {
+          "id": "6",
+          "title": "Self-cleaning panes",
+          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
         }
       }
     }
   },
-
   "WindowsFittingsSealsPage": {
     "title": "Glazing units for windows from PCV and Aluminium",
     "GasketsFittingsSection": {
@@ -1368,7 +1370,6 @@
       }
     }
   },
-
   "WindowMullionsPage": {
     "title": "Window mullions",
     "card": {
