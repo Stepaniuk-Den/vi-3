@@ -36,10 +36,10 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
       <NestedCardsSection
         tSectionItem={tAccessories.raw("ExternalRS")}
         titleBanner
-        size="large"
+        size="w-full"
         isRow={false}
       />
-     <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")}/>
+      <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>
   );
 };
