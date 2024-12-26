@@ -34,7 +34,7 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
               title={card.title}
               src={card.src}
               alt={card.alt}
-              size="large"
+              size="w-full"
               description={card.description}
               isRow={false}
             />

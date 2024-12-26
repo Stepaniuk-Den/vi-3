@@ -14,17 +14,17 @@ const DoorsAlumAliplast: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("ALUDoorsAliplastPage");
 
   return (
-      <section className="pageCl">
-        <SectionCarouselAndDescr t={t} />
-        <NestedCardsSection
-          tSectionItem={t.raw("AluminiumProfilesSection")}
-          titleBanner
-          size="large"
-          isRow={false}
-        />
-        <SectionImgAndList t={t.raw("Superial800Card")} isShowSecondList />
-        <SectionImgAndList t={t.raw("Imperial800Card")} isShowSecondList />
-      </section>
+    <section className="pageCl">
+      <SectionCarouselAndDescr t={t} />
+      <NestedCardsSection
+        tSectionItem={t.raw("AluminiumProfilesSection")}
+        titleBanner
+        size="w-full"
+        isRow={false}
+      />
+      <SectionImgAndList t={t.raw("Superial800Card")} isShowSecondList />
+      <SectionImgAndList t={t.raw("Imperial800Card")} isShowSecondList />
+    </section>
   );
 };
 

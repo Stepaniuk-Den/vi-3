@@ -42,7 +42,7 @@ export interface IGuideProjectElement {
 export interface IItemCard {
   id?: string;
   slug?: string;
-  title: string;
+  title?: string;
   description?: string;
   src: string | StaticImageData;
   alt: string;
@@ -52,6 +52,7 @@ export interface IItemCard {
   layout?: "horizontal" | "vertical";
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
+  alignment?: "end" | "center" | "start";
   path?: string;
 }
 
@@ -62,9 +63,12 @@ export interface INestedCard {
   src: string | StaticImageData;
   alt: string;
   className?: string;
-  size?: "small" | "large" | "w-1/2";
+  // sizesize?: string;
+  size?: string;
+  //   size?: "w-1/2" | "w-1/4" | "w-full";
   titleBannerCard?: boolean;
   isRow?: boolean;
+  imageFit?: "cover" | "contain";
 }
 
 export interface IParameterItem {
@@ -85,9 +89,9 @@ export interface IParametersList {
 export interface INestedCardsSectionItem {
   title?: string;
   description?: string;
-  [key: string]: string | INestedCard | IParametersList | undefined;
+  [key: string]: INestedCard | IParametersList | string | undefined;
   parametersList?: IParametersList;
-  //   size?: "small" | "large";
+  //   size?: "w-1/4" | "w-full";
   //   titleBanner?: boolean;
   //   titleBannerCard?: boolean;
 }
@@ -102,15 +106,15 @@ export interface INestedCardsSectionsList {
 }
 
 export interface IProfilesCrossSections {
-  t: {
-    title: string;
-    imgList: {
-      [key: string]: string | INestedCard;
-    };
-    descriptionProfilesCrosSections: {
-      [key: string]: string | IDesc;
-    };
+  //   [key: string]: {
+  title: string;
+  imgList: {
+    (key: string): string | INestedCard;
   };
+  descriptionProfilesCrosSections: {
+    (key: string): string | IDesc;
+  };
+  //   };
 }
 
 export interface IImage {
@@ -127,14 +131,14 @@ export interface IImgList {
 
 export interface ICard {
   id: string;
-  title?:string;
+  title?: string;
   src: string;
   alt?: string;
   parametersList: IParameterItem;
   parametersList2?: IParameterItem;
-  descrList?:{
+  descrList?: {
     [key: string]: IDesc;
-  }
+  };
 }
 
 export interface ISectionImgAndListProps {

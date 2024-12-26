@@ -41,7 +41,7 @@
   }
 
   .LinkToPageCl {
-    @apply flex items-center justify-center px-3 py-2 text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
+    @apply flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
   }
 
   .langBtnCl {

@@ -9,9 +9,11 @@ const NestedCard: React.FC<INestedCard> = ({
   src,
   alt,
   className,
-  size,
-  // titleBannerCard,
+  size = "w-full",
+  // sizesize,
   isRow = true,
+  imageFit,
+  // titleBannerCard,
   // background,
   // layout,
 }) => {
@@ -20,28 +22,24 @@ const NestedCard: React.FC<INestedCard> = ({
       className={clsx(
         "flex flex-col",
         className,
+        size
         // {
         //   "bg-customMarsala-accentLight": background === "marsala",
         //   "bg-customElement": background === "blue",
         // },
-        {
-          "w-1/2": size === "w-1/2",
-          "w-1/4": size === "small",
-          "w-full": size === "large",
-        }
+        // sizesize,
+        // {
+        //   "w-1/4": size === "w-1/4",
+        //   "w-1/2": size === "w-1/2",
+        //   "w-full": size === "w-full",
+        // }
       )}
     >
       {/* ======== TITLE ======== */}
       {title && (
-        //   (titleBannerCard ? (
-        //     <TitleBanner>
-        //       <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
-        //     </TitleBanner>
-        // ) :
         <div className="mb-3">
           <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
         </div>
-        // )
       )}
 
       {/* <div
@@ -61,13 +59,18 @@ const NestedCard: React.FC<INestedCard> = ({
         )}
       >
         {/* ======== IMAGE ======== */}
-        <div className="relative h-[460px] border border-gray-300 rounded-md overflow-hidden w-full">
+        <div className="relative w-full h-[460px] border border-gray-300 rounded-md overflow-hidden">
           <Image
             sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
             src={src || ""}
             alt={alt || ""}
             fill
             priority
+            className={clsx({
+              "object-cover": imageFit === "cover",
+              "object-contain": imageFit === "contain",
+            })}
+            // style={imageFit ? { objectFit: imageFit } : undefined}
             // placeholder="blur"
           />
         </div>

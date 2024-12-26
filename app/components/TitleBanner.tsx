@@ -3,14 +3,14 @@ import Line from "./Line";
 
 interface ITitleBannerProps {
   // title: string;
-  // size: "medium" | "large";
+  // size: "medium" | "w-full";
   children: ReactNode;
 }
 
 const TitleBanner: React.FC<ITitleBannerProps> = ({
   children,
   // title,
-  // size = "large",
+  // size = "w-full",
 }) => {
   // const titleSize = size === "medium" ? "subTitleCl" : "titleCl";
 

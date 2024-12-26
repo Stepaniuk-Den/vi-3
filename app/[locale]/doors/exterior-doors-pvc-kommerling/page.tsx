@@ -15,30 +15,30 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("PVCDoorsKommerlingPage");
 
   return (
-      <section className="pageCl">
-        <SectionCarouselAndDescr t={t} />
-        <SectionImgAndList t={t.raw("FeaturesKommerling76Section")} />
-        <NestedCardsSection
-          tSectionItem={t.raw("OutwardDoors76Section")}
-          titleBanner
-          size="large"
-          isRow={false}
-        />
-        <NestedCardsSection
-          tSectionItem={t.raw("InwardDoors76Section")}
-          titleBanner
-          size="large"
-          isRow={false}
-        />
-        <NestedCardsSection
-          tSectionItem={t.raw("DoorSillFeatures")}
-          titleBanner
-          size="large"
-          isRow={false}
-          isGrid
-        />
-         <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false}/>
-      </section>
+    <section className="pageCl">
+      <SectionCarouselAndDescr t={t} />
+      <SectionImgAndList t={t.raw("FeaturesKommerling76Section")} />
+      <NestedCardsSection
+        tSectionItem={t.raw("OutwardDoors76Section")}
+        titleBanner
+        size="w-full"
+        isRow={false}
+      />
+      <NestedCardsSection
+        tSectionItem={t.raw("InwardDoors76Section")}
+        titleBanner
+        size="w-full"
+        isRow={false}
+      />
+      <NestedCardsSection
+        tSectionItem={t.raw("DoorSillFeatures")}
+        titleBanner
+        size="w-full"
+        isRow={false}
+        positioning="grid"
+      />
+      <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false} />
+    </section>
   );
 };
 

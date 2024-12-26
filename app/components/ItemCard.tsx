@@ -20,6 +20,7 @@ const ItemCard: React.FC<IItemCard> = ({
   layout = "vertical",
   reverse = false,
   background = "",
+  alignment = "center",
   slug,
   path,
   //   ...rest
@@ -30,10 +31,10 @@ const ItemCard: React.FC<IItemCard> = ({
   const link = slug ? `/${path}/${slug}` : "#";
 
   return (
-    <li
+    <div
       className={clsx(
         "flex w-full shadow-lg rounded-md",
-        className,
+        // className,
         layout === "horizontal" ? "flex-row gap-8 p-7" : "flex-col p-3",
         reverse && layout === "horizontal" ? "flex-row-reverse" : "",
         {
@@ -43,7 +44,7 @@ const ItemCard: React.FC<IItemCard> = ({
       )}
       // style={{ backgroundColor: background }}
     >
-      {layout !== "horizontal" && (
+      {layout !== "horizontal" && title && (
         <div>
           {/* className="flex-grow" */}
           <h3 className="subTitleCl xl:leading-none">{title}</h3>
@@ -72,7 +73,8 @@ const ItemCard: React.FC<IItemCard> = ({
       <div
         className={clsx(
           "flex flex-col justify-between",
-          layout === "horizontal" ? "w-1/2" : "w-full lg:h-52 h-36"
+          className,
+          layout === "horizontal" ? "w-1/2" : "w-full h-36 lg:h-52"
         )}
       >
         <div>
@@ -81,6 +83,9 @@ const ItemCard: React.FC<IItemCard> = ({
               <h3 className="subTitleCl xl:leading-none">{title}</h3>
               <Line
                 className="marsala-left"
+                // className={clsx(
+                //   alignment === "center" ? "marsala-center" : "marsala-left"
+                // )}
                 color={background === "marsala" ? "blue" : "marsala"}
               />
             </div>
@@ -88,11 +93,19 @@ const ItemCard: React.FC<IItemCard> = ({
           <p>{description}</p>
         </div>
 
-        <LinkToPage href={link} className="self-end" btnOffset={btnOffset}>
+        <LinkToPage
+          href={link}
+          className={clsx({
+            "self-end": alignment === "end",
+            "self-center": alignment === "center",
+            "self-start": alignment === "start",
+          })}
+          btnOffset={btnOffset}
+        >
           {tBtn}
         </LinkToPage>
       </div>
-    </li>
+    </div>
   );
 };
 

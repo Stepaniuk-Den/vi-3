@@ -1,26 +1,24 @@
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
+import OfferSection from "@/app/components/WindowsPages/OfferSection";
 import ProfilesCrossSections from "@/app/components/WindowsPages/ProfilesCrossSections";
 import {
-  IDesc,
-  INestedCard,
+  IItemCard,
   INestedCardsSectionItem,
+  IProfilesCrossSections,
 } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 type ISectionsList = {
-  ProfilesCrossSections: {
-    title: string;
-    imgList: {
-      [key: string]: string | INestedCard;
-    };
-    descriptionProfilesCrosSections: {
-      [key: string]: string | IDesc;
-    };
-  };
+  [key: string]: IProfilesCrossSections;
 } & {
   [key: string]: INestedCardsSectionItem;
+} & {
+  [key: string]: {
+    title: string;
+    [key: string]: string | IItemCard;
+  };
 };
 
 type Props = {
@@ -29,7 +27,7 @@ type Props = {
 
 const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
-
+  const tButtons = useTranslations("Buttons");
   const t = useTranslations("WindowsPVCKommerlingPage");
 
   const tSectionsList = t.raw("SectionsList") as ISectionsList;
@@ -40,15 +38,16 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl">{t("pageTitle")}</h1>
-          <h2 className="subTitleCl mt-5 text-center">{t("pageSubtitle")}</h2>
+          <h1 className="titleCl pt-16">{t("title")}</h1>
+          <h2 className="subTitleCl mt-5 text-center">{t("subtitle")}</h2>
           <Line className="marsala-center" color="marsala" />
           <p className="mb-4">{t("description")}</p>
         </div>
       </section>
 
+      <OfferSection t={tSectionsList.OfferSection} tBtn={tButtons} />
       <ProfilesCrossSections t={tSectionsList.ProfilesCrossSections} />
 
       {profileSchemeKeys.map((key) => (
@@ -56,9 +55,9 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           key={key}
           tSectionItem={tSectionsList[key]}
           titleBanner={true}
-          size={"large"}
+          size={"w-full"}
           // titleBannerCard={idx === 0}
-          // size={idx === 0 ? "small" : "large"}
+          // size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}
         />
       ))}

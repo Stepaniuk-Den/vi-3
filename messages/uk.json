@@ -41,6 +41,18 @@
         "2": {
           "title": "металопластикові вікна - kommerling",
           "slug": "windows-pvc-kommerling"
+        },
+        "3": {
+          "title": "alu windows - aliplast",
+          "slug": "windows-aluminium-aliplast"
+        },
+        "4": {
+          "title": "glass windows",
+          "slug": "windows-glass"
+        },
+        "5": {
+          "title": "fittings and seals",
+          "slug": "windows-fittings-and-seals"
         }
       }
     },
@@ -315,8 +327,8 @@
   },
 
   "WindowsPage": {
-    "pageTitle": "ВІКНА з Польщі",
-    "pageSubtitle": "функціональність / комфорт / естетичність / ефективна теплоізоляція",
+    "title": "ВІКНА з Польщі",
+    "subtitle": "функціональність / комфорт / естетичність / ефективна теплоізоляція",
     "pageDesc1": "Вибір правильного вікна - це серйозне рішення, яке вимагає певних грошових вкладень. Вибираючи вікна, покупці повинні переконатися, чи підходить виріб до дизайну їхньої квартири чи будинку, чи зручно його експлуатувати, чи допомагає він економити енергію, і, нарешті, чи гарантує він максимальну безпеку.",
     "pageDesc2": "Вікно - це сукупність профілів, складних віконних панелей, фурнітури, ущільнювачів та інших додаткових аксесуарів. Кожен з елементів має великий вплив на такі якості вікна, як естетичність, комфорт, безпека та енергоефективність. Тому, купуючи вікна, важливо звертати увагу на їх окремі елементи.",
     "pageDesc3": {
@@ -440,10 +452,9 @@
       }
     }
   },
-
   "WindowsPVCSchucoPage": {
-    "pageTitle": "PVC WINDOWS – Schüco Profiles",
-    "pageSubtitle": "/ Excellent energy efficiency thanks to innovative technology /",
+    "title": "PVC WINDOWS – Schüco Profiles",
+    "subtitle": "/ Excellent energy efficiency thanks to innovative technology /",
     "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
     "SectionsList": {
       "ProfilesImg": {
@@ -712,12 +723,21 @@
       }
     }
   },
-
   "WindowsPVCKommerlingPage": {
-    "pageTitle": "PVC WINDOWS – Kömmerling Profiles",
-    "pageSubtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
+    "title": "PVC WINDOWS – Kömmerling Profiles",
+    "subtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
     "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
     "SectionsList": {
+      "OfferSection": {
+        "title": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
+        "cardItem": {
+          "windowsSlug": "windows-kömmerling",
+          "title": "ECONOMICAL SOLUTION",
+          "description": "NEW PRODUCT – WINDOWS Kömmerling 70 AD",
+          "src": "/images/windows/windows-pcv.jpeg",
+          "alt": "Private house with large white windows"
+        }
+      },
       "ProfilesCrossSections": {
         "title": "Cross-sections of windows made of Kömmerling profiles.",
         "imgList": {
@@ -914,6 +934,489 @@
           "alt": "",
           "description": "The specially designed aluminium overlays for PVC window and door profiles are an innovative solution with excellent technical parameters, representing a beneficial alternative to aluminium windows. Aluminium is characterised by elegance, the best resistance to changing weather conditions, high stability, ease of care, and unlimited colour range – thanks to the techniques of refining the external surface, i.e. anodizing or powder coating. In turn, PVC plastic guarantees optimal thermal and sound insulation as well as high functionality. KÖMMERLING 76 offers a unique combination of the advantages of aluminium and PVC plastic in the form of innovative Alu Clip, Alu Clip Pro and AddOn systems. Our solutions mean that the design possibilities are unlimited, and the windows meet the highest energy-efficiency requirements!"
         }
+      }
+    }
+  },
+  "WindowsAluAliplastPage": {
+    "title": "ALUMINIUM WINDOWS – Aliplast profile",
+    "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
+    "SectionsList": {
+      "OfferAluSection": {
+        "title": "Please feel free to learn about our offer of aluminium profiles:",
+        "1": {
+          "id": "1",
+          "title": "Genesis GN 75",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Econoline EL",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "description": "Aliplast owns two of the country’s most technologically advanced vertical paint shops and two horizontal paint lines. Therefore, in our offer you will find profiles varnished with all types of powder coating in the entire range of RAL colours, as well as varnished with special effects such as fine or thick structure with a metallic effect."
+      },
+      "GenesisSection": {
+        "title": "GENESIS 75 /GN75/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 84 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – FIX 1-56 mm / OT 9-65 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C4"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E1500"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – GENESIS",
+            "list": {
+              "1": {
+                "desc": "This 3-chamber window system is designed for the construction of windows with increased thermal insulation. The thermal parameters of Genesis 75 meet the requirements that will be applicable as of 2021 (Uw from 0.90)."
+              },
+              "2": {
+                "desc": "The basis of the Genesis 75 system are the 75-mm-deep frame sections."
+              },
+              "3": {
+                "desc": "Genesis 75 is a system intended for designing window constructions for public buildings as well as single or multi-family houses."
+              },
+              "4": {
+                "desc": "The large range of sections/profiles offered as part of the Genesis 75 system enables the design of modern windows, doors and display windows with high functionality."
+              },
+              "5": {
+                "desc": "Genesis 75 uses modern insulation materials, which are currently new on the market. An additional thermal seal was designed besides the classic central seal. With this solution, a very high window tightness (air infiltration, watertightness) as well as an innovative appearance and aesthetics were obtained."
+              },
+              "6": {
+                "desc": "Within this system it will be possible to choose different profile finishes, giving the window structure an individual character."
+              },
+              "7": {
+                "desc": "The Genesis 75 window system sets a new standard for window insulation, while maintaining the highest ergonomics of use and modern profile aesthetics."
+              },
+              "8": {
+                "desc": "It is possible to mount the Flyscreen system (an insect screen system)."
+              },
+              "9": {
+                "desc": "A wide range of colours – RAL palette (Qualicoat 1518), structural colours, Aliplast Wood Colour Effect wood-like colours (Qualideco PL-0001), anode, bicolour."
+              }
+            }
+          }
+        }
+      },
+      "EconolineSection": {
+        "title": "ECONOLINE /EL/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 51 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 60 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – to 37 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – ECONOLINE",
+            "list": {
+              "1": {
+                "desc": "A system designed for constructing doors and windows without thermal insulation. It allows for designing light, durable and functional structures."
+              },
+              "2": {
+                "desc": "The system is compatible with other Aliplast systems: common glazing beads, seals, corners and fittings."
+              },
+              "3": {
+                "desc": "The system is designed for constructing internal and external architectural components that do not require thermal insulation: windows, doors and sections of partition walls intended for general use in public and industrial buildings (in office rooms)."
+              },
+              "4": {
+                "desc": "It is possible to incorporate Econoline doors into partition walls made of Econoline segments or into other walls of any design."
+              },
+              "5": {
+                "desc": "Glazing beads available in rectangular and rounded variants."
+              },
+              "6": {
+                "desc": "The system design allows the use of rebate hinges, easier to install and more cost-effective."
+              },
+              "7": {
+                "desc": "It is possible to design panel doors (Econoline panel doors) on the basis of the Econoline system."
+              },
+              "8": {
+                "desc": "Smoke-tight doors can be built on the basis of this system – Econoline doors with the smoke-tight function meet the criteria of smoke-tightness classes Sa, Sm in accordance with PN-EN 13501-2+A1:2010)."
+              },
+              "9": {
+                "desc": "It is possible to construct sliding and swinging doors, connecting walls at any angle, and strengthening already made and even mounted elements."
+              },
+              "10": {
+                "desc": "The possibility of bending profiles."
+              },
+              "11": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect, anode, bicolour."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "WindowsGlassPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+    "CarouselSection": {
+      "title": "Structure of complex window panes:",
+      "description": {
+        "p1": "KNOW THE DESIGN OF YOUR WINDOW PACKAGE",
+        "p2": "The TUR-PLAST company uses glazing packs of the prestigious SAINT-GOBAIN company. The glazing packs include one-, two- or three-chamber sets. The thermoflat panes in a pack can be 4mm, 6mm or 8mm thick, divided with a steel distance frame or the so called warm frame (SGG SWISSPACER). The space between panes in a pack, in order to obtain lower heat transmission coefficient, is filled with gas – argon or krypton."
+      },
+      "imgList": {
+        "1": {
+          "id": "m9q25v",
+          "src": "/images/windows/glass-page/carousel1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel3.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "SectionsList": {
+      "PanesParametersSection": {
+        "title": "Complex window panes parameters:",
+        "1": {
+          "id": "1",
+          "title": "Ug – Heat transmission",
+          "description": "The Ug coefficient informs us about the amount of heat which will be lost in certain conditions. The lower the coefficient, the less heat will be through a glass pane.",
+          "src": "/images/windows/glass-page/panesParameter1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "g – Energy permeability",
+          "description": "A glass pane constitutes a barrier for the solar power. That is why, it is important to use such glass panes which let in maximum amount of the power. The higher the rate the more additional energy we have to heat the interior of a building.",
+          "src": "/images/windows/glass-page/panesParameter2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Lt – Light permeability",
+          "description": "Thanks to high Lt rate more light is let in and hence, less electric energy is needed to light a building.",
+          "src": "/images/windows/glass-page/panesParameter3.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Rw – Acoustic insulation",
+          "description": "Acoustic insulation of a given glazing pack is expressed with the Rw coefficient. It is measured in specialist acoustic laboratories. The acoustic insulation coefficient Rw of glass panes may reach the level of 28-53 dB.",
+          "src": "/images/windows/glass-page/panesParameter4.jpeg",
+          "alt": ""
+        }
+      },
+      "PanesTypesSection": {
+        "title": "Types of complex window panes:",
+        "1": {
+          "id": "1",
+          "title": "Energy-saving panes",
+          "description": "The panes are covered with low-emission coatings of noble metal oxides which role is to permit maximum amount of light and solar power (g, Lt) and at the same time, effectively prevent heat loss from room (Ug). Energy efficiency of complex glass panes depends on several factors, such as: quality of the heat insulation coating, number of glass panes in a pack, the gas filling the space between panes and the SWISSPACER warm distance frame. Thanks to the glazing packs of this type, it is possible to reduce heat energy consumption which results in lower energy bills.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Secure panes",
+          "description": "We offer two solutions: Panes with the STADIP laminated glass – in the case of breaking the pane, the foil keeps glass pieces together to reduce the risk of injuries. Panes with the SECURIT hardened glass – they are characterised by five times higher resistance to strikes e.g. by a ball or a person. In the case of breaking, the panes break into small blunt-edged pieces which do not cause serious body injuries. The described glazing pack, reducing the risk of injuries in the case of breaking the pane, is used e.g. in the places where children usually play or where people practise sport.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Anti-burglary panes",
+          "description": "The pane consists of two or more sheets of glass with a few layers of the PVB foil (polyvinyl butyral) in between, which is highly resistant to tearing. In the case of breaking, the product reduces the risk of falling into the interior of a building. As a default, the security pane is thicker than the other pane in a pack which, together with the applied PVB foil, improves its noise-absorbing properties. Whats is more, the product perfectly filters most of the UV rays and hence, it can be used in the places exposed to fading under the influence of the sun’s rays (shop windows, exhibitions, galleries).",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Noise-absorbing panes",
+          "description": "A noise-absorbing glass pane provides both high thermal and acoustic insulation. Outer side of the noise-absorbing glass pane pack is covered with laminated glass made of two sheets and one or more layers of the acoustic foil in between. The foil suppresses noise, and at the same time, if the pane breaks, it keeps the pieces together. The noise-absorbing glass panes are recommended particularly for the people who live in noisy surroundings. The SGG CLIMALPLUS SILENCE glass panes suppress the noise within the scope of 29 to 52 dB.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "5": {
+          "id": "5",
+          "title": "Ornamental panes",
+          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "6": {
+          "id": "6",
+          "title": "Self-cleaning panes",
+          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        }
+      }
+    }
+  },
+  "WindowsFittingsSealsPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "GasketsFittingsSection": {
+      "title": "Gaskets and Fittings",
+      "gaskets": {
+        "subTitle": "top-class window seals – made of EPDM",
+        "card": {
+          "title": "WINDOWS GASKETS",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "description": "Quality depends on details – the saying is perfectly right if we talk about window joinery. Even though profiles and glass units offer excellent performance but the applied seals are of poor quality or are improperly fixed – the WINDOWS are worthless. Seals seem to be minor window elements, but in fact they determine very important parameters including:",
+            "list": {
+              "1": {
+                "desc": "thermal insulation;"
+              },
+              "2": {
+                "desc": "water-tightness;"
+              },
+              "3": {
+                "desc": "ventilation;"
+              },
+              "4": {
+                "desc": "acoustic insulation."
+              }
+            }
+          },
+          "2": {
+            "description": "Our seals are highly resistant to weather conditions, and they are also ductile, and hence resistant to deformation. These are the qualities of the material used for manufacturing the seals – synthetic rubber, commonly known as EPDM. This is why, our EPDM seals can be described as:",
+            "list": {
+              "1": {
+                "desc": "resistant to ageing;"
+              },
+              "2": {
+                "desc": "resistant to changing weather conditions;"
+              },
+              "3": {
+                "desc": "performing well in the temperature between -40 and +110 C degrees;"
+              },
+              "4": {
+                "desc": "resistant to humidity, steam or UV radiation;"
+              },
+              "5": {
+                "desc": "highly elastic;"
+              },
+              "6": {
+                "desc": "resistant to cracks and deformation;"
+              }
+            }
+          }
+        }
+      },
+      "fittings": {
+        "subTitle": "MACO MULTI-MATIC – a new generation of fittings",
+        "card": {
+          "title": "WINDOWS FITTINGS",
+          "description": "Fittings in a window structure are responsible for proper opening and closing of a window sash. Window fittings allow to set different sash positions: side-hung, tilt, turn-tilt, slide-tilt, slide-fold. When buying windows, one needs to take into account if a given solution offers significantly better performance in terms of security, functioning and comfort. TUR-PLAST uses window fittings produced by the reputable MACO company. The products offer security and reliability for many years.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "FittingsFeaturesSection": {
+      "title": "Characteristic features of the MACO MULTI-MAC fittings include:",
+      "1": {
+        "id": "1",
+        "title": "SAFEGUARD AGAINST FAULTY CONTROL",
+        "description": "The MACO company is one of the first manufacturers who equipped standard fittings with the mechanism blocking window operation in the case of faulty handle position. It is integrated with the sash lifter which has been improved even further. The mechanism prevents the so called „sash slip” from the top hinge, which frequently causes client complaints.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "ADDITIONAL TILT SETTING FOR „SLOT VENTILATION”",
+        "description": "The function allows to leave small slot between the window frame and sash which guarantees continuous, controlled inflow of fresh air. The micro-ventilation function is entirely integrated with the stay; when switching to the tilt setting at 45 o, the sash stands out approximately 10-13 mm; The ventilation setting is not affected by draught or wind.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "ADJUSTABLE i.S SECURITY CAMS – intelligent security",
+        "description": "The security cams are equipped with their own pressure control and hence: seal windows tightly reduce costs; distinguish our windows from the products offered by the competition. When you choose TUR-PLAST windows, you receive fittings with security cams resistant to break-ins, mounted all around the window frame.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "title": "DUMMY SASH GEAR PROTECTING AGAINTS BREAK-INS",
+        "description": "A perfect solution for comfortable and secure windows. Comfortable to operate. Only two hardware components.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "title": "UNIFROM SIILVER-LOOK COATING AND CONNECTING EDGE COVER PROVIDING PROTECTION AGAINST CORROSION",
+        "description": "MACO is the first manufacturer who, since 2000, has been applying silver passivation treatments with electro-zinc coating, free of Chromium (VI), and wax coating without using silicate. The changes improved the protective qualities of the fitting surface and eliminated the use of Chromium (VI). Steel fitting elements are coated with zinc, chromium or wax.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "title": "DOOR SNAPPER FOR BALCONY DOORS",
+        "description": "The snapper keeps the sash in the frame without the need to use the window handle. It turns off automatically if the sash is in the tilt position. Adjustable height.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "title": "PERFECT IN ALL DETAIL: INNER CENTRAL COMPRESSION LOCK",
+        "description": "The contact pressure can easily be adjusted with i.S. cams and hence, they: seal the window tightly, save heating costs, ensure satisfied customers distinguish our windows from the products offered by the competition.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "title": "3D HINGE REGULATED IN THREE DIRECTIONS",
+        "description": "The set of bottom hinges can be regulated in three directions (height adjustment, side adjustment and compression setting). The stays allow to lower and lift sashes and to adjust contact pressure.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "title": "SECURE TILT POSITION",
+        "description": "Basic security at window’s most critical point. No special striker plate needed. Protection against levering up, also in the tilt position.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "title": "i.S. STRIKER PLATES",
+        "description": "A special composition of high-quality materials and specialist casting procedures ensure complete stability. The fittings are screwed into the frame reinforcement.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "title": "FITTING PARTS WHICH ARE RESISTANT TO BREAK-INS CAN BE EASILY FIXED",
+        "description": "Should increased window security be desired at a later date, it is very easy to change the standard striker plates for the i.S. security striker plates thanks to identical screw positions.The standard fittings have two security points. The fittings of class Wk1 have four security striker plates. The fittings of class Wk 2, however, have between 8 and 10 i.S. security striker plates.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    },
+    "FittingComponentsSection": {
+      "title": "Fitting components:",
+      "card": {
+        "id": "1",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "WindowMullionsPage": {
+    "title": "Window mullions",
+    "card": {
+      "description": "In order to highlight the character of a window, an elevation, or even the particular features of the whole building, we offer muntin windows. These are highly recommended for stylized houses and buildings of the past whose casements used to be split into smaller units because of construction factors and limitations. Consequently, we have included windows with muntins in our offer too. Larger glass surfaces are naturally a better choice to complete modern interiors; nevertheless custom-made muntins can be successfully used with present day architecture.Wide, structural or glass bond muntins should be applied with care since they reduce the amount of light that is let in, affect thermal insulation, and create some difficulties in cleaning panes.",
+      "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+      "alt": ""
+    },
+    "MuntinTypesSection": {
+      "title": "We can distinguish the following muntin types:",
+      "1": {
+        "id": "1",
+        "title": "STRUCTURAL MUNTINS",
+        "description": "Structural muntins which constitute a part of the window frame and divide the glass pane into smaller, adjacent panes. Their finishing is identical to that of the window frames. Our windows consist of standard transoms and vertical dividers 91 mm wide (the cross pattern is very popular – it splits the window pane into 4 pane units in 1,2 or 4 casements). If the glass should be broken, only one small pane has to be replaced as opposed to single glass pane windows where the entire pane needs to be removed and replaced.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "BETWEEN THE PANES MUNTINS",
+        "description": "Between the panes muntins are made of aluminium or PVC and placed in spaces between the insulating glass panes. Their colour can match that of the window frames, but they can also be produced in gold or silver options. They are usually supplied in widths of 8, 18, 26 or 45 mm. This type are considered the most convenient type whilst it comes to washing the windows.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "VIENNA MUNTINS",
+        "description": "Vienna muntins are glued onto the glazing surface. In our windows these are made of PVC with sealed finished edges. The use of a spacing frame inside the glazing unit, imitates the pattern typical for structural muntins. They are available in two widths: 25 and 37 mm. The Venice muntins, which are more popular for wooden windows, provide a similar solution to the Vienna ones. In this case, however, the muntins are glued onto the glazing pane, but neither seal nor distance frame are used.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "WindowsColoursPage": {
+    "title": "Colour palette for window profiles",
+    "description": "When choosing windows and doors, one of the things to think about is the choice of colours. Below we present our colour offers for window and door profiles for both PVC Schüco and Kömmerling as well as aluminium Aliplast and Aluron.",
+    "coloursList": {
+      "1": {
+        "id": "1",
+        "description": "Colour palette for window profiles – Schüco",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "2": {
+        "id": "2",
+        "description": "Colour palette for window profiles – Kömmerling",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "3": {
+        "id": "3",
+        "description": "Colour palette for window profiles – Aluron",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "4": {
+        "id": "4",
+        "description": "Colour palette for window profiles – Aliplast",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
       }
     }
   },
@@ -1590,7 +2093,6 @@
       }
     }
   },
-
   "ALUDoorsAluronPage": {
     "title": "ЗОВНІШНІ ДВЕРІ з алюмінієвих профілів Aluron",
     "description": {
@@ -2180,212 +2682,212 @@
     "title": "Наповнення дверей – Панелі для дверей – Paneldoor",
     "description": "Ми пропонуємо широкий вибір стильних і довговічних дверних панелей. Ці панелі забезпечують оптимальну теплоізоляцію, високу міцність та естетичний вигляд. Завдяки різноманіттю доступних дизайнів і кольорів, вони легко інтегруються в будь-який інтер'єр або екстер'єр. Панелі виготовлені з високоякісних матеріалів, що гарантує їхню довговічність та стійкість до впливу навколишнього середовища.",
     "FrohmaskoCards": {
-        "title": "SUPERIAL /SP 800+/",
-        "cards": {
-            "1": {
-                "id": "g0j3f7",
-                "title": "СК – 1",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: 2178001"
-                        },
-                        "2": {
-                            "desc": "скло: CHINCHILLA"
-                        }
-                    }
-                }
-            },
-            "2": {
-                "id": "v2a7fj",
-                "title": "СК – 2",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: RAL 9016"
-                        },
-                        "2": {
-                            "desc": "скло: RAIN"
-                        }
-                    }
-                }
-            },
-            "3": {
-                "id": "v2a7fj",
-                "title": "СК – 3",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: 701605-083"
-                        },
-                        "2": {
-                            "desc": "скло: LACOMAT"
-                        }
-                    }
-                }
-            },
-            "4": {
-                "id": "76a7fj",
-                "title": "СК – 4",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: RAL 9016"
-                        },
-                        "2": {
-                            "desc": "скло: RAIN"
-                        }
-                    }
-                }
-            },
-            "5": {
-                "id": "23n0fj",
-                "title": "СК – 5",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: RAL 9016"
-                        },
-                        "2": {
-                            "desc": "скло: ВІТРАЖ"
-                        }
-                    }
-                }
-            },
-            "6": {
-                "id": "7b87hj",
-                "title": "СК – 6",
-                "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
-                "alt": "",
-                "parametersList": {
-                    "list": {
-                        "1": {
-                            "desc": "колір: 701205"
-                        },
-                        "2": {
-                            "desc": "скло: LACOMAT"
-                        }
-                    }
-                }
-            }
-        }
-    }
-},
-"DoorFillingPanelDoorPage": {
-  "title": "Наповнення дверей – Панелі для дверей – Paneldoor",
-  "description": "Ми пропонуємо широкий вибір стильних і довговічних дверних панелей. Ці панелі забезпечують оптимальну теплоізоляцію, високу міцність та естетичний вигляд. Завдяки різноманіттю доступних дизайнів і кольорів, вони легко інтегруються в будь-який інтер'єр або екстер'єр. Панелі виготовлені з високоякісних матеріалів, що гарантує їхню довговічність та стійкість до впливу навколишнього середовища.",
-  "PanelDoorCards": {
       "title": "SUPERIAL /SP 800+/",
       "cards": {
-          "1": {
-              "id": "g0j3f7",
-              "title": "СК – 1",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: 2178001"
-                      },
-                      "2": {
-                          "desc": "скло: CHINCHILLA"
-                      }
-                  }
+        "1": {
+          "id": "g0j3f7",
+          "title": "СК – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 2178001"
+              },
+              "2": {
+                "desc": "скло: CHINCHILLA"
               }
-          },
-          "2": {
-              "id": "v2a7fj",
-              "title": "СК – 2",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: RAL 9016"
-                      },
-                      "2": {
-                          "desc": "скло: RAIN"
-                      }
-                  }
-              }
-          },
-          "3": {
-              "id": "v2a7fj",
-              "title": "СК – 3",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: 701605-083"
-                      },
-                      "2": {
-                          "desc": "скло: LACOMAT"
-                      }
-                  }
-              }
-          },
-          "4": {
-              "id": "76a7fj",
-              "title": "СК – 4",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: RAL 9016"
-                      },
-                      "2": {
-                          "desc": "скло: RAIN"
-                      }
-                  }
-              }
-          },
-          "5": {
-              "id": "23n0fj",
-              "title": "СК – 5",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: RAL 9016"
-                      },
-                      "2": {
-                          "desc": "скло: ВІТРАЖ"
-                      }
-                  }
-              }
-          },
-          "6": {
-              "id": "7b87hj",
-              "title": "СК – 6",
-              "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
-              "alt": "",
-              "parametersList": {
-                  "list": {
-                      "1": {
-                          "desc": "колір: 701205"
-                      },
-                      "2": {
-                          "desc": "скло: LACOMAT"
-                      }
-                  }
-              }
+            }
           }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "СК – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "СК – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 701605-083"
+              },
+              "2": {
+                "desc": "скло: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "СК – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "СК – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: ВІТРАЖ"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "СК – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 701205"
+              },
+              "2": {
+                "desc": "скло: LACOMAT"
+              }
+            }
+          }
+        }
       }
-  }
-},
+    }
+  },
+  "DoorFillingPanelDoorPage": {
+    "title": "Наповнення дверей – Панелі для дверей – Paneldoor",
+    "description": "Ми пропонуємо широкий вибір стильних і довговічних дверних панелей. Ці панелі забезпечують оптимальну теплоізоляцію, високу міцність та естетичний вигляд. Завдяки різноманіттю доступних дизайнів і кольорів, вони легко інтегруються в будь-який інтер'єр або екстер'єр. Панелі виготовлені з високоякісних матеріалів, що гарантує їхню довговічність та стійкість до впливу навколишнього середовища.",
+    "PanelDoorCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title": "СК – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 2178001"
+              },
+              "2": {
+                "desc": "скло: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "СК – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "СК – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 701605-083"
+              },
+              "2": {
+                "desc": "скло: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "СК – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "СК – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: RAL 9016"
+              },
+              "2": {
+                "desc": "скло: ВІТРАЖ"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "СК – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "колір: 701205"
+              },
+              "2": {
+                "desc": "скло: LACOMAT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "AccessoriesPage": {
     "title": "ОСОБЛИВОСТІ ДВЕРЕЙ – Фурнітура та доповнення для ПВХ та алюмінієвих дверей.",
     "description": {
@@ -2419,415 +2921,7 @@
       }
     }
   },
-  "RollerBlindsPage": {
-    "title": "Рольставні / Покриття для захисту від сонця",
-    "description": "Зовнішні рольставні: верхньомонтовані та адаптивні, приховані та накладні, є ефективним способом економії енергії. Наші зовнішні рольставні забезпечать вам чудову термічну та акустичну ізоляцію, а також відчуття приватності та безпеки. Ми пропонуємо зовнішні рольставні в ПВХ або алюмінієвих коробах, приховані або овальні накладні.",
-    "rollersList": {
-      "1": {
-        "id": "m9q29q",
-        "slug": "adaptive-external-roller-shutters",
-        "title": "Адаптивні зовнішні рольставні",
-        "description": "Адаптивні рольставні встановлюються переважно в будівлях, де вікна вже встановлені. Однак багато наших клієнтів використовують цей тип рольставень у новобудовах або в будівлях, де замінюються вікна.",
-        "src": "/images/roller_shutters/adaptive_rs.jpg",
-        "alt": ""
-      },
-      "2": {
-        "id": "x7b0pl",
-        "slug": "top-mounted-external-roller-shutters",
-        "title": "Верхньомонтовані зовнішні рольставні",
-        "description": "EXTE — наша нова універсальна система верхньомонтованих рольставень для установки з обох боків, використовується в нових та реконструйованих будинках.",
-        "src": "/images/roller_shutters/top_mounted_rs.jpg",
-        "alt": ""
-      },
-      "3": {
-        "id": "o9k14n",
-        "slug": "screen-covers",
-        "title": "Сонцезахисні (Reflexol) ролети",
-        "description": "Системи рольставень типу екран Tur-Plast ідеально підходять для захисту приміщень з великою кількістю засклених поверхонь від надмірного сонячного освітлення. У розширеному положенні екрани типу Reflexol також можуть стати ідеальним бар'єром від комах і різних видів забруднень.",
-        "src": "/images/roller_shutters/screen_covers.webp",
-        "alt": ""
-      },
-      "4": {
-        "id": "d236vc",
-        "slug": "accessories-additions-roller-shutters-sun-protection-covers",
-        "title": "Аксесуари / Додаткові елементи для рольставень та покриттів для захисту від сонця",
-        "description": "При виборі рольставень або покриттів для захисту від сонця найкраще ознайомитися з усім асортиментом можливих додаткових рішень, які можуть значно полегшити експлуатацію та використання продукції.",
-        "src": "/images/roller_shutters/accessories.webp",
-        "alt": ""
-      }
-    }
-  },
-  "AdaptiveExternalPage": {
-    "title": "Адаптивні зовнішні ролети – прихованого та накладного монтажу / короб із алюмінію /",
-    "description": "Адаптивні ролети встановлюються в будівлях із попередньо встановленими вікнами. Проте багато наших клієнтів вирішують монтувати ці ролети для новозбудованих будинків або будівель, де проводиться заміна вікон. Ми пропонуємо ПРИХОВАНІ АДАПТИВНІ РОЛЕТИ з двома варіантами монтажу та НАКЛАДНІ АДАПТИВНІ РОЛЕТИ овального типу. Характерною особливістю цих систем є алюмінієві напрямні, корпус та короб ролети з дренажним каналом, розташованим поза будівлею.",
-    "AdaptiveExternalCards": {
-      "cards": {
-        "1": {
-          "id": "g9j7fj",
-          "title": "Накладні адаптивні ролети овального типу",
-          "src": "/images/roller_shutters/adaptive_rs/RS_oval_type.jpg",
-          "alt": "",
-          "parametersList": {
-            "title": "ВСТАНОВЛЕННЯ В ШАР ІЗОЛЯЦІЇ",
-            "list": {
-              "1": {
-                "desc": "Короб ролети 190 мм x 185 мм"
-              },
-              "2": {
-                "desc": "Максимальна висота – 2520 мм (висота вимірюється разом із коробом)"
-              }
-            }
-          },
-          "parametersList2": {
-            "title": "Характеристики системи:",
-            "list": {
-              "1": {
-                "desc": "дуже легкий монтаж;"
-              },
-              "2": {
-                "desc": "немає негативного впливу на енергетичний баланс будівлі;"
-              },
-              "3": {
-                "desc": "можливість монтажу у вже існуючих будівлях;"
-              },
-              "4": {
-                "desc": "жорстка конструкція – весь блок виготовлений з алюмінію (ламелі, напрямні канали та жорсткий пресований короб);"
-              },
-              "5": {
-                "desc": "позитивний вплив на оптику фасаду; висота короба – 180 мм."
-              }
-            }
-          }
-        },
-        "2": {
-          "id": "g5j7sj",
-          "title": "Приховані адаптивні ролети INTEGRO",
-          "src": "/images/roller_shutters/adaptive_rs/RS_Integro.jpg",
-          "alt": "",
-          "parametersList": {
-            "title": "МОНТАЖ НА ФАСАДІ + ПІНОПЛАСТ",
-            "list": {
-              "1": {
-                "desc": "Короб ролети 180 мм x 180 мм"
-              },
-              "2": {
-                "desc": "Максимальна висота – 2520 мм (висота вимірюється разом із коробом)"
-              }
-            }
-          },
-          "parametersList2": {
-            "title": "Характеристики системи:",
-            "list": {
-              "1": {
-                "desc": "можливість монтажу також у вже існуючих будівлях, після відповідних коригувань у зоні перемички або, рідше, перед вікном;"
-              },
-              "2": {
-                "desc": "весь блок виготовлений з алюмінію (ламелі, напрямні рейки та жорсткий пресований короб);"
-              },
-              "3": {
-                "desc": "забезпечує оптимальні рішення для дизайнерів і забудовників;"
-              },
-              "4": {
-                "desc": "елементи системи INTEGRO не впливають на структуру вікон, дверей або перемичок (жорсткість), таким чином, не мають негативного впливу на енергетичний баланс будівлі;"
-              },
-              "5": {
-                "desc": "система INTEGRO дозволяє використовувати єдиний тип ролет, які намотуються назовні (ліва обмотка);"
-              },
-              "6": {
-                "desc": "ревізійна кришка розташована знизу (з зовнішнім доступом);"
-              },
-              "7": {
-                "desc": "висота короба – 180 мм; дуже легкий монтаж;"
-              }
-            }
-          }
-        }
-      }
-    },
-    "GuideChannels": {
-      "title": "НАПРАВЛЯЮЧІ ШИНИ в одинарному та подвійному виконанні",
-      "1": {
-        "id": "j5f3mp",
-        "title": "Пряма направляюча з камерами",
-        "src": "/images/roller_shutters/adaptive_rs/chamber_straight.jpg",
-        "alt": ""
-      },
-      "2": {
-        "id": "v0r2bm",
-        "title": "Пряма направляюча",
-        "src": "/images/roller_shutters/adaptive_rs/straight_guide.jpg",
-        "alt": ""
-      }
-    },
-    "Housing": {
-      "title": "КОРПУС – Ламелі Aluprof PA 39",
-      "description": "Профіль PA 39 є одним із найпопулярніших алюмінієвих профілів. Його популярність пояснюється тим, що жалюзі, виготовлені з цього профілю, вже багато років використовуються в європейських будинках. Основними характеристиками профілю є невелика ширина та звужена форма. Він чудово скручується і підходить навіть для невеликих коробок. Завдяки пінному наповнювачу всередині профілю, він забезпечує чудову тепло- та звукоізоляцію. Невелика вага дозволяє використовувати ручний привід, пружинний привід або електричне керування. PA 39 пропонується у перфорованій або гладкій версії та в широкій гамі кольорів, схожих на палітру RAL. Профілі довговічні, стійкі до зносу та зберігають колір. Крім того, профіль ефективно витримує вплив атмосферних умов.<br></br>Алюмінієві профілі належать до екологічно чистих продуктів. Піна всередині не містить сполук фреону, а фарби не містять кадмію."
-    }
-  },
-  "TopMountedPage": {
-  "title": "Зовнішні рольставні верхнього монтажу",
-  "description": "EXTE — це нова універсальна система рулонних жалюзі, що дозволяє кріпити їх з обох боків у новобудовах та реконструйованих будівлях. Найхарактерніші особливості системи включають:",
-  "parametersList": {
-    "list": {
-      "1": {
-        "desc": "зміна положення оглядової кришки;"
-      },
-      "2": {
-        "desc": "знизу або ззаду касети, або, як альтернатива, зовні будівлі. Незалежно від положення кришки, ємність касети не змінюється;"
-      },
-      "3": {
-        "desc": "повністю нова збірка приводів і підшипників рулонного жалюзі;"
-      },
-      "4": {
-        "desc": "універсальна бічна направляюча рейка, дуже легкий монтаж;"
-      },
-      "5": {
-        "desc": "поділ і регульоване намотування; віконні москітні сітки та унікальні рішення для дверних москітних сіток."
-      }
-    }
-  },
-  "RSBoxSection": {
-    "title": "РОЛЕТУРНА КОРОБКА – види – типи",
-    "description": "Ми пропонуємо два типи коробок для рулонних жалюзі:",
-    "parametersList": {
-      "list": {
-        "1": {
-          "desc": "EXPERT XT – коробка для рулонних жалюзі 185 мм x 220 мм, для вікна висотою до 2300 мм (висота вимірюється разом з коробкою)."
-        },
-        "2": {
-          "desc": "ELITE XT – коробка для рулонних жалюзі 240 мм x 220 мм, для вікна висотою до 2800 мм (висота вимірюється разом з коробкою). Система дозволяє інтегрувати додаткову москітну сітку."
-        }
-      }
-    },
-    "imgList": {
-      "1": {
-        "id": "c903lz",
-        "src": "/images/roller_shutters/top_mounted_rs/RS_box_1.jpg",
-        "alt": ""
-      },
-      "2": {
-        "id": "fg57qt",
-        "src": "/images/roller_shutters/top_mounted_rs/RS_box_2.jpg",
-        "alt": ""
-      }
-    }
-  },
-  "GuideRailsTypes": {
-  "title": "НАПРАВЛЯЮЧІ РЕЙКИ ДЛЯ РУЛОННИХ ЖАЛЮЗІ НА ВІКНАХ І ДВЕРЯХ",
-  "1": {
-    "id": "78h5kp",
-    "title": "НАПРАВЛЯЮЧІ КАНАЛИ в однотипному виконанні",
-    "src": "/images/roller_shutters/top_mounted_rs/single_execution_1.jpg",
-    "alt": "",
-    "description": "Направляючі для рулонних жалюзі з ПВХ є доповненням до коробок для рулонних жалюзі."
-  },
-  "2": {
-    "id": "6vr2om",
-    "title": "НАПРАВЛЯЮЧІ КАНАЛИ в двійному виконанні",
-    "src": "/images/roller_shutters/top_mounted_rs/double_execution_1.jpg",
-    "alt": "",
-    "description": "У місці, де жалюзі розділяються стандартно, монтується направляюча до бажаного розміру завдяки спеціальному профілю, що розширюється."
-  },
-  "3": {
-    "id": "26l2dm",
-    "src": "/images/roller_shutters/top_mounted_rs/single_execution_2.jpg",
-    "alt": "",
-    "description": "У системі є відповідні вхідні взуття та заглушки."
-  },
-  "4": {
-    "id": "p7m2lc",
-    "src": "/images/roller_shutters/top_mounted_rs/double_execution_2.jpg",
-    "alt": "",
-    "description": "У системі є відповідні вхідні взуття та заглушки."
-  }
-},
-"TechnicalSolutionsne": {
-  "title": "ТЕХНІЧНІ РІШЕННЯ",
-  "1": {
-    "id": "95b7lz",
-    "src": "/images/roller_shutters/top_mounted_rs/technical_solition_1.jpg",
-    "alt": "",
-    "description": "Просте налаштування ізоляційної оболонки"
-  },
-  "2": {
-    "id": "l3t0pt",
-    "src": "/images/roller_shutters/top_mounted_rs/technical_solition_2.jpg",
-    "alt": "",
-    "description": "Спеціальне сталеве посилення для вікон шириною понад 1500 мм. Запатентований унікальний продукт для надійного та безшовного з'єднання."
-  },
-  "3": {
-    "id": "m45n9g",
-    "src": "/images/roller_shutters/top_mounted_rs/technical_solition_3.jpg",
-    "alt": "",
-    "description": "ЕФЕКТИВНА ТЕПЛОВА ІЗОЛЯЦІЯ – додаткове заощадження енергії. Законодавчі вимоги щодо теплоізоляційних властивостей коробок в Німеччині є дуже суворими. Оскільки система виробляється в цій країні, вона підпорядковується національним нормативам, встановленим у Нормативі енергозбереження (EnEV). Згідно з цим документом, в нових будівлях коробка для жалюзі вважається частиною зовнішньої стіни. У такому випадку потрібно підтвердити відповідність прикладів, наведених у Додатку 2 стандарту DIN4108. Саме тому архітектори можуть проводити розрахунки, враховуючи зменшений коефіцієнт теплопередачі термічного мосту. Система рулонних жалюзі EXTE забезпечує відмінну теплоізоляцію, відповідно до чинних нормативів."
-  }
-}
-},
-  "ScreenPage": {
-  "title": "Ролетні штори / Покриття для захисту від сонця",
-  "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
-  "alt": "",
-  "descrList": {
-    "1": {
-      "desc": "ЗОВНІШНІ ПОКРИТТЯ (ЕКРАНИ) — це сучасні віконні покриття, які ідеально захищають приміщення від надмірного сонячного випромінювання та від комах."
-    },
-    "2": {
-      "desc": "Екрани можна керувати за допомогою вимикача, пульта дистанційного керування або мобільного пристрою."
-    },
-    "3": {
-      "desc": "Перевагами ЕКРАНІВ є можливість покривати великі площі, підбирати кольори, що відповідають кольору будівлі, та вибір ступеня затемнення."
-    }
-  },
-  "ScreensList": {
-    "title": "Ролетні штори / Покриття для захисту від сонця",
-    "description": "Екрани поєднують функціональність та зручність використання. Додавання автоматизації для погодних умов та перевантажених електричних приводів гарантує їх багаторічну та безпроблемну експлуатацію, забезпечуючи комфорт щоденного використання.",
-    "imgList": {
-      "1": {
-        "id": "v8g9xw",
-        "src": "/images/roller_shutters/screen_covers/screen_list_1.jpg",
-        "alt": ""
-      },
-      "2": {
-        "id": "35h8lm",
-        "src": "/images/roller_shutters/screen_covers/screen_list_2.jpg",
-        "alt": ""
-      }
-    },
-    "parametersList": {
-      "title": "ТЕХНІЧНІ ДАНІ:",
-      "list": {
-        "1": {
-          "desc": "Розміри – можливість покриття площі до ширини 5 м або до площі 15 м²;"
-        },
-        "2": {
-          "desc": "Керування – через пульт дистанційного керування, вимикач або мобільний пристрій;"
-        },
-        "3": {
-          "desc": "Доступні коробки – ми пропонуємо коробки з розмірами 95 мм, 105 мм, 125 мм;"
-        },
-        "4": {
-          "desc": "Кольорова палітра – будь-який колір з палітри RAL;"
-        },
-        "5": {
-          "desc": "Структура тканини – звичайна (Soltis) та діагональна (Serge, Nova);"
-        }
-      }
-    }
-  }
-},
-  "AccessoriesRSPage":{
-    "title": "Фурнітура / Доповнення для ролет і сонцезахисних чохлів",
-    "description": "Фурнітура та доповнення для ролет і сонцезахисних чохлів підвищують їх функціональність і естетичну привабливість. Ці додаткові компоненти включають такі елементи, як дистанційне керування, ручні рукоятки та автоматизовані двигуни для безперебійної роботи, а також датчики, які виявляють сонячне світло чи вітер, щоб автоматично регулювати кришки. Такі функції забезпечують підвищену зручність, енергоефективність і довговічність, завдяки чому ці системи адаптуються до сучасного способу життя та змінних погодних умов.На додаток до робочих аксесуарів, декоративні елементи, такі як індивідуальні кольори, рами або спеціальні покриття, можуть доповнити дизайн будь-якої будівлі. Аксесуари для сонцезахисних чохлів можуть включати регульовані кронштейни, бічні канали або вдосконалені тканини з УФ-фільтрацією, що забезпечує оптимальний контроль світла та теплоізоляцію. Разом ці доповнення підвищують зручність використання та ефективність рольставен і сонцезахисних рішень, задовольняючи як житлові, так і комерційні потреби.",
-    "ExternalRS": {
-      "title": "ЕКСПЛУАТАЦІЯ ЗОВНІШНІХ РОЛЕТ – варіанти використання",
-      "1": {
-        "id": "v5b8lz",
-        "title": "Ручне управління",
-        "src": "/images/roller_shutters/adaptive_rs/manual.webp",
-        "alt": "",
-        "description": "Ручне управління ролетами дозволяє піднімати та опускати їх за допомогою витяжного механізму (потягування стрічки або мотузки) або витяжного механізму з ручкою. Для зовнішніх ролет кожен такий варіант вимагає зусиль та часу, якщо він використовується кілька разів на день."
-      },
-      "2": {
-        "id": "l3g7pt",
-        "title": "Електричне управління",
-        "src": "/images/roller_shutters/adaptive_rs/electric.jpg",
-        "alt": "",
-        "description": "Електричне управління. Привід – високоякісний двигун з механічними обмежувачами ходу – Motus Monos виробництва компанії NICE. Він має безшумний перемикач передач і гальма."
-      },
-      "3": {
-        "id": "d1n7pg",
-        "title": "Радіоуправління",
-        "src": "/images/roller_shutters/adaptive_rs/radio_operation.webp",
-        "alt": "",
-        "description": "Радіоуправління працює за допомогою передового двигуна RolTop-868 з вбудованим радіоцентром, який пропонує інтелектуальне виявлення для зупинки та реверсування руху при зустрічі з перешкодами. Система має налаштовувані кінцеві позиції, безшумне гальмування та двосторонній зв'язок з можливістю маршрутизації для забезпечення безперебійної роботи віддаленого керування."
-      }
-    },
-    "RemoteControls": {
-      "title": "Доступні пульти дистанційного керування",
-      "cards": {
-        "1": {
-          "id": "v7j7fj",
-          "title": "SoloTel2",
-          "src": "/images/roller_shutters/adaptive_rs/remote_controls_1.jpg",
-          "alt": "",
-          "descrList": {
-            "1": {
-              "desc": "1-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з настінним тримачем, безпечна частота 868 МГц."
-            },
-            "2": {
-              "desc": "Працює в двосторонній радіосистемі."
-            },
-            "3": {
-              "desc": "Сигнали, що підтверджують прийом команди приймачем."
-            },
-            "4": {
-              "desc": "Доступне просте програмування та використання двох проміжних позицій."
-            }
-          }
-        },
-        "2": {
-          "id": "j4v1sj",
-          "title": "MonoTel2",
-          "src": "/images/roller_shutters/adaptive_rs/remote_controls_2.jpg",
-          "alt": "",
-          "descrList": {
-            "1": {
-              "desc": "1-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з магнітним настінним тримачем, безпечна частота 868 МГц."
-            },
-            "2": {
-              "desc": "Працює в двосторонній радіосистемі."
-            },
-            "3": {
-              "desc": "Сигнали, що підтверджують прийом команди приймачем."
-            },
-            "4": {
-              "desc": "Доступне просте програмування та використання двох проміжних позицій."
-            }
-          }
-        },
-        "3": {
-          "id": "m1x4aj",
-          "title": "VarioTel2",
-          "src": "/images/roller_shutters/adaptive_rs/remote_controls_3.jpg",
-          "alt": "",
-          "descrList": {
-            "1": {
-              "desc": "5-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з функцією центрального каналу та магнітним настінним тримачем, безпечна частота 868 МГц."
-            },
-            "2": {
-              "desc": "Працює в двосторонній радіосистемі."
-            },
-            "3": {
-              "desc": "Доступне просте програмування та використання двох проміжних позицій."
-            },
-            "4": {
-              "desc": "Включений перемикач ручного/автоматичного режиму."
-            }
-          }
-        },
-        "4": {
-          "id": "25c7sk",
-          "title": "TempoTel2",
-          "src": "/images/roller_shutters/adaptive_rs/remote_controls_4.jpg",
-          "alt": "",
-          "descrList": {
-            "1": {
-              "desc": "10-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з можливістю створення 2 груп + функція центрального каналу."
-            },
-            "2": {
-              "desc": "Функція годинника (відкриття та закриття в певний час), функція відпустки (імітує присутність домочадців)."
-            },
-            "3": {
-              "desc": "Наявність програмування."
-            },
-            "4": {
-              "desc": "Перемикач ручного/автоматичного режиму для кожного каналу пульта дистанційного керування."
-            }
-          }
-        }
-      }
-    }
-  },
+
   "SlidingDoorsPage": {
     "title": "РОЗСУВНІ ТЕРАСНІ ДВЕРІ з Польщі",
     "description": "Розсувні терасні двері є ідеальним рішенням для сучасних і великих інтер’єрів. Вони мають багато скління, що дозволяє оптимально освітлювати приміщення. Вони відзначаються чудовою теплоізоляцією (без теплових мостів), і завдяки сучасним технологіям фурнітури ми можемо насолоджуватися справжнім комфортом та радістю від використання великих розсувних дверей. Рішення, запропоновані Tur-Plast, є альтернативою стандартним двостулковим балконам. У нашій пропозиції є міцні та ексклюзивні підйомно-розсувні терасні двері з ПВХ та алюмінію.",
@@ -3118,6 +3212,416 @@
     "installation": {
       "title": "ІНСТРУКЦІЯ З ВСТАНОВЛЕННЯ для PremiDoor 76 та PremiDoor 76 lux",
       "description": "ОСНОВА ДЛЯ HS Kömmerling PremiDoor 76 повинна бути підготовлена відповідно до наданих інструкцій. Якщо основа для дверей типу HS підготовлена неналежним чином замовником, TUR-PLAST не виконуватиме встановлення. Тому замовнику слід приділити особливу увагу якості бетонної стяжки для дверей HS. Слід використовувати водо- та морозостійкий бетонний розчин (бетон B25). Поверхня повинна бути ідеально стабільною, гладкою та рівною."
+    }
+  },
+
+  "RollerBlindsPage": {
+    "title": "Рольставні / Покриття для захисту від сонця",
+    "description": "Зовнішні рольставні: верхньомонтовані та адаптивні, приховані та накладні, є ефективним способом економії енергії. Наші зовнішні рольставні забезпечать вам чудову термічну та акустичну ізоляцію, а також відчуття приватності та безпеки. Ми пропонуємо зовнішні рольставні в ПВХ або алюмінієвих коробах, приховані або овальні накладні.",
+    "rollersList": {
+      "1": {
+        "id": "m9q29q",
+        "slug": "adaptive-external-roller-shutters",
+        "title": "Адаптивні зовнішні рольставні",
+        "description": "Адаптивні рольставні встановлюються переважно в будівлях, де вікна вже встановлені. Однак багато наших клієнтів використовують цей тип рольставень у новобудовах або в будівлях, де замінюються вікна.",
+        "src": "/images/roller_shutters/adaptive_rs.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7b0pl",
+        "slug": "top-mounted-external-roller-shutters",
+        "title": "Верхньомонтовані зовнішні рольставні",
+        "description": "EXTE — наша нова універсальна система верхньомонтованих рольставень для установки з обох боків, використовується в нових та реконструйованих будинках.",
+        "src": "/images/roller_shutters/top_mounted_rs.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "o9k14n",
+        "slug": "screen-covers",
+        "title": "Сонцезахисні (Reflexol) ролети",
+        "description": "Системи рольставень типу екран Tur-Plast ідеально підходять для захисту приміщень з великою кількістю засклених поверхонь від надмірного сонячного освітлення. У розширеному положенні екрани типу Reflexol також можуть стати ідеальним бар'єром від комах і різних видів забруднень.",
+        "src": "/images/roller_shutters/screen_covers.webp",
+        "alt": ""
+      },
+      "4": {
+        "id": "d236vc",
+        "slug": "accessories-additions-roller-shutters-sun-protection-covers",
+        "title": "Аксесуари / Додаткові елементи для рольставень та покриттів для захисту від сонця",
+        "description": "При виборі рольставень або покриттів для захисту від сонця найкраще ознайомитися з усім асортиментом можливих додаткових рішень, які можуть значно полегшити експлуатацію та використання продукції.",
+        "src": "/images/roller_shutters/accessories.webp",
+        "alt": ""
+      }
+    }
+  },
+  "AdaptiveExternalPage": {
+    "title": "Адаптивні зовнішні ролети – прихованого та накладного монтажу / короб із алюмінію /",
+    "description": "Адаптивні ролети встановлюються в будівлях із попередньо встановленими вікнами. Проте багато наших клієнтів вирішують монтувати ці ролети для новозбудованих будинків або будівель, де проводиться заміна вікон. Ми пропонуємо ПРИХОВАНІ АДАПТИВНІ РОЛЕТИ з двома варіантами монтажу та НАКЛАДНІ АДАПТИВНІ РОЛЕТИ овального типу. Характерною особливістю цих систем є алюмінієві напрямні, корпус та короб ролети з дренажним каналом, розташованим поза будівлею.",
+    "AdaptiveExternalCards": {
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "title": "Накладні адаптивні ролети овального типу",
+          "src": "/images/roller_shutters/adaptive_rs/RS_oval_type.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "ВСТАНОВЛЕННЯ В ШАР ІЗОЛЯЦІЇ",
+            "list": {
+              "1": {
+                "desc": "Короб ролети 190 мм x 185 мм"
+              },
+              "2": {
+                "desc": "Максимальна висота – 2520 мм (висота вимірюється разом із коробом)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "Характеристики системи:",
+            "list": {
+              "1": {
+                "desc": "дуже легкий монтаж;"
+              },
+              "2": {
+                "desc": "немає негативного впливу на енергетичний баланс будівлі;"
+              },
+              "3": {
+                "desc": "можливість монтажу у вже існуючих будівлях;"
+              },
+              "4": {
+                "desc": "жорстка конструкція – весь блок виготовлений з алюмінію (ламелі, напрямні канали та жорсткий пресований короб);"
+              },
+              "5": {
+                "desc": "позитивний вплив на оптику фасаду; висота короба – 180 мм."
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g5j7sj",
+          "title": "Приховані адаптивні ролети INTEGRO",
+          "src": "/images/roller_shutters/adaptive_rs/RS_Integro.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "МОНТАЖ НА ФАСАДІ + ПІНОПЛАСТ",
+            "list": {
+              "1": {
+                "desc": "Короб ролети 180 мм x 180 мм"
+              },
+              "2": {
+                "desc": "Максимальна висота – 2520 мм (висота вимірюється разом із коробом)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "Характеристики системи:",
+            "list": {
+              "1": {
+                "desc": "можливість монтажу також у вже існуючих будівлях, після відповідних коригувань у зоні перемички або, рідше, перед вікном;"
+              },
+              "2": {
+                "desc": "весь блок виготовлений з алюмінію (ламелі, напрямні рейки та жорсткий пресований короб);"
+              },
+              "3": {
+                "desc": "забезпечує оптимальні рішення для дизайнерів і забудовників;"
+              },
+              "4": {
+                "desc": "елементи системи INTEGRO не впливають на структуру вікон, дверей або перемичок (жорсткість), таким чином, не мають негативного впливу на енергетичний баланс будівлі;"
+              },
+              "5": {
+                "desc": "система INTEGRO дозволяє використовувати єдиний тип ролет, які намотуються назовні (ліва обмотка);"
+              },
+              "6": {
+                "desc": "ревізійна кришка розташована знизу (з зовнішнім доступом);"
+              },
+              "7": {
+                "desc": "висота короба – 180 мм; дуже легкий монтаж;"
+              }
+            }
+          }
+        }
+      }
+    },
+    "GuideChannels": {
+      "title": "НАПРАВЛЯЮЧІ ШИНИ в одинарному та подвійному виконанні",
+      "1": {
+        "id": "j5f3mp",
+        "title": "Пряма направляюча з камерами",
+        "src": "/images/roller_shutters/adaptive_rs/chamber_straight.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "v0r2bm",
+        "title": "Пряма направляюча",
+        "src": "/images/roller_shutters/adaptive_rs/straight_guide.jpg",
+        "alt": ""
+      }
+    },
+    "Housing": {
+      "title": "КОРПУС – Ламелі Aluprof PA 39",
+      "description": "Профіль PA 39 є одним із найпопулярніших алюмінієвих профілів. Його популярність пояснюється тим, що жалюзі, виготовлені з цього профілю, вже багато років використовуються в європейських будинках. Основними характеристиками профілю є невелика ширина та звужена форма. Він чудово скручується і підходить навіть для невеликих коробок. Завдяки пінному наповнювачу всередині профілю, він забезпечує чудову тепло- та звукоізоляцію. Невелика вага дозволяє використовувати ручний привід, пружинний привід або електричне керування. PA 39 пропонується у перфорованій або гладкій версії та в широкій гамі кольорів, схожих на палітру RAL. Профілі довговічні, стійкі до зносу та зберігають колір. Крім того, профіль ефективно витримує вплив атмосферних умов.<br></br>Алюмінієві профілі належать до екологічно чистих продуктів. Піна всередині не містить сполук фреону, а фарби не містять кадмію."
+    }
+  },
+  "TopMountedPage": {
+    "title": "Зовнішні рольставні верхнього монтажу",
+    "description": "EXTE — це нова універсальна система рулонних жалюзі, що дозволяє кріпити їх з обох боків у новобудовах та реконструйованих будівлях. Найхарактерніші особливості системи включають:",
+    "parametersList": {
+      "list": {
+        "1": {
+          "desc": "зміна положення оглядової кришки;"
+        },
+        "2": {
+          "desc": "знизу або ззаду касети, або, як альтернатива, зовні будівлі. Незалежно від положення кришки, ємність касети не змінюється;"
+        },
+        "3": {
+          "desc": "повністю нова збірка приводів і підшипників рулонного жалюзі;"
+        },
+        "4": {
+          "desc": "універсальна бічна направляюча рейка, дуже легкий монтаж;"
+        },
+        "5": {
+          "desc": "поділ і регульоване намотування; віконні москітні сітки та унікальні рішення для дверних москітних сіток."
+        }
+      }
+    },
+    "RSBoxSection": {
+      "title": "РОЛЕТУРНА КОРОБКА – види – типи",
+      "description": "Ми пропонуємо два типи коробок для рулонних жалюзі:",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "EXPERT XT – коробка для рулонних жалюзі 185 мм x 220 мм, для вікна висотою до 2300 мм (висота вимірюється разом з коробкою)."
+          },
+          "2": {
+            "desc": "ELITE XT – коробка для рулонних жалюзі 240 мм x 220 мм, для вікна висотою до 2800 мм (висота вимірюється разом з коробкою). Система дозволяє інтегрувати додаткову москітну сітку."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "c903lz",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "fg57qt",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_2.jpg",
+          "alt": ""
+        }
+      }
+    },
+    "GuideRailsTypes": {
+      "title": "НАПРАВЛЯЮЧІ РЕЙКИ ДЛЯ РУЛОННИХ ЖАЛЮЗІ НА ВІКНАХ І ДВЕРЯХ",
+      "1": {
+        "id": "78h5kp",
+        "title": "НАПРАВЛЯЮЧІ КАНАЛИ в однотипному виконанні",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_1.jpg",
+        "alt": "",
+        "description": "Направляючі для рулонних жалюзі з ПВХ є доповненням до коробок для рулонних жалюзі."
+      },
+      "2": {
+        "id": "6vr2om",
+        "title": "НАПРАВЛЯЮЧІ КАНАЛИ в двійному виконанні",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_1.jpg",
+        "alt": "",
+        "description": "У місці, де жалюзі розділяються стандартно, монтується направляюча до бажаного розміру завдяки спеціальному профілю, що розширюється."
+      },
+      "3": {
+        "id": "26l2dm",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_2.jpg",
+        "alt": "",
+        "description": "У системі є відповідні вхідні взуття та заглушки."
+      },
+      "4": {
+        "id": "p7m2lc",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_2.jpg",
+        "alt": "",
+        "description": "У системі є відповідні вхідні взуття та заглушки."
+      }
+    },
+    "TechnicalSolutionsne": {
+      "title": "ТЕХНІЧНІ РІШЕННЯ",
+      "1": {
+        "id": "95b7lz",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_1.jpg",
+        "alt": "",
+        "description": "Просте налаштування ізоляційної оболонки"
+      },
+      "2": {
+        "id": "l3t0pt",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_2.jpg",
+        "alt": "",
+        "description": "Спеціальне сталеве посилення для вікон шириною понад 1500 мм. Запатентований унікальний продукт для надійного та безшовного з'єднання."
+      },
+      "3": {
+        "id": "m45n9g",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_3.jpg",
+        "alt": "",
+        "description": "ЕФЕКТИВНА ТЕПЛОВА ІЗОЛЯЦІЯ – додаткове заощадження енергії. Законодавчі вимоги щодо теплоізоляційних властивостей коробок в Німеччині є дуже суворими. Оскільки система виробляється в цій країні, вона підпорядковується національним нормативам, встановленим у Нормативі енергозбереження (EnEV). Згідно з цим документом, в нових будівлях коробка для жалюзі вважається частиною зовнішньої стіни. У такому випадку потрібно підтвердити відповідність прикладів, наведених у Додатку 2 стандарту DIN4108. Саме тому архітектори можуть проводити розрахунки, враховуючи зменшений коефіцієнт теплопередачі термічного мосту. Система рулонних жалюзі EXTE забезпечує відмінну теплоізоляцію, відповідно до чинних нормативів."
+      }
+    }
+  },
+  "ScreenPage": {
+    "title": "Ролетні штори / Покриття для захисту від сонця",
+    "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
+    "alt": "",
+    "descrList": {
+      "1": {
+        "desc": "ЗОВНІШНІ ПОКРИТТЯ (ЕКРАНИ) — це сучасні віконні покриття, які ідеально захищають приміщення від надмірного сонячного випромінювання та від комах."
+      },
+      "2": {
+        "desc": "Екрани можна керувати за допомогою вимикача, пульта дистанційного керування або мобільного пристрою."
+      },
+      "3": {
+        "desc": "Перевагами ЕКРАНІВ є можливість покривати великі площі, підбирати кольори, що відповідають кольору будівлі, та вибір ступеня затемнення."
+      }
+    },
+    "ScreensList": {
+      "title": "Ролетні штори / Покриття для захисту від сонця",
+      "description": "Екрани поєднують функціональність та зручність використання. Додавання автоматизації для погодних умов та перевантажених електричних приводів гарантує їх багаторічну та безпроблемну експлуатацію, забезпечуючи комфорт щоденного використання.",
+      "imgList": {
+        "1": {
+          "id": "v8g9xw",
+          "src": "/images/roller_shutters/screen_covers/screen_list_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "35h8lm",
+          "src": "/images/roller_shutters/screen_covers/screen_list_2.jpg",
+          "alt": ""
+        }
+      },
+      "parametersList": {
+        "title": "ТЕХНІЧНІ ДАНІ:",
+        "list": {
+          "1": {
+            "desc": "Розміри – можливість покриття площі до ширини 5 м або до площі 15 м²;"
+          },
+          "2": {
+            "desc": "Керування – через пульт дистанційного керування, вимикач або мобільний пристрій;"
+          },
+          "3": {
+            "desc": "Доступні коробки – ми пропонуємо коробки з розмірами 95 мм, 105 мм, 125 мм;"
+          },
+          "4": {
+            "desc": "Кольорова палітра – будь-який колір з палітри RAL;"
+          },
+          "5": {
+            "desc": "Структура тканини – звичайна (Soltis) та діагональна (Serge, Nova);"
+          }
+        }
+      }
+    }
+  },
+  "AccessoriesRSPage": {
+    "title": "Фурнітура / Доповнення для ролет і сонцезахисних чохлів",
+    "description": "Фурнітура та доповнення для ролет і сонцезахисних чохлів підвищують їх функціональність і естетичну привабливість. Ці додаткові компоненти включають такі елементи, як дистанційне керування, ручні рукоятки та автоматизовані двигуни для безперебійної роботи, а також датчики, які виявляють сонячне світло чи вітер, щоб автоматично регулювати кришки. Такі функції забезпечують підвищену зручність, енергоефективність і довговічність, завдяки чому ці системи адаптуються до сучасного способу життя та змінних погодних умов.На додаток до робочих аксесуарів, декоративні елементи, такі як індивідуальні кольори, рами або спеціальні покриття, можуть доповнити дизайн будь-якої будівлі. Аксесуари для сонцезахисних чохлів можуть включати регульовані кронштейни, бічні канали або вдосконалені тканини з УФ-фільтрацією, що забезпечує оптимальний контроль світла та теплоізоляцію. Разом ці доповнення підвищують зручність використання та ефективність рольставен і сонцезахисних рішень, задовольняючи як житлові, так і комерційні потреби.",
+    "ExternalRS": {
+      "title": "ЕКСПЛУАТАЦІЯ ЗОВНІШНІХ РОЛЕТ – варіанти використання",
+      "1": {
+        "id": "v5b8lz",
+        "title": "Ручне управління",
+        "src": "/images/roller_shutters/adaptive_rs/manual.webp",
+        "alt": "",
+        "description": "Ручне управління ролетами дозволяє піднімати та опускати їх за допомогою витяжного механізму (потягування стрічки або мотузки) або витяжного механізму з ручкою. Для зовнішніх ролет кожен такий варіант вимагає зусиль та часу, якщо він використовується кілька разів на день."
+      },
+      "2": {
+        "id": "l3g7pt",
+        "title": "Електричне управління",
+        "src": "/images/roller_shutters/adaptive_rs/electric.jpg",
+        "alt": "",
+        "description": "Електричне управління. Привід – високоякісний двигун з механічними обмежувачами ходу – Motus Monos виробництва компанії NICE. Він має безшумний перемикач передач і гальма."
+      },
+      "3": {
+        "id": "d1n7pg",
+        "title": "Радіоуправління",
+        "src": "/images/roller_shutters/adaptive_rs/radio_operation.webp",
+        "alt": "",
+        "description": "Радіоуправління працює за допомогою передового двигуна RolTop-868 з вбудованим радіоцентром, який пропонує інтелектуальне виявлення для зупинки та реверсування руху при зустрічі з перешкодами. Система має налаштовувані кінцеві позиції, безшумне гальмування та двосторонній зв'язок з можливістю маршрутизації для забезпечення безперебійної роботи віддаленого керування."
+      }
+    },
+    "RemoteControls": {
+      "title": "Доступні пульти дистанційного керування",
+      "cards": {
+        "1": {
+          "id": "v7j7fj",
+          "title": "SoloTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_1.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з настінним тримачем, безпечна частота 868 МГц."
+            },
+            "2": {
+              "desc": "Працює в двосторонній радіосистемі."
+            },
+            "3": {
+              "desc": "Сигнали, що підтверджують прийом команди приймачем."
+            },
+            "4": {
+              "desc": "Доступне просте програмування та використання двох проміжних позицій."
+            }
+          }
+        },
+        "2": {
+          "id": "j4v1sj",
+          "title": "MonoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_2.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з магнітним настінним тримачем, безпечна частота 868 МГц."
+            },
+            "2": {
+              "desc": "Працює в двосторонній радіосистемі."
+            },
+            "3": {
+              "desc": "Сигнали, що підтверджують прийом команди приймачем."
+            },
+            "4": {
+              "desc": "Доступне просте програмування та використання двох проміжних позицій."
+            }
+          }
+        },
+        "3": {
+          "id": "m1x4aj",
+          "title": "VarioTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_3.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "5-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з функцією центрального каналу та магнітним настінним тримачем, безпечна частота 868 МГц."
+            },
+            "2": {
+              "desc": "Працює в двосторонній радіосистемі."
+            },
+            "3": {
+              "desc": "Доступне просте програмування та використання двох проміжних позицій."
+            },
+            "4": {
+              "desc": "Включений перемикач ручного/автоматичного режиму."
+            }
+          }
+        },
+        "4": {
+          "id": "25c7sk",
+          "title": "TempoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_4.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "10-канальний ПУЛЬТ ДИСТАНЦІЙНОГО КЕРУВАННЯ з можливістю створення 2 груп + функція центрального каналу."
+            },
+            "2": {
+              "desc": "Функція годинника (відкриття та закриття в певний час), функція відпустки (імітує присутність домочадців)."
+            },
+            "3": {
+              "desc": "Наявність програмування."
+            },
+            "4": {
+              "desc": "Перемикач ручного/автоматичного режиму для кожного каналу пульта дистанційного керування."
+            }
+          }
+        }
+      }
     }
   }
 }

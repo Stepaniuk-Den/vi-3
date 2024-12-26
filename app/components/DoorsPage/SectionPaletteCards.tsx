@@ -34,6 +34,7 @@ const SectionPaletteCards: React.FC<ISectionPaletteCardsProps> = ({
               path="doors/door-fillings-panels-for-doors"
               slug={card.slug}
               tBtn={tBtn("see")}
+              alignment="end"
             />
           ))}
         </ul>

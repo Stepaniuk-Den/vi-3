@@ -20,10 +20,10 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <section className="sectionCl pt-60">
+      <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl">{t("pageTitle")}</h1>
-          <h2 className="subTitleCl mt-5 text-center">{t("pageSubtitle")}</h2>
+          <h1 className="titleCl pt-16">{t("title")}</h1>
+          <h2 className="subTitleCl mt-5 text-center">{t("subtitle")}</h2>
           <Line className="marsala-center" color="marsala" />
           <p className="mb-4">{t("description")}</p>
         </div>
@@ -34,7 +34,7 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
           tSectionItem={tSectionItem as INestedCardsSectionItem}
           titleBanner={true}
           // titleBannerCard={idx === 0}
-          size={idx === 0 ? "small" : "large"}
+          size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}
         />
       ))}
