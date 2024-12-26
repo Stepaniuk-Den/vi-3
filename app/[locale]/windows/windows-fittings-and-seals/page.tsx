@@ -1,7 +1,6 @@
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import FittingComponentsSection from "@/app/components/WindowsPages/FittingComponentsSection";
-import FittingsFeaturesSection from "@/app/components/WindowsPages/ForDELETEFittingsFeaturesSection";
 import GasketsFittingsSection from "@/app/components/WindowsPages/GasketsFittingsSection";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";

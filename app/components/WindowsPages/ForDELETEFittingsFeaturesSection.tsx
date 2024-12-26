@@ -1,7 +1,5 @@
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
-import Line from "../Line";
 import NestedCardsSection from "../NestedCardsSection";
-import TitleBanner from "../TitleBanner";
 
 type Props = {
   t: INestedCardsSectionItem;
