@@ -327,8 +327,8 @@
   },
 
   "WindowsPage": {
-    "pageTitle": "ВІКНА з Польщі",
-    "pageSubtitle": "функціональність / комфорт / естетичність / ефективна теплоізоляція",
+    "title": "ВІКНА з Польщі",
+    "subtitle": "функціональність / комфорт / естетичність / ефективна теплоізоляція",
     "pageDesc1": "Вибір правильного вікна - це серйозне рішення, яке вимагає певних грошових вкладень. Вибираючи вікна, покупці повинні переконатися, чи підходить виріб до дизайну їхньої квартири чи будинку, чи зручно його експлуатувати, чи допомагає він економити енергію, і, нарешті, чи гарантує він максимальну безпеку.",
     "pageDesc2": "Вікно - це сукупність профілів, складних віконних панелей, фурнітури, ущільнювачів та інших додаткових аксесуарів. Кожен з елементів має великий вплив на такі якості вікна, як естетичність, комфорт, безпека та енергоефективність. Тому, купуючи вікна, важливо звертати увагу на їх окремі елементи.",
     "pageDesc3": {
@@ -728,6 +728,16 @@
     "subtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
     "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
     "SectionsList": {
+      "OfferSection": {
+        "title": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
+        "cardItem": {
+          "windowsSlug": "windows-kömmerling",
+          "title": "ECONOMICAL SOLUTION",
+          "description": "NEW PRODUCT – WINDOWS Kömmerling 70 AD",
+          "src": "/images/windows/windows-pcv.jpeg",
+          "alt": "Private house with large white windows"
+        }
+      },
       "ProfilesCrossSections": {
         "title": "Cross-sections of windows made of Kömmerling profiles.",
         "imgList": {
