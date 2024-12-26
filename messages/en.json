@@ -132,17 +132,25 @@
         }
       }
     },
-    "roller-blinds": {
-      "title": "roller blinds",
-      "href": "/roller-blinds",
+    "roller-shutters": {
+      "title": "roller shutters",
+      "href": "/roller-shutters-sun-protection-covers",
       "links": {
         "1": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "adaptive external roller shutters",
+          "slug": "adaptive-external-roller-shutters"
         },
         "2": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "top mounted external roller shutters ",
+          "slug": "top-mounted-external-roller-shutters"
+        },
+        "3": {
+          "title": "screen covers",
+          "slug": "screen-covers"
+        },
+        "4": {
+          "title": "accessories",
+          "slug": "accessories-additions-roller-shutters-sun-protection-covers"
         }
       }
     },
@@ -2021,7 +2029,7 @@
       "title": "IMPERIAL /IP 800/",
       "cards": {
         "1": {
-          "id": "g9j7fj",
+          "id": "g5j7hj",
           "src": "/images/doors/alum_Aliplast/imperial_IP_800_1.jpg",
           "alt": "",
           "parametersList": {
@@ -2057,7 +2065,7 @@
           }
         },
         "2": {
-          "id": "g2j7fj",
+          "id": "n9j1fj",
           "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
           "alt": "",
           "parametersList": {
@@ -2681,6 +2689,216 @@
       }
     }
   },
+  "DoorFillingFrohMaskoPage": {
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description": "We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "FrohmaskoCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title": "SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "DoorFillingPanelDoorPage": {
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description": "We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "PanelDoorCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title": "SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "AccessoriesPage": {
     "title": "DOOR FEATURES – Accessories and Additions for PVC and Aluminium Doors.",
     "description": {
@@ -3005,6 +3223,416 @@
     "installation": {
       "title": "INSTALLATION INSTRUCTIONS for PremiDoor 76 and PremiDoor 76 lux",
       "description": "THE BASE FOR HS Kömmerling PremiDoor 76 should be prepared in accordance with the instructions provided. If the base for the HS-type door is not properly prepared by the Customer, TUR-PLAST will not perform the installation. Therefore, the Customer should pay special attention to the quality of the concrete screed for the HS door. A water- and frost-resistant concrete mortar (B25 concrete) should be used. The surface should be perfectly stable, smooth and level."
+    }
+  },
+
+  "RollerBlindsPage": {
+    "title": "Roller Shutters / Sun Protection Covers",
+    "description": "External roller shutters: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our external roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
+    "rollersList": {
+      "1": {
+        "id": "m9q29q",
+        "slug": "adaptive-external-roller-shutters",
+        "title": "Adaptive External Roller Shutters",
+        "description": "Adaptive roller shutters are installed primarily in buildings where windows have already been installed. However, many of our clients use this type of roller shutters in newly-built houses or in buildings where windows are being replaced.",
+        "src": "/images/roller_shutters/adaptive_rs.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7b0pl",
+        "slug": "top-mounted-external-roller-shutters",
+        "title": "Top-mounted External Roller Shutters",
+        "description": "EXTE is our new versatile system of top-mounted roller shutters for installation on both sides, used in newly-built and renovated houses.",
+        "src": "/images/roller_shutters/top_mounted_rs.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "o9k14n",
+        "slug": "screen-covers",
+        "title": "Screen (Reflexol) Covers",
+        "description": "The screen-type roller shutter systems offered by Tur-Plast are perfect for protecting rooms with a lot of glazing from excessive insolation. In an extended position, the reflexol-type screens can also be a perfect barrier against insects and various types of pollution.",
+        "src": "/images/roller_shutters/screen_covers.webp",
+        "alt": ""
+      },
+      "4": {
+        "id": "d236vc",
+        "slug": "accessories-additions-roller-shutters-sun-protection-covers",
+        "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+        "description": "When choosing roller shutters or sun protection covers, it is best to see the whole range of possible additional solutions that can significantly facilitate the operation and use of the products.",
+        "src": "/images/roller_shutters/accessories.webp",
+        "alt": ""
+      }
+    }
+  },
+  "AdaptiveExternalPage": {
+    "title": "Adaptive External Roller Shutters – concealed and surface-mounted/roller shutters box made of aluminium/",
+    "description": "Adaptive roller shutters are mounted in buildings with pre-mounted windows. But many our clients decide to mount these shutters for newly-erected houses or buildings where exchange of the windows is executed. We offer CONCEALED ADAPTIVE ROLLER SHUTTERS with two options of assembly and SURFACE-MOUNTED ADAPTIVE ROLLER SHUTTERS of an OVAL type. Characteristic feature of these systems are aluminium guides, housing and roller shutter box with a drain channel located outside the building.",
+    "AdaptiveExternalCards": {
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "title": " Surface-mounted adaptive roller shutters of an oval type",
+          "src": "/images/roller_shutters/adaptive_rs/RS_oval_type.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "INSTALLATION IN THE INSULATION LAYER",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 190 mm x 185 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "very easy assembly;"
+              },
+              "2": {
+                "desc": "no negative effect on the energy balance of the building;"
+              },
+              "3": {
+                "desc": "possible to mount in the already existing buildings;"
+              },
+              "4": {
+                "desc": "rigid structure – the entire unit is made of aluminium (the slats, guiding channels and a rigid cassette of pressed aluminium);"
+              },
+              "5": {
+                "desc": "has a positive effect on the optics of the facade; the height of the cassette is 180 mm."
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g5j7sj",
+          "title": "CONCEALED ADAPTIVE ROLLER SHUTTERS INTEGRO",
+          "src": "/images/roller_shutters/adaptive_rs/RS_Integro.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "MOUNTED TO THE FACE OF ELEVATION + STYROFOAM",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 180 mm x 180 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "possible to mount also in the already existing buildings, after appropriate adjustments are made in the lintel area, or less frequently in front of the window;"
+              },
+              "2": {
+                "desc": "the entire unit is made of aluminium (the slats, guide rails and a rigid cassette of pressed aluminium);"
+              },
+              "3": {
+                "desc": "provides optimal solutions for designers and developers;"
+              },
+              "4": {
+                "desc": "INTEGRO system elements do not interfere with the window, door, or lintel structure (stiffness), thus they do not have any negative effect on the energy balance of the building;"
+              },
+              "5": {
+                "desc": "the INTEGRO system allows a single roller blind type which is wound up outwardly (left-handed rotation);"
+              },
+              "6": {
+                "desc": "an inspection flap is placed at the bottom (with external access);"
+              },
+              "7": {
+                "desc": "cassette height – 180 mm; very easy assembly;"
+              }
+            }
+          }
+        }
+      }
+    },
+    "GuideChannels": {
+      "title": "GUIDE CHANNELS in single and double execution",
+      "1": {
+        "id": "j5f3mp",
+        "title": "Chamber straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/chamber_straight.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "v0r2bm",
+        "title": "Straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/straight_guide.jpg",
+        "alt": ""
+      }
+    },
+    "Housing": {
+      "title": "HOUSING – Lamele Aluprof PA 39",
+      "description": "PA 39 profile is one of the most popular aluminium profiles. It is so popular that the shutters made of this profile has been used in European houses for years now. Its main features are small width and tapering shape. It rolls up perfectly and fits to even small boxes. Thanks to the foam filling the profile inside, it is well insulated in terms of temperatures and noise. Small weight allows for manual drive, spring drive or electric operation. PA 39 is offered as a perforated version or plain in wide range of colours similar to RAL palette. The profiles are durable in terms of colour and resistance to wear-off. The profile is also resistant to the impact of atmospheric conditions.<br></br>Aluminium profiles belong to products which are ecologically clean. The foam inside is free of freon compounds and the paints do not contain cadmium."
+    }
+  },
+  "TopMountedPage": {
+    "title": "Top-mounted External Roller Shutters",
+    "description": "EXTE  is a new, universal roller blind system enabling either side mounting in newly built and renovated buildings. The most characteristic features of the system include:",
+    "parametersList": {
+      "list": {
+        "1": {
+          "desc": "changing position of the inspection flap;"
+        },
+        "2": {
+          "desc": "at the bottom or at the back of the cassette, or as an alternative, outside of the building. Regardless of the flap position, the cassette capacity does not change;"
+        },
+        "3": {
+          "desc": "completely new assembly of drives and bearing of the roller blind;"
+        },
+        "4": {
+          "desc": "universal side guide rail, very easy mounting;"
+        },
+        "5": {
+          "desc": "division and adjustable rolling; window mosquito nets and unique solutions for door mosquito nets."
+        }
+      }
+    },
+    "RSBoxSection": {
+      "title": "A ROLLER SHUTTER BOX – types",
+      "description": "We offer two types of roller shutter boxes:",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "EXPERT XT – roller shutter box 185mm x 220 mm, for the window of the height to 2300 mm (height measured together with the box)."
+          },
+          "2": {
+            "desc": "ELITE XT – roller shutter box 240mm x 220 mm, for the window of the height to 2800 mm (height measured together with the box). The system allows an additional mosquito net to be integrated within."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "c903lz",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "fg57qt",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_2.jpg",
+          "alt": ""
+        }
+      }
+    },
+    "GuideRailsTypes": {
+      "title": "GUIDE RAILS FOR ROLLER SHUTTER ELEMENTS ON WINDOWS AND DOORS",
+      "1": {
+        "id": "78h5kp",
+        "title": "GUIDE CHANNELS in single execution",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_1.jpg",
+        "alt": "",
+        "description": "Roller shutter guides made of PVC are a complement roller shutter boxes."
+      },
+      "2": {
+        "id": "6vr2om",
+        "title": "GUIDE CHANNELS in double execution",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_1.jpg",
+        "alt": "",
+        "description": "In the place where the blinds are divided standard is mounted the guide to the desired size thanks to a special profile widening."
+      },
+      "3": {
+        "id": "26l2dm",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      },
+      "4": {
+        "id": "p7m2lc",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      }
+    },
+    "TechnicalSolutionsne": {
+      "title": "TECHNICAL SOLUTIONSNE",
+      "1": {
+        "id": "95b7lz",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_1.jpg",
+        "alt": "",
+        "description": "Simple adjustment of insulating filing"
+      },
+      "2": {
+        "id": "l3t0pt",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_2.jpg",
+        "alt": "",
+        "description": "Special steel reinforcement for windows of the width above 1500 mm. Patented unique product of secure and gap-free joining."
+      },
+      "3": {
+        "id": "m45n9g",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_3.jpg",
+        "alt": "",
+        "description": "EFFECTIVE THERMAL INSULATION – additional energy saving. The legal requirements regarding thermal insulation properties of cassettes in Germany are very strict. As the system is manufactured in this country, it is subject to the national regulations set in the Energy Saving Regulations (EnEV). According to the document, in new buildings, a blind cassette is considered to be a part of an external wall. In such a case, it is required to prove the accordance with the examples included in Appendix 2 of the DIN4108 standard. That is why, architects can do calculations taking into account a reduced heat transmission coefficient of a thermal bridge. The EXTE roller blind system provides excellent thermal insulation, according to applicable regulations."
+      }
+    }
+  },
+  "ScreenPage": {
+    "title": "Roller Shutters / Sun Protection Covers",
+    "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
+    "alt": "",
+    "descrList": {
+      "1": {
+        "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
+      },
+      "2": {
+        "desc": "Screens can be operated with a switch, remote control, but also mobile device."
+      },
+      "3": {
+        "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
+      }
+    },
+    "ScreensList": {
+      "title": "Roller Shutters / Sun Protection Covers",
+      "description": "Screens represent a combination of functionality and convenience of use. Retrofitting the covers with weather automation and overload electric drives guarantees their years-long and trouble-free operation, while ensuring the comfort of daily use.",
+      "imgList": {
+        "1": {
+          "id": "v8g9xw",
+          "src": "/images/roller_shutters/screen_covers/screen_list_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "35h8lm",
+          "src": "/images/roller_shutters/screen_covers/screen_list_2.jpg",
+          "alt": ""
+        }
+      },
+      "parametersList": {
+        "title": "TECHNICAL DATA:",
+        "list": {
+          "1": {
+            "desc": "Dimensions – Possibility to cover the surface up to a width of 5m or up to an area of 15m2;"
+          },
+          "2": {
+            "desc": "Operation – Via remote control, switch or mobile device;"
+          },
+          "3": {
+            "desc": "Available boxes – We offer boxes with dimensions of 95 mm, 105 mm, 125 mm;"
+          },
+          "4": {
+            "desc": "Colour palette – Any colour from the RAL palette;"
+          },
+          "5": {
+            "desc": "Fabric structure – Regular (Soltis) and diagonal (Serge, Nova);"
+          }
+        }
+      }
+    }
+  },
+  "AccessoriesRSPage": {
+    "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+    "description": "Accessories and additions for roller shutters and sun protection covers enhance both their functionality and aesthetic appeal. These supplementary components include items such as remote controls, manual cranks, and automated motors for seamless operation, as well as sensors that detect sunlight or wind to adjust covers automatically. Such features provide improved convenience, energy efficiency, and durability, making these systems adaptable to modern lifestyles and varying weather conditions.In addition to operational accessories, decorative elements like custom color options, frames, or specialized coatings can complement the design of any building. Accessories designed for sun protection covers may include adjustable brackets, side channels, or advanced fabrics with UV filtering, ensuring optimal light control and thermal insulation. Together, these additions elevate the usability and performance of roller shutters and sun protection solutions, catering to both residential and commercial needs.",
+    "ExternalRS": {
+      "title": "OPERATION OF EXTERNAL ROLLER SHUTTERS – options of use",
+      "1": {
+        "id": "v5b8lz",
+        "title": "Manual operation",
+        "src": "/images/roller_shutters/adaptive_rs/manual.webp",
+        "alt": "",
+        "description": "Manual operation of roller shutter allows for winding up and down with the use of a retractor (pulling the tape or a rope) or a retractor with a crank handle. For external roller shutters each such option requires effort and time if it is used several times a day."
+      },
+      "2": {
+        "id": "l3g7pt",
+        "title": "Electric operation",
+        "src": "/images/roller_shutters/adaptive_rs/electric.jpg",
+        "alt": "",
+        "description": "Electric operation. A drive – a very good quality of engine with mechanical limit switches – Motus Monos produced by NICE company. It has a noiseless gearshift and brakes."
+      },
+      "3": {
+        "id": "d1n7pg",
+        "title": "Radio-operation",
+        "src": "/images/roller_shutters/adaptive_rs/radio_operation.webp",
+        "alt": "",
+        "description": "Radio-operation is powered by an advanced RolTop-868 engine with a built-in radio center, offering intelligent detection to stop and reverse motion upon encountering obstacles. The system features adjustable final positions, silent braking, and two-way communication with routing capabilities to ensure seamless remote control operation."
+      }
+    },
+    "RemoteControls": {
+      "title": "Available remote controls",
+      "cards": {
+        "1": {
+          "id": "v7j7fj",
+          "title": "SoloTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_1.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-channel REMOTE CONTROL with a wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Signals confirming the reception of a command by a receiver."
+            },
+            "4": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "2": {
+          "id": "j4v1sj",
+          "title": "MonoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_2.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-channel REMOTE CONTROL with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Signals confirming the reception of a command by a receiver."
+            },
+            "4": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "3": {
+          "id": "m1x4aj",
+          "title": "VarioTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_3.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "5-channel REMOTE CONTROL with the function of central channel and with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            },
+            "4": {
+              "desc": "Manual/automatic switch included."
+            }
+          }
+        },
+        "4": {
+          "id": "25c7sk",
+          "title": "TempoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_4.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "10-channel REMOTE CONTROL with the possibility to make 2 groups + function of central channel."
+            },
+            "2": {
+              "desc": "Clock function (opening and closing at certain times), holiday function (simulates the presence of house-holders)."
+            },
+            "3": {
+              "desc": "Availability of programming."
+            },
+            "4": {
+              "desc": "Manual/automatic switch included for each channel of a remote control."
+            }
+          }
+        }
+      }
     }
   }
 }

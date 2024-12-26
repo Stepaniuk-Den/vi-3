@@ -18,6 +18,7 @@ const DoorsFillingsPanels: React.FC<Props> = ({ params: { locale } }) => {
       <>
         <PageTopDescription t={t} />
         <SectionPaletteCards t={t} tBtn={tButtons}/>
+
       </>
   );
 };

@@ -131,8 +131,20 @@ export interface IImgList {
 
 export interface ICard {
   id: string;
+  title?: string;
   src: string;
   alt?: string;
   parametersList: IParameterItem;
   parametersList2?: IParameterItem;
+  descrList?: {
+    [key: string]: IDesc;
+  };
+}
+
+export interface ISectionImgAndListProps {
+  t: {
+    title: string;
+    cards: Record<string, ICard>;
+  };
+  isShowSecondList?: boolean;
 }
