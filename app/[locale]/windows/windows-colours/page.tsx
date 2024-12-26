@@ -14,7 +14,6 @@ const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("WindowsColoursPage");
   const tButtons = useTranslations("Buttons");
   const coloursList = Object.values(t.raw("coloursList")) as IItemCard[];
-  console.log("🚀 ~ coloursList:", coloursList);
 
   return (
     <>
