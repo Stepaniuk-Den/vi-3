@@ -52,6 +52,34 @@ export default {
         customShadow:
           "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
       },
+      animation: {
+        unfoldIn: 'unfoldIn 0.5s ease-out',
+        unfoldOut: 'unfoldOut 0.5s ease-in',
+      },
+      keyframes: {
+        unfoldIn: {
+          '0%': {
+            transform: 'scaleY(0.005) scaleX(0)',
+          },
+          '50%': {
+            transform: 'scaleY(0.005) scaleX(1)',
+          },
+          '100%': {
+            transform: 'scaleY(1) scaleX(1)',
+          },
+        },
+        unfoldOut: {
+          '0%': {
+            transform: 'scaleY(1) scaleX(1)',
+          },
+          '50%': {
+            transform: 'scaleY(0.005) scaleX(1)',
+          },
+          '100%': {
+            transform: 'scaleY(0.005) scaleX(0)',
+          },
+        },
+      },
     },
   },
   plugins: [],
