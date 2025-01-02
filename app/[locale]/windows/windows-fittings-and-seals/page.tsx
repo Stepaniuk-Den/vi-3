@@ -33,7 +33,7 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
         size={"max-w-[396px]"}
         positioning={"flexWrap"}
         isRow={false}
-        imageFit="contain"
+        imgFit="contain"
       />
       <FittingComponentsSection t={fittingComponentsSection} />
     </>
