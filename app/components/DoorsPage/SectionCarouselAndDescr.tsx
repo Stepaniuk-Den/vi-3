@@ -1,7 +1,7 @@
+import { IImage } from "@/helpers/interfaces";
 import React from "react";
 import Line from "../Line";
 import ImgCarouselPage from "../ImgCarouselPage";
-import { IImage } from "@/helpers/interfaces";
 
 interface ISectionCarouselAndDescrProps {
   t: {
@@ -30,12 +30,11 @@ const SectionCarouselAndDescr: React.FC<ISectionCarouselAndDescrProps> = ({
           </div>
           <div className="flex flex-col flex-grow flex-[1] pt-8 gap-2">
             {descriptionList.map((text, idx) => (
-              <p key={idx}>
-                {text}
-              </p>
+              <p key={idx}>{text}</p>
             ))}
           </div>
-        </div></div>
+        </div>
+      </div>
     </section>
   );
 };

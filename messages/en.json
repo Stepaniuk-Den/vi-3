@@ -2704,10 +2704,10 @@
           "parametersList": {
             "list": {
               "1": {
-                "desc": "colour: 2178001"
+                "desc": "Colour: 2178001"
               },
               "2": {
-                "desc": "glass: CHINCHILLA"
+                "desc": "Glass: CHINCHILLA"
               }
             }
           }
@@ -2809,10 +2809,10 @@
           "parametersList": {
             "list": {
               "1": {
-                "desc": "colour: 2178001"
+                "desc": "Colour: 2178001"
               },
               "2": {
-                "desc": "glass: CHINCHILLA"
+                "desc": "Glass: CHINCHILLA"
               }
             }
           }
@@ -3472,9 +3472,11 @@
     }
   },
   "ScreenPage": {
+    "ScreenCovers":{
+     "id":"bc2n9s",
     "title": "Roller Shutters / Sun Protection Covers",
     "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
-    "alt": "",
+    "alt": "",   
     "descrList": {
       "1": {
         "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
@@ -3485,6 +3487,7 @@
       "3": {
         "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
       }
+    }
     },
     "ScreensList": {
       "title": "Roller Shutters / Sun Protection Covers",

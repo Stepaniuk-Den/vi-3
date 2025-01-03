@@ -1,7 +1,7 @@
-import SectionPaletteCards from "@/app/components/DoorsPage/SectionPaletteCards";
-import PageTopDescription from "@/app/components/PageTopDescription";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import SectionPaletteCards from "@/app/components/DoorsPage/SectionPaletteCards";
+import PageTopDescription from "@/app/components/PageTopDescription";
 
 type Props = {
   params: { locale: string }

@@ -13,14 +13,16 @@ const NestedCard: React.FC<INestedCard> = ({
   // sizesize,
   isRow = true,
   imageFit,
+  onClick,
   // titleBannerCard,
   // background,
   // layout,
 }) => {
   return (
     <li
+      onClick={onClick}
       className={clsx(
-        "flex flex-col",
+        "flex flex-col cursor-zoom-in",
         className,
         size
         // {

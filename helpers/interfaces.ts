@@ -69,6 +69,7 @@ export interface INestedCard {
   titleBannerCard?: boolean;
   isRow?: boolean;
   imageFit?: "cover" | "contain";
+  onClick?: () => void;
 }
 
 export interface IParameterItem {
