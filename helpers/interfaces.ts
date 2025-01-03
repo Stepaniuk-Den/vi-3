@@ -68,7 +68,7 @@ export interface INestedCard {
 }
 
 export interface IParameterItem {
-  title: string;
+  title?: string;
   description?: string;
   list: {
     [key: string]: IDesc;
@@ -119,4 +119,9 @@ export interface IImage {
   alt: string;
   title?: string;
   description?: string;
+  params?: {
+    list: {
+      [key: string]: IDesc;
+    };
+  };
 }
