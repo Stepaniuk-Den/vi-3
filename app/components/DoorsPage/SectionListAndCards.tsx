@@ -1,9 +1,12 @@
+"use client";
+import { IImgList, IParameterItem } from "@/helpers/interfaces";
 import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
-import { IImgList, IParameterItem } from "@/helpers/interfaces";
 import NestedCard from "../NestedCard";
 import TitleBanner from "../TitleBanner";
 import clsx from "clsx";
+import ModalSwiperContent from "../ModalSwiperContent";
+import { useModal } from "../ModalProvider";
 
 interface ISectionListAndCardsProps {
   t: {
@@ -28,6 +31,13 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
   const parametersList = t.parametersList;
   const parametersList2 = t.parametersList2;
   const imgList = t.imgList ? Object.values(t.imgList) : [];
+  const images = imgList.map((img) => ({
+    id: img.id,
+    src: img.src,
+    alt: img.alt,
+  }));
+
+  const { openModal } = useModal();
 
   return (
     <section className="sectionCl">
@@ -49,7 +59,7 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
             "grid-cols-3": columns === 3,
           })}
         >
-          {imgList.map((card) => {
+          {imgList.map((card, index) => {
             return (
               <NestedCard
                 key={card.id}
@@ -59,6 +69,11 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
                 size="w-full"
                 description={card.description}
                 isRow={false}
+                onClick={() =>
+                  openModal(
+                    <ModalSwiperContent slides={images} initialSlide={index} />
+                  )
+                }
               />
             );
           })}

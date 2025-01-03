@@ -1,8 +1,8 @@
+import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import CardsSection from "@/app/components/CardsSection";
 import MessageBanner from "@/app/components/MessageBanner";
 import PageTopDescription from "@/app/components/PageTopDescription";
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 
 
 type Props = {

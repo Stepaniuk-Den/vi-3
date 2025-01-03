@@ -1,8 +1,13 @@
+"use client"
+
 import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 import { IImage } from "@/helpers/interfaces";
+import { useModal } from "../ModalProvider";
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
+import ModalSwiperContent from "../ModalSwiperContent";
+
 
 interface IList {
   list: IImage[];
@@ -44,6 +49,9 @@ const ImagesComponent: React.FC<IList> = ({
   objTypeImg = "object-cover",
   children,
 }) => {
+
+const { openModal } = useModal();
+
   return (
     <div
       className={clsx("flex flex-col gap-2", {
@@ -60,8 +68,9 @@ const ImagesComponent: React.FC<IList> = ({
           );
           return (
             <div
-              className={`flex flex-col gap-2  ${currentWidth} ${currentHeight}`}
+              className={`flex flex-col gap-2 cursor-zoom-in  ${currentWidth} ${currentHeight}`}
               key={img.id}
+              onClick={() => openModal(<ModalSwiperContent slides={list} initialSlide={idx} />)}
             >
               <div
                 className={clsx(

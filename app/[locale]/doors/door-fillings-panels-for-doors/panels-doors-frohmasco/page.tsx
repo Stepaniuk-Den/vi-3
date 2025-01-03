@@ -1,7 +1,7 @@
-import PageTopDescription from "@/app/components/PageTopDescription";
-import SectionAnimatedCards from "@/app/components/SectionAnimatedCards";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import PageTopDescription from "@/app/components/PageTopDescription";
+import SectionAnimatedCards from "@/app/components/SectionAnimatedCards";
 
 type Props = {
   params: { locale: string };

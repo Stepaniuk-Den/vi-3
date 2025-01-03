@@ -1,9 +1,20 @@
+"use client";
 import { ISectionImgAndListProps } from "@/helpers/interfaces";
+import { useModal } from "../ModalProvider";
 import React from "react";
 import TitleBanner from "../TitleBanner";
 import Image from "next/image";
+import ModalSwiperContent from "../ModalSwiperContent";
 
 const SectionCardsFewDescr: React.FC<ISectionImgAndListProps> = ({ t }) => {
+  const images = Object.values(t.cards).map((card) => ({
+    id: card.id,
+    src: card.src,
+    alt: card.alt || "",
+  }));
+
+  const { openModal } = useModal();
+
   return (
     <section className="sectionCl">
       <div className="container">
@@ -11,12 +22,19 @@ const SectionCardsFewDescr: React.FC<ISectionImgAndListProps> = ({ t }) => {
           <h2 className="titleCl">{t.title}</h2>
         </TitleBanner>
         <ul className="grid grid-cols-4 gap-7 pt-8">
-          {Object.values(t.cards).map((card) => (
+          {Object.values(t.cards).map((card, index) => (
             <li key={card.id} className="w-full flex flex-col gap-2">
               <h3 className="subTitleCl xl:leading-none normal-case">
                 {card.title}
               </h3>
-              <div className="relative border border-gray-300 rounded-md overflow-hidden w-full h-[260px]">
+              <div
+                className="relative border border-gray-300 rounded-md overflow-hidden w-full h-[260px] cursor-zoom-in"
+                onClick={() =>
+                  openModal(
+                    <ModalSwiperContent slides={images} initialSlide={index} />
+                  )
+                }
+              >
                 <Image
                   className="object-cover"
                   src={card.src}

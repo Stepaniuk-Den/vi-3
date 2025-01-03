@@ -1,8 +1,8 @@
+import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import SectionDescImagesAndList from "@/app/components/DoorsPage/SectionDescImagesAndList";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: { locale: string };

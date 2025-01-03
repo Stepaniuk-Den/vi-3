@@ -68,6 +68,7 @@ export interface INestedCard {
   //   size?: "w-1/2" | "w-1/4" | "w-full";
   titleBannerCard?: boolean;
   isRow?: boolean;
+  onClick?: () => void;
   imgFit?: "cover" | "contain";
   imgH?: string;
 }

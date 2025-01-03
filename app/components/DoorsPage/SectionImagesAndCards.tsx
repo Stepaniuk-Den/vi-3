@@ -1,8 +1,11 @@
+"use client";
+import { IImgList } from "@/helpers/interfaces";
+import { useModal } from "../ModalProvider";
 import React from "react";
 import ImagesComponent from "../SlidingDoorsPage/ImagesComponent";
-import { IImgList } from "@/helpers/interfaces";
 import TitleBanner from "../TitleBanner";
 import NestedCard from "../NestedCard";
+import ModalSwiperContent from "../ModalSwiperContent";
 
 interface ISectionImagesAndCards {
   t: {
@@ -17,6 +20,13 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
   isCards = true,
 }) => {
   const imgList = t.imgList ? Object.values(t.imgList) : [];
+  const cardSlides = imgList.slice(3, 6).map((img) => ({
+    id: img.id,
+    src: img.src,
+    alt: img.alt,
+  }));
+
+  const { openModal } = useModal();
 
   return (
     <section className="sectionCl">
@@ -32,7 +42,7 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
         />
         {isCards && (
           <ul className="grid grid-cols-3 gap-6">
-            {imgList.slice(3, 6).map((card) => {
+            {imgList.slice(3, 6).map((card, index) => {
               return (
                 <NestedCard
                   key={card.id}
@@ -42,6 +52,14 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
                   size="w-full"
                   description={card.description}
                   isRow={false}
+                  onClick={() =>
+                    openModal(
+                      <ModalSwiperContent
+                        slides={cardSlides}
+                        initialSlide={index}
+                      />
+                    )
+                  }
                 />
               );
             })}

@@ -1,6 +1,6 @@
-import React from 'react'
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import React from 'react'
 
 import TopDescrAndImg from '@/app/components/RollerShutterPage/TopDescrAndImg';
 import SectionTwoImgAndList from '@/app/components/RollerShutterPage/SectionTwoImgAndList';
@@ -16,7 +16,7 @@ const t = useTranslations("ScreenPage");
 
   return (
     <>
-      <TopDescrAndImg t={t} descrList={t.raw("descrList")}/>
+      <TopDescrAndImg t={t.raw("ScreenCovers")}/>
       <SectionTwoImgAndList t={t.raw("ScreensList")}/>
     </>
   )
