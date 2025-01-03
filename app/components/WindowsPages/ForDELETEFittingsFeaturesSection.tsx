@@ -14,7 +14,7 @@ const FittingsFeaturesSection: React.FC<Props> = ({ t }) => {
         size={"max-w-[384px]"}
         positioning={"flexWrap"}
         isRow={false}
-        imageFit="contain"
+        imgFit="contain"
       />
     </>
   );

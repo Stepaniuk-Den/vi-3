@@ -10,13 +10,13 @@ const NestedCard: React.FC<INestedCard> = ({
   alt,
   className,
   size = "w-full",
-  // sizesize,
+  imgH = "h-[460px]",
   isRow = true,
-  imageFit,
-  onClick,
   // titleBannerCard,
   // background,
   // layout,
+  imgFit,
+  onClick,
 }) => {
   return (
     <li
@@ -61,7 +61,12 @@ const NestedCard: React.FC<INestedCard> = ({
         )}
       >
         {/* ======== IMAGE ======== */}
-        <div className="relative w-full h-[460px] border border-gray-300 rounded-md overflow-hidden">
+        <div
+          className={clsx(
+            "relative w-full border border-gray-300 rounded-md overflow-hidden",
+            imgH
+          )}
+        >
           <Image
             sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
             src={src || ""}
@@ -69,10 +74,10 @@ const NestedCard: React.FC<INestedCard> = ({
             fill
             priority
             className={clsx({
-              "object-cover": imageFit === "cover",
-              "object-contain": imageFit === "contain",
+              "object-cover": imgFit === "cover",
+              "object-contain": imgFit === "contain",
             })}
-            // style={imageFit ? { objectFit: imageFit } : undefined}
+            // style={imgFit ? { objectFit: imgFit } : undefined}
             // placeholder="blur"
           />
         </div>
