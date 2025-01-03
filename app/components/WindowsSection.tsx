@@ -23,14 +23,16 @@ const WindowsSection: React.FC<Props> = ({ t, tBtn }) => {
         <h2 className="sr-only">{t("title")}</h2>
         <ul className="flex flex-col lg:flex-row justify-between gap-20">
           {windowsTypesList.map((typeItem) => (
-            <ItemCard
-              key={typeItem.id}
-              title={typeItem.title}
-              description={typeItem.description}
-              src={typeItem.src}
-              alt={typeItem.alt}
-              tBtn={tBtn("see")}
-            />
+            <li key={typeItem.id}>
+              <ItemCard
+                title={typeItem.title}
+                description={typeItem.description}
+                src={typeItem.src}
+                alt={typeItem.alt}
+                tBtn={tBtn("see")}
+                alignment="end"
+              />
+            </li>
           ))}
         </ul>
       </div>

@@ -1,10 +1,9 @@
-import SectionCardsAndBanner from "@/app/components/DoorsPage/SectionCardsAndBanner";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
+import SectionImagesAndCards from "@/app/components/DoorsPage/SectionImagesAndCards";
 import SectionImgAndList from "@/app/components/DoorsPage/SectionImgAndList";
+import NestedCardsSection from "@/app/components/NestedCardsSection";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-
-
 
 type Props = {
   params: { locale: string };
@@ -13,40 +12,33 @@ type Props = {
 const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
-    const t = useTranslations("PVCDoorsKommerlingPage");
+  const t = useTranslations("PVCDoorsKommerlingPage");
 
   return (
-    <>
-      <section className="sectionCl pt-60">
+    <section className="pageCl">
       <SectionCarouselAndDescr t={t} />
-      <SectionImgAndList t={t.raw("FeaturesKommerling76Section")} t2={t} source="FeaturesKommerling76Section" isTitleBanner={false} isDescription={false} />
-      <SectionCardsAndBanner
-        t={t.raw("OutwardDoors76Section")}
-        isShowDescr={true}
-        isShowTitleBanner={true}
+      <SectionImgAndList t={t.raw("FeaturesKommerling76Section")} />
+      <NestedCardsSection
+        tSectionItem={t.raw("OutwardDoors76Section")}
+        titleBanner
+        size="w-full"
+        isRow={false}
       />
-      <SectionCardsAndBanner
-        t={t.raw("InwardDoors76Section")}
-        isShowDescr={true}
-        isShowTitleBanner={true}
+      <NestedCardsSection
+        tSectionItem={t.raw("InwardDoors76Section")}
+        titleBanner
+        size="w-full"
+        isRow={false}
       />
-            <SectionCardsAndBanner
-        t={t.raw("DoorSillFeatures")}
-        isShowDescr={true}
-        isShowTitleBanner={true}
+      <NestedCardsSection
+        tSectionItem={t.raw("DoorSillFeatures")}
+        titleBanner
+        size="w-full"
+        isRow={false}
+        positioning="grid"
       />
-                  <SectionCardsAndBanner
-        t={t.raw("DoorSealsEPDM")}
-        isShowDescr={true}
-        isShowTitleBanner={true}
-        isImgThreeList={true}
-        columns={3}
-        isNestedCard={false}
-      />
-
-      </section>
-      
-    </>
+      <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false} />
+    </section>
   );
 };
 

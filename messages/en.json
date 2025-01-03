@@ -41,6 +41,26 @@
         "2": {
           "title": "pvc windows - kommerling",
           "slug": "windows-pvc-kommerling"
+        },
+        "3": {
+          "title": "alu windows - aliplast",
+          "slug": "windows-aluminium-aliplast"
+        },
+        "4": {
+          "title": "glass",
+          "slug": "windows-glass"
+        },
+        "5": {
+          "title": "fittings and seals",
+          "slug": "windows-fittings-and-seals"
+        },
+        "6": {
+          "title": "mullions",
+          "slug": "window-mullions"
+        },
+        "7": {
+          "title": "colours",
+          "slug": "windows-colours"
         }
       }
     },
@@ -112,17 +132,25 @@
         }
       }
     },
-    "roller-blinds": {
-      "title": "roller blinds",
-      "href": "/roller-blinds",
+    "roller-shutters": {
+      "title": "roller shutters",
+      "href": "/roller-shutters-sun-protection-covers",
       "links": {
         "1": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "adaptive external roller shutters",
+          "slug": "adaptive-external-roller-shutters"
         },
         "2": {
-          "title": "roller blinds",
-          "slug": "roller-blinds"
+          "title": "top mounted external roller shutters ",
+          "slug": "top-mounted-external-roller-shutters"
+        },
+        "3": {
+          "title": "screen covers",
+          "slug": "screen-covers"
+        },
+        "4": {
+          "title": "accessories",
+          "slug": "accessories-additions-roller-shutters-sun-protection-covers"
         }
       }
     },
@@ -311,8 +339,8 @@
   },
 
   "WindowsPage": {
-    "pageTitle": "WINDOWS from Poland",
-    "pageSubtitle": "functionality / comfort / aesthetics / effective thermal insulation",
+    "title": "WINDOWS from Poland",
+    "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
     "pageDesc1": "Choice of the right window is a serious decision which involves investing some money. When choosing windows, customers should make sure if the product goes well with the design of their flat or house, if its operation is convenient, if it helps to save energy, and finally if it guarantees maximum security.",
     "pageDesc2": "A window is a combination of profiles, complex window panes, fittings, seals and other additional accessories. Each of the elements has a great influence on such window qualities as aesthetics, comfort, security and energy efficiency. This is why, when buying windows, it is important to pay attention to their individual elements.",
     "pageDesc3": {
@@ -436,10 +464,9 @@
       }
     }
   },
-
   "WindowsPVCSchucoPage": {
-    "pageTitle": "PVC WINDOWS – Schüco Profiles",
-    "pageSubtitle": "/ Excellent energy efficiency thanks to innovative technology /",
+    "title": "PVC WINDOWS – Schüco Profiles",
+    "subtitle": "/ Excellent energy efficiency thanks to innovative technology /",
     "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
     "SectionsList": {
       "ProfilesImg": {
@@ -708,12 +735,21 @@
       }
     }
   },
-
   "WindowsPVCKommerlingPage": {
-    "pageTitle": "PVC WINDOWS – Kömmerling Profiles",
-    "pageSubtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
+    "title": "PVC WINDOWS – Kömmerling Profiles",
+    "subtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
     "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
     "SectionsList": {
+      "OfferSection": {
+        "title": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
+        "cardItem": {
+          "windowsSlug": "windows-kömmerling",
+          "title": "ECONOMICAL SOLUTION",
+          "description": "NEW PRODUCT – WINDOWS Kömmerling 70 AD",
+          "src": "/images/windows/windows-pcv.jpeg",
+          "alt": "Private house with large white windows"
+        }
+      },
       "ProfilesCrossSections": {
         "title": "Cross-sections of windows made of Kömmerling profiles.",
         "imgList": {
@@ -913,10 +949,492 @@
       }
     }
   },
+  "WindowsAluAliplastPage": {
+    "title": "ALUMINIUM WINDOWS – Aliplast profile",
+    "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
+    "SectionsList": {
+      "OfferAluSection": {
+        "title": "Please feel free to learn about our offer of aluminium profiles:",
+        "1": {
+          "id": "1",
+          "title": "Genesis GN 75",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Econoline EL",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "description": "Aliplast owns two of the country’s most technologically advanced vertical paint shops and two horizontal paint lines. Therefore, in our offer you will find profiles varnished with all types of powder coating in the entire range of RAL colours, as well as varnished with special effects such as fine or thick structure with a metallic effect."
+      },
+      "GenesisSection": {
+        "title": "GENESIS 75 /GN75/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 84 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – FIX 1-56 mm / OT 9-65 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – C4"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – E1500"
+              }
+            },
+            "notes": {
+              "1": {
+                "desc": "* Depending on the profile"
+              }
+            }
+          },
+          "3": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – GENESIS",
+            "list": {
+              "1": {
+                "desc": "This 3-chamber window system is designed for the construction of windows with increased thermal insulation. The thermal parameters of Genesis 75 meet the requirements that will be applicable as of 2021 (Uw from 0.90)."
+              },
+              "2": {
+                "desc": "The basis of the Genesis 75 system are the 75-mm-deep frame sections."
+              },
+              "3": {
+                "desc": "Genesis 75 is a system intended for designing window constructions for public buildings as well as single or multi-family houses."
+              },
+              "4": {
+                "desc": "The large range of sections/profiles offered as part of the Genesis 75 system enables the design of modern windows, doors and display windows with high functionality."
+              },
+              "5": {
+                "desc": "Genesis 75 uses modern insulation materials, which are currently new on the market. An additional thermal seal was designed besides the classic central seal. With this solution, a very high window tightness (air infiltration, watertightness) as well as an innovative appearance and aesthetics were obtained."
+              },
+              "6": {
+                "desc": "Within this system it will be possible to choose different profile finishes, giving the window structure an individual character."
+              },
+              "7": {
+                "desc": "The Genesis 75 window system sets a new standard for window insulation, while maintaining the highest ergonomics of use and modern profile aesthetics."
+              },
+              "8": {
+                "desc": "It is possible to mount the Flyscreen system (an insect screen system)."
+              },
+              "9": {
+                "desc": "A wide range of colours – RAL palette (Qualicoat 1518), structural colours, Aliplast Wood Colour Effect wood-like colours (Qualideco PL-0001), anode, bicolour."
+              }
+            }
+          }
+        }
+      },
+      "EconolineSection": {
+        "title": "ECONOLINE /EL/",
+        "1": {
+          "id": "1",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 51 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 60 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – to 37 mm"
+              }
+            }
+          },
+          "2": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES – ECONOLINE",
+            "list": {
+              "1": {
+                "desc": "A system designed for constructing doors and windows without thermal insulation. It allows for designing light, durable and functional structures."
+              },
+              "2": {
+                "desc": "The system is compatible with other Aliplast systems: common glazing beads, seals, corners and fittings."
+              },
+              "3": {
+                "desc": "The system is designed for constructing internal and external architectural components that do not require thermal insulation: windows, doors and sections of partition walls intended for general use in public and industrial buildings (in office rooms)."
+              },
+              "4": {
+                "desc": "It is possible to incorporate Econoline doors into partition walls made of Econoline segments or into other walls of any design."
+              },
+              "5": {
+                "desc": "Glazing beads available in rectangular and rounded variants."
+              },
+              "6": {
+                "desc": "The system design allows the use of rebate hinges, easier to install and more cost-effective."
+              },
+              "7": {
+                "desc": "It is possible to design panel doors (Econoline panel doors) on the basis of the Econoline system."
+              },
+              "8": {
+                "desc": "Smoke-tight doors can be built on the basis of this system – Econoline doors with the smoke-tight function meet the criteria of smoke-tightness classes Sa, Sm in accordance with PN-EN 13501-2+A1:2010)."
+              },
+              "9": {
+                "desc": "It is possible to construct sliding and swinging doors, connecting walls at any angle, and strengthening already made and even mounted elements."
+              },
+              "10": {
+                "desc": "The possibility of bending profiles."
+              },
+              "11": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect, anode, bicolour."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "WindowsGlassPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+    "CarouselSection": {
+      "title": "Structure of complex window panes:",
+      "description": {
+        "p1": "KNOW THE DESIGN OF YOUR WINDOW PACKAGE",
+        "p2": "The TUR-PLAST company uses glazing packs of the prestigious SAINT-GOBAIN company. The glazing packs include one-, two- or three-chamber sets. The thermoflat panes in a pack can be 4mm, 6mm or 8mm thick, divided with a steel distance frame or the so called warm frame (SGG SWISSPACER). The space between panes in a pack, in order to obtain lower heat transmission coefficient, is filled with gas – argon or krypton."
+      },
+      "imgList": {
+        "1": {
+          "id": "m9q25v",
+          "src": "/images/windows/glass-page/carousel1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "x7w5pl",
+          "src": "/images/windows/glass-page/carousel3.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "SectionsList": {
+      "PanesParametersSection": {
+        "title": "Complex window panes parameters:",
+        "1": {
+          "id": "1",
+          "title": "Ug – Heat transmission",
+          "description": "The Ug coefficient informs us about the amount of heat which will be lost in certain conditions. The lower the coefficient, the less heat will be through a glass pane.",
+          "src": "/images/windows/glass-page/panesParameter1.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "g – Energy permeability",
+          "description": "A glass pane constitutes a barrier for the solar power. That is why, it is important to use such glass panes which let in maximum amount of the power. The higher the rate the more additional energy we have to heat the interior of a building.",
+          "src": "/images/windows/glass-page/panesParameter2.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Lt – Light permeability",
+          "description": "Thanks to high Lt rate more light is let in and hence, less electric energy is needed to light a building.",
+          "src": "/images/windows/glass-page/panesParameter3.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Rw – Acoustic insulation",
+          "description": "Acoustic insulation of a given glazing pack is expressed with the Rw coefficient. It is measured in specialist acoustic laboratories. The acoustic insulation coefficient Rw of glass panes may reach the level of 28-53 dB.",
+          "src": "/images/windows/glass-page/panesParameter4.jpeg",
+          "alt": ""
+        }
+      },
+      "PanesTypesSection": {
+        "title": "Types of complex window panes:",
+        "1": {
+          "id": "1",
+          "title": "Energy-saving panes",
+          "description": "The panes are covered with low-emission coatings of noble metal oxides which role is to permit maximum amount of light and solar power (g, Lt) and at the same time, effectively prevent heat loss from room (Ug). Energy efficiency of complex glass panes depends on several factors, such as: quality of the heat insulation coating, number of glass panes in a pack, the gas filling the space between panes and the SWISSPACER warm distance frame. Thanks to the glazing packs of this type, it is possible to reduce heat energy consumption which results in lower energy bills.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "2": {
+          "id": "2",
+          "title": "Secure panes",
+          "description": "We offer two solutions: Panes with the STADIP laminated glass – in the case of breaking the pane, the foil keeps glass pieces together to reduce the risk of injuries. Panes with the SECURIT hardened glass – they are characterised by five times higher resistance to strikes e.g. by a ball or a person. In the case of breaking, the panes break into small blunt-edged pieces which do not cause serious body injuries. The described glazing pack, reducing the risk of injuries in the case of breaking the pane, is used e.g. in the places where children usually play or where people practise sport.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "3": {
+          "id": "3",
+          "title": "Anti-burglary panes",
+          "description": "The pane consists of two or more sheets of glass with a few layers of the PVB foil (polyvinyl butyral) in between, which is highly resistant to tearing. In the case of breaking, the product reduces the risk of falling into the interior of a building. As a default, the security pane is thicker than the other pane in a pack which, together with the applied PVB foil, improves its noise-absorbing properties. Whats is more, the product perfectly filters most of the UV rays and hence, it can be used in the places exposed to fading under the influence of the sun’s rays (shop windows, exhibitions, galleries).",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "4": {
+          "id": "4",
+          "title": "Noise-absorbing panes",
+          "description": "A noise-absorbing glass pane provides both high thermal and acoustic insulation. Outer side of the noise-absorbing glass pane pack is covered with laminated glass made of two sheets and one or more layers of the acoustic foil in between. The foil suppresses noise, and at the same time, if the pane breaks, it keeps the pieces together. The noise-absorbing glass panes are recommended particularly for the people who live in noisy surroundings. The SGG CLIMALPLUS SILENCE glass panes suppress the noise within the scope of 29 to 52 dB.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "5": {
+          "id": "5",
+          "title": "Ornamental panes",
+          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "6": {
+          "id": "6",
+          "title": "Self-cleaning panes",
+          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        }
+      }
+    }
+  },
+  "WindowsFittingsSealsPage": {
+    "title": "Glazing units for windows from PCV and Aluminium",
+    "GasketsFittingsSection": {
+      "title": "Gaskets and Fittings",
+      "gaskets": {
+        "subTitle": "top-class window seals – made of EPDM",
+        "card": {
+          "title": "WINDOWS GASKETS",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        },
+        "parametersList": {
+          "1": {
+            "description": "Quality depends on details – the saying is perfectly right if we talk about window joinery. Even though profiles and glass units offer excellent performance but the applied seals are of poor quality or are improperly fixed – the WINDOWS are worthless. Seals seem to be minor window elements, but in fact they determine very important parameters including:",
+            "list": {
+              "1": {
+                "desc": "thermal insulation;"
+              },
+              "2": {
+                "desc": "water-tightness;"
+              },
+              "3": {
+                "desc": "ventilation;"
+              },
+              "4": {
+                "desc": "acoustic insulation."
+              }
+            }
+          },
+          "2": {
+            "description": "Our seals are highly resistant to weather conditions, and they are also ductile, and hence resistant to deformation. These are the qualities of the material used for manufacturing the seals – synthetic rubber, commonly known as EPDM. This is why, our EPDM seals can be described as:",
+            "list": {
+              "1": {
+                "desc": "resistant to ageing;"
+              },
+              "2": {
+                "desc": "resistant to changing weather conditions;"
+              },
+              "3": {
+                "desc": "performing well in the temperature between -40 and +110 C degrees;"
+              },
+              "4": {
+                "desc": "resistant to humidity, steam or UV radiation;"
+              },
+              "5": {
+                "desc": "highly elastic;"
+              },
+              "6": {
+                "desc": "resistant to cracks and deformation;"
+              }
+            }
+          }
+        }
+      },
+      "fittings": {
+        "subTitle": "MACO MULTI-MATIC – a new generation of fittings",
+        "card": {
+          "title": "WINDOWS FITTINGS",
+          "description": "Fittings in a window structure are responsible for proper opening and closing of a window sash. Window fittings allow to set different sash positions: side-hung, tilt, turn-tilt, slide-tilt, slide-fold. When buying windows, one needs to take into account if a given solution offers significantly better performance in terms of security, functioning and comfort. TUR-PLAST uses window fittings produced by the reputable MACO company. The products offer security and reliability for many years.",
+          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "alt": ""
+        }
+      }
+    },
+    "FittingsFeaturesSection": {
+      "title": "Characteristic features of the MACO MULTI-MAC fittings include:",
+      "1": {
+        "id": "1",
+        "title": "SAFEGUARD AGAINST FAULTY CONTROL",
+        "description": "The MACO company is one of the first manufacturers who equipped standard fittings with the mechanism blocking window operation in the case of faulty handle position. It is integrated with the sash lifter which has been improved even further. The mechanism prevents the so called „sash slip” from the top hinge, which frequently causes client complaints.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "ADDITIONAL TILT SETTING FOR „SLOT VENTILATION”",
+        "description": "The function allows to leave small slot between the window frame and sash which guarantees continuous, controlled inflow of fresh air. The micro-ventilation function is entirely integrated with the stay; when switching to the tilt setting at 45 o, the sash stands out approximately 10-13 mm; The ventilation setting is not affected by draught or wind.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "ADJUSTABLE i.S SECURITY CAMS – intelligent security",
+        "description": "The security cams are equipped with their own pressure control and hence: seal windows tightly reduce costs; distinguish our windows from the products offered by the competition. When you choose TUR-PLAST windows, you receive fittings with security cams resistant to break-ins, mounted all around the window frame.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "title": "DUMMY SASH GEAR PROTECTING AGAINTS BREAK-INS",
+        "description": "A perfect solution for comfortable and secure windows. Comfortable to operate. Only two hardware components.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "title": "UNIFROM SIILVER-LOOK COATING AND CONNECTING EDGE COVER PROVIDING PROTECTION AGAINST CORROSION",
+        "description": "MACO is the first manufacturer who, since 2000, has been applying silver passivation treatments with electro-zinc coating, free of Chromium (VI), and wax coating without using silicate. The changes improved the protective qualities of the fitting surface and eliminated the use of Chromium (VI). Steel fitting elements are coated with zinc, chromium or wax.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "title": "DOOR SNAPPER FOR BALCONY DOORS",
+        "description": "The snapper keeps the sash in the frame without the need to use the window handle. It turns off automatically if the sash is in the tilt position. Adjustable height.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "title": "PERFECT IN ALL DETAIL: INNER CENTRAL COMPRESSION LOCK",
+        "description": "The contact pressure can easily be adjusted with i.S. cams and hence, they: seal the window tightly, save heating costs, ensure satisfied customers distinguish our windows from the products offered by the competition.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "title": "3D HINGE REGULATED IN THREE DIRECTIONS",
+        "description": "The set of bottom hinges can be regulated in three directions (height adjustment, side adjustment and compression setting). The stays allow to lower and lift sashes and to adjust contact pressure.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "title": "SECURE TILT POSITION",
+        "description": "Basic security at window’s most critical point. No special striker plate needed. Protection against levering up, also in the tilt position.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "title": "i.S. STRIKER PLATES",
+        "description": "A special composition of high-quality materials and specialist casting procedures ensure complete stability. The fittings are screwed into the frame reinforcement.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "title": "FITTING PARTS WHICH ARE RESISTANT TO BREAK-INS CAN BE EASILY FIXED",
+        "description": "Should increased window security be desired at a later date, it is very easy to change the standard striker plates for the i.S. security striker plates thanks to identical screw positions.The standard fittings have two security points. The fittings of class Wk1 have four security striker plates. The fittings of class Wk 2, however, have between 8 and 10 i.S. security striker plates.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    },
+    "FittingComponentsSection": {
+      "title": "Fitting components:",
+      "card": {
+        "id": "1",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "WindowMullionsPage": {
+    "title": "Window mullions",
+    "card": {
+      "description": "In order to highlight the character of a window, an elevation, or even the particular features of the whole building, we offer muntin windows. These are highly recommended for stylized houses and buildings of the past whose casements used to be split into smaller units because of construction factors and limitations. Consequently, we have included windows with muntins in our offer too. Larger glass surfaces are naturally a better choice to complete modern interiors; nevertheless custom-made muntins can be successfully used with present day architecture.Wide, structural or glass bond muntins should be applied with care since they reduce the amount of light that is let in, affect thermal insulation, and create some difficulties in cleaning panes.",
+      "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+      "alt": ""
+    },
+    "MuntinTypesSection": {
+      "title": "We can distinguish the following muntin types:",
+      "1": {
+        "id": "1",
+        "title": "STRUCTURAL MUNTINS",
+        "description": "Structural muntins which constitute a part of the window frame and divide the glass pane into smaller, adjacent panes. Their finishing is identical to that of the window frames. Our windows consist of standard transoms and vertical dividers 91 mm wide (the cross pattern is very popular – it splits the window pane into 4 pane units in 1,2 or 4 casements). If the glass should be broken, only one small pane has to be replaced as opposed to single glass pane windows where the entire pane needs to be removed and replaced.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "BETWEEN THE PANES MUNTINS",
+        "description": "Between the panes muntins are made of aluminium or PVC and placed in spaces between the insulating glass panes. Their colour can match that of the window frames, but they can also be produced in gold or silver options. They are usually supplied in widths of 8, 18, 26 or 45 mm. This type are considered the most convenient type whilst it comes to washing the windows.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "VIENNA MUNTINS",
+        "description": "Vienna muntins are glued onto the glazing surface. In our windows these are made of PVC with sealed finished edges. The use of a spacing frame inside the glazing unit, imitates the pattern typical for structural muntins. They are available in two widths: 25 and 37 mm. The Venice muntins, which are more popular for wooden windows, provide a similar solution to the Vienna ones. In this case, however, the muntins are glued onto the glazing pane, but neither seal nor distance frame are used.",
+        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "alt": ""
+      }
+    }
+  },
+  "WindowsColoursPage": {
+    "title": "Colour palette for window profiles",
+    "description": "When choosing windows and doors, one of the things to think about is the choice of colours. Below we present our colour offers for window and door profiles for both PVC Schüco and Kömmerling as well as aluminium Aliplast and Aluron.",
+    "coloursList": {
+      "1": {
+        "id": "1",
+        "description": "Colour palette for window profiles – Schüco",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "2": {
+        "id": "2",
+        "description": "Colour palette for window profiles – Kömmerling",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "3": {
+        "id": "3",
+        "description": "Colour palette for window profiles – Aluron",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      },
+      "4": {
+        "id": "4",
+        "description": "Colour palette for window profiles – Aliplast",
+        "src": "/images/windows/windows-pcv.jpeg",
+        "alt": "Private house with large white windows"
+      }
+    }
+  },
 
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
-    "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
     "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
     "doorsList": {
       "1": {
@@ -998,132 +1516,135 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
+        "id": "m0q25v",
         "src": "/images/doors/exterior-door.webp",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
+        "id": "12e648",
         "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
+        "id": "a3f9kt",
         "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
+        "id": "q1z8mx",
         "src": "/images/doors/folding-doors.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
+        "id": "v5c2nl",
         "src": "/images/doors/balcony-terrace-doors.jpg",
         "alt": ""
       }
     },
     "SchucoProfilesSection": {
       "title": "OUR OFFER INCLUDES TWO TYPES OF DOOR PROFILES BY Schüco: Corona CT 70 and LivIng 82:",
-      "list": {
-        "1": {
-          "bannerTitle": "Schüco door sill cross-section – Corona CT 70 ",
-          "img": "/images/doors/corona_CT_70.jpg"
-        },
-        "2": {
-          "bannerTitle": "Schüco door sill cross-section – LivIng 82",
-          "img": "/images/doors/livIng_82.jpg"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Schüco door sill cross-section – Corona CT 70 ",
+        "src": "/images/doors/schuco/corona_CT_70.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "b8z7xt",
+        "title": "Schüco door sill cross-section – LivIng 82",
+        "src": "/images/doors/schuco/livIng_82.jpg",
+        "alt": ""
       }
     },
     "SchucoProfile82Section": {
+      "title": "Schüco DOOR – profil LivIng 82",
+      "description": "Schüco LivIng are innovative systems for modern plastic doors.",
       "parametersList": {
-        "1": {
-          "title": "Schüco DOOR – profil LivIng 82",
-          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
-          "list": {
-            "1": {
-              "desc": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm."
-            },
-            "2": {
-              "desc": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of the element, while obtaining an elegant appearance as there is no seal hardening."
-            },
-            "3": {
-              "desc": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized."
-            },
-            "4": {
-              "desc": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection."
-            },
-            "5": {
-              "desc": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles."
-            },
-            "6": {
-              "desc": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
-            }
+        "list": {
+          "1": {
+            "desc": "The 6/7-chamber Schüco LivIng door system achieves excellent thermal insulation parameters with an installation depth of 82 mm."
+          },
+          "2": {
+            "desc": "The first weldable EPDM seal is integrated with the Schüco LivIng door system. By using a flexible, weldable material, a better sealing effect is achieved in the difficult corner area of the element, while obtaining an elegant appearance as there is no seal hardening."
+          },
+          "3": {
+            "desc": "The Schüco LivIng system meets the individual requirements of investors in both private houses and large buildings, either new or modernized."
+          },
+          "4": {
+            "desc": "Schüco AutomotiveFinish glossy metallic shades as well as the Schüco UnlimitedFinish and Schüco TopAlu PVC film ranges are all available for colour selection."
+          },
+          "5": {
+            "desc": "We use modern silver gray seals in the white profiles of the Schüco LivIng system and black seals in the foiled profiles."
+          },
+          "6": {
+            "desc": "The Schüco LivIng plastic door system can be equipped with overlay fillings or door fillings to cover the leaf. This provides a lot of freedom in arranging individual entrance doors."
           }
         }
-      }
-    },
-    "CardsSchuco82Section": {
-      "list": {
+      },
+      "imgList": {
         "1": {
-          "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening outwards",
-          "img": "/images/doors/opening_outwards.jpg"
+          "id": "n9x3lw",
+          "title": "LivIng 82 ENTRANCE DOORS – opening outwards",
+          "src": "/images/doors/schuco/opening_outwards.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "LivIng 82 ENTRANCE DOORS – opening inwards",
-          "img": "/images/doors/opening_inwards.jpg"
+          "id": "k5v8zt",
+          "title": "LivIng 82 ENTRANCE DOORS – opening inwards",
+          "src": "/images/doors/schuco/opening_inwards.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/opening_outwards_scheme.jpg",
+          "id": "q2m7ry",
+          "src": "/images/doors/schuco/opening_outwards_scheme.jpg",
+          "alt": "",
           "description": "Cross-section through the LivIng 82 door opening outwards"
         },
         "4": {
-          "img": "/images/doors/opening_inwards_scheme.jpg",
+          "id": "p4t6bx",
+          "src": "/images/doors/schuco/opening_inwards_scheme.jpg",
+          "alt": "",
           "description": "Cross-section through the LivIng 82 door opening inwards"
         }
       },
-      "parametersList": {
-        "1": {
-          "title": "TECHNICAL INFORMATION:",
-          "description": "Schüco LivIng are innovative systems for modern plastic doors.",
-          "list": {
-            "1": {
-              "desc": "System mounting depth – 82 mm"
-            },
-            "2": {
-              "desc": "Front width min. – 88 mm"
-            },
-            "3": {
-              "desc": "Uf value (frame) – 1.1 W/(m²·K)"
-            },
-            "4": {
-              "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
-            },
-            "5": {
-              "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
-            },
-            "6": {
-              "desc": "Air permeability – class 2"
-            },
-            "7": {
-              "desc": "Water tightness – class 5A"
-            },
-            "8": {
-              "desc": "Anti-burglary resistance – up to Rc2"
-            },
-            "9": {
-              "desc": "Wind load resistance – klass C2/B2"
-            },
-            "10": {
-              "desc": "Height max. – 2350 mm"
-            },
-            "11": {
-              "desc": "Width max. – 1100 mm"
-            },
-            "12": {
-              "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
-            }
+      "parametersList2": {
+        "title": "TECHNICAL INFORMATION:",
+        "list": {
+          "1": {
+            "desc": "System mounting depth – 82 mm"
+          },
+          "2": {
+            "desc": "Front width min. – 88 mm"
+          },
+          "3": {
+            "desc": "Uf value (frame) – 1.1 W/(m²·K)"
+          },
+          "4": {
+            "desc": "Glass / panel thickness min. – max. – 24 mm – 52 mm"
+          },
+          "5": {
+            "desc": "Surface finish – Decorative foils / TopAlu / AutomotiveFinish"
+          },
+          "6": {
+            "desc": "Air permeability – class 2"
+          },
+          "7": {
+            "desc": "Water tightness – class 5A"
+          },
+          "8": {
+            "desc": "Anti-burglary resistance – up to Rc2"
+          },
+          "9": {
+            "desc": "Wind load resistance – klass C2/B2"
+          },
+          "10": {
+            "desc": "Height max. – 2350 mm"
+          },
+          "11": {
+            "desc": "Width max. – 1100 mm"
+          },
+          "12": {
+            "desc": "Door sill – Automatic door sealing, Low collision-free door threshold made of glass-fibre reinforced plastic or aluminium, compliant with DIN 18025."
           }
         }
       }
@@ -1131,80 +1652,99 @@
     "PanelTypes": {
       "title": "PANEL STRIPS – types:",
       "description": "See door cross-sections in which different panel strips were used, depending on the thickness of the door filling used.",
-      "list": {
-        "1": {
-          "img": "/images/doors/panel_48.webp",
-          "description": "LivIng door profile with a 48 mm panel"
-        },
-        "2": {
-          "img": "/images/doors/panel_36.webp",
-          "description": "LivIng door profile with a 36 mm panel"
-        }
+      "1": {
+        "id": "j8f3kp",
+        "src": "/images/doors/schuco/panel_48.webp",
+        "alt": "",
+        "description": "LivIng door profile with a 48 mm panel"
+      },
+      "2": {
+        "id": "v6r2lm",
+        "title": "",
+        "src": "/images/doors/schuco/panel_36.webp",
+        "alt": "",
+        "description": "LivIng door profile with a 36 mm panel"
       }
     },
     "DoorFillingsTypes": {
+      "title": "DOOR FILLINGS – types:",
+      "description": "Door filling may be:",
       "parametersList": {
-        "1": {
-          "title": "DOOR FILLINGS – types:",
-          "description": "Door filling may be:",
-          "list": {
-            "1": {
-              "desc": "inset or overlay"
-            },
-            "2": {
-              "desc": "made of laminated boards or aluminium"
-            },
-            "3": {
-              "desc": "decorated with various frames, glass elements, inlays, cuttings or appliqués"
-            },
-            "4": {
-              "desc": "of any colour of your choice"
-            }
+        "list": {
+          "1": {
+            "desc": "inset or overlay"
+          },
+          "2": {
+            "desc": "made of laminated boards or aluminium"
+          },
+          "3": {
+            "desc": "decorated with various frames, glass elements, inlays, cuttings or appliqués"
+          },
+          "4": {
+            "desc": "of any colour of your choice"
           }
         }
       },
-      "list": {
+      "imgList": {
         "1": {
-          "bannerTitle": "DOORS – INSET FILLING",
-          "img": "/images/doors/inset_filling.jpg"
+          "id": "n3t9xw",
+          "title": "DOORS – INSET FILLING",
+          "src": "/images/doors/schuco/inset_filling.jpg",
+          "alt": ""
         },
         "2": {
-          "bannerTitle": "DOORS – OVERLAY FILLING",
-          "img": "/images/doors/outset_filling.jpg"
+          "id": "q5z8lm",
+          "title": "DOORS – OVERLAY FILLING",
+          "src": "/images/doors/schuco/outset_filling.jpg",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/door_inset_filling.jpg"
+          "id": "p4r7vj",
+          "src": "/images/doors/schuco/door_inset_filling.jpg",
+          "alt": ""
         },
         "4": {
-          "img": "/images/doors/door_outset_filling.jpg"
+          "id": "k2y6df",
+          "src": "/images/doors/schuco/door_outset_filling.jpg",
+          "alt": ""
         }
       }
     },
     "EntranceDoorSystem": {
       "title": "ENTRANCE DOOR OPENING SYSTEMS:",
-      "list": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/door_system_1.webp",
-          "description": "Doorbell with camera and peephole"
+          "id": "a9k4tp",
+          "src": "/images/doors/schuco/entrance_system_1.webp",
+          "alt": ""
         },
         "2": {
-          "img": "/images/doors/door_system_2.webp",
+          "id": "b7x2qn",
+          "src": "/images/doors/schuco/entrance_system_2.webp",
+          "alt": ""
+        },
+        "3": {
+          "id": "m5v8zc",
+          "src": "/images/doors/schuco/entrance_system_3.webp",
+          "alt": ""
+        },
+        "4": {
+          "id": "r3j6ly",
+          "src": "/images/doors/schuco/door_system_1.webp",
+          "description": "Doorbell with camera and peephole",
+          "alt": ""
+        },
+        "5": {
+          "id": "f8w1pk",
+          "src": "/images/doors/schuco/door_system_2.webp",
+          "alt": "",
           "description": "Door opening by entering code on numeric keyboard"
         },
-        "3": {
-          "img": "/images/doors/door_system_3.webp",
+        "6": {
+          "id": "z2y7vn",
+          "src": "/images/doors/schuco/door_system_3.webp",
+          "alt": "",
           "description": "Door opening system with fingerprint reader"
-        }
-      },
-      "imgThreeList": {
-        "1": {
-          "img": "/images/doors/entrance_system_1.webp"
-        },
-        "2": {
-          "img": "/images/doors/entrance_system_2.webp"
-        },
-        "3": {
-          "img": "/images/doors/entrance_system_3.webp"
         }
       }
     }
@@ -1243,33 +1783,37 @@
     },
     "FeaturesKommerling76Section": {
       "title": "Characteristic Features of KÖMMERLING 76 AD Door System:",
-      "img": "/images/doors/corona_CT_70.jpg",
-      "parametersList": {
+      "cards": {
         "1": {
-          "list": {
-            "1": {
-              "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
-            },
-            "2": {
-              "desc": "Optimal distribution of steel reinforcement and angle connectors;"
-            },
-            "3": {
-              "desc": "Exceptional structural stability;"
-            },
-            "4": {
-              "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
-            },
-            "5": {
-              "desc": "High tightness – double sealing of the sill;"
-            },
-            "6": {
-              "desc": "Perfect protection against variable weather conditions;"
-            },
-            "7": {
-              "desc": "Excellent thermal insulation;"
-            },
-            "8": {
-              "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+          "id": "m1y2kw",
+          "src": "/images/doors/kommerling/kommerling_76.webp",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "High anti-burglary protection – up to anti-burglary resistance class of RC2 (Wk2);"
+              },
+              "2": {
+                "desc": "Optimal distribution of steel reinforcement and angle connectors;"
+              },
+              "3": {
+                "desc": "Exceptional structural stability;"
+              },
+              "4": {
+                "desc": "Option of embedding special panes and innovative door fillings up to 48 mm;"
+              },
+              "5": {
+                "desc": "High tightness – double sealing of the sill;"
+              },
+              "6": {
+                "desc": "Perfect protection against variable weather conditions;"
+              },
+              "7": {
+                "desc": "Excellent thermal insulation;"
+              },
+              "8": {
+                "desc": "Unlimited design possibilities thanks to the wide range of colours and various surface structures."
+              }
             }
           }
         }
@@ -1277,66 +1821,82 @@
     },
     "OutwardDoors76Section": {
       "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Narrower leaf",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ door leaf 76205 opening outwards /"
-        },
-        "2": {
-          "bannerTitle": "Wider leaf",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ door leaf 76207 opening inwards /"
-        }
+      "1": {
+        "id": "m6y2qr",
+        "title": "Narrower leaf",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76205 opening outwards"
+      },
+      "2": {
+        "id": "p9k2jm",
+        "title": "Wider leaf",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76207 opening inwards"
       }
     },
     "InwardDoors76Section": {
       "title": "INWARD-OPENING DOOR – door sill cross-section Kömmerling 76 AD",
-      "list": {
-        "1": {
-          "bannerTitle": "Narrower leaf",
-          "img": "/images/doors/corona_CT_70.jpg",
-          "description": "/ door leaf 76204 opening outwards /"
-        },
-        "2": {
-          "bannerTitle": "Wider leaf",
-          "img": "/images/doors/livIng_82.jpg",
-          "description": "/ door leaf 76206 opening inwards /"
-        }
+      "1": {
+        "id": "v3x8lz",
+        "title": "Narrower leaf",
+        "src": "/images/doors/kommerling/narrower_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76204 opening outwards"
+      },
+      "2": {
+        "id": "q4n7pt",
+        "title": "Wider leaf",
+        "src": "/images/doors/kommerling/wider_leaf_76AD.jpg",
+        "alt": "",
+        "description": "door leaf 76206 opening inwards"
       }
     },
     "DoorSillFeatures": {
       "title": "Kömmerling 76 AD door sill features",
-      "list": {
-        "1": {
-          "img": "/images/doors/door_sill_features_1.png",
-          "description": "/ G060 seals for A065 aluminium drip bar/"
-        },
-        "2": {
-          "img": "/images/doors/door_sill_features_2.png",
-          "description": "/ A061 aluminium drip bar/"
-        },
-        "3": {
-          "img": "/images/doors/door_sill_features_3.jpg",
-          "description": "/ A076 aluminium threshold /"
-        },
-        "4": {
-          "img": "/images/doors/door_sill_features_4.jpg",
-          "description": "/ A075 aluminium overlay/"
-        }
+      "1": {
+        "id": "m9y2kw",
+        "src": "/images/doors/kommerling/door_sill_features_1.png",
+        "alt": "",
+        "description": "G060 seals for A065 aluminium drip bar"
+      },
+      "2": {
+        "id": "b8f4qp",
+        "src": "/images/doors/kommerling/door_sill_features_2.png",
+        "alt": "",
+        "description": "A061 aluminium drip bar"
+      },
+      "3": {
+        "id": "z6t7nc",
+        "src": "/images/doors/kommerling/door_sill_features_3.jpg",
+        "alt": "",
+        "description": "A076 aluminium threshold"
+      },
+      "4": {
+        "id": "r5v3jx",
+        "src": "/images/doors/kommerling/door_sill_features_4.jpg",
+        "alt": "",
+        "description": "A075 aluminium overlay"
       }
     },
     "DoorSealsEPDM": {
       "title": "Kömmerling 76 AD door seals made of EPDM",
-      "imgThreeList": {
+      "imgList": {
         "1": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "c2u9sr",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "2": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "h4m5pz",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         },
         "3": {
-          "img": "/images/doors/seals_EPDM_1.webp"
+          "id": "w8o1yv",
+          "src": "/images/doors/seals_EPDM_1.webp",
+          "alt": ""
         }
       }
     }
@@ -1348,29 +1908,200 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "t7n3xv",
+        "src": "/images/doors/alum_Aliplast/aliplast_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "q6g8wj",
+        "src": "/images/doors/alum_Aliplast/aliplast_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "p4e9zk",
+        "src": "/images/doors/alum_Aliplast/aliplast_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "r2a1hf",
+        "src": "/images/doors/alum_Aliplast/aliplast_4.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "u5d3lv",
+        "src": "/images/doors/alum_Aliplast/aliplast_5.jpg",
         "alt": ""
+      }
+    },
+    "AluminiumProfilesSection": {
+      "title": "OUTWARD-OPENING DOORS – door sill cross-section Kömmerling 76 AD",
+      "1": {
+        "id": "y9m7tr",
+        "title": "SUPERIAL SP 800i+",
+        "src": "/images/doors/alum_Aliplast/superial_SP_800.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "k6j8fu",
+        "title": "IMPERIAL IP 800",
+        "src": "/images/doors/alum_Aliplast/imperial_IP 800.jpg",
+        "alt": ""
+      }
+    },
+    "Superial800Card": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_1.webp",
+          "alt": "",
+          "parametersList": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 75 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 75 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 14 mm to 69 mm"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.1 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – 2400Pa"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g2j7fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES :",
+            "list": {
+              "1": {
+                "desc": "a three-chamber door system with thermal insulation, intended for the construction of doors with high insulation parameters;"
+              },
+              "2": {
+                "desc": "compatible with the Superial system – thanks to adaptive profiles, it is possible to integrate an SP800 series structure into Superial windows"
+              },
+              "3": {
+                "desc": "very good anti-burglary properties (the lock is located far from the outside)"
+              },
+              "4": {
+                "desc": "it is possible to use a thermally insulated threshold, removable after installing the door into the opening"
+              },
+              "5": {
+                "desc": "it is possible to bend profiles (for exact specification of profiles and details regarding the technical parameters of profile bending, please visit www.aliplast.pl)"
+              },
+              "6": {
+                "desc": "the SP800 system is available in two versions: SP800i / SP800 i+"
+              },
+              "7": {
+                "desc": "increased insulation parameters were obtained through the use of special thermal inserts placed in-between the thermal breaks and around the pane;"
+              },
+              "8": {
+                "desc": "improving the cross-section insulation by 0.2-0.5 W/m2K."
+              },
+              "9": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect wood-like colours, anode, bicolour"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Imperial800Card": {
+      "title": "IMPERIAL /IP 800/",
+      "cards": {
+        "1": {
+          "id": "g5j7hj",
+          "src": "/images/doors/alum_Aliplast/imperial_IP_800_1.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "DIMENSIONS:",
+            "list": {
+              "1": {
+                "desc": "Frame installation depth – 65 mm"
+              },
+              "2": {
+                "desc": "Sash installation depth – 74 mm"
+              },
+              "3": {
+                "desc": "Possible glazing depths – from 4 mm to 51 mm"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "TESTS AND STANDARDS:",
+            "list": {
+              "1": {
+                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.6 W/(m2K)"
+              },
+              "2": {
+                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+              },
+              "3": {
+                "desc": "Wind load resistance to DIN EN 12210 (class)* – 2400Pa"
+              },
+              "4": {
+                "desc": "Watertightness to DIN EN 12208 (class) – 8A"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "n9j1fj",
+          "src": "/images/doors/alum_Aliplast/superial_SP_800_2.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "SPECIFICATION / SYSTEM PROPERTIES :",
+            "list": {
+              "1": {
+                "desc": "a three-chamber door system with thermal insulation, intended for the construction of doors with high insulation parameters;"
+              },
+              "2": {
+                "desc": "compatible with the Imperial system – thanks to adaptive profiles, it is possible to integrate an IP800 series structure into Imperial windows;"
+              },
+              "3": {
+                "desc": "very good anti-burglary properties (the lock is located far from the outside);"
+              },
+              "4": {
+                "desc": "it is possible to use a thermally insulated threshold, removable after installing the door into the opening;"
+              },
+              "5": {
+                "desc": "the system features a solution that prevents fingers from getting caught (anti-finger);"
+              },
+              "6": {
+                "desc": "it is possible to bend profiles (for exact specification of profiles and details regarding the technical parameters of profile bending;"
+              },
+              "7": {
+                "desc": "the system is available in two versions: IP800i, Ip800i+;"
+              },
+              "8": {
+                "desc": "increased insulation parameters were obtained through the use of special thermal inserts placed in-between the thermal breaks and around the pane, improving the cross-section insulation by 0.2-0.5 W/m2K;"
+              },
+              "9": {
+                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect wood-like colours, anode, bicolour;"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -1381,128 +2112,791 @@
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "g4y9kq",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "e2c89f",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "59a734",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "4d6b02",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_4.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "a7f1cd",
+        "src": "/images/doors/alum_Aluron/aluron_carousel_5.jpg",
         "alt": ""
+      }
+    },
+    "DoorProfilesSection": {
+      "title": "DOOR PROFILE OFFER:",
+      "1": {
+        "id": "u7o3cn",
+        "title": "ALURON AS 75",
+        "src": "/images/doors/alum_Aluron/aluron_75.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "q1b4jr",
+        "title": "ALURON AS 75P",
+        "src": "/images/doors/alum_Aluron/aluron_75P.jpg",
+        "alt": ""
+      }
+    },
+    "DoorSystemAS75": {
+      "title": "DOOR SYSTEM – ALURON AS 75",
+      "description": "Our doors based on the Aluron AS 75 door system are designed for energy-efficient and passive construction. With the innovative ANTI-BI-METAL technology system used, door leaves are specially protected against deformation when heated by sunlight, as well as at very low temperatures.",
+      "items": {
+        "1": {
+          "id": "g9j5fj",
+          "title": "Cross-sections and dimensions of AS 75 door profiles",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_1.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles opening inwards"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_2.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles opening outwards"
+            },
+            "3": {
+              "id": "p5e9zk",
+              "src": "/images/doors/alum_Aluron/aluron_AS_75_3.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            }
+          }
+        },
+        "2": {
+          "id": "g0j5fj",
+          "title": "Doors in the AS 75 system – threshold solution options",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_1.jpg",
+              "alt": "",
+              "description": "AS 75 plastic threshold"
+            },
+            "2": {
+              "id": "q6g8wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_2.jpg",
+              "alt": "",
+              "description": "AS 75 collapsing threshold"
+            },
+            "3": {
+              "id": "t7n5xv",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_3.jpg",
+              "alt": "",
+              "description": "AS 75 aluminium threshold"
+            },
+            "4": {
+              "id": "q6g9wj",
+              "src": "/images/doors/alum_Aluron/AS_75_threshold_4.jpg",
+              "alt": "",
+              "description": "AS 75 aluminium threshold with adjustable sealing"
+            }
+          }
+        },
+        "3": {
+          "id": "g0j5fj",
+          "description": "The table below shows the development of the heat transfer coefficient Ud for a reference door with dimensions of 1.23 m x 2.18 m depending on the type of insulation used (G1/G2/G3)",
+          "title": "Heat transfer coefficient Ud – depending on the type of insulation – G1/G2/G3",
+          "imgList": {
+            "1": {
+              "id": "t7n3xv",
+              "src": "/images/doors/alum_Aluron/AS_75_UD_1.png",
+              "alt": ""
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Features and parameters of the AS 75 door system",
+        "list": {
+          "1": {
+            "desc": "Door profile depth – 75 mm"
+          },
+          "2": {
+            "desc": "Glazing range – up to 57 mm"
+          },
+          "3": {
+            "desc": "Door thermal insulation Ud (4 options) – from 0.93 W/m2K"
+          },
+          "4": {
+            "desc": "Available types of hinges – surface / roller, hidden"
+          },
+          "5": {
+            "desc": "Air permeability according – 4 class"
+          },
+          "6": {
+            "desc": "Wind load resistance – C2 class"
+          },
+          "7": {
+            "desc": "Watertightness – E1200;"
+          }
+        }
+      }
+    },
+    "DoorSystemAS75P": {
+      "title": "DOOR SYSTEM – ALURON AS 75P",
+      "description": "PANEL DOOR SYSTEM. The aluminium structure of AS 75P panel doors is made of 3-chamber profiles with very good insulation and technical parameters. The innovative AS 75P system allows for the production of thermally insulated doors with a panel glued on the entire surface of the leaf. This type of solution looks great in modern construction. Additional advantages of our aluminium panel doors include solid workmanship, durability, and a wide variety of designs of door fillings (panels).",
+      "items": {
+        "1": {
+          "id": "g2j5fj",
+          "title": "Cross-sections and dimensions of AS 75P door profiles",
+          "imgList": {
+            "1": {
+              "id": "h3k9bv",
+              "src": "/images/doors/alum_Aluron/AS_75P_1.jpg",
+              "alt": "",
+              "description": "Cross-section of double-sided overlay door – AS 75P – inward opening"
+            },
+            "2": {
+              "id": "x5m7qp",
+              "src": "/images/doors/alum_Aluron/AS_75P_2.jpg",
+              "alt": "",
+              "description": "Cross-section of double-sided overlay door – AS 75P – outward opening"
+            },
+            "3": {
+              "id": "d1z8rw",
+              "src": "/images/doors/alum_Aluron/AS_75P_3.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            },
+            "4": {
+              "id": "f7t4ln",
+              "src": "/images/doors/alum_Aluron/AS_75P_4.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            },
+            "5": {
+              "id": "k2j6yd",
+              "src": "/images/doors/alum_Aluron/AS_75P_5.jpg",
+              "alt": "",
+              "description": "Cross-sections of AS 75 door profiles – leaf – frame"
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "title": "Features and parameters of the AS 75P door system",
+        "list": {
+          "1": {
+            "desc": "Door profile depth – 75 mm"
+          },
+          "2": {
+            "desc": "Glazing range – up to 57 mm"
+          },
+          "3": {
+            "desc": "Door thermal insulation Ud – from 0.82 W/m2K"
+          },
+          "4": {
+            "desc": "Available types of hinges – surface / roller, hidden"
+          },
+          "5": {
+            "desc": "Air permeability according – 4 class"
+          },
+          "6": {
+            "desc": "Wind load resistance – C3/B3 class"
+          },
+          "7": {
+            "desc": "Watertightness – E900"
+          }
+        }
       }
     }
   },
   "BalconyTerraceDoorsPage": {
     "title": "EXTERIOR BALCONY / TERRACE DOORS",
     "description": {
-      "p1": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. A modification of this solution is the use of a low aluminium threshold, which does not constitute a barrier for children, wheelchairs, etc.The handle is only mounted from the inside. Some practical additions to these balcony doors include a mini-pull with a latch and a brake in the handle. The first allows you to close the door from the outside, and the other – to lock it in a specific opening position.An intermediate solution between a balcony door and a terrace (entrance) door is a balcony door on a wide leaf with a handle on each side and a lock."
+      "p1": "The doors are built on a stable standard-width or wider window frame and are intended for apartments in blocks of flats and exits to balconies in houses where it is not possible or necessary to enter from the outside. A modification of this solution is the use of a low aluminium threshold, which does not constitute a barrier for children, wheelchairs, etc.The handle is only mounted from the inside. Some practical additions to these balcony doors include a mini-pull with a latch and a brake in the handle. The first allows you to close the door from the outside, and the other – to lock it in a specific opening position.An intermediate solution between a balcony door and a terrace (entrance) door is a balcony door on a wide leaf with a handle on each side and a lock.",
+      "p2": "The glazing units for balcony and terrace doors are designed to achieve the highest possible strength. For this purpose, the following are most often used:– toughened glass – SECURIT, which is five times stronger than ordinary glass and, if broken, breaks into many small pieces with unsharp edges.",
+      "p3": "– or glued glass – STANDIP, with one or more layers of PVB foil, which, in case of breakage, keeps the glass fragments in place.",
+      "p4": "With the use of this type of glazing units, the resistance of balcony and terrace doors to various external forces is significantly increased.",
+      "p5": "Terrace doors are a type of doors similar to entrance doors (low threshold, solid Dr. Hahn hinges, a three-point latch locked with a handle, the possibility of using a second lock and safe locking elements and, most importantly, two types of opening: to the inside as a balcony door or to the outside as an entrance door)."
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "38d326",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "34t06x",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "7e2701",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "f1b1ec",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_4.jpg",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "8a6ed5",
+        "src": "/images/doors/balcony_Terrace/balcony_carousel_5.jpg",
         "alt": ""
+      }
+    },
+    "BalconyNarrowKömmerling": {
+      "title": "BALCONY DOORS ON NARROW WINDOW SASH",
+      "description": "The use of narrow window profiles allows the production of balcony doors that open only inwards.",
+      "description2": "We offer two versions of the solution regarding the threshold of the presented balcony door.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          },
+          "2": {
+            "desc": "The second option involves the production of balcony doors with a low aluminium threshold."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "f4b71e",
+          "title": "Kömmerling 76 AD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
+        },
+        "2": {
+          "id": "83d92c",
+          "title": "Kömmerling 76 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "a5f340",
+          "title": "Kömmerling 88 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "9e2c17",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD"
+        },
+        "5": {
+          "id": "c1a486",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
+          "alt": "",
+          "description": "76MD – LOW THRESHOLD"
+        },
+        "6": {
+          "id": "7d4e3a",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
+          "alt": "",
+          "description": "88MD – LOW THRESHOLD"
+        }
+      }
+    },
+    "BalconyNarrowSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "subTitle": "Schüco CT 70",
+      "subTitle2": "Schüco LivIng 82",
+      "imgList": {
+        "1": {
+          "id": "f5a2e9",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
+        },
+        "2": {
+          "id": "c7d4b1",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "9e8f63",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "a1c4d7",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD"
+        }
+      }
+    },
+    "BalconyWideKömmerling": {
+      "title": "BALCONY DOORS ON WIDE WINDOW SASH",
+      "description": "By using wide profiles for the window frame, we are able to produce balcony doors that open both inwards and outwards.",
+      "description2": "There are two versions of the solution regarding the threshold of balcony door made on a wide window profile.",
+      "subTitle": "DOOR SYSTEM Kömmerling",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "The first option is to use a frame along the entire perimeter of the balcony door, plus an aluminium protective profile for the frame."
+          },
+          "2": {
+            "desc": "The second option is a version with a low aluminium threshold."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "e9f1b2",
+          "title": "Kömmerling 76 AD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
+          "alt": "",
+          "description": "76AD – FRAME ALONG THE PERIMETER"
+        },
+        "2": {
+          "id": "47c6a3",
+          "title": "Kömmerling 76 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
+          "alt": "",
+          "description": "76MD – FRAME ALONG THE PERIMETER"
+        },
+        "3": {
+          "id": "1d8e5f",
+          "title": "Kömmerling 88 MD",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
+          "alt": "",
+          "description": "88MD – FRAME ALONG THE PERIMETER"
+        },
+        "4": {
+          "id": "b3f920",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
+          "alt": "",
+          "description": "76AD – LOW THRESHOLD – opening outwards"
+        },
+        "5": {
+          "id": "62a7cd",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD_scheme.jpg",
+          "alt": "",
+          "description": "76MD – LOW THRESHOLD – opening outwards"
+        },
+        "6": {
+          "id": "d4e813",
+          "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD_scheme.jpg",
+          "alt": "",
+          "description": "88MD – LOW THRESHOLD – opening outwards"
+        }
+      }
+    },
+    "BalconyWideSchuco": {
+      "title": "DOOR SYSTEM Schüco",
+      "imgList": {
+        "1": {
+          "id": "b3e7f2",
+          "title": "Schüco CT 70",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_1.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening outwards"
+        },
+        "2": {
+          "id": "f2c4a5",
+          "title": "Schüco LivIng 82",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_1.jpg",
+          "alt": "",
+          "description": "LivIng 82 – LOW THRESHOLD – opening outwards"
+        },
+        "3": {
+          "id": "d6a9c8",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_2.jpg",
+          "alt": "",
+          "description": "CT 70 – LOW THRESHOLD – opening inwards"
+        },
+        "4": {
+          "id": "e9d1b7",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_2.jpg",
+          "alt": "",
+          "description": "LivIng 82 –LOW THRESHOLD – opening inwards"
+        },
+        "5": {
+          "id": "a7f5c3",
+          "src": "/images/doors/balcony_Terrace/Schuco_CT_70_3.jpg",
+          "alt": "",
+          "description": "CT 70 – FRAME ALONG THE PERIMETER"
+        },
+        "6": {
+          "id": "c4e8d9",
+          "src": "/images/doors/balcony_Terrace/Schuco_Living_82_3.jpg",
+          "alt": "",
+          "description": "LivIng 82 – FRAME ALONG THE PERIMETER"
+        }
       }
     }
   },
   "FoldingDoorsPage": {
     "title": "EXTERIOR FOLDING DOORS",
     "description": {
-      "p1": "The Polish-based company TUR-PLAST produces ALUMINIUM FOLDING DOORS based on the three-chamber, thermally insulated PANORAMA system by ALIPLAST. This product makes the offer more attractive as it gives architects and individual clients a greater choice in the interior design of houses and business premises."
+      "p1": "The Polish-based company TUR-PLAST produces ALUMINIUM FOLDING DOORS based on the three-chamber, thermally insulated PANORAMA system by ALIPLAST. This product makes the offer more attractive as it gives architects and individual clients a greater choice in the interior design of houses and business premises.",
+      "p2": "The use of folding doors in rooms with large glazing is very convenient because they open to the side, without creating any barriers to the passage, in the form of posts or fixed leaves. Especially in houses surrounded by large gardens, with this glass and aluminium retractable wall we are able to obtain maximum contact with the beautiful green surroundings. Folding doors are often used in hotels, shops, and private homes where there is a need to create more usable space."
     },
     "imgList": {
       "1": {
-        "id": "m9q25v",
-        "src": "/images/doors/exterior-door.webp",
+        "id": "b1f7d2",
+        "src": "/images/doors/folding_doors/folding_carousel_1.jpg",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
-        "src": "/images/doors/front-door-with-sidelites.jpg",
+        "id": "c3e4b1",
+        "src": "/images/doors/folding_doors/folding_carousel_2.jpg",
         "alt": ""
       },
       "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
+        "id": "d5g6f4",
+        "src": "/images/doors/folding_doors/folding_carousel_3.jpg",
         "alt": ""
       },
       "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
+        "id": "a9b8c7",
+        "src": "/images/doors/folding_doors/folding_carousel_4.png",
         "alt": ""
       },
       "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
+        "id": "e2d3f1",
+        "src": "/images/doors/folding_doors/folding_carousel_5.jpg",
         "alt": ""
+      }
+    },
+    "PanoramaAliplast": {
+      "title": "system PANORAMA – ALIPLAST",
+      "subTitle": "System cross-sections",
+      "imgList": {
+        "1": {
+          "id": "a1f2d3",
+          "src": "/images/doors/folding_doors/panorama_aliplast_1.jpg",
+          "alt": "",
+          "description": "cross-section through the threshold on the frame (inward-opening option)"
+        },
+        "2": {
+          "id": "b4c5e6",
+          "src": "/images/doors/folding_doors/panorama_aliplast_2.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type A"
+        },
+        "3": {
+          "id": "d7e8f9",
+          "src": "/images/doors/folding_doors/panorama_aliplast_3.jpg",
+          "alt": "",
+          "description": "cross-leaf section – type B"
+        }
+      },
+      "parametersList": {
+        "1": {
+          "title": "DIMENSIONS:",
+          "list": {
+            "1": {
+              "desc": "Frame installation depth – 74,5 mm"
+            },
+            "2": {
+              "desc": "Sash installation depth – 74,5 mm"
+            },
+            "3": {
+              "desc": "Possible glazing depths – from 16 mm to 50 mm"
+            }
+          }
+        },
+        "2": {
+          "title": "TESTS AND STANDARDS:",
+          "list": {
+            "1": {
+              "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1.68 W/(m2K)"
+            },
+            "2": {
+              "desc": "Air permeability according to DIN EN 12207 (class) – 2"
+            },
+            "3": {
+              "desc": "Wind load resistance to DIN EN 12210 (class)* – C1 (400Pa)"
+            },
+            "4": {
+              "desc": "Watertightness to DIN EN 12208 (class) – E1050 (1050 Pa)"
+            }
+          }
+        },
+        "3": {
+          "title": "SPECIFICATION / SYSTEM PROPERTIES",
+          "list": {
+            "1": {
+              "desc": "A three-chamber thermally insulated door system designed for the construction of folding doors;"
+            },
+            "2": {
+              "desc": "Two possible types of the threshold system: a system with a flat threshold and brush sealing or a tight threshold based on a complete frame along the perimeter of the entire terrace window;"
+            },
+            "3": {
+              "desc": "Depending on the requirements and application, the Panorama system offers inward-opening or outward-opening structures in a very large configuration of leaves (2+1, 3+2, 3+3);"
+            },
+            "4": {
+              "desc": "New integrated fittings: a hinge with a bottom carriage, a hinge with a pull, and low handles improve the functionality of the structure, while reducing the size of the complex folding door structure;"
+            },
+            "5": {
+              "desc": "The minimised visual width of the profile used in the system makes the folding door seem light;"
+            },
+            "6": {
+              "desc": "The Panorama system is available in a version with increased thermal insulation – thanks to the use of additional thermal inserts on the perimeter and between the breaks of the door leaf as well as the frames; available options: Panorama, Panorama i+;"
+            },
+            "7": {
+              "desc": "The folding door system allows for the creation of a nice-looking and functional structure, comfortable for users, but also provides the possibility of very effective use of the space in the building;"
+            },
+            "8": {
+              "desc": "The wide range of available solutions and potential applications enables the design of structures for balconies, terraces or winter gardens as well as public utility buildings and commercial facilities;"
+            },
+            "9": {
+              "desc": "possibility of varnishing according to the RAL palette (Qualicoat 1518), in the wood structure – Aliplast Wood Colour Effect (Qualideco PL-0001), anodised finish (Qualanod 1808), also bi-colour."
+            }
+          }
+        }
       }
     }
   },
   "DoorPanelsPage": {
     "title": "DOOR FEATURES – Door Fillings – Panels for PVC and Aluminium Doors",
-    "description": {
-      "p1": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam. This combination ensures very good thermal insulation of the door. The panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays."
-    },
-    "imgList": {
+    "description": "The door leaf filling consists of two sandwich panels made of plastic, separated by polyurethane foam. This combination ensures very good thermal insulation of the door. The panels can be enriched with various types of glass and ornamental frames. The surface layer of PVC panels is covered with high-quality acrylic films or varnishes, resistant to weather conditions and UV rays.",
+    "subTitle": "Choose the perfect color for your door: two diverse color palettes",
+    "cards": {
       "1": {
-        "id": "m9q25v",
+        "id": "m4q25v",
+        "slug": "panels-doors-paneldoor",
+        "title": "PVC Doors – Schüco Profiles",
+        "description": "Choose from the classic Schüco palette, which offers a wide range of colors for any style and design. Thanks to the Qualicoat 1518 certification, your door will retain its rich color and shine for many years.",
         "src": "/images/doors/exterior-door.webp",
         "alt": ""
       },
       "2": {
-        "id": "x7w5pl",
+        "id": "x0w5pl",
+        "slug": "panels-doors-frohmasco",
+        "title": "PVC Doors – Kömmerling Profiles",
+        "description": "Choose naturalness with the Kömmerling Wood Color Effect palette, which gives your door a refined look of wood texture. This option, certified by Qualideco PL-0001, perfectly matches the aesthetics of natural wood with the strength of aluminum.",
         "src": "/images/doors/front-door-with-sidelites.jpg",
         "alt": ""
-      },
-      "3": {
-        "id": "x7w5pl",
-        "src": "/images/doors/exterior-doors-aluminium-aliplast.jpg",
-        "alt": ""
-      },
-      "4": {
-        "id": "x7w5pl",
-        "src": "/images/doors/folding-doors.jpg",
-        "alt": ""
-      },
-      "5": {
-        "id": "x7w5pl",
-        "src": "/images/doors/balcony-terrace-doors.jpg",
-        "alt": ""
+      }
+    }
+  },
+  "DoorFillingFrohMaskoPage": {
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description": "We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "FrohmaskoCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title": "SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "DoorFillingPanelDoorPage": {
+    "title": "Door Fillings – Panels for Doors – Paneldoor",
+    "description": "We offer a wide selection of stylish and long door panels. These panels provide optimal thermal insulation, high strength and aesthetic appearance. Thanks to the variety of available designs and colors, they are easily integrated into any interior or exterior. The panels are made of high-quality materials, which guarantees their durability and resistance to environmental influences.",
+    "PanelDoorCards": {
+      "title": "SUPERIAL /SP 800+/",
+      "cards": {
+        "1": {
+          "id": "g0j3f7",
+          "title": "SK – 1",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_1.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 2178001"
+              },
+              "2": {
+                "desc": "glass: CHINCHILLA"
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "v2a7fj",
+          "title": "SK – 2",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "3": {
+          "id": "v2a7fj",
+          "title": "SK – 3",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701605-083"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        },
+        "4": {
+          "id": "76a7fj",
+          "title": "SK – 4",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_4.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: RAIN"
+              }
+            }
+          }
+        },
+        "5": {
+          "id": "23n0fj",
+          "title": "SK – 5",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_5.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: RAL 9016"
+              },
+              "2": {
+                "desc": "glass: STAINED GLASS"
+              }
+            }
+          }
+        },
+        "6": {
+          "id": "7b87hj",
+          "title": "SK – 6",
+          "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_6.png",
+          "alt": "",
+          "parametersList": {
+            "list": {
+              "1": {
+                "desc": "colour: 701205"
+              },
+              "2": {
+                "desc": "glass: LACOMAT"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -1539,6 +2933,7 @@
       }
     }
   },
+
   "SlidingDoorsPage": {
     "title": "SLIDING TERRACE DOORS from Poland",
     "description": "Sliding terrace doors are an ideal solution for modern and large interiors. They have a lot of glazing, making them able to optimally light up the room. They have very good thermal insulation (no thermal bridges), and thanks to the modern fittings technology, we can experience real comfort and joy from using large sliding doors. The solutions proposed by Tur-Plast are an alternative to standard double-leaf balconies. Our offer includes solid and exclusive lift-and-slide terrace doors made of PVC and aluminium.",
@@ -1983,6 +3378,415 @@
               "4": {
                 "desc": "Leaf closure"
               }
+            }
+          }
+        }
+      }
+    }
+  },
+  "RollerBlindsPage": {
+    "title": "Roller Shutters / Sun Protection Covers",
+    "description": "External roller shutters: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our external roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
+    "rollersList": {
+      "1": {
+        "id": "m9q29q",
+        "slug": "adaptive-external-roller-shutters",
+        "title": "Adaptive External Roller Shutters",
+        "description": "Adaptive roller shutters are installed primarily in buildings where windows have already been installed. However, many of our clients use this type of roller shutters in newly-built houses or in buildings where windows are being replaced.",
+        "src": "/images/roller_shutters/adaptive_rs.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "x7b0pl",
+        "slug": "top-mounted-external-roller-shutters",
+        "title": "Top-mounted External Roller Shutters",
+        "description": "EXTE is our new versatile system of top-mounted roller shutters for installation on both sides, used in newly-built and renovated houses.",
+        "src": "/images/roller_shutters/top_mounted_rs.jpg",
+        "alt": ""
+      },
+      "3": {
+        "id": "o9k14n",
+        "slug": "screen-covers",
+        "title": "Screen (Reflexol) Covers",
+        "description": "The screen-type roller shutter systems offered by Tur-Plast are perfect for protecting rooms with a lot of glazing from excessive insolation. In an extended position, the reflexol-type screens can also be a perfect barrier against insects and various types of pollution.",
+        "src": "/images/roller_shutters/screen_covers.webp",
+        "alt": ""
+      },
+      "4": {
+        "id": "d236vc",
+        "slug": "accessories-additions-roller-shutters-sun-protection-covers",
+        "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+        "description": "When choosing roller shutters or sun protection covers, it is best to see the whole range of possible additional solutions that can significantly facilitate the operation and use of the products.",
+        "src": "/images/roller_shutters/accessories.webp",
+        "alt": ""
+      }
+    }
+  },
+  "AdaptiveExternalPage": {
+    "title": "Adaptive External Roller Shutters – concealed and surface-mounted/roller shutters box made of aluminium/",
+    "description": "Adaptive roller shutters are mounted in buildings with pre-mounted windows. But many our clients decide to mount these shutters for newly-erected houses or buildings where exchange of the windows is executed. We offer CONCEALED ADAPTIVE ROLLER SHUTTERS with two options of assembly and SURFACE-MOUNTED ADAPTIVE ROLLER SHUTTERS of an OVAL type. Characteristic feature of these systems are aluminium guides, housing and roller shutter box with a drain channel located outside the building.",
+    "AdaptiveExternalCards": {
+      "cards": {
+        "1": {
+          "id": "g9j7fj",
+          "title": " Surface-mounted adaptive roller shutters of an oval type",
+          "src": "/images/roller_shutters/adaptive_rs/RS_oval_type.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "INSTALLATION IN THE INSULATION LAYER",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 190 mm x 185 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "very easy assembly;"
+              },
+              "2": {
+                "desc": "no negative effect on the energy balance of the building;"
+              },
+              "3": {
+                "desc": "possible to mount in the already existing buildings;"
+              },
+              "4": {
+                "desc": "rigid structure – the entire unit is made of aluminium (the slats, guiding channels and a rigid cassette of pressed aluminium);"
+              },
+              "5": {
+                "desc": "has a positive effect on the optics of the facade; the height of the cassette is 180 mm."
+              }
+            }
+          }
+        },
+        "2": {
+          "id": "g5j7sj",
+          "title": "CONCEALED ADAPTIVE ROLLER SHUTTERS INTEGRO",
+          "src": "/images/roller_shutters/adaptive_rs/RS_Integro.jpg",
+          "alt": "",
+          "parametersList": {
+            "title": "MOUNTED TO THE FACE OF ELEVATION + STYROFOAM",
+            "list": {
+              "1": {
+                "desc": "Roller shutter box 180 mm x 180 mm"
+              },
+              "2": {
+                "desc": "Maximum height – 2520 mm (height measured together with the box)"
+              }
+            }
+          },
+          "parametersList2": {
+            "title": "System specification:",
+            "list": {
+              "1": {
+                "desc": "possible to mount also in the already existing buildings, after appropriate adjustments are made in the lintel area, or less frequently in front of the window;"
+              },
+              "2": {
+                "desc": "the entire unit is made of aluminium (the slats, guide rails and a rigid cassette of pressed aluminium);"
+              },
+              "3": {
+                "desc": "provides optimal solutions for designers and developers;"
+              },
+              "4": {
+                "desc": "INTEGRO system elements do not interfere with the window, door, or lintel structure (stiffness), thus they do not have any negative effect on the energy balance of the building;"
+              },
+              "5": {
+                "desc": "the INTEGRO system allows a single roller blind type which is wound up outwardly (left-handed rotation);"
+              },
+              "6": {
+                "desc": "an inspection flap is placed at the bottom (with external access);"
+              },
+              "7": {
+                "desc": "cassette height – 180 mm; very easy assembly;"
+              }
+            }
+          }
+        }
+      }
+    },
+    "GuideChannels": {
+      "title": "GUIDE CHANNELS in single and double execution",
+      "1": {
+        "id": "j5f3mp",
+        "title": "Chamber straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/chamber_straight.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "v0r2bm",
+        "title": "Straight guide",
+        "src": "/images/roller_shutters/adaptive_rs/straight_guide.jpg",
+        "alt": ""
+      }
+    },
+    "Housing": {
+      "title": "HOUSING – Lamele Aluprof PA 39",
+      "description": "PA 39 profile is one of the most popular aluminium profiles. It is so popular that the shutters made of this profile has been used in European houses for years now. Its main features are small width and tapering shape. It rolls up perfectly and fits to even small boxes. Thanks to the foam filling the profile inside, it is well insulated in terms of temperatures and noise. Small weight allows for manual drive, spring drive or electric operation. PA 39 is offered as a perforated version or plain in wide range of colours similar to RAL palette. The profiles are durable in terms of colour and resistance to wear-off. The profile is also resistant to the impact of atmospheric conditions.<br></br>Aluminium profiles belong to products which are ecologically clean. The foam inside is free of freon compounds and the paints do not contain cadmium."
+    }
+  },
+  "TopMountedPage": {
+    "title": "Top-mounted External Roller Shutters",
+    "description": "EXTE  is a new, universal roller blind system enabling either side mounting in newly built and renovated buildings. The most characteristic features of the system include:",
+    "parametersList": {
+      "list": {
+        "1": {
+          "desc": "changing position of the inspection flap;"
+        },
+        "2": {
+          "desc": "at the bottom or at the back of the cassette, or as an alternative, outside of the building. Regardless of the flap position, the cassette capacity does not change;"
+        },
+        "3": {
+          "desc": "completely new assembly of drives and bearing of the roller blind;"
+        },
+        "4": {
+          "desc": "universal side guide rail, very easy mounting;"
+        },
+        "5": {
+          "desc": "division and adjustable rolling; window mosquito nets and unique solutions for door mosquito nets."
+        }
+      }
+    },
+    "RSBoxSection": {
+      "title": "A ROLLER SHUTTER BOX – types",
+      "description": "We offer two types of roller shutter boxes:",
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "EXPERT XT – roller shutter box 185mm x 220 mm, for the window of the height to 2300 mm (height measured together with the box)."
+          },
+          "2": {
+            "desc": "ELITE XT – roller shutter box 240mm x 220 mm, for the window of the height to 2800 mm (height measured together with the box). The system allows an additional mosquito net to be integrated within."
+          }
+        }
+      },
+      "imgList": {
+        "1": {
+          "id": "c903lz",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "fg57qt",
+          "src": "/images/roller_shutters/top_mounted_rs/RS_box_2.jpg",
+          "alt": ""
+        }
+      }
+    },
+    "GuideRailsTypes": {
+      "title": "GUIDE RAILS FOR ROLLER SHUTTER ELEMENTS ON WINDOWS AND DOORS",
+      "1": {
+        "id": "78h5kp",
+        "title": "GUIDE CHANNELS in single execution",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_1.jpg",
+        "alt": "",
+        "description": "Roller shutter guides made of PVC are a complement roller shutter boxes."
+      },
+      "2": {
+        "id": "6vr2om",
+        "title": "GUIDE CHANNELS in double execution",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_1.jpg",
+        "alt": "",
+        "description": "In the place where the blinds are divided standard is mounted the guide to the desired size thanks to a special profile widening."
+      },
+      "3": {
+        "id": "26l2dm",
+        "src": "/images/roller_shutters/top_mounted_rs/single_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      },
+      "4": {
+        "id": "p7m2lc",
+        "src": "/images/roller_shutters/top_mounted_rs/double_execution_2.jpg",
+        "alt": "",
+        "description": "We have in the system matching inlet shoes and finishing plugs."
+      }
+    },
+    "TechnicalSolutionsne": {
+      "title": "TECHNICAL SOLUTIONSNE",
+      "1": {
+        "id": "95b7lz",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_1.jpg",
+        "alt": "",
+        "description": "Simple adjustment of insulating filing"
+      },
+      "2": {
+        "id": "l3t0pt",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_2.jpg",
+        "alt": "",
+        "description": "Special steel reinforcement for windows of the width above 1500 mm. Patented unique product of secure and gap-free joining."
+      },
+      "3": {
+        "id": "m45n9g",
+        "src": "/images/roller_shutters/top_mounted_rs/technical_solition_3.jpg",
+        "alt": "",
+        "description": "EFFECTIVE THERMAL INSULATION – additional energy saving. The legal requirements regarding thermal insulation properties of cassettes in Germany are very strict. As the system is manufactured in this country, it is subject to the national regulations set in the Energy Saving Regulations (EnEV). According to the document, in new buildings, a blind cassette is considered to be a part of an external wall. In such a case, it is required to prove the accordance with the examples included in Appendix 2 of the DIN4108 standard. That is why, architects can do calculations taking into account a reduced heat transmission coefficient of a thermal bridge. The EXTE roller blind system provides excellent thermal insulation, according to applicable regulations."
+      }
+    }
+  },
+  "ScreenPage": {
+    "title": "Roller Shutters / Sun Protection Covers",
+    "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
+    "alt": "",
+    "descrList": {
+      "1": {
+        "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
+      },
+      "2": {
+        "desc": "Screens can be operated with a switch, remote control, but also mobile device."
+      },
+      "3": {
+        "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
+      }
+    },
+    "ScreensList": {
+      "title": "Roller Shutters / Sun Protection Covers",
+      "description": "Screens represent a combination of functionality and convenience of use. Retrofitting the covers with weather automation and overload electric drives guarantees their years-long and trouble-free operation, while ensuring the comfort of daily use.",
+      "imgList": {
+        "1": {
+          "id": "v8g9xw",
+          "src": "/images/roller_shutters/screen_covers/screen_list_1.jpg",
+          "alt": ""
+        },
+        "2": {
+          "id": "35h8lm",
+          "src": "/images/roller_shutters/screen_covers/screen_list_2.jpg",
+          "alt": ""
+        }
+      },
+      "parametersList": {
+        "title": "TECHNICAL DATA:",
+        "list": {
+          "1": {
+            "desc": "Dimensions – Possibility to cover the surface up to a width of 5m or up to an area of 15m2;"
+          },
+          "2": {
+            "desc": "Operation – Via remote control, switch or mobile device;"
+          },
+          "3": {
+            "desc": "Available boxes – We offer boxes with dimensions of 95 mm, 105 mm, 125 mm;"
+          },
+          "4": {
+            "desc": "Colour palette – Any colour from the RAL palette;"
+          },
+          "5": {
+            "desc": "Fabric structure – Regular (Soltis) and diagonal (Serge, Nova);"
+          }
+        }
+      }
+    }
+  },
+  "AccessoriesRSPage": {
+    "title": "Accessories / Additions for Roller Shutters and Sun Protection Covers",
+    "description": "Accessories and additions for roller shutters and sun protection covers enhance both their functionality and aesthetic appeal. These supplementary components include items such as remote controls, manual cranks, and automated motors for seamless operation, as well as sensors that detect sunlight or wind to adjust covers automatically. Such features provide improved convenience, energy efficiency, and durability, making these systems adaptable to modern lifestyles and varying weather conditions.In addition to operational accessories, decorative elements like custom color options, frames, or specialized coatings can complement the design of any building. Accessories designed for sun protection covers may include adjustable brackets, side channels, or advanced fabrics with UV filtering, ensuring optimal light control and thermal insulation. Together, these additions elevate the usability and performance of roller shutters and sun protection solutions, catering to both residential and commercial needs.",
+    "ExternalRS": {
+      "title": "OPERATION OF EXTERNAL ROLLER SHUTTERS – options of use",
+      "1": {
+        "id": "v5b8lz",
+        "title": "Manual operation",
+        "src": "/images/roller_shutters/adaptive_rs/manual.webp",
+        "alt": "",
+        "description": "Manual operation of roller shutter allows for winding up and down with the use of a retractor (pulling the tape or a rope) or a retractor with a crank handle. For external roller shutters each such option requires effort and time if it is used several times a day."
+      },
+      "2": {
+        "id": "l3g7pt",
+        "title": "Electric operation",
+        "src": "/images/roller_shutters/adaptive_rs/electric.jpg",
+        "alt": "",
+        "description": "Electric operation. A drive – a very good quality of engine with mechanical limit switches – Motus Monos produced by NICE company. It has a noiseless gearshift and brakes."
+      },
+      "3": {
+        "id": "d1n7pg",
+        "title": "Radio-operation",
+        "src": "/images/roller_shutters/adaptive_rs/radio_operation.webp",
+        "alt": "",
+        "description": "Radio-operation is powered by an advanced RolTop-868 engine with a built-in radio center, offering intelligent detection to stop and reverse motion upon encountering obstacles. The system features adjustable final positions, silent braking, and two-way communication with routing capabilities to ensure seamless remote control operation."
+      }
+    },
+    "RemoteControls": {
+      "title": "Available remote controls",
+      "cards": {
+        "1": {
+          "id": "v7j7fj",
+          "title": "SoloTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_1.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-channel REMOTE CONTROL with a wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Signals confirming the reception of a command by a receiver."
+            },
+            "4": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "2": {
+          "id": "j4v1sj",
+          "title": "MonoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_2.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "1-channel REMOTE CONTROL with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Signals confirming the reception of a command by a receiver."
+            },
+            "4": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            }
+          }
+        },
+        "3": {
+          "id": "m1x4aj",
+          "title": "VarioTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_3.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "5-channel REMOTE CONTROL with the function of central channel and with a magnetic wall handle, safe frequency of 868 Mhz."
+            },
+            "2": {
+              "desc": "Operating in a two-direction radio system."
+            },
+            "3": {
+              "desc": "Available simple programming and the use of two intermediate positions."
+            },
+            "4": {
+              "desc": "Manual/automatic switch included."
+            }
+          }
+        },
+        "4": {
+          "id": "25c7sk",
+          "title": "TempoTel2",
+          "src": "/images/roller_shutters/adaptive_rs/remote_controls_4.jpg",
+          "alt": "",
+          "descrList": {
+            "1": {
+              "desc": "10-channel REMOTE CONTROL with the possibility to make 2 groups + function of central channel."
+            },
+            "2": {
+              "desc": "Clock function (opening and closing at certain times), holiday function (simulates the presence of house-holders)."
+            },
+            "3": {
+              "desc": "Availability of programming."
+            },
+            "4": {
+              "desc": "Manual/automatic switch included for each channel of a remote control."
             }
           }
         }
