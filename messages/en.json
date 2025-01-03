@@ -1441,22 +1441,22 @@
     "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
+        "src": "/images/windows/accessories-page/additions1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions2.jpeg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions3.jpeg",
         "alt": ""
       },
       "4": {
         "id": "4",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions4.jpeg",
         "alt": ""
       }
     },
@@ -1468,22 +1468,22 @@
         "imgList": {
           "1": {
             "id": "1",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles1.jpeg",
             "alt": ""
           },
           "2": {
             "id": "2",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles2.jpeg",
             "alt": ""
           },
           "3": {
             "id": "3",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles3.jpeg",
             "alt": ""
           },
           "4": {
             "id": "4",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles4.jpeg",
             "alt": ""
           }
         }
@@ -1496,19 +1496,19 @@
           "1": {
             "id": "1",
             "description": "The SECOUSTIK type – the handle is equipped with a patented blocking mechanism preventing any possible manipulation from the outside by moving the boundary fitting. The characteristic click sound at turning the handle signals that the security function is active.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles-sec1.jpeg",
             "alt": ""
           },
           "2": {
             "id": "2",
             "description": "SECURE HANDLE WITH A PUSH BUTTON –  the handle can be turned only after pressing the button – it prevents opening a window from the outside, it is a standard option in WK-1 type anti-burglary fittings, and is equipped with an anti-drilling plate as well.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles-sec2.jpeg",
             "alt": ""
           },
           "3": {
             "id": "3",
             "description": "ANTI-BURGLARY HANDLE (with a key) – removing the key blocks the door- handle, which cannot be turned – it protects against possible window opening from the outside, it is a standard option in anti-burglary fittings of the WK-2 type. This door- handle type, similarly to the push-button one, is recommended for upstairs balcony doors so as to prevent them from being opened by children.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles-sec3.jpeg",
             "alt": ""
           }
         }

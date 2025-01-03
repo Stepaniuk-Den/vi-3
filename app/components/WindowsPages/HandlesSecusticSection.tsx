@@ -16,7 +16,6 @@ type Props = {
 const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
   const typesListTitle = t.typesList;
   const typesList = Object.values(t.typesList);
-  console.log("🚀 ~ typesList:", typesList);
 
   return (
     <section className="pt-4">
@@ -50,7 +49,7 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
                     <p>{typeItem.description}</p>
                   </div>
 
-                  <div className="relative w-full h-[460px] border border-gray-300 rounded-md overflow-hidden">
+                  <div className="relative w-1/2 h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden">
                     <Image
                       sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                       src={typeItem.src || ""}
