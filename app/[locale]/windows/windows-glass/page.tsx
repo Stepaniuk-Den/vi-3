@@ -34,7 +34,7 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
           size={idx === 0 ? "w-full" : "max-w-[396px]"}
           positioning={idx === 0 ? "grid" : "flexWrap"}
           isRow={false}
-          imageFit="contain"
+          imgFit="contain"
           // titleBannerCard={idx === 0}
           // size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}

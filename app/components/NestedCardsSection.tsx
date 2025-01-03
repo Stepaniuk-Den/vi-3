@@ -27,7 +27,7 @@ type Props = {
   // isGrid?: boolean;
   // positioning?: "flex" | "grid2" | "grid3";
   positioning?: "flexWrap" | "grid";
-  imageFit?: "cover" | "contain";
+  imgFit?: "cover" | "contain";
   isRow?: boolean;
   descReverse?: boolean;
 };
@@ -42,7 +42,7 @@ const NestedCardsSection: React.FC<Props> = ({
   titleBanner,
   // isGrid = false,
   positioning,
-  imageFit,
+  imgFit,
   isRow,
   descReverse = false,
 }) => {
@@ -94,7 +94,7 @@ const NestedCardsSection: React.FC<Props> = ({
                 alt={nestedCard.alt || ""}
                 size={size}
                 isRow={isRow}
-                imageFit={imageFit}
+                imgFit={imgFit}
                 // titleBannerCard={titleBannerCard}
                 // layout="horizontal"
                 // background={idx % 2 === 0 ? `${background}` : ""}

@@ -11,9 +11,7 @@ type Props = {
 };
 
 const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
-  //   console.log("🚀 ~ t:", t);
   const nestedCardsList = Object.values(t.imgList) as INestedCard[];
-  //   console.log("🚀 ~ nestedCardsList:", nestedCardsList);
   const descriptionProfiles = Object.values(
     t.descriptionProfilesCrosSections
   ) as IDesc[];
@@ -32,9 +30,6 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
               alt={nestedCard.alt || ""}
               size={"w-1/4"}
               className={clsx(idx === 0 && "mr-auto")}
-              // titleBannerCard={titleBannerCard}
-              // layout="horizontal"
-              // background={idx % 2 === 0 ? `${background}` : ""}
             />
           ))}
         </ul>
