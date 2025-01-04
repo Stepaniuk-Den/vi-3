@@ -10,12 +10,12 @@ const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
       <div className="container">
         <TitleBanner>
           <h2 className="titleCl">{t.title}</h2>
-          </TitleBanner>
-          <ul className="grid grid-cols-3 gap-7 pt-8">
-            {Object.values(t.cards).map((card) => (
-              <li key={card.id} className="">
-                 <div className="relative w-96 h-[740px] overflow-hidden border border-gray-300 rounded-md shadow-lg group">
-                <div className="absolute inset-0 w-full h-full transition-transform duration-300 ease-in-out group-hover:-translate-y-2/3">
+        </TitleBanner>
+        <ul className="grid grid-cols-3 gap-7 pt-8">
+          {Object.values(t.cards).map((card) => (
+            <li key={card.id} className="">
+              <div className="relative w-96 h-[720px] overflow-hidden  shadow-lg group hover:bg-customMarsala-accentLight">
+                <div className="absolute inset-0 w-full h-full transition-transform duration-300 ease-in-out group-hover:-translate-y-2/3 ">
                   <Image
                     src={card.src}
                     alt={card.alt || ""}
@@ -28,16 +28,15 @@ const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
                     </h3>
                   </div>
                 </div>
-                <div className="absolute inset-x-0 bottom-24 w-full h-1/4 bg-white p-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                    {card.parametersList && (
-                <NestedParameterDescList param={card.parametersList} />
-              )}
-        </div>
-        </div>
-              </li>
-            ))}
-          </ul>
-        
+                <div className="absolute inset-x-0 bottom-24 w-full h-1/4 p-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 text-white">
+                  {card.parametersList && (
+                    <NestedParameterDescList param={card.parametersList} isWhite />
+                  )}
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

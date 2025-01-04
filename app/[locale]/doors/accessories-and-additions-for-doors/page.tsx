@@ -1,6 +1,6 @@
-import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 
 
 

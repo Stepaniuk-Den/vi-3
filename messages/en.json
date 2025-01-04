@@ -15,8 +15,8 @@
     "description": "Please double-check your browser's address bar or use navigation to go to a known page."
   },
   "Error": {
-    "description": "<p>На жаль, ми зіткнулися з помилкою.</p><p>Ви можете спробувати <retry>оновити сторінку</retry> яку ви відвідували.</p>",
-    "title": "Щось пішло не так!"
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
   },
   "Buttons": {
     "see": "See all"
@@ -61,6 +61,10 @@
         "7": {
           "title": "colours",
           "slug": "windows-colours"
+        },
+        "8": {
+          "title": "accessories",
+          "slug": "window-accessories"
         }
       }
     },
@@ -1432,6 +1436,85 @@
       }
     }
   },
+  "WindowAccessoriesPage": {
+    "title": "Window accessories / additions",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/windows/accessories-page/additions1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/windows/accessories-page/additions2.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/windows/accessories-page/additions3.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/windows/accessories-page/additions4.jpeg",
+        "alt": ""
+      }
+    },
+    "WindowHandlesSections": {
+      "title": "WINDOW HANDLES",
+      "WindowHandlesDublin": {
+        "title": "NEW – DUBLIN window handles",
+        "description": "In the offer of the Window and Door Manufacturer TUR-PLAST you will find handles from the DUBLIN Medos collection, featuring futuristic and timeless designs. The handle part is made of aluminium. Available in a classic finish (powder coating) or a modern finish (anodising available in two variants: sandblasted or brushed). We offer versions with a button and a key as well as Dublin de Luxe – elegant thanks to unique cutting.",
+        "imgList": {
+          "1": {
+            "id": "1",
+            "src": "/images/windows/accessories-page/handles1.jpeg",
+            "alt": ""
+          },
+          "2": {
+            "id": "2",
+            "src": "/images/windows/accessories-page/handles2.jpeg",
+            "alt": ""
+          },
+          "3": {
+            "id": "3",
+            "src": "/images/windows/accessories-page/handles3.jpeg",
+            "alt": ""
+          },
+          "4": {
+            "id": "4",
+            "src": "/images/windows/accessories-page/handles4.jpeg",
+            "alt": ""
+          }
+        }
+      },
+      "WindowHandlesSecustic": {
+        "title": "Window handles Secustic – FKS i HOPPE",
+        "description": "For white windows we use aesthetic white handles of the renowned FKS company. For the windows with double-sided veneer we choose handles of the HOPPE company, which offer ergonomic and elegant design.",
+        "typesList": {
+          "title": "Available versions of the product:",
+          "1": {
+            "id": "1",
+            "description": "The SECOUSTIK type – the handle is equipped with a patented blocking mechanism preventing any possible manipulation from the outside by moving the boundary fitting. The characteristic click sound at turning the handle signals that the security function is active.",
+            "src": "/images/windows/accessories-page/handles-sec1.jpeg",
+            "alt": ""
+          },
+          "2": {
+            "id": "2",
+            "description": "SECURE HANDLE WITH A PUSH BUTTON –  the handle can be turned only after pressing the button – it prevents opening a window from the outside, it is a standard option in WK-1 type anti-burglary fittings, and is equipped with an anti-drilling plate as well.",
+            "src": "/images/windows/accessories-page/handles-sec2.jpeg",
+            "alt": ""
+          },
+          "3": {
+            "id": "3",
+            "description": "ANTI-BURGLARY HANDLE (with a key) – removing the key blocks the door- handle, which cannot be turned – it protects against possible window opening from the outside, it is a standard option in anti-burglary fittings of the WK-2 type. This door- handle type, similarly to the push-button one, is recommended for upstairs balcony doors so as to prevent them from being opened by children.",
+            "src": "/images/windows/accessories-page/handles-sec3.jpeg",
+            "alt": ""
+          }
+        }
+      }
+    }
+  },
 
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
@@ -2704,10 +2787,10 @@
           "parametersList": {
             "list": {
               "1": {
-                "desc": "colour: 2178001"
+                "desc": "Colour: 2178001"
               },
               "2": {
-                "desc": "glass: CHINCHILLA"
+                "desc": "Glass: CHINCHILLA"
               }
             }
           }
@@ -2809,10 +2892,10 @@
           "parametersList": {
             "list": {
               "1": {
-                "desc": "colour: 2178001"
+                "desc": "Colour: 2178001"
               },
               "2": {
-                "desc": "glass: CHINCHILLA"
+                "desc": "Glass: CHINCHILLA"
               }
             }
           }
@@ -3666,9 +3749,11 @@
     }
   },
   "ScreenPage": {
+    "ScreenCovers":{
+     "id":"bc2n9s",
     "title": "Roller Shutters / Sun Protection Covers",
     "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
-    "alt": "",
+    "alt": "",   
     "descrList": {
       "1": {
         "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
@@ -3679,6 +3764,7 @@
       "3": {
         "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
       }
+    }
     },
     "ScreensList": {
       "title": "Roller Shutters / Sun Protection Covers",
