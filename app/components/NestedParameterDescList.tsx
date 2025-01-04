@@ -6,6 +6,7 @@ type Props = {
   param: IParameterItem;
   titleBanner?: boolean;
   description?: boolean;
+  className?: string;
   isWhite?: boolean;
 };
 
@@ -13,11 +14,11 @@ const NestedParameterDescList: React.FC<Props> = ({
   param,
   titleBanner,
   description,
+  className,
   isWhite = false,
 }) => {
-  
   return (
-    <div>
+    <div className={className}>
       {titleBanner ? (
         <TitleBanner>
           <h3 className="titleCl">{param.title}</h3>
@@ -31,13 +32,15 @@ const NestedParameterDescList: React.FC<Props> = ({
       <ul className="flex flex-col gap-1 rounded-md pl-6">
         {Object.entries(param.list).map(([key, item]) => (
           <li key={key} className="flex">
-            <div className={clsx(
+            <div
+              className={clsx(
                 "flex-shrink-0 w-2 h-2 rounded-[3px] mr-4 mt-[8px]",
                 {
                   "bg-white": isWhite,
                   "bg-customMarsala": !isWhite,
                 }
-              )}></div>
+              )}
+            ></div>
             <p>{item.desc}</p>
           </li>
         ))}

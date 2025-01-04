@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 import { IImage } from "@/helpers/interfaces";
@@ -6,14 +6,15 @@ import { useModal } from "../ModalProvider";
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
+import NestedParameterDescList from "../NestedParameterDescList";
 import ModalSwiperContent from "../ModalSwiperContent";
-
 
 interface IList {
   list: IImage[];
   className?: string;
   objTypeImg?: string;
   children?: React.ReactNode;
+  isRow?: boolean;
   width?:
     | {
         1?: string;
@@ -48,17 +49,19 @@ const ImagesComponent: React.FC<IList> = ({
   className,
   objTypeImg = "object-cover",
   children,
+  isRow = false,
 }) => {
-
-const { openModal } = useModal();
+  const { openModal } = useModal();
 
   return (
     <div
-      className={clsx("flex flex-col gap-2", {
-        container: children,
+      className={clsx("flex", {
+        container: children && !isRow,
+        "flex-row justify-between": isRow,
+        "flex-col gap-2": !isRow,
       })}
     >
-      <div className={clsx("flex gap-6 w-full", className)}>
+      <div className={clsx("flex gap-6", className)}>
         {list.map((img, idx) => {
           const currentWidth = getImageDimensionValue(width, idx, "w-1/3");
           const currentHeight = getImageDimensionValue(
@@ -68,14 +71,25 @@ const { openModal } = useModal();
           );
           return (
             <div
-              className={`flex flex-col gap-2 cursor-zoom-in  ${currentWidth} ${currentHeight}`}
+              className={clsx(
+                "flex flex-col gap-2 cursor-zoom-in",
+                currentWidth
+              )}
+              // className={`flex flex-col gap-2 cursor-zoom-in  ${currentWidth} ${currentHeight}`}
               key={img.id}
-              onClick={() => openModal(<ModalSwiperContent slides={list} initialSlide={idx} />)}
+              onClick={() =>
+                openModal(
+                  <ModalSwiperContent slides={list} initialSlide={idx} />
+                )
+              }
             >
+              {img.title && img.title.trim().length > 0 && (
+                <p className="mb-2 h-12">{img.title}</p>
+              )}
               <div
                 className={clsx(
-                  `relative border border-gray-300 rounded-md overflow-hidden w-full h-full`,
-                  {}
+                  "relative border border-gray-300 rounded-md overflow-hidden w-full",
+                  currentHeight
                 )}
               >
                 <Image
@@ -87,7 +101,10 @@ const { openModal } = useModal();
                   priority
                 />
               </div>
-              {img.description && <p>{img.description}</p>}
+              {img.description && !children && <p>{img.description}</p>}
+              {img.params && !children && (
+                <NestedParameterDescList param={img.params} />
+              )}
             </div>
           );
         })}

@@ -125,6 +125,11 @@ export interface IImage {
   alt: string;
   title?: string;
   description?: string;
+  params?: {
+    list: {
+      [key: string]: IDesc;
+    };
+  };
 }
 
 export interface IImgList {

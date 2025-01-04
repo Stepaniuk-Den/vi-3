@@ -3309,7 +3309,201 @@
       "description": "THE BASE FOR HS Kömmerling PremiDoor 76 should be prepared in accordance with the instructions provided. If the base for the HS-type door is not properly prepared by the Customer, TUR-PLAST will not perform the installation. Therefore, the Customer should pay special attention to the quality of the concrete screed for the HS door. A water- and frost-resistant concrete mortar (B25 concrete) should be used. The surface should be perfectly stable, smooth and level."
     }
   },
-
+  "SlidingDoorsPskSchPage": {
+    "title": "PVC SLIDING TERRACE DOORS – PSK Type – Schüco Profiles",
+    "description": "Our offer includes the popular PSK sliding doors (Parallel-Schiebe-Kipp-Tür – parallel-slide-and-tilt doors).These types of structures are built using standard window profiles. Moving the leaves is possible thanks to the use of a special fittings mechanism. After turning the handle from the closed position, the leaf extends into the room, perpendicular to the window plane, and then slides to the side. The door also has a leaf tilt function.",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/pskSch/psk-sch-1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/pskSch/psk-sch-2.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "src": "/images/slidingDoors/pskSch/psk-sch-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "src": "/images/slidingDoors/pskSch/psk-sch-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/pskSch/psk-sch-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/pskSch/psk-sch-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/pskSch/psk-sch-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/pskSch/psk-sch-9.jpeg",
+        "alt": ""
+      },
+      "10": {
+        "id": "10",
+        "src": "/images/slidingDoors/pskSch/psk-sch-10.jpeg",
+        "alt": ""
+      },
+      "11": {
+        "id": "11",
+        "src": "/images/slidingDoors/pskSch/psk-sch-11.jpeg",
+        "alt": ""
+      }
+    },
+    "pskTiltSys": {
+      "title": "PSK tilt-and-slide doors – system Schüco",
+      "1": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys1.jpeg",
+        "alt": "",
+        "description": "System Schüco CT70"
+      },
+      "2": {
+        "id": "2",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys2.jpeg",
+        "alt": "",
+        "description": "System Schüco SI82"
+      }
+    },
+    "pskTiltOpt": {
+      "title": "PSK tilt-and-slide doors – opening options",
+      "1": {
+        "id": "1",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt1.jpeg",
+        "alt": "",
+        "description": "2-panel – where the leaf moves onto the left or right fixed panel."
+      },
+      "2": {
+        "id": "2",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt2.jpeg",
+        "alt": "",
+        "description": "3-panel – where the middle movable leaf moves onto the left or right fixed panel."
+      },
+      "3": {
+        "id": "3",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt3.jpeg",
+        "alt": "",
+        "description": "4-panel – where the two middle leaves move onto the left and right permanent panels, respectively."
+      },
+      "4": {
+        "id": "4",
+        "title": "",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt4.jpeg",
+        "alt": "",
+        "description": "PSK-type doors are also produced, in which the leaves slide to the inside of the building wall. This solution allows to open the entire window opening. In this case, the fittings guide rails must be attached to the window frame and the inside surface of the building wall. The door frame must be installed flush with the internal plane of the building wall. The maximum dimensions of PSK door leaves are approximately 1600×2100 mm or 1400×2300 mm. The advantages of this solution include moderate pricing and high tightness. The disadvantages, in turn, are the high threshold in the form of a window frame as well as problems with opening and closing the leaves that may occur in the event of unskilful use."
+      }
+    },
+    "pskTiltFit": {
+      "title": "PSK tilt-and-slide doors – parallel slide-and-tilt fittings by GU",
+      "description": "With the PSK fittings, new possibilities open up in the production of terrace doors from standard window profiles. The technically advanced fittings offered by Gretsch-Unitas (G-U) ensure efficient and precise operation – also for heavy components. PSK fittings by GU meet the requirements for barrier-free construction according to DIN 18040. The fittings for large and heavy leaves are additionally equipped with latch forced control, which pulls the leaf along its entire width when closing, and brings it back to the sliding position when opening.",
+      "list": {
+        "1": {
+          "id": "1",
+          "title": "Innovative carriage technology.",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt1.jpeg",
+          "alt": "",
+          "description": "The carriages slide lightly and reliably from tilt to sliding position."
+        },
+        "2": {
+          "id": "2",
+          "title": "Automatic Cleverle pin.",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt2.jpeg",
+          "alt": "",
+          "description": "Various climatic conditions often make it necessary to adjust the locking bolts. The self-adjusting Cleverle pin adapts to variable groove space. This significantly reduces the need to make adjustments on the window."
+        },
+        "3": {
+          "id": "3",
+          "title": "Surface protection with ferGUard*silber.",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt3.jpeg",
+          "alt": "",
+          "description": "All PSK hardware components are protected with ferGUard anti-corrosion coating. Three successive layers are applied in modern production plants."
+        },
+        "4": {
+          "id": "4",
+          "title": "The handle provides control of all functions",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt4.jpeg",
+          "alt": "",
+          "params": {
+            "list": {
+              "1": {
+                "desc": "Central lock release"
+              },
+              "2": {
+                "desc": "Tilt position release"
+              },
+              "3": {
+                "desc": "Moving the leaf to the open (closed) position"
+              },
+              "4": {
+                "desc": "Leaf closure"
+              }
+            }
+          }
+        }
+      },
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "All multi-point locking fittings are equipped with a mishandling lock device as standard."
+          },
+          "2": {
+            "desc": "All central locking elements are equipped with an automatic Cleverle pin which adjusts to the size of the groove space. Adjustments are made with a Torx key. This makes installation and maintenance easier, more practical and convenient."
+          },
+          "3": {
+            "desc": "The choice of hooks defines the anti-burglary safety class."
+          },
+          "4": {
+            "desc": "All locking elements in the frame are standard multi-point locking fittings."
+          },
+          "5": {
+            "desc": "GU multi-point locking fittings can be equipped with control elements and connected to the alarm system."
+          },
+          "6": {
+            "desc": "Optimum anti-corrosion protection with the ferGUard*silber coating. The technological process provides for a three-layer silver coating with an attractive appearance, which has become the standard for window fittings."
+          },
+          "7": {
+            "desc": "Comfort and safety of use and operation regardless of the weight of the window. The innovative technology of the carriages enables precise movement of the leaf to any position and easy achievement of the tilt position."
+          },
+          "8": {
+            "desc": "Solutions for barrier-free construction according to DIN 18040."
+          },
+          "9": {
+            "desc": "Can be used in all standard profiles made of wood, PVC and aluminium."
+          },
+          "10": {
+            "desc": "Operated with an aluminium or stainless steel handle."
+          },
+          "11": {
+            "desc": "The handle comes with a key."
+          }
+        }
+      }
+    }
+  },
   "RollerBlindsPage": {
     "title": "Roller Shutters / Sun Protection Covers",
     "description": "External roller shutters: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our external roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
