@@ -5,15 +5,17 @@ type Props = {
   param: IParameterItem;
   titleBanner?: boolean;
   description?: boolean;
+  className?: string;
 };
 
 const NestedParameterDescList: React.FC<Props> = ({
   param,
   titleBanner,
   description,
+  className,
 }) => {
   return (
-    <div>
+    <div className={className}>
       {titleBanner ? (
         <TitleBanner>
           <h3 className="titleCl">{param.title}</h3>

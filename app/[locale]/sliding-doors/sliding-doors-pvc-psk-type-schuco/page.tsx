@@ -1,4 +1,5 @@
 import NestedCardsSection from "@/app/components/NestedCardsSection";
+import NestedParameterDescList from "@/app/components/NestedParameterDescList";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
 import PskTiltFittSection from "@/app/components/SlidingDoorsPage/PskTiltFittSection";
@@ -22,7 +23,6 @@ const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
   const imgList = Object.values(t.raw("imgList") as IImgList);
   const cardListOpt = Object.values(t.raw("pskTiltOpt") as IImgList);
   const cardListFit = Object.values(t.raw("pskTiltFit")["list"] as IImgList);
-  // console.log("cardListFit - ", cardListFit);
   return (
     <>
       <PageTopDescription t={t} />
@@ -45,6 +45,10 @@ const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
       <PskTiltFittSection
         cardList={cardListFit}
         bannerTitle={t.raw("pskTiltFit")["title"]}
+      />
+      <NestedParameterDescList
+        param={t.raw("pskTiltFit")["parametersList"]}
+        className="container mt-6"
       />
     </>
   );

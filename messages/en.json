@@ -3233,17 +3233,17 @@
       "1": {
         "id": "1",
         "src": "/images/slidingDoors/pskSch/psk-sch-1.jpeg",
-        "alt": "Large panoramic glass sliding doors in the house"
+        "alt": ""
       },
       "2": {
         "id": "2",
         "src": "/images/slidingDoors/pskSch/psk-sch-2.jpeg",
-        "alt": "Large panoramic glass sliding doors in the house"
+        "alt": ""
       },
       "3": {
         "id": "3",
         "src": "/images/slidingDoors/hsSch/hs-sch-3.jpeg",
-        "alt": "schema sliding doors"
+        "alt": ""
       },
       "4": {
         "id": "4",
@@ -3379,6 +3379,43 @@
                 "desc": "Leaf closure"
               }
             }
+          }
+        }
+      },
+      "parametersList": {
+        "list": {
+          "1": {
+            "desc": "All multi-point locking fittings are equipped with a mishandling lock device as standard."
+          },
+          "2": {
+            "desc": "All central locking elements are equipped with an automatic Cleverle pin which adjusts to the size of the groove space. Adjustments are made with a Torx key. This makes installation and maintenance easier, more practical and convenient."
+          },
+          "3": {
+            "desc": "The choice of hooks defines the anti-burglary safety class."
+          },
+          "4": {
+            "desc": "All locking elements in the frame are standard multi-point locking fittings."
+          },
+          "5": {
+            "desc": "GU multi-point locking fittings can be equipped with control elements and connected to the alarm system."
+          },
+          "6": {
+            "desc": "Optimum anti-corrosion protection with the ferGUard*silber coating. The technological process provides for a three-layer silver coating with an attractive appearance, which has become the standard for window fittings."
+          },
+          "7": {
+            "desc": "Comfort and safety of use and operation regardless of the weight of the window. The innovative technology of the carriages enables precise movement of the leaf to any position and easy achievement of the tilt position."
+          },
+          "8": {
+            "desc": "Solutions for barrier-free construction according to DIN 18040."
+          },
+          "9": {
+            "desc": "Can be used in all standard profiles made of wood, PVC and aluminium."
+          },
+          "10": {
+            "desc": "Operated with an aluminium or stainless steel handle."
+          },
+          "11": {
+            "desc": "The handle comes with a key."
           }
         }
       }
