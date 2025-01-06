@@ -21,15 +21,26 @@ import { useModal } from "./ModalProvider";
 import Image from "next/image";
 import SwiperCore from "swiper";
 import ModalSwiperContent from "./ModalSwiperContent";
+import clsx from "clsx";
 
-const ImgCarouselPage = ({ imgList }: { imgList: IImage[] }) => {
+interface IProps {
+  imgList: IImage[];
+  width?: string;
+  height?: string;
+}
+
+const ImgCarouselPage = ({
+  imgList,
+  width = "max-w-md",
+  height = "h-[480px]",
+}: IProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
 
   const { openModal } = useModal();
 
   return (
     <>
-      <div className="max-w-md mx-auto mb-4">
+      <div className={clsx("mx-auto mb-4", width)}>
         <Swiper
           loop={true}
           spaceBetween={10}
@@ -46,7 +57,7 @@ const ImgCarouselPage = ({ imgList }: { imgList: IImage[] }) => {
           {imgList.map((image, index) => (
             <SwiperSlide key={image.id}>
               <div
-                className="relative w-full h-[480px] cursor-zoom-in"
+                className={clsx("relative w-full cursor-zoom-in", height)}
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={imgList} initialSlide={index} />
@@ -64,12 +75,12 @@ const ImgCarouselPage = ({ imgList }: { imgList: IImage[] }) => {
           ))}
         </Swiper>
       </div>
-      <div className=" max-w-xl flex gap-1 justify-between">
+      <div className="max-w-[360px] flex mx-auto">
         <Swiper
           onSwiper={setThumbsSwiper}
           // loop={true}
-          spaceBetween={4}
-          slidesPerView={5}
+          spaceBetween={10}
+          slidesPerView={3}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}

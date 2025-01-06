@@ -3,7 +3,7 @@ import NestedParameterDescList from "@/app/components/NestedParameterDescList";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
 import PskTiltFittSection from "@/app/components/SlidingDoorsPage/PskTiltFittSection";
-import PskTiltSlideSection from "@/app/components/SlidingDoorsPage/PskTiltSlideSection";
+import PskTiltSlideSection from "@/app/components/SlidingDoorsPage/PskTiltSlideOptSection";
 import { IImage } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";

@@ -1,11 +1,11 @@
 "use client";
 
+import React, { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
+import Image from "next/image";
 import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 import { IImage } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
-import clsx from "clsx";
-import Image from "next/image";
-import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
 import ModalSwiperContent from "../ModalSwiperContent";
 
@@ -53,6 +53,41 @@ const ImagesComponent: React.FC<IList> = ({
 }) => {
   const { openModal } = useModal();
 
+  const [titleHeightClass, setTitleHeightClass] = useState<string>("h-auto");
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const calculateTitleHeight = () => {
+      if (containerRef.current) {
+        const containerWidth = containerRef.current.offsetWidth;
+
+        const maxRows = list.reduce((max, img) => {
+          const titleLength = img.title ? img.title.length : 0;
+
+          const charsPerRow = Math.floor(containerWidth / 8);
+          const rows = Math.ceil(titleLength / charsPerRow);
+
+          return Math.max(max, rows);
+        }, 0);
+
+        if (maxRows <= 1) {
+          setTitleHeightClass("h-6");
+        } else if (maxRows <= 2) {
+          setTitleHeightClass("h-12");
+        } else {
+          setTitleHeightClass("h-18");
+        }
+      }
+    };
+
+    calculateTitleHeight();
+
+    window.addEventListener("resize", calculateTitleHeight);
+    return () => {
+      window.removeEventListener("resize", calculateTitleHeight);
+    };
+  }, [list]);
+
   return (
     <div
       className={clsx("flex", {
@@ -69,28 +104,26 @@ const ImagesComponent: React.FC<IList> = ({
             idx,
             "h-[30rem]"
           );
+
           return (
             <div
-              className={clsx(
-                "flex flex-col gap-2 cursor-zoom-in",
-                currentWidth
-              )}
-              // className={`flex flex-col gap-2 cursor-zoom-in  ${currentWidth} ${currentHeight}`}
+              ref={containerRef}
+              className={clsx("flex flex-col gap-2", currentWidth)}
               key={img.id}
-              onClick={() =>
-                openModal(
-                  <ModalSwiperContent slides={list} initialSlide={idx} />
-                )
-              }
             >
               {img.title && img.title.trim().length > 0 && (
-                <p className="mb-2 h-12">{img.title}</p>
+                <p className={clsx("mb-2", titleHeightClass)}>{img.title}</p>
               )}
               <div
                 className={clsx(
-                  "relative border border-gray-300 rounded-md overflow-hidden w-full",
+                  "relative border border-gray-300 rounded-md overflow-hidden w-full cursor-zoom-in",
                   currentHeight
                 )}
+                onClick={() =>
+                  openModal(
+                    <ModalSwiperContent slides={list} initialSlide={idx} />
+                  )
+                }
               >
                 <Image
                   className={objTypeImg}
