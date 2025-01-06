@@ -65,6 +65,7 @@ const ImgCarouselPage = ({
                 }
               >
                 <Image
+                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                   src={image.src}
                   alt={image.alt}
                   fill
@@ -90,6 +91,7 @@ const ImgCarouselPage = ({
             <SwiperSlide key={image.id}>
               <div className="relative w-[110px] h-[80px] rounded-md">
                 <Image
+                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                   src={image.src}
                   alt={image.alt}
                   fill
