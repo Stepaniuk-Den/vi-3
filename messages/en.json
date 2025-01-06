@@ -3310,8 +3310,8 @@
     }
   },
   "SlidingDoorsPskSchPage": {
-    "title": "PVC SLIDING TERRACE DOORS – PSK Type – Schüco Profiles",
-    "description": "Our offer includes the popular PSK sliding doors (Parallel-Schiebe-Kipp-Tür – parallel-slide-and-tilt doors).These types of structures are built using standard window profiles. Moving the leaves is possible thanks to the use of a special fittings mechanism. After turning the handle from the closed position, the leaf extends into the room, perpendicular to the window plane, and then slides to the side. The door also has a leaf tilt function.",
+    "title": "PVC SLIDING TERRACE DOORS - PSK Type - Schüco Profiles",
+    "description": "Our offer includes the popular PSK sliding doors (Parallel-Schiebe-Kipp-Tür - parallel-slide-and-tilt doors).These types of structures are built using standard window profiles. Moving the leaves is possible thanks to the use of a special fittings mechanism. After turning the handle from the closed position, the leaf extends into the room, perpendicular to the window plane, and then slides to the side. The door also has a leaf tilt function.",
     "imgList": {
       "1": {
         "id": "1",
@@ -3370,7 +3370,7 @@
       }
     },
     "pskTiltSys": {
-      "title": "PSK tilt-and-slide doors – system Schüco",
+      "title": "PSK tilt-and-slide doors - system Schüco",
       "1": {
         "id": "1",
         "title": "",
@@ -3387,27 +3387,27 @@
       }
     },
     "pskTiltOpt": {
-      "title": "PSK tilt-and-slide doors – opening options",
+      "title": "PSK tilt-and-slide doors - opening options",
       "1": {
         "id": "1",
         "title": "",
         "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt1.jpeg",
         "alt": "",
-        "description": "2-panel – where the leaf moves onto the left or right fixed panel."
+        "description": "2-panel - where the leaf moves onto the left or right fixed panel."
       },
       "2": {
         "id": "2",
         "title": "",
         "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt2.jpeg",
         "alt": "",
-        "description": "3-panel – where the middle movable leaf moves onto the left or right fixed panel."
+        "description": "3-panel - where the middle movable leaf moves onto the left or right fixed panel."
       },
       "3": {
         "id": "3",
         "title": "",
         "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt3.jpeg",
         "alt": "",
-        "description": "4-panel – where the two middle leaves move onto the left and right permanent panels, respectively."
+        "description": "4-panel - where the two middle leaves move onto the left and right permanent panels, respectively."
       },
       "4": {
         "id": "4",
@@ -3418,8 +3418,8 @@
       }
     },
     "pskTiltFit": {
-      "title": "PSK tilt-and-slide doors – parallel slide-and-tilt fittings by GU",
-      "description": "With the PSK fittings, new possibilities open up in the production of terrace doors from standard window profiles. The technically advanced fittings offered by Gretsch-Unitas (G-U) ensure efficient and precise operation – also for heavy components. PSK fittings by GU meet the requirements for barrier-free construction according to DIN 18040. The fittings for large and heavy leaves are additionally equipped with latch forced control, which pulls the leaf along its entire width when closing, and brings it back to the sliding position when opening.",
+      "title": "PSK tilt-and-slide doors - parallel slide-and-tilt fittings by GU",
+      "description": "With the PSK fittings, new possibilities open up in the production of terrace doors from standard window profiles. The technically advanced fittings offered by Gretsch-Unitas (G-U) ensure efficient and precise operation - also for heavy components. PSK fittings by GU meet the requirements for barrier-free construction according to DIN 18040. The fittings for large and heavy leaves are additionally equipped with latch forced control, which pulls the leaf along its entire width when closing, and brings it back to the sliding position when opening.",
       "list": {
         "1": {
           "id": "1",
@@ -3500,6 +3500,98 @@
           "11": {
             "desc": "The handle comes with a key."
           }
+        }
+      }
+    }
+  },
+  "SlidingDoorsPskKomPage": {
+    "title": "PVC SLIDING TERRACE DOORS - PSK Type - Kömmerling Profiles",
+    "description": "This tilt-and-slide system, together with special fittings, allows you to tilt and move the door leaf. A very functional solution in places where we want to save space.",
+    "menuItems": {
+      "1": "1. The PSK tilt-and-slide system is based on the following profiles:",
+      "2": "2. Operation of the tilt-and-slide system in a PSK-type terrace door:",
+      "3": "3. PSK system properties:"
+    },
+    "imgList": {
+      "1": {
+        "id": "1",
+        "title": "Kömmerling 76 AD",
+        "src": "/images/slidingDoors/pskKom/psk-kom-1.jpeg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "title": "Kömmerling 76 MD",
+        "src": "/images/slidingDoors/pskKom/psk-kom-2.jpeg",
+        "alt": ""
+      },
+      "3": {
+        "id": "3",
+        "title": "Kömmerling 88",
+        "src": "/images/slidingDoors/pskKom/psk-kom-3.jpeg",
+        "alt": ""
+      },
+      "4": {
+        "id": "4",
+        "title": "PSK door in the tilt position",
+        "src": "/images/slidingDoors/pskKom/psk-kom-4.jpeg",
+        "alt": ""
+      },
+      "5": {
+        "id": "5",
+        "title": "PSK door in the sliding position",
+        "src": "/images/slidingDoors/pskKom/psk-kom-5.jpeg",
+        "alt": ""
+      },
+      "6": {
+        "id": "6",
+        "src": "/images/slidingDoors/pskKom/psk-kom-6.jpeg",
+        "alt": ""
+      },
+      "7": {
+        "id": "7",
+        "src": "/images/slidingDoors/pskKom/psk-kom-7.jpeg",
+        "alt": ""
+      },
+      "8": {
+        "id": "8",
+        "src": "/images/slidingDoors/pskKom/psk-kom-8.jpeg",
+        "alt": ""
+      },
+      "9": {
+        "id": "9",
+        "src": "/images/slidingDoors/pskKom/psk-kom-9.jpeg",
+        "alt": ""
+      }
+    },
+    "parametersList": {
+      "list": {
+        "1": {
+          "desc": "In the PSK tilt-and-slide terrace doors, we use parallel slide-and-tilt fittings from the company GU. PSK fittings by GU meet the requirements for barrier-free construction according to DIN 18040."
+        },
+        "2": {
+          "desc": "The fittings for large and heavy leaves are additionally equipped with latch forced control, which pulls the leaf along its entire width when closing, and brings it back to the sliding position when opening."
+        },
+        "3": {
+          "desc": "Leaf width in the groove up to 200 cm."
+        },
+        "4": {
+          "desc": "Leaf height in the groove up to 237 cm."
+        },
+        "5": {
+          "desc": "Sliding leaf weight up to 200 kg."
+        },
+        "6": {
+          "desc": "All multi-point locking fittings are equipped with a mishandling lock device as standard."
+        },
+        "7": {
+          "desc": "Optimum anti-corrosion protection with the ferGUard silber coating."
+        },
+        "8": {
+          "desc": "Comfort and safety of use and operation regardless of the weight of the window."
+        },
+        "9": {
+          "desc": "Innovative technology of the carriages enables precise movement of the leaf to any position and easy achievement of the tilt position."
         }
       }
     }
@@ -3749,22 +3841,22 @@
     }
   },
   "ScreenPage": {
-    "ScreenCovers":{
-     "id":"bc2n9s",
-    "title": "Roller Shutters / Sun Protection Covers",
-    "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
-    "alt": "",   
-    "descrList": {
-      "1": {
-        "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
-      },
-      "2": {
-        "desc": "Screens can be operated with a switch, remote control, but also mobile device."
-      },
-      "3": {
-        "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
+    "ScreenCovers": {
+      "id": "bc2n9s",
+      "title": "Roller Shutters / Sun Protection Covers",
+      "src": "/images/roller_shutters/screen_covers/roller_shutter_1.webp",
+      "alt": "",
+      "descrList": {
+        "1": {
+          "desc": "EXTERNAL COVERS (SCREENS) are modern window covers which perfectly protect rooms against excessive insolation and also against insects."
+        },
+        "2": {
+          "desc": "Screens can be operated with a switch, remote control, but also mobile device."
+        },
+        "3": {
+          "desc": "The advantages of SCREENS include the possibility of covering large areas, matching their appearance to the colours of the building, and selecting the degree of shading."
+        }
       }
-    }
     },
     "ScreensList": {
       "title": "Roller Shutters / Sun Protection Covers",

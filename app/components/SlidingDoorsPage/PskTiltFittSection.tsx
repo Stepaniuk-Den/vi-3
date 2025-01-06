@@ -7,7 +7,6 @@ interface IProps {
   bannerTitle: string;
 }
 const PskTiltFittSection = ({ cardList, bannerTitle }: IProps) => {
-  console.log("cardList - ", cardList);
   return (
     <section className="sectionCl">
       <div className="container">

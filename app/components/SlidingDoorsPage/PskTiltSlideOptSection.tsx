@@ -6,7 +6,7 @@ interface IProps {
   cardList: IImage[];
   bannerTitle: string;
 }
-const PskTiltSlideSection = ({ cardList, bannerTitle }: IProps) => {
+const PskTiltSlideOptSection = ({ cardList, bannerTitle }: IProps) => {
   return (
     <section className="sectionCl">
       <div className="container">
@@ -42,4 +42,4 @@ const PskTiltSlideSection = ({ cardList, bannerTitle }: IProps) => {
   );
 };
 
-export default PskTiltSlideSection;
+export default PskTiltSlideOptSection;
