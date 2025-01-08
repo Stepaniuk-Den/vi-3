@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-import { IImage } from "@/helpers/interfaces";
+import { IImgList } from "@/helpers/interfaces";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import SchShEaseSlideSection from "@/app/components/SlidingDoorsPage/SchShEaseSlideSection";
 import SchShLivingSlideSection from "@/app/components/SlidingDoorsPage/SchShLivingSlideSection";
@@ -10,10 +10,6 @@ import SchShTopSection from "@/app/components/SlidingDoorsPage/SchShTopSection";
 type Props = {
   params: { locale: string };
 };
-
-interface IImgList {
-  [key: string]: IImage;
-}
 
 interface Desc4 {
   [key: string]: string;

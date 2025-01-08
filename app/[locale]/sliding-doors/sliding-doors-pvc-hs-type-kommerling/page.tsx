@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-import { IImage, IParameterItem } from "@/helpers/interfaces";
+import { IImage, IImgList, IParameterItem } from "@/helpers/interfaces";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
@@ -12,10 +12,6 @@ import KomShPremidoorSection from "@/app/components/SlidingDoorsPage/KomShPremid
 type Props = {
   params: { locale: string };
 };
-
-interface IImgList {
-  [key: string]: IImage;
-}
 
 const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

@@ -4,17 +4,13 @@ import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
 import PskTiltFittSection from "@/app/components/SlidingDoorsPage/PskTiltFittSection";
 import PskTiltSlideSection from "@/app/components/SlidingDoorsPage/PskTiltSlideOptSection";
-import { IImage } from "@/helpers/interfaces";
+import { IImgList } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: { locale: string };
 };
-
-interface IImgList {
-  [key: string]: IImage;
-}
 
 const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
