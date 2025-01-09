@@ -19,7 +19,9 @@
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
   },
   "Buttons": {
-    "see": "See all"
+    "see": "See all",
+    "submit": "Send",
+    "sending": "Sending..."
   },
   "Navigation": {
     "home": {
@@ -173,6 +175,28 @@
       }
     }
   },
+
+  "ContactForm": {
+    "name": "Name (required)",
+    "email": "Email address (required)",
+    "phoneNumber": "Phone number",
+    "message": "Message (required)",
+    "placeholderName": "Name",
+    "placeholderEmail": "Email",
+    "placeholderPhoneNumber": "Phone number",
+    "placeholderMessage": "Message",
+    "acceptTerms": "By submitting this form, I consent to the processing of my personal data.",
+    "required": "Required field",
+    "minName": "Must be at least 2 characters",
+    "maxName": "Must contain at most 20 characters",
+    "requiredEmail": "Enter valid email address",
+    "minMessage": "Must be at least 15 characters",
+    "maxMessage": "Must contain at most 180 characters",
+    "requiredAccept": "Please accept the agreement to continue",
+    "success": "Your message has been successfully sent to ",
+    "content": "Message content"
+  },
+
   "Hero": {
     "slides": {
       "1": {

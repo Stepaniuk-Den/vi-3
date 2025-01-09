@@ -56,16 +56,39 @@
     @apply xl:text-xl lg:text-lg font-semibold font-roboto uppercase;
   }
 
-  .LinkToPageCl {
+  .linkToPageCl {
     @apply flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
   }
 
   .langBtnCl {
     @apply transition-all duration-300 px-4 py-2 w-24 h-14 flex text-white items-center justify-between rounded-md hover:bg-customMarsala-accent hover:text-white;
   }
+
+  .inputsCl {
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-customMarsala focus:shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all;
+  }
+  .errorWrapperCl {
+    @apply flex items-center h-8 pt-2 pb-4 px-5 text-s leading-5 text-customMarsala;
+  }
+  .checkboxCl {
+    @apply sr-only;
+  }
+  .labelCheckCl {
+    @apply flex items-center mb-8 text-xs cursor-pointer;
+  }
+  .iconCheckWrapCl {
+    @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border border-solid border-customMarsala rounded-md shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all group-hover:border-customMarsala-accent group-focus:border-customMarsala-accent;
+  }
+  .iconCheckCl {
+    @apply inline-block w-5 h-5  transition-all;
+  }
 }
 
 @layer utilities {
+  .peer:checked + .labelCheckCl .iconCheckWrapCl {
+    @apply bg-customMarsala-accent border-customMarsala
+    shadow-none;
+  }
 }
 
 /* .overlay {
