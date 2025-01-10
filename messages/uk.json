@@ -3016,7 +3016,7 @@
         "slug": "sliding-doors-pvc-hs-type-schuco",
         "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Schüco",
         "description": "Рекомендуємо підйомно-розсувні двері Schüco ThermoSlide і EasySlide. Навіть дуже великі стулки можна легко переміщати. Плоский і потрійно утеплений поріг підвищує комфорт використання та усуває ризик виникнення «холодної зони» на підлозі.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/hs-sch.jpg",
         "alt": ""
       },
       "2": {
@@ -3024,7 +3024,7 @@
         "slug": "sliding-doors-pvc-hs-type-kommerling",
         "title": "ПВХ Розсувні Терасні Двері - Тип HS - Профілі Kömmerling",
         "description": "Ексклюзивні підйомно-розсувні двері PremiDoor 76, рекомендовані в нашій пропозиції, забезпечують винятковий комфорт проживання. Стулка дверей рухається плавно та безшумно по напрямних. Високоякісні ущільнення гарантують оптимальну вітро- та водонепроникність, а також захист від зовнішнього шуму. У цій системі ми отримуємо найвищі параметри теплоізоляції.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/hs-kom.jpg",
         "alt": ""
       },
       "3": {
@@ -3032,7 +3032,7 @@
         "slug": "sliding-doors-pvc-psk-type-schuco",
         "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Schüco",
         "description": "У нашій пропозиції представлені популярні сьогодні розсувні двері PSK (Parallel-Schiebe-Kipp-Tür – паралельно-розсувно-відкидні двері). Такі конструкції виготовляються із використанням стандартних віконних профілів. Після повороту ручки зі закритого положення стулка висувається в приміщення, перпендикулярно до площини вікна, а потім переміщується вбік. Двері також мають функцію відкидання стулки.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/psk-sch.jpg",
         "alt": ""
       },
       "4": {
@@ -3040,7 +3040,7 @@
         "slug": "sliding-doors-pvc-psk-type-kommerling",
         "title": "ПВХ Розсувні Терасні Двері - Тип PSK - Профілі Kömmerling",
         "description": "Ми виготовляємо розсувні терасні двері типу PSK, які є привабливою альтернативою типовим балконним дверям. Ця система дозволяє заощадити простір, необхідний для відкривання традиційних балконних або терасних дверей. Двері PSK на основі ПВХ профілів Kömmerling мають можливість нахилу стулки, окрім її розсування.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/psk-kom.jpg",
         "alt": ""
       },
       "5": {
@@ -3048,7 +3048,7 @@
         "slug": "aluminium-sliding-doors-pvc-hs-type-aliplast",
         "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aliplast",
         "description": "Сучасна конструкція; використання підйомно-розсувної фурнітури в інноваційній алюмінієвій системі UltraGlide з низьким порогом є чудовим рішенням для підвищення доступності будівель для людей з обмеженими можливостями. Можливе використання кольорів з палітри RAL, структурних кольорів, кольорів під дерево, анодування, двокольорового фарбування.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/alum-ali.jpg",
         "alt": ""
       },
       "6": {
@@ -3056,7 +3056,7 @@
         "slug": "aluminium-sliding-doors-pvc-hs-type-aluron",
         "title": "АЛЮМІНІЄВІ Розсувні Терасні Двері - Тип HS - Профілі Aluron",
         "description": "Алюмінієві підйомно-розсувні двері на основі системи AS 178HS є поєднанням інноваційних рішень із сучасним дизайном, створюючи нове покоління всескляних підйомно-розсувних дверей. У цій системі можна побудувати великі рухомі терасні скління з низьким і теплим порогом. Її конструкційні механізми забезпечують безпечне та комфортне розсування важких стулок вручну або автоматично.",
-        "src": "/images/windows/windows-aluminium..jpg",
+        "src": "/images/slidingDoors/alum-alu.jpg",
         "alt": ""
       }
     }
@@ -3067,57 +3067,57 @@
     "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/slidingDoors/hsSch/hs-sch-1..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-1.jpg",
         "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "2": {
         "id": "2",
-        "src": "/images/slidingDoors/hsSch/hs-sch-2..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-2.jpg",
         "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "3": {
         "id": "3",
-        "src": "/images/slidingDoors/hsSch/hs-sch-3..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-3.jpg",
         "alt": "схема розсувних дверей"
       },
       "4": {
         "id": "4",
-        "src": "/images/slidingDoors/hsSch/hs-sch-4..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-4.jpg",
         "alt": ""
       },
       "5": {
         "id": "5",
-        "src": "/images/slidingDoors/hsSch/hs-sch-5..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-5.jpg",
         "alt": ""
       },
       "6": {
         "id": "6",
-        "src": "/images/slidingDoors/hsSch/hs-sch-6..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-6.jpg",
         "alt": ""
       },
       "7": {
         "id": "7",
-        "src": "/images/slidingDoors/hsSch/hs-sch-7..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-7.jpg",
         "alt": ""
       },
       "8": {
         "id": "8",
-        "src": "/images/slidingDoors/hsSch/hs-sch-8..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-8.jpg",
         "alt": ""
       },
       "9": {
         "id": "9",
-        "src": "/images/slidingDoors/hsSch/hs-sch-9..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-9.jpg",
         "alt": ""
       },
       "10": {
         "id": "10",
-        "src": "/images/slidingDoors/hsSch/hs-sch-10..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-10.jpg",
         "alt": ""
       },
       "11": {
         "id": "11",
-        "src": "/images/slidingDoors/hsSch/hs-sch-11..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-11.jpg",
         "alt": ""
       }
     },
@@ -3127,13 +3127,13 @@
       "1": {
         "id": "1",
         "title": "Schüo EasySlide",
-        "src": "/images/slidingDoors/hsSch/hs-sch-slide1..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide1.jpg",
         "alt": ""
       },
       "2": {
         "id": "2",
         "title": "Schüo LivIngSlide",
-        "src": "/images/slidingDoors/hsSch/hs-sch-slide2..jpg",
+        "src": "/images/slidingDoors/hsSch/hs-sch-slide2.jpg",
         "alt": ""
       }
     },
@@ -3186,59 +3186,59 @@
     "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/slidingDoors/hsKom/hs-kom-1..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-1.jpg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "src": "/images/slidingDoors/hsKom/hs-kom-2..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-2.jpg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "src": "/images/slidingDoors/hsKom/hs-kom-3..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-3.jpg",
         "alt": ""
       },
       "4": {
         "id": "4",
-        "src": "/images/slidingDoors/hsKom/hs-kom-4..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-4.jpg",
         "alt": ""
       },
       "5": {
         "id": "5",
-        "src": "/images/slidingDoors/hsKom/hs-kom-5..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-5.jpg",
         "alt": ""
       },
       "6": {
         "id": "6",
-        "src": "/images/slidingDoors/hsKom/hs-kom-6..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-6.jpg",
         "alt": ""
       },
       "7": {
         "id": "7",
-        "src": "/images/slidingDoors/hsKom/hs-kom-7..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-7.jpg",
         "alt": "",
         "description": "Одне підйомно-розсувне полотно та одне фіксоване скління"
       },
       "8": {
         "id": "8",
-        "src": "/images/slidingDoors/hsKom/hs-kom-8..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-8.jpg",
         "alt": "",
         "description": "Два підйомно-розсувні полотна у варіанті з рухомою стійкою та два фіксованих скління"
       },
       "9": {
         "id": "9",
-        "src": "/images/slidingDoors/hsKom/hs-kom-9..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-9.jpg",
         "alt": ""
       },
       "10": {
         "id": "10",
-        "src": "/images/slidingDoors/hsKom/hs-kom-10..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-10.jpg",
         "alt": ""
       },
       "11": {
         "id": "11",
-        "src": "/images/slidingDoors/hsKom/hs-kom-11..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-11.jpg",
         "alt": ""
       }
     },
@@ -3246,7 +3246,7 @@
       "1": {
         "id": "1",
         "title": "Система PremiDoor 76 – загальна інформація",
-        "src": "/images/slidingDoors/hsKom/hs-kom-premi1..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi1.jpg",
         "alt": "",
         "description": "Ми пропонуємо інноваційну систему підйомно-розсувних дверей HS-типу з низьким порогом. Ми є виробником терасних дверей у системі Kömmerling PremiDoor 76. Цей тип дверей є чудовим рішенням як для новобудов, так і для будівель, що проходять реновацію."
       },
@@ -3280,14 +3280,14 @@
       "1": {
         "id": "1",
         "title": "",
-        "src": "/images/slidingDoors/hsKom/hs-kom-premi2..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi2.jpg",
         "alt": "",
         "description": "PremiDoor 76"
       },
       "2": {
         "id": "2",
         "title": "",
-        "src": "/images/slidingDoors/hsKom/hs-kom-premi3..jpg",
+        "src": "/images/slidingDoors/hsKom/hs-kom-premi3.jpg",
         "alt": "",
         "description": "PremiDoor 76 lux"
       },
@@ -3305,57 +3305,57 @@
     "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/slidingDoors/pskSch/psk-sch-1..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-1.jpg",
         "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "2": {
         "id": "2",
-        "src": "/images/slidingDoors/pskSch/psk-sch-2..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-2.jpg",
         "alt": "Великі панорамні скляні розсувні двері в будинку"
       },
       "3": {
         "id": "3",
-        "src": "/images/slidingDoors/hsSch/hs-sch-3..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-3.jpg",
         "alt": "схема розсувних дверей"
       },
       "4": {
         "id": "4",
-        "src": "/images/slidingDoors/pskSch/psk-sch-4..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-4.jpg",
         "alt": ""
       },
       "5": {
         "id": "5",
-        "src": "/images/slidingDoors/pskSch/psk-sch-5..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-5.jpg",
         "alt": ""
       },
       "6": {
         "id": "6",
-        "src": "/images/slidingDoors/pskSch/psk-sch-6..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-6.jpg",
         "alt": ""
       },
       "7": {
         "id": "7",
-        "src": "/images/slidingDoors/pskSch/psk-sch-7..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-7.jpg",
         "alt": ""
       },
       "8": {
         "id": "8",
-        "src": "/images/slidingDoors/pskSch/psk-sch-8..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-8.jpg",
         "alt": ""
       },
       "9": {
         "id": "9",
-        "src": "/images/slidingDoors/pskSch/psk-sch-9..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-9.jpg",
         "alt": ""
       },
       "10": {
         "id": "10",
-        "src": "/images/slidingDoors/pskSch/psk-sch-10..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-10.jpg",
         "alt": ""
       },
       "11": {
         "id": "11",
-        "src": "/images/slidingDoors/pskSch/psk-sch-11..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-11.jpg",
         "alt": ""
       }
     },
@@ -3364,14 +3364,14 @@
       "1": {
         "id": "1",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys1..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys1.jpg",
         "alt": "",
         "description": "Система Schüo CT70"
       },
       "2": {
         "id": "2",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys2..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-sys2.jpg",
         "alt": "",
         "description": "Система Schüo SI82"
       }
@@ -3381,28 +3381,28 @@
       "1": {
         "id": "1",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt1..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt1.jpg",
         "alt": "",
         "description": "2-стулкові – де стулка переміщується на ліву або праву фіксовану панель."
       },
       "2": {
         "id": "2",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt2..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt2.jpg",
         "alt": "",
         "description": "3-стулкові – де середня рухома стулка переміщується на ліву або праву фіксовану панель."
       },
       "3": {
         "id": "3",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt3..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt3.jpg",
         "alt": "",
         "description": "4-стулкові – де дві середні стулки переміщуються на ліву та праву фіксовані панелі відповідно."
       },
       "4": {
         "id": "4",
         "title": "",
-        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt4..jpg",
+        "src": "/images/slidingDoors/pskSch/psk-sch-tilt-opt4.jpg",
         "alt": "",
         "description": "PSK-двері також виготовляються, в яких стулки зсуваються всередину стіни будівлі. Це рішення дозволяє відкрити весь проріз вікна. У цьому випадку напрямні рейки фурнітури повинні бути прикріплені до рами вікна та внутрішньої поверхні стіни будівлі. Рама дверей повинна бути встановлена врівень із внутрішньою площиною стіни будівлі. Максимальні розміри стулок PSK-дверей становлять приблизно 1600×2100 мм або 1400×2300 мм. Переваги цього рішення включають помірну ціну та високу герметичність. Недоліки, у свою чергу, це високий поріг у вигляді рами вікна, а також можливі проблеми з відкриттям та закриттям стулок у разі неправильного використання."
       }
@@ -3414,28 +3414,28 @@
         "1": {
           "id": "1",
           "title": "Інноваційна технологія кареток.",
-          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt1..jpg",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt1.jpg",
           "alt": "",
           "description": "Каретки легко та надійно пересуваються з нахиленої позиції у розсувну."
         },
         "2": {
           "id": "2",
           "title": "Автоматичний штифт Cleverle.",
-          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt2..jpg",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt2.jpg",
           "alt": "",
           "description": "Різні кліматичні умови часто вимагають налаштування запірних болтів. Саморегульований штифт Cleverle адаптується до змінного зазору. Це значно знижує необхідність додаткових налаштувань."
         },
         "3": {
           "id": "3",
           "title": "Захист поверхні з ferGUard*silber.",
-          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt3..jpg",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt3.jpg",
           "alt": "",
           "description": "Усі компоненти фурнітури PSK захищені антикорозійним покриттям ferGUard. У виробничих цехах наноситься три послідовні шари."
         },
         "4": {
           "id": "4",
           "title": "Ручка забезпечує контроль усіх функцій",
-          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt4..jpg",
+          "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt4.jpg",
           "alt": "",
           "params": {
             "list": {
