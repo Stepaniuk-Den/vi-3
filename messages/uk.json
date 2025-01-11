@@ -45,27 +45,27 @@
           "slug": "windows-pvc-kommerling"
         },
         "3": {
-          "title": "alu windows - aliplast",
+          "title": "алюмінієві вікна - aliplast",
           "slug": "windows-aluminium-aliplast"
         },
         "4": {
-          "title": "glass windows",
+          "title": "скло",
           "slug": "windows-glass"
         },
         "5": {
-          "title": "fittings and seals",
+          "title": "фурнітура та ущільнювачі",
           "slug": "windows-fittings-and-seals"
         },
         "6": {
-          "title": "mullions",
+          "title": "перемички",
           "slug": "window-mullions"
         },
         "7": {
-          "title": "colours",
+          "title": "кольори",
           "slug": "windows-colours"
         },
         "8": {
-          "title": "accessories",
+          "title": "аксесуари",
           "slug": "window-accessories"
         }
       }
@@ -467,12 +467,12 @@
     }
   },
   "WindowsPVCSchucoPage": {
-    "title": "PVC WINDOWS – Schüco Profiles",
-    "subtitle": "/ Excellent energy efficiency thanks to innovative technology /",
-    "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
+    "title": "ВІКНА З ПВХ – Профілі Schüco",
+    "subtitle": "/ Відмінна енергоефективність завдяки інноваційним технологіям /",
+    "description": "Віконні профілі Schüco виготовляються з надзвичайно міцного матеріалу. Ми використовуємо армування корозійностійкими сталевими секціями товщиною 1,5-2 мм по всьому периметру рами та стулки. Така стабільна та довговічна конструкція вікна чудово витримує вагу досить важкого енергоефективного потрійного склопакета, забезпечуючи відмінну тепло- та звукоізоляцію.",
     "SectionsList": {
       "ProfilesImg": {
-        "title": "In our offer you will find the following types of Schüco profiles:",
+        "title": "У нашій пропозиції ви знайдете такі типи профілів Schüco:",
         "1": {
           "id": "1",
           "title": "Schüco Classic LivIng 82 AD",
@@ -487,249 +487,249 @@
         }
       },
       "ProfilesScheme": {
-        "title": "Schüco Windows – profile LivIng 82 MD and AD Classic",
-        "description": "Schüco Living 82 MD and AS is a new generation of window and door systems for modern construction. The use of the innovative TWIN system allows the frame with double (AS series) or triple (MD series) sealing to be easily fitted to the window sash. In addition, this new twin system uses the world’s first EPDM heat seal. Schüco, thanks to cooperation with Semperit, has exclusive rights to this type of sealing technology. It is due to the use of flexible and heat-sealable material that the tightness in windows and doors has increased significantly, especially in problematic corner areas.",
+        "title": "Вікна Schüco – профіль LivIng 82 MD і AD Classic",
+        "description": "Schüco Living 82 MD та AS – це нове покоління віконних та дверних систем для сучасного будівництва. Використання інноваційної системи TWIN дозволяє легко встановлювати раму з подвійним (серія AS) або потрійним (серія MD) ущільненням на стулку вікна. Крім того, ця нова система використовує перше у світі EPDM теплове ущільнення. Завдяки співпраці Schüco з компанією Semperit, вона має ексклюзивні права на цей тип ущільнювальної технології. Завдяки використанню гнучкого та термозварювального матеріалу герметичність у вікнах і дверях значно підвищилася, особливо в проблемних кутових зонах.",
         "1": {
           "id": "1",
-          "title": "Schüco – profile LivIng 82 MD",
+          "title": "Schüco – профіль LivIng 82 MD",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "2": {
           "id": "2",
-          "title": "Schüco – profile LivIng 82 AS",
+          "title": "Schüco – профіль LivIng 82 AS",
           "src": "/images/windows/schuco-profiles/schemeAS.jpeg",
           "alt": ""
         }
       },
       "ProfilesCrossSections": {
-        "title": "Window cross-sections in which different GLAZING BEADS were used, depending on the thickness of the glazing units used.",
+        "title": "Поперечні перерізи вікон, у яких використовувалися різні штапики залежно від товщини встановлених склопакетів.",
         "1": {
           "id": "1",
-          "title": "LivIng profile with a 48 mm glazing unit 4-18-4-18-4",
+          "title": "Профіль LivIng з 48 мм склопакетом 4-18-4-18-4",
           "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
           "alt": ""
         },
         "2": {
           "id": "2",
-          "title": "LivIng profile with a 36 mm glazing unit 4-12-4-12-4",
+          "title": "Профіль LivIng з 36 мм склопакетом 4-12-4-12-4",
           "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
           "alt": ""
         },
         "3": {
           "id": "3",
-          "title": "LivIng profile with a 24 mm glazing unit 4-16-4",
+          "title": "Профіль LivIng з 24 мм склопакетом 4-16-4",
           "src": "/images/windows/schuco-profiles/cross-section24.jpeg",
           "alt": ""
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 82 mm"
+                "desc": "Глибина встановлення рами – 82 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 82 mm"
+                "desc": "Глибина встановлення стулки – 82 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – from 24 mm to 52 mm"
+                "desc": "Можливі глибини скління – від 24 мм до 52 мм"
               },
               "4": {
-                "desc": "Front width min. – 120 mm"
+                "desc": "Мінімальна видима ширина – 120 мм"
               },
               "5": {
-                "desc": "Sash weight max. – 250 kg"
+                "desc": "Максимальна вага стулки – 250 кг"
               },
               "6": {
-                "desc": "Sash height min.-max. – 400mm – 2600mm"
+                "desc": "Мін.-макс. висота стулки – 400 мм – 2600 мм"
               },
               "7": {
-                "desc": "Sash width min.-max. – 400mm – 1500mm"
+                "desc": "Мін.-макс. ширина стулки – 400 мм – 1500 мм"
               }
             }
           },
           "2": {
-            "title": "TESTS AND STANDARDS:",
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
             "list": {
               "1": {
-                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,96 – 1,0 W/(m2K)"
+                "desc": "Теплоізоляція відповідно до DIN EN 12412-2 – Uf = 0,96 – 1,0 W/(м2K)"
               },
               "2": {
-                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+                "desc": "Звукоізоляція відповідно до DIN EN ISO 140-3 (макс.) *- Rw,P = 47 dB"
               },
               "3": {
-                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+                "desc": "Стійкість до злому відповідно до DIN EN 1627 = Rc2"
               },
               "4": {
-                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+                "desc": "Повітропроникність відповідно до DIN EN 12207 (клас) – 4"
               },
               "5": {
-                "desc": "Watertightness to DIN EN 12208 (class) – 9A"
+                "desc": "Водонепроникність відповідно до DIN EN 12208 (клас) – 9A"
               },
               "6": {
-                "desc": "Wind load resistance to DIN EN 12210 (class)** – C5/B5"
+                "desc": "Стійкість до вітрового навантаження відповідно до DIN EN 12210 (клас)** – C5/B5"
               },
               "7": {
-                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+                "desc": "Механічна стійкість відповідно до DIN EN 13115 (клас) – 4"
               },
               "8": {
-                "desc": "Resistance to repeated opening and closing to DIN EN 12400 (class) – 2"
+                "desc": "Стійкість до повторного відкривання та закривання відповідно до DIN EN 12400 (клас) – 2"
               },
               "9": {
-                "desc": "Operational forces to DIN EN 13115 (class) – 1"
+                "desc": "Робочі сили відповідно до DIN EN 13115 (клас) – 1"
               },
               "10": {
-                "desc": "Load capacity of safety devices – requirement met"
+                "desc": "Навантаження на захисні пристрої – вимоги виконані"
               }
             },
             "notes": {
               "1": {
-                "desc": "* Depending on the profile and glazing"
+                "desc": "* Залежно від профілю та скління"
               },
               "2": {
-                "desc": "** Depending on the profile"
+                "desc": "** Залежно від профілю"
               }
             }
           },
           "3": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ",
             "list": {
               "1": {
-                "desc": "The PVC Schuco LivIng 82 MD and AS system is made in 7-chamber technology with excellent insulation properties."
+                "desc": "Система PVC Schuco LivIng 82 MD та AS виготовлена за 7-камерною технологією з відмінними ізоляційними властивостями."
               },
               "2": {
-                "desc": "The value of the Uf heat transfer coefficient is: up to 1 W/(m2K) for the AS series and up to 0.96 W/(m2K) for the MD series."
+                "desc": "Значення коефіцієнта теплопередачі Uf: до 1 W/(м2K) для серії AS і до 0,96 W/(м2K) для серії MD."
               },
               "3": {
-                "desc": "With two (AS series) or three (MD series) sealing surfaces, the LivIng system provides optimal protection against wind, rain and noise."
+                "desc": "Завдяки двом (серія AS) або трьом (серія MD) ущільнювальним поверхням система LivIng забезпечує оптимальний захист від вітру, дощу та шуму."
               },
               "4": {
-                "desc": "When using a frame with a central seal (MD series), the system meets the requirements of the German Institute of Window Technology ift Rosenheim in the field of passive construction."
+                "desc": "При використанні рами з центральним ущільненням (серія MD) система відповідає вимогам Німецького інституту віконних технологій ift Rosenheim у сфері пасивного будівництва."
               },
               "5": {
-                "desc": "It is possible to include double glazing, unit thickness: 24 mm to 52 mm."
+                "desc": "Можливість включення подвійного склопакета, товщина: від 24 мм до 52 мм."
               },
               "6": {
-                "desc": "The increased installation depth ensures greater safety and better protection against burglary."
+                "desc": "Збільшена глибина встановлення забезпечує більшу безпеку та кращий захист від злому."
               },
               "7": {
-                "desc": "Optimal light access is guaranteed thanks to the narrow visible profile width of 120 mm as standard."
+                "desc": "Оптимальний доступ до світла забезпечується завдяки вузькій видимій ширині профілю – 120 мм як стандарт."
               },
               "8": {
-                "desc": "The first weldable EPDM seal integrated with the Schüco LivIng system significantly increases the sealing effect in the corners of the windows."
+                "desc": "Перше зварювальне ущільнення EPDM, інтегроване в систему Schüco LivIng, значно покращує герметизацію в кутах вікон."
               },
               "9": {
-                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+                "desc": "Високоякісні ущільнювачі EPDM, що використовуються, є високоеластичними, тому не тріскаються та не деформуються, вони стійкі до змін погодних умов."
               },
               "10": {
-                "desc": "We use silver grey seals in the white profiles of the Schüco LivIng system and black seals in the foil profiles."
+                "desc": "Ми використовуємо сріблясто-сірі ущільнення у білих профілях системи Schüco LivIng та чорні ущільнення у профілях із плівкою."
               },
               "11": {
-                "desc": "All profiles (frame and sash) are reinforced around the entire perimeter with corrosion-resistant 2mm-thick steel sections, which significantly affects the stability, safety and durability of the window."
+                "desc": "Усі профілі (рама та стулка) армовані по всьому периметру корозійностійкими сталевими секціями товщиною 2 мм, що суттєво впливає на стабільність, безпеку та довговічність вікна."
               },
               "12": {
-                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+                "desc": "На бажання клієнта вікна можуть бути виготовлені як протизламні до класу Wk2."
               },
               "13": {
-                "desc": "We use high-class MACO MULTI-MATIC fittings."
+                "desc": "Ми використовуємо фурнітуру високого класу MACO MULTI-MATIC."
               },
               "14": {
-                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+                "desc": "Плівкові вікна мають вузькі, акуратні та майже невидимі зварювальні шви."
               },
               "15": {
-                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+                "desc": "Профілі доступні в повному спектрі кольорів та деревоподібних шпонах."
               }
             }
           }
         }
       },
       "ProfilesSchemeAluminium": {
-        "title": "Schüco Windows – with aluminium overlays – TOP ALU",
+        "title": "Schüco Windows – з алюмінієвими накладками – TOP ALU",
         "1": {
           "id": "1",
           "src": "/images/windows/schuco-profiles/aluminium.jpeg",
           "alt": "",
-          "description": "Our standard offer of window joinery manufactured in Poland has been supplemented with PVC windows with aluminium overlays. We produce them based on a Schüco window constructed in the CT70 or LivIng 82 MD / AS system in the CLASSIC style. The elegant aluminium overlays allow optimal adjustment of windows to the facade. The rich RAL colour palette will satisfy even the most demanding tastes, and the possible colour variation between the frame and the sash broadens this range of possibilities even further. Overlays work especially in modern buildings, commercial and service premises, or office buildings. The use of aluminium overlays makes the PVC windows unique."
+          "description": "Наш стандартний асортимент віконної столярки, виготовленої в Польщі, доповнено ПВХ-вікнами з алюмінієвими накладками. Ми виготовляємо їх на основі вікон Schüco, створених у системі CT70 або LivIng 82 MD / AS у стилі CLASSIC. Елегантні алюмінієві накладки дозволяють оптимально налаштувати вікна до фасаду. Багата палітра кольорів RAL задовольнить навіть найвибагливіші смаки, а можливість різниці кольорів між рамою і стулкою ще більше розширює ці можливості. Накладки особливо підходять для сучасних будівель, комерційних і сервісних приміщень або офісних будівель. Використання алюмінієвих накладок робить ПВХ-вікна унікальними."
         }
       },
       "ProfilesSchemeNordic": {
-        "title": "Schüco Windows – profile Alu Inside NORDIC",
+        "title": "Schüco Windows – профіль Alu Inside NORDIC",
         "1": {
           "id": "1",
           "src": "/images/windows/schuco-profiles/nordic.jpeg",
           "alt": "",
-          "description": "The Scandinavian Windows system, with outward-opening windows, has been designed especially for the Scandinavian and North German markets. A characteristic feature of this system are windows that open outwards and have the highest stability and excellent thermal insulation parameters. This system allows the implementation of windows with glazing bars characteristic for the region, stylish glazing beads and special fittings (ASSA ABLOY) with various opening methods, such as turn fittings, Top-Hung or Top-Swing fittings. The Schüco Alu Inside Nordic window system is certified by the Danish Technological Institute."
+          "description": "Скандинавська система вікон із вікнами, що відкриваються назовні, розроблена спеціально для ринків Скандинавії та Північної Німеччини. Характерною особливістю цієї системи є вікна, що відкриваються назовні, які мають найвищу стабільність і чудові параметри теплоізоляції. Ця система дозволяє реалізувати вікна з шпросами, характерними для регіону, стильними штапиками та спеціальною фурнітурою (ASSA ABLOY) з різними способами відкривання, такими як поворотна фурнітура, Top-Hung або Top-Swing. Віконна система Schüco Alu Inside Nordic сертифікована Данським технологічним інститутом."
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 120 mm"
+                "desc": "Глибина монтажу рами – 120 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 82 mm"
+                "desc": "Глибина монтажу стулки – 82 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – from 18 mm to 52 mm"
+                "desc": "Можлива глибина скління – від 18 мм до 52 мм"
               }
             }
           },
           "2": {
-            "title": "TESTS AND STANDARDS:",
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
             "list": {
               "1": {
-                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,87 W/(m2K)"
+                "desc": "Теплоізоляція відповідно до DIN EN 12412-2 – Uf = 0,87 Вт/(м²К)"
               },
               "2": {
-                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 46 dB"
+                "desc": "Звукоізоляція відповідно до DIN EN ISO 140-3 (макс.) * - Rw,P = 46 дБ"
               },
               "3": {
-                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+                "desc": "Стійкість до взлому відповідно до DIN EN 1627 = Rc2"
               },
               "4": {
-                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+                "desc": "Повітропроникність відповідно до DIN EN 12207 (клас) – 4"
               },
               "5": {
-                "desc": "Watertightness to DIN EN 12208 (class) – E 1200"
+                "desc": "Водонепроникність відповідно до DIN EN 12208 (клас) – E 1200"
               },
               "6": {
-                "desc": "Wind load resistance to DIN EN 12210 (class)** – C3"
+                "desc": "Стійкість до вітрових навантажень відповідно до DIN EN 12210 (клас)** – C3"
               },
               "7": {
-                "desc": "Mechanical load resistance to DIN EN 13115 (class) – 4"
+                "desc": "Механічна стійкість відповідно до DIN EN 13115 (клас) – 4"
               }
             },
             "notes": {
               "1": {
-                "desc": "* Depending on the profile and glazing"
+                "desc": "* Залежно від профілю та скління"
               },
               "2": {
-                "desc": "** Depending on the profile"
+                "desc": "** Залежно від профілю"
               }
             }
           },
           "3": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ",
             "list": {
               "1": {
-                "desc": "It has three sealing planes and technologically patented joints between aluminium and plastic."
+                "desc": "Має три площини ущільнення та технологічно запатентовані з'єднання між алюмінієм і пластиком."
               },
               "2": {
-                "desc": "If the client so wishes, the windows can be made as anti-burglary windows up to the Wk2 class."
+                "desc": "За бажанням клієнта вікна можуть бути виготовлені як протизламні до класу Wk2."
               },
               "3": {
-                "desc": "7-chamber system (sash) and 11-chamber system (window frame)"
+                "desc": "7-камерна система (стулка) та 11-камерна система (віконна рама)"
               },
               "4": {
-                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+                "desc": "Шпоновані вікна мають вузькі, гарні та майже непомітні шви."
               },
               "5": {
-                "desc": "Profiles are available in a full range of colours and wood-like veneers."
+                "desc": "Профілі доступні в повному спектрі кольорів та деревоподібних шпонах."
               },
               "6": {
-                "desc": "The high quality EPDM seals used are highly elastic, which is why they do not crack or deform, they are resistant to changing weather conditions."
+                "desc": "Високоякісні ущільнювачі EPDM, які використовуються, є дуже еластичними, тому вони не тріскаються і не деформуються, стійкі до змін погодних умов."
               }
             }
           }
@@ -738,22 +738,22 @@
     }
   },
   "WindowsPVCKommerlingPage": {
-    "title": "PVC WINDOWS – Kömmerling Profiles",
-    "subtitle": "/ Best-in-class energy-efficient and fully eco-friendly window systems /",
-    "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays.",
+    "title": "ВІКНА З ПВХ – Профілі Kömmerling",
+    "subtitle": "/ Найкращі у своєму класі енергоефективні та екологічно чисті віконні системи /",
+    "description": "Ми рекомендуємо енергоефективні та екологічно чисті віконні системи від німецької компанії KÖMMERLING. У нашій пропозиції є три системи: KÖMMERLING 76 AD, KÖMMERLING 88 MD. Кожна з пропонованих систем доступна в білому кольорі, шпонованому варіанті, а також з інноваційними алюмінієвими накладками.",
     "SectionsList": {
       "OfferSection": {
-        "title": "PLEASE FEEL FREE TO TAKE A CLOSER LOOK AT OUR OFFER:",
+        "title": "БІЛЬШ ДЕТАЛЬНО ОЗНАЙОМТЕСЯ З НАШОЮ ПРОПОЗИЦІЄЮ:",
         "cardItem": {
           "windowsSlug": "windows-kömmerling",
-          "title": "ECONOMICAL SOLUTION",
-          "description": "NEW PRODUCT – WINDOWS Kömmerling 70 AD",
+          "title": "ЕКОНОМІЧНЕ РІШЕННЯ",
+          "description": "НОВИНКА – ВІКНА Kömmerling 70 AD",
           "src": "/images/windows/windows-pcv.jpeg",
-          "alt": "Private house with large white windows"
+          "alt": "Приватний будинок з великими білими вікнами"
         }
       },
       "ProfilesCrossSections": {
-        "title": "Cross-sections of windows made of Kömmerling profiles.",
+        "title": "Перерізи вікон із профілів Kömmerling.",
         "imgList": {
           "1": {
             "id": "1",
@@ -776,187 +776,187 @@
         },
         "descriptionProfilesCrosSections": {
           "1": {
-            "title": "EXCLUSIVE WINDOWS FOR HIGH EXPECTATIONS – structure of window profiles",
-            "desc": "New generation of profiles – KÖMMERLING 76 – moves the horizon. KÖMMERLING 76 system is the result of the wealth of experience, many years of research and development, latest structures and computer simulations, numerous trials and tests. KÖMMERLING 76 is the best window system in its class! Window profiles of KÖMMERLING company feature innovative structure of chambers, which designed under latest technical solutions, perfectly influence better thermal and acoustic insulation and optimal stability of structure altogether with high carrying capacity especially for the application of heavy window panes. Manufacturers of window profiles KÖMMERLING 76 pay special attention to ecological issues. The best functionality and exceptional thermal insulation at optimal use of materials. KÖMMERLING has long believed in the “greenline” idea, i.e. to produce PVC windows harmful lead may be replaced by ecological lime/zinc."
+            "title": "ЕКСКЛЮЗИВНІ ВІКНА ДЛЯ ВИСОКИХ ВИМОГ – структура віконних профілів",
+            "desc": "Новітнє покоління профілів – KÖMMERLING 76 – відкриває нові горизонти. Система KÖMMERLING 76 є результатом багаторічного досвіду, досліджень і розробок, сучасних структур і комп'ютерного моделювання, численних випробувань і тестів. KÖMMERLING 76 – найкраща віконна система у своєму класі! Віконні профілі компанії KÖMMERLING вирізняються інноваційною структурою камер, які, створені з використанням найсучасніших технічних рішень, забезпечують покращену тепло- та звукоізоляцію, а також оптимальну стабільність конструкції разом із високою вантажопідйомністю, особливо для застосування важких віконних шибок. Виробники профілів KÖMMERLING 76 приділяють особливу увагу екологічним аспектам. Найкраща функціональність і виняткова теплоізоляція при оптимальному використанні матеріалів. KÖMMERLING вже давно підтримує ідею “greenline”, тобто у виробництві ПВХ-вікон шкідливий свинець замінюють екологічними вапняковими/цинковими добавками."
           },
           "2": {
-            "title": "PVC WINDOW PROFILES MANUFACTURER – KÖMMERLING company",
-            "desc": "Manufacturer of KÖMMERLING window systems is appreciated for high quality of the products and continuous implementation of innovative technologies.KÖMMERLING company was started in 1897 by Karl Kömmerling. Before PVC window profiles were produced the company had offered glues and synthetic resin. In 1957 the company started to produce PVC shutter rollers, and in 1967 it began to mould PVC window profiles of the highest quality.Long-term experience made KÖMMERLING company the market leader."
+            "title": "ВИРОБНИК ПВХ-ПРОФІЛІВ ДЛЯ ВІКОН – компанія KÖMMERLING",
+            "desc": "Виробник віконних систем KÖMMERLING високо оцінюється за якість продукції та постійне впровадження інноваційних технологій. Компанія KÖMMERLING була заснована в 1897 році Карлом Кьоммерлінгом. До того, як почали виробляти ПВХ-профілі для вікон, компанія пропонувала клеї та синтетичні смоли. У 1957 році вона почала виробляти ролети з ПВХ, а в 1967 році розпочала виготовлення профілів для вікон із ПВХ найвищої якості. Багаторічний досвід зробив компанію KÖMMERLING лідером ринку."
           }
         }
       },
       "ProfilesScheme1": {
-        "title": "Kömmerling Windows – Profile 76AD",
+        "title": "Вікна Kömmerling – Профіль 76AD",
         "1": {
           "id": "1",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": "",
-          "description": "The 5-chamber KÖMMERLING 76 AD window profile in our offer has very good thermal insulation parameters: the value of the thermal transmittance coefficient Uf in the standard variant is up to 1.1 W/m2K, while Uw for the reference window is up to 0.76 W/m2K."
+          "description": "5-камерний віконний профіль KÖMMERLING 76 AD у нашій пропозиції має дуже хороші параметри теплоізоляції: значення коефіцієнта теплопередачі Uf у стандартному варіанті становить до 1,1 Вт/м2К, а Uw для еталонного вікна – до 0,76 Вт/м2К."
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 76 mm"
+                "desc": "Монтажна глибина рами – 76 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 76 mm"
+                "desc": "Монтажна глибина стулки – 76 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – from 16 mm to 48 mm"
+                "desc": "Можливі глибини скління – від 16 мм до 48 мм"
               }
             }
           },
           "2": {
-            "title": "TESTS AND STANDARDS:",
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
             "list": {
               "1": {
-                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 1,1 – 1,3 W/(m2K)"
+                "desc": "Теплоізоляція згідно DIN EN 12412-2 – Uf = 1,1 – 1,3 Вт/(м2К)"
               },
               "2": {
-                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+                "desc": "Звукоізоляція згідно DIN EN ISO 140-3 (макс.) *- Rw,P = 47 дБ"
               },
               "3": {
-                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+                "desc": "Стійкість до злому згідно DIN EN 1627 = Rc2"
               },
               "4": {
-                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+                "desc": "Повітронепроникність згідно DIN EN 12207 (клас) – 4"
               },
               "5": {
-                "desc": "Watertightness to DIN EN 12208 (class) – 9A"
+                "desc": "Водонепроникність згідно DIN EN 12208 (клас) – 9A"
               },
               "6": {
-                "desc": "Wind load resistance to DIN EN 12210 (class)* – C5/B5"
+                "desc": "Стійкість до вітрового навантаження згідно DIN EN 12210 (клас)* – C5/B5"
               },
               "7": {
-                "desc": "Load capacity of safety devices – requirement met"
+                "desc": "Вантажопідйомність запобіжних пристроїв – вимога виконана"
               }
             },
             "notes": {
               "1": {
-                "desc": "* Depending on the profile and glazing"
+                "desc": "* Залежно від профілю та скління"
               }
             }
           },
           "3": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ",
             "list": {
               "1": {
-                "desc": "The system has an installation depth of 76 mm and features rebate sealing with the highest thermal insulation."
+                "desc": "Система має монтажну глибину 76 мм та ущільнення притвору з найвищою теплоізоляцією."
               },
               "2": {
-                "desc": "It is possible to use triple glazing units or special glazing up to 48mm thick."
+                "desc": "Можливість використання потрійного скління або спеціального скління товщиною до 48 мм."
               },
               "3": {
-                "desc": "This 5-chamber window system has thermal insulation parameters of Uw = 0.76W/(m2K) for the reference window."
+                "desc": "Ця 5-камерна система має теплоізоляційні параметри Uw = 0,76 Вт/(м2К) для еталонного вікна."
               },
               "4": {
-                "desc": "It is possible to use special anti-burglary fittings."
+                "desc": "Можливість використання спеціальної фурнітури проти злому."
               },
               "5": {
-                "desc": "Veneer windows have narrow, nice-looking and almost invisible welds."
+                "desc": "Шпоновані вікна мають вузькі, естетичні та майже невидимі зварні шви."
               }
             }
           }
         }
       },
       "ProfilesScheme2": {
-        "title": "Kömmerling Windows – Profile 88MD",
+        "title": "Вікна Kömmerling – Профіль 88MD",
         "1": {
           "id": "1",
           "src": "/images/windows/schuco-profiles/aluminium.jpeg",
           "alt": "",
-          "description": "This 7-chamber window system features a central seal. The stable construction of window sashes and high-quality window fittings allow to place a triple glazing unit with a maximum glazing range of up to 56 mm. Our windows in the Kömmerling 88 system meet all the necessary standards, which makes it possible to apply them to passive houses. The thermal insulation coefficient for the reference window with dimensions of 1230x1480mm is Uw = 0.72 W/(m2K)."
+          "description": "Ця 7-камерна система має центральне ущільнення. Стабільна конструкція стулок та високоякісна фурнітура дозволяють встановлювати потрійний склопакет із максимальною товщиною скління до 56 мм. Наші вікна системи Kömmerling 88 відповідають усім необхідним стандартам, що дозволяє використовувати їх у пасивних будинках. Коефіцієнт теплопередачі для еталонного вікна розміром 1230x1480 мм становить Uw = 0,72 Вт/(м2К)."
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 88 mm"
+                "desc": "Монтажна глибина рами – 88 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 88 mm"
+                "desc": "Монтажна глибина стулки – 88 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – from 24 mm to 56 mm"
+                "desc": "Можливі глибини скління – від 24 мм до 56 мм"
               }
             }
           },
           "2": {
-            "title": "TESTS AND STANDARDS:",
+            "title": "ТЕСТИ ТА СТАНДАРТИ:",
             "list": {
               "1": {
-                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,93 – 0,98 W/(m2K)"
+                "desc": "Теплоізоляція згідно DIN EN 12412-2 – Uf = 0,93 – 0,98 Вт/(м2К)"
               },
               "2": {
-                "desc": "Sound insulation according to DIN EN ISO 140-3 (max.) *- Rw,P = 47 dB"
+                "desc": "Звукоізоляція згідно DIN EN ISO 140-3 (макс.) *- Rw,P = 47 дБ"
               },
               "3": {
-                "desc": "Anti-burglary resistance to DIN EN 1627 = Rc2"
+                "desc": "Стійкість до злому згідно DIN EN 1627 = Rc2"
               },
               "4": {
-                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+                "desc": "Повітронепроникність згідно DIN EN 12207 (клас) – 4"
               },
               "5": {
-                "desc": "Watertightness to DIN EN 12208 (class) – E 2100"
+                "desc": "Водонепроникність згідно DIN EN 12208 (клас) – E 2100"
               },
               "6": {
-                "desc": "Wind load resistance to DIN EN 12210 (class)* – C5/B5"
+                "desc": "Стійкість до вітрового навантаження згідно DIN EN 12210 (клас)* – C5/B5"
               },
               "7": {
-                "desc": "Load capacity of safety devices – requirement met"
+                "desc": "Вантажопідйомність запобіжних пристроїв – вимога виконана"
               }
             },
             "notes": {
               "1": {
-                "desc": "* Depending on the profile and glazing"
+                "desc": "* Залежно від профілю та скління"
               }
             }
           },
           "3": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES",
+            "title": "СПЕЦИФІКАЦІЯ / ВЛАСТИВОСТІ СИСТЕМИ",
             "list": {
               "1": {
-                "desc": "The system has an installation depth of 88 mm and features an additional central seal with the highest thermal insulation."
+                "desc": "Система має монтажну глибину 88 мм та додаткове центральне ущільнення з найвищою теплоізоляцією."
               },
               "2": {
-                "desc": "It is possible to use triple glazing units or special glazing up to 56mm thick."
+                "desc": "Можливість використання потрійного скління або спеціального скління товщиною до 56 мм."
               },
               "3": {
-                "desc": "This 7-chamber window system has thermal insulation parameters of Uw = 0.72W/(m2K) for the reference window."
+                "desc": "Ця 7-камерна система має теплоізоляційні параметри Uw = 0,72 Вт/(м2К) для еталонного вікна."
               },
               "4": {
-                "desc": "It is possible to use special anti-burglary fittings."
+                "desc": "Можливість використання спеціальної фурнітури проти злому."
               },
               "5": {
-                "desc": "Welded PCE seals or EPDM seals in light grey or black."
+                "desc": "Зварні ущільнення PCE або ущільнення EPDM у світло-сірому чи чорному кольорі."
               },
               "6": {
-                "desc": "The windows meet the requirements for passive houses in accordance with the ift-Richtlinie directive WA-15/2."
+                "desc": "Вікна відповідають вимогам для пасивних будинків згідно з директивою ift-Richtlinie WA-15/2."
               }
             }
           }
         }
       },
       "ProfilesScheme3": {
-        "title": "Kömmerling Windows AluClip – with aluminium overlays",
+        "title": "Вікна Kömmerling AluClip – з алюмінієвими накладками",
         "1": {
           "id": "1",
           "src": "/images/windows/schuco-profiles/nordic.jpeg",
           "alt": "",
-          "description": "The specially designed aluminium overlays for PVC window and door profiles are an innovative solution with excellent technical parameters, representing a beneficial alternative to aluminium windows. Aluminium is characterised by elegance, the best resistance to changing weather conditions, high stability, ease of care, and unlimited colour range – thanks to the techniques of refining the external surface, i.e. anodizing or powder coating. In turn, PVC plastic guarantees optimal thermal and sound insulation as well as high functionality. KÖMMERLING 76 offers a unique combination of the advantages of aluminium and PVC plastic in the form of innovative Alu Clip, Alu Clip Pro and AddOn systems. Our solutions mean that the design possibilities are unlimited, and the windows meet the highest energy-efficiency requirements!"
+          "description": "Спеціально розроблені алюмінієві накладки для ПВХ профілів вікон і дверей є інноваційним рішенням із чудовими технічними характеристиками, що представляє вигідну альтернативу алюмінієвим вікнам. Алюміній вирізняється елегантністю, найкращою стійкістю до змін погодних умов, високою стабільністю, легкістю у догляді та необмеженим вибором кольорів – завдяки методам обробки зовнішньої поверхні, таким як анодування або порошкове фарбування. Натомість ПВХ-пластик забезпечує оптимальну тепло- та звукоізоляцію, а також високу функціональність. Система KÖMMERLING 76 пропонує унікальне поєднання переваг алюмінію та ПВХ у вигляді інноваційних систем Alu Clip, Alu Clip Pro та AddOn. Наші рішення дозволяють реалізовувати необмежені дизайнерські можливості, а вікна відповідають найвищим вимогам енергоефективності!"
         }
       }
     }
   },
   "WindowsAluAliplastPage": {
-    "title": "ALUMINIUM WINDOWS – Aliplast profile",
-    "description": "We offer aluminium windows based on high-quality Aliplast aluminium systems, which together with the precise joining technology ensure appropriate parameters of thermal and sound insulation as well as water and air tightness. All Aliplast aluminium systems offered by the window and door manufacturer TUR-PLAST have relevant documentation allowing their use in construction. The obtained technical approvals, hygienic approvals, ITT tests, confirming the high parameters of Aliplast products compliant with European standards, make for an offer satisfactory for the most demanding customers.",
+    "title": "АЛЮМІНІЄВІ ВІКНА – профіль Aliplast",
+    "description": "Ми пропонуємо алюмінієві вікна на основі високоякісних алюмінієвих систем Aliplast, які разом з точною технологією з'єднання забезпечують відповідні параметри тепло- та звукоізоляції, а також водо- та повітряпрозорості. Усі алюмінієві системи Aliplast, запропоновані виробником вікон та дверей TUR-PLAST, мають відповідну документацію, що дозволяє їх використання в будівництві. Отримані технічні дозволи, гігієнічні дозволи, тести ITT, які підтверджують високі параметри продукції Aliplast, що відповідають європейським стандартам, становлять пропозицію, що задовольнить найвимогливіших клієнтів.",
     "SectionsList": {
       "OfferAluSection": {
-        "title": "Please feel free to learn about our offer of aluminium profiles:",
+        "title": "Будь ласка, ознайомтесь з нашою пропозицією алюмінієвих профілів:",
         "1": {
           "id": "1",
           "title": "Genesis GN 75",
@@ -969,7 +969,7 @@
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
-        "description": "Aliplast owns two of the country’s most technologically advanced vertical paint shops and two horizontal paint lines. Therefore, in our offer you will find profiles varnished with all types of powder coating in the entire range of RAL colours, as well as varnished with special effects such as fine or thick structure with a metallic effect."
+        "description": "Aliplast володіє двома найбільш технологічно передовими вертикальними фарбувальними лініями та двома горизонтальними фарбувальними лініями. Тому в нашій пропозиції ви знайдете профілі, пофарбовані всіма видами порошкового покриття в усій гамі кольорів RAL, а також пофарбовані спеціальними ефектами, такими як тонка або товста структура з металевим ефектом."
       },
       "GenesisSection": {
         "title": "GENESIS 75 /GN75/",
@@ -980,70 +980,70 @@
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 75 mm"
+                "desc": "Глибина монтажу рами – 75 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 84 mm"
+                "desc": "Глибина монтажу стулки – 84 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – FIX 1-56 mm / OT 9-65 mm"
+                "desc": "Можливі глибини скління – FIX 1-56 мм / OT 9-65 мм"
               }
             }
           },
           "2": {
-            "title": "TESTS AND STANDARDS:",
+            "title": "ТЕСТИ І СТАНДАРТИ:",
             "list": {
               "1": {
-                "desc": "Thermal insulation according to DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
+                "desc": "Теплоізоляція згідно з DIN EN 12412-2 – Uf = 0,84 W/(m2K)"
               },
               "2": {
-                "desc": "Air permeability according to DIN EN 12207 (class) – 4"
+                "desc": "Повітропроникність згідно з DIN EN 12207 (клас) – 4"
               },
               "3": {
-                "desc": "Wind load resistance to DIN EN 12210 (class)* – C4"
+                "desc": "Стійкість до вітрових навантажень згідно з DIN EN 12210 (клас)* – C4"
               },
               "4": {
-                "desc": "Watertightness to DIN EN 12208 (class) – E1500"
+                "desc": "Водонепроникність згідно з DIN EN 12208 (клас) – E1500"
               }
             },
             "notes": {
               "1": {
-                "desc": "* Depending on the profile"
+                "desc": "* Залежно від профілю"
               }
             }
           },
           "3": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES – GENESIS",
+            "title": "ТЕХНІЧНІ ХАРАКТЕРИСТИКИ / ВЛАСТИВОСТІ СИСТЕМИ – GENESIS",
             "list": {
               "1": {
-                "desc": "This 3-chamber window system is designed for the construction of windows with increased thermal insulation. The thermal parameters of Genesis 75 meet the requirements that will be applicable as of 2021 (Uw from 0.90)."
+                "desc": "Ця 3-камерна віконна система розроблена для будівництва вікон з підвищеною теплоізоляцією. Теплові параметри Genesis 75 відповідають вимогам, які будуть застосовуватися з 2021 року (Uw від 0,90)."
               },
               "2": {
-                "desc": "The basis of the Genesis 75 system are the 75-mm-deep frame sections."
+                "desc": "Основою системи Genesis 75 є рами глибиною 75 мм."
               },
               "3": {
-                "desc": "Genesis 75 is a system intended for designing window constructions for public buildings as well as single or multi-family houses."
+                "desc": "Genesis 75 – це система, призначена для проектування віконних конструкцій для громадських будівель, а також для односімейних та багатосімейних будинків."
               },
               "4": {
-                "desc": "The large range of sections/profiles offered as part of the Genesis 75 system enables the design of modern windows, doors and display windows with high functionality."
+                "desc": "Широкий асортимент профілів, запропонованих у складі системи Genesis 75, дає змогу проектувати сучасні вікна, двері та вітрини з високою функціональністю."
               },
               "5": {
-                "desc": "Genesis 75 uses modern insulation materials, which are currently new on the market. An additional thermal seal was designed besides the classic central seal. With this solution, a very high window tightness (air infiltration, watertightness) as well as an innovative appearance and aesthetics were obtained."
+                "desc": "Genesis 75 використовує сучасні теплоізоляційні матеріали, які є новинкою на ринку. Крім класичної центральної герметизації було розроблено додатковий тепловий ущільнювач. Це рішення забезпечує дуже високу герметичність вікна (повітропроникність, водонепроникність) та інноваційний вигляд і естетику."
               },
               "6": {
-                "desc": "Within this system it will be possible to choose different profile finishes, giving the window structure an individual character."
+                "desc": "У рамках цієї системи можна вибирати різні варіанти обробки профілю, надаючи віконній конструкції індивідуальний характер."
               },
               "7": {
-                "desc": "The Genesis 75 window system sets a new standard for window insulation, while maintaining the highest ergonomics of use and modern profile aesthetics."
+                "desc": "Віконна система Genesis 75 встановлює новий стандарт для теплоізоляції вікон, зберігаючи при цьому високу ергономіку використання та сучасну естетику профілю."
               },
               "8": {
-                "desc": "It is possible to mount the Flyscreen system (an insect screen system)."
+                "desc": "Можливе встановлення системи Flyscreen (система протимоскітних сіток)."
               },
               "9": {
-                "desc": "A wide range of colours – RAL palette (Qualicoat 1518), structural colours, Aliplast Wood Colour Effect wood-like colours (Qualideco PL-0001), anode, bicolour."
+                "desc": "Широкий асортимент кольорів – палітра RAL (Qualicoat 1518), структурні кольори, ефект дерева Aliplast Wood Colour Effect (Qualideco PL-0001), анодований, бікольоровий."
               }
             }
           }
@@ -1058,54 +1058,54 @@
         },
         "parametersList": {
           "1": {
-            "title": "DIMENSIONS:",
+            "title": "РОЗМІРИ:",
             "list": {
               "1": {
-                "desc": "Frame installation depth – 51 mm"
+                "desc": "Глибина монтажу рами – 51 мм"
               },
               "2": {
-                "desc": "Sash installation depth – 60 mm"
+                "desc": "Глибина монтажу стулки – 60 мм"
               },
               "3": {
-                "desc": "Possible glazing depths – to 37 mm"
+                "desc": "Можливі глибини скління – до 37 мм"
               }
             }
           },
           "2": {
-            "title": "SPECIFICATION / SYSTEM PROPERTIES – ECONOLINE",
+            "title": "ТЕХНІЧНІ ХАРАКТЕРИСТИКИ / ВЛАСТИВОСТІ СИСТЕМИ – ECONOLINE",
             "list": {
               "1": {
-                "desc": "A system designed for constructing doors and windows without thermal insulation. It allows for designing light, durable and functional structures."
+                "desc": "Система, розроблена для будівництва дверей і вікон без теплоізоляції. Вона дозволяє проектувати легкі, міцні та функціональні конструкції."
               },
               "2": {
-                "desc": "The system is compatible with other Aliplast systems: common glazing beads, seals, corners and fittings."
+                "desc": "Система сумісна з іншими системами Aliplast: спільні ущільнювальні планки, герметики, кути та фурнітура."
               },
               "3": {
-                "desc": "The system is designed for constructing internal and external architectural components that do not require thermal insulation: windows, doors and sections of partition walls intended for general use in public and industrial buildings (in office rooms)."
+                "desc": "Система призначена для будівництва внутрішніх і зовнішніх архітектурних елементів, які не потребують теплоізоляції: вікна, двері та елементи перегородок, що використовуються в громадських та промислових будівлях (в офісних приміщеннях)."
               },
               "4": {
-                "desc": "It is possible to incorporate Econoline doors into partition walls made of Econoline segments or into other walls of any design."
+                "desc": "Можливо вбудовувати двері Econoline в перегородки з сегментів Econoline або в інші стіни будь-якого дизайну."
               },
               "5": {
-                "desc": "Glazing beads available in rectangular and rounded variants."
+                "desc": "Ущільнювальні планки доступні в прямокутних і круглих варіантах."
               },
               "6": {
-                "desc": "The system design allows the use of rebate hinges, easier to install and more cost-effective."
+                "desc": "Конструкція системи дозволяє використовувати ребристі петлі, які легші для встановлення та економічніші."
               },
               "7": {
-                "desc": "It is possible to design panel doors (Econoline panel doors) on the basis of the Econoline system."
+                "desc": "Можливо проектувати панельні двері (панельні двері Econoline) на основі системи Econoline."
               },
               "8": {
-                "desc": "Smoke-tight doors can be built on the basis of this system – Econoline doors with the smoke-tight function meet the criteria of smoke-tightness classes Sa, Sm in accordance with PN-EN 13501-2+A1:2010)."
+                "desc": "Можливо побудувати двері з димонепроникною функцією на основі цієї системи – двері Econoline з функцією димонепроникності відповідають критеріям класів димонепроникності Sa, Sm згідно з PN-EN 13501-2+A1:2010)."
               },
               "9": {
-                "desc": "It is possible to construct sliding and swinging doors, connecting walls at any angle, and strengthening already made and even mounted elements."
+                "desc": "Можливо виготовляти розсувні та розпашні двері, з'єднувати стіни під будь-яким кутом і посилювати вже виготовлені та навіть змонтовані елементи."
               },
               "10": {
-                "desc": "The possibility of bending profiles."
+                "desc": "Можливість згинання профілів."
               },
               "11": {
-                "desc": "a wide range of colours – RAL palette, structural colours, Aliplast Wood Colour Effect, anode, bicolour."
+                "desc": "Широкий асортимент кольорів – палітра RAL, структурні кольори, ефект дерева Aliplast Wood Colour Effect, анодований, бікольоровий."
               }
             }
           }
@@ -1114,13 +1114,13 @@
     }
   },
   "WindowsGlassPage": {
-    "title": "Glazing units for windows from PCV and Aluminium",
-    "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
+    "title": "Склопакети для вікон з ПВХ та алюмінію",
+    "description": "Важливим елементом будь-якого ПВХ вікна є скло. Залежно від розміру вікна та поділу на панелі, скло може займати від 25% до 95% площі вікна. Тому саме якість та параметри склопакетів визначають, чи виконає вікно свою функцію – забезпечення кращої теплоізоляції, безпеки та шумоізоляції.",
     "CarouselSection": {
-      "title": "Structure of complex window panes:",
+      "title": "Структура складних віконних стекол:",
       "description": {
-        "p1": "KNOW THE DESIGN OF YOUR WINDOW PACKAGE",
-        "p2": "The TUR-PLAST company uses glazing packs of the prestigious SAINT-GOBAIN company. The glazing packs include one-, two- or three-chamber sets. The thermoflat panes in a pack can be 4mm, 6mm or 8mm thick, divided with a steel distance frame or the so called warm frame (SGG SWISSPACER). The space between panes in a pack, in order to obtain lower heat transmission coefficient, is filled with gas – argon or krypton."
+        "p1": "ОЗНАЙОМТЕСЯ З КОНСТРУКЦІЄЮ ВАШОГО ВІКОННОГО ПАКЕТУ",
+        "p2": "Компанія TUR-PLAST використовує склопакети престижної компанії SAINT-GOBAIN. Склопакети включають одно-, дво- або трьохкамерні комплекти. Термоскляні пакети можуть мати товщину 4 мм, 6 мм або 8 мм, розділені сталевими дистанційними рамками або так званою теплою рамкою (SGG SWISSPACER). Простір між стеклами в пакеті заповнений газом – аргон або криптон, для досягнення нижчого коефіцієнта теплопередачі."
       },
       "imgList": {
         "1": {
@@ -1142,77 +1142,77 @@
     },
     "SectionsList": {
       "PanesParametersSection": {
-        "title": "Complex window panes parameters:",
+        "title": "Параметри складних віконних стекол:",
         "1": {
           "id": "1",
-          "title": "Ug – Heat transmission",
-          "description": "The Ug coefficient informs us about the amount of heat which will be lost in certain conditions. The lower the coefficient, the less heat will be through a glass pane.",
+          "title": "Ug – Теплопередача",
+          "description": "Коефіцієнт Ug повідомляє нам про кількість тепла, яке буде втрачено за певних умов. Чим нижчий коефіцієнт, тим менше тепла втрачається через скло.",
           "src": "/images/windows/glass-page/panesParameter1.jpeg",
           "alt": ""
         },
         "2": {
           "id": "2",
-          "title": "g – Energy permeability",
-          "description": "A glass pane constitutes a barrier for the solar power. That is why, it is important to use such glass panes which let in maximum amount of the power. The higher the rate the more additional energy we have to heat the interior of a building.",
+          "title": "g – Проникність енергії",
+          "description": "Скло є бар'єром для сонячної енергії. Тому важливо використовувати таке скло, яке пропускає максимальну кількість енергії. Чим вищий цей показник, тим більше додаткової енергії потрібно для обігріву приміщення.",
           "src": "/images/windows/glass-page/panesParameter2.jpeg",
           "alt": ""
         },
         "3": {
           "id": "3",
-          "title": "Lt – Light permeability",
-          "description": "Thanks to high Lt rate more light is let in and hence, less electric energy is needed to light a building.",
+          "title": "Lt – Проникність світла",
+          "description": "Завдяки високому коефіцієнту Lt більше світла проникає всередину, а отже, менше електричної енергії потрібно для освітлення будівлі.",
           "src": "/images/windows/glass-page/panesParameter3.jpeg",
           "alt": ""
         },
         "4": {
           "id": "4",
-          "title": "Rw – Acoustic insulation",
-          "description": "Acoustic insulation of a given glazing pack is expressed with the Rw coefficient. It is measured in specialist acoustic laboratories. The acoustic insulation coefficient Rw of glass panes may reach the level of 28-53 dB.",
+          "title": "Rw – Шумоізоляція",
+          "description": "Шумоізоляція конкретного склопакету виражена коефіцієнтом Rw. Він вимірюється в спеціалізованих акустичних лабораторіях. Коефіцієнт шумоізоляції Rw скла може досягати рівня 28-53 дБ.",
           "src": "/images/windows/glass-page/panesParameter4.jpeg",
           "alt": ""
         }
       },
       "PanesTypesSection": {
-        "title": "Types of complex window panes:",
+        "title": "Типи складних віконних стекол:",
         "1": {
           "id": "1",
-          "title": "Energy-saving panes",
-          "description": "The panes are covered with low-emission coatings of noble metal oxides which role is to permit maximum amount of light and solar power (g, Lt) and at the same time, effectively prevent heat loss from room (Ug). Energy efficiency of complex glass panes depends on several factors, such as: quality of the heat insulation coating, number of glass panes in a pack, the gas filling the space between panes and the SWISSPACER warm distance frame. Thanks to the glazing packs of this type, it is possible to reduce heat energy consumption which results in lower energy bills.",
+          "title": "Енергозберігаючі стекла",
+          "description": "Стекла покриті низькоемісійними покриттями з оксидів благородних металів, які дозволяють пропускати максимальну кількість світла та сонячної енергії (g, Lt) і водночас ефективно запобігають втраті тепла з приміщення (Ug). Енергоефективність складних стекол залежить від кількох факторів, таких як: якість теплоізоляційного покриття, кількість стекол у пакеті, газ, що заповнює простір між стеклами, та тепла дистанційна рамка SWISSPACER. Завдяки таким склопакетам можливо знизити споживання теплової енергії, що призводить до зниження витрат на енергопостачання.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "2": {
           "id": "2",
-          "title": "Secure panes",
-          "description": "We offer two solutions: Panes with the STADIP laminated glass – in the case of breaking the pane, the foil keeps glass pieces together to reduce the risk of injuries. Panes with the SECURIT hardened glass – they are characterised by five times higher resistance to strikes e.g. by a ball or a person. In the case of breaking, the panes break into small blunt-edged pieces which do not cause serious body injuries. The described glazing pack, reducing the risk of injuries in the case of breaking the pane, is used e.g. in the places where children usually play or where people practise sport.",
+          "title": "Безпечні стекла",
+          "description": "Ми пропонуємо два рішення: Стекла з ламінованим склом STADIP – у разі розбиття скла, плівка утримує уламки разом, щоб зменшити ризик травм. Стекла з загартованим склом SECURIT – мають п'ятирічну стійкість до ударів, наприклад, м'ячем або людиною. У разі розбиття, вони ламаються на маленькі тупокутні шматочки, які не завдають серйозних травм. Описаний склопакет, що знижує ризик травм у разі розбиття скла, застосовується, наприклад, в місцях, де часто грають діти або де займаються спортом.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "3": {
           "id": "3",
-          "title": "Anti-burglary panes",
-          "description": "The pane consists of two or more sheets of glass with a few layers of the PVB foil (polyvinyl butyral) in between, which is highly resistant to tearing. In the case of breaking, the product reduces the risk of falling into the interior of a building. As a default, the security pane is thicker than the other pane in a pack which, together with the applied PVB foil, improves its noise-absorbing properties. Whats is more, the product perfectly filters most of the UV rays and hence, it can be used in the places exposed to fading under the influence of the sun’s rays (shop windows, exhibitions, galleries).",
+          "title": "Антикрадіжні стекла",
+          "description": "Скло складається з двох або більше листів скла з кількома шарами плівки PVB (полівінілбутираль), яка має високу стійкість до розриву. У разі розбиття, продукт знижує ризик проникнення всередину будівлі. Як правило, безпечне скло товще, ніж інші листи в пакеті, що, разом з застосованою плівкою PVB, покращує його звукоізоляційні властивості. Крім того, продукт прекрасно фільтрує більшість ультрафіолетових променів, тому його можна використовувати в місцях, що піддаються вигорянню під впливом сонячних променів (вітрини, виставки, галереї).",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "4": {
           "id": "4",
-          "title": "Noise-absorbing panes",
-          "description": "A noise-absorbing glass pane provides both high thermal and acoustic insulation. Outer side of the noise-absorbing glass pane pack is covered with laminated glass made of two sheets and one or more layers of the acoustic foil in between. The foil suppresses noise, and at the same time, if the pane breaks, it keeps the pieces together. The noise-absorbing glass panes are recommended particularly for the people who live in noisy surroundings. The SGG CLIMALPLUS SILENCE glass panes suppress the noise within the scope of 29 to 52 dB.",
+          "title": "Шумоізоляційні стекла",
+          "description": "Шумоізоляційне скло забезпечує високу тепло- та звукоізоляцію. Зовнішня сторона пакету шумоізоляційного скла покрита ламінованим склом, яке складається з двох листів скла з одним або кількома шарами акустичної плівки між ними. Плівка пригнічує шум і, водночас, якщо скло розбивається, утримує шматки разом. Шумоізоляційні склопакети особливо рекомендуються для людей, які живуть в шумному середовищі. Склопакети SGG CLIMALPLUS SILENCE зменшують шум в межах від 29 до 52 дБ.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "5": {
           "id": "5",
-          "title": "Ornamental panes",
-          "description": "The SGG DECORGLASS is ornamental glass, colourless or mass-coloured. It is perfect for interiors as it makes them lighter and at the same time, gives the feeling of privacy. We offer a wide range of patterns which go well with both the residential and non-residential interiors. The glass can be used, among others: in partition walls, sliding walls, glass and glazed doors, windows, shower cubicles, desks, tables, counters, shelves, urban street furniture.",
+          "title": "Декоративні стекла",
+          "description": "SGG DECORGLASS – це декоративне скло, безбарвне або кольорове. Воно ідеально підходить для інтер'єрів, оскільки робить їх світлішими і одночасно дає відчуття приватності. Ми пропонуємо широкий асортимент візерунків, які підходять як для житлових, так і для нежитлових інтер'єрів. Скло можна використовувати, серед іншого: в перегородках, розсувних стінах, скляних і засклених дверях, вікнах, душових кабінах, столах, тумбах, прилавках, полицях, вуличних меблях.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         },
         "6": {
           "id": "6",
-          "title": "Self-cleaning panes",
-          "description": "The SGG BIOCLEAN self-cleaning pane consists of an outer glass covered with an invisible mineral substance (silicon oxide) of high durability. Dirt is removed from the outer surface of the pane thanks to the combined action of the day light UV rays and water. The self-cleaning panes are recommended particularly for glazing the places which are directly exposed to sun light and rain: facades, winter gardens and roofs.",
+          "title": "Самоочисні стекла",
+          "description": "Самоочисне скло SGG BIOCLEAN складається з зовнішнього скла, покритого невидимою мінеральною речовиною (оксид кремнію) високої міцності. Бруд видаляється з зовнішньої поверхні скла завдяки комбінованому впливу ультрафіолетових променів сонця і води. Самоочисні стекла особливо рекомендовані для засклення місць, які безпосередньо піддаються сонячному світлу та дощові: фасади, зимові сади та дахи.",
           "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
           "alt": ""
         }
@@ -1220,293 +1220,293 @@
     }
   },
   "WindowsFittingsSealsPage": {
-    "title": "Glazing units for windows from PCV and Aluminium",
+    "title": "Герметичні склопакети для вікон з ПВХ та алюмінію",
     "GasketsFittingsSection": {
-      "title": "Gaskets and Fittings",
+      "title": "Ущільнювачі та фурнітура",
       "gaskets": {
-        "subTitle": "top-class window seals – made of EPDM",
+        "subTitle": "віконні ущільнювачі високого класу – виготовлені з EPDM",
         "card": {
-          "title": "WINDOWS GASKETS",
-          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "title": "УЩІЛЬНЮВАЧІ ДЛЯ ВІКОН",
+          "src": "/images/windows/fittings-seals-page/gaskets.jpeg",
           "alt": ""
         },
         "parametersList": {
           "1": {
-            "description": "Quality depends on details – the saying is perfectly right if we talk about window joinery. Even though profiles and glass units offer excellent performance but the applied seals are of poor quality or are improperly fixed – the WINDOWS are worthless. Seals seem to be minor window elements, but in fact they determine very important parameters including:",
+            "description": "Якість залежить від деталей – це прислів'я цілком справедливе, коли мова йде про віконне облаштування. Навіть якщо профілі та склопакети забезпечують відмінні характеристики, але ущільнювачі мають погану якість або неправильно встановлені – вікна будуть безцінними. Ущільнювачі здаються незначними елементами вікна, але насправді вони визначають дуже важливі параметри, зокрема:",
             "list": {
               "1": {
-                "desc": "thermal insulation;"
+                "desc": "теплоізоляція;"
               },
               "2": {
-                "desc": "water-tightness;"
+                "desc": "водонепроникність;"
               },
               "3": {
-                "desc": "ventilation;"
+                "desc": "вентиляція;"
               },
               "4": {
-                "desc": "acoustic insulation."
+                "desc": "акустична ізоляція."
               }
             }
           },
           "2": {
-            "description": "Our seals are highly resistant to weather conditions, and they are also ductile, and hence resistant to deformation. These are the qualities of the material used for manufacturing the seals – synthetic rubber, commonly known as EPDM. This is why, our EPDM seals can be described as:",
+            "description": "Наші ущільнювачі високо стійкі до погодних умов, а також вони еластичні та тому стійкі до деформацій. Це властивості матеріалу, що використовується для виробництва ущільнювачів – синтетичний каучук, відомий як EPDM. Тому наші ущільнювачі EPDM можна описати як:",
             "list": {
               "1": {
-                "desc": "resistant to ageing;"
+                "desc": "стійкі до старіння;"
               },
               "2": {
-                "desc": "resistant to changing weather conditions;"
+                "desc": "стійкі до зміни погодних умов;"
               },
               "3": {
-                "desc": "performing well in the temperature between -40 and +110 C degrees;"
+                "desc": "добре працюють при температурі від -40 до +110 градусів Цельсія;"
               },
               "4": {
-                "desc": "resistant to humidity, steam or UV radiation;"
+                "desc": "стійкі до вологи, пари або ультрафіолетового випромінювання;"
               },
               "5": {
-                "desc": "highly elastic;"
+                "desc": "високоеластичні;"
               },
               "6": {
-                "desc": "resistant to cracks and deformation;"
+                "desc": "стійкі до тріщин та деформацій;"
               }
             }
           }
         }
       },
       "fittings": {
-        "subTitle": "MACO MULTI-MATIC – a new generation of fittings",
+        "subTitle": "MACO MULTI-MATIC – нове покоління фурнітури",
         "card": {
-          "title": "WINDOWS FITTINGS",
-          "description": "Fittings in a window structure are responsible for proper opening and closing of a window sash. Window fittings allow to set different sash positions: side-hung, tilt, turn-tilt, slide-tilt, slide-fold. When buying windows, one needs to take into account if a given solution offers significantly better performance in terms of security, functioning and comfort. TUR-PLAST uses window fittings produced by the reputable MACO company. The products offer security and reliability for many years.",
-          "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+          "title": "ФУРНІТУРА ДЛЯ ВІКОН",
+          "description": "Фурнітура у віконній конструкції відповідає за правильне відкривання та закривання стулки вікна. Віконна фурнітура дозволяє встановлювати різні позиції стулки: бокове відкривання, нахил, поворот-нахил, розсувно-нахил, розсувно-складна. При покупці вікон необхідно враховувати, чи пропонує конкретне рішення значно кращі характеристики з точки зору безпеки, функціональності та комфорту. TUR-PLAST використовує віконну фурнітуру, виготовлену авторитетною компанією MACO. Ці продукти гарантують безпеку та надійність на багато років.",
+          "src": "/images/windows/fittings-seals-page/fittings.jpeg",
           "alt": ""
         }
       }
     },
     "FittingsFeaturesSection": {
-      "title": "Characteristic features of the MACO MULTI-MAC fittings include:",
+      "title": "Характерні особливості фурнітури MACO MULTI-MAC включають:",
       "1": {
         "id": "1",
-        "title": "SAFEGUARD AGAINST FAULTY CONTROL",
-        "description": "The MACO company is one of the first manufacturers who equipped standard fittings with the mechanism blocking window operation in the case of faulty handle position. It is integrated with the sash lifter which has been improved even further. The mechanism prevents the so called „sash slip” from the top hinge, which frequently causes client complaints.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ЗАХИСТ ВІД НЕПРАВИЛЬНОГО КЕРУВАННЯ",
+        "description": "Компанія MACO є однією з перших виробників, які обладнали стандартну фурнітуру механізмом, що блокує роботу вікна у разі неправильної позиції ручки. Механізм інтегрований з підйомним механізмом стулки, який був додатково вдосконалений. Механізм запобігає так званому «ковзанню» стулки з верхньої петлі, що часто призводить до скарг клієнтів.",
+        "src": "/images/windows/fittings-seals-page/fittings1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "title": "ADDITIONAL TILT SETTING FOR „SLOT VENTILATION”",
-        "description": "The function allows to leave small slot between the window frame and sash which guarantees continuous, controlled inflow of fresh air. The micro-ventilation function is entirely integrated with the stay; when switching to the tilt setting at 45 o, the sash stands out approximately 10-13 mm; The ventilation setting is not affected by draught or wind.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ДОДАТКОВЕ НАКЛАДАННЯ НАКЛАДЕННЯ ДЛЯ «ВЕНТИЛЯЦІЇ ЧЕРЕЗ ЩІЛИНУ»",
+        "description": "Ця функція дозволяє залишити невелику щілину між рамою та стулкою вікна, що гарантує постійне, контрольоване надходження свіжого повітря. Функція мікровентиляції повністю інтегрована з фіксатором; при переході на нахилене положення на 45° стулка виступає приблизно на 10-13 мм; вентиляційне положення не піддається впливу протягів чи вітру.",
+        "src": "/images/windows/fittings-seals-page/fittings2.jpeg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "title": "ADJUSTABLE i.S SECURITY CAMS – intelligent security",
-        "description": "The security cams are equipped with their own pressure control and hence: seal windows tightly reduce costs; distinguish our windows from the products offered by the competition. When you choose TUR-PLAST windows, you receive fittings with security cams resistant to break-ins, mounted all around the window frame.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "НАСТРОЮВАНІ СЕК’ЮРІТНИЙ КАМИ i.S. – інтелектуальна безпека",
+        "description": "Охоронні камери оснащені власним контролем тиску, що дозволяє: герметизувати вікна, знижувати витрати; відрізняти наші вікна від продуктів конкурентів. Обираючи вікна TUR-PLAST, ви отримуєте фурнітуру з охоронними камерами, стійкими до зломів, встановленими по всьому рамі вікна.",
+        "src": "/images/windows/fittings-seals-page/fittings3.jpeg",
         "alt": ""
       },
       "4": {
         "id": "4",
-        "title": "DUMMY SASH GEAR PROTECTING AGAINTS BREAK-INS",
-        "description": "A perfect solution for comfortable and secure windows. Comfortable to operate. Only two hardware components.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ПРОТЕЖНИЙ МЕХАНІЗМ СТУЛКИ, ЩО ЗАХИЩАЄ ВІД ЗЛОМУ",
+        "description": "Чудове рішення для комфортних та безпечних вікон. Легке у використанні. Тільки дві деталі фурнітури.",
+        "src": "/images/windows/fittings-seals-page/fittings4.jpeg",
         "alt": ""
       },
       "5": {
         "id": "5",
-        "title": "UNIFROM SIILVER-LOOK COATING AND CONNECTING EDGE COVER PROVIDING PROTECTION AGAINST CORROSION",
-        "description": "MACO is the first manufacturer who, since 2000, has been applying silver passivation treatments with electro-zinc coating, free of Chromium (VI), and wax coating without using silicate. The changes improved the protective qualities of the fitting surface and eliminated the use of Chromium (VI). Steel fitting elements are coated with zinc, chromium or wax.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "УНІФІКОВАНЕ СРІБЛЯСТЕ ПОКРИТТЯ І КРІПЛЕННЯ КРАЮ ЗАХИЩАЮТЬ ПРОТЕЗІВ ОТ КОРОЗІЇ",
+        "description": "MACO є першим виробником, який з 2000 року застосовує сіре пасивуюче оброблення з електрозцинковим покриттям, без використання хрому (VI), і воскове покриття без використання силікатів. Зміни покращили захисні властивості фурнітури і усунули використання хрому (VI). Сталеві елементи фурнітури покриваються цинком, хромом або воском.",
+        "src": "/images/windows/fittings-seals-page/fittings5.jpeg",
         "alt": ""
       },
       "6": {
         "id": "6",
-        "title": "DOOR SNAPPER FOR BALCONY DOORS",
-        "description": "The snapper keeps the sash in the frame without the need to use the window handle. It turns off automatically if the sash is in the tilt position. Adjustable height.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "МАГНІТНИЙ ЗАСТІБКА ДЛЯ БАЛКОНИХ ДВЕРЕЙ",
+        "description": "Застібка утримує стулку в рамі без необхідності використання ручки вікна. Вона автоматично вимикається, коли стулка знаходиться в положенні нахилу. Регульована висота.",
+        "src": "/images/windows/fittings-seals-page/fittings6.jpeg",
         "alt": ""
       },
       "7": {
         "id": "7",
-        "title": "PERFECT IN ALL DETAIL: INNER CENTRAL COMPRESSION LOCK",
-        "description": "The contact pressure can easily be adjusted with i.S. cams and hence, they: seal the window tightly, save heating costs, ensure satisfied customers distinguish our windows from the products offered by the competition.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ІДЕАЛЬНА У ВСІХ ДЕТАЛЯХ: ВНУТРІШНІЙ ЦЕНТРАЛЬНИЙ ЗАМОК ДЛЯ ЗАЖИМАННЯ",
+        "description": "Контактний тиск можна легко відрегулювати за допомогою камери i.S., і таким чином вони: герметизують вікно, економлять на обігріві, забезпечують задоволення клієнтів, відрізняючи наші вікна від пропонованих конкурентами.",
+        "src": "/images/windows/fittings-seals-page/fittings7.jpeg",
         "alt": ""
       },
       "8": {
         "id": "8",
-        "title": "3D HINGE REGULATED IN THREE DIRECTIONS",
-        "description": "The set of bottom hinges can be regulated in three directions (height adjustment, side adjustment and compression setting). The stays allow to lower and lift sashes and to adjust contact pressure.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "3D ПЕТІТНІ ПЕТЛІ, РЕГУЛЬОВАНІ У ТРЬОХ НАПРЯМКАХ",
+        "description": "Набір нижніх петель можна регулювати у трьох напрямках (регулювання висоти, бокове регулювання та налаштування стиснення). Кріплення дозволяють опускати та піднімати стулки і регулювати контактний тиск.",
+        "src": "/images/windows/fittings-seals-page/fittings8.jpeg",
         "alt": ""
       },
       "9": {
         "id": "9",
-        "title": "SECURE TILT POSITION",
-        "description": "Basic security at window’s most critical point. No special striker plate needed. Protection against levering up, also in the tilt position.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "БЕЗПЕЧНЕ ПОЛОЖЕННЯ НАХИЛУ",
+        "description": "Основна безпека в найкритичнішій точці вікна. Не потрібна спеціальна пластина для захисту. Захист від підняття, навіть у положенні нахилу.",
+        "src": "/images/windows/fittings-seals-page/fittings9.jpeg",
         "alt": ""
       },
       "10": {
         "id": "10",
-        "title": "i.S. STRIKER PLATES",
-        "description": "A special composition of high-quality materials and specialist casting procedures ensure complete stability. The fittings are screwed into the frame reinforcement.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ПЛАТИНИ STRIKER PLATES i.S.",
+        "description": "Спеціальний склад високоякісних матеріалів та спеціалізовані литтєві процедури забезпечують повну стабільність. Фурнітура прикріплюється до зміцнення рами.",
+        "src": "/images/windows/fittings-seals-page/fittings10.jpeg",
         "alt": ""
       },
       "11": {
         "id": "11",
-        "title": "FITTING PARTS WHICH ARE RESISTANT TO BREAK-INS CAN BE EASILY FIXED",
-        "description": "Should increased window security be desired at a later date, it is very easy to change the standard striker plates for the i.S. security striker plates thanks to identical screw positions.The standard fittings have two security points. The fittings of class Wk1 have four security striker plates. The fittings of class Wk 2, however, have between 8 and 10 i.S. security striker plates.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ЧАСТИНИ ФУРНІТУРИ, ЩО СТІЙКІ ДО ЗЛОМУ, ЛЕГКО ВСТАНОВЛЮЮТЬСЯ",
+        "description": "Якщо в майбутньому необхідно збільшити безпеку вікон, дуже легко змінити стандартні пласти на охоронні пласти i.S. завдяки однаковим отворам для кріплення. Стандартні фурнітури мають дві точки безпеки. Фурнітури класу Wk1 мають чотири точки безпеки. Фурнітури класу Wk2, однак, мають від 8 до 10 точок безпеки i.S.",
+        "src": "/images/windows/fittings-seals-page/fittings11.jpeg",
         "alt": ""
       }
     },
     "FittingComponentsSection": {
-      "title": "Fitting components:",
+      "title": "Компоненти фурнітури:",
       "card": {
         "id": "1",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "src": "/images/windows/fittings-seals-page/fitting-components.jpeg",
         "alt": ""
       }
     }
   },
   "WindowMullionsPage": {
-    "title": "Window mullions",
+    "title": "Міжвіконні перегородки",
     "card": {
-      "description": "In order to highlight the character of a window, an elevation, or even the particular features of the whole building, we offer muntin windows. These are highly recommended for stylized houses and buildings of the past whose casements used to be split into smaller units because of construction factors and limitations. Consequently, we have included windows with muntins in our offer too. Larger glass surfaces are naturally a better choice to complete modern interiors; nevertheless custom-made muntins can be successfully used with present day architecture.Wide, structural or glass bond muntins should be applied with care since they reduce the amount of light that is let in, affect thermal insulation, and create some difficulties in cleaning panes.",
-      "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+      "description": "Для того, щоб підкреслити характер вікна, фасаду або навіть особливості будівлі в цілому, ми пропонуємо вікна з міжвіконними перегородками. Вони настійно рекомендуються для стилізованих будинків та будівель минулих епох, де рами вікон часто поділялися на менші елементи через конструктивні особливості та обмеження. Тому ми також включили вікна з перегородками до нашої пропозиції. Більші скляні поверхні є кращим варіантом для сучасних інтер’єрів, але спеціально виготовлені перегородки можна успішно застосовувати і в сучасній архітектурі. Широкі, конструктивні або скляні перегородки слід застосовувати обережно, оскільки вони зменшують кількість світла, яке проникає, впливають на теплоізоляцію і створюють певні труднощі в очищенні скла.",
+      "src": "/images/windows/mullions-page/mullions.jpeg",
       "alt": ""
     },
     "MuntinTypesSection": {
-      "title": "We can distinguish the following muntin types:",
+      "title": "Ми можемо виділити такі типи перегородок:",
       "1": {
         "id": "1",
-        "title": "STRUCTURAL MUNTINS",
-        "description": "Structural muntins which constitute a part of the window frame and divide the glass pane into smaller, adjacent panes. Their finishing is identical to that of the window frames. Our windows consist of standard transoms and vertical dividers 91 mm wide (the cross pattern is very popular – it splits the window pane into 4 pane units in 1,2 or 4 casements). If the glass should be broken, only one small pane has to be replaced as opposed to single glass pane windows where the entire pane needs to be removed and replaced.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "КОНСТРУКТИВНІ ПЕРЕГОРОДКИ",
+        "description": "Конструктивні перегородки є частиною рами вікна та ділять скло на менші, суміжні частини. Їхнє оздоблення ідентичне тому, що й у рам вікон. Наші вікна складаються з стандартних перемичок і вертикальних перегородок шириною 91 мм (перехресний малюнок є дуже популярним – він поділяє скло на 4 частини в 1, 2 або 4 стулках). Якщо скло ламається, потрібно замінити лише одну маленьку частину скла, на відміну від вікон з одним склом, де потрібно замінити всю панель.",
+        "src": "/images/windows/mullions-page/mullions1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "title": "BETWEEN THE PANES MUNTINS",
-        "description": "Between the panes muntins are made of aluminium or PVC and placed in spaces between the insulating glass panes. Their colour can match that of the window frames, but they can also be produced in gold or silver options. They are usually supplied in widths of 8, 18, 26 or 45 mm. This type are considered the most convenient type whilst it comes to washing the windows.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "МІЖСКЛЯНІ ПЕРЕГОРОДКИ",
+        "description": "Міжскляні перегородки виготовляються з алюмінію або PVC і розташовуються між шарами теплоізоляційного скла. Їхній колір може відповідати кольору рам вікна, але також можуть бути виготовлені в золотому або срібному варіанті. Зазвичай вони постачаються в ширинах 8, 18, 26 або 45 мм. Цей тип вважається найзручнішим для миття вікон.",
+        "src": "/images/windows/mullions-page/mullions2.jpeg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "title": "VIENNA MUNTINS",
-        "description": "Vienna muntins are glued onto the glazing surface. In our windows these are made of PVC with sealed finished edges. The use of a spacing frame inside the glazing unit, imitates the pattern typical for structural muntins. They are available in two widths: 25 and 37 mm. The Venice muntins, which are more popular for wooden windows, provide a similar solution to the Vienna ones. In this case, however, the muntins are glued onto the glazing pane, but neither seal nor distance frame are used.",
-        "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+        "title": "ВІЙНЕНСЬКІ ПЕРЕГОРОДКИ",
+        "description": "Віденські перегородки наклеюються на поверхню скла. У наших вікнах вони виготовлені з PVC з герметизованими краями. Використання дистанційної рами всередині віконного блоку імітує малюнок, типовий для конструктивних перегородок. Вони доступні в двох ширинах: 25 та 37 мм. Венеціанські перегородки, які популярні для дерев'яних вікон, пропонують подібне рішення до віденських. У цьому випадку перегородки наклеюються на скло, але не використовуються ні герметик, ні дистанційна рама.",
+        "src": "/images/windows/mullions-page/mullions3.jpeg",
         "alt": ""
       }
     }
   },
   "WindowsColoursPage": {
-    "title": "Colour palette for window profiles",
-    "description": "When choosing windows and doors, one of the things to think about is the choice of colours. Below we present our colour offers for window and door profiles for both PVC Schüco and Kömmerling as well as aluminium Aliplast and Aluron.",
+    "title": "Колірна палітра для профілів вікон",
+    "description": "При виборі вікон та дверей однією з важливих складових є вибір кольорів. Нижче ми презентуємо наші колірні пропозиції для профілів вікон і дверей як для PVC Schüco та Kömmerling, так і для алюмінієвих профілів Aliplast та Aluron.",
     "coloursList": {
       "1": {
         "id": "1",
-        "description": "Colour palette for window profiles – Schüco",
-        "src": "/images/windows/windows-pcv.jpeg",
-        "alt": "Private house with large white windows"
+        "description": "Колірна палітра для профілів вікон – Schüco",
+        "src": "/images/windows/colours-page/colours1.jpeg",
+        "alt": ""
       },
       "2": {
         "id": "2",
-        "description": "Colour palette for window profiles – Kömmerling",
-        "src": "/images/windows/windows-pcv.jpeg",
-        "alt": "Private house with large white windows"
+        "description": "Колірна палітра для профілів вікон – Kömmerling",
+        "src": "/images/windows/colours-page/colours2.jpeg",
+        "alt": ""
       },
       "3": {
         "id": "3",
-        "description": "Colour palette for window profiles – Aluron",
-        "src": "/images/windows/windows-pcv.jpeg",
-        "alt": "Private house with large white windows"
+        "description": "Колірна палітра для профілів вікон – Aluron",
+        "src": "/images/windows/colours-page/colours3.jpeg",
+        "alt": ""
       },
       "4": {
         "id": "4",
-        "description": "Colour palette for window profiles – Aliplast",
-        "src": "/images/windows/windows-pcv.jpeg",
-        "alt": "Private house with large white windows"
+        "description": "Колірна палітра для профілів вікон – Aliplast",
+        "src": "/images/windows/colours-page/colours4.jpeg",
+        "alt": ""
       }
     }
   },
   "WindowAccessoriesPage": {
-    "title": "Window accessories / additions",
+    "title": "Аксесуари для вікон / доповнення",
     "imgList": {
       "1": {
         "id": "1",
-        "src": "/images/windows/schuco-profiles/cross-section48.jpeg",
+        "src": "/images/windows/accessories-page/additions1.jpeg",
         "alt": ""
       },
       "2": {
         "id": "2",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions2.jpeg",
         "alt": ""
       },
       "3": {
         "id": "3",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions3.jpeg",
         "alt": ""
       },
       "4": {
         "id": "4",
-        "src": "/images/windows/schuco-profiles/cross-section36.jpeg",
+        "src": "/images/windows/accessories-page/additions4.jpeg",
         "alt": ""
       }
     },
     "WindowHandlesSections": {
-      "title": "WINDOW HANDLES",
+      "title": "РУЧКИ ДЛЯ ВІКОН",
       "WindowHandlesDublin": {
-        "title": "NEW – DUBLIN window handles",
-        "description": "In the offer of the Window and Door Manufacturer TUR-PLAST you will find handles from the DUBLIN Medos collection, featuring futuristic and timeless designs. The handle part is made of aluminium. Available in a classic finish (powder coating) or a modern finish (anodising available in two variants: sandblasted or brushed). We offer versions with a button and a key as well as Dublin de Luxe – elegant thanks to unique cutting.",
+        "title": "НОВИНКА – ручки для вікон DUBLIN",
+        "description": "У пропозиції виробника вікон та дверей TUR-PLAST ви знайдете ручки з колекції DUBLIN Medos, які поєднують футуристичний та вічний дизайн. Частина ручки виготовлена з алюмінію. Доступні в класичному оздобленні (порошкове покриття) або в сучасному варіанті (анодування в двох варіантах: піскоструминне або шліфоване). Ми пропонуємо варіанти з кнопкою та ключем, а також Dublin de Luxe – елегантні завдяки унікальному різанню.",
         "imgList": {
           "1": {
             "id": "1",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles1.jpeg",
             "alt": ""
           },
           "2": {
             "id": "2",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles2.jpeg",
             "alt": ""
           },
           "3": {
             "id": "3",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles3.jpeg",
             "alt": ""
           },
           "4": {
             "id": "4",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "src": "/images/windows/accessories-page/handles4.jpeg",
             "alt": ""
           }
         }
       },
       "WindowHandlesSecustic": {
-        "title": "Window handles Secustic – FKS i HOPPE",
-        "description": "For white windows we use aesthetic white handles of the renowned FKS company. For the windows with double-sided veneer we choose handles of the HOPPE company, which offer ergonomic and elegant design.",
+        "title": "Ручки для вікон Secustic – FKS i HOPPE",
+        "description": "Для білих вікон ми використовуємо естетичні білі ручки від відомої компанії FKS. Для вікон з двосторонньою фанерою ми обираємо ручки компанії HOPPE, що пропонують ергономічний та елегантний дизайн.",
         "typesList": {
-          "title": "Available versions of the product:",
+          "title": "Доступні варіанти продукції:",
           "1": {
             "id": "1",
-            "description": "The SECOUSTIK type – the handle is equipped with a patented blocking mechanism preventing any possible manipulation from the outside by moving the boundary fitting. The characteristic click sound at turning the handle signals that the security function is active.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "description": "Тип SECOUSTIK – ручка оснащена запатентованим блокувальним механізмом, що запобігає будь-яким маніпуляціям ззовні шляхом руху обмежувача. Характерний звук «клацання» при повертанні ручки сигналізує про те, що функція безпеки активована.",
+            "src": "/images/windows/accessories-page/handles-sec1.jpeg",
             "alt": ""
           },
           "2": {
             "id": "2",
-            "description": "SECURE HANDLE WITH A PUSH BUTTON –  the handle can be turned only after pressing the button – it prevents opening a window from the outside, it is a standard option in WK-1 type anti-burglary fittings, and is equipped with an anti-drilling plate as well.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "description": "БЕЗПЕЧНА РУЧКА З КНОПКОЮ – ручка може бути повернута тільки після натискання кнопки – це запобігає відкриттю вікна ззовні, є стандартною опцією у фітингах типу WK-1 антивандальних вікон і оснащена протидрильним пластинами.",
+            "src": "/images/windows/accessories-page/handles-sec2.jpeg",
             "alt": ""
           },
           "3": {
             "id": "3",
-            "description": "ANTI-BURGLARY HANDLE (with a key) – removing the key blocks the door- handle, which cannot be turned – it protects against possible window opening from the outside, it is a standard option in anti-burglary fittings of the WK-2 type. This door- handle type, similarly to the push-button one, is recommended for upstairs balcony doors so as to prevent them from being opened by children.",
-            "src": "/images/windows/schuco-profiles/schemeMD.jpeg",
+            "description": "АНТИВАНДАЛЬНА РУЧКА (з ключем) – витягування ключа блокує ручку, що не дозволяє її повернути – це захищає від можливого відкриття вікна ззовні, є стандартною опцією у фітингах типу WK-2 антивандальних вікон. Цей тип ручки, як і кнопкова, рекомендується для балконних дверей на верхніх поверхах, щоб запобігти їх відкриттю дітьми.",
+            "src": "/images/windows/accessories-page/handles-sec3.jpeg",
             "alt": ""
           }
         }

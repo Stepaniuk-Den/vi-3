@@ -25,6 +25,7 @@ const FittingComponentsSection: React.FC<Props> = ({ t }) => {
             alt={cardFittingComponents.alt || ""}
             fill
             priority
+            className="object-contain"
           />
         </div>
       </div>

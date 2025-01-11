@@ -3,14 +3,18 @@
 import { useTranslations } from "next-intl";
 import { useFormStatus } from "react-dom";
 
-const SubmitButton = () => {
+type Props = {
+    isSubmitting: boolean
+}
+
+const SubmitButton: React.FC<Props> = ({ isSubmitting }) => {
   const t = useTranslations("Buttons");
 
-  const { pending } = useFormStatus();
+  //   const { pending } = useFormStatus();
 
   return (
-    <button disabled={pending} type="submit" className="linkToPageCl">
-      {pending ? `${t("sending")}` : `${t("submit")}`}
+    <button disabled={isSubmitting} type="submit" className="linkToPageCl">
+      {isSubmitting ? `${t("sending")}` : `${t("submit")}`}
     </button>
   );
 };

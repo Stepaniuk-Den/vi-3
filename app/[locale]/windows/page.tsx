@@ -59,7 +59,7 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
       {/* <ElementsSection t={t} tBtn={tButtons} />
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
 
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 };

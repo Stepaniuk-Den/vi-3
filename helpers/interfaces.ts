@@ -153,36 +153,40 @@ export interface ISectionImgAndListProps {
 export interface IFormData {
   name: string;
   email: string;
-  phoneNumber: string;
+  phoneNumber?: string;
   message: string;
 }
 
 export interface IActionResponse {
-  message?: string;
-  data?: any;
-  //   errors?: {
-  //     [key: string]: string;
-  //   };
-  errors?: IErrorsString;
-  //   {
-  //     [K in keyof IFormData]?: string[];
-  //   };
-  blurs?: IBlursBoolean;
+  success: boolean;
+  message: string;
+  formData?: IFormData;
+  errors?: {
+    [K in keyof IFormData]?: string[];
+    // [key: string]: string;
+  };
 }
 
-export interface IErrorsString {
-  [key: string]: string;
-  // [K in keyof IFormData]?: string[];
-}
-
-export interface IBlursBoolean {
-  [key: string]: boolean;
-}
+// -------------------------------------
 
 // export interface IActionResponse {
-//   success: boolean;
-//   message: string;
-//   errors?: {
-//     [K in keyof IFormData]?: string[];
-//   };
+//   message?: string;
+//   data?: any;
+//   //   errors?: {
+//   //     [key: string]: string;
+//   //   };
+//   errors?: IErrorsString;
+//   //   {
+//   //     [K in keyof IFormData]?: string[];
+//   //   };
+//   blurs?: IBlursBoolean;
+// }
+
+// export interface IErrorsString {
+//   [key: string]: string;
+//   // [K in keyof IFormData]?: string[];
+// }
+
+// export interface IBlursBoolean {
+//   [key: string]: boolean;
 // }
