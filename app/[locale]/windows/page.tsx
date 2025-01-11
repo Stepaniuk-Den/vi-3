@@ -1,14 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
-// import ProfilesSection from "@/app/components/WindowsPage/ProfilesSection";
-// import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
-// import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 import { useTranslations } from "next-intl";
 import CardsSection from "@/app/components/CardsSection";
-
-// import ElementsSection from "@/app/components/WindowsPage/ElementsSection";
-// import WindowsillsSection from "@/app/components/WindowsPage/WindowsillsSection";
 
 type Props = {
   params: { locale: string };
@@ -63,6 +57,8 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
       />
       {/* <ElementsSection t={t} tBtn={tButtons} />
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
+
+      {/* <ContactForm /> */}
     </>
   );
 };
