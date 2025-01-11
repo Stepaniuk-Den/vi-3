@@ -1,11 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useFormStatus } from "react-dom";
 
 type Props = {
-    isSubmitting: boolean
-}
+  isSubmitting: boolean;
+};
 
 const SubmitButton: React.FC<Props> = ({ isSubmitting }) => {
   const t = useTranslations("Buttons");

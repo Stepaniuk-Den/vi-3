@@ -3,7 +3,6 @@ import { IDesc } from "@/helpers/interfaces";
 import Line from "@/app/components/Line";
 import { useTranslations } from "next-intl";
 import CardsSection from "@/app/components/CardsSection";
-import ContactForm from "@/app/components/ContactForm";
 
 type Props = {
   params: { locale: string };
