@@ -1,29 +1,50 @@
+"use client";
+import { IDesc } from "@/helpers/interfaces";
+import { useModal } from "../ModalProvider";
 import React from "react";
 import Line from "../Line";
-import { IDesc } from "@/helpers/interfaces";
 import Image from "next/image";
+import ModalSwiperContent from "../ModalSwiperContent";
 
 interface ITopDescrAndImgProps {
-  t: (key: string) => string;
-  descrList?: {
-    [key: string]: IDesc;
+  t: {
+    title: string;
+    id: string;
+    src: string;
+    alt: string;
+    descrList?: {
+      [key: string]: IDesc;
+    };
   };
 }
 
-const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t, descrList }) => {
+const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
+  const { title, id, src, alt, descrList } = t;
+  const { openModal } = useModal();
+
   return (
     <section className="pageCl">
       <div className="container">
-        <h1 className="titleCl pt-16">{t("title")}</h1>
+        <h1 className="titleCl pt-16">{title}</h1>
         <Line className="marsala-center" color="marsala" />
         <div className="flex gap-5">
-          <div className="relative border border-gray-300 rounded-md overflow-hidden w-2/3 h-[460px]">
+          <div
+            className="relative border border-gray-300 rounded-md overflow-hidden w-2/3 h-[460px] cursor-zoom-in"
+            onClick={() =>
+              openModal(
+                <ModalSwiperContent
+                  slides={[{ id: id, src: src, alt: alt }]}
+                  initialSlide={0}
+                />
+              )
+            }
+          >
             <Image
               className="object-cover"
               //   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
               sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-              src={t("src")}
-              alt={t("alt")}
+              src={src}
+              alt={alt}
               fill
             />
           </div>

@@ -1,6 +1,6 @@
+import { Formats, RichTranslationValues } from "next-intl";
 import React from "react";
 import TitleBanner from "../TitleBanner";
-import { Formats, RichTranslationValues } from "next-intl";
 
 interface ISectionBannerAndDescrProps {
   t: {
@@ -13,7 +13,9 @@ interface ISectionBannerAndDescrProps {
   };
 }
 
-const SectionBannerAndDescr: React.FC<ISectionBannerAndDescrProps> = ({ t }) => {
+const SectionBannerAndDescr: React.FC<ISectionBannerAndDescrProps> = ({
+  t,
+}) => {
   return (
     <section className="sectionCl">
       <div className="container">
@@ -31,4 +33,3 @@ const SectionBannerAndDescr: React.FC<ISectionBannerAndDescrProps> = ({ t }) => 
 };
 
 export default SectionBannerAndDescr;
-

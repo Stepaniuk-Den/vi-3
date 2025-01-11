@@ -1,8 +1,11 @@
+"use client";
 import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
+import { useModal } from "./ModalProvider";
 import NestedCard from "./NestedCard";
 import NestedParameterDescList from "./NestedParameterDescList";
 import TitleBanner from "./TitleBanner";
 import clsx from "clsx";
+import ModalSwiperContent from "./ModalSwiperContent";
 // import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 
 type Props = {
@@ -50,7 +53,13 @@ const NestedCardsSection: React.FC<Props> = ({
     (item) => typeof item === "object" && "id" in item
   ) as INestedCard[];
 
-  // const size = sectionIdx === 0 ? "w-1/4" : "w-full";
+  const slides = nestedCardsList.map((nestedCard) => ({
+    id: nestedCard.id || "default-id",
+    src: typeof nestedCard.src === "string" ? nestedCard.src : nestedCard.src?.src || "",
+    alt: nestedCard.alt || "",
+  }));
+
+  const { openModal } = useModal();
 
   return (
     <section className="sectionCl">
@@ -78,7 +87,7 @@ const NestedCardsSection: React.FC<Props> = ({
             // "grid grid-cols-3": positioning === "grid3",
           })}
         >
-          {nestedCardsList.map((nestedCard) => {
+          {nestedCardsList.map((nestedCard,idx) => {
             // const currentWidth = getImageDimensionValue(width, idx, "w-full");
             // const currentHeight = getImageDimensionValue(
             //   height,
@@ -94,6 +103,8 @@ const NestedCardsSection: React.FC<Props> = ({
                 alt={nestedCard.alt || ""}
                 size={size}
                 isRow={isRow}
+                onClick={() => openModal(<ModalSwiperContent slides={slides} initialSlide={idx} />)}
+
                 imgFit={imgFit}
                 // titleBannerCard={titleBannerCard}
                 // layout="horizontal"

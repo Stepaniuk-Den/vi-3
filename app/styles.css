@@ -13,6 +13,29 @@
   height: calc(100vh - 170px);
   margin-top: 170px;
 }
+.myModalSwiper.swiper{
+  position: static !important;
+}
+
+.mySwiper .swiper-slide{
+filter: brightness(60%) !important;
+}
+
+.mySwiper .swiper-slide-thumb-active{
+  filter: brightness(100%) !important;
+  }
+
+.myModalSwiper .swiper-button-next{
+  right: -90px !important;
+  color: #fff !important;
+  transform: translateY(-50%) !important;
+}
+
+.myModalSwiper .swiper-button-prev{
+  left: -90px !important;
+  color: #fff !important;
+  transform: translateY(-50%) !important;
+}
 
 .swiper-button-next,
 .swiper-button-prev {

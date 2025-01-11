@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import { clsx } from "clsx";
+import { ModalProvider } from "./ModalProvider";
 import Header from "./Header";
 
 type Props = {
@@ -25,8 +26,10 @@ export default async function BaseLayout({ children, locale }: Props) {
         )}
       >
         <NextIntlClientProvider messages={messages}>
+          <ModalProvider>
           <Header />
           <main>{children}</main>
+          </ModalProvider>
         </NextIntlClientProvider>
       </body>
     </html>

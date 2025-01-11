@@ -1,7 +1,11 @@
+"use client";
+
+import { useModal } from "../ModalProvider";
+import { IImgList } from "@/helpers/interfaces";
 import React from "react";
 import NestedCard from "../NestedCard";
-import { IImgList } from "@/helpers/interfaces";
 import clsx from "clsx";
+import ModalSwiperContent from "../ModalSwiperContent";
 
 export interface IItemsProps {
   id: string;
@@ -16,6 +20,8 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
 }) => {
   const imgList = t.imgList ? Object.values(t.imgList) : [];
 
+  const { openModal } = useModal();
+
   return (
     <div className="mt-10">
       <h3 className="subTitleCl font-bold">{t.title}</h3>
@@ -27,7 +33,7 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
           "grid-cols-4": columns === 4,
         })}
       >
-        {imgList.map((card) => {
+        {imgList.map((card, index) => {
           return (
             <NestedCard
               key={card.id}
@@ -37,6 +43,11 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
               size="w-full"
               description={card.description}
               isRow={false}
+              onClick={() =>
+                openModal(
+                  <ModalSwiperContent slides={imgList} initialSlide={index} />
+                )
+              }
             />
           );
         })}
