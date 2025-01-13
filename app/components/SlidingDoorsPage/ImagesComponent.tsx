@@ -16,19 +16,19 @@ interface IList {
   children?: React.ReactNode;
   isRow?: boolean;
   width?:
-    | {
-        1?: string;
-        2?: string;
-        3?: string;
-      }
-    | string;
+  | {
+    1?: string;
+    2?: string;
+    3?: string;
+  }
+  | string;
   height?:
-    | {
-        1?: string;
-        2?: string;
-        3?: string;
-      }
-    | string;
+  | {
+    1?: string;
+    2?: string;
+    3?: string;
+  }
+  | string;
 }
 
 // const getImageDimensionValue = (

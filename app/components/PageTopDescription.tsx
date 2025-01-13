@@ -18,6 +18,8 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
         <h1 className="titleCl pt-16">{t("title")}</h1>
         <Line className="marsala-center" color="marsala" />
         <p className="mb-4">{t("description")}</p>
+        {t("description2") && <p className="mb-4">{t("description2")}</p>}
+        {t("description3") && <p className="mb-4">{t("description3")}</p>}
         {parametersList && <NestedParameterDescList param={parametersList} />}
       </div>
     </section>

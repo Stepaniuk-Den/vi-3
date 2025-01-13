@@ -3766,6 +3766,107 @@
       }
     }
   },
+  "SlidingDoorsAluminumAluPage": {
+    "title": "ALUMINIUM SLIDING TERRACE DOORS - HS Type - Aluron Profiles",
+    "description": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically. The use of fittings from reputable suppliers allows for comfortable sliding of even very heavy leaves.",
+    "description2": "The AS 178HS system works well in buildings with large glazing, restaurants, or winter gardens, where key features include the ease of movement from inside the room to the outside, ease of use, design and aesthetics. An important advantage of this solution is the fact that it does not occupy the space of the interior and fits well in any arrangement. The innovative structure allows for the highest parameters of thermal insulation.",
+    "description3": "In the AS 178HS system, it is possible to completely enclose the frame in the insulation layer, which allows to emphasise the decorative qualities of the façade and gives the building an individual and unique character. The structure can be made in all development schemes available on the market (a solution with two or three tracks, a solution with the possibility of using fixed glazing in passive leaves, etc.)",
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsAlu/hs-alu-1.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsAlu/hs-alu-2.jpg",
+        "alt": ""
+      }
+    },
+    "aluminumAlu": {
+      "title": "Aluminum sliding terrace doors system - ULTRAGLIDE",
+      "imgList": {
+        "1": {
+          "id": "1",
+          "src": "/images/slidingDoors/hsAlu/hs-alu-section-1.jpg",
+          "alt": ""
+        }
+      },
+      "parametersListTech": {
+        "title": "TECHNICAL DATA:",
+        "list": {
+          "1": {
+            "desc": "Sash installation depth – 78 mm."
+          },
+          "2": {
+            "desc": "Maximum glazing thickness – 59 mm."
+          },
+          "3": {
+            "desc": "Maximum construction height – 3300 mm."
+          },
+          "4": {
+            "desc": "Maximum moving sash weight – 400 kg."
+          },
+          "5": {
+            "desc": "Variant with 90 degrees sash connection angle – Yes."
+          },
+          "6": {
+            "desc": "Thermal insulation Uf – from 1,4 W/m2K."
+          },
+          "7": {
+            "desc": "Air permeability according to DIN EN 12207 (class) – 4."
+          },
+          "8": {
+            "desc": "Wind load resistance to DIN EN 12210 (class) – C3/B3."
+          },
+          "9": {
+            "desc": "Watertightness to DIN EN 12208 (class) – E 1350 Pa."
+          }
+        }
+      },
+      "parametersListSys": {
+        "title": "SYSTEM DESCRIPTION:",
+        "list": {
+          "1": {
+            "desc": "Narrow profiles."
+          },
+          "2": {
+            "desc": "Possibility of obtaining a no-threshold structure."
+          },
+          "3": {
+            "desc": "Possible complete installation in the insulation layer."
+          },
+          "4": {
+            "desc": "Connections in the crimp or pinned version (to facilitate the transport of large structures)."
+          },
+          "5": {
+            "desc": "2-, 3-, 4- and 6-element structures based on a 2- or 3-track frame."
+          },
+          "6": {
+            "desc": "Large glazings: 15-20% more light."
+          },
+          "7": {
+            "desc": "Possibility of including glazing from the inside and outside."
+          },
+          "8": {
+            "desc": "Fittings with the possibility of automation of control and leaf opening (also from a smartphone)."
+          },
+          "9": {
+            "desc": "Maximum width of the structure – thanks to the system connection of the frames."
+          },
+          "10": {
+            "desc": "Rich colour choice, modern design."
+          },
+          "11": {
+            "desc": "Simple frame drainage system."
+          },
+          "12": {
+            "desc": "Compatibility with Aluron systems (transoms without the need to duplicate frames)."
+          }
+        }
+      }
+    }
+  },
   "RollerBlindsPage": {
     "title": "Roller Shutters / Sun Protection Covers",
     "description": "External roller shutters: top-mounted and adaptive, concealed and surface-mounted, are an effective way of saving energy. Our external roller shutters will provide you with great thermal and acoustic insulation as well as a sense of intimacy and safety. We offer external roller shutters in PVC or aluminium boxes, concealed or oval surface-mounted.",
