@@ -25,7 +25,7 @@ const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
       <ImagesComponent
         list={imgList.slice(0, 2)}
         width={{ 1: "w-1/2", 2: "w-1/2" }}
-        className=" container"
+        className=" container mt-11"
       />
       <NestedCardsSection
         tSectionItem={t.raw("pskTiltSys")}

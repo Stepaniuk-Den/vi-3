@@ -175,7 +175,6 @@
       }
     }
   },
-
   "ContactForm": {
     "name": "Name (required)",
     "email": "Email address (required)",
@@ -196,7 +195,6 @@
     "success": "Your message has been successfully sent to ",
     "content": "Message content"
   },
-
   "Hero": {
     "slides": {
       "1": {
@@ -3638,7 +3636,7 @@
         "alt": ""
       }
     },
-    "description2": "TWO SYSTEMS of HS-type aluminium sliding doors: Aliplast ULTRAGLIDE - option with a low threshold, angle solution and Aliplast VISOGLIDE plus. TUR-PLAST is a producer of individual solutions for HS-type aluminium sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Aliplast aluminium systems can be easily combined with energy-saving and passive Aliplast windows.",
+    "desc": "TWO SYSTEMS of HS-type aluminium sliding doors: Aliplast ULTRAGLIDE - option with a low threshold, angle solution and Aliplast VISOGLIDE plus. TUR-PLAST is a producer of individual solutions for HS-type aluminium sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Aliplast aluminium systems can be easily combined with energy-saving and passive Aliplast windows.",
     "aluminumAliUltra": {
       "title": "Aluminum sliding terrace doors system - ULTRAGLIDE",
       "imgList": {
@@ -3792,9 +3790,11 @@
   },
   "SlidingDoorsAluminumAluPage": {
     "title": "ALUMINIUM SLIDING TERRACE DOORS - HS Type - Aluron Profiles",
-    "description": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically. The use of fittings from reputable suppliers allows for comfortable sliding of even very heavy leaves.",
-    "description2": "The AS 178HS system works well in buildings with large glazing, restaurants, or winter gardens, where key features include the ease of movement from inside the room to the outside, ease of use, design and aesthetics. An important advantage of this solution is the fact that it does not occupy the space of the interior and fits well in any arrangement. The innovative structure allows for the highest parameters of thermal insulation.",
-    "description3": "In the AS 178HS system, it is possible to completely enclose the frame in the insulation layer, which allows to emphasise the decorative qualities of the façade and gives the building an individual and unique character. The structure can be made in all development schemes available on the market (a solution with two or three tracks, a solution with the possibility of using fixed glazing in passive leaves, etc.)",
+    "description": {
+      "p1": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically. The use of fittings from reputable suppliers allows for comfortable sliding of even very heavy leaves.",
+      "p2": "The AS 178HS system works well in buildings with large glazing, restaurants, or winter gardens, where key features include the ease of movement from inside the room to the outside, ease of use, design and aesthetics. An important advantage of this solution is the fact that it does not occupy the space of the interior and fits well in any arrangement. The innovative structure allows for the highest parameters of thermal insulation.",
+      "p3": "In the AS 178HS system, it is possible to completely enclose the frame in the insulation layer, which allows to emphasise the decorative qualities of the façade and gives the building an individual and unique character. The structure can be made in all development schemes available on the market (a solution with two or three tracks, a solution with the possibility of using fixed glazing in passive leaves, etc.)"
+    },
     "imgList": {
       "1": {
         "id": "1",

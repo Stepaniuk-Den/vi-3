@@ -6,20 +6,28 @@ import NestedParameterDescList from "./NestedParameterDescList";
 interface IPageTopDescriptionProps {
   t: (key: string) => string;
   parametersList?: IParameterItem;
+  descObj?: Record<string, string>;
 }
 
 const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
   t,
   parametersList,
+  descObj,
 }) => {
   return (
     <section className="pageCl">
       <div className="container">
         <h1 className="titleCl pt-16">{t("title")}</h1>
         <Line className="marsala-center" color="marsala" />
-        <p className="mb-4">{t("description")}</p>
-        {t("description2") && <p className="mb-4">{t("description2")}</p>}
-        {t("description3") && <p className="mb-4">{t("description3")}</p>}
+        {!descObj ? (
+          <p className="mb-4">{t("description")}</p>
+        ) : (
+          <div className="mb-4">
+            {Object.values(descObj).map((text, index) => (
+              <p key={index} className="mb-4">{text}</p>
+            ))}
+          </div>
+        )}
         {parametersList && <NestedParameterDescList param={parametersList} />}
       </div>
     </section>
