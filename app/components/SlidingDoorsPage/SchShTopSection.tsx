@@ -11,12 +11,12 @@ interface IProps {
 
 const SchShTopSection = ({ desc2, desc3, imgList, cardsList }: IProps) => {
   return (
-    <section className="sectionCl">
+    <section>
       <div className="container">
         <ImagesComponent
           list={imgList.slice(0, 2)}
           width={{ 1: "w-1/3", 2: "w-2/3" }}
-          className="mt-7"
+          className="mt-11"
         />
         <p className="my-4">{desc2}</p>
         <ImagesComponent list={imgList.slice(2, 3)} width="w-full" />

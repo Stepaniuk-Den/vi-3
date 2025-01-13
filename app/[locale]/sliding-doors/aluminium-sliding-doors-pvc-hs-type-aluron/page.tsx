@@ -18,11 +18,11 @@ const SlidingDoorsAlumAluron: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <PageTopDescription t={t} />
+      <PageTopDescription t={t} descObj={t.raw("description")} />
       <ImagesComponent
         list={imgList.slice(0, 2)}
         width="w-1/2"
-        className="container"
+        className="container mt-11"
       />
       <AluGlideCustomSection tSection={tAluSection} withCarousel={false} />
     </>
