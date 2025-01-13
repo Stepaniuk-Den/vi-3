@@ -1,7 +1,7 @@
 
+import { Formats, RichTranslationValues } from "next-intl";
 import React from "react";
 import WindowFeaturesCard, { IWindowFeaturesProps } from "./WindowFeaturesCard";
-import { Formats, RichTranslationValues } from "next-intl";
 import Line from "./Line";
 
 type Props = {
@@ -30,11 +30,13 @@ const windows = Object.values(t.raw("list")) as IWindowFeaturesProps[];
 })
 }</h2>
         <Line className="marsala-center" color="marsala"/>
-      <ul className="grid gap-10 grid-cols-4 px-10">
+        <div className="flex justify-center">
+      <ul className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 sm:px-8 xl:px-10">
         {windows.map((window) => (
           <WindowFeaturesCard key={window.id} t={{...window}} />
         ))}
       </ul>
+      </div>
       </div>
     </section>
   );

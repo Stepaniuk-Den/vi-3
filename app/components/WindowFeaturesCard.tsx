@@ -1,27 +1,97 @@
+"use client";
+
 import { windowSvgItems } from "@/data/svgWindows";
-import React from "react";
+import { useMediaQuery } from "react-responsive";
+import React, { useState, useEffect } from "react";
 
 export interface IWindowFeaturesProps {
-  id?: string;
+  id: string;
   title: string;
   ariaLabel: string;
   description: string;
-  svgName:string;
+  svgName: string;
 }
 
 const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
-  const { title, ariaLabel, description, svgName } = t;
+  const [activeCard, setActiveCard] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const { id, title, ariaLabel, description, svgName } = t;
+
+  const toggleCard = (cardId: string) => {
+    setActiveCard((prev) => (prev === cardId ? null : cardId));
+  };
+
+  const isActive = activeCard === id;
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
-    <li className="flex flex-col items-center  px-8 py-6 shadow-lg relative">
-        {windowSvgItems.windows.map((item) =>
+    <li
+      className={`group relative flex flex-col items-center justify-center px-8 py-6 shadow-lg transition-all duration-700 ease-in-out overflow-hidden min-w-80 sm:min-w-64 lg:min-w-52 min-h-[340px] rounded-md ${
+        isActive
+          ? "bg-customMarsala-accentLight text-white"
+          : "bg-white text-black"
+      } 
+      ${
+        !isTabletOrMobile
+          ? "hover:bg-customMarsala-accentLight hover:text-white"
+          : ""
+      }`}
+      onClick={() => isTabletOrMobile && toggleCard(id)}
+      // onClick={() => toggleCard(id)}
+    >
+      {windowSvgItems.windows.map((item) =>
         item.name === svgName ? (
-          <item.svg key={item.name} aria-label={ariaLabel} className=" absolute left-[43%] top-[10%] w-9 h-8  fill-white colo" />
+          <span
+            key={item.name}
+            className={`absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 flex items-center justify-center rounded-[18px_5px_10px_5px] transition-all duration-700 ease-in-out 
+            ${
+              isActive
+                ? "translate-y-[-150%] opacity-0"
+                : "bg-customMarsala-accentLight opacity-100"
+            }
+            ${
+              !isTabletOrMobile
+                ? "group-hover:translate-y-[-150%] group-hover:opacity-0"
+                : ""
+            }`}
+          >
+            <item.svg aria-label={ariaLabel} className="w-12 h-12 fill-white" />
+          </span>
         ) : null
       )}
-      <span className="w-12 h-12 bg-customMarsala-accentLight flex-shrink-0 rounded-[18px_5px_10px_5px] mb-4"></span>
-      <h3 className="text-xl font-semibold mb-2 text-center">{title}</h3>
-      <p className="text-center">{description}</p>
+
+      <h3
+        className={`relative z-10 text-xl font-semibold mt-44 text-center transition-all duration-700 ease-in-out h-14 
+          ${isActive ? "translate-y-[-330%] text-white" : "text-black"} 
+          ${
+            !isTabletOrMobile
+              ? "group-hover:translate-y-[-330%] group-hover:text-white"
+              : ""
+          }`}
+      >
+        {title}
+      </h3>
+
+      <p
+        className={`absolute text-center p-1 transition-all duration-500 ease-in-out 
+          ${isActive ? "opacity-100 text-white" : "opacity-0 text-black"} 
+          ${
+            !isTabletOrMobile
+              ? "group-hover:opacity-100 group-hover:text-white"
+              : ""
+          }`}
+      >
+        {description}
+      </p>
     </li>
   );
 };
