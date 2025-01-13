@@ -156,6 +156,20 @@ export interface ISectionImgAndListProps {
   isShowSecondList?: boolean;
 }
 
+export interface IAluSection {
+  title: string;
+  imgList: IImage[];
+  parametersListTech: {
+    list: {
+      [key: string]: IDesc;
+    };
+  };
+  parametersListSys: {
+    list: {
+      [key: string]: IDesc;
+    };
+  };
+}
 export interface IFormData {
   name: string;
   email: string;
