@@ -24,7 +24,7 @@ const Navigation = () => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const pathname = usePathname();
   const locale = useLocale();
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  // const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
   const keys = Object.keys(messages.Navigation);
   const selectedLayoutSegment = pathname ? `${pathname.split("/")[1]}` : "home";
 
