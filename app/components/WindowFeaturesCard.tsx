@@ -35,34 +35,32 @@ const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
 
   return (
     <li
-      className={`group relative flex flex-col items-center justify-center px-8 py-6 shadow-lg transition-all duration-700 ease-in-out overflow-hidden min-w-80 sm:min-w-64 lg:min-w-52 min-h-[340px] rounded-md ${
-        isActive
+      className={`group relative flex flex-col items-center justify-center px-8 py-6 shadow-lg transition-all duration-700 ease-in-out overflow-hidden min-w-80 sm:min-w-64 lg:min-w-52 min-h-[340px] rounded-md 
+        ${isActive
           ? "bg-customMarsala-accentLight text-white"
           : "bg-white text-black"
-      } 
-      ${
-        !isTabletOrMobile
+        } 
+      ${!isTabletOrMobile
           ? "hover:bg-customMarsala-accentLight hover:text-white"
           : ""
-      }`}
+        }
+      `}
       onClick={() => isTabletOrMobile && toggleCard(id)}
-      // onClick={() => toggleCard(id)}
+    // onClick={() => toggleCard(id)}
     >
       {windowSvgItems.windows.map((item) =>
         item.name === svgName ? (
           <span
             key={item.name}
             className={`absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 flex items-center justify-center rounded-[18px_5px_10px_5px] transition-all duration-700 ease-in-out 
-            ${
-              isActive
+            ${isActive
                 ? "translate-y-[-150%] opacity-0"
                 : "bg-customMarsala-accentLight opacity-100"
-            }
-            ${
-              !isTabletOrMobile
+              }
+            ${!isTabletOrMobile
                 ? "group-hover:translate-y-[-150%] group-hover:opacity-0"
                 : ""
-            }`}
+              }`}
           >
             <item.svg aria-label={ariaLabel} className="w-12 h-12 fill-white" />
           </span>
@@ -72,10 +70,9 @@ const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
       <h3
         className={`relative z-10 text-xl font-semibold mt-44 text-center transition-all duration-700 ease-in-out h-14 
           ${isActive ? "translate-y-[-330%] text-white" : "text-black"} 
-          ${
-            !isTabletOrMobile
-              ? "group-hover:translate-y-[-330%] group-hover:text-white"
-              : ""
+          ${!isTabletOrMobile
+            ? "group-hover:translate-y-[-330%] group-hover:text-white"
+            : ""
           }`}
       >
         {title}
@@ -84,10 +81,9 @@ const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
       <p
         className={`absolute text-center p-1 transition-all duration-500 ease-in-out 
           ${isActive ? "opacity-100 text-white" : "opacity-0 text-black"} 
-          ${
-            !isTabletOrMobile
-              ? "group-hover:opacity-100 group-hover:text-white"
-              : ""
+          ${!isTabletOrMobile
+            ? "group-hover:opacity-100 group-hover:text-white"
+            : ""
           }`}
       >
         {description}

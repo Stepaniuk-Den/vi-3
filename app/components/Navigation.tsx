@@ -5,6 +5,7 @@ import { useLocale, useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 interface INavigationItem {
   title: string;
@@ -23,6 +24,7 @@ const Navigation = () => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const pathname = usePathname();
   const locale = useLocale();
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
   const keys = Object.keys(messages.Navigation);
   const selectedLayoutSegment = pathname ? `${pathname.split("/")[1]}` : "home";
 
@@ -74,7 +76,7 @@ const Navigation = () => {
                     return (
                       <li
                         key={subIndex}
-                        className="w-full  rounded-md hover:bg-customMarsala-accent hover:text-white"
+                        className="w-full rounded-md hover:bg-customMarsala-accent hover:text-white"
                       >
                         <Link
                           className="flex px-4 py-2"

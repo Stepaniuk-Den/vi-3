@@ -121,7 +121,12 @@ const ImagesComponent: React.FC<IList> = ({
                 )}
                 onClick={() =>
                   openModal(
-                    <ModalSwiperContent slides={list} initialSlide={idx} />
+                    <ModalSwiperContent slides={list} initialSlide={idx} />,
+                    {
+                      classNameBtn: "top-[-11px] right-[-108px]",
+                      classNameModalContent: "w-[80vw] h-[90vh]",
+                      classNameBackdrop: "bg-customMarsala-accentLight"
+                    }
                   )
                 }
               >
