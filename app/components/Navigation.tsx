@@ -5,7 +5,7 @@ import { useLocale, useMessages, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 interface INavigationItem {
   title: string;
