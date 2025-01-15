@@ -55,6 +55,8 @@ export default {
       animation: {
         unfoldIn: 'unfoldIn 0.5s ease-out',
         unfoldOut: 'unfoldOut 0.5s ease-in',
+        burgerIn: 'burgerIn 0.5s',
+        burgerOut: 'burgerOut 0.5s',
       },
       keyframes: {
         unfoldIn: {
@@ -77,6 +79,28 @@ export default {
           },
           '100%': {
             transform: 'scaleY(0.005) scaleX(0)',
+          },
+        },
+        burgerIn: {
+          '0%': {
+            transform: 'translateX(-100%)',
+          },
+          // '50%': {
+          //   transform: 'translateX(-50%)',
+          // },
+          '100%': {
+            transform: 'translateX(0)',
+          },
+        },
+        burgerOut: {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          // '50%': {
+          //   transform: 'scaleY(0.005) scaleX(1)',
+          // },
+          '100%': {
+            transform: 'translateX(-100%)',
           },
         },
       },

@@ -60,7 +60,12 @@ const ImgCarouselPage = ({
                 className={clsx("relative w-full cursor-zoom-in", height)}
                 onClick={() =>
                   openModal(
-                    <ModalSwiperContent slides={imgList} initialSlide={index} />
+                    <ModalSwiperContent slides={imgList} initialSlide={index} />,
+                    {
+                      classNameBtn: "top-[-11px] right-[-108px]",
+                      classNameModalContent: "w-[80vw] h-[90vh]",
+                      classNameBackdrop: "bg-customMarsala-accentLight"
+                    }
                   )
                 }
               >
