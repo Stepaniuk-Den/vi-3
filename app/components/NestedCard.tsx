@@ -18,11 +18,12 @@ const NestedCard: React.FC<INestedCard> = ({
   imgFit,
   onClick,
 }) => {
+
+  
   return (
     <li
-      onClick={onClick}
       className={clsx(
-        "flex flex-col cursor-zoom-in",
+        "flex flex-col",
         className,
         size
         // {
@@ -63,9 +64,10 @@ const NestedCard: React.FC<INestedCard> = ({
         {/* ======== IMAGE ======== */}
         <div
           className={clsx(
-            "relative w-full border border-gray-300 rounded-md overflow-hidden",
+            "relative w-full border border-gray-300 rounded-md overflow-hidden cursor-zoom-in",
             imgH
           )}
+          onClick={onClick}
         >
           <Image
             sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"

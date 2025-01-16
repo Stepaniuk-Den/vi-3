@@ -24,7 +24,7 @@ const SectionCarouselAndDescr: React.FC<ISectionCarouselAndDescrProps> = ({
       <div className="container">
         <h1 className="titleCl">{t("title")}</h1>
         <Line className="marsala-center" color="marsala" />
-        <div className="flex flex-row gap-8 items-start pt-6">
+        <div className="flex flex-col lg:flex-row lg:gap-8 items-center lg:items-start pt-6">
           <div className="flex-grow flex-[2]">
             <ImgCarouselPage imgList={imgList} />
           </div>

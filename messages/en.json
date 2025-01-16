@@ -1874,7 +1874,7 @@
       },
       "5": {
         "id": "L3XO8I",
-        "src": "/images/doors/doors_kommerling_5.jpeg",
+        "src": "/images/doors/doors_kommerling_5.jpg",
         "alt": ""
       }
     },
@@ -2321,7 +2321,7 @@
         }
       },
       "parametersList": {
-        "title": "Features and parameters of the AS 75 door system",
+        "title": "FEATURES AND PARAMETERS OF THE AS 75 DOOR SYSTEM",
         "list": {
           "1": {
             "desc": "Door profile depth – 75 mm"
@@ -2516,24 +2516,28 @@
       "imgList": {
         "1": {
           "id": "f5a2e9",
+          "title":"Schüco CT 70",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
           "alt": "",
           "description": "76AD – FRAME ALONG THE PERIMETER"
         },
         "2": {
           "id": "c7d4b1",
+          "title":"Schüco CT 70",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
           "alt": "",
           "description": "76MD – FRAME ALONG THE PERIMETER"
         },
         "3": {
           "id": "9e8f63",
+          "title":"Schüco LivIng 82",
           "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
           "alt": "",
           "description": "88MD – FRAME ALONG THE PERIMETER"
         },
         "4": {
           "id": "a1c4d7",
+          "title":"Schüco LivIng 82",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
           "alt": "",
           "description": "76AD – LOW THRESHOLD"
@@ -2810,7 +2814,7 @@
           }
         },
         "2": {
-          "id": "v2a7fj",
+          "id": "v9a7b8",
           "title": "SK – 2",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
           "alt": "",
@@ -2826,7 +2830,7 @@
           }
         },
         "3": {
-          "id": "v2a7fj",
+          "id": "j5a7bj",
           "title": "SK – 3",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
           "alt": "",
@@ -2915,7 +2919,7 @@
           }
         },
         "2": {
-          "id": "v2a7fj",
+          "id": "m2r7fj",
           "title": "SK – 2",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
           "alt": "",

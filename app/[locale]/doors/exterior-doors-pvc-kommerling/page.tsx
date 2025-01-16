@@ -23,12 +23,14 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <NestedCardsSection
         tSectionItem={t.raw("InwardDoors76Section")}
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <NestedCardsSection
         tSectionItem={t.raw("DoorSillFeatures")}
@@ -36,6 +38,7 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         positioning="grid"
+        imgFit="cover"
       />
       <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false} />
     </section>
