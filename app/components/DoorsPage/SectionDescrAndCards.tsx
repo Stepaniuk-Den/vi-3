@@ -36,18 +36,19 @@ const SectionDescrAndCards: React.FC<ISectionDescrAndCards> = ({
       <div className="container">
         <h3 className="subTitleCl mt-6 text-left mb-4">{t.title}</h3>
         <div className="flex justify-between gap-16">
-          <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
+          {/* <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
             {t.subTitle}
-          </h3>
-          <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
+          </h3> */}
+          {/* <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
             {t.subTitle2}
-          </h3>
+          </h3> */}
         </div>
         <ul
-          className={clsx("grid gap-7 pt-4", {
-            "grid-cols-2": columns === 2,
-            "grid-cols-4": columns === 4,
-          })}
+          className={clsx("grid gap-4 md:gap-7 pt-4","grid-cols-1",
+          columns === 2 && "sm:grid-cols-2", 
+          // columns === 3 && "sm:grid-cols-3",
+          columns === 4 && "sm:grid-cols-2 lg:grid-cols-4",
+        )}
         >
           {imgList.map((card, index) => {
             return (
@@ -64,6 +65,7 @@ const SectionDescrAndCards: React.FC<ISectionDescrAndCards> = ({
                     <ModalSwiperContent slides={images} initialSlide={index} />
                   )
                 }
+                imgFit="cover"
               />
             );
           })}

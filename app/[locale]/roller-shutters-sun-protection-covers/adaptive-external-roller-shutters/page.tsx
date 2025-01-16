@@ -26,6 +26,7 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
         tSectionItem={t.raw("GuideChannels")}
         size="w-1/2"
         titleBanner
+        imgFit="cover"
       />
       <SectionBannerAndDescr
         t={{
@@ -38,6 +39,7 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

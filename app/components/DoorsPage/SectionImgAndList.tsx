@@ -26,11 +26,11 @@ const SectionImgAndList: React.FC<ISectionImgAndListProps> = ({
         <TitleBanner>
           <h2 className="titleCl">{t.title}</h2>
         </TitleBanner>
-        <ul>
+        <ul className="flex flex-col gap-10">
           {Object.values(t.cards).map((card, index) => (
-            <li key={card.id} className="flex gap-24 mb-10 cursor-zoom-in">
+            <li key={card.id} className="flex flex-col sm:flex-row lg:gap-24">
               <div
-                className="relative border border-gray-300 rounded-md overflow-hidden w-1/3 h-[460px] cursor-zoom-in"
+                className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-1/3 h-[300px] md:h-[380px] lg:h-[460px] cursor-zoom-in"
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />
@@ -45,7 +45,7 @@ const SectionImgAndList: React.FC<ISectionImgAndListProps> = ({
                   fill
                 />
               </div>
-              <div className="flex flex-col gap-10 w-2/3">
+              <div className="flex flex-col lg:gap-10 w-full sm:w-2/3 md:w-2/3">
                 {card.parametersList && (
                   <NestedParameterDescList param={card.parametersList} />
                 )}

@@ -31,7 +31,7 @@ interface IProps {
 
 const ImgCarouselPage = ({
   imgList,
-  width = "max-w-md",
+  width = "max-w-[340px] sm:max-w-md md:max-w-lg lg:max-w-md",
   height = "h-[480px]",
 }: IProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
@@ -60,20 +60,17 @@ const ImgCarouselPage = ({
                 className={clsx("relative w-full cursor-zoom-in", height)}
                 onClick={() =>
                   openModal(
-                    <ModalSwiperContent slides={imgList} initialSlide={index} />,
-                    {
-                      classNameBtn: "top-[-11px] right-[-108px]",
-                      classNameModalContent: "w-[80vw] h-[90vh]",
-                      classNameBackdrop: "bg-customMarsala-accentLight"
-                    }
+                    <ModalSwiperContent slides={imgList} initialSlide={index} />
                   )
                 }
               >
                 <Image
-                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                  // sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 50vw, 33vw"
                   src={image.src}
                   alt={image.alt}
                   fill
+                  priority
                   className="rounded-md object-cover"
                 />
               </div>
@@ -81,7 +78,7 @@ const ImgCarouselPage = ({
           ))}
         </Swiper>
       </div>
-      <div className="max-w-[360px] flex mx-auto">
+      <div className="max-w-[340px] lg:max-w-[360px] flex mx-auto">
         <Swiper
           onSwiper={setThumbsSwiper}
           // loop={true}
@@ -94,12 +91,14 @@ const ImgCarouselPage = ({
         >
           {imgList.map((image) => (
             <SwiperSlide key={image.id}>
-              <div className="relative w-[110px] h-[80px] rounded-md">
+              <div className="relative w-[103.5px] h-[80px] lg:w-[110px] rounded-md">
                 <Image
-                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                  // sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 50vw, 33vw"
                   src={image.src}
                   alt={image.alt}
                   fill
+                  priority
                   className="rounded-md object-cover"
                 />
               </div>

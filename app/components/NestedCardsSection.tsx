@@ -103,7 +103,8 @@ const NestedCardsSection: React.FC<Props> = ({
                 alt={nestedCard.alt || ""}
                 size={size}
                 isRow={isRow}
-                onClick={() => openModal(<ModalSwiperContent slides={slides} initialSlide={idx} />)}
+                onClick={() => openModal(<ModalSwiperContent slides={slides} initialSlide={idx} />
+              )}
 
                 imgFit={imgFit}
                 // titleBannerCard={titleBannerCard}
