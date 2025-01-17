@@ -6,10 +6,14 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 import Logo from "@/public/window.svg";
+import Burger from '@/public/icons/Burger.svg';
 import Navigation from "./Navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
+import { useModal } from "./ModalProvider";
+import BurgerMenu from "./BurgerMenu";
+import { isAppleMobileDevice } from "@/helpers/detect-browser";
 
 // import dynamic from "next/dynamic";
 
@@ -23,10 +27,14 @@ const Header = () => {
   const [opacityTop, setOpacityTop] = useState(1);
   const [heightTop, setHeightTop] = useState(120);
 
+  const [isClient, setIsClient] = useState(false);
+
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
 
   const pathname = usePathname();
   const is404 = pathname === "/404";
+
+  const { openModal } = useModal()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,21 +51,45 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   if (is404) {
     return null;
   }
-
-  if (isTabletOrMobile) {
-    return <>{/* <p>BURGER</p> */}</>;
+  if (!isClient) {
+    return null;
+  }
+  if (isTabletOrMobile || isAppleMobileDevice) {
+    return <>
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-12 z-40 bg-customMarsala lg:hidden">
+        <div className="container">
+          <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
+            onClick={(() => (
+              openModal(
+                <BurgerMenu />,
+                {
+                  classNameBtn: "top-[11px] left-[10px]",
+                  classNameAnimationIn: "animate-burgerIn",
+                  classNameAnimationOut: "animate-burgerOut"
+                }
+              )
+            ))}>
+            <Burger />
+          </div>
+        </div>
+      </header>
+    </>;
   }
 
   return (
     <>
-      <header
+      {!isAppleMobileDevice && < header
         style={{
           height: `${heightHeader}px`,
         }}
-        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 lg:flex flex-col justify-center"
+        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-40 lg:flex flex-col justify-center"
       >
         <div
           style={{
@@ -79,7 +111,7 @@ const Header = () => {
             <LocaleSwitcher />
           </div>
         </div>
-      </header>
+      </header >}
     </>
   );
 };

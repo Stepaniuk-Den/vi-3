@@ -32,8 +32,8 @@ const SectionCardsAndList: React.FC<ISectionCardsAndListProps> = ({ t }) => {
           </h3>
         )}
 
-        <ul className="flex gap-4">
-          <li className=" w-1/3">
+        <ul className="flex flex-col sm:flex-row gap-4">
+          <li className="w-full sm:w-1/3">
             <ImagesComponent
               className="flex flex-col relative"
               list={images.slice(0, 1)}
@@ -41,9 +41,9 @@ const SectionCardsAndList: React.FC<ISectionCardsAndListProps> = ({ t }) => {
               height="h-[40rem]"
             />
           </li>
-          <li className="w-2/3">
+          <li className="w-full sm:w-2/3">
             <ImagesComponent
-              className="flex flex-col relative"
+              className="flex flex-col relative sm:!gap-5 xl:!gap-4"
               list={images.slice(1, 3)}
               width="w-full"
               height="h-[18.5rem]"

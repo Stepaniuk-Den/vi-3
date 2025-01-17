@@ -22,6 +22,7 @@ const AccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <SectionCardsFewDescr t={t.raw("RemoteControls")} />
     </>

@@ -175,7 +175,6 @@
       }
     }
   },
-
   "ContactForm": {
     "placeholderName": "Name",
     "placeholderEmail": "Email",
@@ -200,7 +199,6 @@
       "companyName": "VI-3"
     }
   },
-
   "Hero": {
     "slides": {
       "1": {
@@ -356,7 +354,7 @@
       },
       "4": {
         "id": "m9q27v",
-        "title": "Coefficient of heat transfer Uw",
+        "title": "Heat transfer coefficient",
         "svgName": "CoefficientOfHeatTransfer",
         "ariaLabel": "",
         "description": "We use the most energy-efficient PVC and aluminium windows and doors. You can save energy and money with our products."
@@ -1880,7 +1878,7 @@
       },
       "5": {
         "id": "L3XO8I",
-        "src": "/images/doors/doors_kommerling_5.jpeg",
+        "src": "/images/doors/doors_kommerling_5.jpg",
         "alt": ""
       }
     },
@@ -2327,7 +2325,7 @@
         }
       },
       "parametersList": {
-        "title": "Features and parameters of the AS 75 door system",
+        "title": "FEATURES AND PARAMETERS OF THE AS 75 DOOR SYSTEM",
         "list": {
           "1": {
             "desc": "Door profile depth – 75 mm"
@@ -2522,24 +2520,28 @@
       "imgList": {
         "1": {
           "id": "f5a2e9",
+          "title":"Schüco CT 70",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD.jpg",
           "alt": "",
           "description": "76AD – FRAME ALONG THE PERIMETER"
         },
         "2": {
           "id": "c7d4b1",
+          "title":"Schüco CT 70",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ MD.jpg",
           "alt": "",
           "description": "76MD – FRAME ALONG THE PERIMETER"
         },
         "3": {
           "id": "9e8f63",
+          "title":"Schüco LivIng 82",
           "src": "/images/doors/balcony_Terrace/Kömmerling_88_ MD.jpg",
           "alt": "",
           "description": "88MD – FRAME ALONG THE PERIMETER"
         },
         "4": {
           "id": "a1c4d7",
+          "title":"Schüco LivIng 82",
           "src": "/images/doors/balcony_Terrace/Kömmerling_76_ AD_scheme.jpg",
           "alt": "",
           "description": "76AD – LOW THRESHOLD"
@@ -2816,7 +2818,7 @@
           }
         },
         "2": {
-          "id": "v2a7fj",
+          "id": "v9a7b8",
           "title": "SK – 2",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
           "alt": "",
@@ -2832,7 +2834,7 @@
           }
         },
         "3": {
-          "id": "v2a7fj",
+          "id": "j5a7bj",
           "title": "SK – 3",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_3.png",
           "alt": "",
@@ -2921,7 +2923,7 @@
           }
         },
         "2": {
-          "id": "v2a7fj",
+          "id": "m2r7fj",
           "title": "SK – 2",
           "src": "/images/doors/fillings_panel_frohmasko/frohmasko_card_2.png",
           "alt": "",
@@ -3642,7 +3644,7 @@
         "alt": ""
       }
     },
-    "description2": "TWO SYSTEMS of HS-type aluminium sliding doors: Aliplast ULTRAGLIDE - option with a low threshold, angle solution and Aliplast VISOGLIDE plus. TUR-PLAST is a producer of individual solutions for HS-type aluminium sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Aliplast aluminium systems can be easily combined with energy-saving and passive Aliplast windows.",
+    "desc": "TWO SYSTEMS of HS-type aluminium sliding doors: Aliplast ULTRAGLIDE - option with a low threshold, angle solution and Aliplast VISOGLIDE plus. TUR-PLAST is a producer of individual solutions for HS-type aluminium sliding terrace doors with a low threshold. We offer comfort in a number of options. Thanks to the system and aesthetic compatibility and flexibility, sliding doors in the Aliplast aluminium systems can be easily combined with energy-saving and passive Aliplast windows.",
     "aluminumAliUltra": {
       "title": "Aluminum sliding terrace doors system - ULTRAGLIDE",
       "imgList": {
@@ -3789,6 +3791,109 @@
           },
           "2": {
             "desc": "Extremely narrow labyrinth post, 34 mm wide in the leaves."
+          }
+        }
+      }
+    }
+  },
+  "SlidingDoorsAluminumAluPage": {
+    "title": "ALUMINIUM SLIDING TERRACE DOORS - HS Type - Aluron Profiles",
+    "description": {
+      "p1": "The aluminium lift-and-slide doors based on the AS 178HS system is a combination of innovative solutions with modern design, creating a new generation of all-glass lift-and-slide doors. With this system, it is possible to build large movable terrace glazing with a low and warm threshold. Its construction mechanisms enable safe and comfortable sliding of heavy leaves, manually or automatically. The use of fittings from reputable suppliers allows for comfortable sliding of even very heavy leaves.",
+      "p2": "The AS 178HS system works well in buildings with large glazing, restaurants, or winter gardens, where key features include the ease of movement from inside the room to the outside, ease of use, design and aesthetics. An important advantage of this solution is the fact that it does not occupy the space of the interior and fits well in any arrangement. The innovative structure allows for the highest parameters of thermal insulation.",
+      "p3": "In the AS 178HS system, it is possible to completely enclose the frame in the insulation layer, which allows to emphasise the decorative qualities of the façade and gives the building an individual and unique character. The structure can be made in all development schemes available on the market (a solution with two or three tracks, a solution with the possibility of using fixed glazing in passive leaves, etc.)"
+    },
+    "imgList": {
+      "1": {
+        "id": "1",
+        "src": "/images/slidingDoors/hsAlu/hs-alu-1.jpg",
+        "alt": ""
+      },
+      "2": {
+        "id": "2",
+        "src": "/images/slidingDoors/hsAlu/hs-alu-2.jpg",
+        "alt": ""
+      }
+    },
+    "aluminumAlu": {
+      "title": "Aluminum sliding terrace doors system - ULTRAGLIDE",
+      "imgList": {
+        "1": {
+          "id": "1",
+          "src": "/images/slidingDoors/hsAlu/hs-alu-section-1.jpg",
+          "alt": ""
+        }
+      },
+      "parametersListTech": {
+        "title": "TECHNICAL DATA:",
+        "list": {
+          "1": {
+            "desc": "Sash installation depth – 78 mm."
+          },
+          "2": {
+            "desc": "Maximum glazing thickness – 59 mm."
+          },
+          "3": {
+            "desc": "Maximum construction height – 3300 mm."
+          },
+          "4": {
+            "desc": "Maximum moving sash weight – 400 kg."
+          },
+          "5": {
+            "desc": "Variant with 90 degrees sash connection angle – Yes."
+          },
+          "6": {
+            "desc": "Thermal insulation Uf – from 1,4 W/m2K."
+          },
+          "7": {
+            "desc": "Air permeability according to DIN EN 12207 (class) – 4."
+          },
+          "8": {
+            "desc": "Wind load resistance to DIN EN 12210 (class) – C3/B3."
+          },
+          "9": {
+            "desc": "Watertightness to DIN EN 12208 (class) – E 1350 Pa."
+          }
+        }
+      },
+      "parametersListSys": {
+        "title": "SYSTEM DESCRIPTION:",
+        "list": {
+          "1": {
+            "desc": "Narrow profiles."
+          },
+          "2": {
+            "desc": "Possibility of obtaining a no-threshold structure."
+          },
+          "3": {
+            "desc": "Possible complete installation in the insulation layer."
+          },
+          "4": {
+            "desc": "Connections in the crimp or pinned version (to facilitate the transport of large structures)."
+          },
+          "5": {
+            "desc": "2-, 3-, 4- and 6-element structures based on a 2- or 3-track frame."
+          },
+          "6": {
+            "desc": "Large glazings: 15-20% more light."
+          },
+          "7": {
+            "desc": "Possibility of including glazing from the inside and outside."
+          },
+          "8": {
+            "desc": "Fittings with the possibility of automation of control and leaf opening (also from a smartphone)."
+          },
+          "9": {
+            "desc": "Maximum width of the structure – thanks to the system connection of the frames."
+          },
+          "10": {
+            "desc": "Rich colour choice, modern design."
+          },
+          "11": {
+            "desc": "Simple frame drainage system."
+          },
+          "12": {
+            "desc": "Compatibility with Aluron systems (transoms without the need to duplicate frames)."
           }
         }
       }

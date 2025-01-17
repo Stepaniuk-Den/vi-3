@@ -21,6 +21,7 @@ const DoorsAlumAluron: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <SectionDescImagesAndList t={t.raw("DoorSystemAS75")} />
       <SectionDescImagesAndList

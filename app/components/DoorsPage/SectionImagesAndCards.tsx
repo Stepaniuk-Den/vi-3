@@ -37,11 +37,11 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
         <ImagesComponent
           className="mb-7 justify-around"
           list={imgList.slice(0, 3)}
-          width="w-[16rem]"
-          height="h-[16rem]"
+          width="w-[10rem] sm:w-[16rem]"
+          height="h-[6rem] sm:h-[16rem]"
         />
         {isCards && (
-          <ul className="grid grid-cols-3 gap-6">
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {imgList.slice(3, 6).map((card, index) => {
               return (
                 <NestedCard
@@ -60,6 +60,7 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
                       />
                     )
                   }
+                  imgFit="cover"
                 />
               );
             })}
