@@ -1,12 +1,12 @@
 "use client";
 import { IImgList, IParameterItem } from "@/helpers/interfaces";
+import { useModal } from "../ModalProvider";
 import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
 import NestedCard from "../NestedCard";
 import TitleBanner from "../TitleBanner";
 import clsx from "clsx";
 import ModalSwiperContent from "../ModalSwiperContent";
-import { useModal } from "../ModalProvider";
 
 interface ISectionListAndCardsProps {
   t: {
@@ -54,10 +54,11 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
           <h3 className="subTitleCl mt-6 text-left">{t.subTitle}</h3>
         )}
         <ul
-          className={clsx("grid gap-7 pt-8", {
-            "grid-cols-2": columns === 2,
-            "grid-cols-3": columns === 3,
-          })}
+          className={clsx("grid gap-4 md:gap-7 pt-8","grid-cols-1",
+          columns === 2 && "sm:grid-cols-2", 
+          // columns >= 4 && "lg:grid-cols-4",
+          columns === 3 && "sm:grid-cols-3"
+        )}
         >
           {imgList.map((card, index) => {
             return (
@@ -74,6 +75,7 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
                     <ModalSwiperContent slides={images} initialSlide={index} />
                   )
                 }
+                imgFit="cover"
               />
             );
           })}

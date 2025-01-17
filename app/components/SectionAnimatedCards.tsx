@@ -11,10 +11,10 @@ const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
         <TitleBanner>
           <h2 className="titleCl">{t.title}</h2>
         </TitleBanner>
-        <ul className="grid grid-cols-3 gap-7 pt-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 justify-items-center">
           {Object.values(t.cards).map((card) => (
             <li key={card.id} className="">
-              <div className="relative w-96 h-[720px] overflow-hidden  shadow-lg group hover:bg-customMarsala-accentLight">
+              <div className="relative w-80 sm:w-96 md:w-80 lg:w-96 h-[80vh] sm:h-[720px] overflow-hidden  shadow-lg group hover:bg-customMarsala-accentLight">
                 <div className="absolute inset-0 w-full h-full transition-transform duration-300 ease-in-out group-hover:-translate-y-2/3 ">
                   <Image
                     src={card.src}

@@ -27,6 +27,7 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         titleBanner
         positioning={"grid"}
+        imgFit="cover"
       />
       <SectionBannerAndDescr
         t={{
@@ -39,12 +40,14 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <NestedCardsSection
         tSectionItem={tAccessories.raw("ExternalRS")}
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

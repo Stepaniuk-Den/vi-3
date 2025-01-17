@@ -21,6 +21,7 @@ const DoorsAlumAliplast: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         size="w-full"
         isRow={false}
+        imgFit="cover"
       />
       <SectionImgAndList t={t.raw("Superial800Card")} isShowSecondList />
       <SectionImgAndList t={t.raw("Imperial800Card")} isShowSecondList />
