@@ -112,6 +112,17 @@ filter: brightness(60%) !important;
     @apply bg-customMarsala-accent border-customMarsala
     shadow-none;
   }
+
+  .after-line {
+    position: absolute;
+    content: "";
+    right: 50%;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    transform: translateX(50%);
+  }
 }
 
 /* .overlay {

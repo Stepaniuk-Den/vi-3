@@ -90,7 +90,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       {children}
       {isOpen && (
         <div
-          className={clsx(`fixed top-0 left-0 w-full h-full  z-50 flex justify-center items-center transition-transform tra`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
+          className={clsx(`fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
         >
           <div
             className={clsx("absolute rounded-md", classNameModalContent)}
@@ -98,7 +98,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
           >
             {content}
             <button
-              className={clsx(" absolute text-white p-2 rounded-full z-50 hover:text-customMarsala", classNameBtn)}
+              className={clsx(" absolute text-white p-2 rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
               onClick={closeModal}
             >
               <Close />
