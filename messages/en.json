@@ -177,24 +177,28 @@
   },
 
   "ContactForm": {
-    "name": "Name (required)",
-    "email": "Email address (required)",
-    "phoneNumber": "Phone number",
-    "message": "Message (required)",
     "placeholderName": "Name",
     "placeholderEmail": "Email",
     "placeholderPhoneNumber": "Phone number",
     "placeholderMessage": "Message",
     "acceptTerms": "By submitting this form, I consent to the processing of my personal data.",
-    "required": "Required field",
-    "minName": "Must be at least 2 characters",
-    "maxName": "Must contain at most 20 characters",
-    "requiredEmail": "Enter valid email address",
-    "minMessage": "Must be at least 15 characters",
-    "maxMessage": "Must contain at most 180 characters",
+    "required": "This field is required",
+    "minName": "String must contain at least 2 character(s)",
+    "maxName": "String must contain at most 30 character(s)",
+    "validEmail": "Enter valid email address",
+    "minMessage": "String must contain at least 6 character(s)",
+    "maxMessage": "String must contain at most 380 character(s)",
     "requiredAccept": "Please accept the agreement to continue",
-    "success": "Your message has been successfully sent to ",
-    "content": "Message content"
+    "AfterSubmitFormActions": {
+      "successModal": "Your message has been successfully sent!",
+      "errorModal": "An error occurred while sending the email. Please try again later.",
+      "adminEmailSubject": "New Contact Form Submission",
+      "userEmailSubject": "Thank you for your message!",
+      "userGreeting": "Dear",
+      "userMsgBody": "Thank you for reaching out to us. We will contact you shortly.",
+      "regards": "Best regards,",
+      "companyName": "VI-3"
+    }
   },
 
   "Hero": {

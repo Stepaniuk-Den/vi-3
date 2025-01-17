@@ -26,8 +26,8 @@ export default function Error({ error, reset }: Props) {
 
           <div className="subTitleCl text-center capitalize">
             {t.rich("description", {
-              p: (chunks) => <p className="mt-4">{chunks}</p>,
-              retry: (chunks) => (
+              p: (chunks: React.ReactNode) => <p className="mt-4">{chunks}</p>,
+              retry: (chunks: React.ReactNode) => (
                 <button
                   className="font-semibold underline underline-offset-2"
                   onClick={reset}
