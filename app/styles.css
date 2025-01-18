@@ -13,42 +13,42 @@
   height: calc(100vh - 170px);
   margin-top: 170px;
 }
-.myModalSwiper.swiper{
+.myModalSwiper.swiper {
   position: static !important;
 }
 
-.mySwiper .swiper-slide{
-filter: brightness(60%) !important;
+.mySwiper .swiper-slide {
+  filter: brightness(60%) !important;
 }
 
-.mySwiper .swiper-slide-thumb-active{
+.mySwiper .swiper-slide-thumb-active {
   filter: brightness(100%) !important;
-  }
+}
 
-.myModalSwiper .swiper-button-next{
+.myModalSwiper .swiper-button-next {
   right: 1% !important;
   color: #fff !important;
   top: 105% !important;
 }
 
-@media screen and (min-width: 640px){
-  .myModalSwiper .swiper-button-next{
-  top: 50% !important;
-  right: -8% !important; 
+@media screen and (min-width: 640px) {
+  .myModalSwiper .swiper-button-next {
+    top: 50% !important;
+    right: -8% !important;
   }
 }
 
-.myModalSwiper .swiper-button-prev{
+.myModalSwiper .swiper-button-prev {
   left: 1% !important;
   color: #fff !important;
   top: 105% !important;
 }
 
 @media screen and (min-width: 640px) {
-  .myModalSwiper .swiper-button-prev{
-  top: 50% !important;
-  left: -8% !important;
-} 
+  .myModalSwiper .swiper-button-prev {
+    top: 50% !important;
+    left: -8% !important;
+  }
 }
 
 .swiper-button-next,

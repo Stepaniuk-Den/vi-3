@@ -8,6 +8,8 @@ import SubmitButton from "./Buttons/SubmitButton";
 import { formHandlerSubmit } from "@/helpers/formHandlerSubmit";
 import { formSchema, IFormSchema } from "@/helpers/formSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import ModalNotificationForm from "./ModalNotificationForm";
+import { useModal } from "./ModalProvider";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
@@ -41,9 +43,15 @@ const ContactForm = () => {
   //   // }
   // };
 
+  const { openModal } = useModal();
+
   const onSubmit = async (data: IFormSchema) => {
     const { success, message } = await formHandlerSubmit(data, t2);
-    alert(message);
+    // alert(message);
+    openModal(
+      <ModalNotificationForm>{message}</ModalNotificationForm>
+      // slides={slides} initialSlide={idx} />
+    );
     if (success) reset();
     // try {
     //   const { success, message } = await formHandlerSubmit(data);
@@ -56,8 +64,8 @@ const ContactForm = () => {
   };
 
   return (
-    <>
-      <div className="flex flex-[0.4] flex-col gap-8 py-12 px-16 bg-customTeal rounded-3xl">
+    <section className="sectionCl">
+      <div className="container flex flex-[0.4] flex-col gap-8 py-12 px-16 bg-customTeal rounded-3xl">
         <form
           className="flex flex-col items-center"
           onSubmit={handleSubmit(onSubmit)}
@@ -177,7 +185,7 @@ const ContactForm = () => {
           </button> */}
         </form>
       </div>
-    </>
+    </section>
   );
 };
 
