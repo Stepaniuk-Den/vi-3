@@ -5,14 +5,14 @@ export const useDebouncedCallback = (callback: (key: string) => void, delay: num
 
   return (key: string, immediate: boolean = false) => {
     if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current); // очистка попереднього таймера
+      clearTimeout(timeoutRef.current);
     }
 
     if (immediate) {
-      callback(key); // виконуємо одразу
+      callback(key);
     } else {
       timeoutRef.current = setTimeout(() => {
-        callback(key); // виконуємо з затримкою
+        callback(key);
         timeoutRef.current = null;
       }, delay);
     }

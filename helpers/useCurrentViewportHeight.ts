@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useCurrentHeight = () => {
+const useCurrentViewportHeight = () => {
   const [height, setHeight] = useState(
     window.visualViewport?.height || window.innerHeight
   );
@@ -27,4 +27,4 @@ const useCurrentHeight = () => {
   return height;
 };
 
-export default useCurrentHeight;
+export default useCurrentViewportHeight;

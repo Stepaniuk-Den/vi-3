@@ -5,11 +5,14 @@ import Navigation from "./Navigation"
 import SocialLinks from "./SocialLinks"
 import clsx from "clsx";
 import { useHoveredMenuStore } from "@/store/hoveredMenuStore";
+import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
+import ScrollButton from "./Buttons/ScrollButton";
 
 const BurgerMenu = () => {
   const [scrollY, setScrollY] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
+  const height = useCurrentViewportHeight();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,17 +29,18 @@ const BurgerMenu = () => {
     };
   }, []);
 
-  console.log(hoveredMenu)
   return (
     <div className="w-full h-full bg-customMarsala flex items-start justify-center mt-16">
       <div
         ref={containerRef}
-        className={clsx('flex flex-col container h-dvh landscape:overflow-y-scroll',
+        style={{ height: `calc(${height}px - 80px)` }}
+        className={clsx('flex flex-col container',
           {
             "landscape:overflow-hidden": hoveredMenu !== null,
-            // "landscape:overflow-y-scroll": hoveredMenu === null,
+            "landscape:overflow-y-scroll": hoveredMenu === null,
           }
         )}>
+        {!hoveredMenu && <ScrollButton menuRef={containerRef} topIndent={64} variant="menuBtn" />}
         <LocaleSwitcher />
         <Navigation
           scrollY={scrollY} />

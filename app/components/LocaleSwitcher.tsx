@@ -7,6 +7,7 @@ import clsx from "clsx";
 
 import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { useClickOutside } from "@/helpers/useClickOutside";
+import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
 import FlagUA from "@/public/icons/FlagUa4x3.svg";
 import FlagGB from "@/public/icons/FlagGb4x3.svg";
 import { renderIcon } from "@/helpers/renderIcon";
@@ -28,25 +29,33 @@ const LocaleSwitcher = () => {
     },
   ];
 
-  const [isBtnLangVisible, setBtnLangVisible] = useState(false);
-  const ref = useClickOutside(() => setBtnLangVisible(false));
-
+  const [isBtnLangVisible, setBtnLangVisible] = useState<boolean>(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
+
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
   const params = useParams();
 
-  const otherLanguagesRef = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
+  useClickOutside<HTMLDivElement>(ref, () => (setBtnLangVisible(false), setHoveredMenu(null)));
+
+  const isMobile = isAppleMobileDevice || isMobileDevice;
 
   const handleMouseEnter = (key: string) => {
-    setHoveredMenu(key);
+    if (!isMobile) {
+      setHoveredMenu(key);
+    } else {
+      setHoveredMenu((prev) => (prev === key ? null : key));
+    }
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (otherLanguagesRef.current && e.target !== otherLanguagesRef.current) {
-      setHoveredMenu(null);
+    if (!isMobile) {
+      if (ref.current && e.target !== ref.current) {
+        setHoveredMenu(null);
+      }
     }
   };
 
@@ -71,14 +80,24 @@ const LocaleSwitcher = () => {
 
   return (
     <div
-      className="absolute right-4 top-2 flex flex-col"
-      ref={otherLanguagesRef}
-      onMouseEnter={() => handleMouseEnter("langBtn")}
+      className={clsx("absolute flex flex-col z-10",
+        {
+          "right-4 top-2": !isMobile,
+          "right-6 top-4": isMobile
+        }
+      )}
+      ref={ref}
+      onMouseEnter={() => !isMobile && handleMouseEnter("langBtn")}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={() => handleMouseEnter("langBtn")}
     >
       <button
-        ref={ref}
-        className="langBtnCl z-10"
+        className={clsx("z-10",
+          {
+            "langBtnCl": !isMobile,
+            "langBtnMobileCl": isMobile
+          }
+        )}
         type="button"
         aria-label="switch language"
       >
@@ -86,15 +105,22 @@ const LocaleSwitcher = () => {
         {languages.find((lang) => lang.lang === locale)?.label}
       </button>
       {hoveredMenu && (
-        <div className="absolute top-full flex flex-col pt-3 rounded-md">
+        <div className={clsx("absolute flex flex-col rounded-md",
+          {
+            "top-full pt-2": !isMobile,
+            "top-0 right-full": isMobile
+          }
+        )}>
           {otherLanguages.map((lang) => (
             <button
               key={lang.lang}
-              className={clsx("langBtnCl", {
+              className={clsx("opacity-0", {
                 "opacity-100 translate-x-0 text-customMarsala bg-white shadow-md":
-                  isBtnLangVisible || hoveredMenu,
-                "opacity-0": !hoveredMenu,
-                // "opacity-0 translate-y-14": !isBtnLangVisible,
+                  (isBtnLangVisible || hoveredMenu),
+                "": !hoveredMenu,
+                "": isMobile && !hoveredMenu,
+                "langBtnCl": !isMobile,
+                "langBtnMobileCl": isMobile
               })}
               type="button"
               onClick={() => onSelectChange(lang.lang)}
