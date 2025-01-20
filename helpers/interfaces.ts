@@ -175,4 +175,5 @@ export interface IFormData {
   email: string;
   phoneNumber?: string;
   message: string;
+  accept: boolean;
 }

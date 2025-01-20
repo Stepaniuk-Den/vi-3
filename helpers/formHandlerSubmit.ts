@@ -19,19 +19,21 @@ export async function formHandlerSubmit(
     };
   }
 
-  const { name, email, phoneNumber, message } = validatedData.data;
+  const { name, email, phoneNumber, message, accept } = validatedData.data;
 
   try {
     await sendMail({
       email: email,
       sendTo: "",
       subject: `${t2("adminEmailSubject")}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phoneNumber || "N/A"
-        }\nMessage: ${message}`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${
+        phoneNumber || "N/A"
+      }\nMessage: ${message}`,
       html: `<p><strong>Name:</strong> ${name}</p>
        <p><strong>Email:</strong> ${email}</p>
        <p><strong>Phone:</strong> ${phoneNumber || "N/A"}</p>
-       <p><strong>Message:</strong> ${message}</p>`,
+       <p><strong>Message:</strong> ${message}</p>
+      <p><strong>Form accept:</strong>${accept}</p>`,
     });
 
     await sendMail({
@@ -57,15 +59,14 @@ export async function formHandlerSubmit(
   }
 }
 
-  // return {
-  //   success: true,
-  //   message: "Contact form submitted successfully!",
-  //   formData: {},
-  //   // formData: {
-  //   //   name: "",
-  //   //   email: "",
-  //   //   phoneNumber: "",
-  //   //   message: "",
-  //   // },
-  // };
-
+// return {
+//   success: true,
+//   message: "Contact form submitted successfully!",
+//   formData: {},
+//   // formData: {
+//   //   name: "",
+//   //   email: "",
+//   //   phoneNumber: "",
+//   //   message: "",
+//   // },
+// };

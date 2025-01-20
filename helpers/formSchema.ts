@@ -11,13 +11,22 @@ export const formSchema = (t: (key: string) => string) => {
       .min(2, t("minName"))
       .max(30, t("maxName")),
     email: z.string().trim().min(1, t("required")).email(t("validEmail")),
-    phoneNumber: z.string().trim().optional(),
+    phoneNumber: z
+      .string()
+      .trim()
+      .optional()
+      .refine((value) => !value || /^(\+)?[0-9]{10,15}$/.test(value), {
+        message: t("validPhoneNumber"),
+      }),
     message: z
       .string()
       .trim()
       .min(1, t("required"))
       .min(6, t("minMessage"))
       .max(380, t("maxMessage")),
+    accept: z
+      .boolean()
+      .refine((value) => value, { message: t("requiredAccept") }),
   });
 };
 

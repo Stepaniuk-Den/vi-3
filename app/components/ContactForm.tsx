@@ -3,13 +3,14 @@
 import { useTranslations } from "use-intl";
 import { useForm } from "react-hook-form";
 // import { sendEmail } from "@/utils/send-email";
-// import Accept from "@/public/icons/ContactForm/accept.svg";
+import Accept from "@/public/icons/ContactForm/accept.svg";
 import SubmitButton from "./Buttons/SubmitButton";
 import { formHandlerSubmit } from "@/helpers/formHandlerSubmit";
 import { formSchema, IFormSchema } from "@/helpers/formSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import ModalNotificationForm from "./ModalNotificationForm";
 import { useModal } from "./ModalProvider";
+import clsx from "clsx";
 
 const ContactForm = () => {
   const t = useTranslations("ContactForm");
@@ -20,7 +21,7 @@ const ContactForm = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-    // clearErrors,
+    clearErrors,
   } = useForm<IFormSchema>({
     resolver: zodResolver(formSchema(t)),
     defaultValues: {
@@ -28,6 +29,7 @@ const ContactForm = () => {
       email: "",
       phoneNumber: "",
       message: "",
+      accept: false,
     },
     mode: "onBlur",
     // reValidateMode: "onBlur",
@@ -43,14 +45,19 @@ const ContactForm = () => {
   //   // }
   // };
 
-  const { openModal } = useModal();
+  const { openModal, closeModal } = useModal();
 
   const onSubmit = async (data: IFormSchema) => {
     const { success, message } = await formHandlerSubmit(data, t2);
     // alert(message);
     openModal(
-      <ModalNotificationForm>{message}</ModalNotificationForm>
+      <ModalNotificationForm closeModal={closeModal}>
+        {message}
+      </ModalNotificationForm>,
       // slides={slides} initialSlide={idx} />
+      {
+        classNameBackdrop: "bg-black bg-opacity-40 backdrop-blur-md",
+      }
     );
     if (success) reset();
     // try {
@@ -73,7 +80,10 @@ const ContactForm = () => {
         >
           <div className="w-full">
             <input
-              className="inputsCl capitalize"
+              className={clsx(
+                "inputsCl capitalize",
+                errors?.name && "border-customMarsala"
+              )}
               id="name"
               type="text"
               placeholder={t("placeholderName")}
@@ -110,7 +120,10 @@ const ContactForm = () => {
 
           <div className="w-full">
             <input
-              className="inputsCl"
+              className={clsx(
+                "inputsCl",
+                errors?.name && "border-customMarsala"
+              )}
               id="email"
               type="email"
               placeholder={t("placeholderEmail")}
@@ -127,11 +140,16 @@ const ContactForm = () => {
 
           <div className="w-full">
             <input
-              className="inputsCl"
+              className={clsx(
+                "inputsCl",
+                errors?.name && "border-customMarsala"
+              )}
               id="phoneNumber"
               type="tel"
               placeholder={t("placeholderPhoneNumber")}
-              {...register("phoneNumber")}
+              {...register("phoneNumber", {
+                onChange: () => clearErrors("phoneNumber"),
+              })}
             />
             <div className="errorWrapperCl">
               {errors?.phoneNumber && (
@@ -142,7 +160,10 @@ const ContactForm = () => {
 
           <div className="w-full">
             <textarea
-              className="inputsCl h-28 pt-3 resize-none"
+              className={clsx(
+                "inputsCl h-28 pt-3 resize-none",
+                errors?.name && "border-customMarsala"
+              )}
               autoCapitalize="sentences"
               id="message"
               placeholder={t("placeholderMessage")}
@@ -156,12 +177,12 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* <div className="group">
+          <div className="group self-start px-4">
             <input
               id="accept"
               type="checkbox"
               className="checkboxCl peer"
-             
+              {...register("accept")}
             />
             <label className="labelCheckCl" htmlFor="accept">
               <span className="iconCheckWrapCl">
@@ -169,7 +190,11 @@ const ContactForm = () => {
               </span>
               {t("acceptTerms")}
             </label>
-              </div> */}
+
+            <div className="errorWrapperCl">
+              {errors?.accept && <p>{errors?.accept?.message || "Error!"}</p>}
+            </div>
+          </div>
 
           {/* name="acceptTerms"
               required={true}
@@ -184,6 +209,23 @@ const ContactForm = () => {
             {loading ? "Sending..." : `${t("submit")}`}
           </button> */}
         </form>
+        <button
+          type="button"
+          className="linkToPageCl bg-black bg-opacity-80"
+          onClick={() =>
+            openModal(
+              <ModalNotificationForm closeModal={closeModal}>
+                OGOGO
+              </ModalNotificationForm>,
+              // slides={slides} initialSlide={idx} />
+              {
+                classNameBackdrop: "bg-black bg-opacity-40 backdrop-blur-md",
+              }
+            )
+          }
+        >
+          SUB
+        </button>
       </div>
     </section>
   );

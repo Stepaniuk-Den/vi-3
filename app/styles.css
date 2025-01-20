@@ -102,7 +102,7 @@
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-customMarsala focus:shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all;
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-[3px] focus:shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all;
   }
   .errorWrapperCl {
     @apply flex items-center h-8 pt-2 pb-4 px-5 text-s leading-5 text-customMarsala;
@@ -111,7 +111,7 @@
     @apply sr-only;
   }
   .labelCheckCl {
-    @apply flex items-center mb-8 text-xs cursor-pointer;
+    @apply flex items-center mb-3 cursor-pointer;
   }
   .iconCheckWrapCl {
     @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border border-solid border-customMarsala rounded-md shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all group-hover:border-customMarsala-accent group-focus:border-customMarsala-accent;
