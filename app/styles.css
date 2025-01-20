@@ -2,53 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-containerCl::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes submenuEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes submenuLeave {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-submenu-enter {
+  animation: submenuEnter 0.5s ease-in-out forwards;
+}
+
+.animate-submenu-leave {
+  animation: submenuLeave 0.5s ease-in-out forwards;
+}
+
+
+.scroll-containerCl::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
 .scroll-containerCl {
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .carousel-container {
   height: calc(100vh - 170px);
   margin-top: 170px;
 }
-.myModalSwiper.swiper{
+
+.myModalSwiper.swiper {
   position: static !important;
 }
 
-.mySwiper .swiper-slide{
-filter: brightness(60%) !important;
+.mySwiper .swiper-slide {
+  filter: brightness(60%) !important;
 }
 
-.mySwiper .swiper-slide-thumb-active{
+.mySwiper .swiper-slide-thumb-active {
   filter: brightness(100%) !important;
-  }
+}
 
-.myModalSwiper .swiper-button-next{
+.myModalSwiper .swiper-button-next {
   right: 1% !important;
   color: #fff !important;
   top: 105% !important;
 }
 
-@media screen and (min-width: 640px){
-  .myModalSwiper .swiper-button-next{
-  top: 50% !important;
-  right: -8% !important; 
+@media screen and (min-width: 640px) {
+  .myModalSwiper .swiper-button-next {
+    top: 50% !important;
+    right: -8% !important;
   }
 }
 
-.myModalSwiper .swiper-button-prev{
+.myModalSwiper .swiper-button-prev {
   left: 1% !important;
   color: #fff !important;
   top: 105% !important;
 }
 
 @media screen and (min-width: 640px) {
-  .myModalSwiper .swiper-button-prev{
-  top: 50% !important;
-  left: -8% !important;
-} 
+  .myModalSwiper .swiper-button-prev {
+    top: 50% !important;
+    left: -8% !important;
+  }
 }
 
 .swiper-button-next,
@@ -77,6 +126,7 @@ filter: brightness(60%) !important;
   .pageCl {
     @apply xl:pt-48 pt-9;
   }
+
   .sectionCl {
     @apply xl:pt-16 pt-9;
   }
@@ -101,30 +151,54 @@ filter: brightness(60%) !important;
     @apply transition-all duration-300 px-4 py-2 w-24 h-14 flex text-white items-center justify-between rounded-md hover:bg-customMarsala-accent hover:text-white;
   }
 
-  .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-customMarsala focus:shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all;
+  .langBtnMobileCl {
+    @apply langBtnCl px-2 py-1 w-16 h-10;
   }
+
+  .inputsCl {
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-customMarsala focus:shadow-customShadowInput cursor-pointer transition-all;
+  }
+
   .errorWrapperCl {
     @apply flex items-center h-8 pt-2 pb-4 px-5 text-s leading-5 text-customMarsala;
   }
+
   .checkboxCl {
     @apply sr-only;
   }
+
   .labelCheckCl {
     @apply flex items-center mb-8 text-xs cursor-pointer;
   }
+
   .iconCheckWrapCl {
-    @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border border-solid border-customMarsala rounded-md shadow-[0px_6px_8px_rgba(109,58,62,0.33)] cursor-pointer transition-all group-hover:border-customMarsala-accent group-focus:border-customMarsala-accent;
+    @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border border-solid border-customMarsala rounded-md shadow-customShadowInput cursor-pointer transition-all group-hover:border-customMarsala-accent group-focus:border-customMarsala-accent;
   }
+
   .iconCheckCl {
-    @apply inline-block w-5 h-5  transition-all;
+    @apply inline-block w-5 h-5 transition-all;
   }
+
 }
 
 @layer utilities {
-  .peer:checked + .labelCheckCl .iconCheckWrapCl {
-    @apply bg-customMarsala-accent border-customMarsala
-    shadow-none;
+  .peer:checked+.labelCheckCl .iconCheckWrapCl {
+    @apply bg-customMarsala-accent border-customMarsala shadow-none;
+  }
+
+  .after-line {
+    position: absolute;
+    content: "";
+    right: 50%;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    transform: translateX(50%);
+
+    &.marsala {
+      @apply bg-customMarsala;
+    }
   }
 }
 

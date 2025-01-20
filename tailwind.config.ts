@@ -51,12 +51,13 @@ export default {
       boxShadow: {
         customShadow:
           "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
+        customShadowInput: '0px 6px 8px rgba(109, 58, 62, 0.33)',
       },
       animation: {
         unfoldIn: 'unfoldIn 0.5s ease-out',
         unfoldOut: 'unfoldOut 0.5s ease-in',
-        burgerIn: 'burgerIn 0.5s',
-        burgerOut: 'burgerOut 0.5s',
+        burgerIn: 'burgerIn 0.5s ease-in-out',
+        burgerOut: 'burgerOut 0.5s ease-in-out',
       },
       keyframes: {
         unfoldIn: {
@@ -85,9 +86,6 @@ export default {
           '0%': {
             transform: 'translateX(-100%)',
           },
-          // '50%': {
-          //   transform: 'translateX(-50%)',
-          // },
           '100%': {
             transform: 'translateX(0)',
           },
@@ -96,9 +94,6 @@ export default {
           '0%': {
             transform: 'translateX(0)',
           },
-          // '50%': {
-          //   transform: 'scaleY(0.005) scaleX(1)',
-          // },
           '100%': {
             transform: 'translateX(-100%)',
           },
