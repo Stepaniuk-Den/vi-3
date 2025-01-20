@@ -33,8 +33,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const [content, setContent] = useState<ReactNode | null>(null);
   const [showAnimation, setShowAnimation] = useState(false);
   const [classNameBackdrop, setClassNameBackdrop] = useState<
-    string | undefined
-  >("");
+    string>("bg-customMarsala-accentLight");
   const [classNameModalContent, setClassNameModalContent] =
     useState<string>("w-[80vw] h-[90vh]");
   const [classNameBtn, setClassNameBtn] = useState<string>(
@@ -56,7 +55,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     setContent(modalContent);
     setIsOpen(true);
     setShowAnimation(true);
-    setClassNameBackdrop(classNameBackdrop);
+    setClassNameBackdrop(classNameBackdrop || "bg-customMarsala-accentLight");
     setClassNameModalContent(
       classNameModalContent || "w-[80vw] h-[80vh] sm:h-[90vh] "
     );
@@ -99,11 +98,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       {children}
       {isOpen && (
         <div
-          className={clsx(
-            `fixed bg-customMarsala-accentLight top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform tra`,
-            showAnimation ? classNameAnimationIn : classNameAnimationOut,
-            classNameBackdrop
-          )}
+          className={clsx(`fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
         >
           <div
             className={clsx("absolute rounded-md", classNameModalContent)}
@@ -111,10 +106,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
           >
             {content}
             <button
-              className={clsx(
-                " absolute text-white p-2 rounded-full z-30 hover:text-customMarsala",
-                classNameBtn
-              )}
+              className={clsx(" absolute text-white p-2 rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
               onClick={closeModal}
             >
               <Close />

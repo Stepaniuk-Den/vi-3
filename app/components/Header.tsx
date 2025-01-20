@@ -63,7 +63,7 @@ const Header = () => {
   }
   if (isTabletOrMobile || isAppleMobileDevice) {
     return <>
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-12 z-40 bg-customMarsala lg:hidden">
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
         <div className="container">
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
             onClick={(() => (
@@ -72,7 +72,9 @@ const Header = () => {
                 {
                   classNameBtn: "top-[11px] left-[10px]",
                   classNameAnimationIn: "animate-burgerIn",
-                  classNameAnimationOut: "animate-burgerOut"
+                  classNameAnimationOut: "animate-burgerOut",
+                  classNameBackdrop: "bg-customMarsala",
+                  classNameModalContent: "w-full h-full"
                 }
               )
             ))}>
@@ -89,7 +91,7 @@ const Header = () => {
         style={{
           height: `${heightHeader}px`,
         }}
-        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-40 lg:flex flex-col justify-center"
+        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-20 lg:flex flex-col justify-center"
       >
         <div
           style={{
