@@ -54,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const keys = Object.keys(messages.Navigation);
   const pathnameHome = pathname.slice(3) === ""
   const selectedLayoutSegment = pathname && !pathnameHome ? `${pathname.split("/")[2]}` : "home";
-  const selectedSubMenuSegment = selectedLayoutSegment !== "home" ? `${pathname.split("/")[3]}` : null;
+  const selectedSubMenuSegment = selectedLayoutSegment !== "home" ? `${pathname.split("/")[3]}` : "topMenu";
 
   const isMobile = isAppleMobileDevice || isMobileDevice || isTabletOrMobile;
 
@@ -75,6 +75,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   );
 
   const handleClickOutside = (e?: MouseEvent | TouchEvent) => {
+    if (!isMobile) return
     const isScrollButton = (e?.target as HTMLElement)?.closest('div[data-id="subMenuBtn"]');
 
     if (isScrollButton) {
@@ -229,7 +230,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                         setActiveSubMenu(subIndex);
                       }
 
-                      const idxSub = isActiveSubMenuItem ? subIndex : subIndex + 1
+                      const idxSub = isActiveSubMenuItem && selectedSubMenuSegment !== "topMenu" ? subIndex : subIndex + 1
                       const isLastItem = subKeys.length === subIndex + 1
 
                       return (
