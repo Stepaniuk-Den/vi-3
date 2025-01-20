@@ -236,10 +236,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                       return (
                         <li
                           key={subIndex}
-                          className={clsx("relative w-full rounded-md hover:bg-customMarsala-accent hover:text-white opacity-0 bg-white transform",
-                            {
-                              "bg-customMarsala-accent text-white": isActiveSubMenuItem
-                            }
+                          className={clsx("relative w-full rounded-md hover:bg-customMarsala-accent hover:text-white opacity-0 bg-white transform"
                           )}
                           style={{
                             animation: `fadeIn 0.2s ease-in-out forwards`,
@@ -250,7 +247,11 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                         // }}
                         >
                           <Link
-                            className="flex lg:px-4 pl-8 pr-2 py-2"
+                            className={clsx("flex lg:px-4 pl-8 pr-2 py-2",
+                              {
+                                "bg-customMarsala-accent text-white": isActiveSubMenuItem
+                              }
+                            )}
                             href={`/${locale}${item.href}/${subItem.slug}`}
                             onClick={() => {
                               if (!isMobile) return
