@@ -9,10 +9,11 @@ interface ScrollButtonProps {
   topIndent?: number;
   className?: string;
   variant: "menuBtn" | "subMenuBtn";
+  dataId: string
 
 }
 
-const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, className, variant }) => {
+const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, className, variant, dataId }) => {
   const heightViewport = useCurrentViewportHeight();
   const [scrollDirection, setScrollDirection] = useState<"down" | "up">("down");
   const [hasMenuScroll, setHasMenuScroll] = useState(false);
@@ -20,8 +21,8 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, cla
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const variantStyles = clsx({
-    "bottom-3 right-6 fill-customMarsala bg-white": variant === "menuBtn",
-    "bottom-3 right-3 bg-customMarsala fill-white": variant === "subMenuBtn",
+    "bottom-6 right-6 fill-customMarsala bg-white": variant === "menuBtn",
+    "bottom-6 right-6 fill-white bg-customMarsala-accent": variant === "subMenuBtn",
   });
 
   const handleScroll = () => {
@@ -52,20 +53,6 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, cla
     }
   };
 
-  const updateScrollDirection = () => {
-    if (menuRef.current && !isScrollingRef.current) {
-      const scrollTop = menuRef.current.scrollTop;
-      const scrollHeight = menuRef.current.scrollHeight;
-      const clientHeight = menuRef.current.clientHeight;
-
-      if (scrollTop + clientHeight >= scrollHeight) {
-        setScrollDirection("up");
-      } else if (scrollTop <= 0) {
-        setScrollDirection("down");
-      }
-    }
-  };
-
   useEffect(() => {
     if (menuRef.current) {
       const menuElement = menuRef.current;
@@ -73,6 +60,20 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, cla
       const maxHeight = heightViewport - topIndent;
 
       setHasMenuScroll(menuHeight > maxHeight);
+
+      const updateScrollDirection = () => {
+        if (menuRef.current && !isScrollingRef.current) {
+          const scrollTop = menuRef.current.scrollTop;
+          const scrollHeight = menuRef.current.scrollHeight;
+          const clientHeight = menuRef.current.clientHeight;
+
+          if (scrollTop + clientHeight >= scrollHeight) {
+            setScrollDirection("up");
+          } else if (scrollTop <= 0) {
+            setScrollDirection("down");
+          }
+        }
+      };
 
       menuElement.addEventListener("scroll", updateScrollDirection);
 
@@ -98,6 +99,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({ menuRef, topIndent = 0, cla
           }
         )}
         onClick={handleScroll}
+        data-id={dataId}
       >
         <IconArrowRounded />
       </div>}

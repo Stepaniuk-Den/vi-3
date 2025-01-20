@@ -10,7 +10,9 @@ import ScrollButton from "./Buttons/ScrollButton";
 
 const BurgerMenu = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isSubMenuReady, setIsSubMenuReady] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const subMenuRef = useRef<HTMLUListElement | null>(null);
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
   const height = useCurrentViewportHeight();
 
@@ -29,6 +31,18 @@ const BurgerMenu = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (hoveredMenu) {
+      const timeout = setTimeout(() => {
+        setIsSubMenuReady(!!subMenuRef.current);
+      }, 300);
+
+      return () => clearTimeout(timeout);
+    } else {
+      setIsSubMenuReady(false);
+    }
+  }, [hoveredMenu]);
+
   return (
     <div className="w-full h-full bg-customMarsala flex items-start justify-center mt-16">
       <div
@@ -40,9 +54,11 @@ const BurgerMenu = () => {
             "landscape:overflow-y-scroll": hoveredMenu === null,
           }
         )}>
-        {!hoveredMenu && <ScrollButton menuRef={containerRef} topIndent={64} variant="menuBtn" />}
+        {!hoveredMenu && <ScrollButton menuRef={containerRef} topIndent={64} variant="menuBtn" dataId="menuBtn" />}
+        {hoveredMenu && isSubMenuReady && <ScrollButton menuRef={subMenuRef} topIndent={130} variant="subMenuBtn" dataId="subMenuBtn" />}
         <LocaleSwitcher />
         <Navigation
+          subMenuRef={subMenuRef}
           scrollY={scrollY} />
         <SocialLinks />
       </div>

@@ -13,7 +13,6 @@ import { useClickOutside } from "@/helpers/useClickOutside";
 import { useHoveredMenuStore } from "@/store/hoveredMenuStore";
 import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
 import { useDebouncedCallback } from "@/helpers/useDebouncedCallback";
-import ScrollButton from "./Buttons/ScrollButton";
 
 interface INavigationItem {
   title: string;
@@ -27,9 +26,10 @@ interface ILinkProps {
 
 interface NavigationProps {
   scrollY?: number;
+  subMenuRef?: React.RefObject<HTMLUListElement>;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
+const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const t = useTranslations("Navigation");
   const messages = useMessages();
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
@@ -42,7 +42,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
   const pathname = usePathname();
   const locale = useLocale();
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
-  const subMenuRef = useRef<HTMLUListElement | null>(null);
+
   const menuRef = useRef<HTMLUListElement | null>(null);
 
   const { closeModal } = useModal();
@@ -54,7 +54,8 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
   const keys = Object.keys(messages.Navigation);
   const pathnameHome = pathname.slice(3) === ""
   const selectedLayoutSegment = pathname && !pathnameHome ? `${pathname.split("/")[2]}` : "home";
-  const selectedSubMenuSegment = pathname && !pathnameHome ? `${pathname.split("/")[3]}` : "home";
+  const selectedSubMenuSegment = selectedLayoutSegment !== "home" ? `${pathname.split("/")[3]}` : null;
+
   const isMobile = isAppleMobileDevice || isMobileDevice || isTabletOrMobile;
 
   const refsMemo = useMemo(() => keys.map(() => React.createRef<HTMLLIElement>()), [keys]);
@@ -74,7 +75,14 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
   );
 
   const handleClickOutside = (e?: MouseEvent | TouchEvent) => {
-    const currentSubMenu = subMenuRef.current && subMenuRef.current.contains(e?.target as Node)
+    const isScrollButton = (e?.target as HTMLElement)?.closest('div[data-id="subMenuBtn"]');
+
+    if (isScrollButton) {
+      return;
+    }
+
+    const currentSubMenu = subMenuRef && subMenuRef.current && subMenuRef.current.contains(e?.target as Node)
+
     if (hoveredMenu && !currentSubMenu) {
       handleSetStateCallback()
       handleDebouncedMenu("", true);
@@ -93,12 +101,14 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
   const handleMouseLeave = () => {
     if (!isMobile) {
       handleDebouncedMenu("");
+      setActiveSubMenu(null)
     }
   };
 
   function handleSetStateCallback() {
     setSubMenuZIndex(prev => (prev === 100 ? null : 100));
     setShowListItems(prev => (prev === "relative" ? "hidden" : "relative"));
+    setActiveSubMenu(null)
   }
 
   const handleClickInMobile = (key: string) => {
@@ -204,7 +214,6 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
                   }}
                   className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full lg:w-max items-start rounded-md overflow-hidden",
                   )}>
-                  <ScrollButton menuRef={subMenuRef} topIndent={130} variant="subMenuBtn" />
                   <ul
                     ref={subMenuRef}
                     className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white lg:max-w-max lg:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
@@ -216,19 +225,21 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
                   >
                     {subKeys.map((subItem, subIndex) => {
                       const isActiveSubMenuItem = selectedSubMenuSegment === subItem.slug;
-                      if (isActiveSubMenuItem && activeSubMenu !== index) {
-                        setActiveSubMenu(index);
+                      if (isActiveSubMenuItem && activeSubMenu !== subIndex) {
+                        setActiveSubMenu(subIndex);
                       }
 
-                      const idxSub = isActiveSubMenuItem ? index : index + 1
+                      const idxSub = isActiveSubMenuItem ? subIndex : subIndex + 1
+                      const isLastItem = subKeys.length === subIndex + 1
 
-                      console.log('isActiveSubMenuItem - ', isActiveSubMenuItem);
-                      console.log('selectedSubMenuSegment - ', selectedSubMenuSegment);
-                      console.log('subItem.slug - ', subItem.slug);
                       return (
                         <li
                           key={subIndex}
-                          className="relative w-full rounded-md hover:bg-customMarsala-accent hover:text-white opacity-0 bg-white transform"
+                          className={clsx("relative w-full rounded-md hover:bg-customMarsala-accent hover:text-white opacity-0 bg-white transform",
+                            {
+                              "bg-customMarsala-accent text-white": isActiveSubMenuItem
+                            }
+                          )}
                           style={{
                             animation: `fadeIn 0.2s ease-in-out forwards`,
                             animationDelay: `${0.2 + subIndex * 0.2}s`,
@@ -248,7 +259,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY }) => {
                           >
                             {subItem.title}
                           </Link>
-                          {idxSub !== activeSubMenu && <div className="after-line marsala" />}
+                          {idxSub !== activeSubMenu && !isLastItem && <div className="after-line marsala" />}
                         </li>
                       );
                     })}
