@@ -176,6 +176,7 @@
     }
   },
   "ContactForm": {
+    "title": "CONTACT US",
     "placeholderName": "Name",
     "placeholderEmail": "Email",
     "placeholderPhoneNumber": "Phone number",
@@ -362,6 +363,7 @@
       }
     }
   },
+
   "WindowsPage": {
     "title": "WINDOWS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",

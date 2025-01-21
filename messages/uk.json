@@ -177,6 +177,7 @@
   },
 
   "ContactForm": {
+    "title": "ЗВʼЯЗАТИСЯ З НАМИ",
     "placeholderName": "Ім'я",
     "placeholderEmail": "Електронна адреса",
     "placeholderPhoneNumber": "Номер телефону",

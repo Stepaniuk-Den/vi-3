@@ -115,6 +115,12 @@
   border-radius: 7px;
 }
 
+/* .group:focus-within .label,
+.inputsCl:not(:placeholder-shown) ~ .label {
+  transform: translateY(-180%);
+  color: red;
+} */
+
 @layer base {
   ol ::marker {
     color: rgb(88, 29, 34);
@@ -146,6 +152,20 @@
     @apply flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
   }
 
+  /* ======================== */
+  .submitBtn {
+    @apply relative flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala border border-solid border-white rounded-md transition-all before:content-[''] before:absolute before:inset-[4px] before:bg-customMarsala before:border before:border-solid before:border-white;
+  }
+
+  .submitBtn span {
+    @apply relative z-[1];
+  }
+
+  .submitBtn i {
+    @apply absolute inset-0 block before:content-[''] before:absolute before:top-0 before:left-[80%] before:w-[10px] before:h-1 before:bg-white before:skew-x-[325deg] before:transition-all before:duration-300 after:content-[''] after:absolute after:bottom-0 after:right-[80%] after:w-[10px] after:h-1 after:bg-white after:skew-x-[325deg] after:transition-all after:duration-300;
+  }
+  /* ======================== */
+
   .langBtnCl {
     @apply transition-all duration-300 px-4 py-2 w-24 h-14 flex text-white items-center justify-between rounded-md hover:bg-customMarsala-accent hover:text-white;
   }
@@ -155,7 +175,15 @@
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-none placeholder:text-customElement focus:border-[3px] focus:shadow-customShadowInput cursor-pointer transition-all;
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-white  placeholder:text-transparent focus:border-[3px] focus:shadow-customShadowInput focus:bg-transparent cursor-pointer transition-all duration-300 ease-linear;
+  }
+
+  .label {
+    @apply absolute left-4 top-1/2 -translate-y-1/2 text-customElement bg-white px-1 transition-all duration-300 ease-linear pointer-events-none;
+  }
+
+  .label.lTextarea {
+    @apply top-3 translate-y-0;
   }
 
   .errorWrapperCl {
@@ -171,7 +199,7 @@
   }
 
   .iconCheckWrapCl {
-    @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border border-solid border-customMarsala rounded-md shadow-customShadowInput cursor-pointer transition-all group-hover:border-customMarsala-accent group-focus:border-customMarsala-accent;
+    @apply flex justify-center items-center mr-4 w-7 h-6 text-white bg-white border-2 border-solid border-customElement rounded-md shadow-customShadowInput cursor-pointer transition-all group-hover:border-[3px] group-focus:border-[3px];
   }
 
   .iconCheckCl {
@@ -180,9 +208,29 @@
 }
 
 @layer utilities {
-  .peer:checked + .labelCheckCl .iconCheckWrapCl {
-    @apply bg-customMarsala-accent border-customMarsala shadow-none;
+  .inputsCl:focus + .label,
+  .inputsCl:not(:placeholder-shown) + .label {
+    @apply -translate-y-[180%] text-customElement text-sm;
   }
+
+  .inputsCl:focus + .label.lTextarea,
+  .inputsCl:not(:placeholder-shown) + .label.lTextarea {
+    @apply -translate-y-[110%];
+  }
+
+  .peer:checked + .labelCheckCl .iconCheckWrapCl {
+    @apply bg-customElement border-[3px] shadow-none;
+  }
+
+  /* ======================== */
+  .submitBtn:hover i::before {
+    @apply w-5 left-[10%];
+  }
+
+  .submitBtn:hover i::after {
+    @apply w-5 right-[10%];
+  }
+  /* ======================== */
 
   .after-line {
     position: absolute;
