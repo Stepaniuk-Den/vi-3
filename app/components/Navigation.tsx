@@ -96,6 +96,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
     if (!isMobile) {
       setHoveredMenu(key)
       handleDebouncedMenu(key);
+      setActiveSubMenu(null)
     }
   };
 
@@ -118,6 +119,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
     handleSetStateCallback()
 
     if (isClosing) {
+      setActiveSubMenu(null)
       handleDebouncedMenu("");
     } else {
       handleDebouncedMenu(key);
@@ -247,7 +249,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                         // }}
                         >
                           <Link
-                            className={clsx("flex lg:px-4 pl-8 pr-2 py-2",
+                            className={clsx("flex lg:px-4 pl-8 pr-2 py-2 rounded-md",
                               {
                                 "bg-customMarsala-accent text-white": isActiveSubMenuItem
                               }
