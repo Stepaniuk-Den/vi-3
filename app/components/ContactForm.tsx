@@ -76,7 +76,7 @@ const ContactForm = () => {
       <div className="container">
         <div className="flex flex-col w-full gap-8 p-7 shadow-lg rounded-md">
           <div>
-            <h2 className="titleCl mb-4">{t("title")}</h2>
+            <h2 className="titleCl laserCl mb-4">{t("title")}</h2>
             <Line className="marsala-center" color="marsala" />
           </div>
           <form
