@@ -15,13 +15,7 @@ type Props = {
   html?: string;
 };
 
-export const sendMail = async ({
-  sendTo,
-  email,
-  subject,
-  text,
-  html,
-}: Props) => {
+const sendMail = async ({ sendTo, email, subject, text, html }: Props) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     host: SMTP_SERVER_HOST,
