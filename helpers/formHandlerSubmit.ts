@@ -1,172 +1,73 @@
-// import { IFormData } from "./interfaces";
-
-// export const formHandlerSubmit = async (formData: IFormData) => {};
-
-"use server";
-
+// import sendMail from "@/app/api/email/route";
 import { formSchema } from "./formSchema";
-import { IActionResponse, IFormData } from "./interfaces";
+import { IFormData } from "./interfaces";
+import sendMail from "./send-mail";
 
 export async function formHandlerSubmit(
-  // prevState: IActionResponse | null,
-  formData: IFormData
+  formData: IFormData,
+  t2: (key: string) => string
 ) {
-  // : Promise<IActionResponse>
   // Simulate network delay
   // await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  // const unvalidatedData: IFormData = {
-  //   name: formData.get("name") as string,
-  //   email: formData.get("email") as string,
-  //   phoneNumber: formData.get("phoneNumber") as string,
-  //   message: formData.get("message") as string,
-  // };
-
-  // Validate the form data
-  // const validatedData = formSchema.safeParse(unvalidatedData);
-  const validatedData = formSchema.safeParse(formData);
+  const formSchemaMethod = formSchema((key) => key);
+  const validatedData = formSchemaMethod.safeParse(formData);
 
   if (!validatedData.success) {
     return {
       success: false,
       message: "Please fix the errors in the form",
-      // errors,
-      // errors: validatedData.error.flatten().fieldErrors,
-      // errors: { !formData ? "Data is required" : undefined}
-      // errors: {
-      //   name: !validatedData.name ? "Name is required" : undefined,
-      //   email: !email ? "Email is required" : undefined,
-      //   // phoneNumber: !phoneNumber ? "PhoneNumber is required" : undefined,
-      //   message: !message ? "Message is required" : undefined,
-      // },
     };
   }
-  // Here you would typically save the form to your database
-  console.log("Contact form submitted:", validatedData.data);
 
-  return {
-    success: true,
-    message: "Contact form submitted successfully!",
-    // formData: {},
-    // formData: {
-    //   name: "",
-    //   email: "",
-    //   phoneNumber: "",
-    //   message: "",
-    // },
-  };
+  const { name, email, phoneNumber, message, accept } = validatedData.data;
+
+  try {
+    await sendMail({
+      email: email,
+      sendTo: "",
+      subject: `${t2("adminEmailSubject")}`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${
+        phoneNumber || "N/A"
+      }\nMessage: ${message}`,
+      html: `<p><strong>Name:</strong> ${name}</p>
+       <p><strong>Email:</strong> ${email}</p>
+       <p><strong>Phone:</strong> ${phoneNumber || "N/A"}</p>
+       <p><strong>Message:</strong> ${message}</p>
+      <p><strong>Form accept:</strong>${accept}</p>`,
+    });
+
+    await sendMail({
+      email: email,
+      sendTo: email,
+      subject: `${t2("adminEmailSubject")}`,
+      text: "Thank you for contacting us. We will contact you shortly.",
+      html: `<p>${t2("userGreeting")} ${name},</p>
+       <p>${t2("userMsgBody")}</p>
+       <p>${t2("regards")}<br>${t2("companyName")}</p>`,
+    });
+
+    return {
+      success: true,
+      message: `${t2("successModal")}`,
+    };
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return {
+      success: false,
+      message: `${t2("errorModal")}`,
+    };
+  }
 }
 
-// ==============================================================
-
-// import { convertZodErrors } from "./convertZodErrors";
-// import { formSchema } from "./formSchema";
-// import { IActionResponse, IFormData } from "./interfaces";
-
-// export async function formHandlerSubmit(
-//   prevState: IActionResponse | null,
-//   formData: FormData
-// ): Promise<IActionResponse> {
-//   // Simulate network delay
-//   // await new Promise((resolve) => setTimeout(resolve, 1000));
-
-//   try {
-//     const unvalidatedData: IFormData = {
-//       name: formData.get("name") as string,
-//       email: formData.get("email") as string,
-//       phoneNumber: formData.get("phoneNumber") as string,
-//       message: formData.get("message") as string,
-//     };
-
-//     // Validate the form data
-//     const validatedData = formSchema.safeParse(unvalidatedData);
-
-//     if (!validatedData.success) {
-//       return {
-//         // success: false,
-//         // message: "Please fix the errors in the form",
-//         // errors: validatedData.error.flatten().fieldErrors,
-//         errors: convertZodErrors(validatedData.error),
-//         data: unvalidatedData,
-//         blurs: Object.fromEntries(
-//           Object.keys(unvalidatedData).map((key) => [key, true])
-//         ),
-//       };
-//     }
-
-//     // Here you would typically save the form to your database
-//     console.log("Contact form submitted:", validatedData.data);
-
-//     return {
-//       // success: true,
-//       message: "Contact form submitted successfully!",
-//       data: {
-//         name: "",
-//         email: "",
-//         phoneNumber: "",
-//         message: "",
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       // success: false,
-//       message: "An unexpected error occurred",
-//       data: {
-//         name: "",
-//         email: "",
-//         phoneNumber: "",
-//         message: "",
-//       },
-//     };
-//   }
-// }
-
-// ==============================================================
-// ==============================================================
-// ==============================================================
-
-// try {
-//   const unvalidatedData: IFormData = {
-//     name: formData.get("name") as string,
-//     email: formData.get("email") as string,
-//     phoneNumber: formData.get("phoneNumber") as string,
-//     message: formData.get("message") as string,
-//   };
-
-//   // Validate the form data
-//   const validatedData = formSchema.safeParse(unvalidatedData);
-
-//   if (!validatedData.success) {
-//     return {
-//       success: false,
-//       message: "Please fix the errors in the form",
-//       errors: validatedData.error.flatten().fieldErrors,
-//       // errors: {!unvalidatedData || !validatedData  ? data is required : undefined}
-//     };
-//   }
-
-//   // Here you would typically save the form to your database
-//   console.log("Contact form submitted:", validatedData.data);
-
-//   return {
-//     success: true,
-//     message: "Contact form submitted successfully!",
-//     // data: {
-//     //   name: "",
-//     //   email: "",
-//     //   phoneNumber: "",
-//     //   message: "",
-//     // },
-//   };
-// } catch (error) {
-//   return {
-//     success: false,
-//     message: "An unexpected error occurred",
-//     // data: {
-//     //   name: "",
-//     //   email: "",
-//     //   phoneNumber: "",
-//     //   message: "",
-//     // },
-//   };
-// }
+// return {
+//   success: true,
+//   message: "Contact form submitted successfully!",
+//   formData: {},
+//   // formData: {
+//   //   name: "",
+//   //   email: "",
+//   //   phoneNumber: "",
+//   //   message: "",
+//   // },
+// };

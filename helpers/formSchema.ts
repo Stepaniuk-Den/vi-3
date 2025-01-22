@@ -1,15 +1,36 @@
 import { z } from "zod";
 
-const phoneRegex = new RegExp(/^\+?[1-9]\d{1,14}$/);
+// const phoneRegex = new RegExp(/^\+?[1-9]\d{1,14}$/);
 
-export const formSchema = z.object({
-  name: z.string().min(2).max(20),
-  email: z.string().email(),
-  phoneNumber: z.string().regex(phoneRegex, "Invalid number"),
-  message: z.string().min(6).max(20),
-});
+export const formSchema = (t: (key: string) => string) => {
+  return z.object({
+    name: z
+      .string()
+      .trim()
+      .min(1, t("required"))
+      .min(2, t("minName"))
+      .max(30, t("maxName")),
+    email: z.string().trim().min(1, t("required")).email(t("validEmail")),
+    phoneNumber: z
+      .string()
+      .trim()
+      .optional()
+      .refine((value) => !value || /^(\+)?[0-9]{10,15}$/.test(value), {
+        message: t("validPhoneNumber"),
+      }),
+    message: z
+      .string()
+      .trim()
+      .min(1, t("required"))
+      .min(6, t("minMessage"))
+      .max(380, t("maxMessage")),
+    accept: z
+      .boolean()
+      .refine((value) => value, { message: t("requiredAccept") }),
+  });
+};
 
-export type IFormSchema = z.infer<typeof formSchema>;
+export type IFormSchema = z.infer<ReturnType<typeof formSchema>>;
 
 // -------------------------------------------
 // export const formSchema = z.object({
