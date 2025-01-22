@@ -1,6 +1,7 @@
-import sendMail from "@/app/api/email/route";
+// import sendMail from "@/app/api/email/route";
 import { formSchema } from "./formSchema";
 import { IFormData } from "./interfaces";
+import sendMail from "./send-mail";
 
 export async function formHandlerSubmit(
   formData: IFormData,

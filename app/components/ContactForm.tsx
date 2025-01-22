@@ -61,6 +61,8 @@ const ContactForm = () => {
     if (success) reset();
   };
 
+  // =======================
+
   // try {
   //   const { success, message } = await formHandlerSubmit(data);
   //   alert(message);
@@ -73,13 +75,13 @@ const ContactForm = () => {
   return (
     <section className="sectionCl pb-24">
       <div className="container">
-        <div className="flex flex-col w-full gap-8 p-7 shadow-lg rounded-md">
+        <div className="flex flex-col w-full p-7 shadow-lg rounded-md">
           <div>
             <h2 className="titleCl laserCl mb-4">{t("title")}</h2>
             <Line className="marsala-center" color="marsala" />
           </div>
           <form
-            className="flex flex-col items-center"
+            className="flex flex-col items-center gap-3"
             onSubmit={handleSubmit(onSubmit)}
             noValidate
           >
@@ -138,6 +140,7 @@ const ContactForm = () => {
                   {...register("email", {
                     onChange: () => clearErrors("email"),
                   })}
+                  // style={{ backgroundColor: "#fff !important " }}
                 />
                 <label className="label" htmlFor="name">
                   {t("placeholderEmail")}

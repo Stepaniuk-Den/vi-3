@@ -175,6 +175,7 @@
       }
     }
   },
+
   "ContactForm": {
     "title": "CONTACT US",
     "placeholderName": "Name",
@@ -201,6 +202,7 @@
       "companyName": "VI-3"
     }
   },
+
   "Hero": {
     "slides": {
       "1": {
