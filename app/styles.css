@@ -14,19 +14,6 @@
   }
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 1;
-    transform: translateX(-100%);
-
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @keyframes submenuEnter {
   0% {
     opacity: 0;
@@ -175,6 +162,7 @@
   .laserCl {
     @apply relative before:content-[''] before:absolute before:top-0 before:-left-[100%] before:w-[100%] before:h-[100%] before:bg-customLaser before:animate-laser !important;
   }
+
   /* ======================== */
 
   .langBtnCl {
@@ -186,7 +174,7 @@
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent  placeholder:text-transparent placeholder:bg-transparent focus:border-[3px] focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent focus:border-[3px] focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
   }
 
   .label {
@@ -219,17 +207,18 @@
 }
 
 @layer utilities {
-  .inputsCl:focus + .label,
-  .inputsCl:not(:placeholder-shown) + .label {
+
+  .inputsCl:focus+.label,
+  .inputsCl:not(:placeholder-shown)+.label {
     @apply -translate-y-[180%] text-customElement text-sm;
   }
 
-  .inputsCl:focus + .label.lTextarea,
-  .inputsCl:not(:placeholder-shown) + .label.lTextarea {
+  .inputsCl:focus+.label.lTextarea,
+  .inputsCl:not(:placeholder-shown)+.label.lTextarea {
     @apply -translate-y-[110%];
   }
 
-  .peer:checked + .labelCheckCl .iconCheckWrapCl {
+  .peer:checked+.labelCheckCl .iconCheckWrapCl {
     @apply bg-customElement border-[3px] shadow-none;
   }
 
@@ -241,13 +230,14 @@
   .submitBtn:hover i::after {
     @apply w-5 right-[10%];
   }
+
   /* ======================== */
 
   .after-line {
     position: absolute;
     content: "";
     right: 50%;
-    bottom: 0;
+    top: 0;
     width: 95%;
     height: 1px;
     background-color: white;
@@ -255,6 +245,11 @@
 
     &.marsala {
       @apply bg-customMarsala;
+    }
+
+    &.bottom {
+      top: unset;
+      bottom: 0;
     }
   }
 }
