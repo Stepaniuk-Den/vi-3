@@ -38,7 +38,6 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const [subMenuZIndex, setSubMenuZIndex] = useState<number | null>(null);
   const [showListItems, setShowListItems] = useState<string>("relative");
   const [showSubMenuWithDelay, setShowSubMenuWithDelay] = useState(false);
-  // const [subMenuPosition, setSubMenuPosition] = useState(false);
 
   const pathname = usePathname();
 
@@ -66,14 +65,13 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
       if (key === "") {
         setHoveredMenu(null);
         setShowSubMenuWithDelay(false);
-        // setSubMenuPosition(false);
       } else {
         setShowSubMenuWithDelay(true);
-        // setSubMenuPosition(true);
       }
     },
     300
   );
+
 
   const handleClickOutside = (e?: MouseEvent | TouchEvent) => {
     if (!isMobile) return
@@ -84,7 +82,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
     }
 
     const currentSubMenu = subMenuRef && subMenuRef.current && subMenuRef.current.contains(e?.target as Node)
-    console.log('currentSubMenu - ', currentSubMenu);
+
     if (hoveredMenu && !currentSubMenu) {
       handleSetStateCallback()
       handleDebouncedMenu("", true);
@@ -136,7 +134,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
           setActiveMenu(index);
         }
 
-        const idx = isActive ? index : index + 1
+        const idx = isActive ? index : index - 1
 
         return (
           <li
@@ -144,7 +142,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             key={index}
             className={clsx(
               "group/item flex items-center justify-center min-w-max h-12 font-medium  cursor-pointer transition-transform duration-300 ease-in-out", {
-              "w-full items-start justify-between after:content-none": isMobile,
+              "w-full items-start justify-between active:text-customMarsala active:bg-white rounded-md": isMobile,
               "relative": showListItems === "relative",
               "hidden": showListItems === "hidden" && !isActiveMobile
             }
@@ -157,9 +155,10 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             onMouseLeave={handleMouseLeave}
           >
             {isMobile && !hoveredMenu && idx !== activeMenu && <div className="after-line" />}
+            {isMobile && !hoveredMenu && idx !== activeMenu && keys.length - 1 === index && <div className="after-line bottom" />}
             <Link
               href={`/${item.href}`}
-              onTouchStart={() => {
+              onClick={() => {
                 if (!isMobile) return
                 setTimeout(() => {
                   closeModal();
@@ -213,7 +212,8 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                   subMenuRef={subMenuRef}
                   item={item}
                   selectedSubMenuSegment={selectedSubMenuSegment}
-                  isMobile={isMobile} />
+                  isMobile={isMobile}
+                />
               )
             }
           </li>

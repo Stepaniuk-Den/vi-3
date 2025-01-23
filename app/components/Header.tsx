@@ -65,6 +65,7 @@ const Header = () => {
     return <>
       <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
         <div className="container">
+          <LocaleSwitcher />
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
             onClick={(() => (
               openModal(
