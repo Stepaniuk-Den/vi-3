@@ -38,7 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const [subMenuZIndex, setSubMenuZIndex] = useState<number | null>(null);
   const [showListItems, setShowListItems] = useState<string>("relative");
   const [showSubMenuWithDelay, setShowSubMenuWithDelay] = useState(false);
-  const [subMenuPosition, setSubMenuPosition] = useState(false);
+  // const [subMenuPosition, setSubMenuPosition] = useState(false);
 
   const pathname = usePathname();
 
@@ -66,10 +66,10 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
       if (key === "") {
         setHoveredMenu(null);
         setShowSubMenuWithDelay(false);
-        setSubMenuPosition(false);
+        // setSubMenuPosition(false);
       } else {
         setShowSubMenuWithDelay(true);
-        setSubMenuPosition(true);
+        // setSubMenuPosition(true);
       }
     },
     300
