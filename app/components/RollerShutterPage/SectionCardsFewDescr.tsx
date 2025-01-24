@@ -21,7 +21,7 @@ const SectionCardsFewDescr: React.FC<ISectionImgAndListProps> = ({ t }) => {
         <TitleBanner>
           <h2 className="titleCl">{t.title}</h2>
         </TitleBanner>
-        <ul className="grid grid-cols-4 gap-7 pt-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 pt-8">
           {Object.values(t.cards).map((card, index) => (
             <li key={card.id} className="w-full flex flex-col gap-2">
               <h3 className="subTitleCl xl:leading-none normal-case">

@@ -21,7 +21,7 @@ const RollerBlindsPage: React.FC<Props> = ({ params: { locale } }) => {
         tBtn={tButtons}
         source="rollersList"
         wrapper={false}
-        path="roller-shutters-sun-protection-covers"
+        path="roller-shutters"
         background="marsala"
       />
     </>

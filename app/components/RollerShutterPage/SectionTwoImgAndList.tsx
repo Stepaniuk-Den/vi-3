@@ -24,23 +24,23 @@ const SectionTwoImgAndList: React.FC<ISectionTwoImgAndListProps> = ({ t }) => {
         <TitleBanner>
           <h2 className="titleCl">{title}</h2>
         </TitleBanner>
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <ImagesComponent
-            className="mb-7 justify-around"
+            className="lg:mb-7 justify-around"
             list={images.slice(0, 1)}
-            width="w-[16rem]"
+            width="w-full lg:w-[16rem]"
             height="h-[28rem]"
           />
-          <div className="flex flex-col gap-5 pt-5">
+          <div className="flex flex-col gap-5 lg:pt-5">
             <p>{description}</p>
             {parametersList && (
               <NestedParameterDescList param={parametersList} />
             )}
           </div>
           <ImagesComponent
-            className="mb-7 justify-around"
+            className="lg:mb-7 justify-around"
             list={images.slice(1, 2)}
-            width="w-[16rem]"
+            width="w-full lg:w-[16rem]"
             height="h-[28rem]"
           />
         </div>

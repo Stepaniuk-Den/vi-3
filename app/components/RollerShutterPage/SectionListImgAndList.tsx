@@ -32,14 +32,16 @@ const SectionListImgAndList: React.FC<ISectionSectionListImgAndListProps> = ({
     <section className="sectionCl">
       <div className="container">
         <ul
-          className={clsx("grid gap-7", {
-            "grid-cols-2": columns === 2,
-            "grid-cols-3": columns === 3,
-          })}
+          className={clsx("grid gap-7","grid-cols-1",
+            // "grid-cols-2": columns === 2,
+            // "grid-cols-3": columns === 3,
+            columns === 2 && "sm:grid-cols-2", 
+            columns === 3 && "sm:grid-cols-3",
+          )}
         >
           {Object.values(t.cards).map((card, index) => (
             <li key={card.id}>
-              <h3 className="subTitleCl h-[4rem]">{card.title}</h3>
+              <h3 className="subTitleCl h-[2.5rem] sm:h-[4rem]">{card.title}</h3>
               {card.parametersList && (
                 <NestedParameterDescList param={card.parametersList} />
               )}
