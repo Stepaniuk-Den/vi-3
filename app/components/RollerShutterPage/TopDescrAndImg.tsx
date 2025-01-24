@@ -27,9 +27,9 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
       <div className="container">
         <h1 className="titleCl pt-16">{title}</h1>
         <Line className="marsala-center" color="marsala" />
-        <div className="flex gap-5">
+        <div className="flex flex-col sm:flex-row gap-5">
           <div
-            className="relative border border-gray-300 rounded-md overflow-hidden w-2/3 h-[460px] cursor-zoom-in"
+            className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-2/3 h-[460px] cursor-zoom-in"
             onClick={() =>
               openModal(
                 <ModalSwiperContent
@@ -48,7 +48,7 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
               fill
             />
           </div>
-          <div className="flex flex-col gap-1 pt-5 w-1/3">
+          <div className="flex flex-col gap-1 sm:pt-5 w-full sm:w-1/3">
             {descrList &&
               Object.values(descrList).map((descr, idx) => (
                 <p key={idx}>{descr.desc}</p>

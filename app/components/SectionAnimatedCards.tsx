@@ -1,8 +1,8 @@
+import { ISectionImgAndListProps } from "@/helpers/interfaces";
 import React from "react";
 import TitleBanner from "./TitleBanner";
 import Image from "next/image";
 import NestedParameterDescList from "./NestedParameterDescList";
-import { ISectionImgAndListProps } from "@/helpers/interfaces";
 
 const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
   return (

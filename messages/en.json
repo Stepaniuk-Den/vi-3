@@ -3964,7 +3964,7 @@
             }
           },
           "parametersList2": {
-            "title": "System specification:",
+            "title": "SYSTEM SPECIFICATION:",
             "list": {
               "1": {
                 "desc": "very easy assembly;"
@@ -4001,7 +4001,7 @@
             }
           },
           "parametersList2": {
-            "title": "System specification:",
+            "title": "SYSTEM SPECIFICATION:",
             "list": {
               "1": {
                 "desc": "possible to mount also in the already existing buildings, after appropriate adjustments are made in the lintel area, or less frequently in front of the window;"
@@ -4315,5 +4315,8 @@
         }
       }
     }
+  },
+  "ModalWindow":{
+    "ariaLabel":"Close"
   }
 }
