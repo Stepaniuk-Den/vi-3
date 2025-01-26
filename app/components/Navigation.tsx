@@ -41,7 +41,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
 
   const pathname = usePathname();
 
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  const isBigTablet = useMediaQuery({ minWidth: 1023.98 });
 
   const menuRef = useRef<HTMLUListElement | null>(null);
 
@@ -56,7 +56,8 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const selectedLayoutSegment = pathname && !pathnameHome ? `${pathname.split("/")[2]}` : "home";
   const selectedSubMenuSegment = selectedLayoutSegment !== "home" ? `${pathname.split("/")[3]}` : "topMenu";
 
-  const isMobile = isAppleMobileDevice || isMobileDevice || isTabletOrMobile;
+  const isMobile = isAppleMobileDevice || isMobileDevice || isBigTablet;
+  // const isMobile = isAppleMobileDevice || isMobileDevice || isTabletOrMobile;
 
   const refsMemo = useMemo(() => keys.map(() => React.createRef<HTMLLIElement>()), [keys]);
 
@@ -122,7 +123,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   };
 
   return (
-    <ul ref={menuRef} className={clsx("relative flex flex-col items-center justify-start gap-x-1 pb-3 uppercase w-full landscape:w-11/12 lg:py-3 lg:h-full lg:flex-row")}>
+    <ul ref={menuRef} className={clsx("relative flex flex-col items-center justify-start gap-x-1 pb-3 uppercase w-full landscape:w-11/12 xl:py-3 xl:h-full xl:flex-row")}>
       {keys.map((key, index) => {
         const item = t.raw(key) as INavigationItem;
         const subKeys = item.links ? Object.values(item.links) : [];
@@ -167,7 +168,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                 }, 500);
               }}
               className={clsx(
-                "flex items-center h-full py-3 px-5 rounded-md border border-transparent  hover:lg:border-white w-full",
+                "flex items-center h-full py-3 px-5 rounded-md border border-transparent  hover:xl:border-white w-full",
                 {
                   "text-white": !isActive && !isActiveMobile,
                   "text-customMarsala bg-white rounded-md": isActive || isActiveMobile,

@@ -19,8 +19,8 @@ const SchShLivingSlideSection = ({ desc, bannerTitle, imgList }: IProps) => {
         </TitleBanner>
         <ImagesComponent
           list={imgList.slice(3, 6)}
-          width={{ 1: "w-1/4", 2: "w-2/4", 3: "w-1/4" }}
-          height={{ 1: "h-[30rem]", 2: "h-[20rem]", 3: "h-[30rem]" }}
+          width={{ 1: "w-5/12 lg:w-1/4 max-sm:order-2", 2: "w-full lg:w-2/4", 3: "w-5/12 lg:w-1/4" }}
+          height={{ 1: "h-[15rem] lg:h-[30rem]", 2: "h-[15rem] sm:h-[10rem] lg:h-[20rem]", 3: "h-[15rem] lg:h-[30rem]" }}
         />
         <div className="my-4">
           {Object.values(desc).map((item, idx) => (
@@ -29,9 +29,9 @@ const SchShLivingSlideSection = ({ desc, bannerTitle, imgList }: IProps) => {
         </div>
         <ImagesComponent
           list={imgList.slice(6, 9)}
-          className="flex-col lg:flex-row"
-          width="w-full lg:w-1/3"
-          height="h-[20rem]"
+          className="flex-col sm:flex-row"
+          width="w-full sm:w-1/3"
+          height="h-[15rem] lg:h-[20rem]"
         />
       </div>
     </section>

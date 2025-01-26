@@ -13,7 +13,7 @@ import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
-import { isAppleMobileDevice } from "@/helpers/detect-browser";
+import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
 
 // import dynamic from "next/dynamic";
 
@@ -29,7 +29,7 @@ const Header = () => {
 
   const [isClient, setIsClient] = useState(false);
 
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  const isBigTablet = useMediaQuery({ minWidth: 1023.98 });
 
   const pathname = usePathname();
   const is404 = pathname === "/404";
@@ -61,9 +61,11 @@ const Header = () => {
   if (!isClient) {
     return null;
   }
-  if (isTabletOrMobile || isAppleMobileDevice) {
+
+  // if (isMobileDevice || isAppleMobileDevice) {
+  if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala">
         <div className="container">
           <LocaleSwitcher />
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
@@ -88,11 +90,12 @@ const Header = () => {
 
   return (
     <>
-      {!isAppleMobileDevice && < header
+      {/* use xl:hidden because in browser not see mobile devices */}
+      {(!isAppleMobileDevice || !isMobileDevice) && < header
         style={{
           height: `${heightHeader}px`,
         }}
-        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-30 lg:flex flex-col justify-center"
+        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-30 xl:flex flex-col justify-center"
       >
         <div
           style={{

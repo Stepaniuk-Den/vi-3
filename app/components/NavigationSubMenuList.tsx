@@ -54,11 +54,11 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
       style={{
         height: `calc(${heightViewport}px - 130px)`,
       }}
-      className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full lg:w-max items-start rounded-md overflow-hidden",
+      className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full xl:w-max items-start rounded-md overflow-hidden",
       )}>
       <ul
         ref={subMenuRef}
-        className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white lg:max-w-max lg:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
+        className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white xl:max-w-max xl:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
           {
             "animate-submenu-enter": hoveredMenu && isMobile,
             "animate-submenu-leave": !hoveredMenu && isMobile,
