@@ -25,14 +25,13 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
           <Line className="marsala-center" color="marsala" />
-
-          <ul className="flex justify-center gap-6">
+          <ul className="flex justify-center items-center flex-row flex-wrap xl:flex-nowrap gap-6">
             {imgList.map((imgItem) => (
               <NestedCard
                 key={imgItem.id}
                 src={imgItem.src || ""}
                 alt={imgItem.alt || ""}
-                size="w-1/4"
+                size="w-[292px]"
                 imgH="h-[354px]"
               />
             ))}

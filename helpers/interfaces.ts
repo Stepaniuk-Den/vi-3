@@ -54,6 +54,7 @@ export interface IItemCard {
   background?: "marsala" | "blue" | "";
   alignment?: "end" | "center" | "start";
   path?: string;
+  imgH?: string;
 }
 
 export interface INestedCard {

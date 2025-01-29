@@ -26,6 +26,7 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={false}
         path="sliding-doors"
         background="blue"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
     </>
   );

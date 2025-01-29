@@ -23,6 +23,7 @@ const RollerBlindsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={false}
         path="roller-shutters-sun-protection-covers"
         background="marsala"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
     </>
   );

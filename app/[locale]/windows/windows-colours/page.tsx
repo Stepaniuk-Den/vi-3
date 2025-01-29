@@ -21,9 +21,9 @@ const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
 
       <section className="sectionCl">
         <div className="container">
-          <ul className="flex flex-col lg:flex-row justify-between gap-6">
+          <ul className="flex justify-center items-center flex-row flex-wrap xl:flex-nowrap gap-6">
             {coloursList.map((colourItem) => (
-              <li key={colourItem.id}>
+              <li className="w-[292px]" key={colourItem.id}>
                 <ItemCard
                   description={colourItem.description}
                   src={colourItem.src}

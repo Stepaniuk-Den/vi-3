@@ -19,7 +19,7 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
   const tSectionsList = t.raw("SectionsList") as INestedCardsSectionsList;
 
   return (
-    <>
+    <div className="pb-24">
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -34,11 +34,18 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
           tSectionItem={tSectionItem as INestedCardsSectionItem}
           titleBanner={true}
           // titleBannerCard={idx === 0}
-          size={idx === 0 ? "w-1/4" : "w-full"}
+          size={idx === 0 ? "w-[212px] md:w-1/4" : "w-[380px] md:flex-1"}
+          imgH={
+            idx === 0
+              ? "h-[288px] md:h-[290px] lg:h-[360px] xl:h-[460px]"
+              : "h-[360px] lg:h-[368px] xl:h-[460px]"
+          }
+          positioning="flexWrap"
+          // isRow={false}
           // sectionIdx={idx}
         />
       ))}
-    </>
+    </div>
   );
 };
 

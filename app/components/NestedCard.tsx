@@ -18,8 +18,6 @@ const NestedCard: React.FC<INestedCard> = ({
   imgFit,
   onClick,
 }) => {
-
-  
   return (
     <li
       className={clsx(
@@ -55,7 +53,7 @@ const NestedCard: React.FC<INestedCard> = ({
         className={clsx(
           "flex w-full",
           {
-            "flex-row gap-8": isRow,
+            "flex-col md:flex-row gap-8": isRow,
             "flex-col gap-2": description && !isRow,
           }
           // description ? (isRow ? "flex-row gap-8" : "flex-col") : "flex-col"

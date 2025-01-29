@@ -19,9 +19,12 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
         <h2 className="titleCl mb-4">{t("title")}</h2>
         {/* <Line className="marsala-center" /> */}
         <p className="mb-8">{t("description")}</p>
-        <ul className="flex flex-col lg:flex-row justify-between gap-4">
+        <ul className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center lg:justify-between md:gap-2 lg:gap-4">
           {doorsTypesList.map((typeItem, idx) => (
-            <li key={typeItem.id}>
+            <li
+              className="md:max-w-[calc(50%-8px)] lg:max-w-[calc(33.333%-16px)] w-full"
+              key={typeItem.id}
+            >
               <ItemCard
                 title={typeItem.title}
                 description={typeItem.description}

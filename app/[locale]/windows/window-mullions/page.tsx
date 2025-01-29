@@ -22,8 +22,8 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
           <h1 className="titleCl pt-16">{t("title")}</h1>
           <Line className="marsala-center" color="marsala" />
 
-          <div className="flex justify-between">
-            <div className="relative w-1/2 h-[520px] border border-gray-300 rounded-md overflow-hidden">
+          <div className="flex max-md:flex-col max-md:items-center max-md:gap-6 justify-between">
+            <div className="relative max-md:max-w-[396px] w-full md:w-1/2 h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden">
               <Image
                 sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                 src={cardMullions.src || ""}
@@ -32,8 +32,8 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
                 priority
               />
             </div>
-            <div className="w-1/2">
-              <p className="mb-2 pl-6">{cardMullions.description}</p>
+            <div className="max-md:max-w-[396px] w-full md:w-1/2">
+              <p className="mb-2 md:pl-6">{cardMullions.description}</p>
             </div>
           </div>
         </div>
