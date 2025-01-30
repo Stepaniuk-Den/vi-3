@@ -13,7 +13,8 @@ const SubmitButton: React.FC<Props> = ({ isSubmitting }) => {
 
   return (
     <button disabled={isSubmitting} type="submit" className="linkToPageCl">
-      {isSubmitting ? `${t("sending")}` : `${t("submit")}`}
+      <span>{isSubmitting ? `${t("sending")}` : `${t("submit")}`}</span>
+      <i></i>
     </button>
   );
 };

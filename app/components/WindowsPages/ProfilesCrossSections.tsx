@@ -1,10 +1,13 @@
+"use client";
+
 import {
   IDesc,
   INestedCard,
   IProfilesCrossSections,
 } from "@/helpers/interfaces";
 import NestedCard from "../NestedCard";
-import clsx from "clsx";
+import { useModal } from "../ModalProvider";
+import ModalSwiperContent from "../ModalSwiperContent";
 
 type Props = {
   t: IProfilesCrossSections;
@@ -16,6 +19,13 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
     t.descriptionProfilesCrosSections
   ) as IDesc[];
 
+  const { openModal } = useModal();
+  const images = nestedCardsList.map((img) => ({
+    id: img.id || "",
+    src: img.src || "",
+    alt: img.alt || "",
+  }));
+
   return (
     <section className="sectionCl">
       <div className="container">
@@ -25,15 +35,23 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
         <div className="flex max-md:flex-col gap-6">
           <div className="flex-1">
             <ul>
-              <NestedCard
-                title={nestedCardsList[1].title}
-                description={nestedCardsList[1].description}
-                src={nestedCardsList[1].src || ""}
-                alt={nestedCardsList[1].alt || ""}
-                size="max-md:w-[236px] md:w-1/2"
-                imgH="h-[398px] md:h-[320px] lg:h-[400px] xl:h-[460px]"
-                className="mx-auto"
-              />
+              {nestedCardsList.slice(0, 1).map((nestedCard, idx) => (
+                <NestedCard
+                  key={nestedCard.id}
+                  title={nestedCard.title}
+                  description={nestedCard.description}
+                  src={nestedCard.src || ""}
+                  alt={nestedCard.alt || ""}
+                  size="max-md:w-[236px] md:w-1/2"
+                  imgH="h-[398px] md:h-[320px] lg:h-[400px] xl:h-[460px]"
+                  className="mx-auto"
+                  onClick={() =>
+                    openModal(
+                      <ModalSwiperContent slides={images} initialSlide={idx} />
+                    )
+                  }
+                />
+              ))}
             </ul>
             {/* ))}
         </div> */}
@@ -52,15 +70,26 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
 
           <div className="flex-1">
             <ul className="flex max-sm:flex-col max-sm:items-center justify-center  gap-1">
-              {nestedCardsList.slice(1, 3).map((nestedCard) => (
+              {nestedCardsList.slice(1, 3).map((nestedCard, idx) => (
                 <NestedCard
+                  key={nestedCard.id}
                   title={nestedCard.title}
                   description={nestedCard.description}
                   src={nestedCard.src || ""}
                   alt={nestedCard.alt || ""}
                   size="max-md:w-[236px] md:flex-1"
                   imgH="h-[398px] md:h-[320px] lg:h-[400px] xl:h-[460px]"
-                  // className="mr-auto"
+                  onClick={() =>
+                    openModal(
+                      <ModalSwiperContent
+                        slides={images}
+                        initialSlide={images.findIndex(
+                          (img) => img.id === nestedCard.id
+                        )}
+                      />
+                    )
+                  }
+                  className="mr-auto"
                 />
               ))}
             </ul>

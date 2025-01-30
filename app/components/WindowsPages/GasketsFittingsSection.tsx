@@ -1,6 +1,6 @@
 import { INestedCard, IParametersList } from "@/helpers/interfaces";
 import NestedParameterDescList from "../NestedParameterDescList";
-import Image from "next/image";
+import ModalTrigger from "../ModalTrigger";
 
 type Props = {
   t: {
@@ -26,6 +26,14 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
   const fittings = t.fittings;
   const cardFittings = fittings.card;
 
+  const getImageData = (card: INestedCard) => ({
+    id: card.id || "",
+    src: card.src || "",
+    alt: card.alt || "",
+  });
+  const imgGaskets = getImageData(cardGaskets);
+  const imgFittings = getImageData(cardFittings);
+
   return (
     <>
       <section className="sectionCl">
@@ -34,7 +42,18 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
           <div className="flex max-md:flex-col max-md:items-center max-md:gap-6 justify-between">
             <div className="max-md:max-w-[396px] w-full md:w-1/2">
               <h3 className="subTitleCl mb-3">{cardGaskets.title}</h3>
-              <div className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden">
+
+              <ModalTrigger
+                className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
+                src={cardGaskets.src || ""}
+                alt={cardGaskets.alt || ""}
+                img={imgGaskets}
+              />
+
+              {/* <div
+                className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
+                onClick={() => openModal(<ModalContent slide={imgGaskets} />)}
+              >
                 <Image
                   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                   src={cardGaskets.src || ""}
@@ -42,7 +61,7 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
                   fill
                   priority
                 />
-              </div>
+              </div> */}
             </div>
             <div className="max-md:max-w-[396px] w-full md:w-1/2">
               <h4 className="subTitleCl mb-2 md:pl-6">{gaskets.subTitle}</h4>
@@ -63,7 +82,18 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
           <div className="flex max-md:flex-col max-md:items-center max-md:gap-6 justify-between pt-10 md:pt-16">
             <div className="max-md:max-w-[396px] w-full md:w-1/2">
               <h3 className="subTitleCl mb-3">{cardFittings.title}</h3>
-              <div className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden">
+
+              <ModalTrigger
+                className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
+                src={cardFittings.src || ""}
+                alt={cardFittings.alt || ""}
+                img={imgFittings}
+              />
+
+              {/* <div
+                className="relative w-full h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
+                onClick={() => openModal(<ModalContent slide={imgFittings} />)}
+              >
                 <Image
                   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                   src={cardFittings.src || ""}
@@ -71,7 +101,7 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
                   fill
                   priority
                 />
-              </div>
+              </div> */}
             </div>
             <div className="max-md:max-w-[396px] w-full md:w-1/2 md:pl-6">
               <h3 className="subTitleCl mb-3">{fittings.subTitle}</h3>

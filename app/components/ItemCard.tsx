@@ -19,6 +19,7 @@ const ItemCard: React.FC<IItemCard> = ({
   slug,
   path,
   imgH = "h-[360px]",
+  onClick,
   //   ...rest
 }) => {
   // const router = useRouter();
@@ -57,6 +58,7 @@ const ItemCard: React.FC<IItemCard> = ({
           imgH,
           layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
         )}
+        onClick={onClick}
       >
         <Image
           sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"

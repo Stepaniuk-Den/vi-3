@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import CardsSection from "@/app/components/CardsSection";
 import MessageBanner from "@/app/components/MessageBanner";
 import PageTopDescription from "@/app/components/PageTopDescription";
+import ContactForm from "@/app/components/ContactForm";
 
 type Props = {
   params: { locale: string };
@@ -37,6 +38,7 @@ const DoorsPage: React.FC<Props> = ({ params: { locale } }) => {
         background="marsala"
         imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
+      <ContactForm />
     </>
   );
 };

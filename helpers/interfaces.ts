@@ -53,6 +53,7 @@ export interface IItemCard {
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
   alignment?: "end" | "center" | "start";
+  onClick?: () => void;
   path?: string;
   imgH?: string;
 }
