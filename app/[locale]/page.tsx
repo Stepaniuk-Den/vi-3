@@ -27,12 +27,13 @@ export default function IndexPage({ params: { locale } }: Props) {
   const tButtons = useTranslations("Buttons");
   const WindowFeaturesList = useTranslations("WindowFeatures");
   const MessageBannerT = useTranslations("MessageBanner");
+  const ManufacturerT = useTranslations("ManufacturerInfo");
 
   return (
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
       <Hero />
-      <ManufacturerInfo />
+      <ManufacturerInfo t={ManufacturerT} />
       <MessageBanner t={MessageBannerT} />
       <WindowsSection t={tWindows} tBtn={tButtons} />
       <DoorsSection t={tDoors} tBtn={tButtons} />
