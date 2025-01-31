@@ -1,4 +1,3 @@
-import ItemCard from "@/app/components/ItemCard";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ColourPalettesSection from "@/app/components/WindowsPages/ColourPalettesSection";
 import { IItemCard } from "@/helpers/interfaces";

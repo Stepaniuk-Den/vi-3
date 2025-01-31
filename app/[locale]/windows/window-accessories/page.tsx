@@ -1,5 +1,4 @@
 import Line from "@/app/components/Line";
-import NestedCard from "@/app/components/NestedCard";
 import HandlesDublinSection from "@/app/components/WindowsPages/HandlesDublinSection";
 import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusticSection";
 import WindowAccessoriesSection from "@/app/components/WindowsPages/WindowAccessoriesSection";

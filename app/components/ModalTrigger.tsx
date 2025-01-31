@@ -16,7 +16,7 @@ type Props = {
   idx?: number;
 };
 
-const ModalTrigger: React.FC<Props> = ({ className, src, alt, img, idx }) => {
+const ModalTrigger: React.FC<Props> = ({ className, src, alt, img }) => {
   const { openModal } = useModal();
 
   return (

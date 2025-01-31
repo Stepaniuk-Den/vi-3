@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 import { clsx } from "clsx";
 import { ModalProvider } from "./ModalProvider";
 import Header from "./Header";
-import dynamic from "next/dynamic";
 import ToTopButton from "./Buttons/ToTopButton";
 // const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
 //   ssr: false,

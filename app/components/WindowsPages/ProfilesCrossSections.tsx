@@ -70,7 +70,7 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
 
           <div className="flex-1">
             <ul className="flex max-sm:flex-col max-sm:items-center justify-center  gap-1">
-              {nestedCardsList.slice(1, 3).map((nestedCard, idx) => (
+              {nestedCardsList.slice(1, 3).map((nestedCard) => (
                 <NestedCard
                   key={nestedCard.id}
                   title={nestedCard.title}

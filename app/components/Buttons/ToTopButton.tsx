@@ -18,7 +18,8 @@ const ToTopButton = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      window.scrollY > 400 ? setIsVisible(true) : setIsVisible(false);
+      // window.scrollY > 400 ? setIsVisible(true) : setIsVisible(false);
+      setIsVisible(window.scrollY > 400);
     };
 
     window.addEventListener("scroll", toggleVisibility);
@@ -28,11 +29,12 @@ const ToTopButton = () => {
   }, []);
 
   const handleClickTotop = () => {
-    isVisible &&
-      window.scrollTo({
-        top: -1,
-        behavior: "smooth",
-      });
+    // if (isVisible) {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    // }
   };
 
   return (
