@@ -234,7 +234,8 @@ const ContactForm = () => {
             {loading ? "Sending..." : `${t("submit")}`}
           </button> */}
           </form>
-          <button
+
+          {/* <button
             type="button"
             className="submitBtn"
             onClick={
@@ -255,7 +256,7 @@ const ContactForm = () => {
           >
             <span>SUB</span>
             <i></i>
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

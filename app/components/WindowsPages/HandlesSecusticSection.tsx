@@ -1,6 +1,6 @@
 import { INestedCard } from "@/helpers/interfaces";
 import TitleBanner from "../TitleBanner";
-import Image from "next/image";
+import ModalTrigger from "../ModalTrigger";
 
 type Props = {
   t: {
@@ -18,7 +18,7 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
   const typesList = Object.values(t.typesList);
 
   return (
-    <section className="pt-4">
+    <section className="pt-4 md:pt-9">
       <div className="container">
         <TitleBanner>
           <h3 className="titleCl">{t.title}</h3>
@@ -26,18 +26,6 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
         <p className="mb-5">{t.description}</p>
 
         <h4 className="titleCl mb-5">{typesListTitle.title}</h4>
-
-        {/* <ul className="justify-center grid grid-cols-2 gap-6">
-          {typesList.map((typeItem) => (
-            <NestedCard
-              key={typeItem.id}
-              src={typeItem.src || ""}
-              alt={typeItem.alt || ""}
-              imgH="h-[460px]"
-            />
-          ))}
-        </ul> */}
-
         <ul className="flex flex-col gap-12 rounded-md pl-6">
           {typesList.map(
             (typeItem) =>
@@ -49,9 +37,20 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
                     <p>{typeItem.description}</p>
                   </div>
 
-                  <div className="relative w-1/2 h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden">
+                  <ModalTrigger
+                    className="relative w-[380px] md:w-1/2 h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"
+                    src={typeItem.src || ""}
+                    alt={typeItem.alt || ""}
+                    img={{
+                      id: typeItem.id || "",
+                      src: typeItem.src || "",
+                      alt: typeItem.alt || "",
+                    }}
+                  />
+
+                  {/* <div className="relative w-[380px] md:w-1/2 h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden">
                     <Image
-                      sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                      sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px, 317px,"
                       src={typeItem.src || ""}
                       alt={typeItem.alt || ""}
                       fill
@@ -62,7 +61,7 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
                       // })}
                       // placeholder="blur"
                     />
-                  </div>
+                  </div> */}
                 </li>
               )
           )}

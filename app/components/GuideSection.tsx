@@ -8,7 +8,7 @@ type Props = {
 const GuideSection: React.FC<Props> = ({ t, tBtn }) => {
   return (
     <section className="sectionCl">
-      <div className="xl:container lg:container sm:container">
+      <div className="container">
         <GuideProjectsElement
           subtitle={t("subtitle")}
           title={t("title")}

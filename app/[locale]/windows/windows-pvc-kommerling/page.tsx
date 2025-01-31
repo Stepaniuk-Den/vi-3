@@ -37,7 +37,7 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
   );
 
   return (
-    <>
+    <div className="pb-24">
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -55,13 +55,15 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           key={key}
           tSectionItem={tSectionsList[key]}
           titleBanner={true}
-          size={"w-full"}
+          // size={"w-full"}
+          size="w-[380px] md:flex-1"
+          imgH="h-[360px] lg:h-[368px] xl:h-[460px]"
           // titleBannerCard={idx === 0}
           // size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}
         />
       ))}
-    </>
+    </div>
   );
 };
 

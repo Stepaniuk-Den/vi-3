@@ -1,5 +1,5 @@
-import ItemCard from "@/app/components/ItemCard";
 import PageTopDescription from "@/app/components/PageTopDescription";
+import ColourPalettesSection from "@/app/components/WindowsPages/ColourPalettesSection";
 import { IItemCard } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -18,24 +18,10 @@ const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
   return (
     <>
       <PageTopDescription t={t} />
-
-      <section className="sectionCl">
-        <div className="container">
-          <ul className="flex flex-col lg:flex-row justify-between gap-6">
-            {coloursList.map((colourItem) => (
-              <li key={colourItem.id}>
-                <ItemCard
-                  description={colourItem.description}
-                  src={colourItem.src}
-                  alt={colourItem.alt}
-                  tBtn={tButtons("see")}
-                  alignment="end"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <ColourPalettesSection
+        tButtons={tButtons("see")}
+        coloursList={coloursList}
+      />
     </>
   );
 };

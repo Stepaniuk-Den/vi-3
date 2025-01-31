@@ -1,4 +1,5 @@
 "use client";
+
 import { INestedCard, INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useModal } from "./ModalProvider";
 import NestedCard from "./NestedCard";
@@ -26,6 +27,7 @@ type Props = {
   width?: string;
   height?: string;
   size?: string;
+  imgH?: string;
   // size?: "w-1/2" | "w-1/4" | "w-full";
   // isGrid?: boolean;
   // positioning?: "flex" | "grid2" | "grid3";
@@ -42,6 +44,7 @@ const NestedCardsSection: React.FC<Props> = ({
   // width,
   // height,
   size,
+  imgH,
   titleBanner,
   // isGrid = false,
   positioning,
@@ -55,7 +58,10 @@ const NestedCardsSection: React.FC<Props> = ({
 
   const slides = nestedCardsList.map((nestedCard) => ({
     id: nestedCard.id || "default-id",
-    src: typeof nestedCard.src === "string" ? nestedCard.src : nestedCard.src?.src || "",
+    src:
+      typeof nestedCard.src === "string"
+        ? nestedCard.src
+        : nestedCard.src?.src || "",
     alt: nestedCard.alt || "",
   }));
 
@@ -87,7 +93,7 @@ const NestedCardsSection: React.FC<Props> = ({
             // "grid grid-cols-3": positioning === "grid3",
           })}
         >
-          {nestedCardsList.map((nestedCard,idx) => {
+          {nestedCardsList.map((nestedCard, idx) => {
             // const currentWidth = getImageDimensionValue(width, idx, "w-full");
             // const currentHeight = getImageDimensionValue(
             //   height,
@@ -102,10 +108,13 @@ const NestedCardsSection: React.FC<Props> = ({
                 src={nestedCard.src || ""}
                 alt={nestedCard.alt || ""}
                 size={size}
+                imgH={imgH}
                 isRow={isRow}
-                onClick={() => openModal(<ModalSwiperContent slides={slides} initialSlide={idx} />
-              )}
-
+                onClick={() =>
+                  openModal(
+                    <ModalSwiperContent slides={slides} initialSlide={idx} />
+                  )
+                }
                 imgFit={imgFit}
                 // titleBannerCard={titleBannerCard}
                 // layout="horizontal"
