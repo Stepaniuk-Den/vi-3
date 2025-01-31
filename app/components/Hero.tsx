@@ -1,7 +1,11 @@
-import ImageCarousel from "./ImageCarousel";
+// import ImageCarousel from "./ImageCarousel";
+import ImageSplitter from "./ImageSplitter";
 
 export default function Hero() {
   return (
-      <ImageCarousel/>
+    <>
+      {/* <ImageCarousel /> */}
+      <ImageSplitter />
+    </>
   )
 }

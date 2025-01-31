@@ -8,6 +8,7 @@ import React, {
   useEffect,
   useState,
 } from "react";
+import { useTranslations } from "next-intl";
 import Close from "@/public/icons/Close.svg";
 
 interface ModalOptions {
@@ -37,12 +38,15 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const [classNameModalContent, setClassNameModalContent] =
     useState<string>("w-[80vw] h-[90vh]");
   const [classNameBtn, setClassNameBtn] = useState<string>(
-    "top-[-11px] right-[-10%]"
+    "top-[-10px] right-[-10%]"
   );
   const [classNameAnimationIn, setClassNameAnimationIn] =
     useState<string>("animate-unfoldIn");
   const [classNameAnimationOut, setClassNameAnimationOut] =
     useState<string>("animate-unfoldOut");
+
+    const t = useTranslations("ModalWindow");
+
 
   const openModal = (modalContent: ReactNode, options?: ModalOptions) => {
     const {
@@ -59,7 +63,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     setClassNameModalContent(
       classNameModalContent || "w-[80vw] h-[80vh] sm:h-[90vh] "
     );
-    setClassNameBtn(classNameBtn || "top-[-10%] sm:top-[-2%] right-[-10%]");
+    setClassNameBtn(classNameBtn || "top-[-10px] right-[-10%]");
     setClassNameAnimationIn(classNameAnimationIn || "animate-unfoldIn");
     setClassNameAnimationOut(classNameAnimationOut || "animate-unfoldOut");
   };
@@ -106,8 +110,9 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
           >
             {content}
             <button
-              className={clsx(" absolute text-white p-2 rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
+              className={clsx(" absolute text-white rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
               onClick={closeModal}
+              aria-label={t("ariaLabel")}
             >
               <Close />
             </button>

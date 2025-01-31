@@ -65,12 +65,13 @@ const Header = () => {
     return <>
       <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
         <div className="container">
+          <LocaleSwitcher />
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
             onClick={(() => (
               openModal(
                 <BurgerMenu />,
                 {
-                  classNameBtn: "top-[11px] left-[10px]",
+                  classNameBtn: "top-[11px] left-[10px] p-2",
                   classNameAnimationIn: "animate-burgerIn",
                   classNameAnimationOut: "animate-burgerOut",
                   classNameBackdrop: "bg-customMarsala",
@@ -91,7 +92,7 @@ const Header = () => {
         style={{
           height: `${heightHeader}px`,
         }}
-        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-20 lg:flex flex-col justify-center"
+        className="hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-30 lg:flex flex-col justify-center"
       >
         <div
           style={{

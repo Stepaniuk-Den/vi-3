@@ -2,8 +2,7 @@
 
 import React, { useMemo, useRef, useState } from "react";
 import clsx from "clsx";
-import { useLocale, useMessages, useTranslations } from "next-intl";
-import Link from "next/link";
+import { useMessages, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useMediaQuery } from "react-responsive";
 import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
@@ -13,6 +12,8 @@ import { useClickOutside } from "@/helpers/useClickOutside";
 import { useHoveredMenuStore } from "@/store/hoveredMenuStore";
 import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
 import { useDebouncedCallback } from "@/helpers/useDebouncedCallback";
+import NavigationSubMenuList from "./NavigationSubMenuList";
+import { Link } from "@/i18n/routing";
 
 interface INavigationItem {
   title: string;
@@ -33,14 +34,13 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const t = useTranslations("Navigation");
   const messages = useMessages();
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
+
   const [subMenuZIndex, setSubMenuZIndex] = useState<number | null>(null);
   const [showListItems, setShowListItems] = useState<string>("relative");
   const [showSubMenuWithDelay, setShowSubMenuWithDelay] = useState(false);
-  const [subMenuPosition, setSubMenuPosition] = useState(false);
 
   const pathname = usePathname();
-  const locale = useLocale();
+
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
 
   const menuRef = useRef<HTMLUListElement | null>(null);
@@ -65,14 +65,13 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
       if (key === "") {
         setHoveredMenu(null);
         setShowSubMenuWithDelay(false);
-        setSubMenuPosition(false);
       } else {
         setShowSubMenuWithDelay(true);
-        setSubMenuPosition(true);
       }
     },
     300
   );
+
 
   const handleClickOutside = (e?: MouseEvent | TouchEvent) => {
     if (!isMobile) return
@@ -96,21 +95,18 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
     if (!isMobile) {
       setHoveredMenu(key)
       handleDebouncedMenu(key);
-      setActiveSubMenu(null)
     }
   };
 
   const handleMouseLeave = () => {
     if (!isMobile) {
       handleDebouncedMenu("");
-      setActiveSubMenu(null)
     }
   };
 
   function handleSetStateCallback() {
     setSubMenuZIndex(prev => (prev === 100 ? null : 100));
     setShowListItems(prev => (prev === "relative" ? "hidden" : "relative"));
-    setActiveSubMenu(null)
   }
 
   const handleClickInMobile = (key: string) => {
@@ -119,7 +115,6 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
     handleSetStateCallback()
 
     if (isClosing) {
-      setActiveSubMenu(null)
       handleDebouncedMenu("");
     } else {
       handleDebouncedMenu(key);
@@ -139,7 +134,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
           setActiveMenu(index);
         }
 
-        const idx = isActive ? index : index + 1
+        const idx = isActive ? index : index - 1
 
         return (
           <li
@@ -147,7 +142,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             key={index}
             className={clsx(
               "group/item flex items-center justify-center min-w-max h-12 font-medium  cursor-pointer transition-transform duration-300 ease-in-out", {
-              "w-full items-start justify-between after:content-none": isMobile,
+              "w-full items-start justify-between active:text-customMarsala active:bg-white rounded-md": isMobile,
               "relative": showListItems === "relative",
               "hidden": showListItems === "hidden" && !isActiveMobile
             }
@@ -160,8 +155,9 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             onMouseLeave={handleMouseLeave}
           >
             {isMobile && !hoveredMenu && idx !== activeMenu && <div className="after-line" />}
+            {isMobile && !hoveredMenu && idx !== activeMenu && keys.length - 1 === index && <div className="after-line bottom" />}
             <Link
-              href={`/${locale}${item.href}`}
+              href={`/${item.href}`}
               onClick={() => {
                 if (!isMobile) return
                 setTimeout(() => {
@@ -211,64 +207,13 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             }
             {
               isSubMenu && showSubMenuWithDelay && (
-                <div
-                  style={{
-                    height: `calc(${heightViewport}px - 130px)`,
-                  }}
-                  className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full lg:w-max items-start rounded-md overflow-hidden",
-                  )}>
-                  <ul
-                    ref={subMenuRef}
-                    className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white lg:max-w-max lg:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
-                      {
-                        "animate-submenu-enter": subMenuPosition && isMobile,
-                        "animate-submenu-leave": !subMenuPosition && isMobile,
-                      }
-                    )}
-                  >
-                    {subKeys.map((subItem, subIndex) => {
-                      const isActiveSubMenuItem = selectedSubMenuSegment === subItem.slug;
-                      if (isActiveSubMenuItem && activeSubMenu !== subIndex) {
-                        setActiveSubMenu(subIndex);
-                      }
-
-                      const idxSub = isActiveSubMenuItem && selectedSubMenuSegment !== "topMenu" ? subIndex : subIndex + 1
-                      const isLastItem = subKeys.length === subIndex + 1
-
-                      return (
-                        <li
-                          key={subIndex}
-                          className={clsx("relative w-full rounded-md hover:bg-customMarsala-accent hover:text-white opacity-0 bg-white transform"
-                          )}
-                          style={{
-                            animation: `fadeIn 0.2s ease-in-out forwards`,
-                            animationDelay: `${0.2 + subIndex * 0.2}s`,
-                          }}
-                        // onAnimationEnd={(e) => {
-                        //   e.currentTarget.style.backgroundColor = "customMarsala"
-                        // }}
-                        >
-                          <Link
-                            className={clsx("flex lg:px-4 pl-8 pr-2 py-2 rounded-md",
-                              {
-                                "bg-customMarsala-accent text-white": isActiveSubMenuItem
-                              }
-                            )}
-                            href={`/${locale}${item.href}/${subItem.slug}`}
-                            onClick={() => {
-                              if (!isMobile) return
-                              setHoveredMenu(null)
-                              setTimeout(closeModal, 500);
-                            }}
-                          >
-                            {subItem.title}
-                          </Link>
-                          {idxSub !== activeSubMenu && !isLastItem && <div className="after-line marsala" />}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
+                <NavigationSubMenuList
+                  heightViewport={heightViewport}
+                  subMenuRef={subMenuRef}
+                  item={item}
+                  selectedSubMenuSegment={selectedSubMenuSegment}
+                  isMobile={isMobile}
+                />
               )
             }
           </li>

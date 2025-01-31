@@ -83,13 +83,13 @@ const LocaleSwitcher = () => {
       className={clsx("absolute flex flex-col z-10",
         {
           "right-4 top-2": !isMobile,
-          "right-6 top-4": isMobile
+          "right-6 top-3": isMobile
         }
       )}
       ref={ref}
       onMouseEnter={() => !isMobile && handleMouseEnter("langBtn")}
       onMouseLeave={handleMouseLeave}
-      onTouchStart={() => handleMouseEnter("langBtn")}
+      onClick={() => handleMouseEnter("langBtn")}
     >
       <button
         className={clsx("z-10",
