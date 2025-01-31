@@ -10,7 +10,8 @@ const LinkToPage: React.FC<ILinkToPage> = ({
 }) => {
   return (
     <Link href={href} className={clsx(className, btnOffset, "linkToPageCl")}>
-      {children}
+      <span>{children}</span>
+      <i></i>
     </Link>
   );
 };

@@ -23,6 +23,13 @@ export interface IWindowSvgItems {
   }[];
 }
 
+export interface IButtons {
+  see?: string;
+  submit?: string;
+  sending?: string;
+  toTop?: string;
+}
+
 export interface IDesc {
   title?: string;
   desc?: string;

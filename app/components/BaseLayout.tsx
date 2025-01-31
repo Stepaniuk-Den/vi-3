@@ -1,10 +1,15 @@
-import {  open_sans, roboto } from "../fonts";
+import { open_sans, roboto } from "../fonts";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import { clsx } from "clsx";
 import { ModalProvider } from "./ModalProvider";
 import Header from "./Header";
+import dynamic from "next/dynamic";
+import ToTopButton from "./Buttons/ToTopButton";
+// const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
+//   ssr: false,
+// });
 
 type Props = {
   children: ReactNode;
@@ -27,8 +32,9 @@ export default async function BaseLayout({ children, locale }: Props) {
       >
         <NextIntlClientProvider messages={messages}>
           <ModalProvider>
-          <Header />
-          <main>{children}</main>
+            <Header />
+            <main>{children}</main>
+            <ToTopButton />
           </ModalProvider>
         </NextIntlClientProvider>
       </body>

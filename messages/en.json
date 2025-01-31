@@ -21,7 +21,8 @@
   "Buttons": {
     "see": "See all",
     "submit": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "toTop": "Scroll up"
   },
   "Navigation": {
     "home": {
