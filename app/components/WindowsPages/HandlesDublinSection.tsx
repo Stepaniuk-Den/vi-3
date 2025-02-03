@@ -38,8 +38,9 @@ const HandlesDublinSection: React.FC<Props> = ({ t }) => {
               key={imgItem.id}
               src={imgItem.src || ""}
               alt={imgItem.alt || ""}
-              size="w-[380px] md:w-[354px] lg:w-[478px] xl:w-[606px]"
-              imgH="h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px]"
+              size="w-full sm:w-[380px] md:w-[354px] lg:w-[478px] xl:w-[606px]"
+              imgH="h-[240px] sm:h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px]"
+              imgFit="cover"
               onClick={() =>
                 openModal(
                   <ModalSwiperContent slides={images} initialSlide={idx} />

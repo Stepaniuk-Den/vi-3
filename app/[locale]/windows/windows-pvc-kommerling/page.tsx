@@ -55,9 +55,9 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           key={key}
           tSectionItem={tSectionsList[key]}
           titleBanner={true}
-          // size={"w-full"}
-          size="w-[380px] md:flex-1"
-          imgH="h-[360px] lg:h-[368px] xl:h-[460px]"
+          size="w-full sm:w-[380px] md:flex-1"
+          imgH="h-[240px] md:h-[360px] lg:h-[368px] xl:h-[460px]"
+          imgFit="cover"
           // titleBannerCard={idx === 0}
           // size={idx === 0 ? "w-1/4" : "w-full"}
           // sectionIdx={idx}

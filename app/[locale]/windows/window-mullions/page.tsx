@@ -22,21 +22,21 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
   };
 
   return (
-    <>
+    <div className="pb-24">
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
           <Line className="marsala-center" color="marsala" />
 
-          <div className="flex max-md:flex-col max-md:items-center max-md:gap-6 justify-between">
+          <div className="flex max-md:flex-col max-md:items-center gap-6 justify-between">
             <ModalTrigger
-              className="relative max-md:max-w-[396px] w-full md:w-1/2 h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
+              className="relative w-full sm:max-md:max-w-[396px] md:w-1/2 h-[240px] sm:h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
               src={cardMullions.src || ""}
               alt={cardMullions.alt || ""}
               img={img}
             />
-            <div className="max-md:max-w-[396px] w-full md:w-1/2">
-              <p className="mb-2 md:pl-6">{cardMullions.description}</p>
+            <div className="w-full sm:max-md:max-w-[396px] md:w-1/2">
+              <p className="mb-2">{cardMullions.description}</p>
             </div>
           </div>
         </div>
@@ -45,11 +45,14 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
       <NestedCardsSection
         tSectionItem={muntinTypesSection as INestedCardsSectionItem}
         titleBanner={true}
-        size={"max-w-[396px]"}
+        // size="max-w-[396px]"
+        size="w-full sm:w-[396px] md:w-[356px] lg:w-[396px]"
+        imgH="h-[240px] sm:h-[460px] md:h-[414px] lg:h-[460px]"
+        imgFit="cover"
         positioning={"flexWrap"}
         isRow={false}
       />
-    </>
+    </div>
   );
 };
 

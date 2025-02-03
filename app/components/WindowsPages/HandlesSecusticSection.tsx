@@ -38,7 +38,7 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
                   </div>
 
                   <ModalTrigger
-                    className="relative w-[380px] md:w-1/2 h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"
+                    className="relative w-full sm:w-[380px] md:w-1/2 h-[240px] sm:h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"
                     src={typeItem.src || ""}
                     alt={typeItem.alt || ""}
                     img={{

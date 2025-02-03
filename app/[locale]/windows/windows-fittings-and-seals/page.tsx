@@ -19,7 +19,7 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
   const fittingComponentsSection = t.raw("FittingComponentsSection");
 
   return (
-    <>
+    <div className="pb-24">
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -30,12 +30,14 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
       <NestedCardsSection
         tSectionItem={fittingsFeaturesSection as INestedCardsSectionItem}
         titleBanner={true}
-        size={"max-w-[396px]"}
-        positioning={"flexWrap"}
+        size="w-full sm:w-[396px] md:w-[356px] lg:w-[396px]"
+        imgH="h-[240px] sm:h-[460px] md:h-[414px] lg:h-[460px]"
+        imgFit="cover"
+        positioning="flexWrap"
         isRow={false}
       />
       <FittingComponentsSection t={fittingComponentsSection} />
-    </>
+    </div>
   );
 };
 
