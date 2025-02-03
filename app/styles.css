@@ -77,7 +77,7 @@
   right: 1% !important;
   color: #fff !important;
   /* top: 105% !important; */
-  top:calc(105% + env(safe-area-inset-bottom)) !important;
+  top: calc(105% + env(safe-area-inset-bottom)) !important;
 }
 
 @media screen and (min-width: 640px) {
@@ -91,7 +91,7 @@
   left: 1% !important;
   color: #fff !important;
   /* top: 105% !important; */
-  top:calc(105% + env(safe-area-inset-bottom)) !important;
+  top: calc(105% + env(safe-area-inset-bottom)) !important;
 }
 
 @media screen and (min-width: 640px) {
@@ -125,11 +125,11 @@
 
 @layer components {
   .pageCl {
-    @apply xl:pt-48 pt-9;
+    @apply pt-10 lg:pt-44 xl:pt-48;
   }
 
   .sectionCl {
-    @apply xl:pt-16 pt-9;
+    @apply pt-6 sm:pt-9 xl:pt-16;
   }
 
   .mainTitleCl {
@@ -141,7 +141,7 @@
   }
 
   .subTitleCl {
-    @apply xl:text-xl lg:text-lg font-semibold font-roboto uppercase;
+    @apply xl:text-xl lg:text-lg font-semibold font-roboto uppercase max-sm:text-center;
   }
 
   /* .linkToPageCl {
@@ -209,18 +209,17 @@
 }
 
 @layer utilities {
-
-  .inputsCl:focus+.label,
-  .inputsCl:not(:placeholder-shown)+.label {
+  .inputsCl:focus + .label,
+  .inputsCl:not(:placeholder-shown) + .label {
     @apply -translate-y-[180%] text-customElement text-sm;
   }
 
-  .inputsCl:focus+.label.lTextarea,
-  .inputsCl:not(:placeholder-shown)+.label.lTextarea {
+  .inputsCl:focus + .label.lTextarea,
+  .inputsCl:not(:placeholder-shown) + .label.lTextarea {
     @apply -translate-y-[110%];
   }
 
-  .peer:checked+.labelCheckCl .iconCheckWrapCl {
+  .peer:checked + .labelCheckCl .iconCheckWrapCl {
     @apply bg-customElement border-[3px] shadow-none;
   }
 

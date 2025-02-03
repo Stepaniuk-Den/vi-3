@@ -30,8 +30,6 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
     <section className="sectionCl">
       <div className="container">
         <h3 className="sr-only">{t.title}</h3>
-        {/* <ul className="flex justify-center gap-1">
-          {nestedCardsList.map((nestedCard, idx) => ( */}
         <div className="flex max-md:flex-col gap-6">
           <div className="flex-1">
             <ul>
@@ -42,9 +40,10 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
                   description={nestedCard.description}
                   src={nestedCard.src || ""}
                   alt={nestedCard.alt || ""}
-                  size="max-md:w-[236px] md:w-1/2"
-                  imgH="h-[398px] md:h-[320px] lg:h-[400px] xl:h-[460px]"
+                  size="w-full sm:w-[236px] md:w-1/2"
+                  imgH="h-[240px] sm:h-[236px] md:h-[178px] lg:h-[240px] xl:h-[304px]"
                   className="mx-auto"
+                  imgFit="cover"
                   onClick={() =>
                     openModal(
                       <ModalSwiperContent slides={images} initialSlide={idx} />
@@ -53,11 +52,6 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
                 />
               ))}
             </ul>
-            {/* ))}
-        </div> */}
-
-            {/* <ul className="flex justify-between gap-6">
-          {descriptionProfiles.map((item) => ( */}
             <div className="self-center">
               <h3 className="subTitleCl my-6">
                 {descriptionProfiles[0].title}
@@ -65,11 +59,9 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
               <p>{descriptionProfiles[0].desc}</p>
             </div>
           </div>
-          {/* ))}
-        </ul> */}
 
           <div className="flex-1">
-            <ul className="flex max-sm:flex-col max-sm:items-center justify-center  gap-1">
+            <ul className="flex max-sm:flex-col max-md:items-center justify-center gap-1">
               {nestedCardsList.slice(1, 3).map((nestedCard) => (
                 <NestedCard
                   key={nestedCard.id}
@@ -77,8 +69,9 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
                   description={nestedCard.description}
                   src={nestedCard.src || ""}
                   alt={nestedCard.alt || ""}
-                  size="max-md:w-[236px] md:flex-1"
-                  imgH="h-[398px] md:h-[320px] lg:h-[400px] xl:h-[460px]"
+                  size="w-full sm:max-md:w-[236px] md:flex-1"
+                  imgH="h-[240px] sm:h-[236px] md:h-[178px] lg:h-[240px] xl:h-[304px]"
+                  imgFit="cover"
                   onClick={() =>
                     openModal(
                       <ModalSwiperContent
@@ -89,15 +82,9 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
                       />
                     )
                   }
-                  className="mr-auto"
                 />
               ))}
             </ul>
-            {/* ))}
-        </ul> */}
-
-            {/* <ul className="flex justify-between gap-6">
-          {descriptionProfiles.map((item) => ( */}
             <div>
               <h3 className="subTitleCl my-6">
                 {descriptionProfiles[1].title}

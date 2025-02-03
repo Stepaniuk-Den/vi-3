@@ -25,8 +25,9 @@ const WindowAccessoriesSection: React.FC<Props> = ({ imgList }) => {
           key={imgItem.id}
           src={imgItem.src || ""}
           alt={imgItem.alt || ""}
-          size="w-[292px]"
+          size="w-full sm:w-[292px]"
           imgH="h-[354px]"
+          imgFit="cover"
           onClick={() =>
             openModal(<ModalSwiperContent slides={images} initialSlide={idx} />)
           }

@@ -30,10 +30,11 @@ const ItemCard: React.FC<IItemCard> = ({
   return (
     <div
       className={clsx(
-        "flex m-auto max-md:max-w-[448px] w-full shadow-lg rounded-md",
+        "flex m-auto w-full shadow-lg rounded-md",
+        // sm:max-md:max-w-[448px]
         // className,
         layout === "horizontal"
-          ? "flex-col md:flex-row gap-8 p-7"
+          ? "flex-col md:flex-row gap-8 p-3 sm:p-7"
           : "flex-col p-3",
         reverse && layout === "horizontal" ? "flex-row-reverse" : "",
         {
@@ -66,6 +67,7 @@ const ItemCard: React.FC<IItemCard> = ({
           alt={alt || ""}
           fill
           priority
+          className="object-cover"
           // placeholder="blur"
         />
       </div>
@@ -83,7 +85,9 @@ const ItemCard: React.FC<IItemCard> = ({
         <div>
           {layout === "horizontal" && (
             <div className="lg:pt-12">
-              <h3 className="subTitleCl xl:leading-none">{title}</h3>
+              <h3 className="subTitleCl max-md:text-center xl:leading-none">
+                {title}
+              </h3>
               <Line
                 className="marsala-left"
                 // className={clsx(
@@ -100,7 +104,7 @@ const ItemCard: React.FC<IItemCard> = ({
           href={link}
           className={clsx("mt-2 md:mt-0", {
             // "mt-2 md:mt-0": layout === "horizontal",
-            "self-end": alignment === "end",
+            "self-center md:self-end": alignment === "end",
             "self-center": alignment === "center",
             "self-start": alignment === "start",
           })}

@@ -110,12 +110,12 @@ const NestedCardsSection: React.FC<Props> = ({
                 size={size}
                 imgH={imgH}
                 isRow={isRow}
+                imgFit={imgFit}
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={slides} initialSlide={idx} />
                   )
                 }
-                imgFit={imgFit}
                 // titleBannerCard={titleBannerCard}
                 // layout="horizontal"
                 // background={idx % 2 === 0 ? `${background}` : ""}

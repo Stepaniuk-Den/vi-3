@@ -30,6 +30,7 @@ const ModalTrigger: React.FC<Props> = ({ className, src, alt, img }) => {
         alt={alt || ""}
         fill
         priority
+        className="object-cover"
       />
     </div>
   );
