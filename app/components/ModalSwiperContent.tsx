@@ -3,12 +3,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
 interface ModalSwiperProps {
-  slides: { id: string; src: string; alt: string }[];
+  slides: { id: string; src: string | StaticImageData; alt: string }[];
   initialSlide?: number;
 }
 
@@ -30,7 +30,7 @@ const ModalSwiperContent: React.FC<ModalSwiperProps> = ({
         <SwiperSlide key={slide.id}>
           <div className="relative w-full h-[80vh] sm:h-[90vh] pointer-events-none rounded-md ">
             <Image
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, (max-width: 1280px) 70vw, 60vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, (max-width: 1280px) 70vw, 60vw"
               src={slide.src}
               alt={slide.alt}
               fill

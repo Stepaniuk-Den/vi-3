@@ -39,6 +39,7 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={false}
         path="windows"
         background="blue"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
       <CardsSection
         t={t}
@@ -47,6 +48,7 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={true}
         path="windows"
         background="marsala"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
       <CardsSection
         t={t}
@@ -55,6 +57,7 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={true}
         path="windows"
         background="blue"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
       {/* <ElementsSection t={t} tBtn={tButtons} />
       <WindowsillsSection t={t} tBtn={tButtons} /> */}

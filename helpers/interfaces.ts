@@ -23,6 +23,13 @@ export interface IWindowSvgItems {
   }[];
 }
 
+export interface IButtons {
+  see?: string;
+  submit?: string;
+  sending?: string;
+  toTop?: string;
+}
+
 export interface IDesc {
   title?: string;
   desc?: string;
@@ -53,7 +60,9 @@ export interface IItemCard {
   reverse?: boolean;
   background?: "marsala" | "blue" | "";
   alignment?: "end" | "center" | "start";
+  onClick?: () => void;
   path?: string;
+  imgH?: string;
 }
 
 export interface INestedCard {

@@ -18,13 +18,13 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   return (
     <div
       className={clsx(
-        "flex justify-between items-center gap-16 w-full p-14 rounded-md",
+        "flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 w-full p-8 lg:p-14 rounded-md",
         className
       )}
     >
       <div
         className={
-          "relative w-full h-[508px] border border-gray-300 rounded-md overflow-hidden"
+          "relative w-full h-[380px] lg:h-[508px] border border-gray-300 rounded-md overflow-hidden"
         }
       >
         <Image
@@ -47,7 +47,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
           className="marsala-center"
           color={sectionId === "guide" ? "blue" : "marsala"}
         />
-        <p className="mb-20 text-center xl:leading-7">{description}</p>
+        <p className="mb-8 lg:mb-20 text-center xl:leading-7">{description}</p>
         <LinkToPage href="#" className="self-center">
           {tBtn}
         </LinkToPage>

@@ -1,4 +1,5 @@
 import CardsSection from "@/app/components/CardsSection";
+import ContactForm from "@/app/components/ContactForm";
 import MessageBanner from "@/app/components/MessageBanner";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import { useTranslations } from "next-intl";
@@ -26,7 +27,9 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
         wrapper={false}
         path="sliding-doors"
         background="blue"
+        imgH={"h-[360px] md:h-[280px] lg:h-[360px]"}
       />
+      <ContactForm />
     </>
   );
 };

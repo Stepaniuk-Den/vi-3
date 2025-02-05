@@ -21,9 +21,9 @@ const WindowsSection: React.FC<Props> = ({ t, tBtn }) => {
     <section className="sectionCl">
       <div className="container">
         <h2 className="sr-only">{t("title")}</h2>
-        <ul className="flex flex-col lg:flex-row justify-between gap-20">
+        <ul className="flex flex-col md:flex-row justify-between md:gap-4 lg:gap-20">
           {windowsTypesList.map((typeItem) => (
-            <li key={typeItem.id}>
+            <li className="flex-1" key={typeItem.id}>
               <ItemCard
                 title={typeItem.title}
                 description={typeItem.description}

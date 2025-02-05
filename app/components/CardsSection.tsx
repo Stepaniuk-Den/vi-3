@@ -1,6 +1,7 @@
 import { IItemCard } from "@/helpers/interfaces";
 import ItemCard from "./ItemCard";
 import Line from "./Line";
+// import { isMobileDevice } from "@/helpers/detect-browser";
 
 type Props = {
   t: {
@@ -17,7 +18,23 @@ type Props = {
   wrapper: boolean;
   path: string;
   background: "marsala" | "blue";
+  imgH?: string;
+  // context?: { req: { headers: { "user-agent": string } } }; // for server-side rendering (SSR) in Next.js
 };
+
+// export async function getServerSideProps(context: {
+//   req: { headers: { "user-agent": string } };
+// }) {
+//   const userAgent = context.req.headers["user-agent"];
+//   const isMobile = isMobileDev(userAgent);
+//   console.log("🚀 ~ isMobile:", isMobile);
+
+//   return {
+//     props: {
+//       isMobile,
+//     },
+//   };
+// }
 
 const CardsSection: React.FC<Props> = ({
   t,
@@ -26,6 +43,7 @@ const CardsSection: React.FC<Props> = ({
   wrapper,
   path,
   background,
+  imgH,
 }) => {
   // const profilesList = Object.values(
   //   t.raw(source)
@@ -57,11 +75,13 @@ const CardsSection: React.FC<Props> = ({
                 alt={profileItem.alt}
                 tBtn={tBtn("see")}
                 layout="horizontal"
+                // layout={isMobileDevice ? "vertical" : "horizontal"}
                 reverse={idx % 2 !== 0}
                 background={idx % 2 === 0 ? `${background}` : ""}
                 slug={profileItem.slug}
                 path={path}
                 alignment="end"
+                imgH={imgH}
               />
             </li>
           ))}

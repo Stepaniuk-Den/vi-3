@@ -8,6 +8,7 @@ type Props = {
   description?: boolean;
   className?: string;
   isWhite?: boolean;
+  pL?: string;
 };
 
 const NestedParameterDescList: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const NestedParameterDescList: React.FC<Props> = ({
   description,
   className,
   isWhite = false,
+  pL = "pl-6",
 }) => {
   return (
     <div className={className}>
@@ -27,7 +29,7 @@ const NestedParameterDescList: React.FC<Props> = ({
         param.title && <h4 className="titleCl mt-5 mb-2">{param.title}</h4>
       )}
       {description && (
-        <p className="w-full font-bold pl-6 mb-2">{param.description}</p>
+        <p className={clsx("w-full font-bold mb-2", pL)}>{param.description}</p>
       )}
       <ul className="flex flex-col gap-1 rounded-md pl-6">
         {Object.entries(param.list).map(([key, item]) => (

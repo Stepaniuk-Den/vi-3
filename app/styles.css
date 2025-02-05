@@ -125,11 +125,11 @@
 
 @layer components {
   .pageCl {
-    @apply lg:pt-48 pt-9;
+    @apply pt-10 lg:pt-44 xl:pt-48;
   }
 
   .sectionCl {
-    @apply lg:pt-16 pt-9;
+    @apply pt-6 sm:pt-9 xl:pt-16;
   }
 
   .mainTitleCl {
@@ -141,23 +141,23 @@
   }
 
   .subTitleCl {
-    @apply xl:text-xl lg:text-lg font-semibold font-roboto uppercase;
+    @apply xl:text-xl lg:text-lg font-semibold font-roboto uppercase max-sm:text-center;
   }
 
-  .linkToPageCl {
-    @apply flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
-  }
+  /* .linkToPageCl {
+    @apply flex items-center justify-center px-2 py-2 max-w-36 lg:max-w-40 w-full text-white bg-customMarsala rounded-md transition-all hover:bg-customMarsala-accent;
+  } */
 
   /* ======================== */
-  .submitBtn {
-    @apply relative flex items-center justify-center px-3 py-2 max-w-40 w-full text-white bg-customMarsala border border-solid border-white rounded-md transition-all before:content-[''] before:absolute before:inset-[4px] before:bg-customMarsala before:border before:border-solid before:border-white;
+  .linkToPageCl {
+    @apply relative flex items-center justify-center px-2 py-2 max-w-36 lg:max-w-40 w-full text-white bg-customMarsala rounded-md border border-solid border-white transition-all before:content-[''] before:absolute before:inset-[4px] before:bg-customMarsala before:border before:border-solid before:border-white hover:bg-customMarsala-accent;
   }
 
-  .submitBtn span {
+  .linkToPageCl span {
     @apply relative z-[1];
   }
 
-  .submitBtn i {
+  .linkToPageCl i {
     @apply absolute inset-0 block before:content-[''] before:absolute before:top-0 before:left-[80%] before:w-[10px] before:h-1 before:bg-white before:skew-x-[325deg] before:transition-all before:duration-300 after:content-[''] after:absolute after:bottom-0 after:right-[80%] after:w-[10px] after:h-1 after:bg-white after:skew-x-[325deg] after:transition-all after:duration-300;
   }
 
@@ -225,11 +225,11 @@
   }
 
   /* ======================== */
-  .submitBtn:hover i::before {
+  .linkToPageCl:hover i::before {
     @apply w-5 left-[10%];
   }
 
-  .submitBtn:hover i::after {
+  .linkToPageCl:hover i::after {
     @apply w-5 right-[10%];
   }
 

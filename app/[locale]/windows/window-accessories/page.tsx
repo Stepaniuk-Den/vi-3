@@ -1,7 +1,7 @@
 import Line from "@/app/components/Line";
-import NestedCard from "@/app/components/NestedCard";
 import HandlesDublinSection from "@/app/components/WindowsPages/HandlesDublinSection";
 import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusticSection";
+import WindowAccessoriesSection from "@/app/components/WindowsPages/WindowAccessoriesSection";
 import { INestedCard } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -20,23 +20,12 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
   const handlesSecustic = windowHandles.WindowHandlesSecustic;
 
   return (
-    <>
+    <div className="pb-24">
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
           <Line className="marsala-center" color="marsala" />
-
-          <ul className="flex justify-center gap-6">
-            {imgList.map((imgItem) => (
-              <NestedCard
-                key={imgItem.id}
-                src={imgItem.src || ""}
-                alt={imgItem.alt || ""}
-                size="w-1/4"
-                imgH="h-[354px]"
-              />
-            ))}
-          </ul>
+          <WindowAccessoriesSection imgList={imgList} />
         </div>
       </section>
       <section className="sectionCl">
@@ -47,7 +36,7 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
       </section>
       <HandlesDublinSection t={handlesDublin} />
       <HandlesSecusticSection t={handlesSecustic} />
-    </>
+    </div>
   );
 };
 

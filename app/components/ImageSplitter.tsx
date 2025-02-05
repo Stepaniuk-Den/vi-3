@@ -1,190 +1,186 @@
+// "use client";
 
-"use client";
+// import React, { useState, useEffect } from "react";
+// import clsx from "clsx";
+// import { images } from "@/data/slidesHero";
+// import { useTranslations } from "next-intl";
 
-import React, { useState, useEffect } from "react";
-import clsx from "clsx";
-import { images } from "@/data/slidesHero";
-import { useTranslations } from "next-intl";
+// interface Slide {
+//   title: string;
+//   description: string;
+// }
 
-interface Slide {
-  title: string;
-  description: string;
-}
+// export default function ImageSplitter() {
+//   const t = useTranslations("Hero");
+//   const slidesList = t.raw("slides");
+//   const slides: Slide[] = Object.values(slidesList);
+//   const [allImageParts, setAllImageParts] = useState<string[][]>([]);
+//   const [renderedParts, setRenderedParts] = useState<number>(0);
+//   const [resetKey, setResetKey] = useState<number>(0);
+//   const [currentSlide, setCurrentSlide] = useState(0);
 
+//   const partsAmount = 20;
 
-export default function ImageSplitter() {
-  const t = useTranslations("Hero");
-  const slidesList = t.raw("slides");
-  const slides: Slide[] = Object.values(slidesList);
-  const [allImageParts, setAllImageParts] = useState<string[][]>([]);
-  const [renderedParts, setRenderedParts] = useState<number>(0);
-  const [resetKey, setResetKey] = useState<number>(0);
-  const [currentSlide, setCurrentSlide] = useState(0);
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       nextSlide();
+//     }, 6000);
 
-  const partsAmount = 20;
+//     return () => clearInterval(interval);
+//   }, [currentSlide]);
 
+//   const nextSlide = () => {
+//     // setIsTransitioning(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 6000);
+//     // setPrevSlide(currentSlide);
+//     if (currentSlide === slides.length - 1) {
+//       setTimeout(() => {
+//         setCurrentSlide(0);
+//         // setVisibleSlide(null);
+//         // setIsTransitioning(false);
+//       }, 300);
+//     } else {
+//       setCurrentSlide((prev) => prev + 1);
+//     }
+//   };
 
-    return () => clearInterval(interval);
-  }, [currentSlide]);
+//   useEffect(() => {
 
-  const nextSlide = () => {
-    // setIsTransitioning(true);
+//     const loadAndSplitImages = async () => {
+//       const imagePartsArray: string[][] = [];
 
-    // setPrevSlide(currentSlide);
-    if (currentSlide === slides.length - 1) {
-      setTimeout(() => {
-        setCurrentSlide(0);
-        // setVisibleSlide(null);
-        // setIsTransitioning(false);
-      }, 300);
-    } else {
-      setCurrentSlide((prev) => prev + 1);
-    }
-  };
+//       for (const imgSrc of images) {
+//         const img = new Image();
+//         img.src = imgSrc;
 
+//         await new Promise<void>((resolve, reject) => {
+//           img.onload = () => {
+//             const canvas = document.createElement("canvas");
+//             const ctx = canvas.getContext("2d");
 
-  useEffect(() => {
+//             if (!ctx) {
+//               console.error("Canvas context не вдалося отримати.");
+//               reject();
+//               return;
+//             }
 
-    const loadAndSplitImages = async () => {
-      const imagePartsArray: string[][] = [];
+//             const width = window.innerWidth + partsAmount;
+//             const height = window.innerHeight;
 
-      for (const imgSrc of images) {
-        const img = new Image();
-        img.src = imgSrc;
+//             canvas.width = width;
+//             canvas.height = height;
 
-        await new Promise<void>((resolve, reject) => {
-          img.onload = () => {
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
+//             ctx.imageSmoothingEnabled = false;
+//             ctx.drawImage(img, 0, 0, width, height);
 
-            if (!ctx) {
-              console.error("Canvas context не вдалося отримати.");
-              reject();
-              return;
-            }
+//             const partWidth = width / partsAmount;
+//             const parts: string[] = [];
 
-            const width = window.innerWidth + partsAmount;
-            const height = window.innerHeight;
+//             for (let i = 0; i < partsAmount; i++) {
+//               const partCanvas = document.createElement("canvas");
+//               partCanvas.width = i === partsAmount - 1 ? width - i * partWidth : partWidth;
+//               partCanvas.height = canvas.height;
 
-            canvas.width = width;
-            canvas.height = height;
+//               const partCtx = partCanvas.getContext("2d");
+//               if (!partCtx) {
+//                 console.error("Canvas context для частини не вдалося отримати.");
+//                 continue;
+//               }
 
-            ctx.imageSmoothingEnabled = false;
-            ctx.drawImage(img, 0, 0, width, height);
+//               partCtx.imageSmoothingEnabled = false;
+//               partCtx.drawImage(
+//                 canvas,
+//                 i * partWidth,
+//                 0,
+//                 partWidth,
+//                 canvas.height,
+//                 0,
+//                 0,
+//                 partWidth,
+//                 canvas.height
+//               );
 
-            const partWidth = width / partsAmount;
-            const parts: string[] = [];
+//               parts.push(partCanvas.toDataURL());
+//             }
 
-            for (let i = 0; i < partsAmount; i++) {
-              const partCanvas = document.createElement("canvas");
-              partCanvas.width = i === partsAmount - 1 ? width - i * partWidth : partWidth;
-              partCanvas.height = canvas.height;
+//             imagePartsArray.push(parts);
+//             resolve();
+//           };
 
-              const partCtx = partCanvas.getContext("2d");
-              if (!partCtx) {
-                console.error("Canvas context для частини не вдалося отримати.");
-                continue;
-              }
+//           img.onerror = () => {
+//             console.error("Неможливо завантажити зображення.");
+//             reject();
+//           };
+//         });
+//       }
 
-              partCtx.imageSmoothingEnabled = false;
-              partCtx.drawImage(
-                canvas,
-                i * partWidth,
-                0,
-                partWidth,
-                canvas.height,
-                0,
-                0,
-                partWidth,
-                canvas.height
-              );
+//       setAllImageParts(imagePartsArray);
+//     };
 
-              parts.push(partCanvas.toDataURL());
-            }
+//     loadAndSplitImages();
+//   }, [images, partsAmount]);
 
-            imagePartsArray.push(parts);
-            resolve();
-          };
+//   useEffect(() => {
+//     setRenderedParts(0);
+//     setResetKey((prev) => prev + 1);
+//   }, [currentSlide]);
 
-          img.onerror = () => {
-            console.error("Неможливо завантажити зображення.");
-            reject();
-          };
-        });
-      }
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setRenderedParts((prev) => {
+//         if (prev < allImageParts[currentSlide]?.length) {
+//           return prev + 1;
+//         } else {
+//           clearInterval(interval);
+//           return prev;
+//         }
+//       });
+//     }, 100);
 
-      setAllImageParts(imagePartsArray);
-    };
+//     return () => clearInterval(interval);
+//   }, [currentSlide, allImageParts, resetKey]);
 
-    loadAndSplitImages();
-  }, [images, partsAmount]);
+//   if (allImageParts.length === 0) {
+//     return (
+//       <div className="flex items-center justify-center w-full h-full bg-gray-200  carousel-container">
+//         Завантаження...
+//       </div>
+//     );
+//   }
 
-  useEffect(() => {
-    setRenderedParts(0);
-    setResetKey((prev) => prev + 1);
-  }, [currentSlide]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRenderedParts((prev) => {
-        if (prev < allImageParts[currentSlide]?.length) {
-          return prev + 1;
-        } else {
-          clearInterval(interval);
-          return prev;
-        }
-      });
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, [currentSlide, allImageParts, resetKey]);
-
-  if (allImageParts.length === 0) {
-    return (
-      <div className="flex items-center justify-center w-full h-full bg-gray-200  carousel-container">
-        Завантаження...
-      </div>
-    );
-  }
-
-  return (
-    <div className="relative w-full h-full flex justify-center items-center carousel-container">
-      <div
-        className={clsx(
-          "absolute top-0 left-0 w-full h-full flex min-w-max min-h-max z-20 bg-customMarsala-accent"
-        )}
-        style={{
-          // zIndex: partsAmount + 7 + currentSlide,
-        }}
-      >
-        {allImageParts[currentSlide].map((part, index) => (
-          <img
-            key={`${resetKey}-${index}`}
-            src={part}
-            alt={`Part ${index + 1}`}
-            className=" w-full h-full object-cover ml-[-1px]"
-            style={{
-              opacity: index < renderedParts ? 1 : 0,
-              visibility: index < renderedParts ? "visible" : "hidden",
-              transform:
-                index < renderedParts
-                  ? "translateX(0) scaleY(1)"
-                  : "translateX(-100%) scaleY(0)",
-              transition: "opacity 0.2s ease, transform 0.2s ease",
-              transitionDelay: `${index * 0.05}s`,
-              zIndex: partsAmount + 1 - index,
-            }}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div className="relative w-full h-full flex justify-center items-center carousel-container">
+//       <div
+//         className={clsx(
+//           "absolute top-0 left-0 w-full h-full flex min-w-max min-h-max z-20 bg-customMarsala-accent"
+//         )}
+//         style={{
+//           // zIndex: partsAmount + 7 + currentSlide,
+//         }}
+//       >
+//         {allImageParts[currentSlide].map((part, index) => (
+//           <img
+//             key={`${resetKey}-${index}`}
+//             src={part}
+//             alt={`Part ${index + 1}`}
+//             className=" w-full h-full object-cover ml-[-1px]"
+//             style={{
+//               opacity: index < renderedParts ? 1 : 0,
+//               visibility: index < renderedParts ? "visible" : "hidden",
+//               transform:
+//                 index < renderedParts
+//                   ? "translateX(0) scaleY(1)"
+//                   : "translateX(-100%) scaleY(0)",
+//               transition: "opacity 0.2s ease, transform 0.2s ease",
+//               transitionDelay: `${index * 0.05}s`,
+//               zIndex: partsAmount + 1 - index,
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 //ніби працює але миготить
 // "use client";
@@ -338,7 +334,6 @@ export default function ImageSplitter() {
 //     setRenderedParts(0);
 //     setResetKey((prev) => prev + 1);
 //   }, [currentSlide]);
-
 
 //   useEffect(() => {
 //     const interval = setInterval(() => {
@@ -516,3 +511,232 @@ export default function ImageSplitter() {
 //     </div>
 //   );
 // }
+
+"use client";
+
+interface Slide {
+  title: string;
+  description: string;
+}
+
+import { useRef, useEffect, useState } from "react";
+import { images } from "@/data/slidesHero";
+import { useTranslations } from "next-intl";
+import clsx from "clsx";
+import Arrow from "@/public/icons/Arrow_rounded.svg";
+
+const CanvasComponent = () => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const newCanvasRef = useRef<HTMLCanvasElement | null>(null);
+  const imgRefs = useRef<HTMLImageElement[]>([]);
+  const t = useTranslations("Hero");
+  const slidesList = t.raw("slides");
+  const slides: Slide[] = Object.values(slidesList);
+
+  const [currentItem, setCurrentItem] = useState(1);
+  const [textVisible, setTextVisible] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const nbItems = 5;
+  const cols = 20;
+  const displayDuration = 4000;
+  const animationDuration = 1800;
+
+  const setCanvasSize = (canvas: HTMLCanvasElement) => {
+    const container = canvas.parentElement;
+    if (container) {
+      canvas.width = container.offsetWidth;
+      canvas.height = (container.offsetWidth * 10.7) / 16;
+    }
+  };
+
+  const clamp = (value: number, min: number, max: number) => {
+    return Math.max(min, Math.min(max, value));
+  };
+
+  const startAnimation = (nextItem: number) => {
+    const canvas = canvasRef.current;
+    const newCanvas = newCanvasRef.current;
+    const imagesArray = imgRefs.current;
+
+    if (!canvas || !newCanvas || imagesArray.some((img) => img === null))
+      return;
+
+    const context = canvas.getContext("2d");
+    const newContext = newCanvas.getContext("2d");
+
+    if (!context || !newContext) return;
+
+    setCanvasSize(canvas);
+    setCanvasSize(newCanvas);
+
+    const currentImage = imagesArray[currentItem - 1]!;
+    const nextImage = imagesArray[nextItem - 1]!;
+
+    const renderStaticImage = (image: HTMLImageElement) => {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
+    };
+
+    const renderTempCanvas = (currentImage: HTMLImageElement, pos: number) => {
+      newContext.clearRect(0, 0, canvas.width, canvas.height);
+      newContext.drawImage(currentImage, 0, 0, canvas.width, canvas.height);
+      const colWidth = canvas.width / cols;
+
+      for (let i = 0; i <= cols; i++) {
+        const delay = i / cols;
+        const progress = clamp(pos - delay, 0, 1);
+        newContext.clearRect(
+          i * colWidth,
+          0,
+          colWidth * progress,
+          canvas.height
+        );
+      }
+    };
+
+    const render = (
+      currentImage: HTMLImageElement,
+      nextImage: HTMLImageElement,
+      pos: number
+    ) => {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(nextImage, 0, 0, canvas.width, canvas.height);
+      renderTempCanvas(currentImage, pos);
+      context.drawImage(newCanvas, 0, 0, canvas.width, canvas.height);
+    };
+
+    setIsAnimating(true);
+
+    const startTime = performance.now();
+
+    const animate = () => {
+      const elapsed = performance.now() - startTime;
+
+      if (elapsed < animationDuration) {
+        const progress = (elapsed / animationDuration) * 2;
+        render(currentImage, nextImage, progress);
+        requestAnimationFrame(animate);
+      } else {
+        setIsAnimating(false);
+        renderStaticImage(nextImage);
+
+        setTimeout(() => {
+          setTextVisible(true);
+        }, 500);
+        setCurrentItem(nextItem);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  };
+
+  const handleNext = () => {
+    const nextItem = currentItem < nbItems ? currentItem + 1 : 1;
+    startAnimation(nextItem);
+  };
+
+  const handlePrev = () => {
+    const prevItem = currentItem > 1 ? currentItem - 1 : nbItems;
+    startAnimation(prevItem);
+  };
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas?.getContext("2d");
+    const imagesArray = imgRefs.current;
+    const currentImage = imagesArray[currentItem - 1];
+
+    if (canvas && context && currentImage) {
+      setCanvasSize(canvas);
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(currentImage, 0, 0, canvas.width, canvas.height);
+    }
+
+    const interval = setInterval(() => {
+      if (!isAnimating) {
+        const nextItem = currentItem < nbItems ? currentItem + 1 : 1;
+        startAnimation(nextItem);
+      }
+    }, displayDuration);
+
+    return () => clearInterval(interval);
+  }, [currentItem, isAnimating]);
+
+  return (
+    <div className="relative w-full flex justify-center items-center carousel-container overflow-hidden">
+      <canvas
+        ref={canvasRef}
+        id="canvas"
+        style={{ zIndex: isAnimating ? 1 : 0 }}
+      ></canvas>
+      <canvas ref={newCanvasRef} style={{ display: "none" }}></canvas>
+
+      {textVisible && (
+        <div
+          className={clsx(
+            "absolute top-20 left-0 bg-black/50 text-white pt-8 pr-8 pb-8 rounded-r-md transition-opacity duration-500",
+            {
+              "opacity-100": textVisible,
+              "opacity-0": !textVisible,
+            }
+          )}
+        >
+          <div className=" relative xl:pl-[calc((100vw-1280px)/2+20px)] ">
+            {/* <h1 className="mainTitleCl mb-4">{texts[currentItem - 1]}</h1> */}
+            <h1 className="mainTitleCl mb-4">
+              {slides[currentItem - 1]?.title}
+            </h1>
+            <p className="text-lg font-open_sans">
+              {slides[currentItem - 1]?.description}
+            </p>
+          </div>
+        </div>
+      )}
+
+      <button
+        onClick={handlePrev}
+        className="absolute left-4 top-2/3 transform -translate-y-1/2  fill-white p-2 rounded-md rotate-180 z-30 hover:bg-black/50"
+      >
+        <Arrow className="w-11 h-11" />
+      </button>
+      <button
+        onClick={handleNext}
+        className="absolute right-4 top-2/3 transform -translate-y-1/2  fill-white p-2 rounded-md z-30 hover:bg-black/50"
+      >
+        <Arrow className="w-11 h-11" />
+      </button>
+
+      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-[10px] z-30">
+        {Array.from({ length: nbItems }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => startAnimation(index + 1)}
+            className={clsx(
+              "h-[5px] w-[40px] cursor-pointer rounded-md bg-white transition-all duration-300",
+              currentItem === index + 1 ? "bg-white" : "bg-white opacity-50"
+            )}
+          />
+        ))}
+      </div>
+
+      {/* <img ref={img1Ref} src="/images/hero/1.jpg" className="hidden" alt="Image 1" />
+      <img ref={img2Ref} src="/images/hero/2.jpg" className="hidden" alt="Image 2" />
+      <img ref={img3Ref} src="/images/hero/3.jpg" className="hidden" alt="Image 3" /> */}
+      {images.map((src, index) => (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          key={index}
+          ref={(el) => {
+            if (el) imgRefs.current[index] = el;
+          }}
+          src={src}
+          className="hidden"
+          alt={`Image ${index + 1}`}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default CanvasComponent;
