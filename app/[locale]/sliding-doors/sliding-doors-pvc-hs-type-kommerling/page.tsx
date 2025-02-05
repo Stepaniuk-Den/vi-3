@@ -28,7 +28,7 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       <ImagesComponent
         list={imgList.slice(0, 2)}
         width={{ 1: "w-1/3", 2: "w-2/3" }}
-        className="mt-11 container"
+        className="mt-2 lg:mt-11 container"
       />
       <KomShPremidoorSection
         tCardPremi={tCardPremi}
@@ -37,7 +37,7 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       <ImagesComponent
         list={imgList.slice(2, 4)}
         width={{ 1: "w-2/3", 2: "w-1/3" }}
-        className="mt-11 container"
+        className="mt-6 lg:mt-11 container"
       />
       <NestedCardsSection
         tSectionItem={t.raw("komPremiCross")}

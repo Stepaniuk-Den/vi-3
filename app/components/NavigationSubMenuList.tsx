@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import React, { useEffect, useMemo, useState } from 'react'
 import { useModal } from './ModalProvider';
 import { useHoveredMenuStore } from '@/store/hoveredMenuStore';
+import { useIsMobileStore } from '@/store/isMobileStore';
 interface ILinkProps {
   title: string;
   slug: string;
@@ -21,10 +22,9 @@ interface NavigationSubMenuListProps {
   heightViewport: number,
   item: INavigationItem,
   selectedSubMenuSegment: string,
-  isMobile: boolean,
 }
 
-const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment, isMobile }) => {
+const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment }) => {
 
   const [nextSubMenu, setNextSubMenu] = useState<number | null>(null);
   const [isActiveSubMenuItem, setIsActiveSubMenuItem] = useState<number | null>(null);
@@ -33,6 +33,8 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
 
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
+
+  const isMobile = useIsMobileStore((state) => state.isMobile);
 
   const subKeys = useMemo(() => (item.links ? Object.values(item.links) : []), [item.links]);
 

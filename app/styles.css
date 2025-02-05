@@ -209,17 +209,18 @@
 }
 
 @layer utilities {
-  .inputsCl:focus + .label,
-  .inputsCl:not(:placeholder-shown) + .label {
+
+  .inputsCl:focus+.label,
+  .inputsCl:not(:placeholder-shown)+.label {
     @apply -translate-y-[180%] text-customElement text-sm;
   }
 
-  .inputsCl:focus + .label.lTextarea,
-  .inputsCl:not(:placeholder-shown) + .label.lTextarea {
+  .inputsCl:focus+.label.lTextarea,
+  .inputsCl:not(:placeholder-shown)+.label.lTextarea {
     @apply -translate-y-[110%];
   }
 
-  .peer:checked + .labelCheckCl .iconCheckWrapCl {
+  .peer:checked+.labelCheckCl .iconCheckWrapCl {
     @apply bg-customElement border-[3px] shadow-none;
   }
 

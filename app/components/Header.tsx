@@ -13,7 +13,9 @@ import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
-import { isAppleMobileDevice } from "@/helpers/detect-browser";
+import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
+import { useIsBigTabletStore } from "@/store/isBigTabletStore";
+import { useIsMobileStore } from "@/store/isMobileStore";
 
 // import dynamic from "next/dynamic";
 
@@ -26,10 +28,15 @@ const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
   const [opacityTop, setOpacityTop] = useState(1);
   const [heightTop, setHeightTop] = useState(120);
-
   const [isClient, setIsClient] = useState(false);
 
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  const bigTablet = useMediaQuery({ minWidth: 1024 });
+  const tabletOrMobileMedia = useMediaQuery({ maxWidth: 1023.98 });
+
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  const setIsBigTablet = useIsBigTabletStore((state) => state.setIsBigTablet);
+  const setIsMobile = useIsMobileStore((state) => state.setIsMobile);
+
 
   const pathname = usePathname();
   const is404 = pathname === "/404";
@@ -55,16 +62,27 @@ const Header = () => {
     setIsClient(true);
   }, []);
 
+  useEffect(() => {
+    const isMobile = (isAppleMobileDevice || isMobileDevice) && tabletOrMobileMedia;
+    const isBigTablet = (isAppleMobileDevice || isMobileDevice) && bigTablet;
+
+    setIsBigTablet(isBigTablet)
+    setIsMobile(isMobile)
+
+  }, [setIsBigTablet, setIsMobile, bigTablet, tabletOrMobileMedia]);
+
   if (is404) {
     return null;
   }
   if (!isClient) {
     return null;
   }
-  if (isTabletOrMobile || isAppleMobileDevice) {
+
+  if ((isMobileDevice || isAppleMobileDevice) && !isBigTablet) {
+    // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
-        <div className="container">
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala">
+        <div className="container relative">
           <LocaleSwitcher />
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
             onClick={(() => (
@@ -88,7 +106,8 @@ const Header = () => {
 
   return (
     <>
-      {!isAppleMobileDevice && < header
+      {/* use lg:hidden because in browser not see mobile devices */}
+      {(!isAppleMobileDevice || !isMobileDevice || isBigTablet) && < header
         style={{
           height: `${heightHeader}px`,
         }}

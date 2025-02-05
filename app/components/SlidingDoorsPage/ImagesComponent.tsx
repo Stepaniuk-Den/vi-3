@@ -96,13 +96,13 @@ const ImagesComponent: React.FC<IList> = ({
         "flex-col gap-2": !isRow,
       })}
     >
-      <div className={clsx("flex gap-6", className)}>
+      <div className={clsx("flex flex-wrap justify-between gap-y-6 sm:flex-nowrap lg:flex-row sm:gap-6", className)}>
         {list.map((img, idx) => {
-          const currentWidth = getImageDimensionValue(width, idx, "w-1/3");
+          const currentWidth = getImageDimensionValue(width, idx, "w-full lg:w-1/3");
           const currentHeight = getImageDimensionValue(
             height,
             idx,
-            "h-[30rem]"
+            "h-[15rem] sm:h-[20rem] lg:h-[30rem]"
           );
 
           return (

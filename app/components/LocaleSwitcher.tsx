@@ -7,15 +7,12 @@ import clsx from "clsx";
 
 import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { useClickOutside } from "@/helpers/useClickOutside";
-import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
 import FlagUA from "@/public/icons/FlagUa4x3.svg";
 import FlagGB from "@/public/icons/FlagGb4x3.svg";
 import { renderIcon } from "@/helpers/renderIcon";
+import { useIsMobileStore } from "@/store/isMobileStore";
 
-// const SideBarLangSwitcher: React.FC<{ ariaLabel?: string }> = ({
-//   ariaLabel,
-// }) => {
-const LocaleSwitcher = () => {
+const LocaleSwitcher: React.FC<{ classNameBurger?: string }> = ({ classNameBurger }) => {
   const languages = [
     {
       lang: "en",
@@ -41,7 +38,7 @@ const LocaleSwitcher = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   useClickOutside<HTMLDivElement>(ref, () => (setBtnLangVisible(false), setHoveredMenu(null)));
 
-  const isMobile = isAppleMobileDevice || isMobileDevice;
+  const isMobile = useIsMobileStore((state) => state.isMobile);
 
   const handleMouseEnter = (key: string) => {
     if (!isMobile) {
@@ -80,10 +77,10 @@ const LocaleSwitcher = () => {
 
   return (
     <div
-      className={clsx("absolute flex flex-col z-10",
+      className={clsx("absolute flex flex-col z-10", classNameBurger,
         {
           "right-4 top-2": !isMobile,
-          "right-6 top-3": isMobile
+          "right-5 top-1": isMobile && !classNameBurger
         }
       )}
       ref={ref}
