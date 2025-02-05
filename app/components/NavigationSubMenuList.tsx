@@ -5,7 +5,6 @@ import clsx from 'clsx';
 import React, { useEffect, useMemo, useState } from 'react'
 import { useModal } from './ModalProvider';
 import { useHoveredMenuStore } from '@/store/hoveredMenuStore';
-import { useIsBigTabletStore } from '@/store/isBigTabletStore';
 import { useIsMobileStore } from '@/store/isMobileStore';
 interface ILinkProps {
   title: string;
@@ -35,7 +34,6 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
 
-  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
   const isMobile = useIsMobileStore((state) => state.isMobile);
 
   const subKeys = useMemo(() => (item.links ? Object.values(item.links) : []), [item.links]);
