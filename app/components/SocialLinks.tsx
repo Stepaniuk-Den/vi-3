@@ -5,14 +5,42 @@ import { isMobileDevice } from "@/helpers/detect-browser";
 import { renderIcon } from "@/helpers/renderIcon";
 import { Link } from "@/i18n/routing";
 import { useHoveredMenuStore } from "@/store/hoveredMenuStore";
+import { useIsBigTabletStore } from "@/store/isBigTabletStore";
+import { useIsMobileStore } from "@/store/isMobileStore";
+import clsx from "clsx";
+import { useEffect, useState } from "react";
 
 const SocialLinks = () => {
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  const isMobile = useIsMobileStore((state) => state.isMobile);
+
+  useEffect(() => {
+    if (hoveredMenu && isMobileDevice) {
+      setIsVisible(false);
+    } else {
+      const timeout = setTimeout(() => setIsVisible(true), 500);
+      return () => clearTimeout(timeout);
+    }
+  }, [hoveredMenu]);
   return (
-    <div className={`flex ${hoveredMenu && isMobileDevice ? "hidden" : "landscape:absolute"} top-4 left-auto landscape:xl:static gap-3 w-full max-w-min justify-center self-center portrait:mt-8 xl:mt-0`}>
+    <div
+      className={clsx("flex opacity-0 pointer-events-none top-4 left-auto landscape:lg:static gap-3 w-full max-w-min justify-center self-center portrait:mt-8 xl:mt-0",
+        {
+          "opacity-100 pointer-events-auto transition-opacity duration-500": isVisible,
+          "landscape:absolute": isMobile
+        }
+      )}
+    >
       {socialItems.map((item) => (
         <Link
-          className="xl:grayscale hover:grayscale-0 hover:scale-125 transition-all duration-300"
+          className={clsx("hover:grayscale-0 hover:scale-125 transition-all duration-300",
+            {
+              "grayscale": !isBigTablet && !isMobile
+            }
+          )}
           href={item.href}
           aria-label={item.title}
           key={item.id}

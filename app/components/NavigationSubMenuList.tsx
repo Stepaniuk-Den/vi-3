@@ -5,6 +5,8 @@ import clsx from 'clsx';
 import React, { useEffect, useMemo, useState } from 'react'
 import { useModal } from './ModalProvider';
 import { useHoveredMenuStore } from '@/store/hoveredMenuStore';
+import { useIsBigTabletStore } from '@/store/isBigTabletStore';
+import { useIsMobileStore } from '@/store/isMobileStore';
 interface ILinkProps {
   title: string;
   slug: string;
@@ -21,10 +23,9 @@ interface NavigationSubMenuListProps {
   heightViewport: number,
   item: INavigationItem,
   selectedSubMenuSegment: string,
-  isMobile: boolean,
 }
 
-const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment, isMobile }) => {
+const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment }) => {
 
   const [nextSubMenu, setNextSubMenu] = useState<number | null>(null);
   const [isActiveSubMenuItem, setIsActiveSubMenuItem] = useState<number | null>(null);
@@ -33,6 +34,9 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
 
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
+
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  const isMobile = useIsMobileStore((state) => state.isMobile);
 
   const subKeys = useMemo(() => (item.links ? Object.values(item.links) : []), [item.links]);
 
@@ -54,11 +58,11 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
       style={{
         height: `calc(${heightViewport}px - 130px)`,
       }}
-      className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full xl:w-max items-start rounded-md overflow-hidden",
+      className={clsx("absolute z-20 top-full pt-1 lg:pt-3 left-0 flex flex-col w-full lg:w-max items-start rounded-md overflow-hidden",
       )}>
       <ul
         ref={subMenuRef}
-        className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white xl:max-w-max xl:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
+        className={clsx("p-2 z-20 flex flex-col w-full h-full bg-white lg:max-w-max lg:max-h-min items-start transform rounded-md shadow-md overflow-y-scroll lg:overflow-hidden",
           {
             "animate-submenu-enter": hoveredMenu && isMobile,
             "animate-submenu-leave": !hoveredMenu && isMobile,

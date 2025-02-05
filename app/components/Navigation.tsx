@@ -4,8 +4,6 @@ import React, { useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useMessages, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useMediaQuery } from "react-responsive";
-import { isAppleMobileDevice, isMobileDevice } from "@/helpers/detect-browser";
 import IconPlus from "@/public/icons/MaterialSymbolsPlus.svg";
 import { useModal } from "./ModalProvider";
 import { useClickOutside } from "@/helpers/useClickOutside";
@@ -14,6 +12,8 @@ import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
 import { useDebouncedCallback } from "@/helpers/useDebouncedCallback";
 import NavigationSubMenuList from "./NavigationSubMenuList";
 import { Link } from "@/i18n/routing";
+import { useIsBigTabletStore } from "@/store/isBigTabletStore";
+import { useIsMobileStore } from "@/store/isMobileStore";
 
 interface INavigationItem {
   title: string;
@@ -41,23 +41,20 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
 
   const pathname = usePathname();
 
-  const isBigTablet = useMediaQuery({ minWidth: 1023.98 });
-
   const menuRef = useRef<HTMLUListElement | null>(null);
 
   const { closeModal } = useModal();
   const heightViewport = useCurrentViewportHeight();
 
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  const isMobile = useIsMobileStore((state) => state.isMobile);
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
 
   const keys = Object.keys(messages.Navigation);
   const pathnameHome = pathname.slice(3) === ""
   const selectedLayoutSegment = pathname && !pathnameHome ? `${pathname.split("/")[2]}` : "home";
   const selectedSubMenuSegment = selectedLayoutSegment !== "home" ? `${pathname.split("/")[3]}` : "topMenu";
-
-  const isMobile = isAppleMobileDevice || isMobileDevice || isBigTablet;
-  // const isMobile = isAppleMobileDevice || isMobileDevice || isTabletOrMobile;
 
   const refsMemo = useMemo(() => keys.map(() => React.createRef<HTMLLIElement>()), [keys]);
 
@@ -75,7 +72,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
 
 
   const handleClickOutside = (e?: MouseEvent | TouchEvent) => {
-    if (!isMobile) return
+    if (!isMobile && !isBigTablet) return
     const isScrollButton = (e?.target as HTMLElement)?.closest('div[data-id="subMenuBtn"]');
 
     if (isScrollButton) {
@@ -84,8 +81,12 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
 
     const currentSubMenu = subMenuRef && subMenuRef.current && subMenuRef.current.contains(e?.target as Node)
 
-    if (hoveredMenu && !currentSubMenu) {
+    if (hoveredMenu && !currentSubMenu && !isBigTablet) {
       handleSetStateCallback()
+      handleDebouncedMenu("", true);
+    }
+
+    if (isBigTablet) {
       handleDebouncedMenu("", true);
     }
   }
@@ -93,15 +94,15 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   useClickOutside<HTMLLIElement>(refsMemo, handleClickOutside);
 
   const handleMouseEnter = (key: string) => {
-    if (!isMobile) {
+    if (!isMobile && !isBigTablet) {
       setHoveredMenu(key)
       handleDebouncedMenu(key);
     }
   };
 
   const handleMouseLeave = () => {
-    if (!isMobile) {
-      handleDebouncedMenu("");
+    if (!isMobile && !isBigTablet) {
+      handleDebouncedMenu("", true);
     }
   };
 
@@ -113,7 +114,10 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   const handleClickInMobile = (key: string) => {
     const isClosing = hoveredMenu === key;
     setHoveredMenu(isClosing ? null : key);
-    handleSetStateCallback()
+
+    if (!isBigTablet) {
+      handleSetStateCallback()
+    }
 
     if (isClosing) {
       handleDebouncedMenu("");
@@ -123,7 +127,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   };
 
   return (
-    <ul ref={menuRef} className={clsx("relative flex flex-col items-center justify-start gap-x-1 pb-3 uppercase w-full landscape:w-11/12 xl:py-3 xl:h-full xl:flex-row")}>
+    <ul ref={menuRef} className={clsx("relative flex flex-col items-center justify-start gap-x-1 pb-3 uppercase w-full landscape:w-11/12 lg:py-3 lg:h-full lg:flex-row")}>
       {keys.map((key, index) => {
         const item = t.raw(key) as INavigationItem;
         const subKeys = item.links ? Object.values(item.links) : [];
@@ -143,7 +147,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             key={index}
             className={clsx(
               "group/item flex items-center justify-center min-w-max h-12 font-medium  cursor-pointer transition-transform duration-300 ease-in-out", {
-              "w-full items-start justify-between active:text-customMarsala active:bg-white rounded-md": isMobile,
+              "w-full items-start justify-between active:text-customMarsala active:bg-white rounded-md": isMobile && !isBigTablet,
               "relative": showListItems === "relative",
               "hidden": showListItems === "hidden" && !isActiveMobile
             }
@@ -159,8 +163,15 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             {isMobile && !hoveredMenu && idx !== activeMenu && keys.length - 1 === index && <div className="after-line bottom" />}
             <Link
               href={`/${item.href}`}
-              onClick={() => {
-                if (!isMobile) return
+              onClick={(e) => {
+                if (!isMobile) {
+                  if (isBigTablet) {
+                    setHoveredMenu(key)
+                    handleDebouncedMenu(key)
+                    e.preventDefault();
+                  }
+                  return;
+                }
                 setTimeout(() => {
                   closeModal();
                   setHoveredMenu(null);
@@ -168,13 +179,15 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                 }, 500);
               }}
               className={clsx(
-                "flex items-center h-full py-3 px-5 rounded-md border border-transparent  hover:xl:border-white w-full",
+                "flex items-center h-full py-3 px-5 rounded-md border border-transparent w-full",
                 {
                   "text-white": !isActive && !isActiveMobile,
                   "text-customMarsala bg-white rounded-md": isActive || isActiveMobile,
                   "justify-start": isMobile,
                   "justify-center": !isMobile,
-                  "bg-white": isActiveMobile
+                  "bg-white": isActiveMobile,
+                  "hover:lg:border-white": !isBigTablet,
+                  "hover:opacity-0": isBigTablet && showSubMenuWithDelay,
                 }
               )}
             >
@@ -191,6 +204,23 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                 )}
                 onClick={() => handleClickInMobile(key)}>
                 <IconPlus />
+              </div>
+            }
+            {
+              isBigTablet && showSubMenuWithDelay && (isSubMenu || hoveredMenu === key) &&
+              <div
+                className={clsx("absolute top-0 left-0 flex items-center justify-center cursor-pointer duration-300 ease-linear rounded-md",
+                )}
+                onClick={() => handleClickInMobile(key)}
+              >
+                <Link
+                  href={`/${item.href}`}
+                  className={clsx(
+                    "flex items-center h-full py-3 px-5 rounded-md border border-white w-full text-white",
+                  )}
+                >
+                  {item.title}
+                </Link>
               </div>
             }
             {
@@ -213,7 +243,6 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                   subMenuRef={subMenuRef}
                   item={item}
                   selectedSubMenuSegment={selectedSubMenuSegment}
-                  isMobile={isMobile}
                 />
               )
             }
@@ -224,4 +253,4 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
   );
 };
 
-export default React.memo(Navigation);
+export default Navigation;

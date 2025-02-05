@@ -56,7 +56,7 @@ const BurgerMenu = () => {
         )}>
         {!hoveredMenu && <ScrollButton menuRef={containerRef} topIndent={64} variant="menuBtn" dataId="menuBtn" />}
         {hoveredMenu && isSubMenuReady && <ScrollButton menuRef={subMenuRef} topIndent={130} variant="subMenuBtn" dataId="subMenuBtn" />}
-        <LocaleSwitcher />
+        <LocaleSwitcher classNameBurger="right-6 top-3" />
         <Navigation
           subMenuRef={subMenuRef}
           scrollY={scrollY} />
