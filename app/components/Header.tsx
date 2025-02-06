@@ -13,7 +13,7 @@ import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
-import { isAppleMobileDevice, isMobileDevice, device } from "@/helpers/detect-browser";
+import { isAppleMobileDevice, isMobileDevice, device, isTouchScreen } from "@/helpers/detect-browser";
 import { useIsBigTabletStore } from "@/store/isBigTabletStore";
 import { useIsMobileStore } from "@/store/isMobileStore";
 
@@ -79,6 +79,7 @@ const Header = () => {
     return null;
   }
 
+  console.log('isTouchScreen - ', isTouchScreen)
   if (isMobile) {
     // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
@@ -123,9 +124,9 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
-            {isMobile && <p>mobile-{device.type} & {device.model}</p>}
-            {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
-            {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>}
+            {isTouchScreen && <p> isTouchScreen -{isTouchScreen}</p>}
+            {/* {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
+            {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>} */}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />
