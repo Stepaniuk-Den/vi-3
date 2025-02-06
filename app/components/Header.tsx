@@ -13,7 +13,8 @@ import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
-import { isAppleMobileDevice, isMobileDevice, device, isTouchScreen } from "@/helpers/detect-browser";
+import { isAppleMobileDevice, isMobileDevice, device } from "@/helpers/detect-browser";
+import { useIsTouchScreen } from "@/helpers/useIsTouchScreen";
 import { useIsBigTabletStore } from "@/store/isBigTabletStore";
 import { useIsMobileStore } from "@/store/isMobileStore";
 
@@ -43,6 +44,7 @@ const Header = () => {
   const is404 = pathname === "/404";
 
   const { openModal } = useModal()
+  const isTouchScreen = useIsTouchScreen();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,7 +81,6 @@ const Header = () => {
     return null;
   }
 
-  console.log('isTouchScreen - ', isTouchScreen)
   if (isMobile) {
     // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
