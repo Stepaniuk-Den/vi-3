@@ -57,8 +57,22 @@
 }
 
 .carousel-container {
-  height: calc(100vh - 192px);
-  margin-top: 192px;
+  height: calc(100vh - 64px);
+  margin-top: 64px; 
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-container {
+    height: calc(100vh - 192px);
+    margin-top: 192px;
+  }
+}
+
+
+canvas {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .myModalSwiper.swiper {
