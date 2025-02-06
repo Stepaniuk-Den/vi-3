@@ -14,7 +14,6 @@ import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
 import { isAppleMobileDevice, isMobileDevice, device } from "@/helpers/detect-browser";
-import { useIsTouchScreen } from "@/helpers/useIsTouchScreen";
 import { useIsBigTabletStore } from "@/store/isBigTabletStore";
 import { useIsMobileStore } from "@/store/isMobileStore";
 
@@ -44,7 +43,6 @@ const Header = () => {
   const is404 = pathname === "/404";
 
   const { openModal } = useModal()
-  const isTouchScreen = useIsTouchScreen();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -125,9 +123,9 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
-            {isTouchScreen && <p> isTouchScreen -{isTouchScreen}</p>}
-            {/* {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
-            {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>} */}
+            {isMobile && <p>mobile-{device.type} & {device.model}</p>}
+            {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
+            {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />
