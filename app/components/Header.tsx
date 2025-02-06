@@ -73,7 +73,7 @@ const Header = () => {
         (ua.includes("Mac") && navigator.maxTouchPoints > 1);
     })();
 
-    const isMobile = (isAppleMobileDevice || isMobileDevice) && tabletOrMobileMedia;
+    const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
     const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
 
     setIsBigTablet(isBigTablet)
@@ -142,7 +142,6 @@ const Header = () => {
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
             {isBigTablet && <p>bigTablet - {device.type} & {device.model}</p>}
-            {!isBigTablet && !isMobile && <p>desktop - {device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />
