@@ -72,6 +72,15 @@ const Header = () => {
 
   }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia, isMobile, isBigTablet]);
 
+
+  const isIOS = (() => {
+    if (typeof navigator === "undefined") return false;
+
+    const ua = navigator.userAgent;
+    return /iPad|iPhone|iPod/.test(ua) ||
+      (ua.includes("Mac") && navigator.maxTouchPoints > 1);
+  })();
+
   if (is404) {
     return null;
   }
@@ -123,7 +132,7 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
-            {isMobile && <p>mobile-{device.type} & {device.model}</p>}
+            {isIOS && <p> isIOS -{isIOS}</p>}
             {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
             {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
