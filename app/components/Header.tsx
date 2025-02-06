@@ -64,8 +64,17 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
+
+    const isIOS = (() => {
+      if (typeof navigator === "undefined") return false;
+
+      const ua = navigator.userAgent;
+      return /iPad|iPhone|iPod/.test(ua) ||
+        (ua.includes("Mac") && navigator.maxTouchPoints > 1);
+    })();
+
     const isMobile = (isAppleMobileDevice || isMobileDevice) && tabletOrMobileMedia;
-    const isBigTablet = (isAppleMobileDevice || isMobileDevice) && bigTabletMedia;
+    const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
 
     setIsBigTablet(isBigTablet)
     setIsMobile(isMobile)
@@ -73,13 +82,13 @@ const Header = () => {
   }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia, isMobile, isBigTablet]);
 
 
-  const isIOS = (() => {
-    if (typeof navigator === "undefined") return false;
+  // const isIOS = (() => {
+  //   if (typeof navigator === "undefined") return false;
 
-    const ua = navigator.userAgent;
-    return /iPad|iPhone|iPod/.test(ua) ||
-      (ua.includes("Mac") && navigator.maxTouchPoints > 1);
-  })();
+  //   const ua = navigator.userAgent;
+  //   return /iPad|iPhone|iPod/.test(ua) ||
+  //     (ua.includes("Mac") && navigator.maxTouchPoints > 1);
+  // })();
 
   if (is404) {
     return null;
@@ -132,9 +141,8 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
-            {isIOS && <p> isIOS -{isIOS}</p>}
-            {isBigTablet && <p>bigTablet- {device.type} & {device.model}</p>}
-            {!isBigTablet && !isMobile && <p>desktop-{device.type} & {device.model}</p>}
+            {isBigTablet && <p>bigTablet - {device.type} & {device.model}</p>}
+            {!isBigTablet && !isMobile && <p>desktop - {device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />
