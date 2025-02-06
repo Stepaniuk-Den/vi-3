@@ -79,10 +79,6 @@ const Header = () => {
     return null;
   }
 
-  if (!isBigTablet && !isMobile) {
-    return null
-  }
-
   if (isMobile) {
     // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
@@ -112,8 +108,7 @@ const Header = () => {
 
   return (
     <>
-      {/* use lg:hidden because in browser not see mobile devices */}
-      {(!isMobile || isBigTablet) && < header
+      {!isMobile && < header
         style={{
           height: `${heightHeader}px`,
         }}
