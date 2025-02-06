@@ -30,9 +30,10 @@ const Header = () => {
   const [heightTop, setHeightTop] = useState(120);
   const [isClient, setIsClient] = useState(false);
 
-  const bigTablet = useMediaQuery({ minWidth: 1024 });
+  const bigTabletMedia = useMediaQuery({ minWidth: 1024 });
   const tabletOrMobileMedia = useMediaQuery({ maxWidth: 1023.98 });
 
+  const isMobile = useIsMobileStore((state) => state.isMobile);
   const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
   const setIsBigTablet = useIsBigTabletStore((state) => state.setIsBigTablet);
   const setIsMobile = useIsMobileStore((state) => state.setIsMobile);
@@ -64,12 +65,12 @@ const Header = () => {
 
   useEffect(() => {
     const isMobile = (isAppleMobileDevice || isMobileDevice) && tabletOrMobileMedia;
-    const isBigTablet = (isAppleMobileDevice || isMobileDevice) && bigTablet;
+    const isBigTablet = (isAppleMobileDevice || isMobileDevice) && bigTabletMedia;
 
     setIsBigTablet(isBigTablet)
     setIsMobile(isMobile)
 
-  }, [setIsBigTablet, setIsMobile, bigTablet, tabletOrMobileMedia]);
+  }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia, isMobile, isBigTablet]);
 
   if (is404) {
     return null;
@@ -78,7 +79,7 @@ const Header = () => {
     return null;
   }
 
-  if ((isMobileDevice || isAppleMobileDevice) && !isBigTablet) {
+  if (isMobile) {
     // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
       <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala">
@@ -99,6 +100,7 @@ const Header = () => {
             ))}>
             <Burger />
           </div>
+          {isMobile && <p className="absolute top-3 left-1/2 transform -translate-x-1/2 text-white">device is mobile</p>}
         </div>
       </header>
     </>;
@@ -107,7 +109,7 @@ const Header = () => {
   return (
     <>
       {/* use lg:hidden because in browser not see mobile devices */}
-      {(!isAppleMobileDevice || !isMobileDevice || isBigTablet) && < header
+      {(!isMobile || isBigTablet) && < header
         style={{
           height: `${heightHeader}px`,
         }}
@@ -122,6 +124,9 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
+            {isMobile && <p>device is mobile</p>}
+            {isBigTablet && <p>device is bigTablet</p>}
+            {!isBigTablet && !isMobile && <p>device is desktop</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />

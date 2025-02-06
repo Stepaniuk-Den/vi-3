@@ -1,7 +1,6 @@
 "use client";
 
 import { socialItems } from "@/data/socialItems";
-import { isMobileDevice } from "@/helpers/detect-browser";
 import { renderIcon } from "@/helpers/renderIcon";
 import { Link } from "@/i18n/routing";
 import { useHoveredMenuStore } from "@/store/hoveredMenuStore";
@@ -18,13 +17,15 @@ const SocialLinks = () => {
   const isMobile = useIsMobileStore((state) => state.isMobile);
 
   useEffect(() => {
-    if (hoveredMenu && isMobileDevice) {
+    if (hoveredMenu && isMobile) {
       setIsVisible(false);
-    } else {
+    } else if (isMobile) {
       const timeout = setTimeout(() => setIsVisible(true), 500);
       return () => clearTimeout(timeout);
+    } else {
+      setIsVisible(true)
     }
-  }, [hoveredMenu]);
+  }, [hoveredMenu, isMobile]);
   return (
     <div
       className={clsx("flex opacity-0 pointer-events-none top-4 left-auto landscape:lg:static gap-3 w-full max-w-min justify-center self-center portrait:mt-8 xl:mt-0",
