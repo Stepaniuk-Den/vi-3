@@ -63,6 +63,8 @@ export default {
         burgerIn: "burgerIn 0.5s ease-in-out",
         burgerOut: "burgerOut 0.5s ease-in-out",
         laser: "swipe 0.5s linear infinite",
+        textFocusIn: "textFocusIn 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both",
+        textFocusInDelayed: "textFocusIn 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both",
       },
       keyframes: {
         unfoldIn: {
@@ -108,6 +110,10 @@ export default {
           "100%": { left: "100%" },
           // "0%": { transform: "translateX(-100%)" },
           // "100%": { transform: "translateX(100%)" },
+        },
+        textFocusIn: {
+          "0%": { filter: "blur(12px)", opacity: "0" },
+          "100%": { filter: "blur(0)", opacity: "1" },
         },
       },
     },
