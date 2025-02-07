@@ -80,7 +80,7 @@ const Header = () => {
     setIsBigTablet(isBigTablet)
     setIsMobile(isMobile)
 
-  }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia, isMobile, isBigTablet]);
+  }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia]);
 
 
   // const isIOS = (() => {
