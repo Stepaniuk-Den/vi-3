@@ -6,6 +6,7 @@ import React, {
   ReactNode,
   useContext,
   useEffect,
+  useRef,
   useState,
 } from "react";
 import { useTranslations } from "next-intl";
@@ -45,7 +46,8 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const [classNameAnimationOut, setClassNameAnimationOut] =
     useState<string>("animate-unfoldOut");
 
-    const t = useTranslations("ModalWindow");
+  const t = useTranslations("ModalWindow");
+  const modalRef = useRef<HTMLDivElement>(null)
 
 
   const openModal = (modalContent: ReactNode, options?: ModalOptions) => {
@@ -97,11 +99,35 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const disableScroll = (e: TouchEvent) => {
+      if (!modalRef.current || !modalRef.current.contains(e.target as Node)) {
+        e.preventDefault();
+      }
+    };
+
+    if (isOpen) {
+      document.documentElement.style.overscrollBehavior = "none";
+      document.addEventListener("touchmove", disableScroll, { passive: false });
+    } else {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    }
+
+    return () => {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    };
+  }, [isOpen]);
+
+
+
   return (
     <ModalContext.Provider value={{ isOpen, content, openModal, closeModal }}>
       {children}
       {isOpen && (
         <div
+          ref={modalRef}
           className={clsx(`fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
         >
           <div
