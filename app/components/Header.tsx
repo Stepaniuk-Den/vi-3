@@ -74,6 +74,7 @@ const Header = () => {
     })();
 
     const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
+    // const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
     const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
 
     setIsBigTablet(isBigTablet)
@@ -98,7 +99,6 @@ const Header = () => {
   }
 
   if (isMobile) {
-    // if (isMobileDevice || isAppleMobileDevice || isBigTablet) {
     return <>
       <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala">
         <div className="container relative">
@@ -142,6 +142,7 @@ const Header = () => {
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
             {isBigTablet && <p>bigTablet - {device.type} & {device.model}</p>}
+            {!isBigTablet && !isMobile && <p>desktop - {device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />

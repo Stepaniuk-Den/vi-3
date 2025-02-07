@@ -86,8 +86,9 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
       handleDebouncedMenu("", true);
     }
 
-    if (isBigTablet) {
-      handleDebouncedMenu("", true);
+    if (hoveredMenu && !currentSubMenu && isBigTablet) {
+      setHoveredMenu(null);
+      setShowSubMenuWithDelay(false);
     }
   }
 
@@ -133,6 +134,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
         const subKeys = item.links ? Object.values(item.links) : [];
         const isActive = selectedLayoutSegment === key;
         const isActiveMobile = hoveredMenu === key && isMobile;
+        const isActiveTablet = hoveredMenu === key && isBigTablet;
         const isSubMenu = subKeys.length > 0 && hoveredMenu === key;
 
         if (isActive && activeMenu !== index) {
@@ -149,7 +151,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
               "group/item flex items-center justify-center min-w-max h-12 font-medium  cursor-pointer transition-transform duration-300 ease-in-out", {
               "w-full items-start justify-between active:text-customMarsala active:bg-white rounded-md": isMobile && !isBigTablet,
               "relative": showListItems === "relative",
-              "hidden": showListItems === "hidden" && !isActiveMobile
+              "hidden": showListItems === "hidden" && !isActiveMobile && !isBigTablet
             }
             )}
             style={{
@@ -164,8 +166,13 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
             <Link
               href={`/${item.href}`}
               onClick={(e) => {
+                // setShowSubMenuWithDelay(false)
                 if (!isMobile) {
                   if (isBigTablet) {
+                    // setTimeout(() => {
+                    //   setHoveredMenu(key)
+                    //   handleDebouncedMenu(key)
+                    // }, 500);
                     setHoveredMenu(key)
                     handleDebouncedMenu(key)
                     e.preventDefault();
@@ -187,7 +194,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollY, subMenuRef }) => {
                   "justify-center": !isMobile,
                   "bg-white": isActiveMobile,
                   "hover:lg:border-white": !isBigTablet,
-                  "hover:opacity-0": isBigTablet && showSubMenuWithDelay,
+                  "opacity-0": isActiveTablet && showSubMenuWithDelay,
                 }
               )}
             >
