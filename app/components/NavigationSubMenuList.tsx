@@ -6,6 +6,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { useModal } from './ModalProvider';
 import { useHoveredMenuStore } from '@/store/hoveredMenuStore';
 import { useIsMobileStore } from '@/store/isMobileStore';
+import { useIsBigTabletStore } from '@/store/isBigTabletStore';
 interface ILinkProps {
   title: string;
   slug: string;
@@ -35,6 +36,7 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
 
   const isMobile = useIsMobileStore((state) => state.isMobile);
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
 
   const subKeys = useMemo(() => (item.links ? Object.values(item.links) : []), [item.links]);
 
@@ -81,8 +83,8 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
                 }
               )}
               style={{
-                animation: `fadeIn 0.2s ease-in-out forwards`,
-                animationDelay: `${0.2 + subIndex * 0.2}s`,
+                animation: isBigTablet ? `fadeIn 0.2s ease-in-out forwards` : `fadeIn 0.1s ease-in-out forwards`,
+                animationDelay: isBigTablet ? `${0.1 + subIndex * 0.1}s` : `${0.2 + subIndex * 0.2}s`,
               }}
             >
               <Link
