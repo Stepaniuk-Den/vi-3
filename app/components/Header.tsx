@@ -112,7 +112,9 @@ const Header = () => {
                   classNameAnimationIn: "animate-burgerIn",
                   classNameAnimationOut: "animate-burgerOut",
                   classNameBackdrop: "bg-customMarsala",
-                  classNameModalContent: "w-full h-full"
+                  classNameModalContent: "w-full h-full",
+                  isBtnCloseCarousel:false,
+                  isBtnClose:true,
                 }
               )
             ))}>
