@@ -28,7 +28,7 @@ const ModalSwiperContent: React.FC<ModalSwiperProps> = ({
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
-          <div className="relative w-full h-[80vh] sm:h-[90vh] pointer-events-none rounded-md ">
+          <div className="relative w-full h-[70vh] pointer-events-none rounded-md ">
             <Image
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, (max-width: 1280px) 70vw, 60vw"
               src={slide.src}
