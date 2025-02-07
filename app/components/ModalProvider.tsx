@@ -87,68 +87,11 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     }, 300);
   };
 
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.documentElement.style.overflow = "hidden";
-  //   } else {
-  //     document.documentElement.style.overflow = "auto";
-  //   }
-
-  //   const handleKeyDown = (e: KeyboardEvent) => {
-  //     if (e.code === "Escape") {
-  //       closeModal();
-  //     }
-  //   };
-
-  //   window.addEventListener("keydown", handleKeyDown);
-
-  //   return () => {
-  //     window.removeEventListener("keydown", handleKeyDown);
-  //     document.documentElement.style.overflow = "auto";
-  //   };
-  // }, [isOpen]);
-
-  // useEffect(() => {
-  //   const disableScroll = (e: TouchEvent) => {
-  //     if (!modalRef.current || !modalRef.current.contains(e.target as Node)) {
-  //       e.preventDefault();
-  //     }
-  //   };
-
-  //   if (isOpen) {
-  //     document.documentElement.style.overscrollBehavior = "none";
-  //     document.addEventListener("touchmove", disableScroll, { passive: false });
-  //   } else {
-  //     document.documentElement.style.overscrollBehavior = "";
-  //     document.removeEventListener("touchmove", disableScroll);
-  //   }
-
-  //   return () => {
-  //     document.documentElement.style.overscrollBehavior = "";
-  //     document.removeEventListener("touchmove", disableScroll);
-  //   };
-  // }, [isOpen]);
-
   useEffect(() => {
-    const disableScroll = (e: Event) => {
-      e.preventDefault();
-    };
     if (isOpen) {
       document.documentElement.style.overflow = "hidden";
-      document.body.style.overflow = "hidden";
-      document.body.style.touchAction = "none";
-
-      const preventBackgroundScroll = (e: TouchEvent) => {
-        if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-          e.preventDefault();
-        }
-      };
-  
-      window.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
     } else {
       document.documentElement.style.overflow = "auto";
-       document.body.style.overflow = "auto";
-       document.body.style.touchAction = "auto";
     }
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -161,12 +104,69 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("touchmove", disableScroll);
       document.documentElement.style.overflow = "auto";
-      document.body.style.overflow = "auto";
-    document.body.style.touchAction = "auto";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const disableScroll = (e: TouchEvent) => {
+      if (!modalRef.current || !modalRef.current.contains(e.target as Node)) {
+        e.preventDefault();
+      }
+    };
+
+    if (isOpen) {
+      document.documentElement.style.overscrollBehavior = "none";
+      document.addEventListener("touchmove", disableScroll, { passive: false });
+    } else {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    }
+
+    return () => {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    };
+  }, [isOpen]);
+
+  // useEffect(() => {
+  //   const disableScroll = (e: Event) => {
+  //     e.preventDefault();
+  //   };
+  //   if (isOpen) {
+  //     document.documentElement.style.overflow = "hidden";
+  //     document.body.style.overflow = "hidden";
+  //     document.body.style.touchAction = "none";
+
+  //     const preventBackgroundScroll = (e: TouchEvent) => {
+  //       if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+  //         e.preventDefault();
+  //       }
+  //     };
+  
+  //     window.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
+  //   } else {
+  //     document.documentElement.style.overflow = "auto";
+  //      document.body.style.overflow = "auto";
+  //      document.body.style.touchAction = "auto";
+  //   }
+
+  //   const handleKeyDown = (e: KeyboardEvent) => {
+  //     if (e.code === "Escape") {
+  //       closeModal();
+  //     }
+  //   };
+
+  //   window.addEventListener("keydown", handleKeyDown);
+
+  //   return () => {
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //     window.removeEventListener("touchmove", disableScroll);
+  //     document.documentElement.style.overflow = "auto";
+  //     document.body.style.overflow = "auto";
+  //   document.body.style.touchAction = "auto";
+  //   };
+  // }, [isOpen]);
 
   return (
     <ModalContext.Provider value={{ isOpen, content, openModal, closeModal }}>
