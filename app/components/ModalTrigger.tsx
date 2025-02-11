@@ -2,7 +2,8 @@
 
 import Image, { StaticImageData } from "next/image";
 import { useModal } from "./ModalProvider";
-import ModalContent from "./ModalContent";
+import ModalSwiperContent from "./ModalSwiperContent";
+import clsx from "clsx";
 
 type Props = {
   className: string;
@@ -12,7 +13,7 @@ type Props = {
     id: string;
     src: string | StaticImageData;
     alt: string;
-  };
+  }[];
   idx?: number;
 };
 
@@ -21,8 +22,8 @@ const ModalTrigger: React.FC<Props> = ({ className, src, alt, img }) => {
 
   return (
     <div
-      className={className}
-      onClick={() => openModal(<ModalContent slide={img} />)}
+      className={clsx(className, "cursor-zoom-in")}
+      onClick={() => openModal(<ModalSwiperContent slides={img} />)}
     >
       <Image
         sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"

@@ -49,7 +49,7 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
                 className="relative w-full h-[240px] sm:h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
                 src={cardGaskets.src || ""}
                 alt={cardGaskets.alt || ""}
-                img={imgGaskets}
+                img={[imgGaskets]}
               />
 
               {/* <div
@@ -90,7 +90,7 @@ const GasketsFittingsSection: React.FC<Props> = ({ t }) => {
                 className="relative w-full h-[240px] sm:h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
                 src={cardFittings.src || ""}
                 alt={cardFittings.alt || ""}
-                img={imgFittings}
+                img={[imgFittings]}
               />
 
               {/* <div

@@ -41,12 +41,40 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
                     className="relative w-full sm:w-[380px] md:w-1/2 h-[240px] sm:h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"
                     src={typeItem.src || ""}
                     alt={typeItem.alt || ""}
-                    img={{
-                      id: typeItem.id || "",
-                      src: typeItem.src || "",
-                      alt: typeItem.alt || "",
-                    }}
+                    img={[
+                      {
+                        id: typeItem.id || "",
+                        src: typeItem.src || "",
+                        alt: typeItem.alt || "",
+                      },
+                    ]}
                   />
+
+                  {/* <div
+                    className="relative w-full sm:w-[380px] md:w-1/2 h-[240px] sm:h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"
+                    onClick={() =>
+                      openModal(
+                        <ModalSwiperContent
+                          slides={[
+                            {
+                              id: typeItem.id || "",
+                              src: typeItem.src || "",
+                              alt: typeItem.alt || "",
+                            },
+                          ]}
+                        />
+                      )
+                    }
+                  >
+                    <Image
+                      sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                      src={typeItem.src || ""}
+                      alt={typeItem.alt || ""}
+                      fill
+                      priority
+                      className="object-cover"
+                    />
+                  </div> */}
 
                   {/* <div className="relative w-[380px] md:w-1/2 h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden">
                     <Image

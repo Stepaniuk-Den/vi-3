@@ -44,6 +44,7 @@ const OfferSection: React.FC<Props> = ({ t, tBtn }) => {
           background={"marsala"}
           slug={cardItem.slug}
           className="text-center"
+          offer={true}
           //   alignment="center"
           //   path={path}
         />
