@@ -3,7 +3,7 @@
 import { windowSvgItems } from "@/data/svgWindows";
 import { useMediaQuery } from "react-responsive";
 import { useClickOutside } from "@/helpers/useClickOutside";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 export interface IWindowFeaturesProps {
   id: string;
