@@ -87,7 +87,8 @@ canvas {
   filter: brightness(100%) !important;
 }
 
-.myModalSwiper .swiper-button-prev:after,.swiper-button-next:after{
+.myModalSwiper .swiper-button-prev:after,
+.myModalSwiper .swiper-button-next:after{
  font-size: 28px !important;
 }
 
