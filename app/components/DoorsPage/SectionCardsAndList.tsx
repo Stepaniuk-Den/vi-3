@@ -38,15 +38,15 @@ const SectionCardsAndList: React.FC<ISectionCardsAndListProps> = ({ t }) => {
               className="flex flex-col relative"
               list={images.slice(0, 1)}
               width="w-full"
-              height="h-[40rem]"
+              height="h-[15rem] sm:h-[40rem]"
             />
           </li>
           <li className="w-full sm:w-2/3">
             <ImagesComponent
-              className="flex flex-col relative sm:!gap-5 xl:!gap-4"
+              className="flex !flex-col relative sm:!gap-5 xl:!gap-4"
               list={images.slice(1, 3)}
               width="w-full"
-              height="h-[18.5rem]"
+              height="h-[15rem] sm:h-[18.5rem]"
               objTypeImg="object-contain"
             />
           </li>

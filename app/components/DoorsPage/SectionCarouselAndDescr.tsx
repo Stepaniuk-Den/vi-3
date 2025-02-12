@@ -22,7 +22,7 @@ const SectionCarouselAndDescr: React.FC<ISectionCarouselAndDescrProps> = ({
   return (
     <section className="sectionCl">
       <div className="container">
-        <h1 className="titleCl">{t("title")}</h1>
+        <h1 className="titleCl pt-16 lg:pt-0">{t("title")}</h1>
         <Line className="marsala-center" color="marsala" />
         <div className="flex flex-col lg:flex-row lg:gap-8 items-center lg:items-start pt-6">
           <div className="flex-grow flex-[2]">

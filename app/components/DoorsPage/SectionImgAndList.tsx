@@ -28,9 +28,9 @@ const SectionImgAndList: React.FC<ISectionImgAndListProps> = ({
         </TitleBanner>
         <ul className="flex flex-col gap-10">
           {Object.values(t.cards).map((card, index) => (
-            <li key={card.id} className="flex flex-col sm:flex-row lg:gap-24">
+            <li key={card.id} className="flex flex-col sm:flex-row lg:gap-16 xl:gap-24">
               <div
-                className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-1/3 h-[300px] md:h-[380px] lg:h-[460px] cursor-zoom-in"
+                className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-1/3 h-[15rem] sm:h-[300px] md:h-[380px] lg:h-[460px] mb-2 sm:mb-0 cursor-zoom-in"
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />

@@ -1,0 +1,1 @@
+export const imgHeight = "h-[15rem] md:h-[20rem] lg:h-[30rem]"

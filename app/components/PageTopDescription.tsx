@@ -1,6 +1,6 @@
+import { IParameterItem } from "@/helpers/interfaces";
 import React from "react";
 import Line from "./Line";
-import { IParameterItem } from "@/helpers/interfaces";
 import NestedParameterDescList from "./NestedParameterDescList";
 
 interface IPageTopDescriptionProps {
