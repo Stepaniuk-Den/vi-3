@@ -12,6 +12,7 @@ import ModalSwiperContent from "../ModalSwiperContent";
 interface IList {
   list: IImage[];
   className?: string;
+  classNameWrapper?: string;
   objTypeImg?: string;
   children?: React.ReactNode;
   isRow?: boolean;
@@ -47,6 +48,7 @@ const ImagesComponent: React.FC<IList> = ({
   width,
   height,
   className,
+  classNameWrapper,
   objTypeImg = "object-cover",
   children,
   isRow = false,
@@ -117,7 +119,7 @@ const ImagesComponent: React.FC<IList> = ({
               <div
                 className={clsx(
                   "relative border border-gray-300 rounded-md overflow-hidden w-full cursor-zoom-in",
-                  currentHeight
+                  currentHeight, classNameWrapper
                 )}
                 onClick={() =>
                   openModal(
@@ -134,7 +136,7 @@ const ImagesComponent: React.FC<IList> = ({
                   priority
                 />
               </div>
-              {img.description && !children && <p>{img.description}</p>}
+              {img.description && !children && <p className="text-center">{img.description}</p>}
               {img.params && !children && (
                 <NestedParameterDescList param={img.params} />
               )}

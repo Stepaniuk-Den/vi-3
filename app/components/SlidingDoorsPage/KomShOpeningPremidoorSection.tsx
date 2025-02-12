@@ -12,14 +12,14 @@ const KomShOpeningPremidoorSection = ({ bannerTitle, imgList }: IProps) => {
     <section className="sectionCl">
       <div className="container">
         <TitleBanner>
-          <h3 className="titleCl">{bannerTitle}</h3>
+          <h2 className="titleCl">{bannerTitle}</h2>
         </TitleBanner>
         <ImagesComponent
           list={imgList.slice(6, 8)}
           width={{ 1: "w-full sm:w-1/3", 2: "w-full sm:w-2/3" }}
           height='h-[10rem] sm:h-[15rem] lg:h-[20rem]'
           objTypeImg="object-contain"
-          className=""
+          classNameWrapper="border-none"
         />
         <ImagesComponent
           list={imgList.slice(8, 10)}

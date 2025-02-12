@@ -16,7 +16,8 @@ const SchShTopSection = ({ desc2, desc3, imgList, cardsList }: IProps) => {
         <ImagesComponent
           list={imgList.slice(0, 2)}
           width={{ 1: "w-full sm:w-1/4 lg:w-1/3", 2: "w-full sm:w-3/4 lg:w-2/3" }}
-          className="mt-11"
+          height='h-[15rem] md:h-[20rem] lg:h-[30rem]'
+          className=""
         />
         <p className="my-4">{desc2}</p>
         <ImagesComponent list={imgList.slice(2, 3)} width="w-full"

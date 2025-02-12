@@ -43,18 +43,20 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       />
       <NestedCardsSection
         tSectionItem={t.raw("komPremiCross")}
-        size="w-1/2"
-        imgH="h-[12rem] sm:h-[17rem] md:h-[25rem] lg:h-[30rem]"
+        size="w-full sm:w-1/2"
+        imgH="h-[20rem] lg:h-[30rem]"
         titleBanner
         isRow={false}
         descReverse
+        imgFit="cover"
+        classNameList="flex-wrap sm:flex-nowrap max-sm:text-center"
       />
       <ImagesComponent
         list={imgList.slice(4, 6)}
-        width="w-1/2"
-        height='h-[10rem] sm:h-[17rem] lg:h-[25rem]'
-        className="mt-11 flex-row flex-nowrap gap-6"
-        objTypeImg="cover"
+        width="w-full sm:w-1/2"
+        height='h-[15rem] sm:h-[20rem] lg:h-[25rem]'
+        className="mt-11 sm:flex-row sm:flex-nowrap gap-6"
+        objTypeImg="object-contain"
       >
         <p className="max-sm:text-center">{t.raw("komPremiCross")["description2"]}</p>
       </ImagesComponent>
