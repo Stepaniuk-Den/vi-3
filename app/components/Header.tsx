@@ -73,8 +73,8 @@ const Header = () => {
         (ua.includes("Mac") && navigator.maxTouchPoints > 1);
     })();
 
-    const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
-    // const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
+    // const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
+    const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
     const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
 
     setIsBigTablet(isBigTablet)
@@ -113,8 +113,8 @@ const Header = () => {
                   classNameAnimationOut: "animate-burgerOut",
                   classNameBackdrop: "bg-customMarsala",
                   classNameModalContent: "w-full h-full",
-                  isBtnCloseCarousel:false,
-                  isBtnClose:true,
+                  isBtnCloseCarousel: false,
+                  isBtnClose: true,
                 }
               )
             ))}>
