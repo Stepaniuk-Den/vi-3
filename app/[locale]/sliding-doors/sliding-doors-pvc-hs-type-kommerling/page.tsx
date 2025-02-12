@@ -27,7 +27,8 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       <PageTopDescription t={t} />
       <ImagesComponent
         list={imgList.slice(0, 2)}
-        width={{ 1: "w-1/3", 2: "w-2/3" }}
+        width={{ 1: "w-full sm:w-1/3", 2: "w-full sm:w-2/3" }}
+        height='h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem]'
         className="mt-2 lg:mt-11 container"
       />
       <KomShPremidoorSection
@@ -36,22 +37,28 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       />
       <ImagesComponent
         list={imgList.slice(2, 4)}
-        width={{ 1: "w-2/3", 2: "w-1/3" }}
+        width={{ 1: "w-full sm:w-2/3", 2: "w-full sm:w-1/3" }}
+        height='h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem]'
         className="mt-6 lg:mt-11 container"
       />
       <NestedCardsSection
         tSectionItem={t.raw("komPremiCross")}
-        size="w-1/2"
+        size="w-full sm:w-1/2"
+        imgH="h-[20rem] lg:h-[30rem]"
         titleBanner
         isRow={false}
         descReverse
+        imgFit="cover"
+        classNameList="flex-wrap sm:flex-nowrap max-sm:text-center"
       />
       <ImagesComponent
         list={imgList.slice(4, 6)}
-        width="w-1/2"
-        className="mt-11 flex-col lg:flex-row"
+        width="w-full sm:w-1/2"
+        height='h-[15rem] sm:h-[20rem] lg:h-[25rem]'
+        className="mt-11 sm:flex-row sm:flex-nowrap gap-6"
+        objTypeImg="object-contain"
       >
-        <p>{t.raw("komPremiCross")["description2"]}</p>
+        <p className="max-sm:text-center">{t.raw("komPremiCross")["description2"]}</p>
       </ImagesComponent>
       <KomShOpeningPremidoorSection
         imgList={imgList}
