@@ -2,6 +2,7 @@
 
 import { IImgList } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
+import { imgHeight } from "@/helpers/imgHeight";
 import clsx from "clsx";
 import React from "react";
 import NestedCard from "../NestedCard";
@@ -16,11 +17,15 @@ interface ISectionDescrAndCards {
     raw: (key: string) => string;
   };
   columns?: number;
+  mobileOrder?: string[];
+  bigMobOrder?: string[];
 }
 
 const SectionDescrAndCards: React.FC<ISectionDescrAndCards> = ({
   t,
   columns = 2,
+  mobileOrder = [],
+  bigMobOrder = [],
 }) => {
   const imgList = t.imgList ? Object.values(t.imgList) : [];
   const images = imgList.map((img) => ({
@@ -44,22 +49,28 @@ const SectionDescrAndCards: React.FC<ISectionDescrAndCards> = ({
           </h3> */}
         </div>
         <ul
-          className={clsx("grid gap-4 md:gap-7 pt-4","grid-cols-1",
-          columns === 2 && "sm:grid-cols-2", 
-          // columns === 3 && "sm:grid-cols-3",
-          columns === 4 && "sm:grid-cols-2 lg:grid-cols-4",
-        )}
+          className={clsx(
+            "grid gap-4 md:gap-7 pt-4",
+            "grid-cols-1",
+            columns === 2 && "sm:grid-cols-2",
+            columns === 4 && "sm:grid-cols-2 lg:grid-cols-4"
+          )}
         >
           {imgList.map((card, index) => {
             return (
               <NestedCard
                 key={card.id}
+                className={clsx(
+                  mobileOrder[index] ?? "",
+                  bigMobOrder[index] ? bigMobOrder[index] : ""
+                )}
                 title={card.title}
                 src={card.src}
                 alt={card.alt}
                 size="w-full"
                 description={card.description}
                 isRow={false}
+                imgH={imgHeight}
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />

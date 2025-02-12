@@ -1,6 +1,7 @@
 "use client";
 import { IImgList, IParameterItem } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
+import { imgHeight } from "@/helpers/imgHeight";
 import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
 import NestedCard from "../NestedCard";
@@ -21,12 +22,16 @@ interface ISectionListAndCardsProps {
   };
   isShowSecondList?: boolean;
   columns?: number;
+  mobileOrder?: string[];
+  bigMobOrder?: string[];
 }
 
 const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
   t,
   isShowSecondList = false,
   columns = 2,
+  mobileOrder = [], 
+  bigMobOrder = [],
 }) => {
   const parametersList = t.parametersList;
   const parametersList2 = t.parametersList2;
@@ -56,20 +61,25 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
         <ul
           className={clsx("grid gap-4 md:gap-7 pt-8","grid-cols-1",
           columns === 2 && "sm:grid-cols-2", 
-          // columns >= 4 && "lg:grid-cols-4",
-          columns === 3 && "sm:grid-cols-3"
+          columns === 3 && "sm:grid-cols-3",
+
         )}
         >
           {imgList.map((card, index) => {
             return (
               <NestedCard
                 key={card.id}
+                className={clsx(
+                  mobileOrder[index] ?? "", 
+                  bigMobOrder[index] ? bigMobOrder[index] : ""
+                )}
                 title={card.title}
                 src={card.src}
                 alt={card.alt}
                 size="w-full"
                 description={card.description}
                 isRow={false}
+                imgH={imgHeight}
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />

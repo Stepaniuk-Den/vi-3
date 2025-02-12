@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { imgHeight } from "@/helpers/imgHeight";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import SectionImgAndList from "@/app/components/DoorsPage/SectionImgAndList";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -22,6 +23,8 @@ const DoorsAlumAliplast: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         imgFit="cover"
+        positioning="grid"
+        imgH={imgHeight}
       />
       <SectionImgAndList t={t.raw("Superial800Card")} isShowSecondList />
       <SectionImgAndList t={t.raw("Imperial800Card")} isShowSecondList />

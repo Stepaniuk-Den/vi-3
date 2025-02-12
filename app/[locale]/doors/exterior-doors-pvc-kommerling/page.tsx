@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { imgHeight } from "@/helpers/imgHeight";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import SectionImagesAndCards from "@/app/components/DoorsPage/SectionImagesAndCards";
 import SectionImgAndList from "@/app/components/DoorsPage/SectionImgAndList";
@@ -24,6 +25,8 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         imgFit="cover"
+        positioning="grid"
+        imgH={imgHeight}
       />
       <NestedCardsSection
         tSectionItem={t.raw("InwardDoors76Section")}
@@ -31,6 +34,8 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         imgFit="cover"
+        positioning="grid"
+        imgH={imgHeight}
       />
       <NestedCardsSection
         tSectionItem={t.raw("DoorSillFeatures")}
@@ -39,6 +44,7 @@ const DoorsPvcKommerling: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
         positioning="grid"
         imgFit="cover"
+        imgH={imgHeight}
       />
       <SectionImagesAndCards t={t.raw("DoorSealsEPDM")} isCards={false} />
     </section>
