@@ -1,4 +1,5 @@
 import { IImgList, IParameterItem } from "@/helpers/interfaces";
+import { imgHeight } from "@/helpers/imgHeight";
 import React from "react";
 import TitleBanner from "../TitleBanner";
 import ImagesComponent from "../SlidingDoorsPage/ImagesComponent";
@@ -29,7 +30,7 @@ const SectionTwoImgAndList: React.FC<ISectionTwoImgAndListProps> = ({ t }) => {
             className="lg:mb-7 justify-around"
             list={images.slice(0, 1)}
             width="w-full lg:w-[16rem]"
-            height="h-[28rem]"
+            height={imgHeight}
           />
           <div className="flex flex-col gap-5 lg:pt-5">
             <p>{description}</p>
@@ -41,7 +42,7 @@ const SectionTwoImgAndList: React.FC<ISectionTwoImgAndListProps> = ({ t }) => {
             className="lg:mb-7 justify-around"
             list={images.slice(1, 2)}
             width="w-full lg:w-[16rem]"
-            height="h-[28rem]"
+            height={imgHeight}
           />
         </div>
       </div>
