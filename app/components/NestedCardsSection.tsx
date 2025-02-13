@@ -90,7 +90,7 @@ const NestedCardsSection: React.FC<Props> = ({
         <ul
           className={clsx("flex justify-center gap-6", classNameList, {
             "flex-wrap": positioning === "flexWrap",
-            "grid-cols-1 sm:grid-cols-2": positioning === "grid",
+            "grid grid-cols-1 sm:grid-cols-2": positioning === "grid",
             // "flex justify-center": positioning === "flex",
             // "grid grid-cols-3": positioning === "grid3",
           })}
