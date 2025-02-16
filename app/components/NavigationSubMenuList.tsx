@@ -93,7 +93,7 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
                     "hover:scale-x-95 hover:text-customMarsala-accent active:scale-x-105 active:text-customElement": isActiveSubMenuItem !== subIndex && !isMobile
                   }
                 )}
-                href={`/${item.href}/${subItem.slug}`}
+                href={`${item.href}/${subItem.slug}`}
                 onClick={() => {
                   setHoveredMenu(null)
                   if (!isMobile) return
