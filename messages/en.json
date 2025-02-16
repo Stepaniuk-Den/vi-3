@@ -176,7 +176,6 @@
       }
     }
   },
-
   "ContactForm": {
     "title": "CONTACT US",
     "placeholderName": "Name",
@@ -203,7 +202,6 @@
       "companyName": "VI-3"
     }
   },
-
   "Hero": {
     "slides": {
       "1": {
@@ -366,7 +364,6 @@
       }
     }
   },
-
   "WindowsPage": {
     "title": "WINDOWS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
@@ -3471,7 +3468,7 @@
         },
         "4": {
           "id": "4",
-          "title": "The handle provides control of all functions",
+          "title": "The handle provides control of all functions.",
           "src": "/images/slidingDoors/pskSch/psk-sch-tilt-fitt4.jpg",
           "alt": "",
           "params": {
@@ -4317,7 +4314,7 @@
       }
     }
   },
-  "ModalWindow":{
-    "ariaLabel":"Close"
+  "ModalWindow": {
+    "ariaLabel": "Close"
   }
 }

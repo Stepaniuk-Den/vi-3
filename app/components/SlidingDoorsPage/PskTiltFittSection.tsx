@@ -15,10 +15,11 @@ const PskTiltFittSection = ({ cardList, bannerTitle }: IProps) => {
         </TitleBanner>
         <ImagesComponent
           list={cardList}
-          width="w-1/4"
+          width="w-full lg:w-1/4"
           height="h-[15rem]"
-          className="mb-7"
-          // objTypeImg="object-contain"
+          className="mb-7 sm:max-lg:grid sm:max-lg:grid-cols-2"
+          classNameWrapperImage="max-sm:max-w-[25rem] max-sm:ml-auto max-sm:mr-auto"
+          objTypeImg="object-contain"
         />
       </div>
     </section>
