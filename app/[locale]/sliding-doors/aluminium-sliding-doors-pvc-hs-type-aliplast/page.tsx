@@ -23,12 +23,12 @@ const SlidingDoorsAlumAli: React.FC<Props> = ({ params: { locale } }) => {
       <PageTopDescription t={t} />
       <ImagesComponent
         list={imgList.slice(0, 2)}
-        width="w-1/2"
-        className="container mt-11"
+        width="w-full sm:w-1/2"
+        className="container sm:flex-nowrap mt-2 lg:mt-11"
       />
       <AluGlideOverviewSection imgList={imgList} desc2={t("desc")} />
-      <AluGlideCustomSection tSection={tUltraSection} heightImages="h-[600px]" />
-      <AluGlideCustomSection tSection={tVisoSection} heightImages="h-[300px]" />
+      <AluGlideCustomSection tSection={tUltraSection} heightImages="h-[300px] md:h-[450px] lg:h-[550px] xl:h-[600px]" />
+      <AluGlideCustomSection tSection={tVisoSection} heightImages="h-[300px] md:h-[450px] lg:h-[300px]" />
     </>
   );
 };

@@ -55,7 +55,7 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
         list={imgList.slice(4, 6)}
         width="w-full sm:w-1/2"
         height='h-[15rem] sm:h-[20rem] lg:h-[25rem]'
-        className="mt-11 sm:flex-row sm:flex-nowrap gap-6"
+        className="mt-11 gap-6"
         objTypeImg="object-contain"
       >
         <p className="max-sm:text-center">{t.raw("komPremiCross")["description2"]}</p>

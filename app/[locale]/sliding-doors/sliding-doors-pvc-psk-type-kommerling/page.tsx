@@ -30,7 +30,7 @@ const SlidingDoorsPskKom: React.FC<Props> = ({ params: { locale } }) => {
         <ImgCarouselPage
           imgList={imgList.slice(5, 9)}
           width="w-full"
-          height="h-[600px]"
+          height="h-[30rem] xl:h-[600px]"
         />
       </div>
       <PskTiltSlideOptSection

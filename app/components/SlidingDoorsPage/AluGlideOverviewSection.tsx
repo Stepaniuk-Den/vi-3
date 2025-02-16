@@ -13,8 +13,8 @@ const AluGlideOverviewSection = ({ imgList, desc2 }: IProps) => {
         <p className="my-4">{desc2}</p>
         <ImagesComponent
           list={imgList.slice(2, 4)}
-          width="w-1/2"
-          className="mt-7"
+          width="w-full sm:w-1/2"
+          className="mt-7 w-full sm:flex-nowrap"
           objTypeImg='object-contain'
         />
       </div>

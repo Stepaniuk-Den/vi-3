@@ -12,7 +12,8 @@ import ModalSwiperContent from "../ModalSwiperContent";
 interface IList {
   list: IImage[];
   className?: string;
-  classNameWrapper?: string;
+  classNameComponent?: string;
+  classNameWrapperImage?: string;
   objTypeImg?: string;
   children?: React.ReactNode;
   isRow?: boolean;
@@ -48,7 +49,8 @@ const ImagesComponent: React.FC<IList> = ({
   width,
   height,
   className,
-  classNameWrapper,
+  classNameComponent,
+  classNameWrapperImage,
   objTypeImg = "object-cover",
   children,
   isRow = false,
@@ -59,17 +61,31 @@ const ImagesComponent: React.FC<IList> = ({
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const getFont = () => {
+      if (!containerRef.current) return "16px Arial";
+      const style = window.getComputedStyle(containerRef.current);
+      return `${style.fontSize} ${style.fontFamily}`;
+    };
+
+    const getTextWidth = (text: string, font: string) => {
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+      if (!context) return 8;
+      context.font = font;
+      return context.measureText(text).width;
+    };
+
     const calculateTitleHeight = () => {
       if (containerRef.current) {
         const containerWidth = containerRef.current.offsetWidth;
+        const font = getFont();
 
         const maxRows = list.reduce((max, img) => {
-          const titleLength = img.title ? img.title.length : 0;
+          const title = img.title?.trim() ?? "";
+          const titleWidth = getTextWidth(title, font);
+          const estimatedRows = Math.ceil(titleWidth / containerWidth);
 
-          const charsPerRow = Math.floor(containerWidth / 8);
-          const rows = Math.ceil(titleLength / charsPerRow);
-
-          return Math.max(max, rows);
+          return Math.max(max, estimatedRows);
         }, 0);
 
         if (maxRows <= 1) {
@@ -90,15 +106,17 @@ const ImagesComponent: React.FC<IList> = ({
     };
   }, [list]);
 
+
+
   return (
     <div
       className={clsx("flex", {
         container: children && !isRow,
-        "flex-row justify-between": isRow,
+        "flex-col gap-2 sm:flex-row sm:justify-between": isRow,
         "flex-col gap-2": !isRow,
-      })}
+      }, classNameComponent)}
     >
-      <div className={clsx("flex flex-wrap justify-between gap-y-6 sm:flex-nowrap lg:flex-row sm:gap-6", className)}>
+      <div className={clsx("flex flex-wrap justify-between gap-y-6 sm:flex-nowrap lg:flex-row sm:gap-6 w-full", className)}>
         {list.map((img, idx) => {
           const currentWidth = getImageDimensionValue(width, idx, "w-full lg:w-1/3");
           const currentHeight = getImageDimensionValue(
@@ -114,12 +132,12 @@ const ImagesComponent: React.FC<IList> = ({
               key={img.id}
             >
               {img.title && img.title.trim().length > 0 && (
-                <p className={clsx("mb-2", titleHeightClass)}>{img.title}</p>
+                <p className={clsx("mb-2 max-sm:text-center", titleHeightClass)}>{img.title}</p>
               )}
               <div
                 className={clsx(
                   "relative border border-gray-300 rounded-md overflow-hidden w-full cursor-zoom-in",
-                  currentHeight, classNameWrapper
+                  currentHeight, classNameWrapperImage
                 )}
                 onClick={() =>
                   openModal(

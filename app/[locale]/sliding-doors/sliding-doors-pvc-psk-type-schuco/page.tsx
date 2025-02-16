@@ -24,15 +24,17 @@ const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
       <PageTopDescription t={t} />
       <ImagesComponent
         list={imgList.slice(0, 2)}
-        width={{ 1: "w-1/2", 2: "w-1/2" }}
-        className=" container mt-11"
+        width={{ 1: "w-full sm:w-1/2", 2: "w-full sm:w-1/2" }}
+        className=" container sm:flex-nowrap mt-2 lg:mt-11"
       />
       <NestedCardsSection
         tSectionItem={t.raw("pskTiltSys")}
-        size="w-1/2"
+        size="w-full sm:w-1/2"
+        imgH="h-[20rem] lg:h-[30rem]"
         titleBanner
         isRow={false}
         descReverse
+        classNameList="flex-wrap sm:flex-nowrap max-sm:text-center"
       />
       <PskTiltSlideSection
         cardList={cardListOpt}

@@ -19,7 +19,7 @@ const KomShOpeningPremidoorSection = ({ bannerTitle, imgList }: IProps) => {
           width={{ 1: "w-full sm:w-1/3", 2: "w-full sm:w-2/3" }}
           height='h-[10rem] sm:h-[15rem] lg:h-[20rem]'
           objTypeImg="object-contain"
-          classNameWrapper="border-none"
+          classNameWrapperImage="border-none"
         />
         <ImagesComponent
           list={imgList.slice(8, 10)}
