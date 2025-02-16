@@ -2,6 +2,7 @@
 
 import { ICard } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
+import { imgHeight } from "@/helpers/imgHeight";
 import Image from "next/image";
 import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
@@ -33,8 +34,6 @@ const SectionListImgAndList: React.FC<ISectionSectionListImgAndListProps> = ({
       <div className="container">
         <ul
           className={clsx("grid gap-7","grid-cols-1",
-            // "grid-cols-2": columns === 2,
-            // "grid-cols-3": columns === 3,
             columns === 2 && "sm:grid-cols-2", 
             columns === 3 && "sm:grid-cols-3",
           )}
@@ -46,7 +45,7 @@ const SectionListImgAndList: React.FC<ISectionSectionListImgAndListProps> = ({
                 <NestedParameterDescList param={card.parametersList} />
               )}
               <div
-                className="relative border border-gray-300 rounded-md overflow-hidden w-full h-[460px] mt-3 cursor-zoom-in"
+                className={`relative border border-gray-300 rounded-md overflow-hidden w-full mt-3 cursor-zoom-in ${imgHeight}`}
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />

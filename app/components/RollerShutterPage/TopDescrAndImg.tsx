@@ -25,11 +25,11 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
   return (
     <section className="pageCl">
       <div className="container">
-        <h1 className="titleCl pt-16">{title}</h1>
+        <h1 className="titleCl pt-16 lg:pt-0">{title}</h1>
         <Line className="marsala-center" color="marsala" />
         <div className="flex flex-col sm:flex-row gap-5">
           <div
-            className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-2/3 h-[460px] cursor-zoom-in"
+            className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-2/3 h-[15rem] sm:h-[460px] cursor-zoom-in"
             onClick={() =>
               openModal(
                 <ModalSwiperContent

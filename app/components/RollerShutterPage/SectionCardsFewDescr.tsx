@@ -28,7 +28,7 @@ const SectionCardsFewDescr: React.FC<ISectionImgAndListProps> = ({ t }) => {
                 {card.title}
               </h3>
               <div
-                className="relative border border-gray-300 rounded-md overflow-hidden w-full h-[260px] cursor-zoom-in"
+                className="relative border border-gray-300 rounded-md overflow-hidden w-full h-[15rem] sm:h-[260px] cursor-zoom-in"
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={index} />
