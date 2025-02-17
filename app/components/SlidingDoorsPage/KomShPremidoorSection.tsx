@@ -6,6 +6,7 @@ import NestedParameterDescList from "../NestedParameterDescList";
 import { IImage, IParameterItem } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 interface IProps {
   tCardPremi: IImage;
@@ -41,7 +42,9 @@ const KomShPremidoorSection = ({ tCardPremi, tCardPremiParams }: IProps) => {
           />
         </div>
         <div className="flex flex-col w-full sm:w-1/2 lg:w-2/3">
-          <p className="mb-6 lg:mb-20">{tCardPremi.description}</p>
+          <Observer threshold={1} animation='zoom-in'>
+            <p className="mb-6 lg:mb-20">{tCardPremi.description}</p>
+          </Observer>
           <NestedParameterDescList param={tCardPremiParams} />
         </div>
       </div>

@@ -8,6 +8,7 @@ import { IImage } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
 import NestedParameterDescList from "../NestedParameterDescList";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 interface IList {
   list: IImage[];
@@ -132,29 +133,37 @@ const ImagesComponent: React.FC<IList> = ({
               key={img.id}
             >
               {img.title && img.title.trim().length > 0 && (
-                <p className={clsx("mb-2 max-sm:text-center", titleHeightClass)}>{img.title}</p>
+                <Observer threshold={1} animation='slide-up'>
+                  <p className={clsx("mb-2 max-sm:text-center", titleHeightClass)}>{img.title}</p>
+                </Observer>
               )}
-              <div
-                className={clsx(
-                  "relative border border-gray-300 rounded-md overflow-hidden w-full cursor-zoom-in",
-                  currentHeight, classNameWrapperImage
-                )}
-                onClick={() =>
-                  openModal(
-                    <ModalSwiperContent slides={list} initialSlide={idx} />
-                  )
-                }
-              >
-                <Image
-                  className={objTypeImg}
-                  sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  priority
-                />
-              </div>
-              {img.description && !children && <p className="text-center">{img.description}</p>}
+              <Observer threshold={0.5} animation='flip-in-vertical'>
+                <div
+                  className={clsx(
+                    "relative border border-gray-300 rounded-md overflow-hidden w-full cursor-zoom-in",
+                    currentHeight, classNameWrapperImage
+                  )}
+                  onClick={() =>
+                    openModal(
+                      <ModalSwiperContent slides={list} initialSlide={idx} />
+                    )
+                  }
+                >
+                  <Image
+                    className={objTypeImg}
+                    sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    priority
+                  />
+                </div>
+              </Observer>
+              {img.description && !children &&
+                <Observer threshold={0.7} animation='slide-up'>
+                  <p className="text-center">{img.description}</p>
+                </Observer>
+              }
               {img.params && !children && (
                 <NestedParameterDescList param={img.params} />
               )}

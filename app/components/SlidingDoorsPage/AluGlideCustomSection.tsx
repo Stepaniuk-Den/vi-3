@@ -40,7 +40,7 @@ const AluGlideCustomSection = ({ tSection, heightImages, widthImages = "w-full",
                 />
                 <NestedParameterDescList
                   param={tSection.parametersListTech}
-                  className='sm:w-1/2'
+                  className='w-full'
                 />
               </div>
             }

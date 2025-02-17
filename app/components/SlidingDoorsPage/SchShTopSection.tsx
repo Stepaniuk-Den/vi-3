@@ -1,3 +1,4 @@
+import Observer from "@/helpers/observer";
 import NestedCard from "../NestedCard";
 import ImagesComponent from "./ImagesComponent";
 import { IImage } from "@/helpers/interfaces";
@@ -19,10 +20,14 @@ const SchShTopSection = ({ desc2, desc3, imgList, cardsList }: IProps) => {
           // height='h-[15rem] md:h-[20rem] lg:h-[30rem]'
           className="mt-2 lg:mt-11"
         />
-        <p className="my-4">{desc2}</p>
+        <Observer threshold={1} animation='zoom-in'>
+          <p className="my-4">{desc2}</p>
+        </Observer>
         <ImagesComponent list={imgList.slice(2, 3)} width="w-full"
           height="max-sm:h-[10rem] sm:h-[15rem] md:h-[20rem] lg:h-[30rem]" />
-        <p className="my-4">{desc3}</p>
+        <Observer threshold={1} animation='zoom-in'>
+          <p className="my-4">{desc3}</p>
+        </Observer>
         <ul className="flex flex-col sm:flex-row gap-10">
           {cardsList.map((card) => {
             return (
