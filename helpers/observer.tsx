@@ -14,7 +14,7 @@ const Observer = ({
   scale,
   once = true,
   type = false,
-  className,
+  classNameObserver,
   rootMargin,
   animation,
 }: {
@@ -28,7 +28,7 @@ const Observer = ({
   scale?: number;
   once?: boolean;
   type?: boolean;
-  className?: string;
+  classNameObserver?: string;
   rootMargin?: string;
   animation?: string | null;
 
@@ -90,8 +90,8 @@ const Observer = ({
       break;
     case "zoom-in-line":
       styles = {
-        animation: intersecting ? `zoomInLine ${duration} ease-in-out forwards` : "none",
-        opacity: intersecting ? 1 : 0,
+        animation: intersecting ? `zoomInLine ${duration} ease-in-out 0.5s forwards` : "none",
+        opacity: 0,
       };
       break;
     case "slide-up":
@@ -140,7 +140,7 @@ const Observer = ({
         style={styles}
         ref={ref as React.RefObject<HTMLDivElement>}
         // className={`transition ${intersecting ? "opacity-100" : "opacity-0"}`}  // for tailwind css
-        className={className}
+        className={`${classNameObserver}`}
       >
         {children}
       </div>
@@ -151,7 +151,7 @@ const Observer = ({
     <li
       style={styles}
       ref={ref as React.RefObject<HTMLLIElement>}
-      className={className}
+      className={classNameObserver}
     >
       {children}
     </li>
