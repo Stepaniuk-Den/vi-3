@@ -1,6 +1,7 @@
 import Line from "@/app/components/Line";
 import ModalTrigger from "@/app/components/ModalTrigger";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -8,6 +9,18 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsElementsList",
+    3,
+    "windows",
+    true,
+  );
+}
+
 const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 

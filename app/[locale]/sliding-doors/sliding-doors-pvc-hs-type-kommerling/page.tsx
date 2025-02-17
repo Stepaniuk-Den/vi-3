@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 import { IImage, IImgList, IParameterItem } from "@/helpers/interfaces";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
@@ -9,9 +10,20 @@ import KomShInstallPremidoorSection from "@/app/components/SlidingDoorsPage/KomS
 import KomShOpeningPremidoorSection from "@/app/components/SlidingDoorsPage/KomShOpeningPremidoorSection";
 import KomShPremidoorSection from "@/app/components/SlidingDoorsPage/KomShPremidoorSection";
 
+
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "SlidingDoorsPage",
+    "slidingDoorsList",
+    2,
+    "sliding-doors"
+  );
+}
 
 const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

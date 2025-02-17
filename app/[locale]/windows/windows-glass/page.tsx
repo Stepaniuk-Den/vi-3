@@ -2,6 +2,7 @@ import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselA
 import MessageBanner from "@/app/components/MessageBanner";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -9,6 +10,17 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsElementsList",
+    1,
+    "windows",
+    true,
+  );
+}
 
 const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
