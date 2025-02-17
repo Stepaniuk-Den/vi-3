@@ -1,7 +1,11 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { imgHeight } from "@/helpers/imgHeight";
-import { bigMobOrderFourItems, mobileOrderFourItems } from "@/data/MobileAndDesktopOrder";
+import {
+  bigMobOrderFourItems,
+  mobileOrderFourItems,
+} from "@/data/MobileAndDesktopOrder";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import SectionImagesAndCards from "@/app/components/DoorsPage/SectionImagesAndCards";
 import SectionListAndCards from "@/app/components/DoorsPage/SectionListAndCards";
@@ -10,6 +14,16 @@ import NestedCardsSection from "@/app/components/NestedCardsSection";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "DoorsPage",
+    "doorsList",
+    1,
+    "doors"
+  );
+}
 
 const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

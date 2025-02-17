@@ -2,6 +2,7 @@ import PageTopDescription from "@/app/components/PageTopDescription";
 import AluGlideCustomSection from "@/app/components/SlidingDoorsPage/AluGlideCustomSection";
 import AluGlideOverviewSection from "@/app/components/SlidingDoorsPage/AluGlideOverviewSection";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { IAluSection, IImgList } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -9,6 +10,16 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "SlidingDoorsPage",
+    "slidingDoorsList",
+    5,
+    "sliding-doors"
+  );
+}
 
 const SlidingDoorsAlumAli: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

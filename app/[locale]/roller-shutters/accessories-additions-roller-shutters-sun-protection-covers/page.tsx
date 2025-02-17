@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { imgHeight } from "@/helpers/imgHeight";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import React from "react";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
@@ -9,6 +10,16 @@ import SectionCardsFewDescr from "@/app/components/RollerShutterPage/SectionCard
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "RollerBlindsPage",
+    "rollersList",
+    4,
+    "roller-shutters"
+  );
+}
 
 const AccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

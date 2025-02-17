@@ -4,6 +4,7 @@ import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
 import PskTiltFittSection from "@/app/components/SlidingDoorsPage/PskTiltFittSection";
 import PskTiltSlideSection from "@/app/components/SlidingDoorsPage/PskTiltSlideOptSection";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { IImgList } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -11,6 +12,16 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "SlidingDoorsPage",
+    "slidingDoorsList",
+    3,
+    "sliding-doors"
+  );
+}
 
 const SlidingDoorsPskSch: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

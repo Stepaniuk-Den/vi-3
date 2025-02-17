@@ -2,6 +2,7 @@ import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import FittingComponentsSection from "@/app/components/WindowsPages/FittingComponentsSection";
 import GasketsFittingsSection from "@/app/components/WindowsPages/GasketsFittingsSection";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -9,6 +10,17 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsElementsList",
+    2,
+    "windows",
+    true,
+  );
+}
 
 const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
