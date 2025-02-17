@@ -31,7 +31,7 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
         ) : (
           <div className="mb-4">
             {Object.values(descObj).map((text, index) => (
-              <Observer threshold={1} animation='zoom-in'>
+              <Observer threshold={1} animation='zoom-in' key={index}>
                 <p key={index} className="mb-4">{text}</p>
               </Observer>
             ))}

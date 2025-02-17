@@ -25,7 +25,7 @@ const SchShLivingSlideSection = ({ desc, bannerTitle, imgList }: IProps) => {
         />
         <div className="my-4">
           {Object.values(desc).map((item, idx) => (
-            <Observer threshold={1} animation='zoom-in'>
+            <Observer threshold={1} animation='zoom-in' key={idx}>
               <p key={idx}>{item}</p>
             </Observer>
           ))}
