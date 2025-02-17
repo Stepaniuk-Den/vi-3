@@ -1,6 +1,7 @@
 import ImagesComponent from "./ImagesComponent";
 import { IImage } from "@/helpers/interfaces";
 import TitleBanner from "../TitleBanner";
+import Observer from "@/helpers/observer";
 
 interface IProps {
   desc: {
@@ -24,7 +25,9 @@ const SchShLivingSlideSection = ({ desc, bannerTitle, imgList }: IProps) => {
         />
         <div className="my-4">
           {Object.values(desc).map((item, idx) => (
-            <p key={idx}>{item}</p>
+            <Observer threshold={1} animation='zoom-in' key={idx}>
+              <p key={idx}>{item}</p>
+            </Observer>
           ))}
         </div>
         <ImagesComponent
