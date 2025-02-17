@@ -33,12 +33,13 @@ const PskTiltSlideOptSection = ({ cardList, bannerTitle }: IProps) => {
           list={cardList.slice(3, 4)}
           width="w-full"
           height="h-[10rem] sm:h-[11rem] md:h-[15rem] lg:h-[20rem] xl:h-[25.4rem]"
-          className="sm:mb-7 sm:w-1/2"
           objTypeImg="object-contain"
+          className="sm:mb-7 sm:w-1/2"
           classNameWrapperImage="border-none"
+          classNameObserver="w-full sm:w-[47%]"
           isRow
         >
-          <p className="w-full sm:w-[47%]">{cardList[3]?.description}</p>
+          <p className="">{cardList[3]?.description}</p>
         </ImagesComponent>
       </div>
     </section>

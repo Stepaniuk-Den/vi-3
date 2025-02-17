@@ -18,14 +18,14 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
   return (
     <section className="pageCl">
       <div className="container">
-        <Observer threshold={1} animation='zoom-in' duration="0.8s">
+        <Observer animation='zoom-in' duration="0.8s">
           <h1 className="titleCl pt-16">{t("title")}</h1>
         </Observer>
-        <Observer threshold={1} animation='zoom-in-line' duration="0.8s">
+        <Observer animation='zoom-in-line' duration="0.8s">
           <Line className="marsala-center" color="marsala" />
         </Observer>
         {!descObj ? (
-          <Observer threshold={1} animation='zoom-in'>
+          <Observer animation='zoom-in'>
             <p className="mb-4">{t("description")}</p>
           </Observer>
         ) : (

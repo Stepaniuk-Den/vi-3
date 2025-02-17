@@ -15,6 +15,7 @@ interface IList {
   className?: string;
   classNameComponent?: string;
   classNameWrapperImage?: string;
+  classNameObserver?: string;
   objTypeImg?: string;
   children?: React.ReactNode;
   isRow?: boolean;
@@ -52,6 +53,7 @@ const ImagesComponent: React.FC<IList> = ({
   className,
   classNameComponent,
   classNameWrapperImage,
+  classNameObserver,
   objTypeImg = "object-cover",
   children,
   isRow = false,
@@ -133,7 +135,7 @@ const ImagesComponent: React.FC<IList> = ({
               key={img.id}
             >
               {img.title && img.title.trim().length > 0 && (
-                <Observer threshold={1} animation='slide-up'>
+                <Observer animation='slide-up'>
                   <p className={clsx("mb-2 max-sm:text-center", titleHeightClass)}>{img.title}</p>
                 </Observer>
               )}
@@ -160,7 +162,7 @@ const ImagesComponent: React.FC<IList> = ({
                 </div>
               </Observer>
               {img.description && !children &&
-                <Observer threshold={0.7} animation='slide-up'>
+                <Observer animation='slide-up'>
                   <p className="text-center">{img.description}</p>
                 </Observer>
               }
@@ -171,7 +173,12 @@ const ImagesComponent: React.FC<IList> = ({
           );
         })}
       </div>
-      {children}
+      <Observer
+        threshold={0.7}
+        animation='zoom-in'
+        classNameObserver={classNameObserver}>
+        {children}
+      </Observer>
     </div>
   );
 };

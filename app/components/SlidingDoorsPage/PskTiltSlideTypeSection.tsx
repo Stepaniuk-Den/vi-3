@@ -31,7 +31,7 @@ const PskTiltSlideTypeSection = ({
           height="h-[15rem] xl:h-[25rem]"
           className="mb-7 w-full sm:flex-nowrap"
         />
-        <Observer threshold={1} animation='zoom-in'>
+        <Observer animation='zoom-in'>
           <p className="subTitleCl mb-4">{menuItems[2]}</p>
         </Observer>
         <ImagesComponent
@@ -40,7 +40,7 @@ const PskTiltSlideTypeSection = ({
           height="h-[15rem] lg:h-[30rem] xl:h-[50rem]"
           className="mb-7 w-full sm:flex-nowrap"
         />
-        <Observer threshold={1} animation='zoom-in'>
+        <Observer animation='zoom-in'>
           <p className="subTitleCl mb-4">{menuItems[3]}</p>
         </Observer>
         <NestedParameterDescList param={paramsList} className="mb-4" />

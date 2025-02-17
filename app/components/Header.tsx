@@ -85,15 +85,6 @@ const Header = () => {
 
   }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia]);
 
-
-  // const isIOS = (() => {
-  //   if (typeof navigator === "undefined") return false;
-
-  //   const ua = navigator.userAgent;
-  //   return /iPad|iPhone|iPod/.test(ua) ||
-  //     (ua.includes("Mac") && navigator.maxTouchPoints > 1);
-  // })();
-
   if (is404) {
     return null;
   }
