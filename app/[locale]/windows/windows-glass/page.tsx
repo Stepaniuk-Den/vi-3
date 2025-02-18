@@ -1,4 +1,5 @@
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
+import Footer from "@/app/components/Footer";
 import MessageBanner from "@/app/components/MessageBanner";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
@@ -34,7 +35,7 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
   const tSectionsList = Object.values(t.raw("SectionsList"));
 
   return (
-    <div className="pb-24">
+    <>
       <PageTopDescription t={t} />
       <MessageBanner t={MessageBannerT} />
       <SectionCarouselAndDescr t={carouselSectionInfo} />
@@ -75,7 +76,8 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-    </div>
+      <Footer />
+    </>
   );
 };
 

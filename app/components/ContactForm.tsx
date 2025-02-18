@@ -73,11 +73,13 @@ const ContactForm = () => {
   // }
 
   return (
-    <section className="sectionCl pb-24">
+    <section className="sectionCl">
       <div className="container">
         <div className="flex flex-col w-full p-7 shadow-lg rounded-md">
-          <div>
-            <h2 className="titleCl laserCl mb-4">{t("title")}</h2>
+          <div className="text-center">
+            <h2 className="titleCl relative inline-block px-4 rounded-md overflow-hidden laserCl mb-4">
+              {t("title")}
+            </h2>
             <Line className="marsala-center" color="marsala" />
           </div>
           <form

@@ -19,6 +19,7 @@ const ItemCard: React.FC<IItemCard> = ({
   slug,
   path,
   imgH = "h-[360px]",
+  offer,
   onClick,
   //   ...rest
 }) => {
@@ -47,7 +48,9 @@ const ItemCard: React.FC<IItemCard> = ({
       {layout !== "horizontal" && title && (
         <div>
           {/* className="flex-grow" */}
-          <h3 className="subTitleCl xl:leading-none">{title}</h3>
+          <h3 className="subTitleCl max-md:text-center xl:leading-none">
+            {title}
+          </h3>
           <Line className="marsala-left" color="marsala" />
         </div>
       )}
@@ -89,7 +92,7 @@ const ItemCard: React.FC<IItemCard> = ({
                 {title}
               </h3>
               <Line
-                className="marsala-left"
+                className={offer ? "marsala-center" : "marsala-left"}
                 // className={clsx(
                 //   alignment === "center" ? "marsala-center" : "marsala-left"
                 // )}

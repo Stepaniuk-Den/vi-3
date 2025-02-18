@@ -6,6 +6,7 @@ import {
   INestedCardsSectionItem,
   INestedCardsSectionsList,
 } from "@/helpers/interfaces";
+import Footer from "@/app/components/Footer";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 
 type Props = {
@@ -19,7 +20,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsProfilesList",
     1,
     "windows",
-    true,
+    true
   );
 }
 
@@ -31,7 +32,7 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
   const tSectionsList = t.raw("SectionsList") as INestedCardsSectionsList;
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -58,7 +59,8 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-    </div>
+      <Footer />
+    </>
   );
 };
 

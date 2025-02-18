@@ -63,6 +63,7 @@ export interface IItemCard {
   onClick?: () => void;
   path?: string;
   imgH?: string;
+  offer?: boolean;
 }
 
 export interface INestedCard {

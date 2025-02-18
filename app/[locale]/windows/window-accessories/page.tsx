@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import HandlesDublinSection from "@/app/components/WindowsPages/HandlesDublinSection";
 import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusticSection";
@@ -32,7 +33,7 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
   const handlesSecustic = windowHandles.WindowHandlesSecustic;
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -48,7 +49,8 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
       </section>
       <HandlesDublinSection t={handlesDublin} />
       <HandlesSecusticSection t={handlesSecustic} />
-    </div>
+      <Footer />
+    </>
   );
 };
 

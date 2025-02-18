@@ -50,21 +50,26 @@ export default {
       },
       backgroundImage: {
         customLaser:
-          "linear-gradient(90deg, transparent, rgba(88, 29, 34, 0.945), transparent)",
+          "linear-gradient(90deg, transparent, rgba(88, 29, 34, 0.945))",
       },
       boxShadow: {
         customShadow:
           "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
         customShadowInput: "0px 6px 8px rgba(44,89,130, 0.33)",
       },
+      willChange: {
+        transform: "transform",
+      },
       animation: {
         unfoldIn: "unfoldIn 0.5s ease-out",
         unfoldOut: "unfoldOut 0.5s ease-in",
         burgerIn: "burgerIn 0.5s ease-in-out",
         burgerOut: "burgerOut 0.5s ease-in-out",
-        laser: "swipe 0.5s linear infinite",
-        textFocusIn: "textFocusIn 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both",
-        textFocusInDelayed: "textFocusIn 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both",
+        laser: "swipe 6s linear infinite",
+        textFocusIn:
+          "textFocusIn 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both",
+        textFocusInDelayed:
+          "textFocusIn 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both",
       },
       keyframes: {
         unfoldIn: {
@@ -105,11 +110,10 @@ export default {
             transform: "translateX(-100%)",
           },
         },
-        laser: {
-          "0%": { left: "-100%" },
-          "100%": { left: "100%" },
-          // "0%": { transform: "translateX(-100%)" },
-          // "100%": { transform: "translateX(100%)" },
+        swipe: {
+          "0%": { transform: "translateX(-100%)" },
+          "50%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(100%)" },
         },
         textFocusIn: {
           "0%": { filter: "blur(12px)", opacity: "0" },

@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import ModalTrigger from "@/app/components/ModalTrigger";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -35,7 +36,7 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
   };
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -46,7 +47,7 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
               className="relative w-full sm:max-md:max-w-[396px] md:w-1/2 h-[240px] sm:h-[332px] md:h-[312px] lg:h-[414px] xl:h-[520px] border border-gray-300 rounded-md overflow-hidden"
               src={cardMullions.src || ""}
               alt={cardMullions.alt || ""}
-              img={img}
+              img={[img]}
             />
             <div className="w-full sm:max-md:max-w-[396px] md:w-1/2">
               <p className="mb-2">{cardMullions.description}</p>
@@ -65,7 +66,8 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
         positioning={"flexWrap"}
         isRow={false}
       />
-    </div>
+      <Footer />
+    </>
   );
 };
 

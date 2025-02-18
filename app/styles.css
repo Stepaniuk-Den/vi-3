@@ -206,9 +206,10 @@ canvas {
   }
 
   .laserCl {
-    @apply relative before:content-[''] before:absolute before:top-0 before:-left-[100%] before:w-[100%] before:h-[100%] before:bg-customLaser before:animate-laser !important;
+    @apply relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-customLaser before:will-change-transform before:animate-laser !important;
   }
-
+  /* before:-left-[100%] */
+  /* before:w-[100%] */
   /* ======================== */
 
   .langBtnCl {
@@ -220,7 +221,7 @@ canvas {
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent focus:border-[3px] focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent  focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
   }
 
   .label {

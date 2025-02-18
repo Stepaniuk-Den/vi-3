@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import OfferSection from "@/app/components/WindowsPages/OfferSection";
@@ -49,7 +50,7 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
   );
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -75,7 +76,8 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-    </div>
+      <Footer />
+    </>
   );
 };
 

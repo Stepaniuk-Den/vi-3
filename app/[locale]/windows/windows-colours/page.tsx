@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ColourPalettesSection from "@/app/components/WindowsPages/ColourPalettesSection";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
@@ -29,13 +30,14 @@ const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
   const coloursList = Object.values(t.raw("coloursList")) as IItemCard[];
 
   return (
-       <div className="pb-24">
+    <>
       <PageTopDescription t={t} />
       <ColourPalettesSection
         tButtons={tButtons("see")}
         coloursList={coloursList}
       />
-    </div>
+      <Footer />
+    </>
   );
 };
 
