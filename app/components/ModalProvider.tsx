@@ -1,14 +1,15 @@
 "use client";
 
-import clsx from "clsx";
 import React, {
   createContext,
   ReactNode,
   useContext,
   useEffect,
+  useRef,
   useState,
 } from "react";
 import { useTranslations } from "next-intl";
+import clsx from "clsx";
 import Close from "@/public/icons/Close.svg";
 
 interface ModalOptions {
@@ -17,6 +18,8 @@ interface ModalOptions {
   classNameBtn?: string;
   classNameAnimationIn?: string;
   classNameAnimationOut?: string;
+  isBtnCloseCarousel?:boolean;
+  isBtnClose?:boolean;
 }
 interface ModalContextType {
   isOpen: boolean;
@@ -44,8 +47,11 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     useState<string>("animate-unfoldIn");
   const [classNameAnimationOut, setClassNameAnimationOut] =
     useState<string>("animate-unfoldOut");
+    const [isBtnCloseCarousel,setIsBtnCloseCarousel] = useState(true);
+    const [isBtnClose, setIsBtnClose] = useState(false);
 
-    const t = useTranslations("ModalWindow");
+  const t = useTranslations("ModalWindow");
+  const modalRef = useRef<HTMLDivElement>(null)
 
 
   const openModal = (modalContent: ReactNode, options?: ModalOptions) => {
@@ -55,17 +61,22 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       classNameBtn,
       classNameAnimationIn,
       classNameAnimationOut,
+      isBtnCloseCarousel = true,
+      isBtnClose = false,
+      
     } = options || {};
     setContent(modalContent);
     setIsOpen(true);
     setShowAnimation(true);
     setClassNameBackdrop(classNameBackdrop || "bg-customMarsala-accentLight");
     setClassNameModalContent(
-      classNameModalContent || "w-[80vw] h-[80vh] sm:h-[90vh] "
+      classNameModalContent || "w-[80vw] h-[70vh] "
     );
     setClassNameBtn(classNameBtn || "top-[-10px] right-[-10%]");
     setClassNameAnimationIn(classNameAnimationIn || "animate-unfoldIn");
     setClassNameAnimationOut(classNameAnimationOut || "animate-unfoldOut");
+    setIsBtnCloseCarousel(isBtnCloseCarousel);
+    setIsBtnClose(isBtnClose);
   };
 
   const closeModal = () => {
@@ -97,25 +108,99 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const disableScroll = (e: TouchEvent) => {
+      if (!modalRef.current || !modalRef.current.contains(e.target as Node)) {
+        e.preventDefault();
+      }
+    };
+
+    if (isOpen) {
+      document.documentElement.style.overscrollBehavior = "none";
+      document.addEventListener("touchmove", disableScroll, { passive: false });
+    } else {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    }
+
+    return () => {
+      document.documentElement.style.overscrollBehavior = "";
+      document.removeEventListener("touchmove", disableScroll);
+    };
+  }, [isOpen]);
+
+  // useEffect(() => {
+  //   const disableScroll = (e: Event) => {
+  //     e.preventDefault();
+  //   };
+  //   if (isOpen) {
+  //     document.documentElement.style.overflow = "hidden";
+  //     document.body.style.overflow = "hidden";
+  //     document.body.style.touchAction = "none";
+
+  //     const preventBackgroundScroll = (e: TouchEvent) => {
+  //       if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+  //         e.preventDefault();
+  //       }
+  //     };
+  
+  //     window.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
+  //   } else {
+  //     document.documentElement.style.overflow = "auto";
+  //      document.body.style.overflow = "auto";
+  //      document.body.style.touchAction = "auto";
+  //   }
+
+  //   const handleKeyDown = (e: KeyboardEvent) => {
+  //     if (e.code === "Escape") {
+  //       closeModal();
+  //     }
+  //   };
+
+  //   window.addEventListener("keydown", handleKeyDown);
+
+  //   return () => {
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //     window.removeEventListener("touchmove", disableScroll);
+  //     document.documentElement.style.overflow = "auto";
+  //     document.body.style.overflow = "auto";
+  //   document.body.style.touchAction = "auto";
+  //   };
+  // }, [isOpen]);
+
   return (
     <ModalContext.Provider value={{ isOpen, content, openModal, closeModal }}>
       {children}
       {isOpen && (
         <div
+          ref={modalRef}
           className={clsx(`fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
         >
+          {isBtnCloseCarousel &&(
+           <button
+           className={clsx("absolute flex justify-center items-center p-2 top-5 landscape:max-[767.98px]:top-1 md:top-2 right-[1%] text-white rounded-full z-50 lg:hover:text-customMarsala")}
+           onClick={closeModal}
+           aria-label={t("ariaLabel")}
+         >
+           <Close />
+         </button>
+          )}
+          
           <div
             className={clsx("absolute rounded-md", classNameModalContent)}
             onClick={(e) => e.stopPropagation()}
           >
             {content}
+            {isBtnClose && (
             <button
-              className={clsx(" absolute text-white rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
-              onClick={closeModal}
-              aria-label={t("ariaLabel")}
-            >
-              <Close />
-            </button>
+            className={clsx(" absolute text-white rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
+            onClick={closeModal}
+            aria-label={t("ariaLabel")}
+          >
+            <Close />
+          </button>
+            )}
+            
           </div>
         </div>
       )}

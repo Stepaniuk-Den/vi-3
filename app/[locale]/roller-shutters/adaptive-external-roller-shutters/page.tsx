@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { imgHeight } from "@/helpers/imgHeight";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import React from "react";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
@@ -10,6 +12,16 @@ import SectionListImgAndList from "@/app/components/RollerShutterPage/SectionLis
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "RollerBlindsPage",
+    "rollersList",
+    1,
+    "roller-shutters"
+  );
+}
 
 const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
@@ -24,9 +36,10 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
       <SectionListImgAndList t={t.raw("AdaptiveExternalCards")} />
       <NestedCardsSection
         tSectionItem={t.raw("GuideChannels")}
-        size="w-1/2"
         titleBanner
         imgFit="cover"
+        positioning="grid"
+        imgH={imgHeight}
       />
       <SectionBannerAndDescr
         t={{
@@ -40,6 +53,8 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         imgFit="cover"
+        classNameList="grid grid-cols-1 sm:grid-cols-3"
+        imgH={imgHeight}
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

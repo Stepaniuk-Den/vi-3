@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 import { IImgList } from "@/helpers/interfaces";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
+
 import PageTopDescription from "@/app/components/PageTopDescription";
 import SchShEaseSlideSection from "@/app/components/SlidingDoorsPage/SchShEaseSlideSection";
 import SchShLivingSlideSection from "@/app/components/SlidingDoorsPage/SchShLivingSlideSection";
@@ -13,6 +15,16 @@ type Props = {
 
 interface Desc4 {
   [key: string]: string;
+}
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "SlidingDoorsPage",
+    "slidingDoorsList",
+    1,
+    "sliding-doors"
+  );
 }
 
 const SlidingDoorsHsSch: React.FC<Props> = ({ params: { locale } }) => {

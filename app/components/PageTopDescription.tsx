@@ -1,7 +1,8 @@
+import { IParameterItem } from "@/helpers/interfaces";
 import React from "react";
 import Line from "./Line";
-import { IParameterItem } from "@/helpers/interfaces";
 import NestedParameterDescList from "./NestedParameterDescList";
+import Observer from "@/helpers/observer";
 
 interface IPageTopDescriptionProps {
   t: (key: string) => string;
@@ -17,14 +18,22 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
   return (
     <section className="pageCl">
       <div className="container">
-        <h1 className="titleCl pt-16">{t("title")}</h1>
-        <Line className="marsala-center" color="marsala" />
+        <Observer animation='zoom-in' duration="0.8s">
+          <h1 className="titleCl pt-16">{t("title")}</h1>
+        </Observer>
+        <Observer animation='zoom-in-line' duration="0.8s">
+          <Line className="marsala-center" color="marsala" />
+        </Observer>
         {!descObj ? (
-          <p className="mb-4">{t("description")}</p>
+          <Observer animation='zoom-in'>
+            <p className="mb-4">{t("description")}</p>
+          </Observer>
         ) : (
           <div className="mb-4">
             {Object.values(descObj).map((text, index) => (
-              <p key={index} className="mb-4">{text}</p>
+              <Observer threshold={1} animation='zoom-in' key={index}>
+                <p key={index} className="mb-4">{text}</p>
+              </Observer>
             ))}
           </div>
         )}

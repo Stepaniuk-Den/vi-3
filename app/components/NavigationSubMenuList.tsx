@@ -5,6 +5,8 @@ import clsx from 'clsx';
 import React, { useEffect, useMemo, useState } from 'react'
 import { useModal } from './ModalProvider';
 import { useHoveredMenuStore } from '@/store/hoveredMenuStore';
+import { useIsMobileStore } from '@/store/isMobileStore';
+import { useIsBigTabletStore } from '@/store/isBigTabletStore';
 interface ILinkProps {
   title: string;
   slug: string;
@@ -21,10 +23,9 @@ interface NavigationSubMenuListProps {
   heightViewport: number,
   item: INavigationItem,
   selectedSubMenuSegment: string,
-  isMobile: boolean,
 }
 
-const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment, isMobile }) => {
+const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRef, heightViewport, item, selectedSubMenuSegment }) => {
 
   const [nextSubMenu, setNextSubMenu] = useState<number | null>(null);
   const [isActiveSubMenuItem, setIsActiveSubMenuItem] = useState<number | null>(null);
@@ -33,6 +34,9 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
 
   const hoveredMenu = useHoveredMenuStore((state) => state.hoveredMenu);
   const setHoveredMenu = useHoveredMenuStore((state) => state.setHoveredMenu);
+
+  const isMobile = useIsMobileStore((state) => state.isMobile);
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
 
   const subKeys = useMemo(() => (item.links ? Object.values(item.links) : []), [item.links]);
 
@@ -79,8 +83,8 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
                 }
               )}
               style={{
-                animation: `fadeIn 0.2s ease-in-out forwards`,
-                animationDelay: `${0.2 + subIndex * 0.2}s`,
+                animation: isBigTablet ? `fadeIn 0.2s ease-in-out forwards` : `fadeIn 0.1s ease-in-out forwards`,
+                animationDelay: isBigTablet ? `${0.1 + subIndex * 0.1}s` : `${0.2 + subIndex * 0.2}s`,
               }}
             >
               <Link
@@ -89,7 +93,7 @@ const NavigationSubMenuList: React.FC<NavigationSubMenuListProps> = ({ subMenuRe
                     "hover:scale-x-95 hover:text-customMarsala-accent active:scale-x-105 active:text-customElement": isActiveSubMenuItem !== subIndex && !isMobile
                   }
                 )}
-                href={`/${item.href}/${subItem.slug}`}
+                href={`${item.href}/${subItem.slug}`}
                 onClick={() => {
                   setHoveredMenu(null)
                   if (!isMobile) return

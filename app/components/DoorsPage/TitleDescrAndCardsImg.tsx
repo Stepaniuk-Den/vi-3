@@ -2,6 +2,7 @@
 
 import { useModal } from "../ModalProvider";
 import { IImgList } from "@/helpers/interfaces";
+import { imgHeight } from "@/helpers/imgHeight";
 import React from "react";
 import NestedCard from "../NestedCard";
 import clsx from "clsx";
@@ -27,16 +28,13 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
       <h3 className="subTitleCl font-bold">{t.title}</h3>
       {t.description && <p className="mt-2">{t.description}</p>}
       <ul
-        className={clsx("grid gap-7 pt-8","grid-cols-1", 
-        //   {
-        //   "grid-cols-1": columns === 1,
-        //   "grid-cols-3": columns === 3,
-        //   "grid-cols-4": columns === 4,
-        // }
-        columns >= 2 && "sm:grid-cols-2", 
+        className={clsx(
+          "grid gap-7 pt-8",
+          "grid-cols-1",
+          columns >= 2 && "sm:grid-cols-2",
           columns >= 4 && "lg:grid-cols-4",
           columns === 3 && "sm:grid-cols-3"
-      )}
+        )}
       >
         {imgList.map((card, index) => {
           return (
@@ -48,6 +46,7 @@ const TitleDescrAndCardsImg: React.FC<{ t: IItemsProps; columns?: number }> = ({
               size="w-full"
               description={card.description}
               isRow={false}
+              imgH={imgHeight}
               onClick={() =>
                 openModal(
                   <ModalSwiperContent slides={imgList} initialSlide={index} />

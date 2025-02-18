@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes zoomInLine {
+  0% {
+    transform: scaleX(3.5);
+    opacity: 0;
+  }
+
+
+  50% {
+    transform: scaleX(0.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -57,8 +76,22 @@
 }
 
 .carousel-container {
-  height: calc(100vh - 192px);
-  margin-top: 192px;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-container {
+    height: calc(100vh - 192px);
+    margin-top: 192px;
+  }
+}
+
+
+canvas {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .myModalSwiper.swiper {
@@ -73,31 +106,42 @@
   filter: brightness(100%) !important;
 }
 
+.myModalSwiper .swiper-button-prev:after,
+.myModalSwiper .swiper-button-next:after {
+  font-size: 28px !important;
+}
+
+@media screen and (min-width: 640px) {
+
+  .myModalSwiper .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 44px !important;
+  }
+}
+
 .myModalSwiper .swiper-button-next {
-  right: 1% !important;
+  right: -6% !important;
   color: #fff !important;
-  /* top: 105% !important; */
-  top: calc(105% + env(safe-area-inset-bottom)) !important;
+  top: calc(107% + env(safe-area-inset-bottom)) !important;
 }
 
 @media screen and (min-width: 640px) {
   .myModalSwiper .swiper-button-next {
     top: 50% !important;
-    right: -8% !important;
+    right: -9% !important;
   }
 }
 
 .myModalSwiper .swiper-button-prev {
-  left: 1% !important;
+  left: -6% !important;
   color: #fff !important;
-  /* top: 105% !important; */
-  top: calc(105% + env(safe-area-inset-bottom)) !important;
+  top: calc(107% + env(safe-area-inset-bottom)) !important;
 }
 
 @media screen and (min-width: 640px) {
   .myModalSwiper .swiper-button-prev {
     top: 50% !important;
-    left: -8% !important;
+    left: -9% !important;
   }
 }
 
@@ -210,17 +254,18 @@
 }
 
 @layer utilities {
-  .inputsCl:focus + .label,
-  .inputsCl:not(:placeholder-shown) + .label {
+
+  .inputsCl:focus+.label,
+  .inputsCl:not(:placeholder-shown)+.label {
     @apply -translate-y-[180%] text-customElement text-sm;
   }
 
-  .inputsCl:focus + .label.lTextarea,
-  .inputsCl:not(:placeholder-shown) + .label.lTextarea {
+  .inputsCl:focus+.label.lTextarea,
+  .inputsCl:not(:placeholder-shown)+.label.lTextarea {
     @apply -translate-y-[110%];
   }
 
-  .peer:checked + .labelCheckCl .iconCheckWrapCl {
+  .peer:checked+.labelCheckCl .iconCheckWrapCl {
     @apply bg-customElement border-[3px] shadow-none;
   }
 

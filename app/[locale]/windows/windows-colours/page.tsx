@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ColourPalettesSection from "@/app/components/WindowsPages/ColourPalettesSection";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { IItemCard } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -8,6 +9,18 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsElementsList",
+    4,
+    "windows",
+    true,
+  );
+}
+
 
 const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

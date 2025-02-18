@@ -1,3 +1,4 @@
+import Observer from '@/helpers/observer';
 import ImagesComponent from './ImagesComponent'
 import { IImage } from '@/helpers/interfaces';
 
@@ -10,11 +11,13 @@ const AluGlideOverviewSection = ({ imgList, desc2 }: IProps) => {
   return (
     <section className="sectionCl">
       <div className="container">
-        <p className="my-4">{desc2}</p>
+        <Observer threshold={1} animation='zoom-in'>
+          <p className="my-4">{desc2}</p>
+        </Observer>
         <ImagesComponent
           list={imgList.slice(2, 4)}
-          width="w-1/2"
-          className="mt-7"
+          width="w-full sm:w-1/2"
+          className="mt-7 w-full sm:flex-nowrap"
           objTypeImg='object-contain'
         />
       </div>

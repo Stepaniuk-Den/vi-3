@@ -28,6 +28,7 @@ type Props = {
   height?: string;
   size?: string;
   imgH?: string;
+  classNameList?: string;
   // size?: "w-1/2" | "w-1/4" | "w-full";
   // isGrid?: boolean;
   // positioning?: "flex" | "grid2" | "grid3";
@@ -51,6 +52,7 @@ const NestedCardsSection: React.FC<Props> = ({
   imgFit,
   isRow,
   descReverse = false,
+  classNameList,
 }) => {
   const nestedCardsList = Object.values(tSectionItem).filter(
     (item) => typeof item === "object" && "id" in item
@@ -86,9 +88,9 @@ const NestedCardsSection: React.FC<Props> = ({
         )}
 
         <ul
-          className={clsx("flex justify-center gap-6", {
+          className={clsx("flex justify-center gap-6", classNameList, {
             "flex-wrap": positioning === "flexWrap",
-            "grid grid-cols-2": positioning === "grid",
+            "grid grid-cols-1 sm:grid-cols-2": positioning === "grid",
             // "flex justify-center": positioning === "flex",
             // "grid grid-cols-3": positioning === "grid3",
           })}
@@ -116,9 +118,9 @@ const NestedCardsSection: React.FC<Props> = ({
                     <ModalSwiperContent slides={slides} initialSlide={idx} />
                   )
                 }
-                // titleBannerCard={titleBannerCard}
-                // layout="horizontal"
-                // background={idx % 2 === 0 ? `${background}` : ""}
+              // titleBannerCard={titleBannerCard}
+              // layout="horizontal"
+              // background={idx % 2 === 0 ? `${background}` : ""}
               />
             );
           })}

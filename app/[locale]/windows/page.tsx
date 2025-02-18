@@ -5,10 +5,15 @@ import { useTranslations } from "next-intl";
 import CardsSection from "@/app/components/CardsSection";
 import ContactForm from "@/app/components/ContactForm";
 import Footer from "@/app/components/Footer";
+import { generateMetadataPage } from "@/helpers/generateMetadata";
 
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataPage(params.locale, "WindowsPage");
+}
 
 const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

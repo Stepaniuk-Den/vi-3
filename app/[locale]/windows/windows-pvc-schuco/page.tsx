@@ -7,10 +7,22 @@ import {
   INestedCardsSectionsList,
 } from "@/helpers/interfaces";
 import Footer from "@/app/components/Footer";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsProfilesList",
+    1,
+    "windows",
+    true
+  );
+}
 
 const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

@@ -3,6 +3,7 @@ import Line from "@/app/components/Line";
 import HandlesDublinSection from "@/app/components/WindowsPages/HandlesDublinSection";
 import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusticSection";
 import WindowAccessoriesSection from "@/app/components/WindowsPages/WindowAccessoriesSection";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCard } from "@/helpers/interfaces";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -10,6 +11,17 @@ import { setRequestLocale } from "next-intl/server";
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsElementsList",
+    5,
+    "windows",
+    true,
+  );
+}
 
 const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);

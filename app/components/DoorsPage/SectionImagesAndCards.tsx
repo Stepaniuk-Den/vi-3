@@ -1,6 +1,7 @@
 "use client";
 import { IImgList } from "@/helpers/interfaces";
 import { useModal } from "../ModalProvider";
+import { imgHeight } from "@/helpers/imgHeight";
 import React from "react";
 import ImagesComponent from "../SlidingDoorsPage/ImagesComponent";
 import TitleBanner from "../TitleBanner";
@@ -52,6 +53,7 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
                   size="w-full"
                   description={card.description}
                   isRow={false}
+                  imgH={imgHeight}
                   onClick={() =>
                     openModal(
                       <ModalSwiperContent

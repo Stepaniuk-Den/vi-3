@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { imgHeight } from "@/helpers/imgHeight";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import React from "react";
 import SectionListAndCards from "@/app/components/DoorsPage/SectionListAndCards";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -10,6 +12,16 @@ import SectionCardsFewDescr from "@/app/components/RollerShutterPage/SectionCard
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "RollerBlindsPage",
+    "rollersList",
+    2,
+    "roller-shutters"
+  );
+}
 
 const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
@@ -24,10 +36,10 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
       <SectionListAndCards t={t.raw("RSBoxSection")} />
       <NestedCardsSection
         tSectionItem={t.raw("GuideRailsTypes")}
-        size="w-full"
         titleBanner
-        positioning={"grid"}
+        positioning="grid"
         imgFit="cover"
+        imgH={imgHeight}
       />
       <SectionBannerAndDescr
         t={{
@@ -38,9 +50,10 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
       <NestedCardsSection
         tSectionItem={t.raw("TechnicalSolutionsne")}
         titleBanner
-        size="w-full"
         isRow={false}
         imgFit="cover"
+        classNameList="grid grid-cols-1 sm:grid-cols-3"
+        imgH={imgHeight}
       />
       <NestedCardsSection
         tSectionItem={tAccessories.raw("ExternalRS")}
@@ -48,6 +61,8 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
         size="w-full"
         isRow={false}
         imgFit="cover"
+        classNameList="grid grid-cols-1 sm:grid-cols-3"
+        imgH={imgHeight}
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

@@ -15,5 +15,4 @@ export const isAppleMobileDevice = device.vendor === 'Apple' && (device.model ==
 
 export const isMobileDevice = device.type === 'mobile'
 
-
 export const browserType = SEARCHBOX_UA_REGEX.test(ClientUAInstance.getUA()) ? 'bot' : 'browser'

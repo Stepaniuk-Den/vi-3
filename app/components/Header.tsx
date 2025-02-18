@@ -13,7 +13,9 @@ import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
-import { isAppleMobileDevice } from "@/helpers/detect-browser";
+import { isAppleMobileDevice, isMobileDevice, device } from "@/helpers/detect-browser";
+import { useIsBigTabletStore } from "@/store/isBigTabletStore";
+import { useIsMobileStore } from "@/store/isMobileStore";
 
 // import dynamic from "next/dynamic";
 
@@ -26,10 +28,16 @@ const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
   const [opacityTop, setOpacityTop] = useState(1);
   const [heightTop, setHeightTop] = useState(120);
-
   const [isClient, setIsClient] = useState(false);
 
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
+  const bigTabletMedia = useMediaQuery({ minWidth: 1024 });
+  const tabletOrMobileMedia = useMediaQuery({ maxWidth: 1023.98 });
+
+  const isMobile = useIsMobileStore((state) => state.isMobile);
+  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  const setIsBigTablet = useIsBigTabletStore((state) => state.setIsBigTablet);
+  const setIsMobile = useIsMobileStore((state) => state.setIsMobile);
+
 
   const pathname = usePathname();
   const is404 = pathname === "/404";
@@ -55,16 +63,39 @@ const Header = () => {
     setIsClient(true);
   }, []);
 
+  useEffect(() => {
+
+    const isIOS = (() => {
+      if (typeof navigator === "undefined") return false;
+
+      const ua = navigator.userAgent;
+      return /iPad|iPhone|iPod/.test(ua) ||
+        (ua.includes("Mac") && navigator.maxTouchPoints > 1);
+    })();
+
+    // use in production
+    const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
+    // use in development
+    // const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
+
+    const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
+
+    setIsBigTablet(isBigTablet)
+    setIsMobile(isMobile)
+
+  }, [setIsBigTablet, setIsMobile, bigTabletMedia, tabletOrMobileMedia]);
+
   if (is404) {
     return null;
   }
   if (!isClient) {
     return null;
   }
-  if (isTabletOrMobile || isAppleMobileDevice) {
+
+  if (isMobile) {
     return <>
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala lg:hidden">
-        <div className="container">
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center w-full h-16 z-20 bg-customMarsala">
+        <div className="container relative">
           <LocaleSwitcher />
           <div className="flex items-center w-12 h-12 p-2 text-white cursor-pointer"
             onClick={(() => (
@@ -75,12 +106,15 @@ const Header = () => {
                   classNameAnimationIn: "animate-burgerIn",
                   classNameAnimationOut: "animate-burgerOut",
                   classNameBackdrop: "bg-customMarsala",
-                  classNameModalContent: "w-full h-full"
+                  classNameModalContent: "w-full h-full",
+                  isBtnCloseCarousel: false,
+                  isBtnClose: true,
                 }
               )
             ))}>
             <Burger />
           </div>
+          {isMobile && <p className="absolute top-3 left-1/2 transform -translate-x-1/2 text-white">device is {device.type} & {device.model}</p>}
         </div>
       </header>
     </>;
@@ -88,7 +122,7 @@ const Header = () => {
 
   return (
     <>
-      {!isAppleMobileDevice && < header
+      {!isMobile && < header
         style={{
           height: `${heightHeader}px`,
         }}
@@ -103,6 +137,8 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
+            {isBigTablet && <p>bigTablet - {device.type} & {device.model}</p>}
+            {!isBigTablet && !isMobile && <p>desktop - {device.type} & {device.model}</p>}
             {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />

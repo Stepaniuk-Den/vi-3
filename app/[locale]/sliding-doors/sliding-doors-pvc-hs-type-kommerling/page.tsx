@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
 import { IImage, IImgList, IParameterItem } from "@/helpers/interfaces";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ImagesComponent from "@/app/components/SlidingDoorsPage/ImagesComponent";
@@ -9,9 +10,20 @@ import KomShInstallPremidoorSection from "@/app/components/SlidingDoorsPage/KomS
 import KomShOpeningPremidoorSection from "@/app/components/SlidingDoorsPage/KomShOpeningPremidoorSection";
 import KomShPremidoorSection from "@/app/components/SlidingDoorsPage/KomShPremidoorSection";
 
+
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "SlidingDoorsPage",
+    "slidingDoorsList",
+    2,
+    "sliding-doors"
+  );
+}
 
 const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
@@ -27,8 +39,9 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       <PageTopDescription t={t} />
       <ImagesComponent
         list={imgList.slice(0, 2)}
-        width={{ 1: "w-1/3", 2: "w-2/3" }}
-        className="mt-11 container"
+        width={{ 1: "w-full sm:w-1/3", 2: "w-full sm:w-2/3" }}
+        height='h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem]'
+        className="mt-2 lg:mt-11 container"
       />
       <KomShPremidoorSection
         tCardPremi={tCardPremi}
@@ -36,22 +49,28 @@ const SlidingDoorsHsKom: React.FC<Props> = ({ params: { locale } }) => {
       />
       <ImagesComponent
         list={imgList.slice(2, 4)}
-        width={{ 1: "w-2/3", 2: "w-1/3" }}
-        className="mt-11 container"
+        width={{ 1: "w-full sm:w-2/3", 2: "w-full sm:w-1/3" }}
+        height='h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem]'
+        className="mt-6 lg:mt-11 container"
       />
       <NestedCardsSection
         tSectionItem={t.raw("komPremiCross")}
-        size="w-1/2"
+        size="w-full sm:w-1/2"
+        imgH="h-[20rem] lg:h-[30rem]"
         titleBanner
         isRow={false}
         descReverse
+        imgFit="cover"
+        classNameList="flex-wrap sm:flex-nowrap max-sm:text-center"
       />
       <ImagesComponent
         list={imgList.slice(4, 6)}
-        width="w-1/2"
-        className="mt-11 flex-col lg:flex-row"
+        width="w-full sm:w-1/2"
+        height='h-[15rem] sm:h-[20rem] lg:h-[25rem]'
+        className="mt-11 gap-6"
+        objTypeImg="object-contain"
       >
-        <p>{t.raw("komPremiCross")["description2"]}</p>
+        <p className="max-sm:text-center">{t.raw("komPremiCross")["description2"]}</p>
       </ImagesComponent>
       <KomShOpeningPremidoorSection
         imgList={imgList}

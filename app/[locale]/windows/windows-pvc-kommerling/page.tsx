@@ -3,6 +3,7 @@ import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import OfferSection from "@/app/components/WindowsPages/OfferSection";
 import ProfilesCrossSections from "@/app/components/WindowsPages/ProfilesCrossSections";
+import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import {
   IItemCard,
   INestedCardsSectionItem,
@@ -25,6 +26,17 @@ type ISectionsList = {
 type Props = {
   params: { locale: string };
 };
+
+export function generateMetadata({ params }: { params: { locale: string } }) {
+  return generateMetadataSubPage(
+    params.locale,
+    "WindowsPage",
+    "windowsProfilesList",
+    2,
+    "windows",
+    true,
+  );
+}
 
 const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
