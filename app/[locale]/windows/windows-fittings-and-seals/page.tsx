@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import FittingComponentsSection from "@/app/components/WindowsPages/FittingComponentsSection";
@@ -19,7 +20,7 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
   const fittingComponentsSection = t.raw("FittingComponentsSection");
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -37,7 +38,8 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
       />
       <FittingComponentsSection t={fittingComponentsSection} />
-    </div>
+      <Footer />
+    </>
   );
 };
 

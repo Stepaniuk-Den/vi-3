@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import ModalTrigger from "@/app/components/ModalTrigger";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -22,7 +23,7 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
   };
 
   return (
-    <div className="pb-24">
+    <>
       <section className="pageCl">
         <div className="container">
           <h1 className="titleCl pt-16">{t("title")}</h1>
@@ -52,7 +53,8 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
         positioning={"flexWrap"}
         isRow={false}
       />
-    </div>
+      <Footer />
+    </>
   );
 };
 

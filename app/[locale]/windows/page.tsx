@@ -4,6 +4,7 @@ import Line from "@/app/components/Line";
 import { useTranslations } from "next-intl";
 import CardsSection from "@/app/components/CardsSection";
 import ContactForm from "@/app/components/ContactForm";
+import Footer from "@/app/components/Footer";
 
 type Props = {
   params: { locale: string };
@@ -63,6 +64,7 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
 
       <ContactForm />
+      <Footer />
     </>
   );
 };

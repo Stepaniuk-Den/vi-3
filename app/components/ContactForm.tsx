@@ -73,7 +73,7 @@ const ContactForm = () => {
   // }
 
   return (
-    <section className="sectionCl pb-24">
+    <section className="sectionCl">
       <div className="container">
         <div className="flex flex-col w-full p-7 shadow-lg rounded-md">
           <div className="text-center">

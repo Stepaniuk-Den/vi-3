@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import {
@@ -30,7 +31,7 @@ const WindowsAluAliplastPage: React.FC<Props> = ({ params: { locale } }) => {
   const tSectionsList = t.raw("SectionsList") as INestedCardsSectionsList;
 
   return (
-    <div className="pb-24">
+    <>
       <PageTopDescription t={t} />
       {Object.values(tSectionsList).map((tSectionItem, idx) => (
         <NestedCardsSection
@@ -61,7 +62,9 @@ const WindowsAluAliplastPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-    </div>
+
+      <Footer />
+    </>
   );
 };
 
