@@ -3,6 +3,7 @@ import Image from "next/image";
 import LinkToPage from "./Buttons/LinkToPage";
 import clsx from "clsx";
 import Line from "./Line";
+import Observer from "@/helpers/observer";
 
 const ItemCard: React.FC<IItemCard> = ({
   title,
@@ -43,7 +44,7 @@ const ItemCard: React.FC<IItemCard> = ({
           "bg-customElement text-white": background === "blue",
         }
       )}
-      // style={{ backgroundColor: background }}
+    // style={{ backgroundColor: background }}
     >
       {layout !== "horizontal" && title && (
         <div>
@@ -51,29 +52,37 @@ const ItemCard: React.FC<IItemCard> = ({
           <h3 className="subTitleCl max-md:text-center xl:leading-none">
             {title}
           </h3>
-          <Line className="marsala-left" color="marsala" />
+          <Observer animation="zoom-in">
+            <Line className="marsala-left" color="marsala" />
+          </Observer>
         </div>
       )}
 
       {/* ======== IMAGE ======== */}
-      <div
-        className={clsx(
-          "relative border border-gray-300 rounded-md overflow-hidden",
-          imgH,
-          layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
-        )}
-        onClick={onClick}
-      >
-        <Image
-          sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
-          src={src || ""}
-          alt={alt || ""}
-          fill
-          priority
-          className="object-cover"
+      <Observer threshold={0.5} animation="flip-in-vertical" classNameObserver={clsx(
+        "relative border border-gray-300 rounded-md overflow-hidden",
+        // imgH,
+        layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
+      )}>
+        <div
+          className={clsx(
+            "relative border border-gray-300 rounded-md overflow-hidden",
+            imgH,
+            // layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
+          )}
+          onClick={onClick}
+        >
+          <Image
+            sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+            src={src || ""}
+            alt={alt || ""}
+            fill
+            priority
+            className="object-cover"
           // placeholder="blur"
-        />
-      </div>
+          />
+        </div>
+      </Observer>
 
       {/* ======== DESCRIPTION ======== */}
       <div
@@ -91,13 +100,15 @@ const ItemCard: React.FC<IItemCard> = ({
               <h3 className="subTitleCl max-md:text-center xl:leading-none">
                 {title}
               </h3>
-              <Line
-                className={offer ? "marsala-center" : "marsala-left"}
-                // className={clsx(
-                //   alignment === "center" ? "marsala-center" : "marsala-left"
-                // )}
-                color={background === "marsala" ? "blue" : "marsala"}
-              />
+              <Observer animation="zoom-in">
+                <Line
+                  className={offer ? "marsala-center" : "marsala-left"}
+                  // className={clsx(
+                  //   alignment === "center" ? "marsala-center" : "marsala-left"
+                  // )}
+                  color={background === "marsala" ? "blue" : "marsala"}
+                />
+              </Observer>
             </div>
           )}
           <p>{description}</p>
