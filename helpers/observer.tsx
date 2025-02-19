@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from "clsx";
 import React, { useEffect, useRef, useState } from "react";
 
 const Observer = ({
@@ -15,6 +14,7 @@ const Observer = ({
   once = true,
   type = false,
   classNameObserver,
+  classNameChild,
   rootMargin,
   animation,
 }: {
@@ -29,6 +29,7 @@ const Observer = ({
   once?: boolean;
   type?: boolean;
   classNameObserver?: string;
+  classNameChild?: string;
   rootMargin?: string;
   animation?: string | null;
 
@@ -133,6 +134,15 @@ const Observer = ({
       };
       break;
   }
+
+  useEffect(() => {
+    if (intersecting && ref.current) {
+      const firstChild = ref.current.firstElementChild;
+      if (firstChild && firstChild instanceof HTMLElement && classNameChild) {
+        firstChild.classList.add(classNameChild);
+      }
+    }
+  }, [intersecting, classNameChild]);
 
   if (!type) {
     return (
