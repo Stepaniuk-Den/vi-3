@@ -18,8 +18,9 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
   return (
     <section className="pageCl">
       <div className="container">
-        <Observer animation='zoom-in' duration="0.8s">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
+        <Observer animation='zoom-in' duration="0.8s" classNameObserver="flex justify-center" classNameChild="laser-text">
+          {/* <h1 className="titleCl mt-16">{t("title")}</h1> */}
+          <h1 className="titleCl mt-16 inline-block" data-text={t("title")}>{t("title")}</h1>
         </Observer>
         <Observer animation='zoom-in-line' duration="0.8s">
           <Line className="marsala-center" color="marsala" />

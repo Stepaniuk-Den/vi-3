@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @keyframes zoomInLine {
   0% {
     transform: scaleX(3.5);
@@ -208,6 +207,7 @@ canvas {
   .laserCl {
     @apply relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-customLaser before:will-change-transform before:animate-laser !important;
   }
+
   /* before:-left-[100%] */
   /* before:w-[100%] */
   /* ======================== */
@@ -221,7 +221,7 @@ canvas {
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent  focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
+    @apply w-full py-3 px-4 border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
   }
 
   .label {
@@ -279,6 +279,46 @@ canvas {
   }
 
   /* ======================== */
+
+  @keyframes swing {
+
+    0% {
+      clip-path: ellipse(30px 30px at -30px 50%);
+      background-position: -30px 50%;
+    }
+
+    100% {
+      clip-path: ellipse(30px 30px at calc(100% + 30px) 50%);
+      background-position: calc(100% + 30px) 50%;
+
+    }
+  }
+
+  .laser-text {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .laser-text::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.9) 40%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.9) 60%,
+        rgba(0, 0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 30px 100%;
+    background-position: -30px 50%;
+    background-repeat: no-repeat;
+    clip-path: ellipse(30px 30px at -30px 50%);
+    animation: swing 1s linear forwards 1.5s;
+    padding: inherit;
+  }
 
   .after-line {
     position: absolute;
