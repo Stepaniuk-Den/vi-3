@@ -125,6 +125,12 @@ const Observer = ({
         opacity: intersecting ? 1 : 0,
       };
       break;
+    case "flip-in-vertical-card":
+      styles = {
+        animation: intersecting ? `flipInYCard ${duration} ease-in-out forwards` : "none",
+        opacity: 0,
+      };
+      break;
     default:
       styles = {
         transitionDuration: duration,
@@ -149,7 +155,6 @@ const Observer = ({
       <div
         style={styles}
         ref={ref as React.RefObject<HTMLDivElement>}
-        // className={`transition ${intersecting ? "opacity-100" : "opacity-0"}`}  // for tailwind css
         className={`${classNameObserver}`}
       >
         {children}

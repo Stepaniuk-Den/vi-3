@@ -152,7 +152,7 @@ const ImagesComponent: React.FC<IList> = ({
                   }
                 >
                   <Image
-                    className={`${objTypeImg} hover:scale-105 transition-transform duration-500`}
+                    className={`${objTypeImg} xl:hover:scale-105 transition-transform duration-500`}
                     sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                     src={img.src}
                     alt={img.alt}
