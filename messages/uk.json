@@ -254,8 +254,10 @@
       "phone": "Телефон:",
       "email": "Email:",
       "hours": "Години роботи:",
-      "workingDays": "Понеділок-П’ятниця:",
-      "holiday": "Субота:"
+      "workingDays": "Пн-Пт:",
+      "workingDaysDescription": "9:00 - 18:00",
+      "holiday": "Сб:",
+      "holidayDescription": "9:00 - 13:00"
     },
     "bankInformation": {
       "title": "Банківська інформація",
