@@ -254,8 +254,10 @@
       "phone": "Phone:",
       "email": "Email:",
       "hours": "Office hours:",
-      "workingDays": "Monday-Friday:",
-      "holiday": "Saturday:"
+      "workingDays": "Mon-Fri:",
+      "workingDaysDescription": "9:00 AM - 6:00 PM",
+      "holiday": "Sat:",
+      "holidayDescription": "9:00 AM - 1:00 PM"
     },
     "bankInformation": {
       "title": "Bank Information",
