@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import ModalTrigger from "@/app/components/ModalTrigger";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -18,7 +17,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     3,
     "windows",
-    true,
+    true
   );
 }
 
@@ -66,7 +65,6 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
         positioning={"flexWrap"}
         isRow={false}
       />
-      <Footer />
     </>
   );
 };

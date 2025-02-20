@@ -6,7 +6,6 @@ import {
   INestedCardsSectionItem,
   INestedCardsSectionsList,
 } from "@/helpers/interfaces";
-import Footer from "@/app/components/Footer";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 
 type Props = {
@@ -59,7 +58,6 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-      <Footer />
     </>
   );
 };

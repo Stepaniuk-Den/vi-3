@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import OfferSection from "@/app/components/WindowsPages/OfferSection";
@@ -34,7 +33,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsProfilesList",
     2,
     "windows",
-    true,
+    true
   );
 }
 
@@ -76,7 +75,6 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-      <Footer />
     </>
   );
 };

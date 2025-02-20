@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import HandlesDublinSection from "@/app/components/WindowsPages/HandlesDublinSection";
 import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusticSection";
@@ -19,7 +18,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     5,
     "windows",
-    true,
+    true
   );
 }
 
@@ -49,7 +48,6 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
       </section>
       <HandlesDublinSection t={handlesDublin} />
       <HandlesSecusticSection t={handlesSecustic} />
-      <Footer />
     </>
   );
 };

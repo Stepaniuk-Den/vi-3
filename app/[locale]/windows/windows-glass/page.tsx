@@ -1,5 +1,4 @@
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
-import Footer from "@/app/components/Footer";
 import MessageBanner from "@/app/components/MessageBanner";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
@@ -19,7 +18,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     1,
     "windows",
-    true,
+    true
   );
 }
 
@@ -76,7 +75,6 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-      <Footer />
     </>
   );
 };

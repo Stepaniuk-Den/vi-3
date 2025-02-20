@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import FittingComponentsSection from "@/app/components/WindowsPages/FittingComponentsSection";
@@ -19,7 +18,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     2,
     "windows",
-    true,
+    true
   );
 }
 
@@ -50,7 +49,6 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
       />
       <FittingComponentsSection t={fittingComponentsSection} />
-      <Footer />
     </>
   );
 };
