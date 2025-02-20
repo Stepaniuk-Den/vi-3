@@ -74,9 +74,9 @@ const Header = () => {
     })();
 
     // use in production
-    const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
+    // const isMobile = isAppleMobileDevice || isMobileDevice || tabletOrMobileMedia;
     // use in development
-    // const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
+    const isMobile = isAppleMobileDevice || isMobileDevice && tabletOrMobileMedia;
 
     const isBigTablet = (isAppleMobileDevice || isMobileDevice || isIOS || device.type === 'tablet') && bigTabletMedia;
 
