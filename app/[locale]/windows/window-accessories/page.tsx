@@ -4,6 +4,7 @@ import HandlesSecusticSection from "@/app/components/WindowsPages/HandlesSecusti
 import WindowAccessoriesSection from "@/app/components/WindowsPages/WindowAccessoriesSection";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCard } from "@/helpers/interfaces";
+import Observer from "@/helpers/observer";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -35,15 +36,30 @@ const WindowAccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <Line className="marsala-center" color="marsala" />
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
           <WindowAccessoriesSection imgList={imgList} />
         </div>
       </section>
       <section className="sectionCl">
         <div className="container">
-          <h2 className="titleCl">{windowHandles.title}</h2>
-          <Line className="marsala-center" color="marsala" />
+          <Observer animation="slide-up">
+            <h2 className="titleCl">{windowHandles.title}</h2>
+          </Observer>
+          <Observer animation="zoom-in">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
         </div>
       </section>
       <HandlesDublinSection t={handlesDublin} />

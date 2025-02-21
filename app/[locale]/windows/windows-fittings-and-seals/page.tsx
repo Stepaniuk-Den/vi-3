@@ -4,6 +4,7 @@ import FittingComponentsSection from "@/app/components/WindowsPages/FittingCompo
 import GasketsFittingsSection from "@/app/components/WindowsPages/GasketsFittingsSection";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
+import Observer from "@/helpers/observer";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -34,8 +35,19 @@ const WindowsFittingsSealsPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <Line className="marsala-center" color="marsala" />
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
         </div>
       </section>
       <GasketsFittingsSection t={gasketsFittingsSection} />

@@ -8,6 +8,7 @@ import {
 import NestedCard from "../NestedCard";
 import { useModal } from "../ModalProvider";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 type Props = {
   t: IProfilesCrossSections;
@@ -53,10 +54,14 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
               ))}
             </ul>
             <div className="self-center">
-              <h3 className="subTitleCl my-6">
-                {descriptionProfiles[0].title}
-              </h3>
-              <p>{descriptionProfiles[0].desc}</p>
+              <Observer animation="slide-up">
+                <h3 className="subTitleCl my-6">
+                  {descriptionProfiles[0].title}
+                </h3>
+              </Observer>
+              <Observer threshold={0.3} animation="zoom-in">
+                <p>{descriptionProfiles[0].desc}</p>
+              </Observer>
             </div>
           </div>
 
@@ -86,10 +91,14 @@ const ProfilesCrossSections: React.FC<Props> = ({ t }) => {
               ))}
             </ul>
             <div>
-              <h3 className="subTitleCl my-6">
-                {descriptionProfiles[1].title}
-              </h3>
-              <p>{descriptionProfiles[1].desc}</p>
+              <Observer animation="slide-up">
+                <h3 className="subTitleCl my-6">
+                  {descriptionProfiles[1].title}
+                </h3>
+              </Observer>
+              <Observer threshold={1} animation="zoom-in">
+                <p>{descriptionProfiles[1].desc}</p>
+              </Observer>
             </div>
           </div>
         </div>

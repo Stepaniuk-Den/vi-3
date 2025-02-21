@@ -31,6 +31,8 @@ const WindowsSection: React.FC<Props> = ({ t, tBtn }) => {
                 alt={typeItem.alt}
                 tBtn={tBtn("see")}
                 alignment="end"
+                slug={typeItem.slug}
+                path="windows"
               />
             </li>
           ))}

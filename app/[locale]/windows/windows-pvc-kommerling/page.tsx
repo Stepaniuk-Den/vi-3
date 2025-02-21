@@ -8,6 +8,7 @@ import {
   INestedCardsSectionItem,
   IProfilesCrossSections,
 } from "@/helpers/interfaces";
+import Observer from "@/helpers/observer";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -52,10 +53,35 @@ const WindowsKommerlingPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <h2 className="subTitleCl mt-5 text-center">{t("subtitle")}</h2>
-          <Line className="marsala-center" color="marsala" />
-          <p className="mb-4">{t("description")}</p>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h2
+              className="subTitleCl mt-5 text-center"
+              data-text={t("subtitle")}
+            >
+              {t("subtitle")}
+            </h2>
+          </Observer>
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
+          <Observer animation="zoom-in">
+            <p className="mb-4">{t("description")}</p>
+          </Observer>
         </div>
       </section>
 

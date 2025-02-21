@@ -3,6 +3,7 @@ import Image from "next/image";
 import LinkToPage from "./Buttons/LinkToPage";
 import { IGuideProjectElement } from "@/helpers/interfaces";
 import Line from "./Line";
+import Observer from "@/helpers/observer";
 
 const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   subtitle,
@@ -13,7 +14,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
   className,
   sectionId,
   tBtn,
-  //   ...rest
+  path,
 }) => {
   return (
     <div
@@ -22,8 +23,10 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
         className
       )}
     >
-      <div
-        className={
+      <Observer
+        threshold={0.5}
+        animation="flip-in-vertical"
+        classNameObserver={
           "relative w-full h-[380px] lg:h-[508px] border border-gray-300 rounded-md overflow-hidden"
         }
       >
@@ -33,22 +36,32 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
           alt={alt || ""}
           fill
         />
-      </div>
+      </Observer>
       <div className="flex flex-col justify-center items-center max-w-80 w-full">
-        <h2 className="subTitleCl text-center">{subtitle}</h2>
-        {/* mb-8 */}
-        <Line
-          className="marsala-center"
-          color={sectionId === "guide" ? "blue" : "marsala"}
-        />
-        <h3 className="titleCl">{title}</h3>
-        {/* mb-8 */}
-        <Line
-          className="marsala-center"
-          color={sectionId === "guide" ? "blue" : "marsala"}
-        />
-        <p className="mb-8 lg:mb-20 text-center xl:leading-7">{description}</p>
-        <LinkToPage href="#" className="self-center">
+        <Observer animation="slide-up">
+          <h2 className="subTitleCl text-center">{subtitle}</h2>
+        </Observer>
+        <Observer animation="zoom-in">
+          <Line
+            className="marsala-center"
+            color={sectionId === "guide" ? "blue" : "marsala"}
+          />
+        </Observer>
+        <Observer animation="slide-up">
+          <h3 className="titleCl">{title}</h3>
+        </Observer>
+        <Observer animation="zoom-in">
+          <Line
+            className="marsala-center"
+            color={sectionId === "guide" ? "blue" : "marsala"}
+          />
+        </Observer>
+        <Observer threshold={1} animation="zoom-in">
+          <p className="mb-8 lg:mb-20 text-center xl:leading-7">
+            {description}
+          </p>
+        </Observer>
+        <LinkToPage href={`/${path}`} className="self-center">
           {tBtn}
         </LinkToPage>
       </div>

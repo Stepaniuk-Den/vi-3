@@ -18,6 +18,7 @@ const GuideSection: React.FC<Props> = ({ t, tBtn }) => {
           className={"bg-customMarsala-accentLight"}
           sectionId="guide"
           tBtn={tBtn("see")}
+          path={t("path")}
         />
       </div>
     </section>

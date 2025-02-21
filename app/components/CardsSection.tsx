@@ -1,6 +1,7 @@
 import { IItemCard } from "@/helpers/interfaces";
 import ItemCard from "./ItemCard";
 import Line from "./Line";
+import Observer from "@/helpers/observer";
 // import { isMobileDevice } from "@/helpers/detect-browser";
 
 type Props = {
@@ -60,9 +61,15 @@ const CardsSection: React.FC<Props> = ({
       <div className="container">
         {wrapper && (
           <>
-            <h2 className="titleCl mb-4">{sectionTitle}</h2>
-            <Line className="marsala-center" color="marsala" />
-            <p className="mb-8">{sectionDesc}</p>
+            <Observer animation="slide-up">
+              <h2 className="titleCl mb-4">{sectionTitle}</h2>
+            </Observer>
+            <Observer animation="zoom-in-line" duration="0.8s">
+              <Line className="marsala-center" color="marsala" />
+            </Observer>
+            <Observer animation="zoom-in">
+              <p className="mb-8">{sectionDesc}</p>
+            </Observer>
           </>
         )}
         <ul className="flex flex-col justify-between gap-6">

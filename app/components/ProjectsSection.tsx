@@ -17,6 +17,7 @@ const ProjectsSection: React.FC<Props> = ({ t, tBtn }) => {
           alt={t("alt")}
           className={"flex-row-reverse bg-customElement text-white"}
           tBtn={tBtn("see")}
+          path={t("path")}
         />
       </div>
     </section>

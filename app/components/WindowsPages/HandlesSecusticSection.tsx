@@ -1,6 +1,7 @@
 import { INestedCard } from "@/helpers/interfaces";
 import TitleBanner from "../TitleBanner";
 import ModalTrigger from "../ModalTrigger";
+import Observer from "@/helpers/observer";
 
 type Props = {
   t: {
@@ -23,19 +24,25 @@ const HandlesSecusticSection: React.FC<Props> = ({ t }) => {
         <TitleBanner>
           <h3 className="titleCl">{t.title}</h3>
         </TitleBanner>
-        <p className="mb-5">{t.description}</p>
-
-        <h4 className="titleCl mb-5">{typesListTitle.title}</h4>
+        <Observer animation="zoom-in">
+          <p className="mb-5">{t.description}</p>
+        </Observer>
+        <Observer animation="slide-up">
+          <h4 className="titleCl mb-5">{typesListTitle.title}</h4>
+        </Observer>
         <ul className="flex flex-col gap-12 rounded-md pl-6">
           {typesList.map(
             (typeItem) =>
               typeof typeItem === "object" &&
               "id" in typeItem && (
                 <li key={typeItem.id}>
-                  <div className="flex mb-6">
-                    <div className="flex-shrink-0 w-2 h-2 bg-customMarsala rounded-[3px] mr-4 mt-[6px]"></div>
-                    <p>{typeItem.description}</p>
-                  </div>
+                  <Observer animation="zoom-in">
+                    <div className="flex mb-6">
+                      <div className="flex-shrink-0 w-2 h-2 bg-customMarsala rounded-[3px] mr-4 mt-[6px]"></div>
+
+                      <p>{typeItem.description}</p>
+                    </div>
+                  </Observer>
 
                   <ModalTrigger
                     className="relative w-full sm:w-[380px] md:w-1/2 h-[240px] sm:h-[288px] md:h-[268px] lg:h-[362px] xl:h-[460px] m-auto border border-gray-300 rounded-md overflow-hidden"

@@ -20,6 +20,7 @@ const ItemCard: React.FC<IItemCard> = ({
   slug,
   path,
   imgH = "h-[360px]",
+  classNameImg,
   offer,
   onClick,
   //   ...rest
@@ -27,7 +28,8 @@ const ItemCard: React.FC<IItemCard> = ({
   // const router = useRouter();
   // const isHomePage = router.pathname === "/";
 
-  const link = slug ? `/${path}/${slug}` : "#";
+  // const link = slug ? `/${path}/${slug}` : "#";
+  const link = slug ? `/${path}/${slug}` : path ? `/${path}` : "#";
 
   return (
     <div
@@ -44,14 +46,15 @@ const ItemCard: React.FC<IItemCard> = ({
           "bg-customElement text-white": background === "blue",
         }
       )}
-    // style={{ backgroundColor: background }}
+      // style={{ backgroundColor: background }}
     >
       {layout !== "horizontal" && title && (
         <div>
-          {/* className="flex-grow" */}
-          <h3 className="subTitleCl max-md:text-center xl:leading-none">
-            {title}
-          </h3>
+          <Observer animation="slide-up">
+            <h3 className="subTitleCl max-md:text-center xl:leading-none">
+              {title}
+            </h3>
+          </Observer>
           <Observer animation="zoom-in">
             <Line className="marsala-left" color="marsala" />
           </Observer>
@@ -59,15 +62,20 @@ const ItemCard: React.FC<IItemCard> = ({
       )}
 
       {/* ======== IMAGE ======== */}
-      <Observer threshold={0.5} animation="flip-in-vertical" classNameObserver={clsx(
-        "relative border border-gray-300 rounded-md overflow-hidden",
-        // imgH,
-        layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
-      )}>
+      <Observer
+        threshold={0.5}
+        animation="flip-in-vertical"
+        classNameObserver={clsx(
+          "relative border border-gray-300 rounded-md overflow-hidden",
+          // imgH,
+          layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
+        )}
+      >
         <div
           className={clsx(
             "relative border border-gray-300 rounded-md overflow-hidden",
             imgH,
+            classNameImg
             // layout === "horizontal" ? "w-full md:w-1/2" : "mb-6 w-full"
           )}
           onClick={onClick}
@@ -79,7 +87,7 @@ const ItemCard: React.FC<IItemCard> = ({
             fill
             priority
             className="object-cover"
-          // placeholder="blur"
+            // placeholder="blur"
           />
         </div>
       </Observer>
@@ -97,9 +105,11 @@ const ItemCard: React.FC<IItemCard> = ({
         <div>
           {layout === "horizontal" && (
             <div className="lg:pt-12">
-              <h3 className="subTitleCl max-md:text-center xl:leading-none">
-                {title}
-              </h3>
+              <Observer animation="slide-up">
+                <h3 className="subTitleCl max-md:text-center xl:leading-none">
+                  {title}
+                </h3>
+              </Observer>
               <Observer animation="zoom-in">
                 <Line
                   className={offer ? "marsala-center" : "marsala-left"}
@@ -111,7 +121,9 @@ const ItemCard: React.FC<IItemCard> = ({
               </Observer>
             </div>
           )}
-          <p>{description}</p>
+          <Observer threshold={1} animation="zoom-in">
+            <p>{description}</p>
+          </Observer>
         </div>
 
         <LinkToPage

@@ -7,6 +7,7 @@ import NestedParameterDescList from "./NestedParameterDescList";
 import TitleBanner from "./TitleBanner";
 import clsx from "clsx";
 import ModalSwiperContent from "./ModalSwiperContent";
+import Observer from "@/helpers/observer";
 // import { getImageDimensionValue } from "@/helpers/getImageDimensionValue";
 
 type Props = {
@@ -118,16 +119,18 @@ const NestedCardsSection: React.FC<Props> = ({
                     <ModalSwiperContent slides={slides} initialSlide={idx} />
                   )
                 }
-              // titleBannerCard={titleBannerCard}
-              // layout="horizontal"
-              // background={idx % 2 === 0 ? `${background}` : ""}
+                // titleBannerCard={titleBannerCard}
+                // layout="horizontal"
+                // background={idx % 2 === 0 ? `${background}` : ""}
               />
             );
           })}
         </ul>
 
         {tSectionItem.description && !descReverse && (
-          <p className="mt-5">{tSectionItem.description}</p>
+          <Observer threshold={1} animation="zoom-in">
+            <p className="mt-5">{tSectionItem.description}</p>
+          </Observer>
         )}
 
         {tSectionItem.parametersList && (

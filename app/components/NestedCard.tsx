@@ -1,4 +1,5 @@
 import { INestedCard } from "@/helpers/interfaces";
+import Observer from "@/helpers/observer";
 import clsx from "clsx";
 import Image from "next/image";
 // import TitleBanner from "./TitleBanner";
@@ -38,9 +39,11 @@ const NestedCard: React.FC<INestedCard> = ({
     >
       {/* ======== TITLE ======== */}
       {title && (
-        <div className="mb-3">
+        // <div className="mb-3">
+        <Observer animation="slide-up" classNameObserver="mb-3">
           <h3 className="subTitleCl xl:leading-none normal-case">{title}</h3>
-        </div>
+        </Observer>
+        // </div>
       )}
 
       {/* <div
@@ -60,29 +63,46 @@ const NestedCard: React.FC<INestedCard> = ({
         )}
       >
         {/* ======== IMAGE ======== */}
-        <div
-          className={clsx(
-            "relative w-full border border-gray-300 rounded-md overflow-hidden cursor-zoom-in",
-            imgH
-          )}
-          onClick={onClick}
+        <Observer
+          threshold={0.5}
+          animation="flip-in-vertical"
+          classNameObserver="w-full"
         >
-          <Image
-            sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
-            src={src || ""}
-            alt={alt || ""}
-            fill
-            priority
-            className={clsx({
-              "object-cover": imgFit === "cover",
-              "object-contain": imgFit === "contain",
-            })}
-            // style={imgFit ? { objectFit: imgFit } : undefined}
-            // placeholder="blur"
-          />
-        </div>
+          <div
+            className={clsx(
+              "relative w-full border border-gray-300 rounded-md overflow-hidden cursor-zoom-in",
+              imgH
+            )}
+            onClick={onClick}
+          >
+            <Image
+              sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+              src={src || ""}
+              alt={alt || ""}
+              fill
+              priority
+              className={clsx(
+                "hover:scale-105 transition-transform duration-500",
+                {
+                  "object-cover": imgFit === "cover",
+                  "object-contain": imgFit === "contain",
+                }
+              )}
+              // style={imgFit ? { objectFit: imgFit } : undefined}
+              // placeholder="blur"
+            />
+          </div>
+        </Observer>
         {/* ======== DESCRIPTION ======== */}
-        {description && <p className="w-full">{description}</p>}
+        {description && (
+          <Observer
+            threshold={1}
+            animation="zoom-in"
+            classNameObserver="w-full"
+          >
+            <p className="w-full">{description}</p>
+          </Observer>
+        )}
       </div>
     </li>
   );
