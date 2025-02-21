@@ -22,7 +22,7 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
         <ul className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center lg:justify-between md:gap-2 lg:gap-4">
           {doorsTypesList.map((typeItem, idx) => (
             <li
-              className="md:max-w-[calc(50%-8px)] lg:max-w-[calc(33.333%-16px)] w-full"
+              className="md:max-w-[calc(50%-8px)] lg:max-w-[calc(33.333%-16px)] w-full md:last:max-w-full"
               key={typeItem.id}
             >
               <ItemCard
