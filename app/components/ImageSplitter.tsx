@@ -2,25 +2,25 @@
 
 import { useRef, useEffect, useState } from "react";
 import { images } from "@/data/slidesHero";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Arrow from "@/public/icons/Arrow_rounded.svg";
 
-interface Slide {
-  title: string;
-  description: string;
-}
+// interface Slide {
+//   title: string;
+//   description: string;
+// }
 const CanvasComponent = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const newCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const imgRefs = useRef<HTMLImageElement[]>([]);
 
-  const t = useTranslations("Hero");
-  const slidesList = t.raw("slides");
-  const slides: Slide[] = Object.values(slidesList);
+  // const t = useTranslations("Hero");
+  // const slidesList = t.raw("slides");
+  // const slides: Slide[] = Object.values(slidesList);
 
   const [currentItem, setCurrentItem] = useState(1);
-  const [textVisible, setTextVisible] = useState(true);
+  // const [textVisible, setTextVisible] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -113,7 +113,7 @@ const CanvasComponent = () => {
         renderStaticImage(nextImage);
 
         setTimeout(() => {
-          setTextVisible(true);
+          // setTextVisible(true);
         }, 500);
         setCurrentItem(nextItem);
       }
@@ -194,7 +194,7 @@ const CanvasComponent = () => {
       ></canvas>
       <canvas ref={newCanvasRef} style={{ display: "none" }}></canvas>
 
-      {textVisible && (
+      {/* {textVisible && (
         <div className="absolute top-0 left-0 w-full h-full pl-3 sm:pl-5 md:pl-3 lg:pl-0">
           <div
             className={clsx(
@@ -217,7 +217,7 @@ const CanvasComponent = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
 
       <button
         onClick={handlePrev}
