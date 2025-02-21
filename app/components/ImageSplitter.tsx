@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { images } from "@/data/slidesHero";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Arrow from "@/public/icons/Arrow_rounded.svg";
 
