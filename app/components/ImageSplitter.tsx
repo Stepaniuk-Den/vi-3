@@ -194,7 +194,7 @@ const CanvasComponent = () => {
       ></canvas>
       <canvas ref={newCanvasRef} style={{ display: "none" }}></canvas>
 
-      {textVisible && (
+      {/* {textVisible && (
         <div className="absolute top-0 left-0 w-full h-full pl-3 sm:pl-5 md:pl-3 lg:pl-0">
           <div
             className={clsx(
@@ -217,7 +217,7 @@ const CanvasComponent = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
 
       <button
         onClick={handlePrev}
