@@ -1,6 +1,6 @@
 import { INestedCard } from "@/helpers/interfaces";
 import TitleBanner from "../TitleBanner";
-import Image from "next/image";
+import ModalTrigger from "../ModalTrigger";
 
 type Props = {
   t: {
@@ -10,6 +10,11 @@ type Props = {
 };
 const FittingComponentsSection: React.FC<Props> = ({ t }) => {
   const cardFittingComponents = t.card;
+  const imgCardFittingComponents = {
+    id: cardFittingComponents.id || "",
+    src: cardFittingComponents.src || "",
+    alt: cardFittingComponents.alt || "",
+  };
 
   return (
     <section className="sectionCl">
@@ -18,16 +23,12 @@ const FittingComponentsSection: React.FC<Props> = ({ t }) => {
           <h3 className="titleCl">{t.title}</h3>
         </TitleBanner>
 
-        <div className="relative w-full h-[520px] border border-gray-300 rounded-md overflow-hidden">
-          <Image
-            sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
-            src={cardFittingComponents.src || ""}
-            alt={cardFittingComponents.alt || ""}
-            fill
-            priority
-            className="object-contain"
-          />
-        </div>
+        <ModalTrigger
+          className="relative w-full h-[520px] border border-gray-300 rounded-md overflow-hidden"
+          src={cardFittingComponents.src || ""}
+          alt={cardFittingComponents.alt || ""}
+          img={[imgCardFittingComponents]}
+        />
       </div>
     </section>
   );

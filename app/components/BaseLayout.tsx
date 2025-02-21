@@ -6,6 +6,7 @@ import { clsx } from "clsx";
 import { ModalProvider } from "./ModalProvider";
 import Header from "./Header";
 import ToTopButton from "./Buttons/ToTopButton";
+import Footer from "./Footer";
 // const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
 //   ssr: false,
 // });
@@ -33,6 +34,7 @@ export default async function BaseLayout({ children, locale }: Props) {
           <ModalProvider>
             <Header />
             <main>{children}</main>
+            <Footer />
             <ToTopButton />
           </ModalProvider>
         </NextIntlClientProvider>

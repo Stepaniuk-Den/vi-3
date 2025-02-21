@@ -1,9 +1,9 @@
-import Footer from "@/app/components/Footer";
 import Line from "@/app/components/Line";
 import ModalTrigger from "@/app/components/ModalTrigger";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import { INestedCardsSectionItem } from "@/helpers/interfaces";
+import Observer from "@/helpers/observer";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     3,
     "windows",
-    true,
+    true
   );
 }
 
@@ -39,8 +39,19 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <Line className="marsala-center" color="marsala" />
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
 
           <div className="flex max-md:flex-col max-md:items-center gap-6 justify-between">
             <ModalTrigger
@@ -50,7 +61,9 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
               img={[img]}
             />
             <div className="w-full sm:max-md:max-w-[396px] md:w-1/2">
-              <p className="mb-2">{cardMullions.description}</p>
+              <Observer animation="zoom-in">
+                <p className="mb-2">{cardMullions.description}</p>
+              </Observer>
             </div>
           </div>
         </div>
@@ -66,7 +79,6 @@ const WindowMullionsPage: React.FC<Props> = ({ params: { locale } }) => {
         positioning={"flexWrap"}
         isRow={false}
       />
-      <Footer />
     </>
   );
 };

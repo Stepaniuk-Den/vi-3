@@ -18,11 +18,18 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
   return (
     <section className="pageCl">
       <div className="container">
-        <Observer animation='zoom-in' duration="0.8s" classNameObserver="flex justify-center" classNameChild="laser-text">
+        <Observer
+          animation="zoom-in"
+          duration="0.8s"
+          classNameObserver="flex justify-center"
+          classNameChild="laser-text"
+        >
           {/* <h1 className="titleCl mt-16">{t("title")}</h1> */}
-          <h1 className="titleCl mt-16 inline-block" data-text={t("title")}>{t("title")}</h1>
+          <h1 className="titleCl mt-16 inline-block" data-text={t("title")}>
+            {t("title")}
+          </h1>
         </Observer>
-        <Observer animation='zoom-in-line' duration="0.8s">
+        <Observer animation="zoom-in-line" duration="0.8s">
           <Line className="marsala-center" color="marsala" />
         </Observer>
         {/* {!descObj ? (
@@ -32,22 +39,30 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
         ) : (
           <div className="mb-4">
             {Object.values(descObj).map((text, index) => (
-              <Observer threshold={1} animation='zoom-in' key={index}>
-                <p key={index} className="mb-4">{text}</p>
+              <Observer threshold={1} animation="zoom-in" key={index}>
+                <p key={index} className="mb-4">
+                  {text}
+                </p>
               </Observer>
             ))}
           </div>
         )} */}
-        {t("description") && <Observer animation='zoom-in'>
-          <p className="mb-4">{t("description")}</p>
-        </Observer>}
-        {descObj && <div className="mb-4">
-          {Object.values(descObj).map((text, index) => (
-            <Observer threshold={1} animation='zoom-in' key={index}>
-              <p key={index} className="mb-4">{text}</p>
-            </Observer>
-          ))}
-        </div>}
+        {t("description") && (
+          <Observer animation="zoom-in">
+            <p className="mb-4">{t("description")}</p>
+          </Observer>
+        )}
+        {descObj && (
+          <div className="mb-4">
+            {Object.values(descObj).map((text, index) => (
+              <Observer threshold={1} animation="zoom-in" key={index}>
+                <p key={index} className="mb-4">
+                  {text}
+                </p>
+              </Observer>
+            ))}
+          </div>
+        )}
         {parametersList && <NestedParameterDescList param={parametersList} />}
       </div>
     </section>

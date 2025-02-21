@@ -4,8 +4,8 @@ import Line from "@/app/components/Line";
 import { useTranslations } from "next-intl";
 import CardsSection from "@/app/components/CardsSection";
 import ContactForm from "@/app/components/ContactForm";
-import Footer from "@/app/components/Footer";
 import { generateMetadataPage } from "@/helpers/generateMetadata";
+import Observer from "@/helpers/observer";
 
 type Props = {
   params: { locale: string };
@@ -26,16 +26,42 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <h2 className="titleCl mt-5 text-center">{t("subtitle")}</h2>
-          <Line className="marsala-center" color="marsala" />
-          <p className="mb-4">{t("pageDesc1")}</p>
-          <p className="mb-4">{t("pageDesc2")}</p>
-          <ol className="list-disc list-inside">
-            {pageDescList.map((desc, idx) => (
-              <li key={idx}>{desc.desc}</li>
-            ))}
-          </ol>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16 inline-block" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h2
+              className="titleCl mt-5 text-center inline-block"
+              data-text={t("subtitle")}
+            >
+              {t("subtitle")}
+            </h2>
+          </Observer>
+
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
+          <Observer animation="zoom-in">
+            <p className="mb-4">{t("pageDesc1")}</p>
+            <p className="mb-4">{t("pageDesc2")}</p>
+            <ol className="list-disc list-inside">
+              {pageDescList.map((desc, idx) => (
+                <li key={idx}>{desc.desc}</li>
+              ))}
+            </ol>
+          </Observer>
         </div>
       </section>
       <CardsSection
@@ -69,7 +95,6 @@ const WindowsPage: React.FC<Props> = ({ params: { locale } }) => {
       <WindowsillsSection t={t} tBtn={tButtons} /> */}
 
       <ContactForm />
-      <Footer />
     </>
   );
 };

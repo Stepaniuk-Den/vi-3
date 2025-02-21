@@ -5,6 +5,7 @@ import NestedCard from "../NestedCard";
 import TitleBanner from "../TitleBanner";
 import { useModal } from "../ModalProvider";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 type Props = {
   t: {
@@ -30,8 +31,9 @@ const HandlesDublinSection: React.FC<Props> = ({ t }) => {
         <TitleBanner>
           <h3 className="titleCl">{t.title}</h3>
         </TitleBanner>
-        <p className="mb-5">{t.description}</p>
-
+        <Observer animation="zoom-in">
+          <p className="mb-5">{t.description}</p>
+        </Observer>
         <ul className="flex justify-center flex-wrap gap-6">
           {imgList.map((imgItem, idx) => (
             <NestedCard

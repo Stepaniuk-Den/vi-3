@@ -270,7 +270,7 @@
     "windowsTypesList": {
       "1": {
         "id": "1",
-        "windowsSlug": "windows-pcv",
+        "slug": "windows-pvc-schuco",
         "title": "PVC windows",
         "description": "Our offer includes energy-efficient PVC windows which meet the highest standards on the European market. We manufacture PVC windows based on high-performance profiles from Schüco and Kömmerling.",
         "src": "/images/windows/windows-pcv.jpeg",
@@ -278,7 +278,7 @@
       },
       "2": {
         "id": "2",
-        "windowsSlug": "windows-aluminium",
+        "slug": "windows-aluminium-aliplast",
         "title": "Aluminium windows",
         "description": "We are a Polish manufacturer of aluminium windows. Made with solid and heat-insulating profiles from Aliplast and Aluron, our aluminium windows represent the highest quality in their category.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -292,7 +292,7 @@
     "doorsTypesList": {
       "1": {
         "id": "1",
-        "doorsSlug": "doors-terrace",
+        "path": "sliding-doors",
         "title": "Hs/psk terrace doors",
         "description": "Low-threshold sliding terrace doors directly from the manufacturer are a perfect solution for modern and spacious interiors. They have a lot of glazing, making them able to optimally light up the room. The excellent thermal insulation and the new fittings technology make TUR-PLAST’s products bring you comfort and joy of use. Our offer includes two system solutions: HS and PSK.",
         "src": "/images/doors/doors-terrace.jpeg",
@@ -300,7 +300,7 @@
       },
       "2": {
         "id": "2",
-        "doorsSlug": "doors-front",
+        "path": "doors",
         "title": "Pvc/aluminium front doors",
         "description": "The manufacture of doors with PVC or aluminium profiles occupies a separate section at TUR-PLAST. Our Salesmen will help you select the door panel colour, shape and look as well as the type of fittings and glazing.",
         "src": "/images/doors/doors-front.jpeg",
@@ -314,7 +314,7 @@
     "rollerShuttersTypesList": {
       "1": {
         "id": "1",
-        "doorsSlug": "roller-shutters-top-mounted",
+        "slug": "top-mounted-external-roller-shutters",
         "title": "Top-mounted roller shutters",
         "description": "We offer you a new versatile system of top-mounted roller shutters for installation on both sides, used in newly-built and renovated houses. Our EXTE roller shutter system provides excellent thermal insulation, complying with the regulations applicable on the European market.",
         "src": "/images/rollerShutters/top-mounted.jpeg",
@@ -322,7 +322,7 @@
       },
       "2": {
         "id": "2",
-        "doorsSlug": "roller-shutters-adaptive",
+        "slug": "adaptive-external-roller-shutters",
         "title": "Adaptive roller shutters",
         "description": "Concealed adaptive roller shutters with two modes of installation and OVAL surface-mounted adaptive roller shutters are some of our well proven products. Characterstic features of these systems include the aluminium guidebars, shutter curtain, and shutter box with a revision located outside the building.",
         "src": "/images/rollerShutters/adaptive.jpeg",
@@ -330,7 +330,7 @@
       },
       "3": {
         "id": "3",
-        "doorsSlug": "roller-shutters-sun-protection",
+        "slug": "screen-covers",
         "title": "Sun protection covers",
         "description": "We recommend the solid and aesthetic screen-type roller shutter systems for protecting rooms with a lot of glazing from excessive insolation. In an extended position, the screens can also be a perfect barrier against insects and various types of pollution.",
         "src": "/images/rollerShutters/sun-protection.jpeg",
@@ -341,6 +341,7 @@
   "GuideElement": {
     "subtitle": "WINDOWS – DOORS – ROLLER SHUTTERS",
     "title": "GUIDE",
+    "path": "doors",
     "description": "Are you unsure as to what windows, doors, or roller shutters to choose for your house or apartment? Are you looking for the latest solutions in window and door joinery? Do you need to learn some professional window-related terms? – please feel free to visit our website: GUIDE TO WINDOWS-DOORS-ROLLER SHUTTERS.",
     "src": "/images/guide/guide.jpeg",
     "alt": ""
@@ -348,6 +349,7 @@
   "ProjectsElement": {
     "subtitle": "OUR PROJECTS – WINDOWS – DOORS",
     "title": "measurement – price valuation – manufacture – installation – servicing",
+    "path": "windows",
     "description": "Please feel free to view the examples of projects executed by the company TUR-PLAST, a manufacturer of energy-efficient PVC and aluminium windows and doors based in Poland.",
     "src": "/images/projects/projects-element.jpeg",
     "alt": ""
@@ -385,6 +387,7 @@
       }
     }
   },
+
   "WindowsPage": {
     "title": "WINDOWS from Poland",
     "subtitle": "functionality / comfort / aesthetics / effective thermal insulation",
@@ -407,7 +410,7 @@
     "windowsProfilesList": {
       "1": {
         "id": "1",
-        "windowsSlug": "windows-pcv-schüco-profiles",
+        "slug": "windows-pvc-schuco",
         "title": "PVC WINDOWS – Schüco Profiles",
         "description": "Schüco window profiles are made of very high-strength material. We use reinforcement with corrosion-resistant 1.5-2mm thick steel sections around the entire perimeter of the frame and sash. A window construction that is this stable and durable perfectly withstands the weight of the quite heavy energy-efficient triple glazing unit, and has excellent thermal and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -415,7 +418,7 @@
       },
       "2": {
         "id": "2",
-        "windowsSlug": "windows-pcv-kömmerling-profiles",
+        "slug": "windows-pvc-kommerling",
         "title": "PVC WINDOWS – Kömmerling Profiles",
         "description": "We recommend the energy-efficient and eco-friendly window systems from the German company KÖMMERLING. Our offer includes three systems: KÖMMERLING 76 AD, KÖMMERLING 76 MD, KÖMMERLING 88 MD. Each of the offered systems is available in white, veneered, as well as with innovative aluminium overlays. Please feel free to take a closer look at our offer.",
         "src": "/images/windows/windows-pcv.jpeg",
@@ -423,7 +426,7 @@
       },
       "3": {
         "id": "3",
-        "windowsSlug": "windows-aluminium-aliplast-profiles",
+        "slug": "windows-aluminium-aliplast",
         "title": "ALUMINIUM WINDOWS – Aliplast profile",
         "description": "ALUMINIUM WINDOWS from Poland, based on the WINDOW PROFILES by ALIPLAST, available in the Imperial, Superial and Star systems, are characterised by extreme rigidness, high-quality coating, excellent thermal insulation, and modern, varied designs. ALUMINIUM WINDOWS and DOORS by Tur-Plast from Poland were created thanks to many years of experience and the use of modern technology.",
         "src": "/images/doors/doors-front.jpeg",
@@ -431,7 +434,7 @@
       },
       "4": {
         "id": "4",
-        "windowsSlug": "windows-aluminium-aluron-profiles",
+        "slug": "windows-aluminium-aliplast",
         "title": "ALUMINIUM WINDOWS – Aluron Profiles",
         "description": "Windows made in Poland based on aluminium profiles from ALURON fulfil the rigorous energy-efficiency requirements, provide safety as well as comfort and functionality of use. As a manufacturer of windows based in Poland, we offer a range of non-standard and unusual solutions. Please feel free to contact us.",
         "src": "/images/doors/doors-terrace.jpeg",
@@ -443,7 +446,7 @@
       "description": "Profile systems are important in window construction. However, there are a number of components of window joinery that largely affect energy efficiency, safety and comfort in the daily use of our windows. The type of glazing, fittings and seals used largely determines the quality of the windows. The visual aspect of window joinery, in turn, is strongly influenced by the choice of mullions, colours, or additional window accessories.",
       "1": {
         "id": "1",
-        "windowsSlug": "windows-glazing-units",
+        "slug": "windows-glass",
         "title": "Glazing units for windows",
         "description": "A significant element of any PVC window are panes. Depending on the size of the window and on the division into panels, the glass can occupy from 25% to 95% of the window area. Therefore, it is the quality and parameters of the glazing units that determine whether and how the window will fulfil its function – which is ensuring the best thermal insulation, safety, and sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -451,7 +454,7 @@
       },
       "2": {
         "id": "2",
-        "windowsSlug": "windows-fittings-and-seals",
+        "slug": "windows-fittings-and-seals",
         "title": "Window fittings and seals",
         "description": "While being a very inconspicuous element of a window structure, seals are in fact responsible for extremely important properties, such as thermal insulation; water tightness; room ventilation; sound insulation.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -459,7 +462,7 @@
       },
       "3": {
         "id": "3",
-        "windowsSlug": "windows-mullions",
+        "slug": "window-mullions",
         "title": "Window mullions",
         "description": "To emphasise the character of the windows, elevation, or even the whole building, we offer PVC windows and aluminium windows with mullions. This applies especially to older or stylized buildings. Mullions may be structural, inter-pane or Viennese.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -467,7 +470,7 @@
       },
       "4": {
         "id": "4",
-        "windowsSlug": "windows-colour-palette",
+        "slug": "windows-colours",
         "title": "Colour palette for window profiles",
         "description": "Please see the palette of sample colours in which we manufacture windows. The advantages of our veneered windows include: the possibility of choosing between veneering on one or both sides; elegant and harmonious appearance; extreme resistance to changing weather conditions; no need for additional special maintenance, and ease of care.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -475,7 +478,7 @@
       },
       "5": {
         "id": "5",
-        "windowsSlug": "windows-accessories-additions",
+        "slug": "window-accessories",
         "title": "Window accessories / additions",
         "description": "Please feel free to view our offer of all kinds of accessories and additions for PVC and aluminium windows.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -487,7 +490,7 @@
       "description": "In the comprehensive offer from TUR-PLAST, you will find solid and thermally insulated internal and external windowsills.",
       "1": {
         "id": "1",
-        "windowsSlug": "windows-windowsills-internal",
+        "slug": "window-mullions",
         "title": "Internal windowsills",
         "description": "Möller LIGNODUR internal windowsills are impact-resistant and scratch-resistant interior finishing elements for both older and modern buildings. What sets them apart from competing products is the guaranteed thickness of walls and reinforcements embossed in the form of a strong core made of a wood flour and PVC composite.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -495,7 +498,7 @@
       },
       "2": {
         "id": "2",
-        "windowsSlug": "windows-windowsills-external",
+        "slug": "windows-fittings-and-seals",
         "title": "External windowsills",
         "description": "We offer steel and aluminium external windowsills. Please feel free to take a closer look at our offer.",
         "src": "/images/windows/windows-aluminium.jpeg",
@@ -503,7 +506,7 @@
       },
       "3": {
         "id": "3",
-        "windowsSlug": "windows-glazing-units",
+        "slug": "window-mullions",
         "title": "Thermally insulated window moulding",
         "description": "We recommend taking a moment to see our offer of thermally insulated window moulding as well as external, internal and double-sided XPS profiles. With layered installation of energy-efficient windows, it is also worthwhile to make sure you have a thermally insulated windowsill.",
         "src": "/images/windows/windows-aluminium.jpeg",

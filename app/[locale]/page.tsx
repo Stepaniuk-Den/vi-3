@@ -10,7 +10,6 @@ import ProjectsSection from "../components/ProjectsSection";
 import ManufacturerInfo from "../components/ManufacturerInfo";
 import WindowFeatures from "../components/WindowFeatures";
 import MessageBanner from "../components/MessageBanner";
-import Footer from "../components/Footer";
 
 type Props = {
   params: { locale: string };
@@ -42,7 +41,6 @@ export default function IndexPage({ params: { locale } }: Props) {
       <ProjectsSection t={tProjectsElement} tBtn={tButtons} />
       <WindowFeatures t={WindowFeaturesList} />
       <GuideSection t={tGuideElement} tBtn={tButtons} />
-      <Footer />
     </PageLayout>
   );
 }

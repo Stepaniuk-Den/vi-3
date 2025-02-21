@@ -6,8 +6,8 @@ import {
   INestedCardsSectionItem,
   INestedCardsSectionsList,
 } from "@/helpers/interfaces";
-import Footer from "@/app/components/Footer";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
+import Observer from "@/helpers/observer";
 
 type Props = {
   params: { locale: string };
@@ -35,10 +35,35 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
     <>
       <section className="pageCl">
         <div className="container">
-          <h1 className="titleCl pt-16">{t("title")}</h1>
-          <h2 className="subTitleCl mt-5 text-center">{t("subtitle")}</h2>
-          <Line className="marsala-center" color="marsala" />
-          <p>{t("description")}</p>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h1 className="titleCl mt-16" data-text={t("title")}>
+              {t("title")}
+            </h1>
+          </Observer>
+          <Observer
+            animation="zoom-in"
+            duration="0.8s"
+            classNameObserver="flex justify-center"
+            classNameChild="laser-text"
+          >
+            <h2
+              className="subTitleCl mt-5 text-center"
+              data-text={t("subtitle")}
+            >
+              {t("subtitle")}
+            </h2>
+          </Observer>
+          <Observer animation="zoom-in-line" duration="0.8s">
+            <Line className="marsala-center" color="marsala" />
+          </Observer>
+          <Observer animation="zoom-in">
+            <p>{t("description")}</p>
+          </Observer>
         </div>
       </section>
       {Object.values(tSectionsList).map((tSectionItem, idx) => (
@@ -59,7 +84,6 @@ const WindowsPVCSchucoPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-      <Footer />
     </>
   );
 };

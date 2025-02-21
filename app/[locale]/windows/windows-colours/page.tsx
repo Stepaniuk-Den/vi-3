@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import ColourPalettesSection from "@/app/components/WindowsPages/ColourPalettesSection";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
@@ -17,10 +16,9 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     4,
     "windows",
-    true,
+    true
   );
 }
-
 
 const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
@@ -36,7 +34,6 @@ const WindowsColoursPage: React.FC<Props> = ({ params: { locale } }) => {
         tButtons={tButtons("see")}
         coloursList={coloursList}
       />
-      <Footer />
     </>
   );
 };

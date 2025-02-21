@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
 import PageTopDescription from "@/app/components/PageTopDescription";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
@@ -31,7 +30,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsProfilesList",
     3,
     "windows",
-    true,
+    true
   );
 }
 
@@ -74,8 +73,6 @@ const WindowsAluAliplastPage: React.FC<Props> = ({ params: { locale } }) => {
           // sectionIdx={idx}
         />
       ))}
-
-      <Footer />
     </>
   );
 };

@@ -25,7 +25,7 @@ const ColourPalettesSection: React.FC<Props> = ({ tButtons, coloursList }) => {
         <ul className="flex justify-center items-center flex-row flex-wrap xl:flex-nowrap gap-6">
           {coloursList.map((colourItem, idx) => (
             <li
-              className="w-full sm:w-[292px] md:w-[350px] lg:w-[310px] xl:w-[292px]"
+              className="w-full sm:w-[292px] md:w-[350px] lg:w-[310px] xl:w-[292px] cursor-zoom-in"
               key={colourItem.id}
             >
               <ItemCard
@@ -35,6 +35,7 @@ const ColourPalettesSection: React.FC<Props> = ({ tButtons, coloursList }) => {
                 tBtn={tButtons}
                 alignment="end"
                 imgH="h-[240px] sm:h-[360px]"
+                classNameImg="hover:scale-105 transition-transform duration-500"
                 onClick={() =>
                   openModal(
                     <ModalSwiperContent slides={images} initialSlide={idx} />

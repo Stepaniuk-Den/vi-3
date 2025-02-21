@@ -44,6 +44,7 @@ export interface IGuideProjectElement {
   className?: string;
   sectionId?: string;
   tBtn?: string;
+  path?: string;
 }
 
 export interface IItemCard {
@@ -63,6 +64,7 @@ export interface IItemCard {
   onClick?: () => void;
   path?: string;
   imgH?: string;
+  classNameImg?: string;
   offer?: boolean;
 }
 

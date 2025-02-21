@@ -171,7 +171,7 @@ const ContactForm = () => {
                   {t("placeholderPhoneNumber")}
                 </label>
               </div>
-              <div className="errorWrapperCl">
+              <div className="errorWrapperCl max-sm:h-9">
                 {errors?.phoneNumber && (
                   <p>{errors?.phoneNumber?.message || "Error!"}</p>
                 )}

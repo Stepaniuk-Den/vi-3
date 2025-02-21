@@ -33,6 +33,8 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
                 btnOffset={idx === 0 ? "-mt-3" : ""}
                 tBtn={tBtn("see")}
                 alignment="end"
+                path="roller-shutters"
+                slug={typeItem.slug}
               />
             </li>
           ))}

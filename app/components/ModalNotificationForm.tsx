@@ -17,7 +17,8 @@ const ModalNotificationForm: React.FC<Props> = ({
         {/* pointer-events-none */}
         <p className="subTitleCl text-center">{children}</p>
         <button className="linkToPageCl" type="button" onClick={closeModal}>
-          OK
+          <span>OK</span>
+          <i></i>
         </button>
       </div>
     </div>

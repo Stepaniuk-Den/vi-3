@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { useModal } from "./ModalProvider";
 import ModalSwiperContent from "./ModalSwiperContent";
-import clsx from "clsx";
+import Observer from "@/helpers/observer";
 
 type Props = {
   className: string;
@@ -21,19 +21,26 @@ const ModalTrigger: React.FC<Props> = ({ className, src, alt, img }) => {
   const { openModal } = useModal();
 
   return (
-    <div
-      className={clsx(className, "cursor-zoom-in")}
-      onClick={() => openModal(<ModalSwiperContent slides={img} />)}
+    <Observer
+      threshold={0.5}
+      animation="flip-in-vertical"
+      classNameObserver={className}
     >
-      <Image
-        sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
-        src={src || ""}
-        alt={alt || ""}
-        fill
-        priority
-        className="object-cover"
-      />
-    </div>
+      <div
+        //  className={clsx(className, "cursor-zoom-in")}
+        className="cursor-zoom-in"
+        onClick={() => openModal(<ModalSwiperContent slides={img} />)}
+      >
+        <Image
+          sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
+          src={src || ""}
+          alt={alt || ""}
+          fill
+          priority
+          className="object-cover hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    </Observer>
   );
 };
 

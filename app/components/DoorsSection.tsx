@@ -32,6 +32,7 @@ const DoorsSection: React.FC<Props> = ({ t, tBtn }) => {
                 }
                 tBtn={tBtn("see")}
                 alignment="end"
+                path={typeItem.path}
               />
             </li>
           ))}
