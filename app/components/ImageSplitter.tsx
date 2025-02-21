@@ -17,10 +17,10 @@ const CanvasComponent = () => {
 
   const t = useTranslations("Hero");
   const slidesList = t.raw("slides");
-  const slides: Slide[] = Object.values(slidesList);
+  // const slides: Slide[] = Object.values(slidesList);
 
   const [currentItem, setCurrentItem] = useState(1);
-  const [textVisible, setTextVisible] = useState(true);
+  // const [textVisible, setTextVisible] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -113,7 +113,7 @@ const CanvasComponent = () => {
         renderStaticImage(nextImage);
 
         setTimeout(() => {
-          setTextVisible(true);
+          // setTextVisible(true);
         }, 500);
         setCurrentItem(nextItem);
       }
