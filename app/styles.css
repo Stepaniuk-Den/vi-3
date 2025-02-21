@@ -250,11 +250,12 @@ canvas {
   }
 
   .inputsCl {
-    @apply w-full py-3 px-4 text-base border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
+    @apply w-full py-3 px-4 min-h-[52px] text-base border-2 border-solid border-customElement rounded-md outline-1 outline outline-transparent bg-transparent placeholder:text-transparent placeholder:bg-transparent focus:shadow-customShadowInput focus:bg-transparent focus:appearance-none cursor-pointer transition-all duration-300 ease-linear;
   }
 
   .label {
-    @apply absolute left-4 top-1/2 text-base -translate-y-1/2 text-customElement bg-white px-1 rounded-md transition-all duration-300 ease-linear pointer-events-none;
+    @apply absolute left-4 top-1/2 -translate-y-1/2 text-s sm:text-base text-customElement bg-white px-1 rounded-md transition-all duration-300 ease-linear pointer-events-none;
+    will-change: transform;
   }
 
   .label.lTextarea {
