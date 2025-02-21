@@ -285,12 +285,12 @@ canvas {
 @layer utilities {
   .inputsCl:focus + .label,
   .inputsCl:not(:placeholder-shown) + .label {
-    @apply -translate-y-[180%] text-customElement text-sm;
+    @apply -translate-y-[240%] text-customElement text-s;
   }
 
   .inputsCl:focus + .label.lTextarea,
   .inputsCl:not(:placeholder-shown) + .label.lTextarea {
-    @apply -translate-y-[110%];
+    @apply -translate-y-[140%];
   }
 
   .peer:checked + .labelCheckCl .iconCheckWrapCl {
