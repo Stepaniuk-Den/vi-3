@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes flipInYCard {
+  0% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  40% {
+    transform: rotateY(60deg);
+    opacity: 1;
+    scale: 1;
+  }
+
+  60% {
+    transform: rotateY(-30deg);
+    opacity: 1;
+    scale: 1;
+  }
+
+  80% {
+    transform: rotateY(20deg);
+    opacity: 1;
+    scale: 1;
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 @keyframes zoomInLine {
   0% {
     transform: scaleX(3.5);

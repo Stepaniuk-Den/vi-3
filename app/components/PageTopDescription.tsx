@@ -32,11 +32,27 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
         <Observer animation="zoom-in-line" duration="0.8s">
           <Line className="marsala-center" color="marsala" />
         </Observer>
-        {!descObj ? (
-          <Observer animation="zoom-in">
+        {/* {!descObj ? (
+          <Observer animation='zoom-in'>
             <p className="mb-4">{t("description")}</p>
           </Observer>
         ) : (
+          <div className="mb-4">
+            {Object.values(descObj).map((text, index) => (
+              <Observer threshold={1} animation="zoom-in" key={index}>
+                <p key={index} className="mb-4">
+                  {text}
+                </p>
+              </Observer>
+            ))}
+          </div>
+        )} */}
+        {t("description") && (
+          <Observer animation="zoom-in">
+            <p className="mb-4">{t("description")}</p>
+          </Observer>
+        )}
+        {descObj && (
           <div className="mb-4">
             {Object.values(descObj).map((text, index) => (
               <Observer threshold={1} animation="zoom-in" key={index}>

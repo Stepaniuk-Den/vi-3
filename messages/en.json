@@ -244,6 +244,27 @@
     "subtitle": "– we will get back to you / prepare an offer for you",
     "btn": "Contact"
   },
+  "Contact": {
+    "title": "Contact",
+    "description": "Contact Information",
+    "officeInformation": {
+      "title": "Office Information",
+      "address": "Address:",
+      "addressDescription": "Ukraine, Brovary",
+      "phone": "Phone:",
+      "email": "Email:",
+      "hours": "Office hours:",
+      "workingDays": "Mon-Fri:",
+      "workingDaysDescription": "9:00 AM - 6:00 PM",
+      "holiday": "Sat:",
+      "holidayDescription": "9:00 AM - 1:00 PM"
+    },
+    "bankInformation": {
+      "title": "Bank Information",
+      "iban": "IBAN:",
+      "card": "CARD:"
+    }
+  },
   "Windows": {
     "title": "Windows in Ukraine",
     "windowsTypesList": {
@@ -1540,7 +1561,6 @@
       }
     }
   },
-
   "DoorsPage": {
     "title": "EXTERIOR DOORS from Poland",
     "description": "All doors produced by the Polish-based company VI-3 feature solid construction, great thermal performance, and innovative solutions. We make PVC exterior doors based on solid profiles: Schüco CT70, Schüco LivIng, and Kömmerling 76AD. Our aluminium doors are made with profiles from the Belgian company Aliplast as well as Polish aluminium systems from Aluron. Our offer includes terrace and balcony doors made on a window or door profile; unusual doors, practically in any designed shape, as well as folding doors – a great solution for restaurants, cafés and modern living rooms.",
