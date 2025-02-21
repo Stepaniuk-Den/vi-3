@@ -34,7 +34,7 @@ export default function IndexPage({ params: { locale } }: Props) {
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
       <Hero />
       <ManufacturerInfo t={ManufacturerT} />
-      <MessageBanner t={MessageBannerT} />
+      <MessageBanner t={MessageBannerT} locale={locale} />
       <WindowsSection t={tWindows} tBtn={tButtons} />
       <DoorsSection t={tDoors} tBtn={tButtons} />
       <RollerShuttersSection t={tRollerShutters} tBtn={tButtons} />
