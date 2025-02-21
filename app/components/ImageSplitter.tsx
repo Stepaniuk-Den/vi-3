@@ -6,17 +6,17 @@ import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Arrow from "@/public/icons/Arrow_rounded.svg";
 
-interface Slide {
-  title: string;
-  description: string;
-}
+// interface Slide {
+//   title: string;
+//   description: string;
+// }
 const CanvasComponent = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const newCanvasRef = useRef<HTMLCanvasElement | null>(null);
   const imgRefs = useRef<HTMLImageElement[]>([]);
 
-  const t = useTranslations("Hero");
-  const slidesList = t.raw("slides");
+  // const t = useTranslations("Hero");
+  // const slidesList = t.raw("slides");
   // const slides: Slide[] = Object.values(slidesList);
 
   const [currentItem, setCurrentItem] = useState(1);
