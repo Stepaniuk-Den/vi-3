@@ -73,7 +73,7 @@ const ContactForm = () => {
   // }
 
   return (
-    <section className="sectionCl">
+    <section className="sectionCl" id="contact-form">
       <div className="container">
         <div className="flex flex-col w-full p-7 shadow-lg rounded-md">
           <div className="text-center">
@@ -98,27 +98,27 @@ const ContactForm = () => {
                   type="text"
                   placeholder={t("placeholderName")}
                   {...register("name", { onChange: () => clearErrors("name") })}
-                  // {...register("name", {
-                  //   required: `${t("required")}`,
-                  //   minLength: {
-                  //     value: 2,
-                  //     message: `${t("minName")}`,
-                  //   },
-                  //   maxLength: {
-                  //     value: 20,
-                  //     message: `${t("maxName")}`,
-                  //   },
-                  //   validate: {
-                  //     isNotEmpty: (value) => {
-                  //       if (value.trim() === "") {
-                  //         return `${t("required")}`;
-                  //       }
-                  //       return true;
-                  //     },
-                  //   },
-                  // })}
+                // {...register("name", {
+                //   required: `${t("required")}`,
+                //   minLength: {
+                //     value: 2,
+                //     message: `${t("minName")}`,
+                //   },
+                //   maxLength: {
+                //     value: 20,
+                //     message: `${t("maxName")}`,
+                //   },
+                //   validate: {
+                //     isNotEmpty: (value) => {
+                //       if (value.trim() === "") {
+                //         return `${t("required")}`;
+                //       }
+                //       return true;
+                //     },
+                //   },
+                // })}
 
-                  // onChange={handleChange}
+                // onChange={handleChange}
                 />
                 <label className="label" htmlFor="name">
                   {t("placeholderName")}
@@ -142,7 +142,7 @@ const ContactForm = () => {
                   {...register("email", {
                     onChange: () => clearErrors("email"),
                   })}
-                  // style={{ backgroundColor: "#fff !important " }}
+                // style={{ backgroundColor: "#fff !important " }}
                 />
                 <label className="label" htmlFor="name">
                   {t("placeholderEmail")}
