@@ -35,6 +35,7 @@ const GuideProjectsElement: React.FC<IGuideProjectElement> = ({
           src={src || ""}
           alt={alt || ""}
           fill
+          className="object-cover"
         />
       </Observer>
       <div className="flex flex-col justify-center items-center max-w-80 w-full">
