@@ -36,7 +36,7 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
   return (
     <>
       <PageTopDescription t={t} />
-      <MessageBanner t={MessageBannerT} />
+      <MessageBanner t={MessageBannerT} locale={locale} />
       <SectionCarouselAndDescr t={carouselSectionInfo} />
       {tSectionsList.map((tSectionItem, idx) => (
         <NestedCardsSection
@@ -70,9 +70,9 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
           // positioning={idx === 0 ? "grid" : "flexWrap"}
           positioning="flexWrap"
           isRow={false}
-          // titleBannerCard={idx === 0}
-          // size={idx === 0 ? "w-1/4" : "w-full"}
-          // sectionIdx={idx}
+        // titleBannerCard={idx === 0}
+        // size={idx === 0 ? "w-1/4" : "w-full"}
+        // sectionIdx={idx}
         />
       ))}
     </>

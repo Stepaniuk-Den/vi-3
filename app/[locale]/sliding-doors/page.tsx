@@ -28,7 +28,7 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
   return (
     <>
       <PageTopDescription t={t} />
-      <MessageBanner t={tMessage} />
+      <MessageBanner t={tMessage} locale={locale} />
       <CardsSection
         t={t}
         tBtn={tButtons}

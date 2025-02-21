@@ -33,7 +33,7 @@ const DoorsPage: React.FC<Props> = ({ params: { locale } }) => {
   return (
     <>
       <PageTopDescription t={t} />
-      <MessageBanner t={MessageBannerT} />
+      <MessageBanner t={MessageBannerT} locale={locale} />
       <CardsSection
         t={t}
         tBtn={tButtons}
