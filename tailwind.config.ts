@@ -47,6 +47,9 @@ export default {
         customElement: {
           DEFAULT: "rgb(44,89,130)",
         },
+        customChat:{
+          DEFAULT: "rgb(68, 121, 145)",
+        }
       },
       backgroundImage: {
         customLaser:

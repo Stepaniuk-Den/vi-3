@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "LocaleLayout" });
   return {
-    metadataBase: new URL(`https://vi-3.vercel.app/${locale}`),
+    metadataBase: new URL("https://vi-3.vercel.app"),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,

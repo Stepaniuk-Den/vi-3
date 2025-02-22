@@ -168,6 +168,18 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   //   };
   // }, [isOpen]);
 
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const crispWindow = window as any;
+    if (typeof window !== "undefined" && crispWindow.$crisp) {
+      if (isOpen) {
+        crispWindow.$crisp.push(["do", "chat:hide"]);
+      } else {
+        crispWindow.$crisp.push(["do", "chat:show"]);
+      }
+    }
+  }, [isOpen]);
+
   return (
     <ModalContext.Provider value={{ isOpen, content, openModal, closeModal }}>
       {children}
