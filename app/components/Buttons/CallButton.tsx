@@ -1,10 +1,10 @@
 "use client";
 
+import { useModal } from "../ModalProvider";
+import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Phone from "@/public/icons/F7PhoneCircleFill.svg";
-import { useModal } from "../ModalProvider";
 import CallRequestForm from "../CallRequestForm";
-import { useTranslations } from "next-intl";
 
 
 const CallButton = () => {
