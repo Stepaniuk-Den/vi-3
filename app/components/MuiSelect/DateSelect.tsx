@@ -1,4 +1,3 @@
-// components/MuiSelect/CustomSelect.tsx
 import { FormControl,SelectChangeEvent } from "@mui/material";
 import { FC } from "react";
 import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
