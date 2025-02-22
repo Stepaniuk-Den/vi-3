@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import clsx from "clsx";
 import IconArrowRounded from "@/public/icons/Arrow_rounded.svg";
 
+
 // type Props = {
 //   params: { locale: string };
 // };
@@ -41,7 +42,7 @@ const ToTopButton = () => {
     <>
       <button
         className={clsx(
-          "fixed bottom-4 right-2 md:bottom-6 md:right-6 flex justify-center items-center z-10 w-10 h-10 lg:w-12 lg:h-12 rounded-full -rotate-90 fill-white bg-customMarsala-accent hover:bg-customMarsala opacity-0 transition-all duration-1000 ",
+          "fixed bottom-[14px] right-[14px] md:bottom-6 md:right-6 flex justify-center items-center z-10 w-[54px] h-[54px] md:w-[60px] md:h-[60px] rounded-full -rotate-90 fill-white bg-customMarsala-accent hover:bg-customMarsala opacity-0 transition-all duration-1000 ",
           isVisible ? "opacity-100" : ""
         )}
         type="button"

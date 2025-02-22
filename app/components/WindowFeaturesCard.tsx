@@ -4,6 +4,7 @@ import { windowSvgItems } from "@/data/svgWindows";
 import { useMediaQuery } from "react-responsive";
 import { useClickOutside } from "@/helpers/useClickOutside";
 import React, { useState, useRef } from "react";
+import { useIsClient } from "@/helpers/useIsClient";
 
 export interface IWindowFeaturesProps {
   id: string;
@@ -15,12 +16,7 @@ export interface IWindowFeaturesProps {
 
 const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
   const [activeCard, setActiveCard] = useState<string | null>(null);
-  // const [isClient, setIsClient] = useState(false);
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
-
-  // useEffect(() => {
-  //   setIsClient(true);
-  // }, []);
 
   const { id, title, ariaLabel, description, svgName } = t;
 
@@ -33,10 +29,9 @@ const WindowFeaturesCard: React.FC<{ t: IWindowFeaturesProps }> = ({ t }) => {
 
   const isActive = activeCard === id;
 
-  // if (!isClient) {
-  //   return null;
-  // }
-
+  const isClient = useIsClient()
+  if (!isClient) return null;
+  
   return (
     <li
       ref={ref}

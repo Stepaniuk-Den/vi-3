@@ -7,6 +7,8 @@ import { ModalProvider } from "./ModalProvider";
 import Header from "./Header";
 import ToTopButton from "./Buttons/ToTopButton";
 import Footer from "./Footer";
+import Script from "next/script";
+import CallButton from "./Buttons/CallButton";
 // const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
 //   ssr: false,
 // });
@@ -15,6 +17,8 @@ type Props = {
   children: ReactNode;
   locale: string;
 };
+
+const CRISP_ENV = process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID
 
 export default async function BaseLayout({ children, locale }: Props) {
   // Providing all messages to the client
@@ -35,9 +39,27 @@ export default async function BaseLayout({ children, locale }: Props) {
             <Header />
             <main>{children}</main>
             <Footer />
+            <CallButton/>
             <ToTopButton />
           </ModalProvider>
         </NextIntlClientProvider>
+        <Script
+          id="crisp-chat"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp = [];
+              window.CRISP_WEBSITE_ID = "${CRISP_ENV}";
+              (function () {
+                var d = document;
+                var s = d.createElement("script");
+                s.src = "https://client.crisp.chat/l.js";
+                s.async = 1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );

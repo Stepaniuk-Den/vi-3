@@ -32,6 +32,36 @@ export const formSchema = (t: (key: string) => string) => {
 
 export type IFormSchema = z.infer<ReturnType<typeof formSchema>>;
 
+
+export const callRequestSchema = (t: (key: string) => string) => {
+  return z.object({
+    date: z
+      .string()
+      .min(1, t("error"))
+      .refine((value) => value !== "", { message: t("error") })
+      .refine((value) => {
+        const today = new Date().toISOString().split("T")[0];
+        const maxDate = new Date(Date.now() + 48 * 60 * 60 * 1000)
+          .toISOString()
+          .split("T")[0];
+        return value >= today && value <= maxDate;
+      }),
+
+    time: z.string().refine((value) => value !== "", { message: t("error") }),
+
+    phone: z
+      .string()
+      .trim()
+      .min(1, t("error"))
+      .refine((value) => /^(\+)?[0-9]{10,15}$/.test(value), {
+        message: t("errorPhone"),
+      }),
+  });
+};
+
+export type ICallRequestSchema = z.infer<ReturnType<typeof callRequestSchema>>;
+
+
 // -------------------------------------------
 // export const formSchema = z.object({
 //   name: z
