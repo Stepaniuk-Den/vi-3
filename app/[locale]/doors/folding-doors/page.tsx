@@ -24,10 +24,10 @@ const DoorsFolding: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("FoldingDoorsPage");
 
   return (
-    <section className="pageCl">
+    <>
       <SectionCarouselAndDescr t={t} />
       <SectionCardsAndList t={t.raw("PanoramaAliplast")} />
-    </section>
+    </>
   );
 };
 

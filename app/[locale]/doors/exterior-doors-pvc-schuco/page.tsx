@@ -1,10 +1,8 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { imgHeight } from "@/helpers/imgHeight";
-import {
-  bigMobOrderFourItems,
-  mobileOrderFourItems,
-} from "@/data/MobileAndDesktopOrder";
+import { bigMobOrderFourItems, mobileOrderFourItems } from "@/data/MobileAndDesktopOrder";
+
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import SectionCarouselAndDescr from "@/app/components/DoorsPage/SectionCarouselAndDescr";
 import SectionImagesAndCards from "@/app/components/DoorsPage/SectionImagesAndCards";
@@ -30,8 +28,9 @@ const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
 
   const t = useTranslations("PVCDoorsSchucoPage");
 
+
   return (
-    <section className="pageCl">
+    <>
       <SectionCarouselAndDescr t={t} />
       <NestedCardsSection
         tSectionItem={t.raw("SchucoProfilesSection")}
@@ -64,7 +63,7 @@ const DoorsPvcSchuco: React.FC<Props> = ({ params: { locale } }) => {
         bigMobOrder={bigMobOrderFourItems}
       />
       <SectionImagesAndCards t={t.raw("EntranceDoorSystem")} />
-    </section>
+    </>
   );
 };
 

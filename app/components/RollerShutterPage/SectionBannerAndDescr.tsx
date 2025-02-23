@@ -1,6 +1,7 @@
 import { Formats, RichTranslationValues } from "next-intl";
 import React from "react";
 import TitleBanner from "../TitleBanner";
+import Observer from "@/helpers/observer";
 
 interface ISectionBannerAndDescrProps {
   t: {
@@ -22,11 +23,13 @@ const SectionBannerAndDescr: React.FC<ISectionBannerAndDescrProps> = ({
         <TitleBanner>
           <h2 className="titleCl">{t.title}</h2>
         </TitleBanner>
-        <p className="mb-4">
-          {t.rich("description", {
-            br: () => <br />,
-          })}
-        </p>
+        <Observer threshold={1} animation="zoom-in">
+          <p className="mb-4">
+            {t.rich("description", {
+              br: () => <br />,
+            })}
+          </p>
+        </Observer>
       </div>
     </section>
   );

@@ -69,9 +69,10 @@ const SectionListAndCards: React.FC<ISectionListAndCardsProps> = ({
             return (
               <NestedCard
                 key={card.id}
+                // className={(mobileOrder[index] ?? "") + " " + (bigMobOrder[index] ?? "")}
                 className={clsx(
-                  mobileOrder[index] ?? "", 
-                  bigMobOrder[index] ? bigMobOrder[index] : ""
+                  mobileOrder[index] ?? "",
+                  bigMobOrder[index] ?? ""
                 )}
                 title={card.title}
                 src={card.src}

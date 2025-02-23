@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { imgHeight } from "@/helpers/imgHeight";
 import { generateMetadataSubPage } from "@/helpers/generateMetadata";
 import React from "react";
 import NestedCardsSection from "@/app/components/NestedCardsSection";
@@ -36,7 +35,7 @@ const AccessoriesPage: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
         imgFit="cover"
         classNameList="grid grid-cols-1 sm:grid-cols-3"
-        imgH={imgHeight}
+        imgH="h-[15rem] lg:h-[20rem]"
       />
       <SectionCardsFewDescr t={t.raw("RemoteControls")} />
     </>

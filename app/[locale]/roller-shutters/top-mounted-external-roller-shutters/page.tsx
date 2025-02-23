@@ -39,7 +39,7 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
         titleBanner
         positioning="grid"
         imgFit="cover"
-        imgH={imgHeight}
+        imgH="h-[15rem] sm:h-[260px]"
       />
       <SectionBannerAndDescr
         t={{
@@ -62,7 +62,7 @@ const TopMountedRSPage: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
         imgFit="cover"
         classNameList="grid grid-cols-1 sm:grid-cols-3"
-        imgH={imgHeight}
+       imgH="h-[15rem] lg:h-[20rem]"
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

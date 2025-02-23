@@ -26,7 +26,7 @@ const DoorsAlumAliplast: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("ALUDoorsAliplastPage");
 
   return (
-    <section className="pageCl">
+    <>
       <SectionCarouselAndDescr t={t} />
       <NestedCardsSection
         tSectionItem={t.raw("AluminiumProfilesSection")}
@@ -39,7 +39,7 @@ const DoorsAlumAliplast: React.FC<Props> = ({ params: { locale } }) => {
       />
       <SectionImgAndList t={t.raw("Superial800Card")} isShowSecondList />
       <SectionImgAndList t={t.raw("Imperial800Card")} isShowSecondList />
-    </section>
+    </>
   );
 };
 

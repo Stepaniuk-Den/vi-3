@@ -4,6 +4,7 @@ import React from "react";
 import TitleBanner from "../TitleBanner";
 import ImagesComponent from "../SlidingDoorsPage/ImagesComponent";
 import NestedParameterDescList from "../NestedParameterDescList";
+import Observer from "@/helpers/observer";
 
 interface ISectionTwoImgAndListProps {
   t: {
@@ -33,7 +34,8 @@ const SectionTwoImgAndList: React.FC<ISectionTwoImgAndListProps> = ({ t }) => {
             height={imgHeight}
           />
           <div className="flex flex-col gap-5 lg:pt-5">
-            <p>{description}</p>
+          <Observer threshold={1} animation="zoom-in">
+            <p>{description}</p></Observer>
             {parametersList && (
               <NestedParameterDescList param={parametersList} />
             )}
