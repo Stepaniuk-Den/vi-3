@@ -8,6 +8,7 @@ import React from "react";
 import NestedParameterDescList from "../NestedParameterDescList";
 import clsx from "clsx";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 interface ISectionSectionListImgAndListProps {
   t: {
@@ -40,10 +41,15 @@ const SectionListImgAndList: React.FC<ISectionSectionListImgAndListProps> = ({
         >
           {Object.values(t.cards).map((card, index) => (
             <li key={card.id}>
-              <h3 className="subTitleCl h-[2.5rem] sm:h-[4rem]">{card.title}</h3>
+              <h2 className="subTitleCl h-[2.5rem] sm:h-[4rem]">{card.title}</h2>
               {card.parametersList && (
                 <NestedParameterDescList param={card.parametersList} />
               )}
+              <Observer
+          threshold={0.5}
+          animation="flip-in-vertical"
+          classNameObserver="w-full"
+        >
               <div
                 className={`relative border border-gray-300 rounded-md overflow-hidden w-full mt-3 cursor-zoom-in ${imgHeight}`}
                 onClick={() =>
@@ -53,13 +59,13 @@ const SectionListImgAndList: React.FC<ISectionSectionListImgAndListProps> = ({
                 }
               >
                 <Image
-                  className="object-cover"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                   src={card.src}
                   alt={card.alt || ""}
                   fill
                 />
-              </div>
+              </div></Observer>
               {card.parametersList2 && (
                 <NestedParameterDescList param={card.parametersList2} />
               )}

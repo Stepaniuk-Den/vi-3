@@ -54,7 +54,7 @@ const AdaptiveRSPage: React.FC<Props> = ({ params: { locale } }) => {
         isRow={false}
         imgFit="cover"
         classNameList="grid grid-cols-1 sm:grid-cols-3"
-        imgH={imgHeight}
+        imgH="h-[15rem] lg:h-[20rem]"
       />
       <SectionCardsFewDescr t={tAccessories.raw("RemoteControls")} />
     </>

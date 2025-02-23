@@ -33,10 +33,10 @@ const SectionImagesAndCards: React.FC<ISectionImagesAndCards> = ({
     <section className="sectionCl">
       <div className="container">
         <TitleBanner>
-          <h2 className="titleCl">{t.title}</h2>
+          <h3 className="titleCl">{t.title}</h3>
         </TitleBanner>
         <ImagesComponent
-          className="mb-7 justify-around"
+          className="justify-around"
           list={imgList.slice(0, 3)}
           width="w-[10rem] sm:w-[16rem]"
           height="h-[6rem] sm:h-[16rem]"

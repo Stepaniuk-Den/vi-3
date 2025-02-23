@@ -29,7 +29,7 @@ const DoorsBalconyTerrace: React.FC<Props> = ({ params: { locale } }) => {
   const t = useTranslations("BalconyTerraceDoorsPage");
 
   return (
-    <section className="pageCl">
+    <>
       <SectionCarouselAndDescr t={t} />
       <SectionListAndCards
         t={t.raw("BalconyNarrowKömmerling")}
@@ -50,7 +50,7 @@ const DoorsBalconyTerrace: React.FC<Props> = ({ params: { locale } }) => {
         mobileOrder={mobileOrderSixItems2}
         bigMobOrder={bigMobOrderSixItems}
       />
-    </section>
+    </>
   );
 };
 
