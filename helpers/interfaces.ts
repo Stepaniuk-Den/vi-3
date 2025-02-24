@@ -33,6 +33,7 @@ export interface IButtons {
 export interface IDesc {
   title?: string;
   desc?: string;
+  description?: string;
 }
 
 export interface IGuideProjectElement {
@@ -188,4 +189,8 @@ export interface IFormData {
   phoneNumber?: string;
   message: string;
   accept: boolean;
+}
+
+export interface IInfoList {
+  description: string;
 }
