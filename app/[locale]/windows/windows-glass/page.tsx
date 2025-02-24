@@ -24,9 +24,9 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
 
 const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
-
-  const t = useTranslations("WindowsGlassPage");
-  const MessageBannerT = useTranslations("MessageBanner");
+  const t = useTranslations();
+  const tWindowsGlassPage = useTranslations("WindowsGlassPage");
+  const MessageBannerT = t.raw("MessageBanner");
   const carouselSectionInfo = useTranslations(
     "WindowsGlassPage.CarouselSection"
   );
@@ -35,7 +35,7 @@ const WindowsGlassPage: React.FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <PageTopDescription t={t} />
+      <PageTopDescription t={tWindowsGlassPage} />
       <MessageBanner t={MessageBannerT} locale={locale} />
       <SectionCarouselAndDescr t={carouselSectionInfo} />
       {tSectionsList.map((tSectionItem, idx) => (

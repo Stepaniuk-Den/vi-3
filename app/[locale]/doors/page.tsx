@@ -25,17 +25,17 @@ export function generateMetadata({
 
 const DoorsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
-
-  const t = useTranslations("DoorsPage");
-  const MessageBannerT = useTranslations("MessageBanner");
+  const t = useTranslations();
+  const tDoorsPage = useTranslations("DoorsPage");
+  const MessageBannerT = t.raw("MessageBanner");
   const tButtons = useTranslations("Buttons");
 
   return (
     <>
-      <PageTopDescription t={t} />
+      <PageTopDescription t={tDoorsPage} />
       <MessageBanner t={MessageBannerT} locale={locale} />
       <CardsSection
-        t={t}
+        t={tDoorsPage}
         tBtn={tButtons}
         source="doorsList"
         wrapper={false}
