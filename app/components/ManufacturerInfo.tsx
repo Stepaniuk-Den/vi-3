@@ -1,9 +1,9 @@
 import { IDesc } from "@/helpers/interfaces";
 import Line from "./Line";
 
-interface IInfoList {
-  description: string;
-}
+// interface IInfoList {
+//   description: string;
+// }
 
 // interface IManufacturerInfo {
 //   t: {
