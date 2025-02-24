@@ -17,7 +17,7 @@ const CallButton = () => {
   return (
     <button
       className={clsx(
-        "fixed bottom-[82px] left-[14px] md:left-[24px] xl:left-[24px] xl:bottom-[86px] flex justify-center items-center z-10 w-[54px] h-[54px] md:w-[60px] md:h-[60px] rounded-full fill-white text-white bg-customChat hover:bg-customMarsala "
+        "fixed bottom-[82px] left-[14px] md:left-[24px] xl:left-[24px] xl:bottom-[86px] flex group/item justify-center items-center z-10 w-[54px] h-[54px] md:w-[60px] md:h-[60px] rounded-full fill-white text-white bg-customChat hover:bg-customMarsala-accent "
       )}
       type="button"
       aria-label={t("ariaLabel")}
@@ -35,7 +35,7 @@ const CallButton = () => {
         )
       }
     >
-      <Phone className="animate-bounce duration-700 infinite" />
+      <Phone className="group-hover/item:animate-bounce " />
     </button>
   );
 };

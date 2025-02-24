@@ -203,6 +203,10 @@
     }
   },
   "Hero": {
+    "nextArrowAriaLabel": "Наступний слайд",
+    "prevArrowAriaLabel": "Попередній слайд",
+    "slideAriaLabel":"Перейти до слайду",
+    "activeSlideAriaLabel":"Cлайд номер",
     "slides": {
       "1": {
         "title": "Вікна для дому",
