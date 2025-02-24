@@ -1,19 +1,47 @@
 import { setRequestLocale } from "next-intl/server";
-import PageLayout from "../components/PageLayout";
-import WindowsSection from "../components/WindowsSection";
 import { useTranslations } from "next-intl";
-import DoorsSection from "../components/DoorsSection";
-import RollerShuttersSection from "../components/RollerShuttersSection";
+import dynamic from "next/dynamic";
+import PageLayout from "../components/PageLayout";
 import Hero from "../components/Hero";
-import GuideSection from "../components/GuideSection";
-import ProjectsSection from "../components/ProjectsSection";
-import ManufacturerInfo from "../components/ManufacturerInfo";
-import WindowFeatures from "../components/WindowFeatures";
-import MessageBanner from "../components/MessageBanner";
+// import WindowsSection from "../components/WindowsSection";
+// import DoorsSection from "../components/DoorsSection";
+// import RollerShuttersSection from "../components/RollerShuttersSection";
+// import GuideSection from "../components/GuideSection";
+// import ProjectsSection from "../components/ProjectsSection";
+// import ManufacturerInfo from "../components/ManufacturerInfo";
+// import WindowFeatures from "../components/WindowFeatures";
+// import MessageBanner from "../components/MessageBanner";
 
 type Props = {
   params: { locale: string };
 };
+
+
+const ManufacturerInfo = dynamic(() => import("../components/ManufacturerInfo"), {
+  ssr: false,
+});
+const MessageBanner = dynamic(() => import("../components/MessageBanner"), {
+  ssr: false,
+});
+const WindowsSection = dynamic(() => import("../components/WindowsSection"), {
+  ssr: false,
+});
+const DoorsSection = dynamic(() => import("../components/DoorsSection"), {
+  ssr: false,
+});
+const RollerShuttersSection = dynamic(() => import("../components/RollerShuttersSection"), {
+  ssr: false
+});
+const ProjectsSection = dynamic(() => import("../components/ProjectsSection"), {
+  ssr: false,
+});
+const WindowFeatures = dynamic(() => import("../components/WindowFeatures"), {
+  ssr: false,
+});
+const GuideSection = dynamic(() => import("../components/GuideSection"), {
+  ssr: false,
+});
+
 
 export default function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
