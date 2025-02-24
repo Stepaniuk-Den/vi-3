@@ -19,15 +19,17 @@ export default function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const tWindows = useTranslations("Windows");
-  const tDoors = useTranslations("Doors");
-  const tRollerShutters = useTranslations("RollerShutters");
-  const tGuideElement = useTranslations("GuideElement");
-  const tProjectsElement = useTranslations("ProjectsElement");
-  const tButtons = useTranslations("Buttons");
-  const WindowFeaturesList = useTranslations("WindowFeatures");
-  const MessageBannerT = useTranslations("MessageBanner");
-  const ManufacturerT = useTranslations("ManufacturerInfo");
+  const t = useTranslations();
+
+  const tWindows = t.raw("Windows");
+  const tDoors = t.raw("Doors");
+  const tRollerShutters = t.raw("RollerShutters");
+  const tGuideElement = t.raw("GuideElement");
+  const tProjectsElement = t.raw("ProjectsElement");
+  const tButtons = t.raw("Buttons");
+  const WindowFeaturesList = t.raw("WindowFeatures");
+  const MessageBannerT = t.raw("MessageBanner");
+  const ManufacturerT = t.raw("ManufacturerInfo");
 
   return (
     <PageLayout>
