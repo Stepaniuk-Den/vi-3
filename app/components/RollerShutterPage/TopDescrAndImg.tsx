@@ -5,6 +5,7 @@ import React from "react";
 import Line from "../Line";
 import Image from "next/image";
 import ModalSwiperContent from "../ModalSwiperContent";
+import Observer from "@/helpers/observer";
 
 interface ITopDescrAndImgProps {
   t: {
@@ -25,11 +26,23 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
   return (
     <section className="pageCl">
       <div className="container">
-        <h1 className="titleCl pt-16 lg:pt-0">{title}</h1>
-        <Line className="marsala-center" color="marsala" />
+      <Observer
+          animation="zoom-in"
+          duration="0.8s"
+          classNameObserver="flex justify-center"
+          classNameChild="laser-text"
+        >
+        <h1 data-text={title} className="titleCl mt-16 inline-block">{title}</h1></Observer>
+        <Observer animation="zoom-in-line" duration="0.8s">
+        <Line className="marsala-center" color="marsala" /></Observer>
         <div className="flex flex-col sm:flex-row gap-5">
+        <Observer
+          threshold={0.5}
+          animation="flip-in-vertical"
+          classNameObserver="w-full sm:w-2/3"
+        >
           <div
-            className="relative border border-gray-300 rounded-md overflow-hidden w-full sm:w-2/3 h-[15rem] sm:h-[460px] cursor-zoom-in"
+            className="relative border border-gray-300 rounded-md overflow-hidden  h-[15rem] sm:h-[460px] cursor-zoom-in"
             onClick={() =>
               openModal(
                 <ModalSwiperContent
@@ -40,18 +53,20 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
             }
           >
             <Image
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-500"
               //   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
               sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
               src={src}
               alt={alt}
               fill
+              priority
             />
-          </div>
+          </div></Observer>
           <div className="flex flex-col gap-1 sm:pt-5 w-full sm:w-1/3">
             {descrList &&
               Object.values(descrList).map((descr, idx) => (
-                <p key={idx}>{descr.desc}</p>
+                <Observer key={idx} threshold={1} animation="zoom-in">
+                <p >{descr.desc}</p></Observer>
               ))}
           </div>
         </div>

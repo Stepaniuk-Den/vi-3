@@ -6,6 +6,20 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "order-1",
+    "order-2",
+    "order-3",
+    "order-4",
+    "order-5",
+    "order-6",
+    "sm:order-1",
+    "sm:order-2",
+    "sm:order-3",
+    "sm:order-4",
+    "sm:order-5",
+    "sm:order-6",
+  ],
   theme: {
     screens: {
       sm: "640px",

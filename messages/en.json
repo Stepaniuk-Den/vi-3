@@ -203,6 +203,10 @@
     }
   },
   "Hero": {
+    "nextArrowAriaLabel": "Next slide",
+    "prevArrowAriaLabel": "Previous slide",
+    "slideAriaLabel":"Go to slide",
+    "activeSlideAriaLabel":"Slide number",
     "slides": {
       "1": {
         "title": "Windows for the home",

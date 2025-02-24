@@ -222,27 +222,35 @@ const CanvasComponent = () => {
       <button
         onClick={handlePrev}
         className="absolute flex justify-center items-center left-1 md:left-4 bottom-1/3 landscape:max-[1023.98px]:bottom-4 fill-white p-2 rounded-md rotate-180 z-10 hover:bg-black/50"
+        aria-label={t("prevArrowAriaLabel")}
       >
         <Arrow className="w-9 h-9 sm:w-11 sm:h-11" />
       </button>
       <button
         onClick={handleNext}
         className="absolute flex justify-center items-center right-1 md:right-4 bottom-1/3 landscape:max-[1023.98px]:bottom-4 fill-white p-2 rounded-md z-10 hover:bg-black/50"
+        aria-label={t("nextArrowAriaLabel")}
       >
         <Arrow className="w-9 h-9 sm:w-11 sm:h-11" />
       </button>
 
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-[10px] z-10">
-        {Array.from({ length: nbItems }).map((_, index) => (
-          <button
+        {Array.from({ length: nbItems }).map((_, index) => {
+          const isActive = currentItem === index + 1;
+          return (
+            <button
             key={index}
             onClick={() => startAnimation(index + 1)}
             className={clsx(
               "h-[5px] w-[40px] cursor-pointer rounded-md bg-white transition-all duration-300",
               currentItem === index + 1 ? "bg-white" : "bg-white opacity-50"
             )}
+            // aria-label={`${t("slideAriaLabel")} ${index + 1}`}
+            aria-label={isActive? `${t("activeSlideAriaLabel")} ${index + 1}`:`${t("slideAriaLabel")} ${index + 1}`}
           />
-        ))}
+          )
+          
+        })}
       </div>
       {images.map((src, index) => (
         // eslint-disable-next-line @next/next/no-img-element

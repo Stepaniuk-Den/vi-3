@@ -203,6 +203,10 @@
     }
   },
   "Hero": {
+    "nextArrowAriaLabel": "Наступний слайд",
+    "prevArrowAriaLabel": "Попередній слайд",
+    "slideAriaLabel": "Перейти до слайду",
+    "activeSlideAriaLabel": "Cлайд номер",
     "slides": {
       "1": {
         "title": "Вікна для дому",
@@ -4337,7 +4341,7 @@
     "ariaLabel": "Зачинити"
   },
   "CallForm": {
-    "ariaLabel:": "Відкрити форму для замовлення зворотного дзвінка",
+    "ariaLabel": "Відкрити форму для замовлення дзвінка",
     "close": "Зачинити",
     "nonWorkText": "На жаль, зараз ми не працюємо",
     "nonSubWorkText": " Але ми з радістю передзвонимо вам:",
