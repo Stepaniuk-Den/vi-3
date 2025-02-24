@@ -7,6 +7,12 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
+    "order-1",
+    "order-2",
+    "order-3",
+    "order-4",
+    "order-5",
+    "order-6",
     "sm:order-1",
     "sm:order-2",
     "sm:order-3",
