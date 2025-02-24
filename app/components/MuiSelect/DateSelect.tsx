@@ -1,6 +1,10 @@
 import { FormControl,SelectChangeEvent } from "@mui/material";
 import { FC } from "react";
-import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
+// import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
+import { inputLabelStyles, menuItemStyles, selectStyles } from "./SelectStyles";
+import Select from '@mui/material/Select';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
 
 interface IDateProps {
   label: string;
@@ -19,9 +23,10 @@ const DateSelect: FC<IDateProps> = ({
 }) => {
   return (
     <FormControl fullWidth error={!!error}>
-      <StyledInputLabel id="date">{label}</StyledInputLabel>
-      <CustomSelect
+      <InputLabel id="date"sx={inputLabelStyles}>{label}</InputLabel>
+      <Select
         labelId="date"
+        sx={selectStyles}
         id="date"
         name="date"
         label={label}
@@ -29,11 +34,11 @@ const DateSelect: FC<IDateProps> = ({
         onChange={onChange}
       >
         {options.map(({ value, label }) => (
-          <StyledMenuItem key={value} value={value}>
+          <MenuItem sx={menuItemStyles} key={value} value={value}>
             {label}
-          </StyledMenuItem>
+          </MenuItem>
         ))}
-      </CustomSelect>
+      </Select>
     </FormControl>
   );
 };
