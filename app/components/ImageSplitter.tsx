@@ -5,7 +5,6 @@ import { images } from "@/data/slidesHero";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Arrow from "@/public/icons/Arrow_rounded.svg";
-import { useIsMobileStore } from "@/store/isMobileStore";
 
 interface Slide {
   title: string;
@@ -26,10 +25,8 @@ const CanvasComponent = () => {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
-  const isMobile = useIsMobileStore((state) => state.isMobile);
-
   const nbItems = images.length;
-  const cols = !isMobile ? 16 : 8;
+  const cols = 20;
   const displayDuration = 4500;
   const animationDuration = 1800;
 
