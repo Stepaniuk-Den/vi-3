@@ -2,27 +2,30 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
+import { Link } from "@/i18n/routing";
 import Logo from "@/public/window.svg";
 import Burger from '@/public/icons/Burger.svg';
-import Navigation from "./Navigation";
-import LocaleSwitcher from "./LocaleSwitcher";
+// import Navigation from "./Navigation";
+// import LocaleSwitcher from "./LocaleSwitcher";
 import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
-import { useModal } from "./ModalProvider";
 import BurgerMenu from "./BurgerMenu";
 import { isAppleMobileDevice, isMobileDevice, device } from "@/helpers/detect-browser";
+import { useModal } from "./ModalProvider";
 import { useIsBigTabletStore } from "@/store/isBigTabletStore";
 import { useIsMobileStore } from "@/store/isMobileStore";
 
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 // const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"));
-// const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"), {
-//   ssr: false,
-// });
+const Navigation = dynamic(() => import("./Navigation"), {
+  ssr: false,
+});
+const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"), {
+  ssr: false,
+});
 
 const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
@@ -34,7 +37,7 @@ const Header = () => {
   const tabletOrMobileMedia = useMediaQuery({ maxWidth: 1023.98 });
 
   const isMobile = useIsMobileStore((state) => state.isMobile);
-  const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
+  // const isBigTablet = useIsBigTabletStore((state) => state.isBigTablet);
   const setIsBigTablet = useIsBigTabletStore((state) => state.setIsBigTablet);
   const setIsMobile = useIsMobileStore((state) => state.setIsMobile);
 
@@ -114,7 +117,6 @@ const Header = () => {
             ))}>
             <Burger />
           </div>
-          {/* {isMobile && <p className="absolute top-3 left-1/2 transform -translate-x-1/2 text-white">device is {device.type} & {device.model}</p>} */}
         </div>
       </header>
     </>;
@@ -137,9 +139,6 @@ const Header = () => {
         >
           <Link href="/" className="flex items-center justify-center w-34 h-20">
             <Logo className=" w-28 h-16" />
-            {isBigTablet && <p>bigTablet - {device.type} & {device.model}</p>}
-            {!isBigTablet && !isMobile && <p>desktop - {device.type} & {device.model}</p>}
-            {/* <Image priority src={Logo} alt="Logo" width={173} height={100} /> */}
           </Link>
           <FeedbackLinks />
           <SocialLinks />
