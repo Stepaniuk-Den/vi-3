@@ -5,6 +5,7 @@ import { images } from "@/data/slidesHero";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Arrow from "@/public/icons/Arrow_rounded.svg";
+import { useIsMobileStore } from "@/store/isMobileStore";
 
 interface Slide {
   title: string;
@@ -25,8 +26,10 @@ const CanvasComponent = () => {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
+  const isMobile = useIsMobileStore((state) => state.isMobile);
+
   const nbItems = images.length;
-  const cols = 20;
+  const cols = !isMobile ? 16 : 8;
   const displayDuration = 4500;
   const animationDuration = 1800;
 
@@ -239,17 +242,17 @@ const CanvasComponent = () => {
           const isActive = currentItem === index + 1;
           return (
             <button
-            key={index}
-            onClick={() => startAnimation(index + 1)}
-            className={clsx(
-              "h-[5px] w-[40px] cursor-pointer rounded-md bg-white transition-all duration-300",
-              currentItem === index + 1 ? "bg-white" : "bg-white opacity-50"
-            )}
-            // aria-label={`${t("slideAriaLabel")} ${index + 1}`}
-            aria-label={isActive? `${t("activeSlideAriaLabel")} ${index + 1}`:`${t("slideAriaLabel")} ${index + 1}`}
-          />
+              key={index}
+              onClick={() => startAnimation(index + 1)}
+              className={clsx(
+                "h-[5px] w-[40px] cursor-pointer rounded-md bg-white transition-all duration-300",
+                currentItem === index + 1 ? "bg-white" : "bg-white opacity-50"
+              )}
+              // aria-label={`${t("slideAriaLabel")} ${index + 1}`}
+              aria-label={isActive ? `${t("activeSlideAriaLabel")} ${index + 1}` : `${t("slideAriaLabel")} ${index + 1}`}
+            />
           )
-          
+
         })}
       </div>
       {images.map((src, index) => (
