@@ -1,24 +1,14 @@
 "use client";
 
+import useScrollY from '@/helpers/useScrollY';
 import Script from 'next/script'
-import React, { useEffect, useState } from 'react'
 
 const Crisp = () => {
 
   const CRISP_ENV = process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID
 
-  const [isVisible, setIsVisible] = useState(false);
+  const isVisible = useScrollY({})
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 400);
-    };
-
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
   return (
     <>
       {isVisible && <Script
