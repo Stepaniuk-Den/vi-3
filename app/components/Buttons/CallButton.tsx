@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Phone from "@/public/icons/F7PhoneCircleFill.svg";
 import CallRequestForm from "../CallRequestForm";
-import { useEffect, useState } from "react";
+import useScrollY from "@/helpers/useScrollY";
 
 
 const CallButton = () => {
@@ -15,18 +15,7 @@ const CallButton = () => {
 
   const { openModal } = useModal();
 
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 400);
-    };
-
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
+  const isVisible = useScrollY({ once: true })
 
   return (
     <>
