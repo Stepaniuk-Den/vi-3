@@ -7,8 +7,8 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "@/i18n/routing";
 import Logo from "@/public/window.svg";
 import Burger from '@/public/icons/Burger.svg';
-// import Navigation from "./Navigation";
-// import LocaleSwitcher from "./LocaleSwitcher";
+import Navigation from "./Navigation";
+import LocaleSwitcher from "./LocaleSwitcher";
 import SocialLinks from "./SocialLinks";
 import FeedbackLinks from "./FeedbackLinks";
 import BurgerMenu from "./BurgerMenu";
@@ -17,15 +17,15 @@ import { useModal } from "./ModalProvider";
 import { useIsBigTabletStore } from "@/store/isBigTabletStore";
 import { useIsMobileStore } from "@/store/isMobileStore";
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 // const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"));
-const Navigation = dynamic(() => import("./Navigation"), {
-  ssr: false,
-});
-const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"), {
-  ssr: false,
-});
+// const Navigation = dynamic(() => import("./Navigation"), {
+//   ssr: false,
+// });
+// const LocaleSwitcher = dynamic(() => import("./LocaleSwitcher"), {
+//   ssr: false,
+// });
 
 const Header = () => {
   const [heightHeader, setHeightHeader] = useState(192);
