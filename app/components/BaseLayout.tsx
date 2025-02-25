@@ -4,7 +4,7 @@ import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import { clsx } from "clsx";
 import { ModalProvider } from "./ModalProvider";
-// import Header from "./Header";
+import Header from "./Header";
 import ToTopButton from "./Buttons/ToTopButton";
 import Footer from "./Footer";
 // import Script from "next/script";
@@ -41,7 +41,7 @@ export default async function BaseLayout({ children, locale }: Props) {
       >
         <NextIntlClientProvider messages={messages}>
           <ModalProvider>
-            {/* <Header /> */}
+            <Header />
             <main>{children}</main>
             <Footer />
             <CallButton />
