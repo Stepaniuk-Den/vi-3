@@ -9,6 +9,7 @@ import ToTopButton from "./Buttons/ToTopButton";
 import Footer from "./Footer";
 // import Script from "next/script";
 import dynamic from "next/dynamic";
+import Crisp from "./Crisp";
 // import CallButton from "./Buttons/CallButton";
 // const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
 //   ssr: false,
@@ -46,6 +47,7 @@ export default async function BaseLayout({ children, locale }: Props) {
             <ToTopButton />
           </ModalProvider>
         </NextIntlClientProvider>
+        <Crisp />
         {/* <Script
           id="crisp-chat"
           strategy="lazyOnload"
