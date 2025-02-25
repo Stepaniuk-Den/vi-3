@@ -9,13 +9,14 @@ import ToTopButton from "./Buttons/ToTopButton";
 import Footer from "./Footer";
 // import Script from "next/script";
 import dynamic from "next/dynamic";
-import Crisp from "./Crisp";
+// import Crisp from "./Crisp";
 // import CallButton from "./Buttons/CallButton";
 // const TotopButton = dynamic(() => import("./Buttons/ToTopButton"), {
 //   ssr: false,
 // });
 
 const CallButton = dynamic(() => import("./Buttons/CallButton"), { ssr: false });
+const Crisp = dynamic(() => import("./Crisp"), { ssr: false });
 
 type Props = {
   children: ReactNode;
