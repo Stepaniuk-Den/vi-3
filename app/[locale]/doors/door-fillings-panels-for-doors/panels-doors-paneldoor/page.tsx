@@ -15,7 +15,6 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "cards",
     1,
     "doors",
-    false,
     "door-fillings-panels-for-doors",
   );
 }
