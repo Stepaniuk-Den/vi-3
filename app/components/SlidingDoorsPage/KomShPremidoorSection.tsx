@@ -37,7 +37,6 @@ const KomShPremidoorSection = ({ tCardPremi, tCardPremiParams }: IProps) => {
             src={tCardPremi.src}
             alt={tCardPremi.alt}
             fill
-            priority
           // placeholder="blur"
           />
         </div>

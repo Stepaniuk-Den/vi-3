@@ -1,5 +1,6 @@
-import { setRequestLocale } from "next-intl/server";
-import { useTranslations } from "next-intl";
+
+import { getTranslations, setRequestLocale } from "next-intl/server";
+// import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import PageLayout from "../components/PageLayout";
 import Hero from "../components/Hero";
@@ -43,11 +44,23 @@ const GuideSection = dynamic(() => import("../components/GuideSection"), {
 });
 
 
-export default function IndexPage({ params: { locale } }: Props) {
+export default async function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations();
+  const t = await getTranslations();
+
+  // const tWindows = (await getTranslations("Windows")).raw("Windows");
+  // const tDoors = (await getTranslations("Doors")).raw("Doors");
+  // const tRollerShutters = (await getTranslations("RollerShutters")).raw("RollerShutters");
+  // const tGuideElement = (await getTranslations("GuideElement")).raw("GuideElement");
+  // const tProjectsElement = (await getTranslations("ProjectsElement")).raw("ProjectsElement");
+  // const tButtons = (await getTranslations("Buttons")).raw("Buttons");
+  // const WindowFeaturesList = (await getTranslations("WindowFeatures")).raw("WindowFeatures");
+  // const MessageBannerT = (await getTranslations("MessageBanner")).raw("MessageBanner");
+  // const ManufacturerT = (await getTranslations("ManufacturerInfo")).raw("ManufacturerInfo");
+
+  // const t = useTranslations();
 
   const tWindows = t.raw("Windows");
   const tDoors = t.raw("Doors");
@@ -59,6 +72,7 @@ export default function IndexPage({ params: { locale } }: Props) {
   const MessageBannerT = t.raw("MessageBanner");
   const ManufacturerT = t.raw("ManufacturerInfo");
 
+  // console.log('ManufacturerT - ', ManufacturerT);
   return (
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}

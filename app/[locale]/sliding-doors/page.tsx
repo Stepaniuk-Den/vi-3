@@ -22,8 +22,8 @@ const SlidingDoorsPage: React.FC<Props> = ({ params: { locale } }) => {
   setRequestLocale(locale);
 
   const t = useTranslations();
-  const tSlidingDoors = useTranslations("SlidingDoorsPage");
   const tMessage = t.raw("MessageBanner");
+  const tSlidingDoors = useTranslations("SlidingDoorsPage");
   const tButtons = useTranslations("Buttons");
 
   return (
