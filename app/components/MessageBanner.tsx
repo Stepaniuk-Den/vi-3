@@ -2,7 +2,6 @@ import React from 'react'
 import LinkToPage from './Buttons/LinkToPage';
 
 interface IMessageBannerProps {
-  // t: (key: string) => string;
   t: {
     title: string;
     subtitle: string;
