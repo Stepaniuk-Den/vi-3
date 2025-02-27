@@ -15,7 +15,7 @@ import dynamic from "next/dynamic";
 //   ssr: false,
 // });
 
-// const CallButton = dynamic(() => import("./Buttons/CallButton"), { ssr: false });
+const CallButton = dynamic(() => import("./Buttons/CallButton"), { ssr: false });
 const Crisp = dynamic(() => import("./Crisp"), { ssr: false });
 
 type Props = {
@@ -44,7 +44,7 @@ export default async function BaseLayout({ children, locale }: Props) {
             <Header />
             <main>{children}</main>
             <Footer />
-            {/* <CallButton /> */}
+            <CallButton />
             <ToTopButton />
           </ModalProvider>
         </NextIntlClientProvider>

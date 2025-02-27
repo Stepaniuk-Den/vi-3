@@ -1,148 +1,153 @@
-// "use client";
+"use client";
 
-// import { useState, useEffect, useRef } from "react";
-// import { FormControl, SelectChangeEvent } from "@mui/material";
-// // import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
-// import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
+import { useState, useEffect, useRef } from "react";
+import { FormControl, SelectChangeEvent } from "@mui/material";
+// import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
+import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
 // import Select from '@mui/material/Select';
 // import InputLabel from '@mui/material/InputLabel';
 // import MenuItem from '@mui/material/MenuItem';
-// import { inputLabelStyles, menuItemStyles, selectStyles } from "./SelectStyles";
+import { inputLabelStyles, menuItemStyles, selectStyles } from "./SelectStyles";
+import dynamic from "next/dynamic";
 
-// interface IOptionType {
-//   label: string;
-//   value: string;
-// }
+interface IOptionType {
+  label: string;
+  value: string;
+}
 
-// interface ITimeSelectProps {
-//   onChange: (time: string) => void;
-//   selectedDate: string;
-//   t: (key: string) => string;
-//   disabled?: boolean;
-//   error?: string;
-// }
+interface ITimeSelectProps {
+  onChange: (time: string) => void;
+  selectedDate: string;
+  t: (key: string) => string;
+  disabled?: boolean;
+  error?: string;
+}
 
-// const generateTimeSlots = () => {
-//   const times: IOptionType[] = [];
-//   for (let hour = 9; hour < 18; hour++) {
-//     for (const min of [0, 15, 30, 45]) {
-//       const timeString = `${hour.toString().padStart(2, "0")}:${min
-//         .toString()
-//         .padStart(2, "0")}`;
-//       times.push({ label: timeString, value: timeString });
-//     }
-//   }
-//   return times;
-// };
+const Select = dynamic(() => import("@mui/material/Select"), { ssr: false });
+const InputLabel = dynamic(() => import("@mui/material/InputLabel"), { ssr: false });
+const MenuItem = dynamic(() => import("@mui/material/MenuItem"), { ssr: false });
 
-// const TimeSelect = ({
-//   onChange,
-//   selectedDate,
-//   t,
-//   disabled,
-//   error,
-// }: ITimeSelectProps) => {
-//   const [selectedTime, setSelectedTime] = useState<string>("");
-//   const [filteredTimeOptions, setFilteredTimeOptions] = useState<IOptionType[]>(
-//     generateTimeSlots()
-//   );
-//   const [menuMaxHeight, setMenuMaxHeight] = useState<number>(200);
+const generateTimeSlots = () => {
+  const times: IOptionType[] = [];
+  for (let hour = 9; hour < 18; hour++) {
+    for (const min of [0, 15, 30, 45]) {
+      const timeString = `${hour.toString().padStart(2, "0")}:${min
+        .toString()
+        .padStart(2, "0")}`;
+      times.push({ label: timeString, value: timeString });
+    }
+  }
+  return times;
+};
 
-//   const height = useCurrentViewportHeight();
-//   const selectRef = useRef<HTMLDivElement | null>(null);
+const TimeSelect = ({
+  onChange,
+  selectedDate,
+  t,
+  disabled,
+  error,
+}: ITimeSelectProps) => {
+  const [selectedTime, setSelectedTime] = useState<string>("");
+  const [filteredTimeOptions, setFilteredTimeOptions] = useState<IOptionType[]>(
+    generateTimeSlots()
+  );
+  const [menuMaxHeight, setMenuMaxHeight] = useState<number>(200);
 
-//   useEffect(() => {
-//     if (selectRef.current) {
-//       const selectRect = selectRef.current.getBoundingClientRect();
-//       const modalHeight = height;
-//       const availableSpace = modalHeight - selectRect.bottom - 20; 
-//       setMenuMaxHeight(Math.max(availableSpace, 100)); // 
-//     }
-//   }, [height]);
+  const height = useCurrentViewportHeight();
+  const selectRef = useRef<HTMLDivElement | null>(null);
 
-//   useEffect(() => {
-//     const now = new Date();
-//     const currentHour = now.getHours();
-//     const currentMinutes = now.getMinutes();
-//     const today = new Date().toISOString().split("T")[0];
+  useEffect(() => {
+    if (selectRef.current) {
+      const selectRect = selectRef.current.getBoundingClientRect();
+      const modalHeight = height;
+      const availableSpace = modalHeight - selectRect.bottom - 20;
+      setMenuMaxHeight(Math.max(availableSpace, 100)); // 
+    }
+  }, [height]);
 
-//     let availableTimes = generateTimeSlots();
+  useEffect(() => {
+    const now = new Date();
+    const currentHour = now.getHours();
+    const currentMinutes = now.getMinutes();
+    const today = new Date().toISOString().split("T")[0];
 
-//     if (selectedDate === today && currentHour >= 9 && currentHour < 18) {
-//       availableTimes = availableTimes.filter(({ value }) => {
-//         const [hour, minute] = value.split(":").map(Number);
-//         return (
-//           hour > currentHour ||
-//           (hour === currentHour && minute >= currentMinutes)
-//         );
-//       });
-//     }
+    let availableTimes = generateTimeSlots();
 
-//     setFilteredTimeOptions(availableTimes);
+    if (selectedDate === today && currentHour >= 9 && currentHour < 18) {
+      availableTimes = availableTimes.filter(({ value }) => {
+        const [hour, minute] = value.split(":").map(Number);
+        return (
+          hour > currentHour ||
+          (hour === currentHour && minute >= currentMinutes)
+        );
+      });
+    }
 
-//     // if (availableTimes.length > 0) {
-//     //   setSelectedTime(availableTimes[0].value);
-//     //   onChange(availableTimes[0].value);
-//     // }
-//   }, [selectedDate, onChange]);
+    setFilteredTimeOptions(availableTimes);
 
-//   const handleSelectChange = (event: SelectChangeEvent<unknown>) => {
-//     setSelectedTime(event.target.value as string);
-//     onChange(event.target.value as string);
-//   };
+    // if (availableTimes.length > 0) {
+    //   setSelectedTime(availableTimes[0].value);
+    //   onChange(availableTimes[0].value);
+    // }
+  }, [selectedDate, onChange]);
 
-//   return (
-//     <FormControl fullWidth error={!!error}>
-//       <InputLabel id="time"sx={inputLabelStyles}>{t("time")}</InputLabel>
-//       <Select
-//         labelId="time"
-//         sx={selectStyles} 
-//         id="time"
-//         name="time"
-//         disabled={disabled}
-//         value={selectedTime}
-//         onChange={handleSelectChange}
-//         aria-labelledby="time"
-//         label={t("time")}
-//         MenuProps={{
-//           disablePortal: true,
-//           container: selectRef.current,
-//           PaperProps: {
-//             sx: {
-//               backgroundColor: "white",
-//               borderRadius: "8px",
-//               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-//               maxHeight: `${menuMaxHeight}px`,
-//               //           "@media (min-width: 768px)": {
-//               //            height: `calc(${height}px - 400px)`,
-//               // },
+  const handleSelectChange = (event: SelectChangeEvent<unknown>) => {
+    setSelectedTime(event.target.value as string);
+    onChange(event.target.value as string);
+  };
 
-//               // "@media (min-width: 1024px)": {
-//               //   height: `calc(${height}px - 460px)`,
-//               // },
-//             },
-//             style: {
-//               // overflowY: "auto",
-//               // touchAction: "auto",
-//             },
-//             className: "custom-scroll",
-//           },
-//           // disableScrollLock: true,
-//           MenuListProps: {
-//             sx: {
-//               padding: "0",
-//             },
-//           },
-//         }}
-//       >
-//         {filteredTimeOptions.map((option) => (
-//           <MenuItem sx={menuItemStyles} key={option.value} value={option.value}>
-//             {option.label}
-//           </MenuItem>
-//         ))}
-//       </Select>
-//     </FormControl>
-//   );
-// };
+  return (
+    <FormControl fullWidth error={!!error}>
+      <InputLabel id="time" sx={inputLabelStyles}>{t("time")}</InputLabel>
+      <Select
+        labelId="time"
+        sx={selectStyles}
+        id="time"
+        name="time"
+        disabled={disabled}
+        value={selectedTime}
+        onChange={handleSelectChange}
+        aria-labelledby="time"
+        label={t("time")}
+        MenuProps={{
+          disablePortal: true,
+          container: selectRef.current,
+          PaperProps: {
+            sx: {
+              backgroundColor: "white",
+              borderRadius: "8px",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              maxHeight: `${menuMaxHeight}px`,
+              //           "@media (min-width: 768px)": {
+              //            height: `calc(${height}px - 400px)`,
+              // },
 
-// export default TimeSelect;
+              // "@media (min-width: 1024px)": {
+              //   height: `calc(${height}px - 460px)`,
+              // },
+            },
+            style: {
+              // overflowY: "auto",
+              // touchAction: "auto",
+            },
+            className: "custom-scroll",
+          },
+          // disableScrollLock: true,
+          MenuListProps: {
+            sx: {
+              padding: "0",
+            },
+          },
+        }}
+      >
+        {filteredTimeOptions.map((option) => (
+          <MenuItem sx={menuItemStyles} key={option.value} value={option.value}>
+            {option.label}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
+  );
+};
+
+export default TimeSelect;
