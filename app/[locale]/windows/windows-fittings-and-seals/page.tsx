@@ -19,7 +19,6 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsElementsList",
     2,
     "windows",
-    true
   );
 }
 

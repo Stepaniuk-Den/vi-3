@@ -34,7 +34,6 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     "windowsProfilesList",
     2,
     "windows",
-    true
   );
 }
 

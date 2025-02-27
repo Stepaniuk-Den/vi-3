@@ -71,12 +71,13 @@ export default async function IndexPage({ params: { locale } }: Props) {
   const WindowFeaturesList = t.raw("WindowFeatures");
   const MessageBannerT = t.raw("MessageBanner");
   const ManufacturerT = t.raw("ManufacturerInfo");
+  const tHero = t.raw("Hero")
 
   // console.log('ManufacturerT - ', ManufacturerT);
   return (
     <PageLayout>
       {/* <p className="max-w-[590px] text-xl">{t("description")}</p> */}
-      <Hero />
+      <Hero t={tHero} />
       <ManufacturerInfo t={ManufacturerT} />
       <MessageBanner t={MessageBannerT} locale={locale} />
       <WindowsSection t={tWindows} tBtn={tButtons} />

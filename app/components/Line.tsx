@@ -14,7 +14,7 @@ const Line: React.FC<ILineProps> = ({ className, color }) => {
       className={`flex w-[100px] h-[4px] my-[20px] rounded-md ${
         className === "marsala-left"
           ? "max-md:mx-auto"
-          : // ? "mr-auto md:ml-auto"
+          :
           className === "marsala-center"
           ? "mx-auto"
           : ""

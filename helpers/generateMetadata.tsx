@@ -7,7 +7,6 @@ export async function generateMetadataSubPage(
   nameList: string,
   index: number,
   path:string,
-  isWindowSlug?:boolean,
   isSubPath?:string,
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace });
@@ -15,7 +14,7 @@ export async function generateMetadataSubPage(
   const pathToTranslation = `${nameList}.${index}`;
   const imageSrc = t(`${pathToTranslation}.src`);
   const imageAlt = t(`${pathToTranslation}.alt`);
-  const slug = isWindowSlug ? t(`${nameList}.${index}.windowsSlug`): t(`${nameList}.${index}.slug`);
+  const slug = t(`${nameList}.${index}.slug`);
   const url = isSubPath ? `https://vi-3.vercel.app/${locale}/${path}/${isSubPath}/${slug}`: `https://vi-3.vercel.app/${locale}/${path}/${slug}`  
  
   return {
@@ -26,7 +25,6 @@ export async function generateMetadataSubPage(
       description: t(`${pathToTranslation}.description`),
       type:"website",
       locale:"uk_UA,en_US",
-      // url:`https://vi-3.vercel.app/${locale}/${path}/${slug}`,
       url,
       images: [
         {

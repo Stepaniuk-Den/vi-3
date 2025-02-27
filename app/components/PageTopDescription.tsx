@@ -24,7 +24,6 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
           classNameObserver="flex justify-center"
           classNameChild="laser-text"
         >
-          {/* <h1 className="titleCl mt-16">{t("title")}</h1> */}
           <h1 className="titleCl mt-16 inline-block" data-text={t("title")}>
             {t("title")}
           </h1>
@@ -32,21 +31,6 @@ const PageTopDescription: React.FC<IPageTopDescriptionProps> = ({
         <Observer animation="zoom-in-line" duration="0.8s">
           <Line className="marsala-center" color="marsala" />
         </Observer>
-        {/* {!descObj ? (
-          <Observer animation='zoom-in'>
-            <p className="mb-4">{t("description")}</p>
-          </Observer>
-        ) : (
-          <div className="mb-4">
-            {Object.values(descObj).map((text, index) => (
-              <Observer threshold={1} animation="zoom-in" key={index}>
-                <p key={index} className="mb-4">
-                  {text}
-                </p>
-              </Observer>
-            ))}
-          </div>
-        )} */}
         {t("description") && (
           <Observer animation="zoom-in">
             <p className="mb-4">{t("description")}</p>
