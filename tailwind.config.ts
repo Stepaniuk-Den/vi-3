@@ -55,9 +55,9 @@ export default {
         customElement: {
           DEFAULT: "rgb(44,89,130)",
         },
-        customChat:{
+        customChat: {
           DEFAULT: "rgb(68, 121, 145)",
-        }
+        },
       },
       backgroundImage: {
         customLaser:
@@ -67,6 +67,7 @@ export default {
         customShadow:
           "0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)",
         customShadowInput: "0px 6px 8px rgba(44,89,130, 0.33)",
+        customShadowLoader: "0 0 10px rgba(0, 0, 0, 0.15)",
       },
       willChange: {
         transform: "transform",
@@ -81,6 +82,8 @@ export default {
           "textFocusIn 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both",
         textFocusInDelayed:
           "textFocusIn 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both",
+        loaderBefore: "animLoaderBefore 4s ease infinite",
+        loaderAfter: "animLoaderAfter 2s ease infinite",
       },
       keyframes: {
         unfoldIn: {
@@ -129,6 +132,61 @@ export default {
         textFocusIn: {
           "0%": { filter: "blur(12px)", opacity: "0" },
           "100%": { filter: "blur(0)", opacity: "1" },
+        },
+        animLoaderBefore: {
+          "0%": {
+            boxShadow:
+              "0 96px rgba(255, 255, 255, 0), 96px 96px rgba(255, 255, 255, 0), 96px 192px rgba(255, 255, 255, 0), 0px 192px rgba(255, 255, 255, 0)",
+          },
+          "12%": {
+            boxShadow:
+              "0 96px #5d5d5d, 96px 96px rgba(255, 255, 255, 0), 96px 192px rgba(255, 255, 255, 0), 0px 192px rgba(255, 255, 255, 0)",
+          },
+          "25%": {
+            boxShadow:
+              "0 96px #5d5d5d, 96px 96px #5d5d5d, 96px 192px rgba(255, 255, 255, 0), 0px 192px rgba(255, 255, 255, 0)",
+          },
+          "37%": {
+            boxShadow:
+              "0 96px #5d5d5d, 96px 96px #5d5d5d, 96px 192px #5d5d5d, 0px 192px rgba(255, 255, 255, 0)",
+          },
+          "50%": {
+            boxShadow:
+              "0 96px #5d5d5d, 96px 96px #5d5d5d, 96px 192px #5d5d5d, 0px 192px #5d5d5d",
+          },
+          "62%": {
+            boxShadow:
+              "0 96px rgba(255, 255, 255, 0), 96px 96px #5d5d5d, 96px 192px #5d5d5d, 0px 192px #5d5d5d",
+          },
+          "75%": {
+            boxShadow:
+              "0 96px rgba(255, 255, 255, 0), 96px 96px rgba(255, 255, 255, 0), 96px 192px #5d5d5d, 0px 192px #5d5d5d",
+          },
+          "87%": {
+            boxShadow:
+              "0 96px rgba(255, 255, 255, 0), 96px 96px rgba(255, 255, 255, 0), 96px 192px rgba(255, 255, 255, 0), 0px 192px #5d5d5d",
+          },
+          "100%": {
+            boxShadow:
+              "0 96px rgba(255, 255, 255, 0), 96px 96px rgba(255, 255, 255, 0), 96px 192px rgba(255, 255, 255, 0), 0px 192px rgba(255, 255, 255, 0)",
+          },
+        },
+        animLoaderAfter: {
+          "0%": {
+            transform: "translate(0, 0) rotateX(0) rotateY(0)",
+          },
+          "25%": {
+            transform: "translate(100%, 0) rotateX(0) rotateY(180deg)",
+          },
+          "50%": {
+            transform: "translate(100%, 100%) rotateX(-180deg) rotateY(180deg)",
+          },
+          "75%": {
+            transform: "translate(0, 100%) rotateX(-180deg) rotateY(360deg)",
+          },
+          "100%": {
+            transform: "translate(0, 0) rotateX(0) rotateY(360deg)",
+          },
         },
       },
     },
