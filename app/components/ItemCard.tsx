@@ -46,7 +46,7 @@ const ItemCard: React.FC<IItemCard> = ({
           "bg-customElement text-white": background === "blue",
         }
       )}
-      // style={{ backgroundColor: background }}
+    // style={{ backgroundColor: background }}
     >
       {layout !== "horizontal" && title && (
         <div>
@@ -85,9 +85,8 @@ const ItemCard: React.FC<IItemCard> = ({
             src={src || ""}
             alt={alt || ""}
             fill
-            priority
             className="object-cover"
-            // placeholder="blur"
+          // placeholder="blur"
           />
         </div>
       </Observer>

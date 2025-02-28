@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import clsx from "clsx";
 import IconArrowRounded from "@/public/icons/Arrow_rounded.svg";
+import useScrollY from "@/helpers/useScrollY";
 
 
 // type Props = {
@@ -15,19 +15,8 @@ import IconArrowRounded from "@/public/icons/Arrow_rounded.svg";
 
 const ToTopButton = () => {
   // const t = useTranslations("Buttons");
-  const [isVisible, setIsVisible] = useState(false);
+  const isVisible = useScrollY({})
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      // window.scrollY > 400 ? setIsVisible(true) : setIsVisible(false);
-      setIsVisible(window.scrollY > 400);
-    };
-
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
 
   const handleClickTotop = () => {
     // if (isVisible) {
@@ -48,7 +37,7 @@ const ToTopButton = () => {
         type="button"
         title="Scroll to top"
         onClick={handleClickTotop}
-        // aria-label={t.toTop}
+      // aria-label={t.toTop}
       >
         <IconArrowRounded />
       </button>

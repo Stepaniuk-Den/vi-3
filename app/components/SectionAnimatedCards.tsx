@@ -11,7 +11,6 @@ import NestedParameterDescList from "./NestedParameterDescList";
 const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
-
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1023.98 });
 
   const ref = useRef<HTMLUListElement | null>(null);
@@ -21,7 +20,7 @@ const SectionAnimatedCards: React.FC<ISectionImgAndListProps> = ({ t }) => {
     setActiveCard((prev) => (prev === cardId ? null : cardId));
   };
 
-  const isClient = useIsClient()
+  const isClient = useIsClient();
   if (!isClient) return null;
 
   return (

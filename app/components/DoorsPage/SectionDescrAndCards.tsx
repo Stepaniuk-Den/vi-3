@@ -41,12 +41,6 @@ const SectionDescrAndCards: React.FC<ISectionDescrAndCards> = ({
       <div className="container">
         <h3 className="subTitleCl mt-6 text-left mb-4">{t.title}</h3>
         <div className="flex justify-between gap-16">
-          {/* <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
-            {t.subTitle}
-          </h3> */}
-          {/* <h3 className="subTitleCl xl:leading-none normal-case text-center mr-auto">
-            {t.subTitle2}
-          </h3> */}
         </div>
         <ul
           className={clsx(

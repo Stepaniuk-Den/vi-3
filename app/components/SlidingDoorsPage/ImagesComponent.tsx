@@ -35,17 +35,6 @@ interface IList {
   | string;
 }
 
-// const getImageDimensionValue = (
-//   dimension: string | { [key: number]: string | undefined } | undefined,
-//   idx: number,
-//   defaultValue: string
-// ): string => {
-//   if (typeof dimension === "object" && dimension !== null) {
-//     return dimension[idx + 1] || defaultValue;
-//   }
-//   return dimension || defaultValue;
-// };
-
 const ImagesComponent: React.FC<IList> = ({
   list,
   width,
@@ -152,12 +141,11 @@ const ImagesComponent: React.FC<IList> = ({
                   }
                 >
                   <Image
-                    className={`${objTypeImg} xl:hover:scale-105 transition-transform duration-500`}
+                    className={`${objTypeImg} hover:scale-105 transition-transform duration-500`}
                     sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
                     src={img.src}
                     alt={img.alt}
                     fill
-                    priority
                   />
                 </div>
               </Observer>

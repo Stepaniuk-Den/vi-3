@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -20,8 +19,20 @@ import { IImage } from "@/helpers/interfaces";
 import { useModal } from "./ModalProvider";
 import Image from "next/image";
 import SwiperCore from "swiper";
-import ModalSwiperContent from "./ModalSwiperContent";
 import clsx from "clsx";
+import dynamic from "next/dynamic";
+
+const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), {
+  ssr: false,
+});
+const SwiperSlide = dynamic(
+  () => import('swiper/react').then((mod) => mod.SwiperSlide),
+  { ssr: false }
+);
+
+const ModalSwiperContent = dynamic(() => import('./ModalSwiperContent'), {
+  ssr: false,
+});
 
 interface IProps {
   imgList: IImage[];

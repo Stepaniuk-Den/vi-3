@@ -2,23 +2,33 @@ import { IItemCard } from "@/helpers/interfaces";
 import ItemCard from "./ItemCard";
 
 type Props = {
+  // t: {
+  //   (key: string): string;
+  //   raw: (key: string) => Record<string, IItemCard>;
+  // };
+  // tBtn: (key: string) => string;
   t: {
-    (key: string): string;
-    raw: (key: string) => Record<string, IItemCard>;
-  };
-  tBtn: (key: string) => string;
+    title: string;
+    description: string
+    rollerShuttersTypesList: {
+      [key: string]: IItemCard
+    }
+  }
+  tBtn: {
+    [key: string]: string
+  }
 };
 const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
   const doorsTypesList = Object.values(
-    t.raw("rollerShuttersTypesList")
+    t.rollerShuttersTypesList
   ) as IItemCard[];
 
   return (
     <section className="sectionCl">
       <div className="container">
-        <h2 className="titleCl mb-4">{t("title")}</h2>
+        <h2 className="titleCl mb-4">{t.title}</h2>
         {/* <Line className="marsala-center" /> */}
-        <p className="mb-8">{t("description")}</p>
+        <p className="mb-8">{t.description}</p>
         <ul className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center lg:justify-between md:gap-2 lg:gap-4">
           {doorsTypesList.map((typeItem, idx) => (
             <li
@@ -31,7 +41,7 @@ const RollerShuttersSection: React.FC<Props> = ({ t, tBtn }) => {
                 src={typeItem.src}
                 alt={typeItem.alt}
                 btnOffset={idx === 0 ? "-mt-3" : ""}
-                tBtn={tBtn("see")}
+                tBtn={tBtn.see}
                 alignment="end"
                 path="roller-shutters"
                 slug={typeItem.slug}

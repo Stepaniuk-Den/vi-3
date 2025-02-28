@@ -1,11 +1,14 @@
-
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
 import { FormControl, SelectChangeEvent } from "@mui/material";
-import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
+// import { CustomSelect, StyledInputLabel, StyledMenuItem } from "./StyledSelect";
 import useCurrentViewportHeight from "@/helpers/useCurrentViewportHeight";
+// import Select from '@mui/material/Select';
+// import InputLabel from '@mui/material/InputLabel';
+// import MenuItem from '@mui/material/MenuItem';
+import { inputLabelStyles, menuItemStyles, selectStyles } from "./SelectStyles";
+import dynamic from "next/dynamic";
 
 interface IOptionType {
   label: string;
@@ -19,6 +22,10 @@ interface ITimeSelectProps {
   disabled?: boolean;
   error?: string;
 }
+
+const Select = dynamic(() => import("@mui/material/Select"), { ssr: false });
+const InputLabel = dynamic(() => import("@mui/material/InputLabel"), { ssr: false });
+const MenuItem = dynamic(() => import("@mui/material/MenuItem"), { ssr: false });
 
 const generateTimeSlots = () => {
   const times: IOptionType[] = [];
@@ -53,7 +60,7 @@ const TimeSelect = ({
     if (selectRef.current) {
       const selectRect = selectRef.current.getBoundingClientRect();
       const modalHeight = height;
-      const availableSpace = modalHeight - selectRect.bottom - 20; 
+      const availableSpace = modalHeight - selectRect.bottom - 20;
       setMenuMaxHeight(Math.max(availableSpace, 100)); // 
     }
   }, [height]);
@@ -91,9 +98,10 @@ const TimeSelect = ({
 
   return (
     <FormControl fullWidth error={!!error}>
-      <StyledInputLabel id="time">{t("time")}</StyledInputLabel>
-      <CustomSelect
-        labelId="time" 
+      <InputLabel id="time" sx={inputLabelStyles}>{t("time")}</InputLabel>
+      <Select
+        labelId="time"
+        sx={selectStyles}
         id="time"
         name="time"
         disabled={disabled}
@@ -133,11 +141,11 @@ const TimeSelect = ({
         }}
       >
         {filteredTimeOptions.map((option) => (
-          <StyledMenuItem key={option.value} value={option.value}>
+          <MenuItem sx={menuItemStyles} key={option.value} value={option.value}>
             {option.label}
-          </StyledMenuItem>
+          </MenuItem>
         ))}
-      </CustomSelect>
+      </Select>
     </FormControl>
   );
 };

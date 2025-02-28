@@ -54,7 +54,6 @@ const TopDescrAndImg: React.FC<ITopDescrAndImgProps> = ({ t }) => {
           >
             <Image
               className="object-cover hover:scale-105 transition-transform duration-500"
-              //   sizes="(max-width: 767.98px) 355px, (max-width: 1023.98px) 356px,  317px,"
               sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
               src={src}
               alt={alt}

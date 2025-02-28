@@ -3,8 +3,8 @@ import ImagesComponent from "./ImagesComponent";
 import TitleBanner from "../TitleBanner";
 
 interface IProps {
-  cardList: IImage[];
   bannerTitle: string;
+  cardList: IImage[];
 }
 const PskTiltFittSection = ({ cardList, bannerTitle }: IProps) => {
   return (
