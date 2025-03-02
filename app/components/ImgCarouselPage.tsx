@@ -17,6 +17,7 @@ import {
 } from "swiper/modules";
 import { IImage } from "@/helpers/interfaces";
 import { useModal } from "./ModalProvider";
+import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import SwiperCore from "swiper";
 import clsx from "clsx";
@@ -25,10 +26,6 @@ import dynamic from "next/dynamic";
 const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), {
   ssr: false,
 });
-const SwiperSlide = dynamic(
-  () => import('swiper/react').then((mod) => mod.SwiperSlide),
-  { ssr: false }
-);
 
 const ModalSwiperContent = dynamic(() => import('./ModalSwiperContent'), {
   ssr: false,
@@ -52,7 +49,7 @@ const ImgCarouselPage = ({
   return (
     <>
       <div className={clsx("mx-auto mb-4", width)}>
-        <Swiper
+        <Swiper 
           loop={true}
           spaceBetween={10}
           effect={"fade"}
