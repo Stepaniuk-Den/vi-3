@@ -35,6 +35,7 @@ const CallButton = () => {
               classNameModalContent: "w-[80%] lg:w-[60%] xl:w-[50%] min-h-[70dvh] max-h-[95dvh] portrait:md:min-h-[50dvh] portrait:md:max-h-[65dvh] bg-white px-8 lg:px-16 pt-6 landscape:max-[1023.98px]:pt-9 portrait:md:pt-16 lg:pt-16 pb-6 items-center",
               isBtnCloseCarousel: false,
               isBtnClose: true,
+              isBackdropClick: true,
             }
           )
         }

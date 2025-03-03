@@ -20,6 +20,7 @@ interface ModalOptions {
   classNameAnimationOut?: string;
   isBtnCloseCarousel?: boolean;
   isBtnClose?: boolean;
+  isBackdropClick?: boolean;
 }
 interface ModalContextType {
   isOpen: boolean;
@@ -50,6 +51,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     useState<string>("animate-unfoldOut");
   const [isBtnCloseCarousel, setIsBtnCloseCarousel] = useState(true);
   const [isBtnClose, setIsBtnClose] = useState(false);
+  const [isBackdropClick, setIsBackdropClick] = useState(false);
 
   const t = useTranslations("ModalWindow");
   const modalRef = useRef<HTMLDivElement>(null);
@@ -63,6 +65,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       classNameAnimationOut,
       isBtnCloseCarousel = true,
       isBtnClose = false,
+      isBackdropClick = false,
     } = options || {};
     setContent(modalContent);
     setIsOpen(true);
@@ -74,6 +77,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     setClassNameAnimationOut(classNameAnimationOut || "animate-unfoldOut");
     setIsBtnCloseCarousel(isBtnCloseCarousel);
     setIsBtnClose(isBtnClose);
+    setIsBackdropClick(isBackdropClick);
   };
 
   const closeModal = () => {
@@ -126,45 +130,6 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     };
   }, [isOpen]);
 
-  // useEffect(() => {
-  //   const disableScroll = (e: Event) => {
-  //     e.preventDefault();
-  //   };
-  //   if (isOpen) {
-  //     document.documentElement.style.overflow = "hidden";
-  //     document.body.style.overflow = "hidden";
-  //     document.body.style.touchAction = "none";
-
-  //     const preventBackgroundScroll = (e: TouchEvent) => {
-  //       if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-  //         e.preventDefault();
-  //       }
-  //     };
-
-  //     window.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
-  //   } else {
-  //     document.documentElement.style.overflow = "auto";
-  //      document.body.style.overflow = "auto";
-  //      document.body.style.touchAction = "auto";
-  //   }
-
-  //   const handleKeyDown = (e: KeyboardEvent) => {
-  //     if (e.code === "Escape") {
-  //       closeModal();
-  //     }
-  //   };
-
-  //   window.addEventListener("keydown", handleKeyDown);
-
-  //   return () => {
-  //     window.removeEventListener("keydown", handleKeyDown);
-  //     window.removeEventListener("touchmove", disableScroll);
-  //     document.documentElement.style.overflow = "auto";
-  //     document.body.style.overflow = "auto";
-  //   document.body.style.touchAction = "auto";
-  //   };
-  // }, [isOpen]);
-
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const crispWindow = window as any;
@@ -188,6 +153,9 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
             showAnimation ? classNameAnimationIn : classNameAnimationOut,
             classNameBackdrop
           )}
+          onClick={() => {
+            if (isBackdropClick) closeModal();
+          }}
         >
           {isBtnCloseCarousel && (
             <button
@@ -203,7 +171,12 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
 
           <div
             className={clsx("absolute rounded-md", classNameModalContent)}
-            onClick={(e) => e.stopPropagation()}
+            // onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              if (!isBackdropClick) {
+                e.stopPropagation();
+              }
+            }}
           >
             {content}
             {isBtnClose && (
