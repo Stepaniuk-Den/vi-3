@@ -18,8 +18,8 @@ interface ModalOptions {
   classNameBtn?: string;
   classNameAnimationIn?: string;
   classNameAnimationOut?: string;
-  isBtnCloseCarousel?:boolean;
-  isBtnClose?:boolean;
+  isBtnCloseCarousel?: boolean;
+  isBtnClose?: boolean;
 }
 interface ModalContextType {
   isOpen: boolean;
@@ -36,8 +36,9 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const [isOpen, setIsOpen] = useState(false);
   const [content, setContent] = useState<ReactNode | null>(null);
   const [showAnimation, setShowAnimation] = useState(false);
-  const [classNameBackdrop, setClassNameBackdrop] = useState<
-    string>("bg-customMarsala-accentLight");
+  const [classNameBackdrop, setClassNameBackdrop] = useState<string>(
+    "bg-customMarsala-accentLight"
+  );
   const [classNameModalContent, setClassNameModalContent] =
     useState<string>("w-[80vw] h-[90vh]");
   const [classNameBtn, setClassNameBtn] = useState<string>(
@@ -47,12 +48,11 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
     useState<string>("animate-unfoldIn");
   const [classNameAnimationOut, setClassNameAnimationOut] =
     useState<string>("animate-unfoldOut");
-    const [isBtnCloseCarousel,setIsBtnCloseCarousel] = useState(true);
-    const [isBtnClose, setIsBtnClose] = useState(false);
+  const [isBtnCloseCarousel, setIsBtnCloseCarousel] = useState(true);
+  const [isBtnClose, setIsBtnClose] = useState(false);
 
   const t = useTranslations("ModalWindow");
-  const modalRef = useRef<HTMLDivElement>(null)
-
+  const modalRef = useRef<HTMLDivElement>(null);
 
   const openModal = (modalContent: ReactNode, options?: ModalOptions) => {
     const {
@@ -63,15 +63,12 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       classNameAnimationOut,
       isBtnCloseCarousel = true,
       isBtnClose = false,
-      
     } = options || {};
     setContent(modalContent);
     setIsOpen(true);
     setShowAnimation(true);
     setClassNameBackdrop(classNameBackdrop || "bg-customMarsala-accentLight");
-    setClassNameModalContent(
-      classNameModalContent || "w-[80vw] h-[70vh] "
-    );
+    setClassNameModalContent(classNameModalContent || "w-[80vw] h-[70vh] ");
     setClassNameBtn(classNameBtn || "top-[-10px] right-[-10%]");
     setClassNameAnimationIn(classNameAnimationIn || "animate-unfoldIn");
     setClassNameAnimationOut(classNameAnimationOut || "animate-unfoldOut");
@@ -143,7 +140,7 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   //         e.preventDefault();
   //       }
   //     };
-  
+
   //     window.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
   //   } else {
   //     document.documentElement.style.overflow = "auto";
@@ -186,33 +183,41 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
       {isOpen && (
         <div
           ref={modalRef}
-          className={clsx(`fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`, showAnimation ? classNameAnimationIn : classNameAnimationOut, classNameBackdrop)}
-        >
-          {isBtnCloseCarousel &&(
-           <button
-           className={clsx("absolute flex justify-center items-center p-2 top-5 landscape:max-[767.98px]:top-1 md:top-2 right-[1%] text-white rounded-full z-50 lg:hover:text-customMarsala")}
-           onClick={closeModal}
-           aria-label={t("ariaLabel")}
-         >
-           <Close />
-         </button>
+          className={clsx(
+            `fixed top-0 left-0 w-full h-full z-30 flex justify-center items-center transition-transform`,
+            showAnimation ? classNameAnimationIn : classNameAnimationOut,
+            classNameBackdrop
           )}
-          
+        >
+          {isBtnCloseCarousel && (
+            <button
+              className={clsx(
+                "absolute flex justify-center items-center p-2 top-5 landscape:max-[767.98px]:top-1 md:top-2 right-[1%] text-white rounded-full z-50 lg:hover:text-customMarsala"
+              )}
+              onClick={closeModal}
+              aria-label={t("ariaLabel")}
+            >
+              <Close />
+            </button>
+          )}
+
           <div
             className={clsx("absolute rounded-md", classNameModalContent)}
             onClick={(e) => e.stopPropagation()}
           >
             {content}
             {isBtnClose && (
-            <button
-            className={clsx(" absolute text-white rounded-full z-50 lg:hover:text-customMarsala", classNameBtn)}
-            onClick={closeModal}
-            aria-label={t("ariaLabel")}
-          >
-            <Close />
-          </button>
+              <button
+                className={clsx(
+                  " absolute text-white rounded-full z-50 lg:hover:text-customMarsala",
+                  classNameBtn
+                )}
+                onClick={closeModal}
+                aria-label={t("ariaLabel")}
+              >
+                <Close />
+              </button>
             )}
-            
           </div>
         </div>
       )}

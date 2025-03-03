@@ -4,9 +4,9 @@ import { Locale, routing } from "@/i18n/routing";
 import BaseLayout from "../components/BaseLayout";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // import Loader from "../components/Loader";
-const Loader = dynamic(() => import("../components/Loader"), { ssr: false });
+// const Loader = dynamic(() => import("../components/Loader"), { ssr: false });
 
 type Props = {
   children: ReactNode;
@@ -62,11 +62,44 @@ export default async function LocaleLayout({
 
   return (
     <BaseLayout locale={locale}>
-      <Loader />
+      {/* <Loader /> */}
       {children}
     </BaseLayout>
   );
 }
+
+// LOADER
+// ----------------------------------------------------------------
+// "use client";
+
+// import { usePathname, useSearchParams } from "next/navigation";
+// import React, { useEffect, useState } from "react";
+
+// const Loader: React.FC = () => {
+//   const [isLoading, setIsLoading] = useState(false);
+//   const pathname = usePathname();
+//   const searchParams = useSearchParams();
+
+//   useEffect(() => {
+//     const handleStart = () => setIsLoading(true);
+//     const handleComplete = () => setIsLoading(false);
+//     handleStart();
+//     const timer = setTimeout(handleComplete, 500);
+//     return () => clearTimeout(timer);
+//   }, [pathname, searchParams]);
+
+//   return isLoading ? (
+//     // <PageLayout>
+//     // <section className="container py-80 text-center h-screen">
+//     // bg-gray-900 bg-opacity-75
+//     <div className="absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-500 z-50">
+//       <div className="loaderCl"></div>
+//     </div>
+//   ) : // </PageLayout>
+//   null;
+// };
+
+// export default Loader;
 
 // ----------------------------------------------------------------
 // import { routing } from "@/i18n/routing";
