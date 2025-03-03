@@ -2,9 +2,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import { Locale, routing } from "@/i18n/routing";
 import BaseLayout from "../components/BaseLayout";
-// import NotFoundPage from "../components/NotFoundPage";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+// import dynamic from "next/dynamic";
+// import Loader from "../components/Loader";
+// const Loader = dynamic(() => import("../components/Loader"), { ssr: false });
 
 type Props = {
   children: ReactNode;
@@ -58,5 +60,114 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   // const messages = await getMessages();
 
-  return <BaseLayout locale={locale}>{children}</BaseLayout>;
+  return (
+    <BaseLayout locale={locale}>
+      {/* <Loader /> */}
+      {children}
+    </BaseLayout>
+  );
 }
+
+// LOADER
+// ----------------------------------------------------------------
+// "use client";
+
+// import { usePathname, useSearchParams } from "next/navigation";
+// import React, { useEffect, useState } from "react";
+
+// const Loader: React.FC = () => {
+//   const [isLoading, setIsLoading] = useState(false);
+//   const pathname = usePathname();
+//   const searchParams = useSearchParams();
+
+//   useEffect(() => {
+//     const handleStart = () => setIsLoading(true);
+//     const handleComplete = () => setIsLoading(false);
+//     handleStart();
+//     const timer = setTimeout(handleComplete, 500);
+//     return () => clearTimeout(timer);
+//   }, [pathname, searchParams]);
+
+//   return isLoading ? (
+//     // <PageLayout>
+//     // <section className="container py-80 text-center h-screen">
+//     // bg-gray-900 bg-opacity-75
+//     <div className="absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-500 z-50">
+//       <div className="loaderCl"></div>
+//     </div>
+//   ) : // </PageLayout>
+//   null;
+// };
+
+// export default Loader;
+
+// ----------------------------------------------------------------
+// import { routing } from "@/i18n/routing";
+// import BaseLayout from "../components/BaseLayout";
+// import Loader from "../components/Loader";
+
+// const Loading = () => {
+//   return (
+//     <>
+//       <BaseLayout locale={routing.defaultLocale}>
+//         {/* <PageLayout> */}
+//         <Loader />
+//         {/* </PageLayout> */}
+//       </BaseLayout>
+//     </>
+//   );
+// };
+
+// export default Loading;
+
+// =================================
+
+// <PageLayout>
+//   {/* <section className="pageCl h-full">
+//       <div className="container py-80 text-center h-full">
+//         <p className="mainTitleCl pt-16 text-center">
+//           LOADING........LOADING........
+//         </p>
+//       </div>
+//       </section> */}
+//   <div className="container py-80 text-center h-full"></div>
+// </PageLayout>;
+
+// ----------------------------------------------------------------------------
+
+// import React from "react";
+// // import { routing } from "@/i18n/routing";
+// import Loader from "../components/Loader";
+// import PageLayout from "../components/PageLayout";
+// // import BaseLayout from "../components/BaseLayout";
+
+// const Loading = () => {
+//   return (
+//     <>
+//       {/* <BaseLayout locale={routing.defaultLocale}> */}
+//       <PageLayout>
+//         <Loader />
+//       </PageLayout>
+//       {/* </BaseLayout> */}
+//     </>
+//   );
+// };
+
+// export default Loading;
+
+// --------------------------------------------
+
+// export { default } from "../components/Loader";
+
+// --------------------------------------------
+
+// <PageLayout>
+//   {/* <section className="pageCl h-full">
+//       <div className="container py-80 text-center h-full">
+//         <p className="mainTitleCl pt-16 text-center">
+//           LOADING........LOADING........
+//         </p>
+//       </div>
+//       </section> */}
+//   <div className="container py-80 text-center h-full"></div>
+// </PageLayout>;

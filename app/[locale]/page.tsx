@@ -1,4 +1,3 @@
-
 import { getTranslations, setRequestLocale } from "next-intl/server";
 // import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
@@ -17,10 +16,16 @@ type Props = {
   params: { locale: string };
 };
 
+// const Hero = dynamic(() => import("../components/Hero"), {
+//   ssr: false,
+// });
 
-const ManufacturerInfo = dynamic(() => import("../components/ManufacturerInfo"), {
-  ssr: false,
-});
+const ManufacturerInfo = dynamic(
+  () => import("../components/ManufacturerInfo"),
+  {
+    ssr: false,
+  }
+);
 const MessageBanner = dynamic(() => import("../components/MessageBanner"), {
   ssr: false,
 });
@@ -30,9 +35,12 @@ const WindowsSection = dynamic(() => import("../components/WindowsSection"), {
 const DoorsSection = dynamic(() => import("../components/DoorsSection"), {
   ssr: false,
 });
-const RollerShuttersSection = dynamic(() => import("../components/RollerShuttersSection"), {
-  ssr: false
-});
+const RollerShuttersSection = dynamic(
+  () => import("../components/RollerShuttersSection"),
+  {
+    ssr: false,
+  }
+);
 const ProjectsSection = dynamic(() => import("../components/ProjectsSection"), {
   ssr: false,
 });
@@ -42,7 +50,6 @@ const WindowFeatures = dynamic(() => import("../components/WindowFeatures"), {
 const GuideSection = dynamic(() => import("../components/GuideSection"), {
   ssr: false,
 });
-
 
 export default async function IndexPage({ params: { locale } }: Props) {
   // Enable static rendering
@@ -71,7 +78,7 @@ export default async function IndexPage({ params: { locale } }: Props) {
   const WindowFeaturesList = t.raw("WindowFeatures");
   const MessageBannerT = t.raw("MessageBanner");
   const ManufacturerT = t.raw("ManufacturerInfo");
-  const tHero = t.raw("Hero")
+  const tHero = t.raw("Hero");
 
   // console.log('ManufacturerT - ', ManufacturerT);
   return (

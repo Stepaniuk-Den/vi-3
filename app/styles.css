@@ -297,6 +297,14 @@ canvas {
   }
 }
 
+/* .loaderCl {
+  @apply relative inline-block w-12 h-12 rotate-45 scale-75 before:content-[''] before:absolute before:w-6 before:h-6 before:left-0 before:-top-6 before:animate-loaderBefore after:content-[''] after:absolute after:w-6 after:h-6 after:left-0 after:top-0 after:bg-customMarsala after:shadow-customShadowLoader after:animate-loaderAfter;
+} */
+
+.loaderCl {
+  @apply relative inline-block w-48 h-48 rotate-45 scale-75 before:content-[''] before:absolute before:w-24 before:h-24 before:left-0 before:-top-24 before:animate-loaderBefore after:content-[''] after:absolute after:w-24 after:h-24 after:left-0 after:top-0 after:bg-customMarsala after:shadow-customShadowLoader after:animate-loaderAfter;
+}
+
 @layer utilities {
   .inputsCl:focus + .label,
   .inputsCl:not(:placeholder-shown) + .label {
